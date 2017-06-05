@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\Ava.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{568DBF19-14FD-43EE-BE75-A1D5F8EE0B77}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\Ava.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\AvaEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{C3AE7582-ECBB-40F7-A966-A4E5A23A9381}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\Ava">
+			<UniqueIdentifier>{D8777B75-6E1C-4736-A6D5-70AC26EF1BBC}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\Ava\AMainCharacter.cpp">
+			<Filter>Source\Ava</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Ava\AMainCharacter.h">
+			<Filter>Source\Ava</Filter>
+		</ClInclude >
+		<None Include="..\..\Source\Ava\Ava.Build.cs">
+			<Filter>Source\Ava</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\Ava\Ava.cpp">
+			<Filter>Source\Ava</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Ava\Ava.h">
+			<Filter>Source\Ava</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Ava\AvaGameMode.cpp">
+			<Filter>Source\Ava</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Ava\AvaGameMode.h">
+			<Filter>Source\Ava</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>
