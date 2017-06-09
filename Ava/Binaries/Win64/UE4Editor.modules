@@ -1,8 +1,8 @@
 {
 	"Changelist" : 3039270,
-	"BuildId" : "",
+	"BuildId" : "161b20dd-ca04-43fd-9079-622d302e8bf7",
 	"Modules" : 
 	{
-		"Ava" : "UE4Editor-Ava-3784.dll"
+		"Ava" : "UE4Editor-Ava.dll"
 	}
 }

@@ -2,7 +2,7 @@
 	"TargetName" : "AvaEditor",
 	"Platform" : "Win64",
 	"Configuration" : "Development",
-	"BuildId" : "",
+	"BuildId" : "161b20dd-ca04-43fd-9079-622d302e8bf7",
 	"Version" : 
 	{
 		"MajorVersion" : 4,
@@ -119,10 +119,6 @@
 		},
 		{
 			"Path" : "$(EngineDir)/Plugins/Runtime/ExampleDeviceProfileSelector/ExampleDeviceProfileSelector.uplugin",
-			"Type" : "UFS"
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Runtime/HoudiniEngine/HoudiniEngine.uplugin",
 			"Type" : "UFS"
 		},
 		{

@@ -1,0 +1,16 @@
+﻿  Creating makefile for AvaEditor (no existing makefile)
+  Performing full C++ include scan (no include cache file)
+  Parsing headers for AvaEditor
+    Running UnrealHeaderTool "G:\University Work\Masters\MastersProject\MastersProject\Ava\Ava.uproject" "G:\University Work\Masters\MastersProject\MastersProject\Ava\Intermediate\Build\Win64\AvaEditor\Development\AvaEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for AvaEditor in 3.2586339 seconds
+  Performing 8 actions (4 in parallel)
+  [2/8] Resource PCLaunch.rc
+  [3/8] Resource ModuleVersionResource.rc.inl
+  PCH.Ava.h.cpp
+  Ava.cpp
+  AvaGameMode.cpp
+  Ava.generated.cpp
+  AMainCharacter.cpp
+  [8/8] Link UE4Editor-Ava.dll
+     Creating library G:\University Work\Masters\MastersProject\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Ava.lib and object G:\University Work\Masters\MastersProject\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Ava.exp
+  Total build time: 118.48 seconds
