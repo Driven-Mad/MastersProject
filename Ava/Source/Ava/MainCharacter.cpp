@@ -36,7 +36,7 @@ AMainCharacter::AMainCharacter()
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	//** DEPRECATED NEEDS CHANGING : AttachToComponent**
 	FollowCamera->AttachTo(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
-	FollowCamera->bUsePawnControlRotation = true; // Camera does not rotate relative to arm
+	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
 }
 
@@ -58,14 +58,27 @@ void AMainCharacter::Tick( float DeltaTime )
 void AMainCharacter::SetupPlayerInputComponent(class UInputComponent* InputComponent)
 {
 	Super::SetupPlayerInputComponent(InputComponent);
+
+	//Bind Jump Functionalities to input mapping "Jump"
 	InputComponent->BindAction("Jump", IE_Pressed, this, &AMainCharacter::Jump);
 	InputComponent->BindAction("Jump", IE_Released, this, &AMainCharacter::StopJumping);
+
+	//Bind Sprint Functionalities to input mapping "Sprint"
+	InputComponent->BindAction("Sprint", IE_Pressed, this, &AMainCharacter::Sprint);
+	InputComponent->BindAction("Sprint", IE_Released, this, &AMainCharacter::StopSprinting);
+
+	//Bind Walk Functionalities to input mapping "Walk"
+	InputComponent->BindAction("Walk", IE_Pressed, this, &AMainCharacter::Walk);
+	InputComponent->BindAction("Walk", IE_Released, this, &AMainCharacter::StopWalking);
 	//Bind our axis inputs for movement.
 	InputComponent->BindAxis("MoveForward", this, &AMainCharacter::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &AMainCharacter::MoveRight);
 
-	InputComponent->BindAction("Run", IE_Pressed, this, &AMainCharacter::Sprint);
-	InputComponent->BindAction("Run", IE_Released, this, &AMainCharacter::StopSprinting);
+	InputComponent->BindAxis("Turn", this, &AMainCharacter::TurnCamera);
+	InputComponent->BindAxis("LookUp", this, &AMainCharacter::LookUp);
+
+
+
 
 	InputComponent->BindAction("TurnAround", IE_Pressed, this, &AMainCharacter::TurnAround);
 }
@@ -100,7 +113,7 @@ void AMainCharacter::MoveRight(float value)
 	{
 		// find out which way is right
 		const FRotator Rotation = Controller->GetControlRotation();
-		const FRotator YawRotation(0, value, 0);
+		const FRotator YawRotation = FRotator(0, Rotation.Yaw, 0);
 		// get right vector 
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 		// add movement in that direction
@@ -144,12 +157,10 @@ void AMainCharacter::StopTurning()
 
 void AMainCharacter::TurnCamera(float value)
 {
-	FRotator CameraRotation = FRotator(0, value, 0);
-	Controller->AddActorLocalRotation(CameraRotation, false);
+	AddControllerYawInput(value);
 }
 
 void AMainCharacter::LookUp(float value)
 {
-	FRotator CameraRotation = FRotator(value,0,0);
-	Controller->AddActorLocalRotation(CameraRotation, false);
+	AddControllerPitchInput(value);
 }
