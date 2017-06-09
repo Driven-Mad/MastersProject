@@ -16,7 +16,7 @@ void EmptyLinkFunctionForGeneratedCode1Ava() {}
 	void AMainCharacter::StaticRegisterNativesAMainCharacter()
 	{
 	}
-	IMPLEMENT_CLASS(AMainCharacter, 2087179241);
+	IMPLEMENT_CLASS(AMainCharacter, 1804296399);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
@@ -82,21 +82,27 @@ void EmptyLinkFunctionForGeneratedCode1Ava() {}
 
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-				UProperty* NewProp_sprintSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("sprintSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(sprintSpeed, AMainCharacter), 0x0020080000020005);
-				UProperty* NewProp_runSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("runSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(runSpeed, AMainCharacter), 0x0020080000020005);
-				UProperty* NewProp_walkSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("walkSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(walkSpeed, AMainCharacter), 0x0020080000020005);
+				UProperty* NewProp_lookRate = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("lookRate"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(lookRate, AMainCharacter), 0x0020080000000005);
+				UProperty* NewProp_turnRate = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("turnRate"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(turnRate, AMainCharacter), 0x0020080000000005);
+				UProperty* NewProp_sprintSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("sprintSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(sprintSpeed, AMainCharacter), 0x0020080000000005);
+				UProperty* NewProp_runSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("runSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(runSpeed, AMainCharacter), 0x0020080000000005);
+				UProperty* NewProp_walkSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("walkSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(walkSpeed, AMainCharacter), 0x0020080000000005);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsInInventory, AMainCharacter, bool);
+				UProperty* NewProp_bIsInInventory = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsInInventory"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsInInventory, AMainCharacter), 0x0020080000020005, CPP_BOOL_PROPERTY_BITMASK(bIsInInventory, AMainCharacter), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsIdle, AMainCharacter, bool);
+				UProperty* NewProp_bIsIdle = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsIdle"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsIdle, AMainCharacter), 0x0020080000000005, CPP_BOOL_PROPERTY_BITMASK(bIsIdle, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsTurning, AMainCharacter, bool);
-				UProperty* NewProp_bIsTurning = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsTurning"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsTurning, AMainCharacter), 0x0020080000020005, CPP_BOOL_PROPERTY_BITMASK(bIsTurning, AMainCharacter), sizeof(bool), true);
+				UProperty* NewProp_bIsTurning = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsTurning"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsTurning, AMainCharacter), 0x0020080000000005, CPP_BOOL_PROPERTY_BITMASK(bIsTurning, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsAlert, AMainCharacter, bool);
-				UProperty* NewProp_bIsAlert = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsAlert"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsAlert, AMainCharacter), 0x0020080000020005, CPP_BOOL_PROPERTY_BITMASK(bIsAlert, AMainCharacter), sizeof(bool), true);
+				UProperty* NewProp_bIsAlert = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsAlert"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsAlert, AMainCharacter), 0x0020080000000005, CPP_BOOL_PROPERTY_BITMASK(bIsAlert, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsJumping, AMainCharacter, bool);
-				UProperty* NewProp_bIsJumping = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsJumping"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsJumping, AMainCharacter), 0x0020080000020005, CPP_BOOL_PROPERTY_BITMASK(bIsJumping, AMainCharacter), sizeof(bool), true);
+				UProperty* NewProp_bIsJumping = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsJumping"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsJumping, AMainCharacter), 0x0020080000000005, CPP_BOOL_PROPERTY_BITMASK(bIsJumping, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsWalking, AMainCharacter, bool);
-				UProperty* NewProp_bIsWalking = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsWalking"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsWalking, AMainCharacter), 0x0020080000020005, CPP_BOOL_PROPERTY_BITMASK(bIsWalking, AMainCharacter), sizeof(bool), true);
+				UProperty* NewProp_bIsWalking = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsWalking"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsWalking, AMainCharacter), 0x0020080000000005, CPP_BOOL_PROPERTY_BITMASK(bIsWalking, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsRunning, AMainCharacter, bool);
-				UProperty* NewProp_bIsRunning = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsRunning"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsRunning, AMainCharacter), 0x0020080000020005, CPP_BOOL_PROPERTY_BITMASK(bIsRunning, AMainCharacter), sizeof(bool), true);
+				UProperty* NewProp_bIsRunning = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsRunning"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsRunning, AMainCharacter), 0x0020080000000005, CPP_BOOL_PROPERTY_BITMASK(bIsRunning, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsSprinting, AMainCharacter, bool);
-				UProperty* NewProp_bIsSprinting = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsSprinting"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsSprinting, AMainCharacter), 0x0020080000020005, CPP_BOOL_PROPERTY_BITMASK(bIsSprinting, AMainCharacter), sizeof(bool), true);
+				UProperty* NewProp_bIsSprinting = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsSprinting"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsSprinting, AMainCharacter), 0x0020080000000005, CPP_BOOL_PROPERTY_BITMASK(bIsSprinting, AMainCharacter), sizeof(bool), true);
 				UProperty* NewProp_FollowCamera = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("FollowCamera"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(FollowCamera, AMainCharacter), 0x00100000000a001d, Z_Construct_UClass_UCameraComponent_NoRegister());
 				UProperty* NewProp_CameraBoom = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraBoom"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(CameraBoom, AMainCharacter), 0x00100000000a001d, Z_Construct_UClass_USpringArmComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
@@ -107,12 +113,20 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
-				MetaData->SetValue(NewProp_sprintSpeed, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_lookRate, TEXT("Category"), TEXT("CharacterSpeeds"));
+				MetaData->SetValue(NewProp_lookRate, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_turnRate, TEXT("Category"), TEXT("CharacterSpeeds"));
+				MetaData->SetValue(NewProp_turnRate, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_sprintSpeed, TEXT("Category"), TEXT("CharacterSpeeds"));
 				MetaData->SetValue(NewProp_sprintSpeed, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_runSpeed, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_runSpeed, TEXT("Category"), TEXT("CharacterSpeeds"));
 				MetaData->SetValue(NewProp_runSpeed, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_walkSpeed, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_walkSpeed, TEXT("Category"), TEXT("CharacterSpeeds"));
 				MetaData->SetValue(NewProp_walkSpeed, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsInInventory, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_bIsInInventory, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsIdle, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_bIsIdle, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(NewProp_bIsTurning, TEXT("Category"), TEXT("CharacterStates"));
 				MetaData->SetValue(NewProp_bIsTurning, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(NewProp_bIsAlert, TEXT("Category"), TEXT("CharacterStates"));
@@ -150,7 +164,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Ava")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x40DF09E6;
+			Guid.A = 0xD466F351;
 			Guid.B = 0x6F3DBB78;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;

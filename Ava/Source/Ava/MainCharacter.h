@@ -44,30 +44,41 @@ protected:
 	void LookUp(float value);
 
 	void Interact();
+	void OpenInventory();
+	void PushPull();
+	void StopPushPull();
+
 
 
 	// Our different Charcter states. 
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = CharacterStates)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterStates)
 		bool bIsSprinting;
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = CharacterStates)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterStates)
 		bool bIsRunning;
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = CharacterStates)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterStates)
 		bool bIsWalking;
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = CharacterStates)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterStates)
 		bool bIsJumping;
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = CharacterStates)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterStates)
 		bool bIsAlert;
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = CharacterStates)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterStates)
 		bool bIsTurning;
-
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterStates)
+		bool bIsIdle;
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = CharacterStates)
+		bool bIsInInventory;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterSpeeds)
 		float walkSpeed;
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = CharacterStates)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterSpeeds)
 		float runSpeed;
-	
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = CharacterStates)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterSpeeds)
 		float sprintSpeed;
-
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterSpeeds)
+		float turnRate;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterSpeeds)
+		float lookRate;
+private:
+	float deltaTime;
 	
 };
