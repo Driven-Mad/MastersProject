@@ -5,9 +5,9 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#ifndef AVA_AMainCharacter_generated_h
-	#include "AMainCharacter.h"
-#endif
 #ifndef AVA_AvaGameMode_generated_h
 	#include "AvaGameMode.h"
+#endif
+#ifndef AVA_MainCharacter_generated_h
+	#include "MainCharacter.h"
 #endif

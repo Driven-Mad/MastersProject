@@ -9,57 +9,26 @@
 #include "Ava.generated.dep.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCode1Ava() {}
-	void AAMainCharacter::StaticRegisterNativesAAMainCharacter()
-	{
-	}
-	IMPLEMENT_CLASS(AAMainCharacter, 3492955918);
 	void AAvaGameMode::StaticRegisterNativesAAvaGameMode()
 	{
 	}
 	IMPLEMENT_CLASS(AAvaGameMode, 1064099451);
+	void AMainCharacter::StaticRegisterNativesAMainCharacter()
+	{
+	}
+	IMPLEMENT_CLASS(AMainCharacter, 2087179241);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
-	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
+	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
+	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 
-	AVA_API class UClass* Z_Construct_UClass_AAMainCharacter_NoRegister();
-	AVA_API class UClass* Z_Construct_UClass_AAMainCharacter();
 	AVA_API class UClass* Z_Construct_UClass_AAvaGameMode_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_AAvaGameMode();
+	AVA_API class UClass* Z_Construct_UClass_AMainCharacter_NoRegister();
+	AVA_API class UClass* Z_Construct_UClass_AMainCharacter();
 	AVA_API class UPackage* Z_Construct_UPackage__Script_Ava();
-	UClass* Z_Construct_UClass_AAMainCharacter_NoRegister()
-	{
-		return AAMainCharacter::StaticClass();
-	}
-	UClass* Z_Construct_UClass_AAMainCharacter()
-	{
-		static UClass* OuterClass = NULL;
-		if (!OuterClass)
-		{
-			Z_Construct_UClass_ACharacter();
-			Z_Construct_UPackage__Script_Ava();
-			OuterClass = AAMainCharacter::StaticClass();
-			if (!(OuterClass->ClassFlags & CLASS_Constructed))
-			{
-				UObjectForceRegistration(OuterClass);
-				OuterClass->ClassFlags |= 0x20900080;
-
-
-				OuterClass->StaticLink();
-#if WITH_METADATA
-				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
-				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation"));
-				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("AMainCharacter.h"));
-				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("AMainCharacter.h"));
-				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
-#endif
-			}
-		}
-		check(OuterClass->GetClass());
-		return OuterClass;
-	}
-	static FCompiledInDefer Z_CompiledInDefer_UClass_AAMainCharacter(Z_Construct_UClass_AAMainCharacter, &AAMainCharacter::StaticClass, TEXT("AAMainCharacter"), false, nullptr, nullptr);
-	DEFINE_VTABLE_PTR_HELPER_CTOR(AAMainCharacter);
 	UClass* Z_Construct_UClass_AAvaGameMode_NoRegister()
 	{
 		return AAvaGameMode::StaticClass();
@@ -94,6 +63,85 @@ void EmptyLinkFunctionForGeneratedCode1Ava() {}
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AAvaGameMode(Z_Construct_UClass_AAvaGameMode, &AAvaGameMode::StaticClass, TEXT("AAvaGameMode"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AAvaGameMode);
+	UClass* Z_Construct_UClass_AMainCharacter_NoRegister()
+	{
+		return AMainCharacter::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AMainCharacter()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_ACharacter();
+			Z_Construct_UPackage__Script_Ava();
+			OuterClass = AMainCharacter::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_sprintSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("sprintSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(sprintSpeed, AMainCharacter), 0x0020080000020005);
+				UProperty* NewProp_runSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("runSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(runSpeed, AMainCharacter), 0x0020080000020005);
+				UProperty* NewProp_walkSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("walkSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(walkSpeed, AMainCharacter), 0x0020080000020005);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsTurning, AMainCharacter, bool);
+				UProperty* NewProp_bIsTurning = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsTurning"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsTurning, AMainCharacter), 0x0020080000020005, CPP_BOOL_PROPERTY_BITMASK(bIsTurning, AMainCharacter), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsAlert, AMainCharacter, bool);
+				UProperty* NewProp_bIsAlert = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsAlert"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsAlert, AMainCharacter), 0x0020080000020005, CPP_BOOL_PROPERTY_BITMASK(bIsAlert, AMainCharacter), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsJumping, AMainCharacter, bool);
+				UProperty* NewProp_bIsJumping = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsJumping"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsJumping, AMainCharacter), 0x0020080000020005, CPP_BOOL_PROPERTY_BITMASK(bIsJumping, AMainCharacter), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsWalking, AMainCharacter, bool);
+				UProperty* NewProp_bIsWalking = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsWalking"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsWalking, AMainCharacter), 0x0020080000020005, CPP_BOOL_PROPERTY_BITMASK(bIsWalking, AMainCharacter), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsRunning, AMainCharacter, bool);
+				UProperty* NewProp_bIsRunning = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsRunning"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsRunning, AMainCharacter), 0x0020080000020005, CPP_BOOL_PROPERTY_BITMASK(bIsRunning, AMainCharacter), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsSprinting, AMainCharacter, bool);
+				UProperty* NewProp_bIsSprinting = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsSprinting"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsSprinting, AMainCharacter), 0x0020080000020005, CPP_BOOL_PROPERTY_BITMASK(bIsSprinting, AMainCharacter), sizeof(bool), true);
+				UProperty* NewProp_FollowCamera = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("FollowCamera"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(FollowCamera, AMainCharacter), 0x00100000000a001d, Z_Construct_UClass_UCameraComponent_NoRegister());
+				UProperty* NewProp_CameraBoom = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraBoom"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(CameraBoom, AMainCharacter), 0x00100000000a001d, Z_Construct_UClass_USpringArmComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_sprintSpeed, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_sprintSpeed, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_runSpeed, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_runSpeed, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_walkSpeed, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_walkSpeed, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsTurning, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_bIsTurning, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsAlert, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_bIsAlert, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsJumping, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_bIsJumping, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsWalking, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_bIsWalking, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsRunning, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_bIsRunning, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsSprinting, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_bIsSprinting, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsSprinting, TEXT("ToolTip"), TEXT("Our different Charcter states."));
+				MetaData->SetValue(NewProp_FollowCamera, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_FollowCamera, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_FollowCamera, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_FollowCamera, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_CameraBoom, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_CameraBoom, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraBoom, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_CameraBoom, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AMainCharacter(Z_Construct_UClass_AMainCharacter, &AMainCharacter::StaticClass, TEXT("AMainCharacter"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AMainCharacter);
 	UPackage* Z_Construct_UPackage__Script_Ava()
 	{
 		static UPackage* ReturnPackage = NULL;
@@ -102,8 +150,8 @@ void EmptyLinkFunctionForGeneratedCode1Ava() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Ava")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x04E835B3;
-			Guid.B = 0xD04FD2A3;
+			Guid.A = 0x40DF09E6;
+			Guid.B = 0x6F3DBB78;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

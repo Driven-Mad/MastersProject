@@ -414,14 +414,14 @@
     <NMakeOutput>..\..\Binaries\HTML5\Ava-HTML5-Shipping.exe</NMakeOutput>
   </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\Ava\MainCharacter.cpp" />
+    <ClInclude Include="..\..\Source\Ava\MainCharacter.h" />
     <None Include="..\..\Ava.uproject" />
     <None Include="..\..\Source\Ava.Target.cs" />
     <None Include="..\..\Source\AvaEditor.Target.cs" />
     <None Include="..\..\Config\DefaultEditor.ini" />
     <None Include="..\..\Config\DefaultEngine.ini" />
     <None Include="..\..\Config\DefaultGame.ini" />
-    <ClCompile Include="..\..\Source\Ava\AMainCharacter.cpp" />
-    <ClInclude Include="..\..\Source\Ava\AMainCharacter.h" />
     <None Include="..\..\Source\Ava\Ava.Build.cs" />
     <ClCompile Include="..\..\Source\Ava\Ava.cpp" />
     <ClInclude Include="..\..\Source\Ava\Ava.h" />
