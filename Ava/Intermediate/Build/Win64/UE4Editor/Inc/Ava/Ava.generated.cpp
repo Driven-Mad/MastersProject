@@ -16,7 +16,7 @@ void EmptyLinkFunctionForGeneratedCode1Ava() {}
 	void AMainCharacter::StaticRegisterNativesAMainCharacter()
 	{
 	}
-	IMPLEMENT_CLASS(AMainCharacter, 1804296399);
+	IMPLEMENT_CLASS(AMainCharacter, 2915371689);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
@@ -123,6 +123,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(NewProp_runSpeed, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(NewProp_walkSpeed, TEXT("Category"), TEXT("CharacterSpeeds"));
 				MetaData->SetValue(NewProp_walkSpeed, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_walkSpeed, TEXT("ToolTip"), TEXT("< Window for SDL"));
 				MetaData->SetValue(NewProp_bIsInInventory, TEXT("Category"), TEXT("CharacterStates"));
 				MetaData->SetValue(NewProp_bIsInInventory, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(NewProp_bIsIdle, TEXT("Category"), TEXT("CharacterStates"));
@@ -164,7 +165,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Ava")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xD466F351;
+			Guid.A = 0xBA09B8EF;
 			Guid.B = 0x6F3DBB78;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;

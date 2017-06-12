@@ -2,7 +2,7 @@
 	"TargetName" : "AvaEditor",
 	"Platform" : "Win64",
 	"Configuration" : "Development",
-	"BuildId" : "b313fefc-2f09-43a7-adcb-29690a01e78b",
+	"BuildId" : "c149301d-bc7c-4340-a8c7-f28a2baf4b7a",
 	"Version" : 
 	{
 		"MajorVersion" : 4,
@@ -15,15 +15,15 @@
 	"BuildProducts" :
 	[
 		{
-			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-Ava-9153.dll",
+			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-Ava.dll",
 			"Type" : "DynamicLibrary"
 		},
 		{
-			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-Ava-9153.pdb",
+			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-Ava.pdb",
 			"Type" : "SymbolFile"
 		},
 		{
-			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-Ava-9153.lib",
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-Ava.lib",
 			"Type" : "ImportLibrary"
 		}
 	],
@@ -119,6 +119,10 @@
 		},
 		{
 			"Path" : "$(EngineDir)/Plugins/Runtime/ExampleDeviceProfileSelector/ExampleDeviceProfileSelector.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/HoudiniEngine/HoudiniEngine.uplugin",
 			"Type" : "UFS"
 		},
 		{
