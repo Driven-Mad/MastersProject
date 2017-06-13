@@ -13,19 +13,78 @@ void EmptyLinkFunctionForGeneratedCode1Ava() {}
 	{
 	}
 	IMPLEMENT_CLASS(AAvaGameMode, 1064099451);
+static class UEnum* StatueDataVariables_StaticEnum()
+{
+	extern AVA_API class UPackage* Z_Construct_UPackage__Script_Ava();
+	static class UEnum* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern AVA_API class UEnum* Z_Construct_UEnum_Ava_StatueDataVariables();
+		Singleton = GetStaticEnum(Z_Construct_UEnum_Ava_StatueDataVariables, Z_Construct_UPackage__Script_Ava(), TEXT("StatueDataVariables"));
+	}
+	return Singleton;
+}
+static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_StatueDataVariables(StatueDataVariables_StaticEnum, TEXT("/Script/Ava"), TEXT("StatueDataVariables"), false, nullptr, nullptr);
+static class UEnum* Statue_StaticEnum()
+{
+	extern AVA_API class UPackage* Z_Construct_UPackage__Script_Ava();
+	static class UEnum* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern AVA_API class UEnum* Z_Construct_UEnum_Ava_Statue();
+		Singleton = GetStaticEnum(Z_Construct_UEnum_Ava_Statue, Z_Construct_UPackage__Script_Ava(), TEXT("Statue"));
+	}
+	return Singleton;
+}
+static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Statue(Statue_StaticEnum, TEXT("/Script/Ava"), TEXT("Statue"), false, nullptr, nullptr);
+static class UEnum* ItemDataVariables_StaticEnum()
+{
+	extern AVA_API class UPackage* Z_Construct_UPackage__Script_Ava();
+	static class UEnum* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern AVA_API class UEnum* Z_Construct_UEnum_Ava_ItemDataVariables();
+		Singleton = GetStaticEnum(Z_Construct_UEnum_Ava_ItemDataVariables, Z_Construct_UPackage__Script_Ava(), TEXT("ItemDataVariables"));
+	}
+	return Singleton;
+}
+static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ItemDataVariables(ItemDataVariables_StaticEnum, TEXT("/Script/Ava"), TEXT("ItemDataVariables"), false, nullptr, nullptr);
+static class UEnum* Item_StaticEnum()
+{
+	extern AVA_API class UPackage* Z_Construct_UPackage__Script_Ava();
+	static class UEnum* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern AVA_API class UEnum* Z_Construct_UEnum_Ava_Item();
+		Singleton = GetStaticEnum(Z_Construct_UEnum_Ava_Item, Z_Construct_UPackage__Script_Ava(), TEXT("Item"));
+	}
+	return Singleton;
+}
+static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TEXT("/Script/Ava"), TEXT("Item"), false, nullptr, nullptr);
+	void ADataFactory::StaticRegisterNativesADataFactory()
+	{
+	}
+	IMPLEMENT_CLASS(ADataFactory, 2503768525);
 	void AMainCharacter::StaticRegisterNativesAMainCharacter()
 	{
 	}
-	IMPLEMENT_CLASS(AMainCharacter, 2915371689);
+	IMPLEMENT_CLASS(AMainCharacter, 645912772);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
+	ENGINE_API class UClass* Z_Construct_UClass_AActor();
 	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 
 	AVA_API class UClass* Z_Construct_UClass_AAvaGameMode_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_AAvaGameMode();
+	AVA_API class UEnum* Z_Construct_UEnum_Ava_StatueDataVariables();
+	AVA_API class UEnum* Z_Construct_UEnum_Ava_Statue();
+	AVA_API class UEnum* Z_Construct_UEnum_Ava_ItemDataVariables();
+	AVA_API class UEnum* Z_Construct_UEnum_Ava_Item();
+	AVA_API class UClass* Z_Construct_UClass_ADataFactory_NoRegister();
+	AVA_API class UClass* Z_Construct_UClass_ADataFactory();
 	AVA_API class UClass* Z_Construct_UClass_AMainCharacter_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_AMainCharacter();
 	AVA_API class UPackage* Z_Construct_UPackage__Script_Ava();
@@ -63,6 +122,172 @@ void EmptyLinkFunctionForGeneratedCode1Ava() {}
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AAvaGameMode(Z_Construct_UClass_AAvaGameMode, &AAvaGameMode::StaticClass, TEXT("AAvaGameMode"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AAvaGameMode);
+	UEnum* Z_Construct_UEnum_Ava_StatueDataVariables()
+	{
+		UPackage* Outer=Z_Construct_UPackage__Script_Ava();
+		extern uint32 Get_Z_Construct_UEnum_Ava_StatueDataVariables_CRC();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("StatueDataVariables"), 0, Get_Z_Construct_UEnum_Ava_StatueDataVariables_CRC(), false);
+		if (!ReturnEnum)
+		{
+			ReturnEnum = new(EC_InternalUseOnlyConstructor, Outer, TEXT("StatueDataVariables"), RF_Public|RF_Transient|RF_MarkAsNative) UEnum(FObjectInitializer());
+			TArray<TPair<FName, uint8>> EnumNames;
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("StatueDataVariables::statueMeshFilepath")), 0));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("StatueDataVariables::statueName")), 1));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("StatueDataVariables::statueEnumIdentifier")), 2));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("StatueDataVariables::StatueDataVariables_MAX")), 3));
+			ReturnEnum->SetEnums(EnumNames, UEnum::ECppForm::EnumClass);
+			ReturnEnum->CppType = TEXT("StatueDataVariables");
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnEnum->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnEnum, TEXT("BlueprintType"), TEXT("true"));
+			MetaData->SetValue(ReturnEnum, TEXT("ModuleRelativePath"), TEXT("DataFactory.h"));
+			MetaData->SetValue(ReturnEnum, TEXT("statueEnumIdentifier.DisplayName"), TEXT("statueEnumIdentifier"));
+			MetaData->SetValue(ReturnEnum, TEXT("statueMeshFilepath.DisplayName"), TEXT("statueMeshFilepath"));
+			MetaData->SetValue(ReturnEnum, TEXT("statueName.DisplayName"), TEXT("statueName"));
+			MetaData->SetValue(ReturnEnum, TEXT("ToolTip"), TEXT("@brief Data variable enums for our items to be used with TMaps"));
+#endif
+		}
+		return ReturnEnum;
+	}
+	uint32 Get_Z_Construct_UEnum_Ava_StatueDataVariables_CRC() { return 1718839979U; }
+	UEnum* Z_Construct_UEnum_Ava_Statue()
+	{
+		UPackage* Outer=Z_Construct_UPackage__Script_Ava();
+		extern uint32 Get_Z_Construct_UEnum_Ava_Statue_CRC();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("Statue"), 0, Get_Z_Construct_UEnum_Ava_Statue_CRC(), false);
+		if (!ReturnEnum)
+		{
+			ReturnEnum = new(EC_InternalUseOnlyConstructor, Outer, TEXT("Statue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnum(FObjectInitializer());
+			TArray<TPair<FName, uint8>> EnumNames;
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Statue::StatueGreen")), 0));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Statue::StatueBlue")), 1));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Statue::StatueWhite")), 2));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Statue::StatueRed")), 3));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Statue::StatueYellow")), 4));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Statue::StatueBlack")), 5));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Statue::Statue_MAX")), 6));
+			ReturnEnum->SetEnums(EnumNames, UEnum::ECppForm::EnumClass);
+			ReturnEnum->CppType = TEXT("Statue");
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnEnum->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnEnum, TEXT("BlueprintType"), TEXT("true"));
+			MetaData->SetValue(ReturnEnum, TEXT("ModuleRelativePath"), TEXT("DataFactory.h"));
+			MetaData->SetValue(ReturnEnum, TEXT("StatueBlack.DisplayName"), TEXT("StatueBlack"));
+			MetaData->SetValue(ReturnEnum, TEXT("StatueBlue.DisplayName"), TEXT("StatueBlue"));
+			MetaData->SetValue(ReturnEnum, TEXT("StatueGreen.DisplayName"), TEXT("StatueGreen"));
+			MetaData->SetValue(ReturnEnum, TEXT("StatueRed.DisplayName"), TEXT("StatueRed"));
+			MetaData->SetValue(ReturnEnum, TEXT("StatueWhite.DisplayName"), TEXT("StatueWhite"));
+			MetaData->SetValue(ReturnEnum, TEXT("StatueYellow.DisplayName"), TEXT("StatueYellow"));
+			MetaData->SetValue(ReturnEnum, TEXT("ToolTip"), TEXT("@brief enums for our statues to be used with TMaps"));
+#endif
+		}
+		return ReturnEnum;
+	}
+	uint32 Get_Z_Construct_UEnum_Ava_Statue_CRC() { return 3149838819U; }
+	UEnum* Z_Construct_UEnum_Ava_ItemDataVariables()
+	{
+		UPackage* Outer=Z_Construct_UPackage__Script_Ava();
+		extern uint32 Get_Z_Construct_UEnum_Ava_ItemDataVariables_CRC();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("ItemDataVariables"), 0, Get_Z_Construct_UEnum_Ava_ItemDataVariables_CRC(), false);
+		if (!ReturnEnum)
+		{
+			ReturnEnum = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ItemDataVariables"), RF_Public|RF_Transient|RF_MarkAsNative) UEnum(FObjectInitializer());
+			TArray<TPair<FName, uint8>> EnumNames;
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("ItemDataVariables::itemMeshFilepath")), 0));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("ItemDataVariables::itemSpriteFilepath")), 1));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("ItemDataVariables::itemName")), 2));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("ItemDataVariables::itemDescription")), 3));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("ItemDataVariables::itemEnumIdentifier")), 4));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("ItemDataVariables::ItemDataVariables_MAX")), 5));
+			ReturnEnum->SetEnums(EnumNames, UEnum::ECppForm::EnumClass);
+			ReturnEnum->CppType = TEXT("ItemDataVariables");
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnEnum->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnEnum, TEXT("BlueprintType"), TEXT("true"));
+			MetaData->SetValue(ReturnEnum, TEXT("itemDescription.DisplayName"), TEXT("itemDescription"));
+			MetaData->SetValue(ReturnEnum, TEXT("itemEnumIdentifier.DisplayName"), TEXT("itemEnumIdentifier"));
+			MetaData->SetValue(ReturnEnum, TEXT("itemMeshFilepath.DisplayName"), TEXT("itemMeshFilepath"));
+			MetaData->SetValue(ReturnEnum, TEXT("itemName.DisplayName"), TEXT("itemName"));
+			MetaData->SetValue(ReturnEnum, TEXT("itemSpriteFilepath.DisplayName"), TEXT("itemSrpiteFilepath"));
+			MetaData->SetValue(ReturnEnum, TEXT("ModuleRelativePath"), TEXT("DataFactory.h"));
+			MetaData->SetValue(ReturnEnum, TEXT("ToolTip"), TEXT("@brief Data variable enums for our items to be used with TMaps"));
+#endif
+		}
+		return ReturnEnum;
+	}
+	uint32 Get_Z_Construct_UEnum_Ava_ItemDataVariables_CRC() { return 309101387U; }
+	UEnum* Z_Construct_UEnum_Ava_Item()
+	{
+		UPackage* Outer=Z_Construct_UPackage__Script_Ava();
+		extern uint32 Get_Z_Construct_UEnum_Ava_Item_CRC();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("Item"), 0, Get_Z_Construct_UEnum_Ava_Item_CRC(), false);
+		if (!ReturnEnum)
+		{
+			ReturnEnum = new(EC_InternalUseOnlyConstructor, Outer, TEXT("Item"), RF_Public|RF_Transient|RF_MarkAsNative) UEnum(FObjectInitializer());
+			TArray<TPair<FName, uint8>> EnumNames;
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll01")), 0));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll02")), 1));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll03")), 2));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll04")), 3));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll05")), 4));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll06")), 5));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll07")), 6));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll08")), 7));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Bracelet")), 8));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Item_MAX")), 9));
+			ReturnEnum->SetEnums(EnumNames, UEnum::ECppForm::EnumClass);
+			ReturnEnum->CppType = TEXT("Item");
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnEnum->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnEnum, TEXT("BlueprintType"), TEXT("true"));
+			MetaData->SetValue(ReturnEnum, TEXT("Bracelet.DisplayName"), TEXT("Bracelet"));
+			MetaData->SetValue(ReturnEnum, TEXT("ModuleRelativePath"), TEXT("DataFactory.h"));
+			MetaData->SetValue(ReturnEnum, TEXT("Scroll01.DisplayName"), TEXT("Scroll01"));
+			MetaData->SetValue(ReturnEnum, TEXT("Scroll02.DisplayName"), TEXT("Scroll02"));
+			MetaData->SetValue(ReturnEnum, TEXT("Scroll03.DisplayName"), TEXT("Scroll03"));
+			MetaData->SetValue(ReturnEnum, TEXT("Scroll04.DisplayName"), TEXT("Scroll04"));
+			MetaData->SetValue(ReturnEnum, TEXT("Scroll05.DisplayName"), TEXT("Scroll05"));
+			MetaData->SetValue(ReturnEnum, TEXT("Scroll06.DisplayName"), TEXT("Scroll06"));
+			MetaData->SetValue(ReturnEnum, TEXT("Scroll07.DisplayName"), TEXT("Scroll07"));
+			MetaData->SetValue(ReturnEnum, TEXT("Scroll08.DisplayName"), TEXT("Scroll08"));
+			MetaData->SetValue(ReturnEnum, TEXT("ToolTip"), TEXT("@brief enums for items to be used with TMaps"));
+#endif
+		}
+		return ReturnEnum;
+	}
+	uint32 Get_Z_Construct_UEnum_Ava_Item_CRC() { return 1758199059U; }
+	UClass* Z_Construct_UClass_ADataFactory_NoRegister()
+	{
+		return ADataFactory::StaticClass();
+	}
+	UClass* Z_Construct_UClass_ADataFactory()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_Ava();
+			OuterClass = ADataFactory::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("DataFactory.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("DataFactory.h"));
+				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ADataFactory(Z_Construct_UClass_ADataFactory, &ADataFactory::StaticClass, TEXT("ADataFactory"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(ADataFactory);
 	UClass* Z_Construct_UClass_AMainCharacter_NoRegister()
 	{
 		return AMainCharacter::StaticClass();
@@ -115,40 +340,53 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
 				MetaData->SetValue(NewProp_lookRate, TEXT("Category"), TEXT("CharacterSpeeds"));
 				MetaData->SetValue(NewProp_lookRate, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_lookRate, TEXT("ToolTip"), TEXT("@brief CharacterState - characters camera look speed"));
 				MetaData->SetValue(NewProp_turnRate, TEXT("Category"), TEXT("CharacterSpeeds"));
 				MetaData->SetValue(NewProp_turnRate, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_turnRate, TEXT("ToolTip"), TEXT("@brief CharacterState - characters camera turn speed"));
 				MetaData->SetValue(NewProp_sprintSpeed, TEXT("Category"), TEXT("CharacterSpeeds"));
 				MetaData->SetValue(NewProp_sprintSpeed, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_sprintSpeed, TEXT("ToolTip"), TEXT("@brief CharacterState - Characters sprint speed."));
 				MetaData->SetValue(NewProp_runSpeed, TEXT("Category"), TEXT("CharacterSpeeds"));
 				MetaData->SetValue(NewProp_runSpeed, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_runSpeed, TEXT("ToolTip"), TEXT("@brief CharacterSppeds - Characters run speed."));
 				MetaData->SetValue(NewProp_walkSpeed, TEXT("Category"), TEXT("CharacterSpeeds"));
 				MetaData->SetValue(NewProp_walkSpeed, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_walkSpeed, TEXT("ToolTip"), TEXT("< Window for SDL"));
+				MetaData->SetValue(NewProp_walkSpeed, TEXT("ToolTip"), TEXT("CHARACTER SPEEDS\n--------------------------------------------------------------------------------------------------------------------------\n----------------------------------------------------------------------------------------------------------------------\n@brief CharacterSppeds - Characters walk speed."));
 				MetaData->SetValue(NewProp_bIsInInventory, TEXT("Category"), TEXT("CharacterStates"));
 				MetaData->SetValue(NewProp_bIsInInventory, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsInInventory, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is In Invetory."));
 				MetaData->SetValue(NewProp_bIsIdle, TEXT("Category"), TEXT("CharacterStates"));
 				MetaData->SetValue(NewProp_bIsIdle, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsIdle, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is Idle"));
 				MetaData->SetValue(NewProp_bIsTurning, TEXT("Category"), TEXT("CharacterStates"));
 				MetaData->SetValue(NewProp_bIsTurning, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsTurning, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is Turning"));
 				MetaData->SetValue(NewProp_bIsAlert, TEXT("Category"), TEXT("CharacterStates"));
 				MetaData->SetValue(NewProp_bIsAlert, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsAlert, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is Alert"));
 				MetaData->SetValue(NewProp_bIsJumping, TEXT("Category"), TEXT("CharacterStates"));
 				MetaData->SetValue(NewProp_bIsJumping, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsJumping, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is Jumping"));
 				MetaData->SetValue(NewProp_bIsWalking, TEXT("Category"), TEXT("CharacterStates"));
 				MetaData->SetValue(NewProp_bIsWalking, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsWalking, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is Walking"));
 				MetaData->SetValue(NewProp_bIsRunning, TEXT("Category"), TEXT("CharacterStates"));
 				MetaData->SetValue(NewProp_bIsRunning, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsRunning, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is Running"));
 				MetaData->SetValue(NewProp_bIsSprinting, TEXT("Category"), TEXT("CharacterStates"));
 				MetaData->SetValue(NewProp_bIsSprinting, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_bIsSprinting, TEXT("ToolTip"), TEXT("Our different Charcter states."));
+				MetaData->SetValue(NewProp_bIsSprinting, TEXT("ToolTip"), TEXT("CHARACTER STATES\n--------------------------------------------------------------------------------------------------------------------------\n----------------------------------------------------------------------------------------------------------------------\n@brief CharacterState - Character is Sprinting"));
 				MetaData->SetValue(NewProp_FollowCamera, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_FollowCamera, TEXT("Category"), TEXT("Camera"));
 				MetaData->SetValue(NewProp_FollowCamera, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_FollowCamera, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_FollowCamera, TEXT("ToolTip"), TEXT("@brief The camera that we'll be using to view our scene from."));
 				MetaData->SetValue(NewProp_CameraBoom, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_CameraBoom, TEXT("Category"), TEXT("Camera"));
 				MetaData->SetValue(NewProp_CameraBoom, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_CameraBoom, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_CameraBoom, TEXT("ToolTip"), TEXT("@brief The camaera boom which will stick our camera at a length from our character while also being diverse to\nspring back and forth depending on collision."));
 #endif
 			}
 		}
@@ -165,8 +403,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Ava")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xBA09B8EF;
-			Guid.B = 0x6F3DBB78;
+			Guid.A = 0x25048530;
+			Guid.B = 0x8E29D498;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

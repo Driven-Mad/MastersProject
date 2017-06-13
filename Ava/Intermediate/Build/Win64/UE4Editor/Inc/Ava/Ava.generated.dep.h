@@ -8,6 +8,9 @@
 #ifndef AVA_AvaGameMode_generated_h
 	#include "AvaGameMode.h"
 #endif
+#ifndef AVA_DataFactory_generated_h
+	#include "DataFactory.h"
+#endif
 #ifndef AVA_MainCharacter_generated_h
 	#include "MainCharacter.h"
 #endif
