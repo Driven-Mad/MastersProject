@@ -14,3 +14,6 @@
 #ifndef AVA_MainCharacter_generated_h
 	#include "MainCharacter.h"
 #endif
+#ifndef AVA_MainMenu_generated_h
+	#include "MainMenu.h"
+#endif

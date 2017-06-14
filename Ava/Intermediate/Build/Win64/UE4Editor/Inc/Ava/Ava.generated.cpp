@@ -69,6 +69,11 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	{
 	}
 	IMPLEMENT_CLASS(AMainCharacter, 645912772);
+	void UMainMenu::StaticRegisterNativesUMainMenu()
+	{
+		FNativeFunctionRegistrar::RegisterFunction(UMainMenu::StaticClass(), "Play",(Native)&UMainMenu::execPlay);
+	}
+	IMPLEMENT_CLASS(UMainMenu, 3986694537);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
@@ -76,6 +81,7 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
+	UMG_API class UClass* Z_Construct_UClass_UUserWidget();
 
 	AVA_API class UClass* Z_Construct_UClass_AAvaGameMode_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_AAvaGameMode();
@@ -87,6 +93,9 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	AVA_API class UClass* Z_Construct_UClass_ADataFactory();
 	AVA_API class UClass* Z_Construct_UClass_AMainCharacter_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_AMainCharacter();
+	AVA_API class UFunction* Z_Construct_UFunction_UMainMenu_Play();
+	AVA_API class UClass* Z_Construct_UClass_UMainMenu_NoRegister();
+	AVA_API class UClass* Z_Construct_UClass_UMainMenu();
 	AVA_API class UPackage* Z_Construct_UPackage__Script_Ava();
 	UClass* Z_Construct_UClass_AAvaGameMode_NoRegister()
 	{
@@ -395,6 +404,56 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AMainCharacter(Z_Construct_UClass_AMainCharacter, &AMainCharacter::StaticClass, TEXT("AMainCharacter"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AMainCharacter);
+	UFunction* Z_Construct_UFunction_UMainMenu_Play()
+	{
+		UObject* Outer=Z_Construct_UClass_UMainMenu();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("Play"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("MyUUserWidgetClass"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("MainMenu.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_UMainMenu_NoRegister()
+	{
+		return UMainMenu::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UMainMenu()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UUserWidget();
+			Z_Construct_UPackage__Script_Ava();
+			OuterClass = UMainMenu::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20901080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_UMainMenu_Play());
+
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UMainMenu_Play(), "Play"); // 1071271182
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("MainMenu.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("MainMenu.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UMainMenu(Z_Construct_UClass_UMainMenu, &UMainMenu::StaticClass, TEXT("UMainMenu"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UMainMenu);
 	UPackage* Z_Construct_UPackage__Script_Ava()
 	{
 		static UPackage* ReturnPackage = NULL;
@@ -403,8 +462,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Ava")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x25048530;
-			Guid.B = 0x8E29D498;
+			Guid.A = 0xC2052282;
+			Guid.B = 0x702A204A;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

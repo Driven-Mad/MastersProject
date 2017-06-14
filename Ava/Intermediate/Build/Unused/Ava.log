@@ -1,32 +1,11 @@
-﻿  Cleaning AvaEditor Binaries...
-  Creating makefile for AvaEditor (no existing makefile)
-  Performing full C++ include scan (no include cache file)
+﻿  Creating makefile for hot reloading AvaEditor (working set of source files changed)
+  Compiling game modules for hot reload
   Parsing headers for AvaEditor
     Running UnrealHeaderTool "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Ava.uproject" "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Intermediate\Build\Win64\AvaEditor\Development\AvaEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for AvaEditor in 3.4624359 seconds
-  Deleting old hot reload file: "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Binaries\Win64\UE4Editor-Ava-3892.dll".
-  Deleting old hot reload file: "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Binaries\Win64\UE4Editor-Ava-3892.pdb".
-  Deleting old hot reload file: "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Binaries\Win64\UE4Editor-Ava-4481.dll".
-  Deleting old hot reload file: "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Binaries\Win64\UE4Editor-Ava-4481.pdb".
-  Deleting old hot reload file: "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Binaries\Win64\UE4Editor-Ava-5957.dll".
-  Deleting old hot reload file: "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Binaries\Win64\UE4Editor-Ava-5957.pdb".
-  Deleting old hot reload file: "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Binaries\Win64\UE4Editor-Ava-7911.dll".
-  Deleting old hot reload file: "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Binaries\Win64\UE4Editor-Ava-7911.pdb".
-  Deleting old hot reload file: "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Binaries\Win64\UE4Editor-Ava-9480.dll".
-  Deleting old hot reload file: "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Binaries\Win64\UE4Editor-Ava-9480.pdb".
-  Performing 9 actions (9 in parallel)
-  [2/9] Resource PCLaunch.rc
-  [3/9] Resource ModuleVersionResource.rc.inl
-  PCH.Ava.h.cpp
-  Ava.cpp
-  MainCharacter.cpp
-  AvaGameMode.cpp
-  DataFactory.cpp
+  Reflection code generated for AvaEditor in 4.8811242 seconds
+  Performing 3 actions (9 in parallel)
+  MainMenu.cpp
   Ava.generated.cpp
-C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Source\Ava\MainCharacter.cpp(34): warning C4996: 'USceneComponent::AttachTo': This function is deprecated, please use AttachToComponent instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
-  C:\Program Files\Epic Games\4.12\Engine\Source\Runtime\Engine\Classes\Components/SceneComponent.h(607): note: see declaration of 'USceneComponent::AttachTo'
-C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Source\Ava\MainCharacter.cpp(41): warning C4996: 'USceneComponent::AttachTo': This function is deprecated, please use AttachToComponent instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
-  C:\Program Files\Epic Games\4.12\Engine\Source\Runtime\Engine\Classes\Components/SceneComponent.h(607): note: see declaration of 'USceneComponent::AttachTo'
-  [9/9] Link UE4Editor-Ava.dll
-     Creating library C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Ava.lib and object C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Ava.exp
-  Total build time: 43.84 seconds
+  [3/3] Link UE4Editor-Ava-7306.dll
+     Creating library C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Ava-7306.lib and object C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Ava-7306.exp
+  Total build time: 17.80 seconds

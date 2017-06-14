@@ -406,6 +406,8 @@
     <NMakeOutput>..\..\Binaries\HTML5\Ava-HTML5-Shipping.exe</NMakeOutput>
   </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\Ava\MainMenu.cpp" />
+    <ClInclude Include="..\..\Source\Ava\MainMenu.h" />
     <None Include="..\..\Ava.uproject" />
     <None Include="..\..\Source\Ava.Target.cs" />
     <None Include="..\..\Source\AvaEditor.Target.cs" />
