@@ -45,6 +45,7 @@ LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
 <<<<<<< HEAD
+<<<<<<< HEAD
 [2017.06.14-10.34.32:262][  0]LogInit: Selected Device Profile: [Windows]
 [2017.06.14-10.34.32:262][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
 [2017.06.14-10.34.32:278][  0]LogInit: Computer: PC41468
@@ -1221,6 +1222,8 @@ LogInit: Object subsystem initialized
 [2017.06.14-11.47.34:818][655]LogExit: Exiting.
 [2017.06.14-11.47.34:827][655]Log file closed, 06/14/17 12:47:34
 =======
+=======
+>>>>>>> 07aed5dd75b279538227636ea0660ed46e0bf821
 [2017.06.14-11.25.57:765][  0]LogInit: Selected Device Profile: [Windows]
 [2017.06.14-11.25.57:765][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
 [2017.06.14-11.25.57:777][  0]LogInit: Computer: PC42640
@@ -1789,4 +1792,7 @@ LogInit: Object subsystem initialized
 [2017.06.14-11.45.06:762][ 17]LogModuleManager: Shutting down and abandoning module PakFile (1)
 [2017.06.14-11.45.06:768][ 17]LogExit: Exiting.
 [2017.06.14-11.45.06:780][ 17]Log file closed, 06/14/17 12:45:06
+<<<<<<< HEAD
+>>>>>>> 07aed5dd75b279538227636ea0660ed46e0bf821
+=======
 >>>>>>> 07aed5dd75b279538227636ea0660ed46e0bf821
