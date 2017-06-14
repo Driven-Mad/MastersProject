@@ -3,11 +3,15 @@
 #include "Ava.h"
 #include "MainMenu.h"
 
+
 void UMainMenu::Play()
 {
-	//UGameplayStatics::OpenLevel(GetWorld(), "PalaceLevel");
+	UGameplayStatics::OpenLevel(UUserWidget::GetWorld(), "PalaceLevel");
+	RemoveFromParent();
 }
 
-
-
-
+void UMainMenu::Construct()
+{
+	playerReference = Cast<AMainCharacter>(UGameplayStatics::GetPlayerController(UUserWidget::GetWorld(), 0));
+	//playerReference = Cast<AMainCharacter>( GetOwningPlayer());
+}
