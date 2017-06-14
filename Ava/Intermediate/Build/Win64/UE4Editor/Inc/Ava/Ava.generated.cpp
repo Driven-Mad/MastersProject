@@ -75,6 +75,10 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 		FNativeFunctionRegistrar::RegisterFunction(UMainMenu::StaticClass(), "Play",(Native)&UMainMenu::execPlay);
 	}
 	IMPLEMENT_CLASS(UMainMenu, 1990416401);
+	void AStatueObject::StaticRegisterNativesAStatueObject()
+	{
+	}
+	IMPLEMENT_CLASS(AStatueObject, 3768673617);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
@@ -98,6 +102,8 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	AVA_API class UFunction* Z_Construct_UFunction_UMainMenu_Play();
 	AVA_API class UClass* Z_Construct_UClass_UMainMenu_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_UMainMenu();
+	AVA_API class UClass* Z_Construct_UClass_AStatueObject_NoRegister();
+	AVA_API class UClass* Z_Construct_UClass_AStatueObject();
 	AVA_API class UPackage* Z_Construct_UPackage__Script_Ava();
 	UClass* Z_Construct_UClass_AAvaGameMode_NoRegister()
 	{
@@ -475,6 +481,38 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UMainMenu(Z_Construct_UClass_UMainMenu, &UMainMenu::StaticClass, TEXT("UMainMenu"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UMainMenu);
+	UClass* Z_Construct_UClass_AStatueObject_NoRegister()
+	{
+		return AStatueObject::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AStatueObject()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_Ava();
+			OuterClass = AStatueObject::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("StatueObject.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("StatueObject.h"));
+				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AStatueObject(Z_Construct_UClass_AStatueObject, &AStatueObject::StaticClass, TEXT("AStatueObject"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AStatueObject);
 	UPackage* Z_Construct_UPackage__Script_Ava()
 	{
 		static UPackage* ReturnPackage = NULL;
@@ -483,8 +521,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Ava")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x95D2D9D9;
-			Guid.B = 0xC5A0179C;
+			Guid.A = 0xBC152BC2;
+			Guid.B = 0x9B253B85;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

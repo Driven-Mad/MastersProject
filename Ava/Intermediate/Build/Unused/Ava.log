@@ -1,1 +1,9 @@
-﻿  Target is up to date
+﻿  Parsing headers for AvaEditor
+    Running UnrealHeaderTool "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Ava.uproject" "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Intermediate\Build\Win64\AvaEditor\Development\AvaEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for AvaEditor in 5.5287913 seconds
+  Performing 3 actions (9 in parallel)
+  StatueObject.cpp
+  Ava.generated.cpp
+  [3/3] Link UE4Editor-Ava.dll
+     Creating library C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Ava.lib and object C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Ava.exp
+  Total build time: 16.32 seconds
