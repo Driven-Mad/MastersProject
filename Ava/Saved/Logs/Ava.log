@@ -366,4 +366,856 @@ LogInit: Object subsystem initialized
 [2017.06.14-10.35.19:730][172]LightingResults: New page: Lighting Build
 [2017.06.14-10.35.19:817][172]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
 [2017.06.14-10.35.19:842][172]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.06.14-10.35.19:937][172]MapCheck:
+[2017.06.14-10.35.19:937][172]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 95.131ms to complete.
+[2017.06.14-10.35.19:938][172]LogFileHelpers: Loading map 'PalaceLevel' took 0.216
+[2017.06.14-10.35.24:908][601]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_MatPreviewMesh_02)
+[2017.06.14-10.35.27:336][804]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Maps/PalaceLevel" FILE="D:/RekaKadar/For Rekka/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.06.14-10.35.27:941][804]LogSavePackage: Save=586.76ms
+[2017.06.14-10.35.27:941][804]LogSavePackage: Moving 'D:/RekaKadar/For Rekka/MastersProject/Ava/Saved/PalaceLevel584777214F2D5ADC4B8C0B828674D78C.tmp' to 'D:/RekaKadar/For Rekka/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap'
+[2017.06.14-10.35.27:947][804]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/For Rekka/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap
+[2017.06.14-10.39.56:877][182]Cmd: EDCALLBACK SURFPROPS
+[2017.06.14-10.39.58:486][320]Cmd: EDCALLBACK SURFPROPS
+[2017.06.14-10.40.00:080][437]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-10.40.00:164][437]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-10.40.00:171][437]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-10.40.00:197][437]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_1, compiling. 
+[2017.06.14-10.40.01:087][481]MaterialEditorStats: Info Base pass shader with static lighting: 52 instructions
+[2017.06.14-10.40.01:087][481]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 23 instructions
+[2017.06.14-10.40.01:087][481]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.06.14-10.40.01:087][481]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.06.14-11.14.38:357][170]AssetReimport: New page: Outstanding source content changes 12:14:38
+[2017.06.14-11.14.38:360][170]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:/RekaKadar/For Rekka/MastersProject/Ava/Content/Ava/Textures/Green Room/Wall.png)
+[2017.06.14-11.14.51:040][171]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Textures/Green_Room/Wall" FILE="D:/RekaKadar/For Rekka/MastersProject/Ava/Content/Ava/Textures/Green_Room/Wall.uasset" SILENT=true
+[2017.06.14-11.14.53:009][171]LogSavePackage: Save=1967.76ms
+[2017.06.14-11.14.53:009][171]LogSavePackage: Moving 'D:/RekaKadar/For Rekka/MastersProject/Ava/Saved/WallCBEE205848C5B46FA461B4811F8C8650.tmp' to 'D:/RekaKadar/For Rekka/MastersProject/Ava/Content/Ava/Textures/Green_Room/Wall.uasset'
+[2017.06.14-11.14.53:013][171]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/For Rekka/MastersProject/Ava/Content/Ava/Textures/Green_Room/Wall.uasset
+[2017.06.14-11.14.56:016][289]AssetReimport: Info Importing new asset /Game/Ava/Textures/Green_Room/Wall.
+[2017.06.14-11.16.37:843][672]AssetReimport: New page: Outstanding source content changes 12:16:37
+[2017.06.14-11.16.42:446][793]AssetReimport: Info Attempting to delete Wall (its source file has been removed).
+[2017.06.14-11.19.06:765][386]AssetReimport: New page: Outstanding source content changes 12:19:06
+[2017.06.14-11.19.06:766][386]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:/RekaKadar/For Rekka/MastersProject/Ava/Content/Ava/Textures/Green Room/Wall.png)
+[2017.06.14-11.19.06:858][387]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Textures/Green_Room/Wall" FILE="D:/RekaKadar/For Rekka/MastersProject/Ava/Content/Ava/Textures/Green_Room/Wall.uasset" SILENT=true
+[2017.06.14-11.19.06:873][387]LogSavePackage: Save=13.80ms
+[2017.06.14-11.19.06:873][387]LogSavePackage: Moving 'D:/RekaKadar/For Rekka/MastersProject/Ava/Saved/Wall0B548A9F4DC9E6506DD0CEB1885CAD3D.tmp' to 'D:/RekaKadar/For Rekka/MastersProject/Ava/Content/Ava/Textures/Green_Room/Wall.uasset'
+[2017.06.14-11.19.06:877][387]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/For Rekka/MastersProject/Ava/Content/Ava/Textures/Green_Room/Wall.uasset
+[2017.06.14-11.19.09:887][529]AssetReimport: Info Importing new asset /Game/Ava/Textures/Green_Room/Wall.
+[2017.06.14-11.19.16:736][  2]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.19.16:743][  2]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.19.16:744][  2]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.06.14-11.19.16:772][  2]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_1, compiling. 
+[2017.06.14-11.19.16:775][  2]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.06.14-11.19.18:000][ 85]MaterialEditorStats: Info Base pass shader with static lighting: 52 instructions
+[2017.06.14-11.19.18:000][ 85]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 23 instructions
+[2017.06.14-11.19.18:000][ 85]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.06.14-11.19.18:000][ 85]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.06.14-11.19.19:853][224]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.19.19:860][224]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.19.20:367][258]MaterialEditorStats: Info Base pass shader with static lighting: 52 instructions
+[2017.06.14-11.19.20:367][258]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 23 instructions
+[2017.06.14-11.19.20:367][258]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.06.14-11.19.20:367][258]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.06.14-11.19.21:952][414]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.19.21:959][414]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.19.21:985][414]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.06.14-11.19.22:509][448]MaterialEditorStats: Info Base pass shader with static lighting: 53 instructions
+[2017.06.14-11.19.22:509][448]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 24 instructions
+[2017.06.14-11.19.22:509][448]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.19.22:509][448]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.06.14-11.19.27:135][776]LogMaterialEditor: Applying material M_Basic_Wall
+[2017.06.14-11.19.27:591][776]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.19.27:608][776]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.19.27:630][776]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.19.27:659][776]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.19.27:683][776]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.19.29:827][940]MaterialEditorStats: Info Base pass shader with static lighting: 90 instructions
+[2017.06.14-11.19.29:827][940]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 60 instructions
+[2017.06.14-11.19.29:827][940]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.19.29:827][940]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.20.46:925][731]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Ava/Maps/PalaceLevel' took 0.007
+[2017.06.14-11.20.46:927][731]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/StarterContent/Materials/M_Basic_Wall] ([1] browsable assets)...
+[2017.06.14-11.20.46:959][731]OBJ SavePackage:     Rendered thumbnail for [Material /Game/StarterContent/Materials/M_Basic_Wall.M_Basic_Wall]
+[2017.06.14-11.20.46:959][731]OBJ SavePackage: Finished generating thumbnails for package [/Game/StarterContent/Materials/M_Basic_Wall]
+[2017.06.14-11.20.46:973][731]LogSavePackage: Save=10.68ms
+[2017.06.14-11.20.46:973][731]LogSavePackage: Moving 'D:/RekaKadar/For Rekka/MastersProject/Ava/Saved/M_Basic_Wall_Auto18BD5972C4BF0132569268895D8A197D9.tmp' to 'D:/RekaKadar/For Rekka/MastersProject/Ava/Saved/Autosaves/Game/StarterContent/Materials/M_Basic_Wall_Auto1.uasset'
+[2017.06.14-11.20.46:977][731]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/For Rekka/MastersProject/Ava/Saved/Autosaves/Game/StarterContent/Materials/M_Basic_Wall_Auto1.uasset
+[2017.06.14-11.20.46:977][731]LogFileHelpers: Auto-saving content packages took 0.050
+[2017.06.14-11.21.55:133][ 83]AssetReimport: New page: Outstanding source content changes 12:21:55
+[2017.06.14-11.21.55:133][ 83]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:/RekaKadar/For Rekka/MastersProject/Ava/Content/Ava/Textures/Green Room/7285-normal.jpg)
+[2017.06.14-11.21.55:231][ 84]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Textures/Green_Room/7285-normal" FILE="D:/RekaKadar/For Rekka/MastersProject/Ava/Content/Ava/Textures/Green_Room/7285-normal.uasset" SILENT=true
+[2017.06.14-11.21.55:297][ 84]LogSavePackage: Save=64.60ms
+[2017.06.14-11.21.55:297][ 84]LogSavePackage: Moving 'D:/RekaKadar/For Rekka/MastersProject/Ava/Saved/7285-normal5F9A44B441B8387F03754DA6BCEE895C.tmp' to 'D:/RekaKadar/For Rekka/MastersProject/Ava/Content/Ava/Textures/Green_Room/7285-normal.uasset'
+[2017.06.14-11.21.55:302][ 84]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/For Rekka/MastersProject/Ava/Content/Ava/Textures/Green_Room/7285-normal.uasset
+[2017.06.14-11.21.58:319][237]AssetReimport: Info Importing new asset /Game/Ava/Textures/Green_Room/7285-normal.
+[2017.06.14-11.22.01:014][420]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.22.01:021][420]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.22.01:022][420]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2017.06.14-11.22.01:048][420]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.06.14-11.22.01:051][420]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2017.06.14-11.22.02:027][480]MaterialEditorStats: Info Base pass shader with static lighting: 53 instructions
+[2017.06.14-11.22.02:027][480]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 24 instructions
+[2017.06.14-11.22.02:027][480]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.22.02:027][480]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.06.14-11.22.03:273][606]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.22.03:279][606]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.22.03:303][606]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2017.06.14-11.22.03:850][638]MaterialEditorStats: Info Base pass shader with static lighting: 68 instructions
+[2017.06.14-11.22.03:850][638]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 39 instructions
+[2017.06.14-11.22.03:850][638]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.22.03:850][638]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.22.11:437][293]LogMaterialEditor: Applying material M_Basic_Wall
+[2017.06.14-11.22.11:848][293]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.22.11:864][293]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.22.11:881][293]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.22.11:907][293]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.22.11:922][293]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.22.14:161][444]MaterialEditorStats: Info Base pass shader with static lighting: 96 instructions
+[2017.06.14-11.22.14:161][444]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 66 instructions
+[2017.06.14-11.22.14:161][444]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.22.14:161][444]MaterialEditorStats: Info Texture samplers: 5/16
+[2017.06.14-11.22.57:424][105]Cmd: EDCALLBACK SURFPROPS
+[2017.06.14-11.23.52:679][995]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.23.52:687][995]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.23.52:688][995]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureObject_0, compiling. 
+[2017.06.14-11.23.53:866][ 72]MaterialEditorStats: Info Base pass shader with static lighting: 68 instructions
+[2017.06.14-11.23.53:866][ 72]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 39 instructions
+[2017.06.14-11.23.53:866][ 72]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.23.53:866][ 72]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.23.58:751][430]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.23.58:758][430]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.23.59:284][467]MaterialEditorStats: Info Base pass shader with static lighting: 53 instructions
+[2017.06.14-11.23.59:284][467]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 24 instructions
+[2017.06.14-11.23.59:284][467]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.23.59:284][467]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.06.14-11.24.17:923][398]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.24.17:930][398]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.24.18:515][439]MaterialEditorStats: Info Base pass shader with static lighting: 53 instructions
+[2017.06.14-11.24.18:515][439]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 24 instructions
+[2017.06.14-11.24.18:515][439]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.24.18:515][439]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.06.14-11.27.46:555][ 77]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.06.14-11.30.48:055][972]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Ava/Maps/PalaceLevel' took 0.007
+[2017.06.14-11.30.48:056][972]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/StarterContent/Materials/M_Basic_Wall] ([1] browsable assets)...
+[2017.06.14-11.30.48:088][972]OBJ SavePackage:     Rendered thumbnail for [Material /Game/StarterContent/Materials/M_Basic_Wall.M_Basic_Wall]
+[2017.06.14-11.30.48:088][972]OBJ SavePackage: Finished generating thumbnails for package [/Game/StarterContent/Materials/M_Basic_Wall]
+[2017.06.14-11.30.48:104][972]LogSavePackage: Save=12.83ms
+[2017.06.14-11.30.48:104][972]LogSavePackage: Moving 'D:/RekaKadar/For Rekka/MastersProject/Ava/Saved/M_Basic_Wall_Auto202A4AFC94166340F74348E89D3274532.tmp' to 'D:/RekaKadar/For Rekka/MastersProject/Ava/Saved/Autosaves/Game/StarterContent/Materials/M_Basic_Wall_Auto2.uasset'
+[2017.06.14-11.30.48:108][972]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/For Rekka/MastersProject/Ava/Saved/Autosaves/Game/StarterContent/Materials/M_Basic_Wall_Auto2.uasset
+[2017.06.14-11.30.48:108][972]LogFileHelpers: Auto-saving content packages took 0.053
+[2017.06.14-11.32.11:833][153]Cmd: EDCALLBACK SURFPROPS
+[2017.06.14-11.32.28:318][440]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.32.28:325][440]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.32.28:326][440]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2017.06.14-11.32.28:353][440]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.06.14-11.32.28:356][440]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2017.06.14-11.32.29:300][502]MaterialEditorStats: Info Base pass shader with static lighting: 53 instructions
+[2017.06.14-11.32.29:300][502]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 24 instructions
+[2017.06.14-11.32.29:301][502]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.32.29:301][502]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.06.14-11.32.31:719][741]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.32.31:726][741]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.32.31:754][741]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2017.06.14-11.32.32:268][772]MaterialEditorStats: Info Base pass shader with static lighting: 68 instructions
+[2017.06.14-11.32.32:268][772]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 39 instructions
+[2017.06.14-11.32.32:268][772]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.32.32:268][772]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.32.33:900][902]LogMaterialEditor: Applying material M_Basic_Wall
+[2017.06.14-11.32.34:328][902]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.32.34:345][902]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.32.34:368][902]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.32.34:395][902]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.32.34:410][902]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.32.36:630][ 52]MaterialEditorStats: Info Base pass shader with static lighting: 96 instructions
+[2017.06.14-11.32.36:630][ 52]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 66 instructions
+[2017.06.14-11.32.36:630][ 52]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.32.36:630][ 52]MaterialEditorStats: Info Texture samplers: 5/16
+[2017.06.14-11.32.46:696][  5]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.32.46:703][  5]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.32.47:235][ 41]MaterialEditorStats: Info Base pass shader with static lighting: 68 instructions
+[2017.06.14-11.32.47:235][ 41]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 39 instructions
+[2017.06.14-11.32.47:235][ 41]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.32.47:235][ 41]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.32.52:242][551]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.32.52:249][551]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.32.52:252][551]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.32.52:259][551]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.32.52:826][590]MaterialEditorStats: Info Base pass shader with static lighting: 68 instructions
+[2017.06.14-11.32.52:826][590]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 39 instructions
+[2017.06.14-11.32.52:826][590]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.32.52:826][590]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.32.55:697][860]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.32.55:703][860]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.32.55:730][860]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2017.06.14-11.32.56:269][896]MaterialEditorStats: Info Base pass shader with static lighting: 68 instructions
+[2017.06.14-11.32.56:269][896]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 39 instructions
+[2017.06.14-11.32.56:269][896]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.32.56:269][896]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.32.58:138][ 71]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.32.58:145][ 71]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.32.58:703][109]MaterialEditorStats: Info Base pass shader with static lighting: 69 instructions
+[2017.06.14-11.32.58:703][109]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 40 instructions
+[2017.06.14-11.32.58:703][109]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.32.58:703][109]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.33.03:318][517]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.33.03:325][517]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.33.03:867][555]MaterialEditorStats: Info Base pass shader with static lighting: 69 instructions
+[2017.06.14-11.33.03:867][555]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 40 instructions
+[2017.06.14-11.33.03:867][555]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.33.03:867][555]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.33.04:784][622]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.33.04:791][622]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.33.05:344][659]MaterialEditorStats: Info Base pass shader with static lighting: 69 instructions
+[2017.06.14-11.33.05:344][659]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 40 instructions
+[2017.06.14-11.33.05:344][659]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.33.05:344][659]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.33.06:506][763]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.33.06:513][763]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.33.07:069][801]MaterialEditorStats: Info Base pass shader with static lighting: 69 instructions
+[2017.06.14-11.33.07:069][801]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 40 instructions
+[2017.06.14-11.33.07:069][801]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.33.07:069][801]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.33.07:880][869]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.33.07:887][869]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.33.08:454][909]MaterialEditorStats: Info Base pass shader with static lighting: 69 instructions
+[2017.06.14-11.33.08:454][909]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 40 instructions
+[2017.06.14-11.33.08:454][909]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.33.08:454][909]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.33.09:161][965]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.33.09:168][965]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.33.09:717][  3]MaterialEditorStats: Info Base pass shader with static lighting: 69 instructions
+[2017.06.14-11.33.09:717][  3]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 40 instructions
+[2017.06.14-11.33.09:717][  3]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.33.09:717][  3]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.33.14:806][360]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.33.14:813][360]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.33.15:360][399]MaterialEditorStats: Info Base pass shader with static lighting: 69 instructions
+[2017.06.14-11.33.15:360][399]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 40 instructions
+[2017.06.14-11.33.15:360][399]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.33.15:360][399]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.33.20:041][728]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.33.20:048][728]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.33.20:596][765]MaterialEditorStats: Info Base pass shader with static lighting: 48 instructions
+[2017.06.14-11.33.20:596][765]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 21 instructions
+[2017.06.14-11.33.20:596][765]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.33.20:596][765]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.06.14-11.33.21:870][854]LogEditorTransaction: Undo Material Editor: Delete
+[2017.06.14-11.33.21:887][854]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.33.21:904][854]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.33.21:911][854]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.33.22:654][898]MaterialEditorStats: Info Base pass shader with static lighting: 69 instructions
+[2017.06.14-11.33.22:654][898]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 40 instructions
+[2017.06.14-11.33.22:654][898]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.33.22:654][898]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.33.45:054][ 16]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.33.45:060][ 16]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.33.45:063][ 16]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.33.45:069][ 16]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.33.45:096][ 16]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2017.06.14-11.33.45:976][ 71]MaterialEditorStats: Info Base pass shader with static lighting: 69 instructions
+[2017.06.14-11.33.45:976][ 71]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 40 instructions
+[2017.06.14-11.33.45:976][ 71]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.33.45:976][ 71]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.33.48:733][335]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.33.48:740][335]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.33.49:274][373]MaterialEditorStats: Info Base pass shader with static lighting: 69 instructions
+[2017.06.14-11.33.49:274][373]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 40 instructions
+[2017.06.14-11.33.49:274][373]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.33.49:274][373]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.34.43:861][819]Cmd: POLY TEXSCALE  UU=0.066667 VV=0.500000
+[2017.06.14-11.34.48:616][131]Cmd: POLY TEXSCALE  UU=0.200000 VV=0.500000
+[2017.06.14-11.34.53:605][463]Cmd: POLY TEXSCALE  UU=0.500000 VV=0.500000
+[2017.06.14-11.34.59:314][893]Cmd: POLY TEXSCALE  UU=0.500000 VV=1.000000
+[2017.06.14-11.35.03:388][160]Cmd: POLY TEXSCALE  UU=0.500000 VV=0.500000
+[2017.06.14-11.35.06:129][342]Cmd: POLY TEXSCALE  UU=0.500000 VV=0.333333
+[2017.06.14-11.35.10:651][656]Cmd: POLY TEXSCALE  UU=0.500000 VV=0.250000
+[2017.06.14-11.35.19:513][271]Cmd: POLY TEXSCALE  UU=0.500000 VV=0.285714
+[2017.06.14-11.35.42:970][ 28]Cmd: POLY TEXSCALE  UU=0.500000 VV=0.270270
+[2017.06.14-11.36.54:553][336]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.36.54:560][336]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.36.55:506][402]MaterialEditorStats: Info Base pass shader with static lighting: 69 instructions
+[2017.06.14-11.36.55:506][402]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 40 instructions
+[2017.06.14-11.36.55:506][402]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.36.55:506][402]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.36.58:043][591]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.36.58:050][591]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.36.58:592][628]MaterialEditorStats: Info Base pass shader with static lighting: 69 instructions
+[2017.06.14-11.36.58:592][628]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 40 instructions
+[2017.06.14-11.36.58:592][628]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.36.58:592][628]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.37.02:291][901]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.37.02:298][901]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.37.02:872][943]MaterialEditorStats: Info Base pass shader with static lighting: 69 instructions
+[2017.06.14-11.37.02:872][943]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 40 instructions
+[2017.06.14-11.37.02:872][943]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.37.02:872][943]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.37.08:984][390]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.37.08:991][390]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.37.09:560][430]MaterialEditorStats: Info Base pass shader with static lighting: 69 instructions
+[2017.06.14-11.37.09:560][430]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 40 instructions
+[2017.06.14-11.37.09:560][430]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.37.09:560][430]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.37.12:903][673]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.37.12:910][673]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.37.13:454][710]MaterialEditorStats: Info Base pass shader with static lighting: 69 instructions
+[2017.06.14-11.37.13:454][710]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 40 instructions
+[2017.06.14-11.37.13:454][710]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.37.13:454][710]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.37.18:146][ 52]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.37.18:153][ 52]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.37.18:725][ 88]MaterialEditorStats: Info Base pass shader with static lighting: 69 instructions
+[2017.06.14-11.37.18:725][ 88]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 40 instructions
+[2017.06.14-11.37.18:725][ 88]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.37.18:725][ 88]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.37.24:169][485]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.37.24:176][485]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.37.24:714][518]MaterialEditorStats: Info Base pass shader with static lighting: 69 instructions
+[2017.06.14-11.37.24:714][518]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 40 instructions
+[2017.06.14-11.37.24:714][518]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.37.24:714][518]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.37.31:615][ 63]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.37.31:622][ 63]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.37.32:231][104]MaterialEditorStats: Info Base pass shader with static lighting: 66 instructions
+[2017.06.14-11.37.32:231][104]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 37 instructions
+[2017.06.14-11.37.32:231][104]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.37.32:231][104]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.37.46:171][298]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'MaterialGraphNode_6.EdGraphPin_4002''
+[2017.06.14-11.37.46:171][298]LogProperty:Warning: ObjectProperty /Script/Engine.ExpressionInput:Expression: unresolved reference to 'MaterialExpressionScalarParameter'MaterialGraphNode_6.MaterialExpressionScalarParameter_1')'
+[2017.06.14-11.37.46:185][298]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.37.46:191][298]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.37.46:732][334]MaterialEditorStats: Info Base pass shader with static lighting: 66 instructions
+[2017.06.14-11.37.46:732][334]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 37 instructions
+[2017.06.14-11.37.46:732][334]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.37.46:732][334]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.37.52:259][800]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.37.52:266][800]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.37.52:290][800]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2017.06.14-11.37.52:827][834]MaterialEditorStats: Info Base pass shader with static lighting: 66 instructions
+[2017.06.14-11.37.52:827][834]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 37 instructions
+[2017.06.14-11.37.52:827][834]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.37.52:827][834]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.37.57:077][269]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'MaterialGraphNode_6.EdGraphPin_4002''
+[2017.06.14-11.37.57:077][269]LogProperty:Warning: ObjectProperty /Script/Engine.ExpressionInput:Expression: unresolved reference to 'MaterialExpressionScalarParameter'MaterialGraphNode_6.MaterialExpressionScalarParameter_1')'
+[2017.06.14-11.37.57:091][269]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.37.57:097][269]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.37.57:653][306]MaterialEditorStats: Info Base pass shader with static lighting: 66 instructions
+[2017.06.14-11.37.57:653][306]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 37 instructions
+[2017.06.14-11.37.57:653][306]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.37.57:653][306]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.38.00:976][639]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.38.00:983][639]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.38.01:011][639]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2017.06.14-11.38.01:559][678]MaterialEditorStats: Info Base pass shader with static lighting: 66 instructions
+[2017.06.14-11.38.01:559][678]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 37 instructions
+[2017.06.14-11.38.01:559][678]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.38.01:559][678]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.38.08:808][239]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.38.08:815][239]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.38.09:436][279]MaterialEditorStats: Info Base pass shader with static lighting: 53 instructions
+[2017.06.14-11.38.09:436][279]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 24 instructions
+[2017.06.14-11.38.09:436][279]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.38.09:436][279]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.06.14-11.38.14:127][657]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.38.14:134][657]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.38.14:684][691]MaterialEditorStats: Info Base pass shader with static lighting: 53 instructions
+[2017.06.14-11.38.14:684][691]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 24 instructions
+[2017.06.14-11.38.14:685][691]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.38.14:685][691]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.06.14-11.38.26:939][810]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.38.26:946][810]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.38.27:484][847]MaterialEditorStats: Info Base pass shader with static lighting: 53 instructions
+[2017.06.14-11.38.27:484][847]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 24 instructions
+[2017.06.14-11.38.27:484][847]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.38.27:484][847]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.06.14-11.38.28:408][941]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.38.28:415][941]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.38.28:964][976]MaterialEditorStats: Info Base pass shader with static lighting: 53 instructions
+[2017.06.14-11.38.28:964][976]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 24 instructions
+[2017.06.14-11.38.28:964][976]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.38.28:964][976]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.06.14-11.38.30:276][ 74]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.38.30:283][ 74]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.38.30:852][112]MaterialEditorStats: Info Base pass shader with static lighting: 53 instructions
+[2017.06.14-11.38.30:852][112]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 24 instructions
+[2017.06.14-11.38.30:852][112]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.38.30:852][112]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.06.14-11.38.35:850][568]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.38.35:857][568]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.38.36:411][605]MaterialEditorStats: Info Base pass shader with static lighting: 53 instructions
+[2017.06.14-11.38.36:411][605]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 24 instructions
+[2017.06.14-11.38.36:411][605]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.38.36:411][605]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.06.14-11.38.37:704][736]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.38.37:710][736]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.38.38:287][777]MaterialEditorStats: Info Base pass shader with static lighting: 53 instructions
+[2017.06.14-11.38.38:287][777]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 24 instructions
+[2017.06.14-11.38.38:287][777]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.38.38:287][777]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.06.14-11.38.41:191][ 74]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.38.41:199][ 74]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.38.41:755][108]MaterialEditorStats: Info Base pass shader with static lighting: 74 instructions
+[2017.06.14-11.38.41:755][108]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 45 instructions
+[2017.06.14-11.38.41:755][108]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.38.41:755][108]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.38.43:508][239]LogMaterialEditor: Applying material M_Basic_Wall
+[2017.06.14-11.38.43:939][239]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.38.43:955][239]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.38.43:979][239]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.38.44:005][239]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.38.44:042][239]LogMaterial: 0.02 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.38.46:303][400]MaterialEditorStats: Info Base pass shader with static lighting: 102 instructions
+[2017.06.14-11.38.46:303][400]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 72 instructions
+[2017.06.14-11.38.46:303][400]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.38.46:303][400]MaterialEditorStats: Info Texture samplers: 5/16
+[2017.06.14-11.39.08:140][ 95]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.39.08:146][ 95]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.39.09:108][159]MaterialEditorStats: Info Base pass shader with static lighting: 74 instructions
+[2017.06.14-11.39.09:108][159]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 45 instructions
+[2017.06.14-11.39.09:108][159]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.39.09:108][159]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.39.37:103][377]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.39.37:110][377]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.39.38:047][439]MaterialEditorStats: Info Base pass shader with static lighting: 48 instructions
+[2017.06.14-11.39.38:048][439]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 21 instructions
+[2017.06.14-11.39.38:048][439]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.39.38:048][439]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.06.14-11.39.39:058][517]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.39.39:065][517]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.39.39:618][553]MaterialEditorStats: Info Base pass shader with static lighting: 48 instructions
+[2017.06.14-11.39.39:618][553]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 21 instructions
+[2017.06.14-11.39.39:618][553]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.39.39:618][553]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.06.14-11.39.40:196][600]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.39.40:203][600]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.39.40:737][633]MaterialEditorStats: Info Base pass shader with static lighting: 48 instructions
+[2017.06.14-11.39.40:737][633]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 21 instructions
+[2017.06.14-11.39.40:737][633]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.39.40:737][633]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.06.14-11.39.41:143][666]LogMaterialEditor: Applying material M_Basic_Wall
+[2017.06.14-11.39.41:550][666]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.39.41:567][666]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.39.41:593][666]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.39.41:619][666]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.39.41:635][666]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.39.43:846][826]MaterialEditorStats: Info Base pass shader with static lighting: 89 instructions
+[2017.06.14-11.39.43:846][826]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 59 instructions
+[2017.06.14-11.39.43:846][826]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.39.43:846][826]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.39.54:438][712]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.39.54:445][712]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.39.54:988][749]MaterialEditorStats: Info Base pass shader with static lighting: 53 instructions
+[2017.06.14-11.39.54:988][749]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 24 instructions
+[2017.06.14-11.39.54:988][749]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.39.54:988][749]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.06.14-11.39.56:101][836]LogMaterialEditor: Applying material M_Basic_Wall
+[2017.06.14-11.39.56:510][836]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.39.56:527][836]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.39.56:558][836]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.39.56:585][836]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.39.56:613][836]LogMaterial: 0.02 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.39.58:804][990]MaterialEditorStats: Info Base pass shader with static lighting: 90 instructions
+[2017.06.14-11.39.58:805][990]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 60 instructions
+[2017.06.14-11.39.58:805][990]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.39.58:805][990]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.06.14-11.40.10:316][932]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Pillar_4_30)
+[2017.06.14-11.40.16:823][499]LogEditorViewport: Clicking Background
+[2017.06.14-11.40.22:011][984]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.06.14-11.40.27:097][421]Cmd: EDCALLBACK SURFPROPS
+[2017.06.14-11.40.37:977][408]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.37:977][408]LogEditorTransaction: Undo Select Surface
+[2017.06.14-11.40.37:998][408]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.38:005][408]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.38:233][424]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.38:233][424]LogEditorTransaction: Undo Select Brush Surface
+[2017.06.14-11.40.38:249][424]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.38:255][424]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.38:435][433]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.38:435][433]LogEditorTransaction: Undo Select Brush Surface
+[2017.06.14-11.40.38:455][433]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.38:465][433]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.38:597][439]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.38:597][439]LogEditorTransaction: Undo Clicking on Actors
+[2017.06.14-11.40.38:623][439]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.38:632][439]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.38:760][445]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.38:760][445]LogEditorTransaction: Undo Select Brush Surface
+[2017.06.14-11.40.38:772][445]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.38:783][445]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.39:243][484]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.39:243][484]LogEditorTransaction: Undo Clicking Background
+[2017.06.14-11.40.39:266][484]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.39:276][484]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.39:705][518]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.39:705][518]LogEditorTransaction: Undo Apply Material to Surface
+[2017.06.14-11.40.39:727][518]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.39:737][518]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.40:021][539]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.40:021][539]LogEditorTransaction: Undo Select Brush Surface
+[2017.06.14-11.40.40:063][539]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.40:074][539]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.40:246][550]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.40:246][550]LogEditorTransaction: Undo Clicking on Actors
+[2017.06.14-11.40.40:268][550]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.40:276][550]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.40:425][559]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.40:425][559]LogEditorTransaction: Undo Move Node
+[2017.06.14-11.40.40:450][559]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.40:460][559]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.40:594][566]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.40:594][566]LogEditorTransaction: Undo Move Node
+[2017.06.14-11.40.40:617][566]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.40:627][566]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.40:771][576]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.40:771][576]LogEditorTransaction: Undo Break Pin Links
+[2017.06.14-11.40.40:779][576]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.40:812][576]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.40:821][576]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.40:931][581]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.40:931][581]LogEditorTransaction: Undo Material Editor: Delete
+[2017.06.14-11.40.40:936][581]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.40:965][581]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.40:976][581]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.41:097][587]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.41:097][587]LogEditorTransaction: Undo Material Editor: Delete
+[2017.06.14-11.40.41:104][587]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.41:129][587]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.41:138][587]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.41:333][601]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.41:333][601]LogEditorTransaction: Undo Material Editor: Delete
+[2017.06.14-11.40.41:339][601]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.41:372][601]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.41:381][601]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.41:543][612]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.41:543][612]LogEditorTransaction: Undo Edit Default Value
+[2017.06.14-11.40.41:548][612]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.41:581][612]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.41:592][612]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.41:712][618]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.41:712][618]LogEditorTransaction: Undo Create Pin Link
+[2017.06.14-11.40.41:718][618]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.41:749][618]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.41:758][618]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.41:881][625]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.41:881][625]LogEditorTransaction: Undo Move Node
+[2017.06.14-11.40.41:904][625]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.41:915][625]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.42:115][638]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.42:115][638]LogEditorTransaction: Undo Create Pin Link
+[2017.06.14-11.40.42:121][638]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.42:155][638]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.42:165][638]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.42:301][646]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.42:301][646]LogEditorTransaction: Undo Create Pin Link
+[2017.06.14-11.40.42:306][646]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.42:339][646]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.42:350][646]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.42:470][654]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.42:470][654]LogEditorTransaction: Undo Move Node
+[2017.06.14-11.40.42:496][654]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.42:506][654]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.42:653][663]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.42:653][663]LogEditorTransaction: Undo Move Node
+[2017.06.14-11.40.42:676][663]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.42:684][663]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.42:819][673]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.42:819][673]LogEditorTransaction: Undo Material Editor: Paste
+[2017.06.14-11.40.42:828][673]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.42:860][673]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.42:871][673]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.43:027][683]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.43:027][683]LogEditorTransaction: Undo Create Pin Link
+[2017.06.14-11.40.43:050][683]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.43:059][683]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.43:200][691]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.43:200][691]LogEditorTransaction: Undo Create Pin Link
+[2017.06.14-11.40.43:211][691]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.43:246][691]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.43:257][691]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.43:403][701]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.43:403][701]LogEditorTransaction: Undo Create Pin Link
+[2017.06.14-11.40.43:411][701]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.43:444][701]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.43:455][701]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.43:574][709]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.43:574][709]LogEditorTransaction: Undo Move Node
+[2017.06.14-11.40.43:599][709]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.43:610][709]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.43:756][718]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.43:756][718]LogEditorTransaction: Undo Move Node
+[2017.06.14-11.40.43:779][718]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.43:789][718]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.43:942][729]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.43:942][729]LogEditorTransaction: Undo Move Node
+[2017.06.14-11.40.43:965][729]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.43:977][729]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.44:122][739]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.44:122][739]LogEditorTransaction: Undo Material Editor: Paste
+[2017.06.14-11.40.44:132][739]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.44:165][739]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.44:176][739]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.44:315][747]Cmd: TRANSACTION UNDO
+[2017.06.14-11.40.44:315][747]LogEditorTransaction: Undo Move Node
+[2017.06.14-11.40.44:335][747]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.40.44:347][747]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.40.44:914][793]MaterialEditorStats: Info Base pass shader with static lighting: 53 instructions
+[2017.06.14-11.40.44:914][793]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 24 instructions
+[2017.06.14-11.40.44:914][793]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.40.44:914][793]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.06.14-11.41.27:188][812]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Ava/Maps/PalaceLevel' took 0.006
+[2017.06.14-11.41.27:190][812]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/StarterContent/Materials/M_Basic_Wall] ([1] browsable assets)...
+[2017.06.14-11.41.27:204][812]OBJ SavePackage:     Rendered thumbnail for [Material /Game/StarterContent/Materials/M_Basic_Wall.M_Basic_Wall]
+[2017.06.14-11.41.27:204][812]OBJ SavePackage: Finished generating thumbnails for package [/Game/StarterContent/Materials/M_Basic_Wall]
+[2017.06.14-11.41.27:219][812]LogSavePackage: Save=11.15ms
+[2017.06.14-11.41.27:219][812]LogSavePackage: Moving 'D:/RekaKadar/For Rekka/MastersProject/Ava/Saved/M_Basic_Wall_Auto327AA381A4098790F40214C80F1354FBA.tmp' to 'D:/RekaKadar/For Rekka/MastersProject/Ava/Saved/Autosaves/Game/StarterContent/Materials/M_Basic_Wall_Auto3.uasset'
+[2017.06.14-11.41.27:232][812]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/For Rekka/MastersProject/Ava/Saved/Autosaves/Game/StarterContent/Materials/M_Basic_Wall_Auto3.uasset
+[2017.06.14-11.41.27:232][812]LogFileHelpers: Auto-saving content packages took 0.043
+[2017.06.14-11.41.33:514][299]Cmd: POLY TEXSCALE  UU=0.500000 VV=0.500000
+[2017.06.14-11.41.38:755][657]Cmd: POLY TEXSCALE  UU=0.500000 VV=0.270270
+[2017.06.14-11.41.45:107][150]Cmd: POLY TEXSCALE  UU=0.500000 VV=0.250000
+[2017.06.14-11.41.51:401][579]Cmd: POLY TEXSCALE  UU=0.500000 VV=0.222222
+[2017.06.14-11.41.55:835][888]Cmd: POLY TEXSCALE  UU=0.500000 VV=0.232558
+[2017.06.14-11.42.02:664][460]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Pillar_14_16)
+[2017.06.14-11.42.10:490][ 35]Cmd: POLY TEXSCALE  UU=0.100000 VV=0.232558
+[2017.06.14-11.42.12:187][161]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.06.14-11.42.23:997][ 93]Cmd: POLY TEXSCALE  UU=0.142857 VV=0.232558
+[2017.06.14-11.42.53:432][734]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.06.14-11.46.11:339][432]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_MatPreviewMesh_02)
+[2017.06.14-11.46.32:661][270]LogEditorViewport: Clicking Background
+[2017.06.14-11.46.33:131][307]Cmd: EDCALLBACK SURFPROPS
+[2017.06.14-11.46.42:261][124]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.06.14-11.46.46:324][459]Cmd: EDCALLBACK SURFPROPS
+[2017.06.14-11.46.58:253][645]Cmd: EDCALLBACK SURFPROPS
+[2017.06.14-11.47.26:065][654]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.47.26:082][654]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.47.26:100][654]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.47.26:126][654]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.14-11.47.26:141][654]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.47.28:526][654]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/Materials/M_Basic_Wall" FILE="D:/RekaKadar/For Rekka/MastersProject/Ava/Content/StarterContent/Materials/M_Basic_Wall.uasset" SILENT=true
+[2017.06.14-11.47.28:541][654]LogSavePackage: Save=11.47ms
+[2017.06.14-11.47.28:541][654]LogSavePackage: Moving 'D:/RekaKadar/For Rekka/MastersProject/Ava/Saved/M_Basic_WallC0B46B064D0AF3F3E92F9688943402CB.tmp' to 'D:/RekaKadar/For Rekka/MastersProject/Ava/Content/StarterContent/Materials/M_Basic_Wall.uasset'
+[2017.06.14-11.47.28:545][654]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/For Rekka/MastersProject/Ava/Content/StarterContent/Materials/M_Basic_Wall.uasset
+[2017.06.14-11.47.28:807][655]Cmd: QUIT_EDITOR
+[2017.06.14-11.47.28:857][655]LogExit: Preparing to exit.
+[2017.06.14-11.47.29:363][655]LogExit: Editor shut down
+[2017.06.14-11.47.29:364][655]LogExit: Transaction tracking system shut down
+[2017.06.14-11.47.29:486][655]LogObj: Freed 0b from 0 cluster array pools.
+[2017.06.14-11.47.29:486][655]LogExit: Object subsystem successfully closed.
+[2017.06.14-11.47.29:505][655]LogD3D11RHI: Shutdown
+[2017.06.14-11.47.29:505][655]LogD3D11RHI: CleanupD3DDevice
+[2017.06.14-11.47.29:555][655]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.06.14-11.47.29:573][655]LogModuleManager: Shutting down and abandoning module MaterialEditor (217)
+[2017.06.14-11.47.29:573][655]LogModuleManager: Shutting down and abandoning module StatsViewer (216)
+[2017.06.14-11.47.29:573][655]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (215)
+[2017.06.14-11.47.29:573][655]LogModuleManager: Shutting down and abandoning module CrashTracker (214)
+[2017.06.14-11.47.29:573][655]LogModuleManager: Shutting down and abandoning module SceneOutliner (213)
+[2017.06.14-11.47.29:573][655]LogModuleManager: Shutting down and abandoning module WidgetCarousel (212)
+[2017.06.14-11.47.29:573][655]LogModuleManager: Shutting down and abandoning module AddContentDialog (211)
+[2017.06.14-11.47.29:574][655]LogModuleManager: Shutting down and abandoning module GameplayTags (210)
+[2017.06.14-11.47.29:574][655]LogModuleManager: Shutting down and abandoning module EditorWidgets (209)
+[2017.06.14-11.47.29:574][655]LogModuleManager: Shutting down and abandoning module CollectionManager (208)
+[2017.06.14-11.47.29:574][655]LogModuleManager: Shutting down and abandoning module FoliageEdit (207)
+[2017.06.14-11.47.29:574][655]LogModuleManager: Shutting down and abandoning module LandscapeEditor (206)
+[2017.06.14-11.47.29:574][655]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (205)
+[2017.06.14-11.47.29:574][655]LogModuleManager: Shutting down and abandoning module ActorPickerMode (204)
+[2017.06.14-11.47.29:574][655]LogModuleManager: Shutting down and abandoning module GeometryMode (203)
+[2017.06.14-11.47.29:574][655]LogModuleManager: Shutting down and abandoning module TextureAlignMode (202)
+[2017.06.14-11.47.29:574][655]LogModuleManager: Shutting down and abandoning module BspMode (201)
+[2017.06.14-11.47.29:574][655]LogModuleManager: Shutting down and abandoning module HardwareSurvey (200)
+[2017.06.14-11.47.29:574][655]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (199)
+[2017.06.14-11.47.29:574][655]LogModuleManager: Shutting down and abandoning module SequenceRecorder (198)
+[2017.06.14-11.47.29:574][655]LogModuleManager: Shutting down and abandoning module AutomationWorker (197)
+[2017.06.14-11.47.29:574][655]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (196)
+[2017.06.14-11.47.29:574][655]LogModuleManager: Shutting down and abandoning module PlacementMode (195)
+[2017.06.14-11.47.29:574][655]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (194)
+[2017.06.14-11.47.29:574][655]LogModuleManager: Shutting down and abandoning module CharacterAI (193)
+[2017.06.14-11.47.29:574][655]LogModuleManager: Shutting down and abandoning module SmartSnapping (192)
+[2017.06.14-11.47.29:574][655]LogModuleManager: Shutting down and abandoning module SessionServices (191)
+[2017.06.14-11.47.29:574][655]LogModuleManager: Shutting down and abandoning module ViewportSnapping (190)
+[2017.06.14-11.47.29:574][655]LogModuleManager: Shutting down and abandoning module LogVisualizer (189)
+[2017.06.14-11.47.29:575][655]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (188)
+[2017.06.14-11.47.29:575][655]LogModuleManager: Shutting down and abandoning module IntroTutorials (187)
+[2017.06.14-11.47.29:575][655]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (186)
+[2017.06.14-11.47.29:575][655]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (185)
+[2017.06.14-11.47.29:575][655]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (184)
+[2017.06.14-11.47.29:575][655]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (183)
+[2017.06.14-11.47.30:371][655]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (182)
+[2017.06.14-11.47.30:371][655]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (181)
+[2017.06.14-11.47.30:371][655]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (180)
+[2017.06.14-11.47.30:371][655]LogModuleManager: Shutting down and abandoning module MergeActors (179)
+[2017.06.14-11.47.30:371][655]LogModuleManager: Shutting down and abandoning module SizeMap (178)
+[2017.06.14-11.47.30:371][655]LogModuleManager: Shutting down and abandoning module TreeMap (177)
+[2017.06.14-11.47.30:371][655]LogModuleManager: Shutting down and abandoning module ReferenceViewer (176)
+[2017.06.14-11.47.30:371][655]LogModuleManager: Shutting down and abandoning module LocalizationService (175)
+[2017.06.14-11.47.30:371][655]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (174)
+[2017.06.14-11.47.30:371][655]LogModuleManager: Shutting down and abandoning module HardwareTargeting (173)
+[2017.06.14-11.47.30:371][655]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (172)
+[2017.06.14-11.47.30:371][655]LogModuleManager: Shutting down and abandoning module UndoHistory (171)
+[2017.06.14-11.47.30:371][655]LogModuleManager: Shutting down and abandoning module UserFeedback (170)
+[2017.06.14-11.47.30:371][655]LogModuleManager: Shutting down and abandoning module XmlParser (169)
+[2017.06.14-11.47.30:371][655]LogModuleManager: Shutting down and abandoning module Blutility (168)
+[2017.06.14-11.47.30:371][655]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (167)
+[2017.06.14-11.47.30:371][655]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (166)
+[2017.06.14-11.47.30:371][655]LogModuleManager: Shutting down and abandoning module InputBindingEditor (165)
+[2017.06.14-11.47.30:372][655]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (164)
+[2017.06.14-11.47.30:372][655]LogModuleManager: Shutting down and abandoning module SettingsEditor (163)
+[2017.06.14-11.47.30:372][655]LogModuleManager: Shutting down and abandoning module ProjectLauncher (162)
+[2017.06.14-11.47.30:372][655]LogModuleManager: Shutting down and abandoning module SessionFrontend (161)
+[2017.06.14-11.47.30:372][655]LogModuleManager: Shutting down and abandoning module ProfilerClient (160)
+[2017.06.14-11.47.30:372][655]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (159)
+[2017.06.14-11.47.30:372][655]LogModuleManager: Shutting down and abandoning module DeviceManager (158)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module AutomationController (157)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module AutomationWindow (156)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module Layers (155)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (154)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module DetailCustomizations (153)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module PackagesDialog (152)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module Persona (151)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module Kismet (150)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module GraphEditor (149)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module ClassViewer (148)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module Toolbox (147)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module ModuleUI (146)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module MovieSceneTools (145)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module OutputLog (144)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module GammaUI (143)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module Documentation (142)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (141)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module AnalyticsET (140)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module Analytics (139)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module PortalServices (138)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module PortalRpc (137)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module MessagingRpc (136)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module GameplayDebugger (135)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module AITestSuite (134)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module AIModule (133)
+[2017.06.14-11.47.30:422][655]LogModuleManager: Shutting down and abandoning module ProfilerService (132)
+[2017.06.14-11.47.30:553][655]LogModuleManager: Shutting down and abandoning module TaskGraph (131)
+[2017.06.14-11.47.30:553][655]LogModuleManager: Shutting down and abandoning module SubstanceEditor (130)
+[2017.06.14-11.47.30:553][655]LogModuleManager: Shutting down and abandoning module SlateRemote (129)
+[2017.06.14-11.47.30:553][655]LogModuleManager: Shutting down and abandoning module SteamVRController (128)
+[2017.06.14-11.47.30:553][655]LogModuleManager: Shutting down and abandoning module SteamVR (127)
+[2017.06.14-11.47.30:553][655]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (126)
+[2017.06.14-11.47.30:553][655]LogModuleManager: Shutting down and abandoning module OculusLibrary (125)
+[2017.06.14-11.47.30:553][655]LogModuleManager: Shutting down and abandoning module OculusInput (124)
+[2017.06.14-11.47.30:553][655]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (123)
+[2017.06.14-11.47.30:553][655]LogModuleManager: Shutting down and abandoning module CableComponent (122)
+[2017.06.14-11.47.30:553][655]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (121)
+[2017.06.14-11.47.30:553][655]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (120)
+[2017.06.14-11.47.30:553][655]LogModuleManager: Shutting down and abandoning module HTML5Networking (119)
+[2017.06.14-11.47.30:553][655]LogModuleManager: Shutting down and abandoning module SuperSearch (118)
+[2017.06.14-11.47.30:553][655]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (117)
+[2017.06.14-11.47.30:553][655]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (116)
+[2017.06.14-11.47.30:553][655]LogModuleManager: Shutting down and abandoning module PluginBrowser (115)
+[2017.06.14-11.47.30:553][655]LogModuleManager: Shutting down and abandoning module EpicSurvey (114)
+[2017.06.14-11.47.30:553][655]LogModuleManager: Shutting down and abandoning module DesktopPlatform (113)
+[2017.06.14-11.47.30:553][655]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (112)
+[2017.06.14-11.47.30:553][655]LogModuleManager: Shutting down and abandoning module UObjectPlugin (111)
+[2017.06.14-11.47.30:553][655]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (110)
+[2017.06.14-11.47.30:554][655]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (109)
+[2017.06.14-11.47.30:554][655]LogModuleManager: Shutting down and abandoning module SourceControl (108)
+[2017.06.14-11.47.30:554][655]LogModuleManager: Shutting down and abandoning module GitSourceControl (107)
+[2017.06.14-11.47.30:554][655]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (106)
+[2017.06.14-11.47.30:554][655]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (105)
+[2017.06.14-11.47.30:554][655]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (104)
+[2017.06.14-11.47.30:554][655]LogModuleManager: Shutting down and abandoning module MeshPaint (103)
+[2017.06.14-11.47.30:554][655]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (102)
+[2017.06.14-11.47.30:554][655]LogModuleManager: Shutting down and abandoning module HotReload (101)
+[2017.06.14-11.47.30:554][655]LogModuleManager: Shutting down and abandoning module MainFrame (100)
+[2017.06.14-11.47.30:554][655]LogModuleManager: Shutting down and abandoning module LevelEditor (99)
+[2017.06.14-11.47.30:555][655]LogModuleManager: Shutting down and abandoning module ContentBrowser (98)
+[2017.06.14-11.47.30:556][655]LogModuleManager: Shutting down and abandoning module Paper2DEditor (97)
+[2017.06.14-11.47.30:556][655]LogModuleManager: Shutting down and abandoning module Ava (96)
+[2017.06.14-11.47.30:556][655]LogModuleManager: Shutting down and abandoning module UdpMessaging (95)
+[2017.06.14-11.47.30:656][655]LogModuleManager: Shutting down and abandoning module SubstanceCore (94)
+[2017.06.14-11.47.30:656][655]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
+[2017.06.14-11.47.30:656][655]LogModuleManager: Shutting down and abandoning module Paper2D (92)
+[2017.06.14-11.47.30:656][655]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
+[2017.06.14-11.47.30:656][655]LogModuleManager: Shutting down and abandoning module Media (90)
+[2017.06.14-11.47.30:656][655]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
+[2017.06.14-11.47.30:656][655]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
+[2017.06.14-11.47.30:656][655]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
+[2017.06.14-11.47.30:656][655]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
+[2017.06.14-11.47.30:656][655]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
+[2017.06.14-11.47.30:656][655]LogModuleManager: Shutting down and abandoning module VREditor (84)
+[2017.06.14-11.47.30:656][655]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
+[2017.06.14-11.47.30:656][655]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
+[2017.06.14-11.47.30:656][655]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
+[2017.06.14-11.47.30:656][655]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
+[2017.06.14-11.47.30:656][655]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
+[2017.06.14-11.47.30:656][655]LogModuleManager: Shutting down and abandoning module Sequencer (78)
+[2017.06.14-11.47.30:656][655]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2017.06.14-11.47.30:656][655]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2017.06.14-11.47.30:656][655]LogModuleManager: Shutting down and abandoning module AssetTools (75)
+[2017.06.14-11.47.30:656][655]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
+[2017.06.14-11.47.30:657][655]LogModuleManager: Shutting down and abandoning module UMG (73)
+[2017.06.14-11.47.30:657][655]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
+[2017.06.14-11.47.30:657][655]LogModuleManager: Shutting down and abandoning module Slate (71)
+[2017.06.14-11.47.30:657][655]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
+[2017.06.14-11.47.30:659][655]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
+[2017.06.14-11.47.30:659][655]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
+[2017.06.14-11.47.30:659][655]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
+[2017.06.14-11.47.30:659][655]LogModuleManager: Shutting down and abandoning module Networking (65)
+[2017.06.14-11.47.30:659][655]LogModuleManager: Shutting down and abandoning module Core (64)
+[2017.06.14-11.47.30:659][655]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
+[2017.06.14-11.47.30:660][655]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
+[2017.06.14-11.47.30:784][655]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2017.06.14-11.47.30:784][655]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2017.06.14-11.47.30:784][655]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2017.06.14-11.47.30:784][655]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
+[2017.06.14-11.47.30:809][655]LogDerivedDataCache: Shutdown
+[2017.06.14-11.47.30:809][655]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
+[2017.06.14-11.47.30:809][655]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2017.06.14-11.47.30:809][655]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2017.06.14-11.47.30:809][655]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2017.06.14-11.47.30:809][655]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2017.06.14-11.47.30:809][655]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2017.06.14-11.47.30:809][655]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2017.06.14-11.47.30:809][655]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2017.06.14-11.47.30:809][655]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2017.06.14-11.47.30:809][655]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2017.06.14-11.47.30:809][655]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2017.06.14-11.47.30:809][655]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2017.06.14-11.47.30:809][655]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2017.06.14-11.47.30:809][655]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2017.06.14-11.47.30:809][655]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2017.06.14-11.47.30:809][655]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2017.06.14-11.47.30:809][655]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2017.06.14-11.47.30:809][655]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2017.06.14-11.47.30:809][655]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2017.06.14-11.47.30:810][655]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2017.06.14-11.47.30:810][655]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2017.06.14-11.47.30:810][655]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2017.06.14-11.47.30:810][655]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2017.06.14-11.47.30:810][655]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2017.06.14-11.47.30:810][655]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2017.06.14-11.47.30:810][655]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2017.06.14-11.47.30:810][655]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2017.06.14-11.47.30:810][655]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2017.06.14-11.47.30:810][655]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2017.06.14-11.47.30:810][655]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2017.06.14-11.47.30:810][655]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2017.06.14-11.47.30:810][655]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2017.06.14-11.47.30:810][655]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2017.06.14-11.47.30:810][655]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2017.06.14-11.47.30:810][655]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2017.06.14-11.47.30:810][655]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2017.06.14-11.47.30:810][655]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2017.06.14-11.47.30:810][655]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2017.06.14-11.47.30:810][655]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2017.06.14-11.47.34:815][655]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2017.06.14-11.47.34:815][655]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2017.06.14-11.47.34:815][655]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2017.06.14-11.47.34:815][655]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2017.06.14-11.47.34:815][655]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2017.06.14-11.47.34:815][655]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2017.06.14-11.47.34:815][655]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2017.06.14-11.47.34:817][655]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2017.06.14-11.47.34:817][655]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2017.06.14-11.47.34:817][655]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2017.06.14-11.47.34:817][655]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2017.06.14-11.47.34:817][655]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2017.06.14-11.47.34:817][655]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2017.06.14-11.47.34:817][655]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2017.06.14-11.47.34:817][655]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2017.06.14-11.47.34:817][655]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2017.06.14-11.47.34:817][655]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2017.06.14-11.47.34:818][655]LogExit: Exiting.
+[2017.06.14-11.47.34:827][655]Log file closed, 06/14/17 12:47:34
