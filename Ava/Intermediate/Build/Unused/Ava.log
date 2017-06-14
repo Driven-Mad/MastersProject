@@ -1,11 +1,1 @@
-﻿  Creating makefile for hot reloading AvaEditor (working set of source files changed)
-  Compiling game modules for hot reload
-  Parsing headers for AvaEditor
-    Running UnrealHeaderTool "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Ava.uproject" "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Intermediate\Build\Win64\AvaEditor\Development\AvaEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for AvaEditor in 4.8811242 seconds
-  Performing 3 actions (9 in parallel)
-  MainMenu.cpp
-  Ava.generated.cpp
-  [3/3] Link UE4Editor-Ava-7306.dll
-     Creating library C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Ava-7306.lib and object C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Ava-7306.exp
-  Total build time: 17.80 seconds
+﻿  Target is up to date

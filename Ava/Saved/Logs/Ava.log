@@ -1,9 +1,9 @@
-﻿Log file open, 06/14/17 10:35:07
+﻿Log file open, 06/14/17 12:25:57
 LogInit:Display: Running engine for game: Ava
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(980719798) SRandInit(980719799).
+LogInit:Display: RandInit(-2112348948) SRandInit(-2112348946).
 LogTaskGraph: Started task graph with 4 named threads and 9 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 0.103338
+LogStats: Stats thread started at 0.192288
 LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
 LogInit: API Version: 2992821
 LogInit: Net Version: 3039270
@@ -25,7 +25,7 @@ LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
 LogInit: Compiled with Visual C++: 19.00.23026.00
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.12
-LogInit: Command line:  
+LogInit: Command line: 
 LogInit: Base directory: C:/Program Files/Epic Games/4.12/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogInit: Using libcurl 7.41.0
@@ -44,346 +44,328 @@ LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
 LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2017.06.14-09.35.07:566][  0]LogInit: Selected Device Profile: [Windows]
-[2017.06.14-09.35.07:566][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2017.06.14-09.35.07:578][  0]LogInit: Computer: PC42640
-[2017.06.14-09.35.07:578][  0]LogInit: User: i7230020
-[2017.06.14-09.35.07:578][  0]LogInit: CPU Page size=65536, Cores=6
-[2017.06.14-09.35.07:578][  0]LogInit: High frequency timer resolution =3.410107 MHz
-[2017.06.14-09.35.07:578][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
-[2017.06.14-09.35.07:578][  0]LogMemory: Platform Memory Stats for Windows
-[2017.06.14-09.35.07:578][  0]LogMemory: Process Physical Memory: 193.82 MB used, 193.82 MB peak
-[2017.06.14-09.35.07:578][  0]LogMemory: Process Virtual Memory: 198.69 MB used, 198.69 MB peak
-[2017.06.14-09.35.07:578][  0]LogMemory: Physical Memory: 13592.24 MB used, 32684.15 MB total
-[2017.06.14-09.35.07:578][  0]LogMemory: Virtual Memory: 524.27 MB used, 8388608.00 MB total
-[2017.06.14-09.35.07:708][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
-[2017.06.14-09.35.08:120][  0]LogD3D11RHI: D3D11 adapters:
-[2017.06.14-09.35.08:145][  0]LogD3D11RHI:    0. 'NVIDIA Quadro M4000' (Feature Level 11_0)
-[2017.06.14-09.35.08:145][  0]LogD3D11RHI:       8092/0/16086 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2017.06.14-09.35.08:145][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2017.06.14-09.35.08:155][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2017.06.14-09.35.08:156][  0]LogD3D11RHI:     GPU DeviceId: 0x13f1 (for the marketing name, search the web for "GPU Device Id")
-[2017.06.14-09.35.08:156][  0]LogWindows: EnumDisplayDevices:
-[2017.06.14-09.35.08:156][  0]LogWindows:    0. 'NVIDIA Quadro M4000' (P:1 D:1)
-[2017.06.14-09.35.08:157][  0]LogWindows:    1. 'NVIDIA Quadro M4000' (P:0 D:0)
-[2017.06.14-09.35.08:158][  0]LogWindows:    2. 'NVIDIA Quadro M4000' (P:0 D:0)
-[2017.06.14-09.35.08:158][  0]LogWindows:    3. 'NVIDIA Quadro M4000' (P:0 D:0)
-[2017.06.14-09.35.08:158][  0]LogWindows:    4. 'RDPDD Chained DD' (P:0 D:0)
-[2017.06.14-09.35.08:159][  0]LogWindows:    5. 'RDP Encoder Mirror Driver' (P:0 D:0)
-[2017.06.14-09.35.08:159][  0]LogWindows:    6. 'RDP Reflector Display Driver' (P:0 D:0)
-[2017.06.14-09.35.08:159][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
-[2017.06.14-09.35.08:159][  0]LogD3D11RHI:     Adapter Name: NVIDIA Quadro M4000
-[2017.06.14-09.35.08:159][  0]LogD3D11RHI:   Driver Version: 362.13 (internal:10.18.13.6213, unified:362.13)
-[2017.06.14-09.35.08:159][  0]LogD3D11RHI:      Driver Date: 3-18-2016
-[2017.06.14-09.35.08:159][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2017.06.14-09.35.08:169][  0]LogD3D11RHI: Async texture creation enabled
-[2017.06.14-09.35.08:183][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2017.06.14-09.35.08:183][  0]LogShaderCompilers: Guid format shader working directory is -28 characters bigger than the processId version (../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Intermediate/Shaders/WorkingDirectory/62812/).
-[2017.06.14-09.35.08:183][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/I72300~1.000/AppData/Local/Temp/UnrealShaderWorkingDir/6688E0934F40407BE5BD51ABE3C9A518/'.
-[2017.06.14-09.35.08:183][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2017.06.14-09.35.09:413][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2017.06.14-09.35.09:424][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2017.06.14-09.35.09:434][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2017.06.14-09.35.09:443][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2017.06.14-09.35.09:452][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2017.06.14-09.35.09:462][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2017.06.14-09.35.09:474][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2017.06.14-09.35.09:483][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2017.06.14-09.35.09:491][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2017.06.14-09.35.09:499][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2017.06.14-09.35.09:507][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2017.06.14-09.35.09:524][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2017.06.14-09.35.09:524][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2017.06.14-09.35.09:526][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2017.06.14-09.35.09:547][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2017.06.14-09.35.09:560][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
-[2017.06.14-09.35.09:582][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2017.06.14-09.35.09:596][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2017.06.14-09.35.09:605][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2017.06.14-09.35.09:605][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2017.06.14-09.35.09:725][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2017.06.14-09.35.09:783][  0]LogDerivedDataCache: Loaded boot cache 0.06s 49MB C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
-[2017.06.14-09.35.09:783][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
-[2017.06.14-09.35.09:783][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2017.06.14-09.35.09:783][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2017.06.14-09.35.09:783][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2017.06.14-09.35.09:783][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2017.06.14-09.35.09:798][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2017.06.14-09.35.09:811][  0]LogDerivedDataCache: Using Local data cache path C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2017.06.14-09.35.10:091][  0]LogInit: Selected Device Profile: [Windows]
-[2017.06.14-09.35.10:092][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2017.06.14-09.35.10:327][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2017.06.14-09.35.10:327][  0]LogMeshUtilities: No automatic mesh merging module available
-[2017.06.14-09.35.10:327][  0]LogMeshUtilities: No distributed automatic mesh merging module available
-[2017.06.14-09.35.10:697][  0]LogAssetRegistry: FAssetRegistry took 0.0205 seconds to start up
-[2017.06.14-09.35.10:802][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.099451 seconds
-[2017.06.14-09.35.10:806][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
-[2017.06.14-09.35.10:806][  0]LogUObjectAllocator: 5855624 out of 0 bytes used by permanent object pool.
-[2017.06.14-09.35.10:806][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2017.06.14-09.35.10:813][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2017.06.14-09.35.11:039][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.06.14-09.35.11:039][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.06.14-09.35.12:465][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2017.06.14-09.35.12:823][  0]SourceControl: Info Source control is disabled
-[2017.06.14-09.35.12:826][  0]SourceControl: Info Source control is disabled
-[2017.06.14-09.35.12:838][  0]SourceControl: Info Source control is disabled
-[2017.06.14-09.35.12:851][  0]SourceControl: Info Source control is disabled
-[2017.06.14-09.35.13:058][  0]LogHoudiniEngine: Starting the Houdini Engine module.
-[2017.06.14-09.35.13:060][  0]LogHoudiniEngine: Loaded libHAPIL.dll from Registry path C:\Program Files\Side Effects Software\Houdini 15.5.632/bin
-[2017.06.14-09.35.13:062][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_logo.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2017.06.14-09.35.13:064][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_default_material.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2017.06.14-09.35.13:068][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_bgeo_import.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2017.06.14-09.35.14:450][  0]LogHoudiniEngine: Successfully initialized the Houdini Engine API module.
-[2017.06.14-09.35.14:597][  0]LogEngine: Initializing Engine...
-[2017.06.14-09.35.14:599][  0]LogHMD: SteamVR failed to initialize.  Err: 110
-[2017.06.14-09.35.14:600][  0]LogHMD: SteamVR failed to initialize.  Err: 110
-[2017.06.14-09.35.14:748][  0]LogAIModule: Creating AISystem for world NewWorld
-[2017.06.14-09.35.14:756][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.06.14-09.35.14:771][  0]LogInit: FAudioDevice initialized.
-[2017.06.14-09.35.14:803][  0]LogDerivedDataCache: Saved boot cache 0.03s 49MB C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
-[2017.06.14-09.35.14:809][  0]LogInit: Texture streaming: Enabled
-[2017.06.14-09.35.14:835][  0]LogInit: Transaction tracking system initialized
-[2017.06.14-09.35.14:856][  0]BlueprintLog: New page: Editor Load
-[2017.06.14-09.35.14:936][  0]LocalizationService: Info Localization service is disabled
-[2017.06.14-09.35.15:026][  0]LogConsoleResponse:Display: 
-[2017.06.14-09.35.15:169][  0]LogCook:Display: Max memory allowance for cook 8192mb
-[2017.06.14-09.35.15:169][  0]LogCook:Display: Mobile HDR setting 1
-[2017.06.14-09.35.15:251][  0]LogFileCache: Scanning file cache for directory 'C:/Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/' took 0.02s
-[2017.06.14-09.35.15:251][  0]LogHoudiniEngineEditor: Starting the Houdini Engine Editor module.
-[2017.06.14-09.35.15:295][  0]SourceControl: Info Source control is disabled
-[2017.06.14-09.35.15:296][  0]Cmd: MAP LOAD FILE="../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.06.14-09.35.15:296][  0]LogEditorServer:Warning: Can't find file '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/StarterContent/Maps/Minimal_Default.umap'
-[2017.06.14-09.35.15:296][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.06.14-09.35.15:367][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 71.61ms to complete.
-[2017.06.14-09.35.15:367][  0]LogFileHelpers: Loading map 'Minimal_Default' took 0.072
-[2017.06.14-09.35.15:483][  0]LogCollectionManager: Loaded 0 collections in 0.001943 seconds
-[2017.06.14-09.35.15:525][  0]LogFileCache: Scanning file cache for directory 'C:/Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/Collections/' took 0.01s
-[2017.06.14-09.35.15:525][  0]LogFileCache: Scanning file cache for directory 'C:/Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Developers/i7230020/Collections/' took 0.01s
-[2017.06.14-09.35.15:525][  0]LogFileCache: Scanning file cache for directory 'C:/Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Collections/' took 0.01s
-[2017.06.14-09.35.15:525][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
-[2017.06.14-09.35.15:535][  0]LogContentBrowser: Native class hierarchy populated in 0.0102 seconds. Added 2081 classes and 376 folders.
-[2017.06.14-09.35.15:539][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2017.06.14-09.35.15:539][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2017.06.14-09.35.15:542][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0027 seconds. Added 12 classes and 0 folders.
-[2017.06.14-09.35.15:548][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0023 seconds. Added 0 classes and 0 folders.
-[2017.06.14-09.35.15:625][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0022 seconds. Added 0 classes and 0 folders.
-[2017.06.14-09.35.15:630][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0021 seconds. Added 1 classes and 2 folders.
-[2017.06.14-09.35.15:641][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2017.06.14-09.35.15:644][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2017.06.14-09.35.15:676][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0031 seconds. Added 1 classes and 2 folders.
-[2017.06.14-09.35.15:676][  0]LogLoad: Full Startup: 9.29 seconds (BP compile: 0.00 seconds)
-[2017.06.14-09.35.15:676][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2017.06.14-09.35.15:676][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2017.06.14-09.35.15:689][  0]LogOcInput: OculusInput pre-init called
-[2017.06.14-09.35.15:706][  0]LogAssetRegistry: Asset discovery search completed in 5.0301 seconds
-[2017.06.14-09.35.15:706][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2017.06.14-09.35.15:706][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000017 seconds (updated 0 objects)
-[2017.06.14-09.35.15:708][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2017.06.14-09.35.15:873][  0]LogRenderer: Reallocating scene render targets to support 1776x668 (Frame:2).
-[2017.06.14-09.36.15:982][972]Running C:/Program Files/Epic Games/4.12/Engine/Binaries/DotNET/UnrealBuildTool.exe Ava Win64 Development -editorrecompile "C:/Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Ava.uproject" -invalidatemakefilesonly
-[2017.06.14-09.36.16:385][972]Invalidating makefiles only in this run.
-[2017.06.14-09.36.16:793][972]Recompiling Ava...
-[2017.06.14-09.36.16:794][972]Launching UnrealBuildTool... [C:/Program Files/Epic Games/4.12/Engine/Binaries/DotNET/UnrealBuildTool.exe Ava -ModuleWithSuffix Ava 1483 Win64 Development -editorrecompile -canskiplink "C:/Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Ava.uproject"  -2015]
-[2017.06.14-09.36.33:275][972]CompilerResultsLog: New page: Compilation - 14 Jun 2017 10:36:33
-[2017.06.14-09.36.33:275][972]CompilerResultsLog: Info Creating makefile for hot reloading Ava (no existing makefile)
-[2017.06.14-09.36.33:275][972]CompilerResultsLog: Info Compiling game modules for hot reload
-[2017.06.14-09.36.33:275][972]CompilerResultsLog: Info Parsing headers for AvaEditor
-[2017.06.14-09.36.33:275][972]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Ava.uproject" "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Intermediate\Build\Win64\AvaEditor\Development\AvaEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-[2017.06.14-09.36.33:275][972]CompilerResultsLog: Info Reflection code generated for AvaEditor in 5.2411367 seconds
-[2017.06.14-09.36.33:275][972]CompilerResultsLog: Info Performing 3 actions (9 in parallel)
-[2017.06.14-09.36.33:275][972]CompilerResultsLog: Info MainMenu.cpp
-[2017.06.14-09.36.33:275][972]CompilerResultsLog: Info Ava.generated.cpp
-[2017.06.14-09.36.33:275][972]CompilerResultsLog: Info [3/3] Link UE4Editor-Ava-1483.dll
-[2017.06.14-09.36.33:275][972]CompilerResultsLog: Info    Creating library C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Ava-1483.lib and object C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Ava-1483.exp
-[2017.06.14-09.36.33:275][972]CompilerResultsLog: Info Total build time: 16.31 seconds
-[2017.06.14-09.36.33:275][972]LogMainFrame: MainFrame: Module compiling took 16.488 seconds
-[2017.06.14-09.36.33:333][972]LogClass: Could not find existing class MainMenu in package /Script/Ava for HotReload, assuming new class
-[2017.06.14-09.36.33:333][972]LogClass: StatueDataVariables HotReload.
-[2017.06.14-09.36.33:333][972]LogClass: Statue HotReload.
-[2017.06.14-09.36.33:333][972]LogClass: ItemDataVariables HotReload.
-[2017.06.14-09.36.33:333][972]LogClass: Item HotReload.
-[2017.06.14-09.36.33:337][972]LogContentBrowser: Native class hierarchy updated for 'Ava' in 0.0025 seconds. Added 4 classes and 2 folders.
-[2017.06.14-09.36.33:337][972]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
-[2017.06.14-09.36.33:416][972]LogContentBrowser: Native class hierarchy populated in 0.0102 seconds. Added 2084 classes and 380 folders.
-[2017.06.14-09.36.33:416][972]Warning: HotReload took 16.8s.
-[2017.06.14-09.36.33:418][972]Warning: HotReload operation took 16.8s.
-[2017.06.14-09.36.33:547][972]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Source/Ava/MainMenu.h'
-[2017.06.14-09.36.33:657][972]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Source/Ava/MainMenu.cpp'
-[2017.06.14-09.36.33:667][972]LogHotReload: New module detected: UE4Editor-Ava-1483.dll
-[2017.06.14-09.36.33:699][973]LogHotReload: Starting Hot-Reload from IDE
-[2017.06.14-09.36.33:752][973]LogContentBrowser: Native class hierarchy updated for 'Ava' in 0.0023 seconds. Added 4 classes and 2 folders.
-[2017.06.14-09.36.33:753][973]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
-[2017.06.14-09.36.33:765][973]LogContentBrowser: Native class hierarchy populated in 0.0097 seconds. Added 2084 classes and 380 folders.
-[2017.06.14-09.36.33:769][973]Warning: HotReload took  0.1s.
-[2017.06.14-09.36.53:613][602]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0028 seconds. Added 111 classes and 0 folders.
-[2017.06.14-09.36.56:928][758]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
-[2017.06.14-09.37.00:407][993]LogBlueprint:Warning: Reparenting blueprint WidgetBlueprint /Game/TemporaryContent/MainMenu.MainMenu from UserWidget to MainMenu...
-[2017.06.14-09.37.00:414][993]BlueprintLog: New page: Compile MainMenu
-[2017.06.14-09.37.00:483][993]BlueprintEditorCompileResults: Info [0114.09] Compile of MainMenu successful! [in 69 ms] (/Game/TemporaryContent/MainMenu.MainMenu)
-[2017.06.14-09.37.02:529][117]BlueprintLog: New page: Compile MainMenu
-[2017.06.14-09.37.02:600][117]BlueprintEditorCompileResults: Info [0116.21] Compile of MainMenu successful! [in 70 ms] (/Game/TemporaryContent/MainMenu.MainMenu)
-[2017.06.14-09.37.03:140][148]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TemporaryContent/MainMenu" FILE="../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset" SILENT=true
-[2017.06.14-09.37.03:154][148]LogSavePackage: Save=4.87ms
-[2017.06.14-09.37.03:154][148]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/MainMenu8628371D4F28787C6914B3A280599591.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset'
-[2017.06.14-09.37.03:163][148]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset
-[2017.06.14-09.38.07:703][687]LogHotReload: New module detected: UE4Editor-Ava-7125.dll
-[2017.06.14-09.38.10:396][696]LogHotReload: Starting Hot-Reload from IDE
-[2017.06.14-09.38.10:482][696]LogClass: StatueDataVariables HotReload.
-[2017.06.14-09.38.10:482][696]LogClass: Statue HotReload.
-[2017.06.14-09.38.10:482][696]LogClass: ItemDataVariables HotReload.
-[2017.06.14-09.38.10:482][696]LogClass: Item HotReload.
-[2017.06.14-09.38.10:486][696]LogContentBrowser: Native class hierarchy updated for 'Ava' in 0.0024 seconds. Added 4 classes and 2 folders.
-[2017.06.14-09.38.10:488][696]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
-[2017.06.14-09.38.10:758][696]LogContentBrowser: Native class hierarchy populated in 0.0108 seconds. Added 2084 classes and 380 folders.
-[2017.06.14-09.38.10:762][696]Warning: HotReload took  0.4s.
-[2017.06.14-09.38.57:438][836]LogHotReload: New module detected: UE4Editor-Ava-131.dll
-[2017.06.14-09.39.00:138][845]LogHotReload: Starting Hot-Reload from IDE
-[2017.06.14-09.39.00:251][845]LogClass: Could not find existing class MainMenu in package /Script/Ava for HotReload, assuming new class
-[2017.06.14-09.39.00:251][845]LogClass: Function testFunction is new.
-[2017.06.14-09.39.00:251][845]LogClass: StatueDataVariables HotReload.
-[2017.06.14-09.39.00:251][845]LogClass: Statue HotReload.
-[2017.06.14-09.39.00:251][845]LogClass: ItemDataVariables HotReload.
-[2017.06.14-09.39.00:251][845]LogClass: Item HotReload.
-[2017.06.14-09.39.00:255][845]LogHotReload: Re-instancing MainMenu after hot-reload.
-[2017.06.14-09.39.00:434][845]LogContentBrowser: Native class hierarchy updated for 'Ava' in 0.0024 seconds. Added 4 classes and 2 folders.
-[2017.06.14-09.39.00:436][845]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
-[2017.06.14-09.39.00:657][845]LogContentBrowser: Native class hierarchy populated in 0.0105 seconds. Added 2084 classes and 380 folders.
-[2017.06.14-09.39.00:661][845]Warning: HotReload took  0.5s.
-[2017.06.14-09.39.34:786][778]BlueprintLog: New page: Compile MainMenu
-[2017.06.14-09.39.34:939][778]BlueprintEditorCompileResults: Info [0268.54] Compile of MainMenu successful! [in 153 ms] (/Game/TemporaryContent/MainMenu.MainMenu)
-[2017.06.14-09.39.35:201][790]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TemporaryContent/MainMenu" FILE="../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset" SILENT=true
-[2017.06.14-09.39.35:220][790]LogSavePackage: Save=10.62ms
-[2017.06.14-09.39.35:220][790]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/MainMenuE9F9CCDB425E81DF1879339F52CBCE40.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset'
-[2017.06.14-09.39.35:235][790]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset
-[2017.06.14-09.42.02:922][713]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\i7230020.STUDENT.000\Downloads\Menu Blank.jpg)
-[2017.06.14-09.42.02:988][713]LogTexture:Display: Building textures: Menu_Blank (AutoDXT)
-[2017.06.14-09.44.17:070][297]BlueprintLog: New page: Compile MainMenu
-[2017.06.14-09.44.17:205][297]BlueprintEditorCompileResults: Info [0550.79] Compile of MainMenu successful! [in 134 ms] (/Game/TemporaryContent/MainMenu.MainMenu)
-[2017.06.14-09.44.17:727][318]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TemporaryContent/MainMenu" FILE="../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset" SILENT=true
-[2017.06.14-09.44.17:761][318]LogSavePackage: Save=11.45ms
-[2017.06.14-09.44.17:761][318]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/MainMenu4A195FB14C6DA7C179D63DBFCBF16F09.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset'
-[2017.06.14-09.44.17:773][318]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset
-[2017.06.14-09.45.35:219][796]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_0' took 0.030
-[2017.06.14-09.45.35:222][796]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/TemporaryContent/Menu_Blank] ([1] browsable assets)...
-[2017.06.14-09.45.35:227][796]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/TemporaryContent/Menu_Blank.Menu_Blank]
-[2017.06.14-09.45.35:227][796]OBJ SavePackage: Finished generating thumbnails for package [/Game/TemporaryContent/Menu_Blank]
-[2017.06.14-09.45.35:241][796]LogSavePackage: Save=10.81ms
-[2017.06.14-09.45.35:241][796]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/Menu_Blank_Auto1F9D3B02640FE1B81D6FAEA805DB660D3.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/Autosaves/Game/TemporaryContent/Menu_Blank_Auto1.uasset'
-[2017.06.14-09.45.35:247][796]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/Autosaves/Game/TemporaryContent/Menu_Blank_Auto1.uasset
-[2017.06.14-09.45.35:247][796]LogFileHelpers: Auto-saving content packages took 0.028
-[2017.06.14-09.46.14:531][254]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.VerticalBox_0 or VerticalBox /Game/TemporaryContent/MainMenu.MainMenu_C:WidgetTree_10.VerticalBox_0
-[2017.06.14-09.46.14:531][254]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.VerticalBox_0 or VerticalBox /Engine/Transient.World_3:MainMenu_C_2.WidgetTree_10.VerticalBox_0
-[2017.06.14-09.46.14:531][254]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.VerticalBox_0 or VerticalBox /Game/TemporaryContent/MainMenu.MainMenu_C:WidgetTree_11.VerticalBox_0
-[2017.06.14-09.46.14:531][254]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.VerticalBox_0 or VerticalBox /Engine/Transient.World_3:MainMenu_C_3.WidgetTree_11.VerticalBox_0
-[2017.06.14-09.46.14:531][254]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.VerticalBox_0 or VerticalBox /Game/TemporaryContent/MainMenu.MainMenu_C:WidgetTree_12.VerticalBox_0
-[2017.06.14-09.46.14:531][254]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.VerticalBox_0 or VerticalBox /Engine/Transient.World_3:MainMenu_C_4.WidgetTree_12.VerticalBox_0
-[2017.06.14-09.46.14:531][254]LogProperty:Warning: Illegal TEXT reference to a private object in external package (VerticalBoxSlot /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.VerticalBox_0.VerticalBoxSlot_0) from referencer (Button /Engine/UMG/Editor/Transient.Button_4).  Import failed...
-[2017.06.14-09.46.14:531][254]LogProperty:Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'VerticalBoxSlot'VerticalBox_0.VerticalBoxSlot_0''
-[2017.06.14-09.46.16:118][329]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.VerticalBox_0 or VerticalBox /Game/TemporaryContent/MainMenu.MainMenu_C:WidgetTree_10.VerticalBox_0
-[2017.06.14-09.46.16:118][329]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.VerticalBox_0 or VerticalBox /Engine/Transient.World_3:MainMenu_C_2.WidgetTree_10.VerticalBox_0
-[2017.06.14-09.46.16:118][329]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.VerticalBox_0 or VerticalBox /Game/TemporaryContent/MainMenu.MainMenu_C:WidgetTree_11.VerticalBox_0
-[2017.06.14-09.46.16:118][329]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.VerticalBox_0 or VerticalBox /Engine/Transient.World_3:MainMenu_C_3.WidgetTree_11.VerticalBox_0
-[2017.06.14-09.46.16:118][329]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.VerticalBox_0 or VerticalBox /Game/TemporaryContent/MainMenu.MainMenu_C:WidgetTree_12.VerticalBox_0
-[2017.06.14-09.46.16:118][329]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.VerticalBox_0 or VerticalBox /Engine/Transient.World_3:MainMenu_C_4.WidgetTree_12.VerticalBox_0
-[2017.06.14-09.46.16:119][329]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.VerticalBox_0 or VerticalBox /Game/TemporaryContent/MainMenu.MainMenu_C:WidgetTree_13.VerticalBox_0
-[2017.06.14-09.46.16:119][329]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.VerticalBox_0 or VerticalBox /Engine/Transient.World_3:MainMenu_C_5.WidgetTree_13.VerticalBox_0
-[2017.06.14-09.46.16:119][329]LogProperty:Warning: Illegal TEXT reference to a private object in external package (VerticalBoxSlot /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.VerticalBox_0.VerticalBoxSlot_0) from referencer (Button /Engine/UMG/Editor/Transient.Button_4).  Import failed...
-[2017.06.14-09.46.16:119][329]LogProperty:Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'VerticalBoxSlot'VerticalBox_0.VerticalBoxSlot_0''
-[2017.06.14-09.55.35:439][382]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_0' took 0.039
-[2017.06.14-09.55.35:442][382]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/TemporaryContent/MainMenu] ([1] browsable assets)...
-[2017.06.14-09.55.35:443][382]OBJ SavePackage: Finished generating thumbnails for package [/Game/TemporaryContent/MainMenu]
-[2017.06.14-09.55.35:478][382]LogSavePackage: Save=23.93ms
-[2017.06.14-09.55.35:478][382]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/MainMenu_Auto237971C0B4490E5A7FE944C808A6268C7.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/Autosaves/Game/TemporaryContent/MainMenu_Auto2.uasset'
-[2017.06.14-09.55.35:484][382]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/Autosaves/Game/TemporaryContent/MainMenu_Auto2.uasset
-[2017.06.14-09.55.35:484][382]LogFileHelpers: Auto-saving content packages took 0.044
-[2017.06.14-10.01.52:223][859]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TemporaryContent/MainMenu" FILE="../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset" SILENT=true
-[2017.06.14-10.01.52:261][859]LogSavePackage: Save=24.91ms
-[2017.06.14-10.01.52:261][859]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/MainMenu50BB752F49A7092C391C9D9CD8C3B6D2.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset'
-[2017.06.14-10.01.52:271][859]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset
-[2017.06.14-10.01.52:432][859]LogSavePackage: Save=146.14ms
-[2017.06.14-10.01.52:432][859]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/Menu_Blank4C0865BB4A28C182490866A6610C177F.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/Menu_Blank.uasset'
-[2017.06.14-10.01.52:453][859]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/Menu_Blank.uasset
-[2017.06.14-10.02.55:381][455]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TemporaryContent/MainMenu" FILE="../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset" SILENT=true
-[2017.06.14-10.02.55:418][455]LogSavePackage: Save=28.03ms
-[2017.06.14-10.02.55:418][455]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/MainMenuD49F69364C545D6BCF7784AB89C6EE31.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset'
-[2017.06.14-10.02.55:428][455]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset
-[2017.06.14-10.02.56:192][499]BlueprintLog: New page: Compile MainMenu
-[2017.06.14-10.02.56:303][499]BlueprintEditorCompileResults: Info [1669.83] Compile of MainMenu successful! [in 110 ms] (/Game/TemporaryContent/MainMenu.MainMenu)
-[2017.06.14-10.02.56:841][532]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TemporaryContent/MainMenu" FILE="../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset" SILENT=true
-[2017.06.14-10.02.56:860][532]LogSavePackage: Save=11.64ms
-[2017.06.14-10.02.56:860][532]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/MainMenu53B2D3C5450306A3419C4E895B72614A.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset'
-[2017.06.14-10.02.56:868][532]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset
-[2017.06.14-10.04.48:693][ 47]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\i7230020.STUDENT.000\Downloads\Controls.png)
-[2017.06.14-10.04.48:747][ 47]LogTexture:Display: Building textures: Controls (AutoDXT)
-[2017.06.14-10.04.50:528][149]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TemporaryContent/Controls" FILE="../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/Controls.uasset" SILENT=true
-[2017.06.14-10.04.50:600][149]LogSavePackage: Save=69.23ms
-[2017.06.14-10.04.50:600][149]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/Controls7B550A0D4F7FB3C48F6CE9AA8D3F0584.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/Controls.uasset'
-[2017.06.14-10.04.50:611][149]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/Controls.uasset
-[2017.06.14-10.05.04:710][911]BlueprintLog: New page: Compile MainMenu
-[2017.06.14-10.05.04:829][911]BlueprintEditorCompileResults: Info [1798.35] Compile of MainMenu successful! [in 118 ms] (/Game/TemporaryContent/MainMenu.MainMenu)
-[2017.06.14-10.05.05:178][927]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TemporaryContent/MainMenu" FILE="../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset" SILENT=true
-[2017.06.14-10.05.05:197][927]LogSavePackage: Save=10.76ms
-[2017.06.14-10.05.05:197][927]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/MainMenuEA5A79904C5F2AB024861EB6456238C8.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset'
-[2017.06.14-10.05.05:206][927]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_3.WidgetTree_11.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.REINST_MainMenu_C_11:WidgetTree.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:REINST_MainMenu_C_0.WidgetTree_8.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.REINST_MainMenu_C_37:WidgetTree.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_2.WidgetTree_10.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_4.WidgetTree_12.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_5.WidgetTree_13.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_6.WidgetTree_14.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_7.WidgetTree_15.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_8.WidgetTree_16.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_9.WidgetTree_17.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_10.WidgetTree_18.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_11.WidgetTree_19.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_12.WidgetTree_20.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_13.WidgetTree_21.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_14.WidgetTree_22.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_15.WidgetTree_23.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_16.WidgetTree_24.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_17.WidgetTree_25.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_18.WidgetTree_26.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_19.WidgetTree_27.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.REINST_MainMenu_C_40:WidgetTree.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_20.WidgetTree_28.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:REINST_MainMenu_C_4.WidgetTree_36.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_21.WidgetTree_29.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu_C:WidgetTree.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_22.WidgetTree_30.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_26.WidgetTree_35.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_23.WidgetTree_31.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_0.WidgetTree_37.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MainMenu_C_24.WidgetTree_32.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu_C:WidgetTree_37.CanvasPanel_0
-[2017.06.14-10.05.12:019][282]LogUObjectHash:Warning: Ambiguous search, could be CanvasPanel /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:REINST_MainMenu_C_2.WidgetTree_33.CanvasPanel_0
-[2017.06.14-10.05.12:020][282]LogProperty:Warning: Illegal TEXT reference to a private object in external package (CanvasPanelSlot /Game/TemporaryContent/MainMenu.MainMenu:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0) from referencer (Image /Engine/UMG/Editor/Transient.Background).  Import failed...
-[2017.06.14-10.05.12:020][282]LogProperty:Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'CanvasPanelSlot'CanvasPanel_0.CanvasPanelSlot_0''
-[2017.06.14-10.05.30:418][214]LogWindows: LaunchURL http://docs.unrealengine.com/latest/INT/Engine/Blueprints/index.html?utm_source=editor&utm_medium=docs&utm_campaign=help_menu_asset
-[2017.06.14-10.05.47:916][ 34]BlueprintLog: New page: Compile MainMenu
-[2017.06.14-10.05.48:040][ 34]BlueprintEditorCompileResults: Info [1841.55] Compile of MainMenu successful! [in 124 ms] (/Game/TemporaryContent/MainMenu.MainMenu)
-[2017.06.14-10.05.48:831][ 73]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TemporaryContent/MainMenu" FILE="../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset" SILENT=true
-[2017.06.14-10.05.48:850][ 73]LogSavePackage: Save=11.73ms
-[2017.06.14-10.05.48:850][ 73]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/MainMenu9FBD314A4849B186002E8CBE0F5B19D9.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset'
-[2017.06.14-10.05.48:860][ 73]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset
-[2017.06.14-10.06.00:301][666]BlueprintLog: New page: Compile MainMenu
-[2017.06.14-10.06.00:414][666]BlueprintEditorCompileResults: Info [1853.93] Compile of MainMenu successful! [in 112 ms] (/Game/TemporaryContent/MainMenu.MainMenu)
-[2017.06.14-10.06.00:673][678]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TemporaryContent/MainMenu" FILE="../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset" SILENT=true
-[2017.06.14-10.06.00:691][678]LogSavePackage: Save=11.00ms
-[2017.06.14-10.06.00:691][678]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/MainMenu58532D6744B1343190784185872E24B9.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset'
-[2017.06.14-10.06.00:697][678]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/TemporaryContent/MainMenu.uasset
-[2017.06.14-10.09.39:587][288]LogBlueprint:Warning: Compiler Warning InputAction Event references unknown Action 'Crouch' for  InputAction Crouch 
-[2017.06.14-10.09.39:590][288]LogBlueprint:Warning: Compiler Warning [2073.09] Compile of Ue4ASP_Character successful, but with 1 Warning(s) [in 8 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
-[2017.06.14-10.09.39:590][288]LogBlueprint:Warning: Compiler Warning [2073.09] Compile of Ue4ASP_Character successful, but with 2 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
-[2017.06.14-10.09.39:590][288]LogBlueprint:Warning: Compiler Warning [2073.09] Compile of Ue4ASP_Character successful, but with 3 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
-[2017.06.14-10.09.39:669][288]LogBlueprint:Warning: Compiler Warning InputAction Event references unknown Action 'Crouch' for  InputAction Crouch 
-[2017.06.14-10.09.39:671][288]LogBlueprint:Warning: Compiler Warning [2073.17] Compile of Ue4ASP_Character successful, but with 1 Warning(s) [in 9 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
-[2017.06.14-10.09.39:671][288]LogBlueprint:Warning: Compiler Warning [2073.17] Compile of Ue4ASP_Character successful, but with 2 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
-[2017.06.14-10.09.39:672][288]LogBlueprint:Warning: Compiler Warning [2073.17] Compile of Ue4ASP_Character successful, but with 3 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
-[2017.06.14-10.09.40:139][288]LogAIModule: Creating AISystem for world Palace_Level
-[2017.06.14-10.09.40:534][288]LogMetaData: Removing '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' ref from Metadata '/Game/Ava/Maps/Palace_Level.PackageMetaData'
-[2017.06.14-10.09.40:534][288]LogMetaData: Removing '/Game/Ava/Maps/PalaceLevel.SKEL_PalaceLevel_C' ref from Metadata '/Game/Ava/Maps/Palace_Level.PackageMetaData'
-[2017.06.14-10.09.41:700][288]LogSavePackage: Save=973.05ms
-[2017.06.14-10.09.41:700][288]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/PalaceLevelA813E1B3475F2EBBCF01109597EF0E34.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap'
-[2017.06.14-10.09.41:709][288]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUD
+[2017.06.14-11.25.57:765][  0]LogInit: Selected Device Profile: [Windows]
+[2017.06.14-11.25.57:765][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.06.14-11.25.57:777][  0]LogInit: Computer: PC42640
+[2017.06.14-11.25.57:777][  0]LogInit: User: i7230020
+[2017.06.14-11.25.57:777][  0]LogInit: CPU Page size=65536, Cores=6
+[2017.06.14-11.25.57:777][  0]LogInit: High frequency timer resolution =3.410107 MHz
+[2017.06.14-11.25.57:777][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2017.06.14-11.25.57:777][  0]LogMemory: Platform Memory Stats for Windows
+[2017.06.14-11.25.57:777][  0]LogMemory: Process Physical Memory: 194.54 MB used, 194.54 MB peak
+[2017.06.14-11.25.57:777][  0]LogMemory: Process Virtual Memory: 198.72 MB used, 198.72 MB peak
+[2017.06.14-11.25.57:777][  0]LogMemory: Physical Memory: 16040.55 MB used, 32684.15 MB total
+[2017.06.14-11.25.57:777][  0]LogMemory: Virtual Memory: 524.27 MB used, 8388608.00 MB total
+[2017.06.14-11.25.57:877][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
+[2017.06.14-11.25.58:258][  0]LogD3D11RHI: D3D11 adapters:
+[2017.06.14-11.25.58:282][  0]LogD3D11RHI:    0. 'NVIDIA Quadro M4000' (Feature Level 11_0)
+[2017.06.14-11.25.58:282][  0]LogD3D11RHI:       8092/0/16086 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.06.14-11.25.58:282][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.06.14-11.25.58:292][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.06.14-11.25.58:292][  0]LogD3D11RHI:     GPU DeviceId: 0x13f1 (for the marketing name, search the web for "GPU Device Id")
+[2017.06.14-11.25.58:293][  0]LogWindows: EnumDisplayDevices:
+[2017.06.14-11.25.58:293][  0]LogWindows:    0. 'NVIDIA Quadro M4000' (P:1 D:1)
+[2017.06.14-11.25.58:294][  0]LogWindows:    1. 'NVIDIA Quadro M4000' (P:0 D:0)
+[2017.06.14-11.25.58:294][  0]LogWindows:    2. 'NVIDIA Quadro M4000' (P:0 D:0)
+[2017.06.14-11.25.58:295][  0]LogWindows:    3. 'NVIDIA Quadro M4000' (P:0 D:0)
+[2017.06.14-11.25.58:296][  0]LogWindows:    4. 'RDPDD Chained DD' (P:0 D:0)
+[2017.06.14-11.25.58:296][  0]LogWindows:    5. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2017.06.14-11.25.58:297][  0]LogWindows:    6. 'RDP Reflector Display Driver' (P:0 D:0)
+[2017.06.14-11.25.58:297][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2017.06.14-11.25.58:297][  0]LogD3D11RHI:     Adapter Name: NVIDIA Quadro M4000
+[2017.06.14-11.25.58:297][  0]LogD3D11RHI:   Driver Version: 362.13 (internal:10.18.13.6213, unified:362.13)
+[2017.06.14-11.25.58:297][  0]LogD3D11RHI:      Driver Date: 3-18-2016
+[2017.06.14-11.25.58:297][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.06.14-11.25.58:313][  0]LogD3D11RHI: Async texture creation enabled
+[2017.06.14-11.25.58:326][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2017.06.14-11.25.58:326][  0]LogShaderCompilers: Guid format shader working directory is -28 characters bigger than the processId version (../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Intermediate/Shaders/WorkingDirectory/62932/).
+[2017.06.14-11.25.58:326][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/I72300~1.000/AppData/Local/Temp/UnrealShaderWorkingDir/3FDDF9D54CEC7CC32A0F4588DC2F0E63/'.
+[2017.06.14-11.25.58:326][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.06.14-11.25.59:663][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.06.14-11.25.59:674][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.06.14-11.25.59:689][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.06.14-11.25.59:700][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.06.14-11.25.59:711][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.06.14-11.25.59:721][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.06.14-11.25.59:730][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.06.14-11.25.59:749][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.06.14-11.25.59:764][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.06.14-11.25.59:780][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.06.14-11.25.59:790][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.06.14-11.25.59:812][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.06.14-11.25.59:812][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.06.14-11.25.59:816][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.06.14-11.25.59:846][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.06.14-11.25.59:856][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.06.14-11.25.59:866][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.06.14-11.25.59:876][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.06.14-11.25.59:887][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.06.14-11.25.59:887][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.06.14-11.26.00:030][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.06.14-11.26.00:079][  0]LogDerivedDataCache: Loaded boot cache 0.05s 49MB C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2017.06.14-11.26.00:079][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2017.06.14-11.26.00:079][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.06.14-11.26.00:079][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.06.14-11.26.00:079][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.06.14-11.26.00:080][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.06.14-11.26.00:094][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.06.14-11.26.00:107][  0]LogDerivedDataCache: Using Local data cache path C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.06.14-11.26.00:299][  0]LogInit: Selected Device Profile: [Windows]
+[2017.06.14-11.26.00:300][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.06.14-11.26.00:463][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2017.06.14-11.26.00:463][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.06.14-11.26.00:463][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2017.06.14-11.26.00:708][  0]LogAssetRegistry: FAssetRegistry took 0.0213 seconds to start up
+[2017.06.14-11.26.00:791][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.078852 seconds
+[2017.06.14-11.26.00:796][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2017.06.14-11.26.00:796][  0]LogUObjectAllocator: 5855624 out of 0 bytes used by permanent object pool.
+[2017.06.14-11.26.00:796][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.06.14-11.26.00:807][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.06.14-11.26.01:060][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.06.14-11.26.01:060][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.06.14-11.26.02:157][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.06.14-11.26.02:476][  0]SourceControl: Info Source control is disabled
+[2017.06.14-11.26.02:479][  0]SourceControl: Info Source control is disabled
+[2017.06.14-11.26.02:497][  0]SourceControl: Info Source control is disabled
+[2017.06.14-11.26.02:513][  0]SourceControl: Info Source control is disabled
+[2017.06.14-11.26.02:703][  0]LogHoudiniEngine: Starting the Houdini Engine module.
+[2017.06.14-11.26.02:705][  0]LogHoudiniEngine: Loaded libHAPIL.dll from Registry path C:\Program Files\Side Effects Software\Houdini 15.5.632/bin
+[2017.06.14-11.26.02:706][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_logo.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2017.06.14-11.26.02:708][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_default_material.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2017.06.14-11.26.02:712][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_bgeo_import.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2017.06.14-11.26.03:963][  0]LogHoudiniEngine: Successfully initialized the Houdini Engine API module.
+[2017.06.14-11.26.04:131][  0]LogEngine: Initializing Engine...
+[2017.06.14-11.26.04:135][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2017.06.14-11.26.04:138][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2017.06.14-11.26.04:282][  0]LogAIModule: Creating AISystem for world NewWorld
+[2017.06.14-11.26.04:294][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.14-11.26.04:308][  0]LogInit: FAudioDevice initialized.
+[2017.06.14-11.26.04:334][  0]LogDerivedDataCache: Saved boot cache 0.03s 49MB C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2017.06.14-11.26.04:339][  0]LogInit: Texture streaming: Enabled
+[2017.06.14-11.26.04:371][  0]LogInit: Transaction tracking system initialized
+[2017.06.14-11.26.04:405][  0]BlueprintLog: New page: Editor Load
+[2017.06.14-11.26.04:528][  0]LocalizationService: Info Localization service is disabled
+[2017.06.14-11.26.04:632][  0]LogConsoleResponse:Display: 
+[2017.06.14-11.26.04:748][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2017.06.14-11.26.04:748][  0]LogCook:Display: Mobile HDR setting 1
+[2017.06.14-11.26.04:848][  0]LogFileCache: Scanning file cache for directory 'C:/Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/' took 0.02s
+[2017.06.14-11.26.04:848][  0]LogHoudiniEngineEditor: Starting the Houdini Engine Editor module.
+[2017.06.14-11.26.04:918][  0]SourceControl: Info Source control is disabled
+[2017.06.14-11.26.04:918][  0]Cmd: MAP LOAD FILE="../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.06.14-11.26.04:918][  0]LogEditorServer:Warning: Can't find file '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/StarterContent/Maps/Minimal_Default.umap'
+[2017.06.14-11.26.04:918][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.06.14-11.26.04:992][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 73.641ms to complete.
+[2017.06.14-11.26.04:992][  0]LogFileHelpers: Loading map 'Minimal_Default' took 0.074
+[2017.06.14-11.26.05:104][  0]LogCollectionManager: Loaded 0 collections in 0.001711 seconds
+[2017.06.14-11.26.05:151][  0]LogFileCache: Scanning file cache for directory 'C:/Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/Collections/' took 0.01s
+[2017.06.14-11.26.05:151][  0]LogFileCache: Scanning file cache for directory 'C:/Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Developers/i7230020/Collections/' took 0.01s
+[2017.06.14-11.26.05:151][  0]LogFileCache: Scanning file cache for directory 'C:/Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Collections/' took 0.01s
+[2017.06.14-11.26.05:151][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.06.14-11.26.05:160][  0]LogContentBrowser: Native class hierarchy populated in 0.0091 seconds. Added 2082 classes and 376 folders.
+[2017.06.14-11.26.05:165][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.06.14-11.26.05:165][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.06.14-11.26.05:168][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0023 seconds. Added 12 classes and 0 folders.
+[2017.06.14-11.26.05:178][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0024 seconds. Added 0 classes and 0 folders.
+[2017.06.14-11.26.05:260][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0031 seconds. Added 0 classes and 0 folders.
+[2017.06.14-11.26.05:267][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0023 seconds. Added 1 classes and 2 folders.
+[2017.06.14-11.26.05:281][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.06.14-11.26.05:286][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.06.14-11.26.05:315][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0023 seconds. Added 1 classes and 2 folders.
+[2017.06.14-11.26.05:315][  0]LogLoad: Full Startup: 8.80 seconds (BP compile: 0.00 seconds)
+[2017.06.14-11.26.05:315][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.06.14-11.26.05:315][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.06.14-11.26.05:328][  0]LogOcInput: OculusInput pre-init called
+[2017.06.14-11.26.05:346][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.06.14-11.26.05:486][  0]LogRenderer: Reallocating scene render targets to support 1776x668 (Frame:2).
+[2017.06.14-11.26.05:615][  1]LogAssetRegistry: Asset discovery search completed in 4.9286 seconds
+[2017.06.14-11.26.05:615][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2017.06.14-11.26.05:615][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000231 seconds (updated 0 objects)
+[2017.06.14-11.26.39:701][669]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.14-11.26.39:718][669]Cmd: MAP LOAD FILE="../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Maps/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.06.14-11.26.39:718][669]LightingResults: New page: Lighting Build
+[2017.06.14-11.26.39:725][669]LogContentBrowser: Native class hierarchy updated for 'StatsViewer' in 0.0025 seconds. Added 5 classes and 0 folders.
+[2017.06.14-11.26.39:726][669]LoadErrors: New page: Loading map: MainMenu.umap
+[2017.06.14-11.26.39:726][669]MapCheck: New page: Map Check
+[2017.06.14-11.26.39:726][669]LightingResults: New page: Lighting Build
+[2017.06.14-11.26.39:734][669]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.06.14-11.26.39:755][669]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.06.14-11.26.39:832][669]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 76.384ms to complete.
+[2017.06.14-11.26.39:832][669]LogFileHelpers: Loading map 'MainMenu' took 0.115
+[2017.06.14-11.26.42:578][888]LogSavePackage: Save=48.55ms
+[2017.06.14-11.26.42:578][888]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/MainMenu265C61AD4B84D06F39CFB6B7CFF87A73.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Maps/MainMenu.umap'
+[2017.06.14-11.26.42:584][888]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Maps/MainMenu.umap
+[2017.06.14-11.26.43:893][995]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Ava/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Ava/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Ava/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.06.14-11.26.43:893][995]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.14-11.26.43:893][995]PIE: New page: SIE session: MainMenu (14 Jun 2017 12:26:43)
+[2017.06.14-11.26.43:894][995]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_MainMenu
+[2017.06.14-11.26.43:895][995]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000991s)
+[2017.06.14-11.26.43:895][995]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.14-11.26.43:895][995]LogPlayLevel: PIE: World Init took: (0.000589s)
+[2017.06.14-11.26.43:896][995]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/MainMenu.MainMenu to /Game/Ava/Maps/UEDPIE_0_MainMenu.MainMenu (0.002252s)
+[2017.06.14-11.26.43:906][995]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.14-11.26.43:914][995]LogInit: FAudioDevice initialized.
+[2017.06.14-11.26.43:974][995]LogWorld: Game class is 'AvaGameMode'
+[2017.06.14-11.26.43:976][995]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2017.06.14-12.26.43
+[2017.06.14-11.26.43:977][995]LogWorld: Bringing up level for play took: 0.001416
+[2017.06.14-11.26.43:978][995]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.14-11.26.43:985][995]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0024 seconds. Added 11 classes and 0 folders.
+[2017.06.14-11.26.43:986][995]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_MainMenu 0.963
+[2017.06.14-11.26.43:990][995]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Ava/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Ava/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Ava/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.06.14-11.26.45:550][ 88]LogNet: Browse: /Game/Ava/Maps/PalaceLevel
+[2017.06.14-11.26.45:550][ 88]LogLoad: LoadMap: /Game/Ava/Maps/PalaceLevel
+[2017.06.14-11.26.45:558][ 88]Cmd: MEM
+[2017.06.14-11.26.45:564][ 88]LogMemory: Platform Memory Stats for Windows
+[2017.06.14-11.26.45:565][ 88]LogMemory: Process Physical Memory: 876.47 MB used, 881.68 MB peak
+[2017.06.14-11.26.45:565][ 88]LogMemory: Process Virtual Memory: 1326.07 MB used, 1330.08 MB peak
+[2017.06.14-11.26.45:565][ 88]LogMemory: Physical Memory: 16858.33 MB used, 32684.15 MB total
+[2017.06.14-11.26.45:565][ 88]LogMemory: Virtual Memory: 2238.77 MB used, 8388608.00 MB total
+[2017.06.14-11.26.45:565][ 88]LogMemory: 
+[2017.06.14-11.26.45:565][ 88]Allocator Stats for TBB: (not implemented)
+[2017.06.14-11.26.45:643][ 88]LogBlueprint:Warning: Compiler Warning InputAction Event references unknown Action 'Crouch' for  InputAction Crouch 
+[2017.06.14-11.26.45:646][ 88]LogBlueprint:Warning: Compiler Warning [0049.13] Compile of Ue4ASP_Character successful, but with 1 Warning(s) [in 8 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.06.14-11.26.45:646][ 88]LogBlueprint:Warning: Compiler Warning [0049.13] Compile of Ue4ASP_Character successful, but with 2 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.06.14-11.26.45:646][ 88]LogBlueprint:Warning: Compiler Warning [0049.13] Compile of Ue4ASP_Character successful, but with 3 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.06.14-11.26.45:721][ 88]LogBlueprint:Warning: Compiler Warning InputAction Event references unknown Action 'Crouch' for  InputAction Crouch 
+[2017.06.14-11.26.45:723][ 88]LogBlueprint:Warning: Compiler Warning [0049.20] Compile of Ue4ASP_Character successful, but with 1 Warning(s) [in 7 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.06.14-11.26.45:724][ 88]LogBlueprint:Warning: Compiler Warning [0049.20] Compile of Ue4ASP_Character successful, but with 2 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.06.14-11.26.45:724][ 88]LogBlueprint:Warning: Compiler Warning [0049.20] Compile of Ue4ASP_Character successful, but with 3 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.06.14-11.26.46:667][ 88]LogAIModule: Creating AISystem for world PalaceLevel
+[2017.06.14-11.26.46:667][ 88]LogWorld: Game class is 'AvaGameMode'
+[2017.06.14-11.26.46:769][ 88]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_PalaceLevel.PalaceLevel up for play (max tick rate 0) at 2017.06.14-12.26.46
+[2017.06.14-11.26.46:772][ 88]LogWorld: Bringing up level for play took: 0.103181
+[2017.06.14-11.26.46:774][ 88]LogLoad: Took 1.223543 seconds to LoadMap(/Game/Ava/Maps/PalaceLevel)
+[2017.06.14-11.26.52:004][388]Cmd: SELECT NONE
+[2017.06.14-11.26.53:170][463]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Ava/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Ava/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Ava/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.06.14-11.26.53:211][463]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Ava/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Ava/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Ava/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2017.06.14-11.27.54:778][969]LogMaterial: Missing cached shader map for material lambert1, compiling. 
+[2017.06.14-11.27.54:839][969]LogMaterial: Missing cached shader map for material lambert1, compiling. 
+[2017.06.14-11.27.54:846][969]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.27.54:872][969]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2017.06.14-11.27.56:040][ 20]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 22 instructions
+[2017.06.14-11.27.56:040][ 20]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.06.14-11.27.56:040][ 20]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.06.14-11.42.11:296][218]LogMaterial: Missing cached shader map for material DefaultShader, compiling. 
+[2017.06.14-11.42.11:345][218]LogMaterial: Missing cached shader map for material DefaultShader, compiling. 
+[2017.06.14-11.42.11:351][218]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.42.12:447][270]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 22 instructions
+[2017.06.14-11.42.12:447][270]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.06.14-11.42.12:447][270]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.06.14-11.42.13:186][320]LogProperty:Warning: ObjectProperty /Script/Engine.ExpressionInput:Expression: unresolved reference to 'MaterialExpressionAppendVector'MaterialGraphNode_5.MaterialExpressionAppendVector_1')'
+[2017.06.14-11.42.13:187][320]LogProperty:Warning: ObjectProperty /Script/Engine.ExpressionInput:Expression: unresolved reference to 'MaterialExpressionTextureSampleParameter2D'MaterialGraphNode_10.MaterialExpressionTextureSampleParameter2D_0',OutputIndex=3,Mask=1,MaskB=1)'
+[2017.06.14-11.42.13:187][320]LogLinker: Can't find file '/Engine/Transient'
+[2017.06.14-11.42.13:187][320]LogProperty:Warning: ObjectProperty /Script/Engine.MaterialExpression:Material: unresolved reference to 'PreviewMaterial'/Engine/Transient.L_P_DEFAULT_SHADER_NO_SPEC''
+[2017.06.14-11.42.13:188][320]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'MaterialGraphNode_5.EdGraphPin_15399''
+[2017.06.14-11.42.13:188][320]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'MaterialGraphNode_10.EdGraphPin_15426''
+[2017.06.14-11.42.13:189][320]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'MaterialGraphNode_Root_0.EdGraphPin_15366''
+[2017.06.14-11.42.13:191][320]LogProperty:Warning: ObjectProperty /Script/Engine.ExpressionInput:Expression: unresolved reference to 'MaterialExpressionMultiply'MaterialGraphNode_7.MaterialExpressionMultiply_1')'
+[2017.06.14-11.42.13:191][320]LogProperty:Warning: ObjectProperty /Script/Engine.ExpressionInput:Expression: unresolved reference to 'MaterialExpressionMultiply'MaterialGraphNode_6.MaterialExpressionMultiply_0')'
+[2017.06.14-11.42.13:191][320]LogLinker: Can't find file '/Engine/Transient'
+[2017.06.14-11.42.13:192][320]LogProperty:Warning: ObjectProperty /Script/Engine.MaterialExpression:Material: unresolved reference to 'PreviewMaterial'/Engine/Transient.L_P_DEFAULT_SHADER_NO_SPEC''
+[2017.06.14-11.42.13:192][320]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'MaterialGraphNode_7.EdGraphPin_15405''
+[2017.06.14-11.42.13:192][320]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'MaterialGraphNode_6.EdGraphPin_15402''
+[2017.06.14-11.42.13:195][320]LogProperty:Warning: ObjectProperty /Script/Engine.ExpressionInput:Expression: unresolved reference to 'MaterialExpressionTextureSampleParameter2D'MaterialGraphNode_10.MaterialExpressionTextureSampleParameter2D_0',OutputIndex=2,Mask=1,MaskG=1)'
+[2017.06.14-11.42.13:195][320]LogProperty:Warning: ObjectProperty /Script/Engine.ExpressionInput:Expression: unresolved reference to 'MaterialExpressionScalarParameter'MaterialGraphNode_11.MaterialExpressionScalarParameter_1')'
+[2017.06.14-11.42.13:195][320]LogLinker: Can't find file '/Engine/Transient'
+[2017.06.14-11.42.13:195][320]LogProperty:Warning: ObjectProperty /Script/Engine.MaterialExpression:Material: unresolved reference to 'PreviewMaterial'/Engine/Transient.L_P_DEFAULT_SHADER_NO_SPEC''
+[2017.06.14-11.42.13:196][320]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'MaterialGraphNode_10.EdGraphPin_15425''
+[2017.06.14-11.42.13:196][320]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'MaterialGraphNode_11.EdGraphPin_15428''
+[2017.06.14-11.42.13:198][320]LogProperty:Warning: ObjectProperty /Script/Engine.ExpressionInput:Expression: unresolved reference to 'MaterialExpressionTextureSampleParameter2D'MaterialGraphNode_10.MaterialExpressionTextureSampleParameter2D_0',OutputIndex=1,Mask=1,MaskR=1)'
+[2017.06.14-11.42.13:198][320]LogProperty:Warning: ObjectProperty /Script/Engine.ExpressionInput:Expression: unresolved reference to 'MaterialExpressionScalarParameter'MaterialGraphNode_11.MaterialExpressionScalarParameter_1')'
+[2017.06.14-11.42.13:199][320]LogLinker: Can't find file '/Engine/Transient'
+[2017.06.14-11.42.13:199][320]LogProperty:Warning: ObjectProperty /Script/Engine.MaterialExpression:Material: unresolved reference to 'PreviewMaterial'/Engine/Transient.L_P_DEFAULT_SHADER_NO_SPEC''
+[2017.06.14-11.42.13:199][320]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'MaterialGraphNode_10.EdGraphPin_15424''
+[2017.06.14-11.42.13:200][320]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'MaterialGraphNode_11.EdGraphPin_15428''
+[2017.06.14-11.42.13:203][320]LogProperty:Warning: ObjectProperty /Script/Engine.ExpressionInput:Expression: unresolved reference to 'MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_23')'
+[2017.06.14-11.42.13:203][320]LogLinker:Warning: Can't find file '/Game/Finals/Window/Windows_NormalMap'
+[2017.06.14-11.42.13:204][320]LogLinker: Can't find file '/Game/Finals/Window/Windows_NormalMap'
+[2017.06.14-11.42.13:204][320]LogProperty:Warning: ObjectProperty /Script/Engine.MaterialExpressionTextureBase:Texture: unresolved reference to 'Texture2D'/Game/Finals/Window/Windows_NormalMap.Windows_NormalMap''
+[2017.06.14-11.42.13:204][320]LogLinker: Can't find file '/Engine/Transient'
+[2017.06.14-11.42.13:205][320]LogProperty:Warning: ObjectProperty /Script/Engine.MaterialExpression:Material: unresolved reference to 'PreviewMaterial'/Engine/Transient.L_P_DEFAULT_SHADER_NO_SPEC''
+[2017.06.14-11.42.13:205][320]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'MaterialGraphNode_8.EdGraphPin_15411''
+[2017.06.14-11.42.13:208][320]LogLinker: Can't find file '/Engine/Transient'
+[2017.06.14-11.42.13:208][320]LogProperty:Warning: ObjectProperty /Script/Engine.MaterialExpression:Material: unresolved reference to 'PreviewMaterial'/Engine/Transient.L_P_DEFAULT_SHADER_NO_SPEC''
+[2017.06.14-11.42.13:221][320]LogMaterial: Missing cached shader map for material DefaultShader, compiling. 
+[2017.06.14-11.42.13:229][320]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.42.13:230][320]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSampleParameter2D_0, compiling. 
+[2017.06.14-11.42.13:827][348]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 22 instructions
+[2017.06.14-11.42.13:827][348]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.06.14-11.42.13:827][348]MaterialEditorStats: Info Texture samplers: 0/16
+[2017.06.14-11.42.17:544][588]LogMaterial: Missing cached shader map for material DefaultShader, compiling. 
+[2017.06.14-11.42.17:545][588]LogMaterial:Warning: Failed to compile Material /Engine/Transient.DefaultShader for platform PCD3D_SM5, Default Material will be used in game.
+[2017.06.14-11.42.17:545][588]LogMaterial:Warning: 	(Node TextureSampleParameter2D) Param2D> Requires Texture2D
+[2017.06.14-11.42.17:545][588]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.42.17:571][588]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSampleParameter2D_0, compiling. 
+[2017.06.14-11.42.17:572][588]MaterialEditorStats:Error: Error [SM5] (Node TextureSampleParameter2D) Param2D> Requires Texture2D
+[2017.06.14-11.42.23:226][941]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Shaders/DefaultShader" FILE="../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Shaders/DefaultShader.uasset" SILENT=true
+[2017.06.14-11.42.23:240][941]LogSavePackage: Save=10.98ms
+[2017.06.14-11.42.23:240][941]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/DefaultShader8B8F3ACF4158472629FFFC9FC5E7CA52.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Shaders/DefaultShader.uasset'
+[2017.06.14-11.42.23:265][941]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Shaders/DefaultShader.uasset
+[2017.06.14-11.42.36:599][242]LogProperty:Warning: ObjectProperty /Script/Engine.ExpressionInput:Expression: unresolved reference to 'MaterialExpressionTextureSampleParameter2D'MaterialGraphNode_12.MaterialExpressionTextureSampleParameter2D_2',Mask=1,MaskR=1,MaskG=1,MaskB=1)'
+[2017.06.14-11.42.36:599][242]LogProperty:Warning: ObjectProperty /Script/Engine.ExpressionInput:Expression: unresolved reference to 'MaterialExpressionScalarParameter'MaterialGraphNode_13.MaterialExpressionScalarParameter_3')'
+[2017.06.14-11.42.36:600][242]LogLinker: Can't find file '/Engine/Transient'
+[2017.06.14-11.42.36:600][242]LogProperty:Warning: ObjectProperty /Script/Engine.MaterialExpression:Material: unresolved reference to 'PreviewMaterial'/Engine/Transient.L_P_DEFAULT_SHADER_NO_SPEC''
+[2017.06.14-11.42.36:601][242]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'MaterialGraphNode_12.EdGraphPin_15431''
+[2017.06.14-11.42.36:601][242]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'MaterialGraphNode_13.EdGraphPin_15436''
+[2017.06.14-11.42.36:601][242]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'MaterialGraphNode_Root_0.EdGraphPin_15359''
+[2017.06.14-11.42.36:604][242]LogProperty:Warning: ObjectProperty /Script/Engine.ExpressionInput:Expression: unresolved reference to 'MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_23')'
+[2017.06.14-11.42.36:604][242]LogLinker:Warning: Can't find file '/Game/Finals/Window/windows_colour'
+[2017.06.14-11.42.36:604][242]LogLinker: Can't find file '/Game/Finals/Window/windows_colour'
+[2017.06.14-11.42.36:605][242]LogProperty:Warning: ObjectProperty /Script/Engine.MaterialExpressionTextureBase:Texture: unresolved reference to 'Texture2D'/Game/Finals/Window/windows_colour.windows_colour''
+[2017.06.14-11.42.36:605][242]LogLinker: Can't find file '/Engine/Transient'
+[2017.06.14-11.42.36:605][242]LogProperty:Warning: ObjectProperty /Script/Engine.MaterialExpression:Material: unresolved reference to 'PreviewMaterial'/Engine/Transient.L_P_DEFAULT_SHADER_NO_SPEC''
+[2017.06.14-11.42.36:605][242]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'MaterialGraphNode_8.EdGraphPin_15411''
+[2017.06.14-11.42.36:607][242]LogLinker: Can't find file '/Engine/Transient'
+[2017.06.14-11.42.36:607][242]LogProperty:Warning: ObjectProperty /Script/Engine.MaterialExpression:Material: unresolved reference to 'PreviewMaterial'/Engine/Transient.L_P_DEFAULT_SHADER_NO_SPEC''
+[2017.06.14-11.42.36:615][242]LogMaterial: Missing cached shader map for material DefaultShader, compiling. 
+[2017.06.14-11.42.36:615][242]LogMaterial:Warning: Failed to compile Material /Engine/Transient.DefaultShader for platform PCD3D_SM5, Default Material will be used in game.
+[2017.06.14-11.42.36:615][242]LogMaterial:Warning: 	(Node TextureSampleParameter2D) Param2D> Requires Texture2D
+[2017.06.14-11.42.36:615][242]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.42.36:617][242]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSampleParameter2D_1, compiling. 
+[2017.06.14-11.42.38:204][347]LogMaterial: Missing cached shader map for material DefaultShader, compiling. 
+[2017.06.14-11.42.38:205][347]LogMaterial:Warning: Failed to compile Material /Engine/Transient.DefaultShader for platform PCD3D_SM5, Default Material will be used in game.
+[2017.06.14-11.42.38:205][347]LogMaterial:Warning: 	(Node TextureSampleParameter2D) Param2D> Requires Texture2D
+[2017.06.14-11.42.38:205][347]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.42.38:236][347]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSampleParameter2D_1, compiling. 
+[2017.06.14-11.42.41:085][535]LogMaterialEditor: Saving and Compiling material DefaultShader
+[2017.06.14-11.42.46:341][535]LogMaterial: Missing cached shader map for material DefaultShader, compiling. 
+[2017.06.14-11.42.46:341][535]LogMaterial:Warning: Failed to compile Material /Engine/Transient.DefaultShader for platform PCD3D_SM5, Default Material will be used in game.
+[2017.06.14-11.42.46:341][535]LogMaterial:Warning: 	(Node TextureSampleParameter2D) Param2D> Requires Texture2D
+[2017.06.14-11.42.46:341][535]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.42.46:356][535]LogMaterial: Missing cached shader map for material DefaultShader, compiling. 
+[2017.06.14-11.42.46:356][535]LogMaterial:Warning: Failed to compile Material /Game/Ava/Shaders/DefaultShader.DefaultShader for platform PCD3D_SM5, Default Material will be used in game.
+[2017.06.14-11.42.46:356][535]LogMaterial:Warning: 	(Node TextureSampleParameter2D) Param2D> Requires Texture2D
+[2017.06.14-11.42.46:358][535]LogMaterial: Missing cached shader map for material DefaultShader, compiling. 
+[2017.06.14-11.42.46:359][535]LogMaterial:Warning: Failed to compile Material /Game/Ava/Shaders/DefaultShader.DefaultShader for platform PCD3D_SM5, Default Material will be used in game.
+[2017.06.14-11.42.46:359][535]LogMaterial:Warning: 	(Node TextureSampleParameter2D) Param2D> Requires Texture2D
+[2017.06.14-11.42.46:359][535]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.42.46:381][535]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Shaders/DefaultShader" FILE="../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Shaders/DefaultShader.uasset" SILENT=true
+[2017.06.14-11.42.46:403][535]LogSavePackage: Save=12.78ms
+[2017.06.14-11.42.46:403][535]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/DefaultShader097146F2421BA056B3F3C789CF2C2672.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Shaders/DefaultShader.uasset'
+[2017.06.14-11.42.46:413][535]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Shaders/DefaultShader.uasset
+[2017.06.14-11.42.53:989][989]LogMaterial: Missing cached shader map for material DefaultShader, compiling. 
+[2017.06.14-11.42.53:990][989]LogMaterial:Warning: Failed to compile Material /Engine/Transient.DefaultShader for platform PCD3D_SM5, Default Material will be used in game.
+[2017.06.14-11.42.53:990][989]LogMaterial:Warning: 	(Node TextureSampleParameter2D) Param2D> Requires Texture2D
+[2017.06.14-11.42.53:990][989]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.42.54:021][989]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSampleParameter2D_1, compiling. 
+[2017.06.14-11.42.56:519][131]LogMaterial: Missing cached shader map for material DefaultShader, compiling. 
+[2017.06.14-11.42.56:532][131]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.42.56:560][131]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSampleParameter2D_0, compiling. 
+[2017.06.14-11.42.57:394][171]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 40 instructions
+[2017.06.14-11.42.57:394][171]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.42.57:394][171]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.06.14-11.43.02:947][511]LogMaterial: Missing cached shader map for material DefaultShader, compiling. 
+[2017.06.14-11.43.02:955][511]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.43.02:983][511]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSampleParameter2D_1, compiling. 
+[2017.06.14-11.43.03:588][537]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 40 instructions
+[2017.06.14-11.43.03:588][537]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.14-11.43.03:588][537]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.06.14-11.43.06:553][705]LogMaterialEditor: Saving and Compiling material DefaultShader
+[2017.06.14-11.43.07:025][705]LogMaterial: Missing cached shader map for material DefaultShader, compiling. 
+[2017.06.14-11.43.07:042][705]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.43.07:054][705]LogMaterial: Missing cached shader map for material DefaultShader, compiling. 
+[2017.06.14-11.43.07:071][705]LogMaterial: Missing cached shader map for material DefaultShader, compiling. 
+[2017.06.14-11.43.07:080][705]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.14-11.43.09:227][705]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Shaders/DefaultShader" FILE="../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Shaders/DefaultShader.uasset" SILENT=true
+[2017.06.14-11.43.09:251][705]LogSavePackage: Save=14.29ms
+[2017.06.14-11.43.09:251][705]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/DefaultShader69E96CB94AC7AFEAA53D619271C964A2.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Shaders/DefaultShader.uasset'
+[2017.06.14-11.43.09:262][705]LogSavePackage:Display: Finished Sav
