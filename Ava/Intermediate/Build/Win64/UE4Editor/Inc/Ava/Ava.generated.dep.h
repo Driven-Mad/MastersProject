@@ -17,3 +17,6 @@
 #ifndef AVA_MainMenu_generated_h
 	#include "MainMenu.h"
 #endif
+#ifndef AVA_StatueObject_generated_h
+	#include "StatueObject.h"
+#endif

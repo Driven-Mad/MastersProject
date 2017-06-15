@@ -41,35 +41,6 @@ enum class ItemDataVariables : uint8
 typedef TMap<ItemDataVariables, FString> ItemData;
 
 
-//----------------------------------------------------------------------------------------------------------------------
-/// @brief enums for our statues to be used with TMaps 
-//----------------------------------------------------------------------------------------------------------------------
-UENUM(BlueprintType)
-enum class Statue : uint8
-{
-	StatueGreen			UMETA(DisplayName = "StatueGreen"),
-	StatueBlue			UMETA(DisplayName = "StatueBlue"),
-	StatueWhite			UMETA(DisplayName = "StatueWhite"),
-	StatueRed			UMETA(DisplayName = "StatueRed"),
-	StatueYellow		UMETA(DisplayName = "StatueYellow"),
-	StatueBlack			UMETA(DisplayName = "StatueBlack")
-};
-
-
-
-//----------------------------------------------------------------------------------------------------------------------
-/// @brief Data variable enums for our items to be used with TMaps 
-//----------------------------------------------------------------------------------------------------------------------
-UENUM(BlueprintType)
-enum class StatueDataVariables : uint8
-{
-	statueMeshFilepath			UMETA(DisplayName = "statueMeshFilepath"),
-	statueName					UMETA(DisplayName = "statueName"),
-	statueEnumIdentifier		UMETA(DisplayName = "statueEnumIdentifier")
-};
-
-typedef TMap<StatueDataVariables, FString> StatueData;
-
 UCLASS()
 class AVA_API ADataFactory : public AActor
 {
@@ -88,7 +59,5 @@ public:
 	static TMap<Item, ItemData> Items;
 	static TMap<Item, ItemData> SetupItems();
 
-	static TMap<Statue, StatueData> Statues;
-	static TMap<Statue, StatueData> SetupStatues();
 	
 };

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Ava.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{1EB811F1-3A91-474F-B312-7F6CBF82879B}</UniqueIdentifier>
+      <UniqueIdentifier>{8D8A9122-7DC0-4901-A79C-D5F9A526A6FE}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Ava.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{11F165F6-4AC6-4B8B-BEC4-1424117DDAF8}</UniqueIdentifier>
+      <UniqueIdentifier>{DAC835F9-9F56-406A-BC3E-5059948A9A0C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Ava">
-      <UniqueIdentifier>{9C58B66D-1A4C-4E7D-B3BF-2BD67B89D05B}</UniqueIdentifier>
+      <UniqueIdentifier>{547D57C1-40EF-4FA0-80EA-97A6F789153F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Ava\Ava.Build.cs">
       <Filter>Source\Ava</Filter>
@@ -56,14 +56,20 @@
     <ClInclude Include="..\..\Source\Ava\MainCharacter.h">
       <Filter>Source\Ava</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
+    <ClCompile Include="..\..\Source\Ava\MainMenu.cpp">
+      <Filter>Source\Ava</Filter>
+    </ClCompile>
     <ClInclude Include="..\..\Source\Ava\MainMenu.h">
       <Filter>Source\Ava</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Ava\MainMenu.cpp">
+    <ClInclude Include="..\..\Source\Ava\StatueObject.h">
+      <Filter>Source\Ava</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\Ava\StatueObject.cpp">
       <Filter>Source\Ava</Filter>
     </ClCompile>
   </ItemGroup>

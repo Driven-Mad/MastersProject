@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define AVA_DataFactory_generated_h
 
-#define Ava_Source_Ava_DataFactory_h_76_RPC_WRAPPERS
-#define Ava_Source_Ava_DataFactory_h_76_RPC_WRAPPERS_NO_PURE_DECLS
-#define Ava_Source_Ava_DataFactory_h_76_INCLASS_NO_PURE_DECLS \
+#define Ava_Source_Ava_DataFactory_h_47_RPC_WRAPPERS
+#define Ava_Source_Ava_DataFactory_h_47_RPC_WRAPPERS_NO_PURE_DECLS
+#define Ava_Source_Ava_DataFactory_h_47_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesADataFactory(); \
 	friend AVA_API class UClass* Z_Construct_UClass_ADataFactory(); \
@@ -26,7 +26,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Ava_Source_Ava_DataFactory_h_76_INCLASS \
+#define Ava_Source_Ava_DataFactory_h_47_INCLASS \
 	private: \
 	static void StaticRegisterNativesADataFactory(); \
 	friend AVA_API class UClass* Z_Construct_UClass_ADataFactory(); \
@@ -37,7 +37,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Ava_Source_Ava_DataFactory_h_76_STANDARD_CONSTRUCTORS \
+#define Ava_Source_Ava_DataFactory_h_47_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ADataFactory(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ADataFactory) \
@@ -49,7 +49,7 @@ private: \
 public:
 
 
-#define Ava_Source_Ava_DataFactory_h_76_ENHANCED_CONSTRUCTORS \
+#define Ava_Source_Ava_DataFactory_h_47_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private copy-constructor, should never be used */ \
 	NO_API ADataFactory(const ADataFactory& InCopy); \
@@ -59,23 +59,23 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADataFactory); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ADataFactory)
 
 
-#define Ava_Source_Ava_DataFactory_h_73_PROLOG
-#define Ava_Source_Ava_DataFactory_h_76_GENERATED_BODY_LEGACY \
+#define Ava_Source_Ava_DataFactory_h_44_PROLOG
+#define Ava_Source_Ava_DataFactory_h_47_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Ava_Source_Ava_DataFactory_h_76_RPC_WRAPPERS \
-	Ava_Source_Ava_DataFactory_h_76_INCLASS \
-	Ava_Source_Ava_DataFactory_h_76_STANDARD_CONSTRUCTORS \
+	Ava_Source_Ava_DataFactory_h_47_RPC_WRAPPERS \
+	Ava_Source_Ava_DataFactory_h_47_INCLASS \
+	Ava_Source_Ava_DataFactory_h_47_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Ava_Source_Ava_DataFactory_h_76_GENERATED_BODY \
+#define Ava_Source_Ava_DataFactory_h_47_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Ava_Source_Ava_DataFactory_h_76_RPC_WRAPPERS_NO_PURE_DECLS \
-	Ava_Source_Ava_DataFactory_h_76_INCLASS_NO_PURE_DECLS \
-	Ava_Source_Ava_DataFactory_h_76_ENHANCED_CONSTRUCTORS \
+	Ava_Source_Ava_DataFactory_h_47_RPC_WRAPPERS_NO_PURE_DECLS \
+	Ava_Source_Ava_DataFactory_h_47_INCLASS_NO_PURE_DECLS \
+	Ava_Source_Ava_DataFactory_h_47_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -84,17 +84,6 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #define CURRENT_FILE_ID Ava_Source_Ava_DataFactory_h
 
 
-#define FOREACH_ENUM_STATUEDATAVARIABLES(op) \
-	op(StatueDataVariables::statueMeshFilepath) \
-	op(StatueDataVariables::statueName) \
-	op(StatueDataVariables::statueEnumIdentifier) 
-#define FOREACH_ENUM_STATUE(op) \
-	op(Statue::StatueGreen) \
-	op(Statue::StatueBlue) \
-	op(Statue::StatueWhite) \
-	op(Statue::StatueRed) \
-	op(Statue::StatueYellow) \
-	op(Statue::StatueBlack) 
 #define FOREACH_ENUM_ITEMDATAVARIABLES(op) \
 	op(ItemDataVariables::itemMeshFilepath) \
 	op(ItemDataVariables::itemSpriteFilepath) \

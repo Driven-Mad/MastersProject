@@ -13,30 +13,6 @@ void EmptyLinkFunctionForGeneratedCode1Ava() {}
 	{
 	}
 	IMPLEMENT_CLASS(AAvaGameMode, 1064099451);
-static class UEnum* StatueDataVariables_StaticEnum()
-{
-	extern AVA_API class UPackage* Z_Construct_UPackage__Script_Ava();
-	static class UEnum* Singleton = NULL;
-	if (!Singleton)
-	{
-		extern AVA_API class UEnum* Z_Construct_UEnum_Ava_StatueDataVariables();
-		Singleton = GetStaticEnum(Z_Construct_UEnum_Ava_StatueDataVariables, Z_Construct_UPackage__Script_Ava(), TEXT("StatueDataVariables"));
-	}
-	return Singleton;
-}
-static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_StatueDataVariables(StatueDataVariables_StaticEnum, TEXT("/Script/Ava"), TEXT("StatueDataVariables"), false, nullptr, nullptr);
-static class UEnum* Statue_StaticEnum()
-{
-	extern AVA_API class UPackage* Z_Construct_UPackage__Script_Ava();
-	static class UEnum* Singleton = NULL;
-	if (!Singleton)
-	{
-		extern AVA_API class UEnum* Z_Construct_UEnum_Ava_Statue();
-		Singleton = GetStaticEnum(Z_Construct_UEnum_Ava_Statue, Z_Construct_UPackage__Script_Ava(), TEXT("Statue"));
-	}
-	return Singleton;
-}
-static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Statue(Statue_StaticEnum, TEXT("/Script/Ava"), TEXT("Statue"), false, nullptr, nullptr);
 static class UEnum* ItemDataVariables_StaticEnum()
 {
 	extern AVA_API class UPackage* Z_Construct_UPackage__Script_Ava();
@@ -68,26 +44,30 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	void AMainCharacter::StaticRegisterNativesAMainCharacter()
 	{
 	}
-	IMPLEMENT_CLASS(AMainCharacter, 645912772);
+	IMPLEMENT_CLASS(AMainCharacter, 3336874889);
 	void UMainMenu::StaticRegisterNativesUMainMenu()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(UMainMenu::StaticClass(), "Construct",(Native)&UMainMenu::execConstruct);
 		FNativeFunctionRegistrar::RegisterFunction(UMainMenu::StaticClass(), "Play",(Native)&UMainMenu::execPlay);
 	}
 	IMPLEMENT_CLASS(UMainMenu, 1990416401);
+	void AStatueObject::StaticRegisterNativesAStatueObject()
+	{
+	}
+	IMPLEMENT_CLASS(AStatueObject, 663918513);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
 	ENGINE_API class UClass* Z_Construct_UClass_AActor();
 	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
+	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	UMG_API class UClass* Z_Construct_UClass_UUserWidget();
+	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 
 	AVA_API class UClass* Z_Construct_UClass_AAvaGameMode_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_AAvaGameMode();
-	AVA_API class UEnum* Z_Construct_UEnum_Ava_StatueDataVariables();
-	AVA_API class UEnum* Z_Construct_UEnum_Ava_Statue();
 	AVA_API class UEnum* Z_Construct_UEnum_Ava_ItemDataVariables();
 	AVA_API class UEnum* Z_Construct_UEnum_Ava_Item();
 	AVA_API class UClass* Z_Construct_UClass_ADataFactory_NoRegister();
@@ -98,6 +78,8 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	AVA_API class UFunction* Z_Construct_UFunction_UMainMenu_Play();
 	AVA_API class UClass* Z_Construct_UClass_UMainMenu_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_UMainMenu();
+	AVA_API class UClass* Z_Construct_UClass_AStatueObject_NoRegister();
+	AVA_API class UClass* Z_Construct_UClass_AStatueObject();
 	AVA_API class UPackage* Z_Construct_UPackage__Script_Ava();
 	UClass* Z_Construct_UClass_AAvaGameMode_NoRegister()
 	{
@@ -133,68 +115,6 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AAvaGameMode(Z_Construct_UClass_AAvaGameMode, &AAvaGameMode::StaticClass, TEXT("AAvaGameMode"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AAvaGameMode);
-	UEnum* Z_Construct_UEnum_Ava_StatueDataVariables()
-	{
-		UPackage* Outer=Z_Construct_UPackage__Script_Ava();
-		extern uint32 Get_Z_Construct_UEnum_Ava_StatueDataVariables_CRC();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("StatueDataVariables"), 0, Get_Z_Construct_UEnum_Ava_StatueDataVariables_CRC(), false);
-		if (!ReturnEnum)
-		{
-			ReturnEnum = new(EC_InternalUseOnlyConstructor, Outer, TEXT("StatueDataVariables"), RF_Public|RF_Transient|RF_MarkAsNative) UEnum(FObjectInitializer());
-			TArray<TPair<FName, uint8>> EnumNames;
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("StatueDataVariables::statueMeshFilepath")), 0));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("StatueDataVariables::statueName")), 1));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("StatueDataVariables::statueEnumIdentifier")), 2));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("StatueDataVariables::StatueDataVariables_MAX")), 3));
-			ReturnEnum->SetEnums(EnumNames, UEnum::ECppForm::EnumClass);
-			ReturnEnum->CppType = TEXT("StatueDataVariables");
-#if WITH_METADATA
-			UMetaData* MetaData = ReturnEnum->GetOutermost()->GetMetaData();
-			MetaData->SetValue(ReturnEnum, TEXT("BlueprintType"), TEXT("true"));
-			MetaData->SetValue(ReturnEnum, TEXT("ModuleRelativePath"), TEXT("DataFactory.h"));
-			MetaData->SetValue(ReturnEnum, TEXT("statueEnumIdentifier.DisplayName"), TEXT("statueEnumIdentifier"));
-			MetaData->SetValue(ReturnEnum, TEXT("statueMeshFilepath.DisplayName"), TEXT("statueMeshFilepath"));
-			MetaData->SetValue(ReturnEnum, TEXT("statueName.DisplayName"), TEXT("statueName"));
-			MetaData->SetValue(ReturnEnum, TEXT("ToolTip"), TEXT("@brief Data variable enums for our items to be used with TMaps"));
-#endif
-		}
-		return ReturnEnum;
-	}
-	uint32 Get_Z_Construct_UEnum_Ava_StatueDataVariables_CRC() { return 1718839979U; }
-	UEnum* Z_Construct_UEnum_Ava_Statue()
-	{
-		UPackage* Outer=Z_Construct_UPackage__Script_Ava();
-		extern uint32 Get_Z_Construct_UEnum_Ava_Statue_CRC();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("Statue"), 0, Get_Z_Construct_UEnum_Ava_Statue_CRC(), false);
-		if (!ReturnEnum)
-		{
-			ReturnEnum = new(EC_InternalUseOnlyConstructor, Outer, TEXT("Statue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnum(FObjectInitializer());
-			TArray<TPair<FName, uint8>> EnumNames;
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Statue::StatueGreen")), 0));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Statue::StatueBlue")), 1));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Statue::StatueWhite")), 2));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Statue::StatueRed")), 3));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Statue::StatueYellow")), 4));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Statue::StatueBlack")), 5));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Statue::Statue_MAX")), 6));
-			ReturnEnum->SetEnums(EnumNames, UEnum::ECppForm::EnumClass);
-			ReturnEnum->CppType = TEXT("Statue");
-#if WITH_METADATA
-			UMetaData* MetaData = ReturnEnum->GetOutermost()->GetMetaData();
-			MetaData->SetValue(ReturnEnum, TEXT("BlueprintType"), TEXT("true"));
-			MetaData->SetValue(ReturnEnum, TEXT("ModuleRelativePath"), TEXT("DataFactory.h"));
-			MetaData->SetValue(ReturnEnum, TEXT("StatueBlack.DisplayName"), TEXT("StatueBlack"));
-			MetaData->SetValue(ReturnEnum, TEXT("StatueBlue.DisplayName"), TEXT("StatueBlue"));
-			MetaData->SetValue(ReturnEnum, TEXT("StatueGreen.DisplayName"), TEXT("StatueGreen"));
-			MetaData->SetValue(ReturnEnum, TEXT("StatueRed.DisplayName"), TEXT("StatueRed"));
-			MetaData->SetValue(ReturnEnum, TEXT("StatueWhite.DisplayName"), TEXT("StatueWhite"));
-			MetaData->SetValue(ReturnEnum, TEXT("StatueYellow.DisplayName"), TEXT("StatueYellow"));
-			MetaData->SetValue(ReturnEnum, TEXT("ToolTip"), TEXT("@brief enums for our statues to be used with TMaps"));
-#endif
-		}
-		return ReturnEnum;
-	}
-	uint32 Get_Z_Construct_UEnum_Ava_Statue_CRC() { return 3149838819U; }
 	UEnum* Z_Construct_UEnum_Ava_ItemDataVariables()
 	{
 		UPackage* Outer=Z_Construct_UPackage__Script_Ava();
@@ -318,6 +238,7 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_prayingSphere = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("prayingSphere"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(prayingSphere, AMainCharacter), 0x00200800000a001d, Z_Construct_UClass_USphereComponent_NoRegister());
 				UProperty* NewProp_lookRate = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("lookRate"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(lookRate, AMainCharacter), 0x0020080000000005);
 				UProperty* NewProp_turnRate = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("turnRate"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(turnRate, AMainCharacter), 0x0020080000000005);
 				UProperty* NewProp_sprintSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("sprintSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(sprintSpeed, AMainCharacter), 0x0020080000000005);
@@ -349,6 +270,10 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_prayingSphere, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_prayingSphere, TEXT("Category"), TEXT("prayingComponents"));
+				MetaData->SetValue(NewProp_prayingSphere, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_prayingSphere, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(NewProp_lookRate, TEXT("Category"), TEXT("CharacterSpeeds"));
 				MetaData->SetValue(NewProp_lookRate, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(NewProp_lookRate, TEXT("ToolTip"), TEXT("@brief CharacterState - characters camera look speed"));
@@ -475,6 +400,54 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UMainMenu(Z_Construct_UClass_UMainMenu, &UMainMenu::StaticClass, TEXT("UMainMenu"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UMainMenu);
+	UClass* Z_Construct_UClass_AStatueObject_NoRegister()
+	{
+		return AStatueObject::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AStatueObject()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_Ava();
+			OuterClass = AStatueObject::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_StatueName = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("StatueName"), RF_Public|RF_Transient|RF_MarkAsNative) UStrProperty(CPP_PROPERTY_BASE(StatueName, AStatueObject), 0x0010000000000005);
+				UProperty* NewProp_DesignatedMesh = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("DesignatedMesh"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(DesignatedMesh, AStatueObject), 0x001000000008001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bCanPlayerPray, AStatueObject, bool);
+				UProperty* NewProp_bCanPlayerPray = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bCanPlayerPray"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bCanPlayerPray, AStatueObject), 0x0010000000020015, CPP_BOOL_PROPERTY_BITMASK(bCanPlayerPray, AStatueObject), sizeof(bool), true);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("StatueObject.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("StatueObject.h"));
+				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_StatueName, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_StatueName, TEXT("Category"), TEXT("StatueVariables"));
+				MetaData->SetValue(NewProp_StatueName, TEXT("ModuleRelativePath"), TEXT("StatueObject.h"));
+				MetaData->SetValue(NewProp_DesignatedMesh, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_DesignatedMesh, TEXT("Category"), TEXT("StatueVariables"));
+				MetaData->SetValue(NewProp_DesignatedMesh, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_DesignatedMesh, TEXT("ModuleRelativePath"), TEXT("StatueObject.h"));
+				MetaData->SetValue(NewProp_bCanPlayerPray, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_bCanPlayerPray, TEXT("Category"), TEXT("StatueVariables"));
+				MetaData->SetValue(NewProp_bCanPlayerPray, TEXT("ModuleRelativePath"), TEXT("StatueObject.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AStatueObject(Z_Construct_UClass_AStatueObject, &AStatueObject::StaticClass, TEXT("AStatueObject"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AStatueObject);
 	UPackage* Z_Construct_UPackage__Script_Ava()
 	{
 		static UPackage* ReturnPackage = NULL;
@@ -483,8 +456,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Ava")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x95D2D9D9;
-			Guid.B = 0xC5A0179C;
+			Guid.A = 0xB051A08F;
+			Guid.B = 0xA2EF7D1D;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
