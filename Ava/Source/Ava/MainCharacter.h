@@ -163,6 +163,8 @@ protected:
 	//----------------------------------------------------------------------------------------------------------------------
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = CharacterStates)
 		bool bIsInInventory;
+
+	
 //--------------------------------------------------------------------------------------------------------------------------
 /// CHARACTER SPEEDS
 //--------------------------------------------------------------------------------------------------------------------------
@@ -192,10 +194,17 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterSpeeds)
 		float lookRate;
 
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = prayingComponents, meta = (AllowPrivateAccess = "true"))
+		USphereComponent* prayingSphere;
+
+
 private:
 	//----------------------------------------------------------------------------------------------------------------------
 	/// @brief Deltatime to be used anywhere. 
 	//----------------------------------------------------------------------------------------------------------------------
 	float deltaTime;
 	
+
+
 };

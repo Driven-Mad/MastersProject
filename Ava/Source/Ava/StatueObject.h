@@ -3,7 +3,7 @@
 #pragma once
 
 #include "GameFramework/Actor.h"
-#include "DataFactory.h"
+#include "MainCharacter.h"
 #include "StatueObject.generated.h"
 
 UCLASS()
@@ -21,10 +21,16 @@ public:
 	// Called every frame
 	virtual void Tick( float DeltaSeconds ) override;
 
-	ADataFactory* Data;
-	Statue enumStatueChoice;
-private:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = StatueVariables, meta = (AllowPrivateAccess = "true"))
+		bool bCanPlayerPray;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = StatueVariables, meta = (AllowPrivateAccess = "true"))
+		UStaticMeshComponent *DesignatedMesh;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = StatueVariables, meta = (AllowPrivateAccess = "true"))
+		FString StatueName;
+private:
+	AMainCharacter* playerReference;
 
 	
 	

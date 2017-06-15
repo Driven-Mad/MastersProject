@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "Ava.h"
+#include "StatueObject.h"
 #include "MainCharacter.h"
 
 
@@ -41,6 +42,11 @@ AMainCharacter::AMainCharacter()
 	FollowCamera->AttachTo(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
+
+	prayingSphere = CreateDefaultSubobject<USphereComponent>(TEXT("prayingSphere"));
+	prayingSphere->SetSphereRadius(100.f);
+	prayingSphere->AttachTo(RootComponent);
+
 }
 
 // Called when the game starts or when spawned
@@ -61,12 +67,12 @@ void AMainCharacter::Tick(float DeltaTime)
 	if (speed == 0)
 	{
 		bIsIdle = true;
-		GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Purple, "I'M IDLE");
+		//GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Purple, "I'M IDLE");
 	}
 	else if (speed <= walkSpeed)
 	{
 		bIsWalking = true;
-		GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Purple, "I'M WALKING");
+		//GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Purple, "I'M WALKING");
 	}
 	else
 	{
@@ -130,7 +136,7 @@ void AMainCharacter::MoveForward(float value)
 {
 	if ((Controller != NULL) && (value != 0.0f))
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Purple, "I'M RUNNING");
+		//GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Purple, "I'M RUNNING");
 		const FRotator Rotation = Controller->GetControlRotation();
 		const FRotator YawRotation = FRotator(0, Rotation.Yaw, 0);
 		const FVector ForwardVector = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
@@ -201,9 +207,28 @@ void AMainCharacter::LookUp(float value)
 
 void AMainCharacter::Interact()
 {
+	TArray <AActor*> overlappingActors;
+	prayingSphere->GetOverlappingActors(overlappingActors);
+	for (int32 overlappingActorIndex = 0; overlappingActorIndex < overlappingActors.Num(); overlappingActorIndex++)
+	{
+		AStatueObject* const overlappingTest = Cast<AStatueObject>(overlappingActors[overlappingActorIndex]);
+		//if (overlappingTest) //This works
+		if (overlappingTest && overlappingTest->bCanPlayerPray)
+		{
+			overlappingTest->bCanPlayerPray = false;
+
+			GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, overlappingTest->StatueName);
+			GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("YOU ARE PRAYING AT THE :")));
+
+		}
+		else if (overlappingTest && !overlappingTest->bCanPlayerPray)
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("YOU CAN'T PRAY AT ME ANYMORE")));
+		}
+	}
 	//Interact
 	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("BlockingHit: %i"), blockingHit));
-	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, "I'M INTERACTING");
+	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, "I'M INTERACTING");
 }
 
 void AMainCharacter::OpenInventory()
@@ -214,10 +239,10 @@ void AMainCharacter::OpenInventory()
 
 void AMainCharacter::PushPull()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Cyan, "I'M PUSHING/PULLING");
+	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Cyan, "I'M PUSHING/PULLING");
 }
 
 void AMainCharacter::StopPushPull()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Silver, "I'M NOT PUSHING/PULLING");
+	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Silver, "I'M NOT PUSHING/PULLING");
 }

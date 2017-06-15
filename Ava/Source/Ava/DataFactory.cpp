@@ -10,7 +10,6 @@ ADataFactory::ADataFactory()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	Items = SetupItems();
-	Statues = SetupStatues();
 
 }
 
@@ -109,50 +108,3 @@ TMap<Item, ItemData> ADataFactory::SetupItems()
 }
 //Forward Declaration
 TMap<Item, ItemData> ADataFactory::Items;
-
-
-TMap<Statue, StatueData> ADataFactory::SetupStatues()
-{
-	// setup out statue data container
-	TMap<Statue, StatueData> tStatues;
-
-	StatueData a;
-	a.Add(StatueDataVariables::statueName, "Green Statue ");
-	a.Add(StatueDataVariables::statueMeshFilepath, "/Game/StarterContent/Props/SM_MatPreviewMesh_02.SM_MatPreviewMesh_02");
-	a.Add(StatueDataVariables::statueEnumIdentifier, "StatueGreen");
-	tStatues.Add(Statue::StatueGreen,a);
-
-	StatueData b;
-	b.Add(StatueDataVariables::statueName, "Blue Statue ");
-	b.Add(StatueDataVariables::statueMeshFilepath, "/Game/StarterContent/Props/SM_MatPreviewMesh_02.SM_MatPreviewMesh_02");
-	b.Add(StatueDataVariables::statueEnumIdentifier, "StatueBlue");
-	tStatues.Add(Statue::StatueBlue, b);
-
-	StatueData c;
-	c.Add(StatueDataVariables::statueName, "White Statue ");
-	c.Add(StatueDataVariables::statueMeshFilepath, "/Game/StarterContent/Props/SM_MatPreviewMesh_02.SM_MatPreviewMesh_02");
-	c.Add(StatueDataVariables::statueEnumIdentifier, "StatueWhite");
-	tStatues.Add(Statue::StatueWhite, c);
-
-	StatueData d;
-	d.Add(StatueDataVariables::statueName, "Red Statue ");
-	d.Add(StatueDataVariables::statueMeshFilepath, "/Game/StarterContent/Props/SM_MatPreviewMesh_02.SM_MatPreviewMesh_02");
-	d.Add(StatueDataVariables::statueEnumIdentifier, "StatueRed");
-	tStatues.Add(Statue::StatueRed, d);
-
-	StatueData e;
-	e.Add(StatueDataVariables::statueName, "Yellow Statue ");
-	e.Add(StatueDataVariables::statueMeshFilepath, "/Game/StarterContent/Props/SM_MatPreviewMesh_02.SM_MatPreviewMesh_02");
-	e.Add(StatueDataVariables::statueEnumIdentifier, "StatueYellow");
-	tStatues.Add(Statue::StatueYellow, e);
-
-
-	StatueData f;
-	f.Add(StatueDataVariables::statueName, "Black Statue ");
-	f.Add(StatueDataVariables::statueMeshFilepath, "/Game/StarterContent/Props/SM_MatPreviewMesh_02.SM_MatPreviewMesh_02");
-	f.Add(StatueDataVariables::statueEnumIdentifier, "StatueBlack");
-	tStatues.Add(Statue::StatueBlack, f);
-
-	return tStatues;
-}
-TMap<Statue, StatueData> ADataFactory::Statues;
