@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿Log file open, 06/14/17 14:32:33
 LogInit:Display: Running engine for game: Ava
 LogPlatformFile: Not using cached read wrapper
@@ -6,12 +7,17 @@ LogInit:Display: RandInit(541021146) SRandInit(541021152).
 LogTaskGraph: Started task graph with 4 named threads and 9 total threads with 1 sets of task threads.
 LogStats: Stats thread started at 0.105601
 =======
+=======
+>>>>>>> 0a4b0550a52d2943e38af067bfe0cd9492889007
 ﻿Log file open, 06/15/17 08:17:22
 LogInit:Display: Running engine for game: Ava
 LogPlatformFile: Not using cached read wrapper
 LogInit:Display: RandInit(1141018340) SRandInit(1141018342).
 LogTaskGraph: Started task graph with 4 named threads and 9 total threads with 1 sets of task threads.
 LogStats: Stats thread started at 0.104447
+<<<<<<< HEAD
+>>>>>>> 0a4b0550a52d2943e38af067bfe0cd9492889007
+=======
 >>>>>>> 0a4b0550a52d2943e38af067bfe0cd9492889007
 LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
 LogInit: API Version: 2992821
@@ -36,8 +42,11 @@ LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.12
 LogInit: Command line:  
 <<<<<<< HEAD
+<<<<<<< HEAD
 LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/Win64/
 =======
+=======
+>>>>>>> 0a4b0550a52d2943e38af067bfe0cd9492889007
 LogInit: Base directory: C:/Program Files/Epic Games/4.12/Engine/Binaries/Win64/
 >>>>>>> 0a4b0550a52d2943e38af067bfe0cd9492889007
 LogInit: Installed Engine Build: 1
@@ -57,6 +66,7 @@ LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
 LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
+<<<<<<< HEAD
 <<<<<<< HEAD
 [2017.06.14-13.32.33:533][  0]LogInit: Selected Device Profile: [Windows]
 [2017.06.14-13.32.33:533][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
@@ -2002,6 +2012,8 @@ LogInit: Object subsystem initialized
 [2017.06.14-19.11.26:454][869]LogExit: Exiting.
 [2017.06.14-19.11.26:462][869]Log file closed, 06/14/17 20:11:26
 =======
+=======
+>>>>>>> 0a4b0550a52d2943e38af067bfe0cd9492889007
 [2017.06.15-07.17.22:406][  0]LogInit: Selected Device Profile: [Windows]
 [2017.06.15-07.17.22:406][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
 [2017.06.15-07.17.22:420][  0]LogInit: Computer: PC42640
@@ -3210,4 +3222,7 @@ LogInit: Object subsystem initialized
 [2017.06.15-09.23.16:624][467]LogModuleManager: Shutting down and abandoning module PakFile (1)
 [2017.06.15-09.23.16:629][467]LogExit: Exiting.
 [2017.06.15-09.23.16:654][467]Log file closed, 06/15/17 10:23:16
+<<<<<<< HEAD
+>>>>>>> 0a4b0550a52d2943e38af067bfe0cd9492889007
+=======
 >>>>>>> 0a4b0550a52d2943e38af067bfe0cd9492889007
