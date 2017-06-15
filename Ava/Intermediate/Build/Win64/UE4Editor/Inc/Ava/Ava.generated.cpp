@@ -44,17 +44,25 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	void AMainCharacter::StaticRegisterNativesAMainCharacter()
 	{
 	}
-	IMPLEMENT_CLASS(AMainCharacter, 3336874889);
+	IMPLEMENT_CLASS(AMainCharacter, 968979197);
 	void UMainMenu::StaticRegisterNativesUMainMenu()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(UMainMenu::StaticClass(), "Construct",(Native)&UMainMenu::execConstruct);
 		FNativeFunctionRegistrar::RegisterFunction(UMainMenu::StaticClass(), "Play",(Native)&UMainMenu::execPlay);
 	}
 	IMPLEMENT_CLASS(UMainMenu, 1990416401);
+	void ApickUpItem::StaticRegisterNativesApickUpItem()
+	{
+	}
+	IMPLEMENT_CLASS(ApickUpItem, 381901046);
+	void APushPullItem::StaticRegisterNativesAPushPullItem()
+	{
+	}
+	IMPLEMENT_CLASS(APushPullItem, 4231317865);
 	void AStatueObject::StaticRegisterNativesAStatueObject()
 	{
 	}
-	IMPLEMENT_CLASS(AStatueObject, 663918513);
+	IMPLEMENT_CLASS(AStatueObject, 3382700909);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
@@ -78,6 +86,10 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	AVA_API class UFunction* Z_Construct_UFunction_UMainMenu_Play();
 	AVA_API class UClass* Z_Construct_UClass_UMainMenu_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_UMainMenu();
+	AVA_API class UClass* Z_Construct_UClass_ApickUpItem_NoRegister();
+	AVA_API class UClass* Z_Construct_UClass_ApickUpItem();
+	AVA_API class UClass* Z_Construct_UClass_APushPullItem_NoRegister();
+	AVA_API class UClass* Z_Construct_UClass_APushPullItem();
 	AVA_API class UClass* Z_Construct_UClass_AStatueObject_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_AStatueObject();
 	AVA_API class UPackage* Z_Construct_UPackage__Script_Ava();
@@ -238,28 +250,35 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-				UProperty* NewProp_prayingSphere = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("prayingSphere"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(prayingSphere, AMainCharacter), 0x00200800000a001d, Z_Construct_UClass_USphereComponent_NoRegister());
-				UProperty* NewProp_lookRate = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("lookRate"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(lookRate, AMainCharacter), 0x0020080000000005);
-				UProperty* NewProp_turnRate = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("turnRate"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(turnRate, AMainCharacter), 0x0020080000000005);
-				UProperty* NewProp_sprintSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("sprintSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(sprintSpeed, AMainCharacter), 0x0020080000000005);
-				UProperty* NewProp_runSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("runSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(runSpeed, AMainCharacter), 0x0020080000000005);
-				UProperty* NewProp_walkSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("walkSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(walkSpeed, AMainCharacter), 0x0020080000000005);
+				UProperty* NewProp_pushPullTraceCheckDistance = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("pushPullTraceCheckDistance"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(pushPullTraceCheckDistance, AMainCharacter), 0x0010000000000005);
+				UProperty* NewProp_overlappingSphere = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("overlappingSphere"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(overlappingSphere, AMainCharacter), 0x00100000000a001d, Z_Construct_UClass_USphereComponent_NoRegister());
+				UProperty* NewProp_lookRate = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("lookRate"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(lookRate, AMainCharacter), 0x0010000000000005);
+				UProperty* NewProp_turnRate = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("turnRate"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(turnRate, AMainCharacter), 0x0010000000000005);
+				UProperty* NewProp_sprintSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("sprintSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(sprintSpeed, AMainCharacter), 0x0010000000000005);
+				UProperty* NewProp_runSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("runSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(runSpeed, AMainCharacter), 0x0010000000000005);
+				UProperty* NewProp_walkSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("walkSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(walkSpeed, AMainCharacter), 0x0010000000000005);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsInteracting, AMainCharacter, bool);
+				UProperty* NewProp_bIsInteracting = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsInteracting"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsInteracting, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsInteracting, AMainCharacter), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsPushPulling, AMainCharacter, bool);
+				UProperty* NewProp_bIsPushPulling = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsPushPulling"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsPushPulling, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsPushPulling, AMainCharacter), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsPraying, AMainCharacter, bool);
+				UProperty* NewProp_bIsPraying = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsPraying"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsPraying, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsPraying, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsInInventory, AMainCharacter, bool);
-				UProperty* NewProp_bIsInInventory = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsInInventory"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsInInventory, AMainCharacter), 0x0020080000020005, CPP_BOOL_PROPERTY_BITMASK(bIsInInventory, AMainCharacter), sizeof(bool), true);
+				UProperty* NewProp_bIsInInventory = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsInInventory"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsInInventory, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsInInventory, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsIdle, AMainCharacter, bool);
-				UProperty* NewProp_bIsIdle = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsIdle"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsIdle, AMainCharacter), 0x0020080000000005, CPP_BOOL_PROPERTY_BITMASK(bIsIdle, AMainCharacter), sizeof(bool), true);
+				UProperty* NewProp_bIsIdle = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsIdle"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsIdle, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsIdle, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsTurning, AMainCharacter, bool);
-				UProperty* NewProp_bIsTurning = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsTurning"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsTurning, AMainCharacter), 0x0020080000000005, CPP_BOOL_PROPERTY_BITMASK(bIsTurning, AMainCharacter), sizeof(bool), true);
+				UProperty* NewProp_bIsTurning = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsTurning"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsTurning, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsTurning, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsAlert, AMainCharacter, bool);
-				UProperty* NewProp_bIsAlert = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsAlert"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsAlert, AMainCharacter), 0x0020080000000005, CPP_BOOL_PROPERTY_BITMASK(bIsAlert, AMainCharacter), sizeof(bool), true);
+				UProperty* NewProp_bIsAlert = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsAlert"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsAlert, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsAlert, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsJumping, AMainCharacter, bool);
-				UProperty* NewProp_bIsJumping = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsJumping"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsJumping, AMainCharacter), 0x0020080000000005, CPP_BOOL_PROPERTY_BITMASK(bIsJumping, AMainCharacter), sizeof(bool), true);
+				UProperty* NewProp_bIsJumping = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsJumping"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsJumping, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsJumping, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsWalking, AMainCharacter, bool);
-				UProperty* NewProp_bIsWalking = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsWalking"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsWalking, AMainCharacter), 0x0020080000000005, CPP_BOOL_PROPERTY_BITMASK(bIsWalking, AMainCharacter), sizeof(bool), true);
+				UProperty* NewProp_bIsWalking = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsWalking"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsWalking, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsWalking, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsRunning, AMainCharacter, bool);
-				UProperty* NewProp_bIsRunning = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsRunning"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsRunning, AMainCharacter), 0x0020080000000005, CPP_BOOL_PROPERTY_BITMASK(bIsRunning, AMainCharacter), sizeof(bool), true);
+				UProperty* NewProp_bIsRunning = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsRunning"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsRunning, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsRunning, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsSprinting, AMainCharacter, bool);
-				UProperty* NewProp_bIsSprinting = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsSprinting"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsSprinting, AMainCharacter), 0x0020080000000005, CPP_BOOL_PROPERTY_BITMASK(bIsSprinting, AMainCharacter), sizeof(bool), true);
+				UProperty* NewProp_bIsSprinting = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsSprinting"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsSprinting, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsSprinting, AMainCharacter), sizeof(bool), true);
 				UProperty* NewProp_FollowCamera = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("FollowCamera"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(FollowCamera, AMainCharacter), 0x00100000000a001d, Z_Construct_UClass_UCameraComponent_NoRegister());
 				UProperty* NewProp_CameraBoom = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraBoom"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(CameraBoom, AMainCharacter), 0x00100000000a001d, Z_Construct_UClass_USpringArmComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
@@ -270,10 +289,12 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
-				MetaData->SetValue(NewProp_prayingSphere, TEXT("AllowPrivateAccess"), TEXT("true"));
-				MetaData->SetValue(NewProp_prayingSphere, TEXT("Category"), TEXT("prayingComponents"));
-				MetaData->SetValue(NewProp_prayingSphere, TEXT("EditInline"), TEXT("true"));
-				MetaData->SetValue(NewProp_prayingSphere, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_pushPullTraceCheckDistance, TEXT("Category"), TEXT("CharacterSpeeds"));
+				MetaData->SetValue(NewProp_pushPullTraceCheckDistance, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_overlappingSphere, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_overlappingSphere, TEXT("Category"), TEXT("prayingComponents"));
+				MetaData->SetValue(NewProp_overlappingSphere, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_overlappingSphere, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(NewProp_lookRate, TEXT("Category"), TEXT("CharacterSpeeds"));
 				MetaData->SetValue(NewProp_lookRate, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(NewProp_lookRate, TEXT("ToolTip"), TEXT("@brief CharacterState - characters camera look speed"));
@@ -289,6 +310,15 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(NewProp_walkSpeed, TEXT("Category"), TEXT("CharacterSpeeds"));
 				MetaData->SetValue(NewProp_walkSpeed, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(NewProp_walkSpeed, TEXT("ToolTip"), TEXT("CHARACTER SPEEDS\n--------------------------------------------------------------------------------------------------------------------------\n----------------------------------------------------------------------------------------------------------------------\n@brief CharacterSppeds - Characters walk speed."));
+				MetaData->SetValue(NewProp_bIsInteracting, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_bIsInteracting, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsInteracting, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is pushing/pulling"));
+				MetaData->SetValue(NewProp_bIsPushPulling, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_bIsPushPulling, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsPushPulling, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is pushing/pulling"));
+				MetaData->SetValue(NewProp_bIsPraying, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_bIsPraying, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsPraying, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is praying"));
 				MetaData->SetValue(NewProp_bIsInInventory, TEXT("Category"), TEXT("CharacterStates"));
 				MetaData->SetValue(NewProp_bIsInInventory, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(NewProp_bIsInInventory, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is In Invetory."));
@@ -400,6 +430,70 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UMainMenu(Z_Construct_UClass_UMainMenu, &UMainMenu::StaticClass, TEXT("UMainMenu"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UMainMenu);
+	UClass* Z_Construct_UClass_ApickUpItem_NoRegister()
+	{
+		return ApickUpItem::StaticClass();
+	}
+	UClass* Z_Construct_UClass_ApickUpItem()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_Ava();
+			OuterClass = ApickUpItem::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("pickUpItem.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("pickUpItem.h"));
+				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ApickUpItem(Z_Construct_UClass_ApickUpItem, &ApickUpItem::StaticClass, TEXT("ApickUpItem"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(ApickUpItem);
+	UClass* Z_Construct_UClass_APushPullItem_NoRegister()
+	{
+		return APushPullItem::StaticClass();
+	}
+	UClass* Z_Construct_UClass_APushPullItem()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_Ava();
+			OuterClass = APushPullItem::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("PushPullItem.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
+				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_APushPullItem(Z_Construct_UClass_APushPullItem, &APushPullItem::StaticClass, TEXT("APushPullItem"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(APushPullItem);
 	UClass* Z_Construct_UClass_AStatueObject_NoRegister()
 	{
 		return AStatueObject::StaticClass();
@@ -419,8 +513,9 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-				UProperty* NewProp_StatueName = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("StatueName"), RF_Public|RF_Transient|RF_MarkAsNative) UStrProperty(CPP_PROPERTY_BASE(StatueName, AStatueObject), 0x0010000000000005);
-				UProperty* NewProp_DesignatedMesh = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("DesignatedMesh"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(DesignatedMesh, AStatueObject), 0x001000000008001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+				UProperty* NewProp_overlappingSphere = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("overlappingSphere"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(overlappingSphere, AStatueObject), 0x00100000000a001d, Z_Construct_UClass_USphereComponent_NoRegister());
+				UProperty* NewProp_statueName = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("statueName"), RF_Public|RF_Transient|RF_MarkAsNative) UStrProperty(CPP_PROPERTY_BASE(statueName, AStatueObject), 0x0010000000000005);
+				UProperty* NewProp_designatedMesh = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("designatedMesh"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(designatedMesh, AStatueObject), 0x001000000008001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bCanPlayerPray, AStatueObject, bool);
 				UProperty* NewProp_bCanPlayerPray = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bCanPlayerPray"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bCanPlayerPray, AStatueObject), 0x0010000000020015, CPP_BOOL_PROPERTY_BITMASK(bCanPlayerPray, AStatueObject), sizeof(bool), true);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
@@ -430,13 +525,17 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("StatueObject.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("StatueObject.h"));
 				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
-				MetaData->SetValue(NewProp_StatueName, TEXT("AllowPrivateAccess"), TEXT("true"));
-				MetaData->SetValue(NewProp_StatueName, TEXT("Category"), TEXT("StatueVariables"));
-				MetaData->SetValue(NewProp_StatueName, TEXT("ModuleRelativePath"), TEXT("StatueObject.h"));
-				MetaData->SetValue(NewProp_DesignatedMesh, TEXT("AllowPrivateAccess"), TEXT("true"));
-				MetaData->SetValue(NewProp_DesignatedMesh, TEXT("Category"), TEXT("StatueVariables"));
-				MetaData->SetValue(NewProp_DesignatedMesh, TEXT("EditInline"), TEXT("true"));
-				MetaData->SetValue(NewProp_DesignatedMesh, TEXT("ModuleRelativePath"), TEXT("StatueObject.h"));
+				MetaData->SetValue(NewProp_overlappingSphere, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_overlappingSphere, TEXT("Category"), TEXT("StatueVariables"));
+				MetaData->SetValue(NewProp_overlappingSphere, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_overlappingSphere, TEXT("ModuleRelativePath"), TEXT("StatueObject.h"));
+				MetaData->SetValue(NewProp_statueName, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_statueName, TEXT("Category"), TEXT("StatueVariables"));
+				MetaData->SetValue(NewProp_statueName, TEXT("ModuleRelativePath"), TEXT("StatueObject.h"));
+				MetaData->SetValue(NewProp_designatedMesh, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_designatedMesh, TEXT("Category"), TEXT("StatueVariables"));
+				MetaData->SetValue(NewProp_designatedMesh, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_designatedMesh, TEXT("ModuleRelativePath"), TEXT("StatueObject.h"));
 				MetaData->SetValue(NewProp_bCanPlayerPray, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_bCanPlayerPray, TEXT("Category"), TEXT("StatueVariables"));
 				MetaData->SetValue(NewProp_bCanPlayerPray, TEXT("ModuleRelativePath"), TEXT("StatueObject.h"));
@@ -456,8 +555,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Ava")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xB051A08F;
-			Guid.B = 0xA2EF7D1D;
+			Guid.A = 0x2742D5A6;
+			Guid.B = 0xA6C5F660;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

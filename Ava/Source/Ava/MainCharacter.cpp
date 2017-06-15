@@ -43,10 +43,15 @@ AMainCharacter::AMainCharacter()
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
 
-	prayingSphere = CreateDefaultSubobject<USphereComponent>(TEXT("prayingSphere"));
-	prayingSphere->SetSphereRadius(100.f);
-	prayingSphere->AttachTo(RootComponent);
+	overlappingSphere = CreateDefaultSubobject<USphereComponent>(TEXT("overlappingSphere"));
+	overlappingSphere->SetSphereRadius(100.f);
+	overlappingSphere->AttachTo(RootComponent);
 
+
+	bIsPraying = false;
+	bIsInInventory = false;
+	bIsJumping = false;
+	bIsPushPulling = false;
 }
 
 // Called when the game starts or when spawned
@@ -78,6 +83,27 @@ void AMainCharacter::Tick(float DeltaTime)
 	{
 		bIsWalking = false;
 	}
+	if (Controller != NULL)
+	{
+		const FRotator Rotation = Controller->GetControlRotation();
+		const FRotator YawRotation = FRotator(0, Rotation.Yaw, 0);
+		ForwardVector = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
+		RightVector = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
+		BackVector = -ForwardVector;
+		LeftVector = -RightVector;
+		FRotator tempRot = GetActorRotation();
+		FRotator tempYaw = FRotator(0, tempRot.Yaw, 0);
+		FVector tempFV = FRotationMatrix(tempYaw).GetUnitAxis(EAxis::X);
+		FVector end = (GetActorLocation() + (tempFV * 500));
+		DrawDebugLine(
+			GetWorld(),
+			GetActorLocation(),
+			end,
+			FColor(0, 255, 0),
+			false, -1, 0,
+			5.f
+		);
+	}
 }
 
 // Called to bind functionality to input
@@ -101,11 +127,12 @@ void AMainCharacter::SetupPlayerInputComponent(class UInputComponent* InputCompo
 	InputComponent->BindAction("PushPull", IE_Pressed, this, &AMainCharacter::PushPull);
 	InputComponent->BindAction("PushPull", IE_Released, this, &AMainCharacter::StopPushPull);
 
-	//Bind open/Close Inventory Functionalities to input mapping "PushPull"
+	//Bind open/Close Inventory Functionalities to input mapping "Inventory"
 	InputComponent->BindAction("Inventory", IE_Pressed, this, &AMainCharacter::OpenInventory);
 
-	//Bind open/Close Inventory Functionalities to input mapping "PushPull"
+	//Bind open/Close Inventory Functionalities to input mapping "Interact"
 	InputComponent->BindAction("Interact", IE_Pressed, this, &AMainCharacter::Interact);
+	InputComponent->BindAction("Interact", IE_Released, this, &AMainCharacter::StopInteract);
 
 	//Bind our axis inputs for movement.
 	InputComponent->BindAxis("MoveForward", this, &AMainCharacter::MoveForward);
@@ -137,9 +164,6 @@ void AMainCharacter::MoveForward(float value)
 	if ((Controller != NULL) && (value != 0.0f))
 	{
 		//GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Purple, "I'M RUNNING");
-		const FRotator Rotation = Controller->GetControlRotation();
-		const FRotator YawRotation = FRotator(0, Rotation.Yaw, 0);
-		const FVector ForwardVector = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
 		AddMovementInput(ForwardVector, value);
 	}
 }
@@ -149,11 +173,6 @@ void AMainCharacter::MoveRight(float value)
 
 	if ((Controller != NULL) && (value != 0.0f))
 	{
-		// find out which way is right
-		const FRotator Rotation = Controller->GetControlRotation();
-		const FRotator YawRotation = FRotator(0, Rotation.Yaw, 0);
-		// get right vector 
-		const FVector RightVector = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 		// add movement in that direction
 		AddMovementInput(RightVector, value);
 
@@ -207,8 +226,12 @@ void AMainCharacter::LookUp(float value)
 
 void AMainCharacter::Interact()
 {
+	bIsInteracting = true;
+	//-------------------------------------------
+	//PRAYING INTERACTION
+	//-------------------------------------------
 	TArray <AActor*> overlappingActors;
-	prayingSphere->GetOverlappingActors(overlappingActors);
+	overlappingSphere->GetOverlappingActors(overlappingActors);
 	for (int32 overlappingActorIndex = 0; overlappingActorIndex < overlappingActors.Num(); overlappingActorIndex++)
 	{
 		AStatueObject* const overlappingTest = Cast<AStatueObject>(overlappingActors[overlappingActorIndex]);
@@ -217,18 +240,28 @@ void AMainCharacter::Interact()
 		{
 			overlappingTest->bCanPlayerPray = false;
 
-			GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, overlappingTest->StatueName);
+			GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, overlappingTest->statueName);
 			GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("YOU ARE PRAYING AT THE :")));
+		
+			bIsPraying = true;
 
 		}
 		else if (overlappingTest && !overlappingTest->bCanPlayerPray)
 		{
 			GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("YOU CAN'T PRAY AT ME ANYMORE")));
 		}
+
+		//-------------------------------------------
+		//!PRAYING INTERACTION
+		//-------------------------------------------
 	}
 	//Interact
 	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("BlockingHit: %i"), blockingHit));
 	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, "I'M INTERACTING");
+}
+void AMainCharacter::StopInteract()
+{
+	bIsInteracting = false;
 }
 
 void AMainCharacter::OpenInventory()
@@ -239,10 +272,23 @@ void AMainCharacter::OpenInventory()
 
 void AMainCharacter::PushPull()
 {
+
+	bIsPushPulling = true;
+	//in a non-Static class
+	//Draw the Line!
+	FVector end = FVector(GetActorLocation().X, GetActorLocation().Y + pushPullTraceCheckDistance, GetActorLocation().Z);
+	FHitResult results;
+	FCollisionQueryParams query = FCollisionQueryParams(FName(TEXT("trace")), false, this);
+	bool hit = GetWorld()->LineTraceSingleByChannel(results,GetActorLocation(),end, ECC_Visibility, query);
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("BlockingHit: %i"), hit));
 	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Cyan, "I'M PUSHING/PULLING");
+	//FVector temp = GetActorLocation() + GetActorForwardVector();
+	//FVector end = FVector(GetActorForwardVector().X, GetActorForwardVector().Y + pushPullTraceCheckDistance, GetActorForwardVector().Z);
+
 }
 
 void AMainCharacter::StopPushPull()
 {
+	bIsPushPulling = false;
 	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Silver, "I'M NOT PUSHING/PULLING");
 }

@@ -25,10 +25,15 @@ public:
 		bool bCanPlayerPray;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = StatueVariables, meta = (AllowPrivateAccess = "true"))
-		UStaticMeshComponent *DesignatedMesh;
+		UStaticMeshComponent *designatedMesh;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = StatueVariables, meta = (AllowPrivateAccess = "true"))
-		FString StatueName;
+		FString statueName;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = StatueVariables, meta = (AllowPrivateAccess = "true"))
+		USphereComponent* overlappingSphere;
+
+	void checkForPlayer();
 private:
 	AMainCharacter* playerReference;
 

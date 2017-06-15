@@ -17,6 +17,12 @@
 #ifndef AVA_MainMenu_generated_h
 	#include "MainMenu.h"
 #endif
+#ifndef AVA_pickUpItem_generated_h
+	#include "pickUpItem.h"
+#endif
+#ifndef AVA_PushPullItem_generated_h
+	#include "PushPullItem.h"
+#endif
 #ifndef AVA_StatueObject_generated_h
 	#include "StatueObject.h"
 #endif

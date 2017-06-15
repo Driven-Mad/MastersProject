@@ -108,6 +108,10 @@ protected:
 	//----------------------------------------------------------------------------------------------------------------------
 	void Interact();
 	//----------------------------------------------------------------------------------------------------------------------
+	/// @brief Function to allow the character to interact with an item/object/puzzle etc. (WIP)
+	//----------------------------------------------------------------------------------------------------------------------
+	void StopInteract();
+	//----------------------------------------------------------------------------------------------------------------------
 	/// @brief Function to toggle opening/closing the inventory system (WIP)
 	//----------------------------------------------------------------------------------------------------------------------
 	void OpenInventory();
@@ -119,7 +123,7 @@ protected:
 	/// @brief  Function to detach and go out of push and pull mode. 
 	//----------------------------------------------------------------------------------------------------------------------
 	void StopPushPull();
-
+public:
 //--------------------------------------------------------------------------------------------------------------------------
 /// CHARACTER STATES
 //--------------------------------------------------------------------------------------------------------------------------
@@ -161,8 +165,24 @@ protected:
 	//----------------------------------------------------------------------------------------------------------------------
 	/// @brief CharacterState - Character is In Invetory.
 	//----------------------------------------------------------------------------------------------------------------------
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = CharacterStates)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterStates)
 		bool bIsInInventory;
+	//----------------------------------------------------------------------------------------------------------------------
+	/// @brief CharacterState - Character is praying
+	//----------------------------------------------------------------------------------------------------------------------
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterStates)
+		bool bIsPraying;
+	//----------------------------------------------------------------------------------------------------------------------
+	/// @brief CharacterState - Character is pushing/pulling
+	//----------------------------------------------------------------------------------------------------------------------
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterStates)
+		bool bIsPushPulling;
+
+	//----------------------------------------------------------------------------------------------------------------------
+	/// @brief CharacterState - Character is pushing/pulling
+	//----------------------------------------------------------------------------------------------------------------------
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterStates)
+		bool bIsInteracting;
 
 	
 //--------------------------------------------------------------------------------------------------------------------------
@@ -196,8 +216,14 @@ protected:
 
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = prayingComponents, meta = (AllowPrivateAccess = "true"))
-		USphereComponent* prayingSphere;
+		USphereComponent* overlappingSphere;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterSpeeds)
+		float pushPullTraceCheckDistance;
 
+	FVector ForwardVector;
+	FVector BackVector;
+	FVector RightVector;
+	FVector LeftVector;
 
 private:
 	//----------------------------------------------------------------------------------------------------------------------

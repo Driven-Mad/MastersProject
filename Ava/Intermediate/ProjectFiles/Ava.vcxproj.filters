@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Ava.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{8D8A9122-7DC0-4901-A79C-D5F9A526A6FE}</UniqueIdentifier>
+      <UniqueIdentifier>{5B6F23AB-BC92-4FC1-8081-730516445FDF}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Ava.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{DAC835F9-9F56-406A-BC3E-5059948A9A0C}</UniqueIdentifier>
+      <UniqueIdentifier>{600D377E-79AD-4DE5-9DF7-83098020538D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Ava">
-      <UniqueIdentifier>{547D57C1-40EF-4FA0-80EA-97A6F789153F}</UniqueIdentifier>
+      <UniqueIdentifier>{F528DD9E-A25F-4353-A45F-53DD5FD66A21}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Ava\Ava.Build.cs">
       <Filter>Source\Ava</Filter>
@@ -62,14 +62,26 @@
     <ClInclude Include="..\..\Source\Ava\MainMenu.h">
       <Filter>Source\Ava</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
+    <ClCompile Include="..\..\Source\Ava\pickUpItem.cpp">
+      <Filter>Source\Ava</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Ava\pickUpItem.h">
+      <Filter>Source\Ava</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Ava\StatueObject.cpp">
+      <Filter>Source\Ava</Filter>
+    </ClCompile>
     <ClInclude Include="..\..\Source\Ava\StatueObject.h">
       <Filter>Source\Ava</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Ava\StatueObject.cpp">
+    <ClInclude Include="..\..\Source\Ava\PushPullItem.h">
+      <Filter>Source\Ava</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\Ava\PushPullItem.cpp">
       <Filter>Source\Ava</Filter>
     </ClCompile>
   </ItemGroup>
