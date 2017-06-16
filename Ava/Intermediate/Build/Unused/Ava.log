@@ -1,36 +1,12 @@
-﻿  Cleaning AvaEditor Binaries...
-  Creating makefile for AvaEditor (no existing makefile)
-  Performing full C++ include scan (no include cache file)
-  Parsing headers for AvaEditor
-    Running UnrealHeaderTool "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Ava.uproject" "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Intermediate\Build\Win64\AvaEditor\Development\AvaEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for AvaEditor in 5.3262774 seconds
-  Deleting old hot reload file: "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Binaries\Win64\UE4Editor-Ava-3107.dll".
-  Deleting old hot reload file: "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Binaries\Win64\UE4Editor-Ava-3107.pdb".
-  Deleting old hot reload file: "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Binaries\Win64\UE4Editor-Ava-396.dll".
-  Deleting old hot reload file: "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Binaries\Win64\UE4Editor-Ava-396.pdb".
-  Deleting old hot reload file: "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Binaries\Win64\UE4Editor-Ava-8285.dll".
-  Deleting old hot reload file: "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Binaries\Win64\UE4Editor-Ava-8285.pdb".
-  Performing 13 actions (9 in parallel)
-  [2/13] Resource PCLaunch.rc
-  [3/13] Resource ModuleVersionResource.rc.inl
-  PCH.Ava.h.cpp
-  MainCharacter.cpp
-  pickUpItem.cpp
-  AvaGameMode.cpp
-  Ava.cpp
-  MainMenu.cpp
-  DataFactory.cpp
-  PushPullItem.cpp
-  Ava.generated.cpp
-  StatueObject.cpp
-C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Source\Ava\MainCharacter.cpp(35): warning C4996: 'USceneComponent::AttachTo': This function is deprecated, please use AttachToComponent instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
-  C:\Program Files\Epic Games\4.12\Engine\Source\Runtime\Engine\Classes\Components/SceneComponent.h(607): note: see declaration of 'USceneComponent::AttachTo'
-C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Source\Ava\MainCharacter.cpp(42): warning C4996: 'USceneComponent::AttachTo': This function is deprecated, please use AttachToComponent instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
-  C:\Program Files\Epic Games\4.12\Engine\Source\Runtime\Engine\Classes\Components/SceneComponent.h(607): note: see declaration of 'USceneComponent::AttachTo'
-C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Source\Ava\MainCharacter.cpp(48): warning C4996: 'USceneComponent::AttachTo': This function is deprecated, please use AttachToComponent instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
-  C:\Program Files\Epic Games\4.12\Engine\Source\Runtime\Engine\Classes\Components/SceneComponent.h(607): note: see declaration of 'USceneComponent::AttachTo'
-C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Source\Ava\StatueObject.cpp(24): warning C4996: 'USceneComponent::AttachTo': This function is deprecated, please use AttachToComponent instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
-  C:\Program Files\Epic Games\4.12\Engine\Source\Runtime\Engine\Classes\Components/SceneComponent.h(607): note: see declaration of 'USceneComponent::AttachTo'
-  [13/13] Link UE4Editor-Ava.dll
-     Creating library C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Ava.lib and object C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Ava.exp
-  Total build time: 49.74 seconds
+﻿Build started 16/06/2017 14:33:37.
+     1>Project "D:\RekaKadar\MasterProject_AVA\MastersProject\Ava\Intermediate\ProjectFiles\Ava.vcxproj" on node 2 (Clean target(s)).
+     1>CoreClean:
+         "C:\Program Files (x86)\Epic Games\4.12\Engine\Build\BatchFiles\Clean.bat" AvaEditor Win64 Development "D:\RekaKadar\MasterProject_AVA\MastersProject\Ava\Ava.uproject" -waitmutex
+         Cleaning AvaEditor Binaries...
+         Performing full C++ include scan (hot reloading a new target)
+         Compiling game modules for hot reload
+     1>Done Building Project "D:\RekaKadar\MasterProject_AVA\MastersProject\Ava\Intermediate\ProjectFiles\Ava.vcxproj" (Clean target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.83

@@ -1,88 +1,85 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup>
-    <None Include="..\..\Ava.uproject" />
-    <Filter Include="Source">
-      <UniqueIdentifier>{5B6F23AB-BC92-4FC1-8081-730516445FDF}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Source\Ava.Target.cs">
-      <Filter>Source</Filter>
-    </None>
-    <None Include="..\..\Source\AvaEditor.Target.cs">
-      <Filter>Source</Filter>
-    </None>
-    <Filter Include="Config">
-      <UniqueIdentifier>{600D377E-79AD-4DE5-9DF7-83098020538D}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Config\DefaultEditor.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultEngine.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultGame.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultInput.ini">
-      <Filter>Config</Filter>
-    </None>
-    <Filter Include="Source\Ava">
-      <UniqueIdentifier>{F528DD9E-A25F-4353-A45F-53DD5FD66A21}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Source\Ava\Ava.Build.cs">
-      <Filter>Source\Ava</Filter>
-    </None>
-    <ClCompile Include="..\..\Source\Ava\Ava.cpp">
-      <Filter>Source\Ava</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Ava\Ava.h">
-      <Filter>Source\Ava</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\Ava\AvaGameMode.cpp">
-      <Filter>Source\Ava</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Ava\AvaGameMode.h">
-      <Filter>Source\Ava</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\Ava\DataFactory.cpp">
-      <Filter>Source\Ava</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Ava\DataFactory.h">
-      <Filter>Source\Ava</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\Ava\MainCharacter.cpp">
-      <Filter>Source\Ava</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Ava\MainCharacter.h">
-      <Filter>Source\Ava</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\Ava\MainMenu.cpp">
-      <Filter>Source\Ava</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Ava\MainMenu.h">
-      <Filter>Source\Ava</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\Ava\pickUpItem.cpp">
-      <Filter>Source\Ava</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Ava\pickUpItem.h">
-      <Filter>Source\Ava</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\Ava\StatueObject.cpp">
-      <Filter>Source\Ava</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Ava\StatueObject.h">
-      <Filter>Source\Ava</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\Ava\PushPullItem.h">
-      <Filter>Source\Ava</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\Source\Ava\PushPullItem.cpp">
-      <Filter>Source\Ava</Filter>
-    </ClCompile>
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\Ava.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{C31F24E4-EA39-4F78-8BE8-181173222FC8}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\Ava.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\AvaEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{F6CFED8B-9261-4EF1-867F-620F7751734C}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\Ava">
+			<UniqueIdentifier>{A43216B3-B097-4809-8DF1-91A4890C9E9C}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\Ava\Ava.Build.cs">
+			<Filter>Source\Ava</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\Ava\Ava.cpp">
+			<Filter>Source\Ava</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Ava\Ava.h">
+			<Filter>Source\Ava</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Ava\AvaGameMode.cpp">
+			<Filter>Source\Ava</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Ava\AvaGameMode.h">
+			<Filter>Source\Ava</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Ava\DataFactory.cpp">
+			<Filter>Source\Ava</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Ava\DataFactory.h">
+			<Filter>Source\Ava</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Ava\MainCharacter.cpp">
+			<Filter>Source\Ava</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Ava\MainCharacter.h">
+			<Filter>Source\Ava</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Ava\MainMenu.cpp">
+			<Filter>Source\Ava</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Ava\MainMenu.h">
+			<Filter>Source\Ava</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Ava\pickUpItem.cpp">
+			<Filter>Source\Ava</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Ava\pickUpItem.h">
+			<Filter>Source\Ava</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Ava\PushPullItem.cpp">
+			<Filter>Source\Ava</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Ava\PushPullItem.h">
+			<Filter>Source\Ava</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Ava\StatueObject.cpp">
+			<Filter>Source\Ava</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Ava\StatueObject.h">
+			<Filter>Source\Ava</Filter>
+		</ClInclude >
+	</ItemGroup>
 </Project>
