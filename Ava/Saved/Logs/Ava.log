@@ -5975,4 +5975,735 @@ LogInit: Object subsystem initialized
 [2017.06.16-13.04.55:584][978]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Modelling/lambert10.uasset
 [2017.06.16-13.04.55:600][978]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Modelling/light_cube" FILE="D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Modelling/light_cube.uasset" SILENT=true
 [2017.06.16-13.04.55:610][978]LogSavePackage: Save=8.62ms
-[
+[2017.06.16-13.04.55:610][978]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/light_cube8F0E61D841A33257B5DFADA6E5331EF0.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Modelling/light_cube.uasset'
+[2017.06.16-13.04.55:614][978]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Modelling/light_cube.uasset
+[2017.06.16-13.39.21:377][629]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube12)
+[2017.06.16-13.39.22:520][753]Cmd: DELETE
+[2017.06.16-13.39.22:520][753]Cmd: ACTOR DELETE
+[2017.06.16-13.39.22:524][753]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-13.39.22:537][753]LogEditorActor: Deleted 1 Actors (0.017 secs)
+[2017.06.16-13.39.25:804][117]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube11)
+[2017.06.16-13.39.26:733][217]Cmd: DELETE
+[2017.06.16-13.39.26:733][217]Cmd: ACTOR DELETE
+[2017.06.16-13.39.26:737][217]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-13.39.26:749][217]LogEditorActor: Deleted 1 Actors (0.015 secs)
+[2017.06.16-13.39.31:445][739]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light_cube4)
+[2017.06.16-13.39.32:402][842]Cmd: DELETE
+[2017.06.16-13.39.32:402][842]Cmd: ACTOR DELETE
+[2017.06.16-13.39.32:405][842]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-13.39.32:412][842]LogEditorActor: Deleted 1 Actors (0.010 secs)
+[2017.06.16-13.39.33:378][950]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light_cube5)
+[2017.06.16-13.39.33:491][959]Cmd: DELETE
+[2017.06.16-13.39.33:491][959]Cmd: ACTOR DELETE
+[2017.06.16-13.39.33:494][959]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-13.39.33:502][959]LogEditorActor: Deleted 1 Actors (0.010 secs)
+[2017.06.16-13.39.45:521][259]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube7)
+[2017.06.16-13.39.46:453][357]Cmd: DELETE
+[2017.06.16-13.39.46:453][357]Cmd: ACTOR DELETE
+[2017.06.16-13.39.46:456][357]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-13.39.46:468][357]LogEditorActor: Deleted 1 Actors (0.015 secs)
+[2017.06.16-13.39.47:115][429]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube9)
+[2017.06.16-13.39.47:202][436]Cmd: DELETE
+[2017.06.16-13.39.47:202][436]Cmd: ACTOR DELETE
+[2017.06.16-13.39.47:206][436]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-13.39.47:215][436]LogEditorActor: Deleted 1 Actors (0.013 secs)
+[2017.06.16-13.39.47:771][498]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube10)
+[2017.06.16-13.39.47:883][507]Cmd: DELETE
+[2017.06.16-13.39.47:883][507]Cmd: ACTOR DELETE
+[2017.06.16-13.39.47:887][507]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-13.39.47:896][507]LogEditorActor: Deleted 1 Actors (0.012 secs)
+[2017.06.16-13.39.49:706][707]Cmd: TRANSACTION UNDO
+[2017.06.16-13.39.49:706][707]LogEditorTransaction: Undo Delete Actors
+[2017.06.16-13.39.50:054][731]Cmd: TRANSACTION UNDO
+[2017.06.16-13.39.50:054][731]LogEditorTransaction: Undo Clicking on Actors
+[2017.06.16-13.39.50:447][766]Cmd: TRANSACTION UNDO
+[2017.06.16-13.39.50:447][766]LogEditorTransaction: Undo Delete Actors
+[2017.06.16-13.39.50:986][819]Cmd: TRANSACTION UNDO
+[2017.06.16-13.39.50:986][819]LogEditorTransaction: Undo Clicking on Actors
+[2017.06.16-13.39.51:381][861]Cmd: TRANSACTION UNDO
+[2017.06.16-13.39.51:381][861]LogEditorTransaction: Undo Delete Actors
+[2017.06.16-13.39.51:825][904]Cmd: TRANSACTION UNDO
+[2017.06.16-13.39.51:825][904]LogEditorTransaction: Undo Clicking on Actors
+[2017.06.16-13.39.59:883][790]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
+[2017.06.16-13.40.00:746][883]Cmd: DELETE
+[2017.06.16-13.40.00:746][883]Cmd: ACTOR DELETE
+[2017.06.16-13.40.00:749][883]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-13.40.00:761][883]LogEditorActor: Deleted 1 Actors (0.015 secs)
+[2017.06.16-13.40.01:368][952]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube2)
+[2017.06.16-13.40.01:567][972]Cmd: DELETE
+[2017.06.16-13.40.01:567][972]Cmd: ACTOR DELETE
+[2017.06.16-13.40.01:571][972]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-13.40.01:583][972]LogEditorActor: Deleted 1 Actors (0.015 secs)
+[2017.06.16-13.40.02:159][ 38]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube3)
+[2017.06.16-13.40.02:238][ 44]Cmd: DELETE
+[2017.06.16-13.40.02:238][ 44]Cmd: ACTOR DELETE
+[2017.06.16-13.40.02:241][ 44]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-13.40.02:248][ 44]LogEditorActor: Deleted 1 Actors (0.011 secs)
+[2017.06.16-13.40.02:808][108]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube5)
+[2017.06.16-13.40.02:894][115]Cmd: DELETE
+[2017.06.16-13.40.02:894][115]Cmd: ACTOR DELETE
+[2017.06.16-13.40.02:898][115]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-13.40.02:906][115]LogEditorActor: Deleted 1 Actors (0.011 secs)
+[2017.06.16-13.40.03:571][191]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube6)
+[2017.06.16-13.40.03:725][206]Cmd: DELETE
+[2017.06.16-13.40.03:725][206]Cmd: ACTOR DELETE
+[2017.06.16-13.40.03:728][206]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-13.40.03:740][206]LogEditorActor: Deleted 1 Actors (0.015 secs)
+[2017.06.16-13.40.04:425][284]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube4)
+[2017.06.16-13.40.04:495][289]Cmd: DELETE
+[2017.06.16-13.40.04:495][289]Cmd: ACTOR DELETE
+[2017.06.16-13.40.04:498][289]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-13.40.04:505][289]LogEditorActor: Deleted 1 Actors (0.010 secs)
+[2017.06.16-13.40.11:283][ 43]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light_cube3)
+[2017.06.16-13.40.38:387][ 17]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light_cube3)
+[2017.06.16-13.40.42:356][441]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light_cube5)
+[2017.06.16-13.40.43:069][517]Cmd: DELETE
+[2017.06.16-13.40.43:069][517]Cmd: ACTOR DELETE
+[2017.06.16-13.40.43:072][517]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-13.40.43:079][517]LogEditorActor: Deleted 1 Actors (0.010 secs)
+[2017.06.16-13.40.43:915][612]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light_cube4)
+[2017.06.16-13.40.44:200][641]Cmd: DELETE
+[2017.06.16-13.40.44:200][641]Cmd: ACTOR DELETE
+[2017.06.16-13.40.44:203][641]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-13.40.44:210][641]LogEditorActor: Deleted 1 Actors (0.010 secs)
+[2017.06.16-13.40.44:691][696]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light_cube3)
+[2017.06.16-13.40.44:828][707]Cmd: DELETE
+[2017.06.16-13.40.44:828][707]Cmd: ACTOR DELETE
+[2017.06.16-13.40.44:831][707]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-13.40.44:838][707]LogEditorActor: Deleted 1 Actors (0.010 secs)
+[2017.06.16-13.41.25:754][310]LogSavePackage: Save=739.36ms
+[2017.06.16-13.41.25:754][310]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/PalaceLevel_Auto12E57DD874758732193A3BE9E8A46BBE9.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/Maps/PalaceLevel_Auto1.umap'
+[2017.06.16-13.41.25:759][310]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/Maps/PalaceLevel_Auto1.umap
+[2017.06.16-13.41.25:761][310]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Ava/Maps/PalaceLevel' took 0.770
+[2017.06.16-13.41.25:761][310]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.770
+[2017.06.16-13.41.25:763][310]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Ava/test] ([1] browsable assets)...
+[2017.06.16-13.41.25:763][310]OBJ SavePackage: Finished generating thumbnails for package [/Game/Ava/test]
+[2017.06.16-13.41.25:763][310]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/test" FILE="D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/test_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2017.06.16-13.41.25:767][310]LogSavePackage: Save=1.44ms
+[2017.06.16-13.41.25:767][310]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/test_Auto1AE5C27DE4A1230E3C474DC9E134AF1A7.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/test_Auto1.uasset'
+[2017.06.16-13.41.25:788][310]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/test_Auto1.uasset
+[2017.06.16-13.41.25:789][310]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Ava/test2] ([1] browsable assets)...
+[2017.06.16-13.41.25:789][310]OBJ SavePackage: Finished generating thumbnails for package [/Game/Ava/test2]
+[2017.06.16-13.41.25:789][310]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/test2" FILE="D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/test2_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2017.06.16-13.41.25:793][310]LogSavePackage: Save=1.58ms
+[2017.06.16-13.41.25:793][310]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/test2_Auto11DBA18FD4AC2F218D5CFA3B9C4CD2E00.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/test2_Auto1.uasset'
+[2017.06.16-13.41.25:797][310]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/test2_Auto1.uasset
+[2017.06.16-13.41.25:797][310]LogFileHelpers: Auto-saving content packages took 0.035
+[2017.06.16-13.51.38:218][195]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 D:\RekaKadar\MasterProject_AVA\Master Content\Production\Modelling\light_cube.fbx)
+[2017.06.16-13.51.38:222][195]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2017.06.16-13.51.38:222][195]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2017.06.16-13.51.38:222][195]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2017.06.16-13.51.38:222][195]LogFbx: ItemName: Geometry, ItemCount : 1
+[2017.06.16-13.51.38:222][195]LogFbx: ItemName: Material, ItemCount : 1
+[2017.06.16-13.51.38:222][195]LogFbx: ItemName: Model, ItemCount : 1
+[2017.06.16-13.51.38:227][195]LogFbx: Loading FBX Scene from D:\RekaKadar\MasterProject_AVA\Master Content\Production\Modelling\light_cube.fbx
+[2017.06.16-13.51.38:232][195]LogFbx: FBX Scene Loaded Succesfully
+[2017.06.16-13.51.39:234][195]LogFbx: Loading FBX Scene from D:\RekaKadar\MasterProject_AVA\Master Content\Production\Modelling\light_cube.fbx
+[2017.06.16-13.51.39:239][195]LogFbx: FBX Scene Loaded Succesfully
+[2017.06.16-13.51.39:241][195]LogLinker:Warning: Can't find file '/Game/Ava/Modelling/lambert10'
+[2017.06.16-13.51.39:241][195]LogLinker:Warning: Can't find file '/Game/Ava/Modelling/lambert10'
+[2017.06.16-13.51.39:245][195]LogMaterial: Missing cached shader map for material lambert10, compiling. 
+[2017.06.16-13.51.39:259][195]LogFbx:Warning: Triangulating static mesh pCube1
+[2017.06.16-13.51.39:277][195]LogStaticMesh: Building static mesh light_cube...
+[2017.06.16-13.51.39:280][195]LogStaticMesh: Built static mesh [0.00s] /Game/Ava/Modelling/light_cube.light_cube
+[2017.06.16-13.51.41:472][335]LogActorFactory: Actor Factory created light_cube
+[2017.06.16-13.51.42:850][489]LogActorFactory: Actor Factory created light_cube
+[2017.06.16-13.52.00:209][354]Cmd: DELETE
+[2017.06.16-13.52.00:209][354]Cmd: ACTOR DELETE
+[2017.06.16-13.52.00:213][354]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-13.52.00:221][354]LogEditorActor: Deleted 1 Actors (0.012 secs)
+[2017.06.16-13.52.46:704][446]LogSavePackage: Save=728.74ms
+[2017.06.16-13.52.46:704][446]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/PalaceLevel_Auto2F968D8524173F2F91E7B36B4D3512885.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/Maps/PalaceLevel_Auto2.umap'
+[2017.06.16-13.52.46:709][446]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/Maps/PalaceLevel_Auto2.umap
+[2017.06.16-13.52.46:711][446]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Ava/Maps/PalaceLevel' took 0.763
+[2017.06.16-13.52.46:711][446]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.763
+[2017.06.16-13.52.46:713][446]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Ava/Modelling/light_cube] ([1] browsable assets)...
+[2017.06.16-13.52.46:726][446]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/Ava/Modelling/light_cube.light_cube]
+[2017.06.16-13.52.46:726][446]OBJ SavePackage: Finished generating thumbnails for package [/Game/Ava/Modelling/light_cube]
+[2017.06.16-13.52.46:735][446]LogSavePackage: Save=8.11ms
+[2017.06.16-13.52.46:735][446]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/light_cube_Auto2D61CF1AB490C7B3792D3A48C309DCC12.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/Modelling/light_cube_Auto2.uasset'
+[2017.06.16-13.52.46:739][446]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/Modelling/light_cube_Auto2.uasset
+[2017.06.16-13.52.46:740][446]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Ava/Modelling/lambert10] ([1] browsable assets)...
+[2017.06.16-13.52.46:753][446]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Ava/Modelling/lambert10.lambert10]
+[2017.06.16-13.52.46:753][446]OBJ SavePackage: Finished generating thumbnails for package [/Game/Ava/Modelling/lambert10]
+[2017.06.16-13.52.46:753][446]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Modelling/lambert10" FILE="D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/Modelling/lambert10_Auto2.uasset" SILENT=false AUTOSAVING=true
+[2017.06.16-13.52.46:763][446]LogSavePackage: Save=8.92ms
+[2017.06.16-13.52.46:763][446]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/lambert10_Auto28F35884D4D2B715FCEBBFB8AF47DE72A.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/Modelling/lambert10_Auto2.uasset'
+[2017.06.16-13.52.46:767][446]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/Modelling/lambert10_Auto2.uasset
+[2017.06.16-13.52.46:767][446]LogFileHelpers: Auto-saving content packages took 0.055
+[2017.06.16-13.53.24:289][186]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 D:\RekaKadar\MasterProject_AVA\Master Content\Production\Modelling\Green Room\light.fbx)
+[2017.06.16-13.53.24:292][186]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2017.06.16-13.53.24:292][186]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2017.06.16-13.53.24:292][186]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2017.06.16-13.53.24:292][186]LogFbx: ItemName: Geometry, ItemCount : 1
+[2017.06.16-13.53.24:292][186]LogFbx: ItemName: Material, ItemCount : 1
+[2017.06.16-13.53.24:292][186]LogFbx: ItemName: Model, ItemCount : 1
+[2017.06.16-13.53.24:296][186]LogFbx: Loading FBX Scene from D:\RekaKadar\MasterProject_AVA\Master Content\Production\Modelling\Green Room\light.fbx
+[2017.06.16-13.53.24:301][186]LogFbx: FBX Scene Loaded Succesfully
+[2017.06.16-13.53.26:022][186]LogFbx: Loading FBX Scene from D:\RekaKadar\MasterProject_AVA\Master Content\Production\Modelling\Green Room\light.fbx
+[2017.06.16-13.53.26:027][186]LogFbx: FBX Scene Loaded Succesfully
+[2017.06.16-13.53.26:029][186]LogLinker:Warning: Can't find file '/Game/Ava/Modelling/lambert10'
+[2017.06.16-13.53.26:029][186]LogLinker:Warning: Can't find file '/Game/Ava/Modelling/lambert10'
+[2017.06.16-13.53.26:032][186]LogMaterial: Missing cached shader map for material lambert10, compiling. 
+[2017.06.16-13.53.26:045][186]LogFbx:Warning: Triangulating static mesh pCube1
+[2017.06.16-13.53.26:057][186]LogStaticMesh: Building static mesh light...
+[2017.06.16-13.53.26:061][186]LogStaticMesh: Built static mesh [0.00s] /Game/Ava/Modelling/light.light
+[2017.06.16-13.53.27:101][254]LogActorFactory: Actor Factory created light
+[2017.06.16-13.53.29:837][564]LogActorFactory: Actor Factory created light
+[2017.06.16-13.54.32:923][159]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.06.16-13.55.19:432][448]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light)
+[2017.06.16-13.55.28:869][410]0.023292
+[2017.06.16-13.55.28:962][419]0.020833
+[2017.06.16-13.55.28:982][421]0.023292
+[2017.06.16-13.55.29:042][427]0.032940
+[2017.06.16-13.55.29:054][428]0.031250
+[2017.06.16-13.55.29:079][430]0.041667
+[2017.06.16-13.55.29:102][431]0.053115
+[2017.06.16-13.55.29:189][440]0.056095
+[2017.06.16-13.55.29:200][441]0.069877
+[2017.06.16-13.55.29:225][443]0.102592
+[2017.06.16-13.55.29:256][445]0.130520
+[2017.06.16-13.55.29:291][448]0.139754
+[2017.06.16-13.55.29:320][451]0.153800
+[2017.06.16-13.55.29:366][456]0.167964
+[2017.06.16-13.55.29:386][458]0.191225
+[2017.06.16-13.55.29:412][460]0.214492
+[2017.06.16-13.55.29:472][466]0.228693
+[2017.06.16-13.55.29:483][467]0.234085
+[2017.06.16-13.55.29:499][468]0.242956
+[2017.06.16-13.55.29:542][471]0.286032
+[2017.06.16-13.55.29:556][472]0.306363
+[2017.06.16-13.55.29:619][478]0.327090
+[2017.06.16-13.55.29:639][480]0.335443
+[2017.06.16-13.55.29:682][484]0.341692
+[2017.06.16-13.55.29:682][484]0.350006
+[2017.06.16-13.55.29:703][486]0.364583
+[2017.06.16-13.55.29:736][488]0.372969
+[2017.06.16-13.55.30:079][528]0.381455
+[2017.06.16-13.55.30:100][530]0.390034
+[2017.06.16-13.55.30:125][532]0.384289
+[2017.06.16-13.55.30:210][541]0.382449
+[2017.06.16-13.55.30:230][543]0.391561
+[2017.06.16-13.55.30:282][548]0.382023
+[2017.06.16-13.55.30:302][550]0.377595
+[2017.06.16-13.55.30:328][552]0.373405
+[2017.06.16-13.55.30:354][554]0.369461
+[2017.06.16-13.55.30:379][556]0.365772
+[2017.06.16-13.55.30:413][559]0.362344
+[2017.06.16-13.55.30:451][563]0.346266
+[2017.06.16-13.55.30:471][565]0.343592
+[2017.06.16-13.55.30:522][570]0.328909
+[2017.06.16-13.55.30:559][574]0.316811
+[2017.06.16-13.55.30:578][576]0.315266
+[2017.06.16-13.55.30:596][577]0.303695
+[2017.06.16-13.55.30:635][580]0.292410
+[2017.06.16-13.55.30:665][583]0.291853
+[2017.06.16-13.55.30:679][584]0.291667
+[2017.06.16-13.55.30:695][585]0.272630
+[2017.06.16-13.55.30:716][586]0.274020
+[2017.06.16-13.55.30:739][587]0.265574
+[2017.06.16-13.55.30:799][592]0.255368
+[2017.06.16-13.55.30:819][594]0.257694
+[2017.06.16-13.55.30:845][596]0.247601
+[2017.06.16-13.55.30:912][603]0.230583
+[2017.06.16-13.55.30:941][606]0.220725
+[2017.06.16-13.55.30:978][610]0.197642
+[2017.06.16-13.55.31:015][614]0.194599
+[2017.06.16-13.55.31:043][617]0.192074
+[2017.06.16-13.55.31:073][620]0.190086
+[2017.06.16-13.55.31:101][623]0.187789
+[2017.06.16-13.55.31:122][625]0.187789
+[2017.06.16-13.55.31:148][627]0.188654
+[2017.06.16-13.55.31:199][632]0.190086
+[2017.06.16-13.55.31:236][636]0.192074
+[2017.06.16-13.55.31:265][639]0.194599
+[2017.06.16-13.55.31:396][654]0.197642
+[2017.06.16-13.55.31:433][658]0.187789
+[2017.06.16-13.55.31:445][659]0.168286
+[2017.06.16-13.55.31:470][661]0.158662
+[2017.06.16-13.55.31:493][662]0.139754
+[2017.06.16-13.55.31:546][667]0.130520
+[2017.06.16-13.55.31:565][669]0.121478
+[2017.06.16-13.55.31:626][675]0.112673
+[2017.06.16-13.55.31:695][683]0.104167
+[2017.06.16-13.55.31:740][688]0.096037
+[2017.06.16-13.55.32:271][751]0.088388
+[2017.06.16-13.55.34:951][ 13]0.010417
+[2017.06.16-13.55.34:972][ 14]0.010417
+[2017.06.16-13.55.35:001][ 16]0.037558
+[2017.06.16-13.55.35:024][ 17]0.118768
+[2017.06.16-13.55.35:040][ 18]0.237537
+[2017.06.16-13.55.35:061][ 19]0.421457
+[2017.06.16-13.55.35:083][ 20]0.712610
+[2017.06.16-13.55.35:114][ 22]1.133887
+[2017.06.16-13.55.35:147][ 24]1.741360
+[2017.06.16-13.55.35:148][ 24]1.880692
+[2017.06.16-13.55.35:165][ 25]2.108443
+[2017.06.16-13.55.35:189][ 26]2.293394
+[2017.06.16-13.55.35:211][ 27]2.375457
+[2017.06.16-13.55.35:254][ 30]2.397938
+[2017.06.16-13.55.42:460][740]0.995868
+[2017.06.16-13.55.42:595][754]1.009342
+[2017.06.16-13.55.42:607][755]1.010900
+[2017.06.16-13.55.42:624][756]1.037753
+[2017.06.16-13.55.42:647][757]1.096920
+[2017.06.16-13.55.42:669][758]1.181684
+[2017.06.16-13.55.42:710][760]1.331053
+[2017.06.16-13.55.42:725][761]1.388858
+[2017.06.16-13.55.42:750][762]1.426779
+[2017.06.16-13.55.42:775][763]1.490894
+[2017.06.16-13.55.42:800][764]1.515616
+[2017.06.16-13.55.42:825][765]1.541702
+[2017.06.16-13.55.42:864][767]1.586106
+[2017.06.16-13.55.42:879][768]1.609468
+[2017.06.16-13.55.42:904][769]1.652085
+[2017.06.16-13.55.42:929][770]1.690263
+[2017.06.16-13.55.42:968][772]1.756992
+[2017.06.16-13.55.42:983][773]1.777713
+[2017.06.16-13.55.43:016][775]1.798195
+[2017.06.16-13.55.43:042][777]1.797471
+[2017.06.16-13.55.43:060][778]1.811961
+[2017.06.16-13.55.43:076][779]1.819700
+[2017.06.16-13.55.43:107][781]1.812919
+[2017.06.16-13.55.43:138][783]1.821130
+[2017.06.16-13.55.43:139][783]1.821845
+[2017.06.16-13.55.43:167][785]1.823631
+[2017.06.16-13.55.43:191][786]1.807404
+[2017.06.16-13.55.43:208][787]1.804370
+[2017.06.16-13.55.43:231][788]1.804340
+[2017.06.16-13.55.43:271][790]1.802776
+[2017.06.16-13.55.43:284][791]1.803167
+[2017.06.16-13.55.43:300][792]1.797290
+[2017.06.16-13.55.43:332][794]1.788909
+[2017.06.16-13.55.43:333][794]1.788879
+[2017.06.16-13.55.43:357][795]1.785388
+[2017.06.16-13.55.43:390][796]1.783655
+[2017.06.16-13.55.43:405][797]1.775729
+[2017.06.16-13.55.43:435][799]1.768013
+[2017.06.16-13.55.43:435][799]1.760509
+[2017.06.16-13.55.43:461][800]1.742699
+[2017.06.16-13.55.43:491][802]1.717108
+[2017.06.16-13.55.43:516][803]1.692925
+[2017.06.16-13.55.43:532][804]1.677860
+[2017.06.16-13.55.43:562][806]1.654775
+[2017.06.16-13.55.43:586][807]1.616330
+[2017.06.16-13.55.43:601][808]1.600408
+[2017.06.16-13.55.43:632][809]1.584566
+[2017.06.16-13.55.43:656][810]1.562535
+[2017.06.16-13.55.43:671][811]1.562812
+[2017.06.16-13.55.43:693][812]1.554319
+[2017.06.16-13.55.43:723][814]1.529938
+[2017.06.16-13.55.43:748][815]1.510417
+[2017.06.16-13.55.43:771][817]1.495944
+[2017.06.16-13.55.43:803][819]1.483781
+[2017.06.16-13.55.43:821][820]1.479057
+[2017.06.16-13.55.43:836][821]1.447167
+[2017.06.16-13.55.43:867][823]1.420835
+[2017.06.16-13.55.43:867][823]1.421026
+[2017.06.16-13.55.43:891][824]1.404513
+[2017.06.16-13.55.43:915][825]1.404667
+[2017.06.16-13.55.43:937][826]1.404243
+[2017.06.16-13.55.43:958][827]1.397737
+[2017.06.16-13.55.43:980][828]1.393694
+[2017.06.16-13.55.44:001][829]1.392604
+[2017.06.16-13.55.44:024][830]1.370336
+[2017.06.16-13.55.44:045][831]1.344517
+[2017.06.16-13.55.44:075][833]1.294562
+[2017.06.16-13.55.44:100][834]1.259728
+[2017.06.16-13.55.44:123][836]1.243952
+[2017.06.16-13.55.44:148][837]1.236472
+[2017.06.16-13.55.44:171][839]1.222306
+[2017.06.16-13.55.44:203][841]1.207839
+[2017.06.16-13.55.44:221][842]1.201218
+[2017.06.16-13.55.44:236][843]1.197237
+[2017.06.16-13.55.44:267][845]1.187409
+[2017.06.16-13.55.44:298][847]1.180030
+[2017.06.16-13.55.44:299][847]1.178741
+[2017.06.16-13.55.44:318][848]1.177498
+[2017.06.16-13.55.44:341][849]1.147537
+[2017.06.16-13.55.44:371][851]1.126976
+[2017.06.16-13.55.44:371][851]1.130244
+[2017.06.16-13.55.44:397][852]1.121958
+[2017.06.16-13.55.44:429][854]1.094593
+[2017.06.16-13.55.44:451][855]1.087033
+[2017.06.16-13.55.44:475][857]1.074180
+[2017.06.16-13.55.44:475][857]1.068000
+[2017.06.16-13.55.44:501][858]1.046499
+[2017.06.16-13.55.44:523][859]1.011275
+[2017.06.16-13.55.44:545][860]0.982982
+[2017.06.16-13.55.44:567][861]0.947058
+[2017.06.16-13.55.44:589][862]0.930821
+[2017.06.16-13.55.44:640][866]0.867027
+[2017.06.16-13.55.44:652][867]0.858538
+[2017.06.16-13.55.44:668][868]0.841690
+[2017.06.16-13.55.44:688][869]0.825024
+[2017.06.16-13.55.44:711][870]0.792283
+[2017.06.16-13.55.44:733][871]0.752600
+[2017.06.16-13.55.44:755][872]0.714511
+[2017.06.16-13.55.44:777][873]0.692532
+[2017.06.16-13.55.44:798][874]0.657571
+[2017.06.16-13.55.44:829][876]0.623087
+[2017.06.16-13.55.44:853][877]0.587504
+[2017.06.16-13.55.44:869][878]0.566728
+[2017.06.16-13.55.44:891][879]0.525810
+[2017.06.16-13.55.44:913][880]0.514545
+[2017.06.16-13.55.44:934][881]0.470598
+[2017.06.16-13.55.44:957][882]0.448764
+[2017.06.16-13.55.44:987][884]0.425046
+[2017.06.16-13.55.45:027][887]0.394323
+[2017.06.16-13.55.45:048][889]0.382023
+[2017.06.16-13.55.45:074][891]0.365920
+[2017.06.16-13.55.45:092][892]0.323588
+[2017.06.16-13.55.45:107][893]0.298288
+[2017.06.16-13.55.45:128][894]0.275008
+[2017.06.16-13.55.45:151][895]0.265574
+[2017.06.16-13.55.45:173][896]0.283364
+[2017.06.16-13.55.45:195][897]0.284510
+[2017.06.16-13.55.45:217][898]0.290548
+[2017.06.16-13.55.45:238][899]0.312674
+[2017.06.16-13.55.45:261][900]0.328909
+[2017.06.16-13.55.45:291][902]0.336250
+[2017.06.16-13.55.45:291][902]0.339302
+[2017.06.16-13.55.45:326][904]0.350161
+[2017.06.16-13.55.45:350][905]0.358733
+[2017.06.16-13.55.45:387][908]0.366957
+[2017.06.16-13.55.45:401][909]0.372969
+[2017.06.16-13.55.45:418][910]0.369461
+[2017.06.16-13.55.45:448][912]0.368579
+[2017.06.16-13.55.45:472][913]0.362793
+[2017.06.16-13.55.45:486][914]0.358430
+[2017.06.16-13.55.45:509][915]0.345010
+[2017.06.16-13.55.45:539][917]0.326924
+[2017.06.16-13.55.45:539][917]0.319539
+[2017.06.16-13.55.45:564][918]0.303695
+[2017.06.16-13.55.45:588][919]0.281250
+[2017.06.16-13.55.45:609][920]0.282021
+[2017.06.16-13.55.45:631][921]0.253448
+[2017.06.16-13.55.45:652][922]0.207551
+[2017.06.16-13.55.45:682][924]0.172427
+[2017.06.16-13.55.45:714][926]0.153800
+[2017.06.16-13.55.45:732][927]0.127152
+[2017.06.16-13.55.45:755][929]0.029463
+[2017.06.16-13.55.45:779][930]0.140142
+[2017.06.16-13.55.45:803][932]0.250867
+[2017.06.16-13.55.45:803][932]0.310759
+[2017.06.16-13.55.45:829][933]0.468750
+[2017.06.16-13.55.45:853][934]0.569211
+[2017.06.16-13.55.45:883][936]0.632764
+[2017.06.16-13.55.45:883][936]0.641535
+[2017.06.16-13.55.45:908][937]0.696750
+[2017.06.16-13.55.45:931][938]0.752095
+[2017.06.16-13.55.45:953][939]0.800526
+[2017.06.16-13.55.45:975][940]0.858538
+[2017.06.16-13.55.45:996][941]0.936863
+[2017.06.16-13.55.46:017][942]0.987003
+[2017.06.16-13.55.46:040][943]1.027033
+[2017.06.16-13.55.46:061][944]1.060302
+[2017.06.16-13.55.46:091][946]1.137136
+[2017.06.16-13.55.46:115][947]1.199682
+[2017.06.16-13.55.46:139][949]1.245304
+[2017.06.16-13.55.46:171][951]1.263512
+[2017.06.16-13.55.46:189][952]1.255630
+[2017.06.16-13.55.46:203][953]1.252298
+[2017.06.16-13.55.46:236][955]1.242381
+[2017.06.16-13.55.46:236][955]1.239758
+[2017.06.16-13.55.46:260][956]1.166527
+[2017.06.16-13.55.46:291][958]1.127794
+[2017.06.16-13.55.46:291][958]1.113853
+[2017.06.16-13.55.46:316][959]1.105983
+[2017.06.16-13.55.46:339][960]1.106572
+[2017.06.16-13.55.46:361][961]1.112830
+[2017.06.16-13.55.46:383][962]1.060762
+[2017.06.16-13.55.46:405][963]0.978557
+[2017.06.16-13.55.46:435][965]0.971490
+[2017.06.16-13.55.46:466][967]0.990953
+[2017.06.16-13.55.46:467][967]1.003466
+[2017.06.16-13.55.46:486][968]1.009127
+[2017.06.16-13.55.46:508][969]1.021471
+[2017.06.16-13.55.46:539][971]1.011704
+[2017.06.16-13.55.46:539][971]1.004817
+[2017.06.16-13.55.46:564][972]0.992430
+[2017.06.16-13.55.46:588][973]0.927610
+[2017.06.16-13.55.46:609][974]0.852959
+[2017.06.16-13.55.46:631][975]0.748334
+[2017.06.16-13.55.46:653][976]0.656333
+[2017.06.16-13.55.46:675][977]0.621518
+[2017.06.16-13.55.46:697][978]0.687816
+[2017.06.16-13.55.46:718][979]0.820540
+[2017.06.16-13.55.46:740][980]0.993905
+[2017.06.16-13.55.46:770][982]1.188642
+[2017.06.16-13.55.46:771][982]1.237788
+[2017.06.16-13.55.46:796][983]1.373895
+[2017.06.16-13.55.46:819][984]1.414597
+[2017.06.16-13.55.46:842][985]1.441646
+[2017.06.16-13.55.46:843][985]1.445366
+[2017.06.16-13.55.46:864][986]1.486083
+[2017.06.16-13.55.46:903][987]1.533551
+[2017.06.16-13.55.46:918][988]1.546796
+[2017.06.16-13.55.46:941][989]1.552118
+[2017.06.16-13.55.46:970][991]1.583230
+[2017.06.16-13.55.46:971][991]1.612566
+[2017.06.16-13.55.46:996][992]1.765587
+[2017.06.16-13.55.47:019][993]1.883891
+[2017.06.16-13.55.47:041][994]1.912501
+[2017.06.16-13.55.47:063][995]1.952034
+[2017.06.16-13.55.47:084][996]1.960604
+[2017.06.16-13.55.47:114][998]1.878267
+[2017.06.16-13.55.47:115][998]1.840068
+[2017.06.16-13.55.47:140][999]1.629035
+[2017.06.16-13.55.47:164][  0]1.339342
+[2017.06.16-13.55.47:202][  2]0.886947
+[2017.06.16-13.55.47:203][  2]0.781319
+[2017.06.16-13.55.47:221][  3]0.538150
+[2017.06.16-13.55.47:245][  4]0.271633
+[2017.06.16-13.55.47:275][  6]0.393772
+[2017.06.16-13.55.47:299][  7]0.699857
+[2017.06.16-13.55.47:315][  8]0.889330
+[2017.06.16-13.55.47:337][  9]1.015772
+[2017.06.16-13.55.47:358][ 10]1.133887
+[2017.06.16-13.55.47:380][ 11]1.230755
+[2017.06.16-13.55.47:401][ 12]1.284675
+[2017.06.16-13.55.47:423][ 13]1.415441
+[2017.06.16-13.55.47:446][ 14]1.588567
+[2017.06.16-13.56.23:353][899]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light)
+[2017.06.16-13.56.43:194][ 57]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.06.16-13.56.59:490][686]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light4)
+[2017.06.16-13.57.09:724][774]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.06.16-13.57.11:648][966]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light5)
+[2017.06.16-13.57.54:203][528]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (window7)
+[2017.06.16-13.57.58:825][ 29]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light7)
+[2017.06.16-13.58.00:416][193]Cmd: DELETE
+[2017.06.16-13.58.00:417][193]Cmd: ACTOR DELETE
+[2017.06.16-13.58.00:420][193]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-13.58.00:421][193]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-13.58.00:428][193]LogEditorActor: Deleted 2 Actors (0.011 secs)
+[2017.06.16-13.58.03:436][517]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (window7)
+[2017.06.16-13.58.36:514][155]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light5)
+[2017.06.16-13.58.43:173][889]Cmd: TRANSACTION UNDO
+[2017.06.16-13.58.43:173][889]LogEditorTransaction: Undo Move Actors
+[2017.06.16-13.59.49:053][117]Cmd: DELETE
+[2017.06.16-13.59.49:053][117]Cmd: ACTOR DELETE
+[2017.06.16-13.59.49:057][117]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-13.59.49:064][117]LogEditorActor: Deleted 1 Actors (0.011 secs)
+[2017.06.16-13.59.50:109][236]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (window12)
+[2017.06.16-13.59.50:958][329]Cmd: DELETE
+[2017.06.16-13.59.50:958][329]Cmd: ACTOR DELETE
+[2017.06.16-13.59.50:961][329]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-13.59.50:968][329]LogEditorActor: Deleted 1 Actors (0.010 secs)
+[2017.06.16-13.59.55:600][847]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light5)
+[2017.06.16-14.00.30:614][652]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (window1)
+[2017.06.16-14.00.36:700][322]Cmd: TRANSACTION UNDO
+[2017.06.16-14.00.36:700][322]LogEditorTransaction: Undo Move Actors
+[2017.06.16-14.00.41:691][836]Cmd: TRANSACTION UNDO
+[2017.06.16-14.00.41:691][836]LogEditorTransaction: Undo Move Actors
+[2017.06.16-14.00.55:452][291]Cmd: TRANSACTION UNDO
+[2017.06.16-14.00.55:452][291]LogEditorTransaction: Undo Move Actors
+[2017.06.16-14.00.55:463][291]LogActorComponent: ~FComponentReregisterContext: (/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.window4.StaticMeshComponent0) Component already registered.
+[2017.06.16-14.01.23:940][368]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.06.16-14.01.28:067][771]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light6)
+[2017.06.16-14.02.32:365][163]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube9)
+[2017.06.16-14.02.35:602][504]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.06.16-14.02.44:440][404]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light7)
+[2017.06.16-14.02.56:798][674]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube7)
+[2017.06.16-14.03.01:147][128]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.06.16-14.03.08:034][775]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light7)
+[2017.06.16-14.03.34:695][ 68]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube8)
+[2017.06.16-14.03.46:857][280]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light5)
+[2017.06.16-14.06.32:043][452]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.06.16-14.06.58:638][200]LogSavePackage: Save=733.30ms
+[2017.06.16-14.06.58:638][200]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/PalaceLevel_Auto37ECB98BD45688470F76F949574A4EEF7.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/Maps/PalaceLevel_Auto3.umap'
+[2017.06.16-14.06.58:643][200]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/Maps/PalaceLevel_Auto3.umap
+[2017.06.16-14.06.58:645][200]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Ava/Maps/PalaceLevel' took 0.764
+[2017.06.16-14.06.58:645][200]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.764
+[2017.06.16-14.06.58:646][200]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Ava/test] ([1] browsable assets)...
+[2017.06.16-14.06.58:660][200]OBJ SavePackage:     Rendered thumbnail for [MaterialInstanceConstant /Game/Ava/test.test]
+[2017.06.16-14.06.58:660][200]OBJ SavePackage: Finished generating thumbnails for package [/Game/Ava/test]
+[2017.06.16-14.06.58:660][200]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/test" FILE="D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/test_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2017.06.16-14.06.58:671][200]LogSavePackage: Save=7.45ms
+[2017.06.16-14.06.58:671][200]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/test_Auto303A317E44DA66CB0B0FBE380A28F859A.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/test_Auto3.uasset'
+[2017.06.16-14.06.58:674][200]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/test_Auto3.uasset
+[2017.06.16-14.06.58:675][200]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Ava/Modelling/lambert10] ([1] browsable assets)...
+[2017.06.16-14.06.58:689][200]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Ava/Modelling/lambert10.lambert10]
+[2017.06.16-14.06.58:689][200]OBJ SavePackage: Finished generating thumbnails for package [/Game/Ava/Modelling/lambert10]
+[2017.06.16-14.06.58:689][200]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Modelling/lambert10" FILE="D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/Modelling/lambert10_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2017.06.16-14.06.58:700][200]LogSavePackage: Save=8.94ms
+[2017.06.16-14.06.58:700][200]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/lambert10_Auto327E8522B4B244FF95DD18DBBB46EBCEF.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/Modelling/lambert10_Auto3.uasset'
+[2017.06.16-14.06.58:721][200]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/Modelling/lambert10_Auto3.uasset
+[2017.06.16-14.06.58:722][200]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Ava/Modelling/light] ([1] browsable assets)...
+[2017.06.16-14.06.58:736][200]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/Ava/Modelling/light.light]
+[2017.06.16-14.06.58:736][200]OBJ SavePackage: Finished generating thumbnails for package [/Game/Ava/Modelling/light]
+[2017.06.16-14.06.58:736][200]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Modelling/light" FILE="D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/Modelling/light_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2017.06.16-14.06.58:746][200]LogSavePackage: Save=8.65ms
+[2017.06.16-14.06.58:746][200]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/light_Auto3C247CED245D3685B156B859C4B684E3E.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/Modelling/light_Auto3.uasset'
+[2017.06.16-14.06.58:749][200]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/Modelling/light_Auto3.uasset
+[2017.06.16-14.06.58:749][200]LogFileHelpers: Auto-saving content packages took 0.104
+[2017.06.16-14.17.01:741][156]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2017.06.16-14.33.32:042][717]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.06.16-14.51.48:446][742]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Maps/PalaceLevel" FILE="D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.06.16-14.51.49:200][742]LogSavePackage: Save=732.88ms
+[2017.06.16-14.51.49:200][742]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/PalaceLevel6D55FCED4953DF5E2F851EAFDE1A2B30.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap'
+[2017.06.16-14.51.49:206][742]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap
+[2017.06.16-14.51.49:227][742]LogFileHelpers: Saving map 'PalaceLevel' took 0.908
+[2017.06.16-14.51.49:229][742]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/test" FILE="D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/test.uasset" SILENT=true
+[2017.06.16-14.51.49:233][742]LogSavePackage: Save=1.44ms
+[2017.06.16-14.51.49:233][742]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/testC550EF8E4E9D13B5EA0E38A228A2E5ED.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/test.uasset'
+[2017.06.16-14.51.49:238][742]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/test.uasset
+[2017.06.16-14.51.49:253][742]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Modelling/lambert10" FILE="D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Modelling/lambert10.uasset" SILENT=true
+[2017.06.16-14.51.49:264][742]LogSavePackage: Save=8.97ms
+[2017.06.16-14.51.49:264][742]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/lambert101C7ADA964544BA7526FD53823B952062.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Modelling/lambert10.uasset'
+[2017.06.16-14.51.49:268][742]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Modelling/lambert10.uasset
+[2017.06.16-14.51.49:283][742]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Modelling/light" FILE="D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Modelling/light.uasset" SILENT=true
+[2017.06.16-14.51.49:293][742]LogSavePackage: Save=8.67ms
+[2017.06.16-14.51.49:293][742]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/light8C597E934373676BF999BC9985203BD2.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Modelling/light.uasset'
+[2017.06.16-14.51.49:298][742]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Modelling/light.uasset
+[2017.06.16-14.51.49:299][742]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/test2" FILE="D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/test2.uasset" SILENT=true
+[2017.06.16-14.51.49:304][742]LogSavePackage: Save=1.53ms
+[2017.06.16-14.51.49:304][742]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/test26BC9AF064379718DBB4D72B31C9D3389.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/test2.uasset'
+[2017.06.16-14.51.49:309][742]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/test2.uasset
+[2017.06.16-14.52.09:025][183]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Modelling/window1" FILE="D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Modelling/window1.uasset" SILENT=true
+[2017.06.16-14.52.09:037][183]LogSavePackage: Save=9.30ms
+[2017.06.16-14.52.09:037][183]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/window14F3FD308403708157B287AAC88D3DB23.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Modelling/window1.uasset'
+[2017.06.16-14.52.09:042][183]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Modelling/window1.uasset
+[2017.06.16-14.52.09:044][183]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Modelling/GreenRoom/window1" FILE="D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Modelling/GreenRoom/window1.uasset" SILENT=true
+[2017.06.16-14.52.09:061][183]LogSavePackage: Save=1.09ms
+[2017.06.16-14.52.09:061][183]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/window1022E29574895905567AA5BB92E6CD229.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Modelling/GreenRoom/window1.uasset'
+[2017.06.16-14.52.09:066][183]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Modelling/GreenRoom/window1.uasset
+[2017.06.16-14.52.31:400][426]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 D:\RekaKadar\MasterProject_AVA\Master Content\Production\Modelling\Green Room\FBX\window2.fbx)
+[2017.06.16-14.52.31:403][426]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2017.06.16-14.52.31:403][426]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2017.06.16-14.52.31:403][426]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2017.06.16-14.52.31:403][426]LogFbx: ItemName: Geometry, ItemCount : 1
+[2017.06.16-14.52.31:403][426]LogFbx: ItemName: Material, ItemCount : 1
+[2017.06.16-14.52.31:403][426]LogFbx: ItemName: Model, ItemCount : 1
+[2017.06.16-14.52.31:407][426]LogFbx: Loading FBX Scene from D:\RekaKadar\MasterProject_AVA\Master Content\Production\Modelling\Green Room\FBX\window2.fbx
+[2017.06.16-14.52.31:413][426]LogFbx: FBX Scene Loaded Succesfully
+[2017.06.16-14.52.33:402][426]LogFbx: Loading FBX Scene from D:\RekaKadar\MasterProject_AVA\Master Content\Production\Modelling\Green Room\FBX\window2.fbx
+[2017.06.16-14.52.33:408][426]LogFbx: FBX Scene Loaded Succesfully
+[2017.06.16-14.52.33:410][426]LogLinker:Warning: Can't find file '/Game/Ava/Modelling/lambert6'
+[2017.06.16-14.52.33:410][426]LogLinker:Warning: Can't find file '/Game/Ava/Modelling/lambert6'
+[2017.06.16-14.52.33:413][426]LogMaterial: Missing cached shader map for material lambert6, compiling. 
+[2017.06.16-14.52.33:426][426]LogFbx:Warning: Triangulating static mesh Palace_Geo_Window2_UV_VZ_V1:polySurface1
+[2017.06.16-14.52.33:467][426]LogStaticMesh: Building static mesh window2...
+[2017.06.16-14.52.33:476][426]LogStaticMesh: Built static mesh [0.01s] /Game/Ava/Modelling/window2.window2
+[2017.06.16-14.52.35:997][556]LogActorFactory: Actor Factory created window2
+[2017.06.16-14.52.37:545][724]LogActorFactory: Actor Factory created window2
+[2017.06.16-14.53.22:796][619]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube8)
+[2017.06.16-14.53.23:730][720]Cmd: DELETE
+[2017.06.16-14.53.23:730][720]Cmd: ACTOR DELETE
+[2017.06.16-14.53.23:733][720]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-14.53.23:747][720]LogEditorActor: Deleted 1 Actors (0.017 secs)
+[2017.06.16-14.53.28:387][219]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light7)
+[2017.06.16-14.53.40:617][536]Cmd: TRANSACTION UNDO
+[2017.06.16-14.53.40:617][536]LogEditorTransaction: Undo Move Actors
+[2017.06.16-14.53.59:258][545]Cmd: TRANSACTION UNDO
+[2017.06.16-14.53.59:258][545]LogEditorTransaction: Undo Scale Actors
+[2017.06.16-14.54.09:625][667]Cmd: TRANSACTION UNDO
+[2017.06.16-14.54.09:625][667]LogEditorTransaction: Undo Scale Actors
+[2017.06.16-14.54.10:309][724]Cmd: TRANSACTION UNDO
+[2017.06.16-14.54.10:309][724]LogEditorTransaction: Undo Scale Actors
+[2017.06.16-14.55.07:532][928]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube7)
+[2017.06.16-14.55.08:350][ 13]Cmd: DELETE
+[2017.06.16-14.55.08:350][ 13]Cmd: ACTOR DELETE
+[2017.06.16-14.55.08:354][ 13]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-14.55.08:363][ 13]LogEditorActor: Deleted 1 Actors (0.013 secs)
+[2017.06.16-14.55.09:204][106]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube9)
+[2017.06.16-14.55.09:444][129]Cmd: DELETE
+[2017.06.16-14.55.09:444][129]Cmd: ACTOR DELETE
+[2017.06.16-14.55.09:447][129]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-14.55.09:455][129]LogEditorActor: Deleted 1 Actors (0.011 secs)
+[2017.06.16-14.55.09:946][184]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube10)
+[2017.06.16-14.55.10:023][190]Cmd: DELETE
+[2017.06.16-14.55.10:023][190]Cmd: ACTOR DELETE
+[2017.06.16-14.55.10:027][190]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-14.55.10:034][190]LogEditorActor: Deleted 1 Actors (0.011 secs)
+[2017.06.16-14.55.10:952][292]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light12)
+[2017.06.16-14.55.32:314][757]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light12)
+[2017.06.16-14.56.07:838][911]Cmd: TRANSACTION UNDO
+[2017.06.16-14.56.07:838][911]LogEditorTransaction: Undo Rotate Actors
+[2017.06.16-14.56.09:876][130]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light13)
+[2017.06.16-14.56.35:804][137]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light16)
+[2017.06.16-14.56.39:904][613]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.06.16-14.57.30:726][945]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light12)
+[2017.06.16-14.57.31:637][ 43]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light12)
+[2017.06.16-14.57.31:731][ 51]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
+[2017.06.16-14.57.53:676][973]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light16)
+[2017.06.16-14.57.55:391][146]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light15)
+[2017.06.16-14.57.57:010][312]Cmd: TRANSACTION UNDO
+[2017.06.16-14.57.57:010][312]LogEditorTransaction: Undo Clicking on Actors
+[2017.06.16-14.57.57:387][339]Cmd: TRANSACTION UNDO
+[2017.06.16-14.57.57:387][339]LogEditorTransaction: Undo Clicking on Actors
+[2017.06.16-14.57.57:722][367]Cmd: TRANSACTION UNDO
+[2017.06.16-14.57.57:722][367]LogEditorTransaction: Undo Edit NearFadeDistance
+[2017.06.16-14.57.57:737][367]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.16-14.57.58:060][396]Cmd: TRANSACTION UNDO
+[2017.06.16-14.57.58:060][396]LogEditorTransaction: Undo Edit NearFadeDistance
+[2017.06.16-14.57.58:075][396]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.16-14.57.59:255][513]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light15)
+[2017.06.16-14.58.19:218][482]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.06.16-14.58.59:906][708]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light15)
+[2017.06.16-14.59.20:580][392]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.06.16-14.59.28:999][954]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.06.16-14.59.35:836][399]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light12)
+[2017.06.16-15.00.00:479][ 92]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.06.16-15.00.10:563][743]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light12)
+[2017.06.16-15.00.15:246][ 61]Cmd: TRANSACTION UNDO
+[2017.06.16-15.00.15:246][ 61]LogEditorTransaction: Undo Clicking on Actors
+[2017.06.16-15.00.23:048][600]Cmd: TRANSACTION UNDO
+[2017.06.16-15.00.23:048][600]LogEditorTransaction: Undo Scale Actors
+[2017.06.16-15.00.25:272][750]LogPhysics:Warning: Scale 'X=1.438 Y=0.000 Z=0.969' is not valid on object '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.light12.StaticMeshComponent0 light'.
+[2017.06.16-15.00.25:273][750]LogPhysics:Warning: Scale 'X=1.438 Y=0.000 Z=0.969' is not valid on object '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.light12.StaticMeshComponent0 light'.
+[2017.06.16-15.00.25:273][750]LogPhysics:Warning: Scale 'X=1.438 Y=0.000 Z=0.969' is not valid on object '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.light12.StaticMeshComponent0 light'.
+[2017.06.16-15.00.25:273][750]LogPhysics:Warning: Scale 'X=1.438 Y=0.000 Z=0.969' is not valid on object '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.light12.StaticMeshComponent0 light'.
+[2017.06.16-15.00.25:273][750]LogPhysics:Warning: Scale 'X=1.438 Y=0.000 Z=0.969' is not valid on object '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.light15.StaticMeshComponent0 light'.
+[2017.06.16-15.00.25:273][750]LogPhysics:Warning: Scale 'X=1.438 Y=0.000 Z=0.969' is not valid on object '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.light15.StaticMeshComponent0 light'.
+[2017.06.16-15.00.25:273][750]LogPhysics:Warning: Scale 'X=1.438 Y=0.000 Z=0.969' is not valid on object '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.light15.StaticMeshComponent0 light'.
+[2017.06.16-15.00.25:273][750]LogPhysics:Warning: Scale 'X=1.438 Y=0.000 Z=0.969' is not valid on object '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.light15.StaticMeshComponent0 light'.
+[2017.06.16-15.00.25:273][750]LogPhysics:Warning: Scale 'X=1.438 Y=0.000 Z=0.969' is not valid on object '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.light16.StaticMeshComponent0 light'.
+[2017.06.16-15.00.25:273][750]LogPhysics:Warning: Scale 'X=1.438 Y=0.000 Z=0.969' is not valid on object '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.light16.StaticMeshComponent0 light'.
+[2017.06.16-15.00.25:273][750]LogPhysics:Warning: Scale 'X=1.438 Y=0.000 Z=0.969' is not valid on object '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.light16.StaticMeshComponent0 light'.
+[2017.06.16-15.00.25:273][750]LogPhysics:Warning: Scale 'X=1.438 Y=0.000 Z=0.969' is not valid on object '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.light16.StaticMeshComponent0 light'.
+[2017.06.16-15.00.25:273][750]LogPhysics:Warning: Scale 'X=1.438 Y=0.000 Z=0.969' is not valid on object '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.light17.StaticMeshComponent0 light'.
+[2017.06.16-15.00.25:273][750]LogPhysics:Warning: Scale 'X=1.438 Y=0.000 Z=0.969' is not valid on object '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.light17.StaticMeshComponent0 light'.
+[2017.06.16-15.00.25:995][800]Cmd: TRANSACTION UNDO
+[2017.06.16-15.00.25:995][800]LogEditorTransaction: Undo Scale Actors
+[2017.06.16-15.00.26:956][868]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.06.16-15.00.38:237][598]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light16)
+[2017.06.16-15.00.40:074][727]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light13)
+[2017.06.16-15.00.41:016][793]Cmd: DELETE
+[2017.06.16-15.00.41:016][793]Cmd: ACTOR DELETE
+[2017.06.16-15.00.41:020][793]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.06.16-15.00.41:029][793]LogEditorActor: Deleted 1 Actors (0.013 secs)
+[2017.06.16-15.00.41:726][845]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (light16)
+[2017.06.16-15.00.46:723][201]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.06.16-15.01.44:116][660]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.06.16-15.02.12:959][986]LogSavePackage: Save=769.92ms
+[2017.06.16-15.02.12:959][986]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/PalaceLevel_Auto48FB1E43F4C4407F498442182EC0E0B0B.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/Maps/PalaceLevel_Auto4.umap'
+[2017.06.16-15.02.12:965][986]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/Maps/PalaceLevel_Auto4.umap
+[2017.06.16-15.02.12:966][986]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Ava/Maps/PalaceLevel' took 0.800
+[2017.06.16-15.02.12:966][986]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.800
+[2017.06.16-15.02.12:968][986]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Ava/test] ([1] browsable assets)...
+[2017.06.16-15.02.12:968][986]OBJ SavePackage: Finished generating thumbnails for package [/Game/Ava/test]
+[2017.06.16-15.02.12:968][986]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/test" FILE="D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/test_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2017.06.16-15.02.12:972][986]LogSavePackage: Save=1.45ms
+[2017.06.16-15.02.12:972][986]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/test_Auto47737F3294E3E0E7F53F357BEE1B1A632.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/test_Auto4.uasset'
+[2017.06.16-15.02.12:976][986]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/test_Auto4.uasset
+[2017.06.16-15.02.12:976][986]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Ava/test2] ([1] browsable assets)...
+[2017.06.16-15.02.13:007][986]OBJ SavePackage:     Rendered thumbnail for [MaterialInstanceConstant /Game/Ava/test2.test2]
+[2017.06.16-15.02.13:007][986]OBJ SavePackage: Finished generating thumbnails for package [/Game/Ava/test2]
+[2017.06.16-15.02.13:007][986]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/test2" FILE="D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/test2_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2017.06.16-15.02.13:018][986]LogSavePackage: Save=7.61ms
+[2017.06.16-15.02.13:018][986]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/test2_Auto4FC5775BD40FE80C650F26CACBC9D6F4C.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/test2_Auto4.uasset'
+[2017.06.16-15.02.13:021][986]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/test2_Auto4.uasset
+[2017.06.16-15.02.13:022][986]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Ava/Modelling/window2] ([1] browsable assets)...
+[2017.06.16-15.02.13:054][986]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/Ava/Modelling/window2.window2]
+[2017.06.16-15.02.13:054][986]OBJ SavePackage: Finished generating thumbnails for package [/Game/Ava/Modelling/window2]
+[2017.06.16-15.02.13:054][986]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Modelling/window2" FILE="D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/Modelling/window2_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2017.06.16-15.02.13:065][986]LogSavePackage: Save=9.35ms
+[2017.06.16-15.02.13:065][986]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/window2_Auto42B089B98476A50648CF0E984F1632FEB.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/Modelling/window2_Auto4.uasset'
+[2017.06.16-15.02.13:068][986]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/Modelling/window2_Auto4.uasset
+[2017.06.16-15.02.13:069][986]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Ava/Modelling/lambert6] ([1] browsable assets)...
+[2017.06.16-15.02.13:100][986]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Ava/Modelling/lambert6.lambert6]
+[2017.06.16-15.02.13:100][986]OBJ SavePackage: Finished generating thumbnails for package [/Game/Ava/Modelling/lambert6]
+[2017.06.16-15.02.13:100][986]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Modelling/lambert6" FILE="D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/Autosaves/Game/Ava/Modelling/lambert6_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2017.06.16-15.02.13:111][986]LogSavePackage: Save=9.90ms
+[2017.06.
