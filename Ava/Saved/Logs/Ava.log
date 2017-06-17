@@ -8472,4 +8472,159 @@ LogInit: Object subsystem initialized
 [2017.06.17-14.07.46:949][483]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Textures/Green_Room/13868-normal.uasset
 [2017.06.17-14.07.48:599][483]LogSavePackage: Save=1641.30ms
 [2017.06.17-14.07.48:599][483]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/GraniteBlackWhite_N04DBB74B4261B3472A860991CEAA85A2.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Textures/Green_Room/GraniteBlackWhite_N.uasset'
-[2017.06.17-14.07.48:603][483]LogSavePackage:Display: Finished Save
+[2017.06.17-14.07.48:603][483]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Textures/Green_Room/GraniteBlackWhite_N.uasset
+[2017.06.17-14.07.48:613][483]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Textures/Green_Room/floor3_test" FILE="D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Textures/Green_Room/floor3_test.uasset" SILENT=true
+[2017.06.17-14.07.48:763][483]LogSavePackage: Save=148.87ms
+[2017.06.17-14.07.48:763][483]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/floor3_test94BD7D6E4E48C3BE44657DBF582167CA.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Textures/Green_Room/floor3_test.uasset'
+[2017.06.17-14.07.48:767][483]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Textures/Green_Room/floor3_test.uasset
+[2017.06.17-14.09.17:733][176]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_15, compiling. 
+[2017.06.17-14.09.20:683][389]LogMaterialEditor: Applying material floor_test
+[2017.06.17-14.09.21:093][389]LogMaterial: Missing cached shader map for material PreviewMaterial_2, compiling. 
+[2017.06.17-14.09.21:107][389]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.17-14.09.21:129][389]LogMaterial: Missing cached shader map for material floor_test, compiling. 
+[2017.06.17-14.09.21:145][389]LogMaterial: Missing cached shader map for material floor_test, compiling. 
+[2017.06.17-14.09.21:157][389]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.17-14.09.23:405][543]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 71 instructions
+[2017.06.17-14.09.23:405][543]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.17-14.09.23:405][543]MaterialEditorStats: Info Texture samplers: 5/16
+[2017.06.17-14.09.56:916][342]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Textures/Green_Room/floor_test2" FILE="D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Textures/Green_Room/floor_test2.uasset" SILENT=true
+[2017.06.17-14.09.56:947][342]LogSavePackage: Save=12.80ms
+[2017.06.17-14.09.56:947][342]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/floor_test241C4481B4C449EE04C26369AB70D93CB.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Textures/Green_Room/floor_test2.uasset'
+[2017.06.17-14.09.56:952][342]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Textures/Green_Room/floor_test2.uasset
+[2017.06.17-14.10.10:065][462]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.06.17-14.10.35:737][ 18]Cmd: TRANSACTION UNDO
+[2017.06.17-14.10.35:737][ 18]LogEditorTransaction: Undo Clicking on Actors
+[2017.06.17-14.10.36:069][ 36]Cmd: TRANSACTION UNDO
+[2017.06.17-14.10.36:069][ 36]LogEditorTransaction: Undo Select Brush Surface
+[2017.06.17-14.10.36:406][ 56]Cmd: TRANSACTION UNDO
+[2017.06.17-14.10.36:406][ 56]LogEditorTransaction: Undo Edit Spec
+[2017.06.17-14.10.36:426][ 56]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.17-14.10.36:726][ 75]Cmd: TRANSACTION UNDO
+[2017.06.17-14.10.36:726][ 75]LogEditorTransaction: Undo Create Pin Link
+[2017.06.17-14.10.36:743][ 75]LogMaterial: Missing cached shader map for material PreviewMaterial_2, compiling. 
+[2017.06.17-14.10.36:777][ 75]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_15, compiling. 
+[2017.06.17-14.10.55:367][219]Cmd: POLY TEXSCALE  UU=0.142857 VV=0.142857
+[2017.06.17-14.11.02:860][599]Cmd: POLY TEXSCALE  UU=0.142857 VV=0.125000
+[2017.06.17-14.11.12:755][233]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.06.17-14.12.26:004][625]MapCheck: New page: Map Check
+[2017.06.17-14.12.26:027][625]Cmd: MAP REBUILD ALLVISIBLE
+[2017.06.17-14.12.26:027][625]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2017.06.17-14.12.26:229][625]LightingResults: New page: Lighting Build - 17 Jun 2017 15:12:26
+[2017.06.17-14.12.26:243][625]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2017.06.17-14.12.26:248][625]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2017.06.17-14.12.26:248][625]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2017.06.17-14.12.26:249][625]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2017.06.17-14.12.26:249][625]LogSwarmInterface: [TryOpenConnection] Local Process ID is 147668
+[2017.06.17-14.12.30:752][625]LogStaticLightingSystem:Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
+[2017.06.17-14.12.30:753][625]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2017.06.17-14.12.30:753][625]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2017.06.17-14.12.30:753][625]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2017.06.17-14.12.30:753][625]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2017.06.17-14.12.30:753][625]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2017.06.17-14.12.30:912][625]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2017.06.17-14.12.30:912][625]MapCheck: New page: PalaceLevel - 17 Jun 2017 15:12:30
+[2017.06.17-14.12.30:913][625]MapCheck:Warning: Warning fence_59 Static mesh actor has NULL StaticMesh property 
+[2017.06.17-14.12.30:913][625]MapCheck:Warning: Warning fence_59 Static mesh actor has NULL StaticMesh property 
+[2017.06.17-14.12.30:913][625]MapCheck:Warning: Warning Pillar_4_246 Pillar_4_246 is in the same location as Pillar_4_410 
+[2017.06.17-14.12.30:913][625]MapCheck:Warning: Warning Pillar_4_251 Pillar_4_251 is in the same location as Pillar_4_393 
+[2017.06.17-14.12.30:913][625]MapCheck:Warning: Warning Pillar_4_252 Pillar_4_252 is in the same location as Pillar_4_263 
+[2017.06.17-14.12.30:913][625]MapCheck:Warning: Warning Pillar_4_263 Pillar_4_263 is in the same location as Pillar_4_252 
+[2017.06.17-14.12.30:914][625]MapCheck:Warning: Warning Pillar_4_264 Pillar_4_264 is in the same location as Pillar_4_275 
+[2017.06.17-14.12.30:914][625]MapCheck:Warning: Warning Pillar_4_269 Pillar_4_269 is in the same location as Pillar_4_417 
+[2017.06.17-14.12.30:914][625]MapCheck:Warning: Warning Pillar_4_270 Pillar_4_270 is in the same location as Pillar_4_440 
+[2017.06.17-14.12.30:914][625]MapCheck:Warning: Warning Pillar_4_275 Pillar_4_275 is in the same location as Pillar_4_264 
+[2017.06.17-14.12.30:914][625]MapCheck:Warning: Warning Pillar_4_276 Pillar_4_276 is in the same location as Pillar_4_287 
+[2017.06.17-14.12.30:914][625]MapCheck:Warning: Warning Pillar_4_287 Pillar_4_287 is in the same location as Pillar_4_276 
+[2017.06.17-14.12.30:914][625]MapCheck:Warning: Warning Pillar_4_288 Pillar_4_288 is in the same location as Pillar_4_299 
+[2017.06.17-14.12.30:914][625]MapCheck:Warning: Warning Pillar_4_293 Pillar_4_293 is in the same location as Pillar_4_447 
+[2017.06.17-14.12.30:914][625]MapCheck:Warning: Warning Pillar_4_294 Pillar_4_294 is in the same location as Pillar_4_305 
+[2017.06.17-14.12.30:914][625]MapCheck:Warning: Warning Pillar_4_299 Pillar_4_299 is in the same location as Pillar_4_288 
+[2017.06.17-14.12.30:914][625]MapCheck:Warning: Warning Pillar_4_300 Pillar_4_300 is in the same location as Pillar_4_311 
+[2017.06.17-14.12.30:914][625]MapCheck:Warning: Warning Pillar_4_305 Pillar_4_305 is in the same location as Pillar_4_294 
+[2017.06.17-14.12.30:914][625]MapCheck:Warning: Warning Pillar_4_311 Pillar_4_311 is in the same location as Pillar_4_300 
+[2017.06.17-14.12.30:915][625]MapCheck:Warning: Warning Pillar_4_393 Pillar_4_393 is in the same location as Pillar_4_251 
+[2017.06.17-14.12.30:915][625]MapCheck:Warning: Warning Pillar_4_410 Pillar_4_410 is in the same location as Pillar_4_246 
+[2017.06.17-14.12.30:915][625]MapCheck:Warning: Warning Pillar_4_417 Pillar_4_417 is in the same location as Pillar_4_269 
+[2017.06.17-14.12.30:915][625]MapCheck:Warning: Warning Pillar_4_440 Pillar_4_440 is in the same location as Pillar_4_270 
+[2017.06.17-14.12.30:915][625]MapCheck:Warning: Warning Pillar_4_447 Pillar_4_447 is in the same location as Pillar_4_293 
+[2017.06.17-14.12.30:915][625]MapCheck:Warning: Warning light_cube2_34 Static mesh actor has NULL StaticMesh property 
+[2017.06.17-14.12.30:915][625]MapCheck:Warning: Warning light_cube2_34 Static mesh actor has NULL StaticMesh property 
+[2017.06.17-14.12.30:915][625]MapCheck:Warning: Warning light_cube_31 Static mesh actor has NULL StaticMesh property 
+[2017.06.17-14.12.30:915][625]MapCheck:Warning: Warning light_cube_31 Static mesh actor has NULL StaticMesh property 
+[2017.06.17-14.12.31:011][625]MapCheck: Info Map check complete: 0 Error(s), 28 Warning(s), took 98.353ms to complete.
+[2017.06.17-14.12.31:031][625]LogEditorBuildUtils: Build time 0:05
+[2017.06.17-14.12.31:048][625]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer MaterialInstanceDynamic_9, compiling. 
+[2017.06.17-14.12.31:051][625]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer MaterialInstanceDynamic_9, compiling. 
+[2017.06.17-14.12.31:054][625]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_Basic_Wall, compiling. 
+[2017.06.17-14.12.31:057][625]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_Basic_Wall, compiling. 
+[2017.06.17-14.12.31:139][626]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer floor_test2, compiling. 
+[2017.06.17-14.12.31:144][626]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer floor_test2, compiling. 
+[2017.06.17-14.12.38:161][650]LightingResults:Warning: Warning Tara_inprogress Object has overlapping UVs.
+[2017.06.17-14.12.38:161][650]LightingResults: Info Tara_inprogress Lightmap UV are overlapping by 8.3%. Please adjust content - Enable Error Coloring to visualize.
+[2017.06.17-14.12.39:828][655]Job is a success!
+[2017.06.17-14.12.42:154][656]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT)
+[2017.06.17-14.12.42:154][656]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1)
+[2017.06.17-14.12.42:154][656]LogTexture:Display: Building textures: HQ_Lightmap0_2 (AutoDXT)
+[2017.06.17-14.12.42:154][656]LogTexture:Display: Building textures: LQ_Lightmap_0_2 (DXT1)
+[2017.06.17-14.12.42:155][656]LogTexture:Display: Building textures: LQ_Lightmap_0_3 (DXT1)
+[2017.06.17-14.12.42:155][656]LogTexture:Display: Building textures: HQ_Lightmap1_3 (AutoDXT)
+[2017.06.17-14.12.42:155][656]LogTexture:Display: Building textures: HQ_Lightmap1_4 (AutoDXT)
+[2017.06.17-14.12.42:155][656]LogTexture:Display: Building textures: LQ_Lightmap_0_4 (DXT1)
+[2017.06.17-14.12.42:155][656]LogTexture:Display: Building textures: HQ_Lightmap1_5 (AutoDXT)
+[2017.06.17-14.12.42:155][656]LogTexture:Display: Building textures: LQ_Lightmap_0_5 (DXT1)
+[2017.06.17-14.12.42:155][656]LogTexture:Display: Building textures: HQ_Lightmap1_6 (AutoDXT)
+[2017.06.17-14.12.42:155][656]LogTexture:Display: Building textures: LQ_Lightmap_1_6 (DXT1)
+[2017.06.17-14.12.42:170][656]Lightmass on PC41468: 9.23 sec total, 203 ms importing, 91 ms setup, 966 ms photons, 7.96 sec processing, 0 ms extra exporting [853/853 mappings]. Threads: 1:26 min total, 51.8 sec processing.
+[2017.06.17-14.12.42:195][656]LogMaterial:Warning: Material /Game/Ava/Textures/Green_Room/floor_test.floor_test needed to have new flag set bUsedWithStaticLighting !
+[2017.06.17-14.12.42:196][656]LogMaterial:Warning: Material /Engine/Transient.PreviewMaterial_2 needed to have new flag set bUsedWithStaticLighting !
+[2017.06.17-14.12.42:198][656]LogMaterial: Missing cached shader map for material PreviewMaterial_2, compiling. 
+[2017.06.17-14.12.42:206][656]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.17-14.12.42:208][656]LogMaterial: Missing cached shader map for material floor_test, compiling. 
+[2017.06.17-14.12.42:226][656]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.06.17-14.12.42:247][656]LogStaticLightingSystem: Illumination: 15.6 sec (1.44 sec encoding lightmaps, 0 ms encoding shadowmaps)
+[2017.06.17-14.12.42:247][656]LogStaticLightingSystem: Lightmap texture memory:  10.0 MB (8.0 MB streaming, 2.0 MB non-streaming), 12 textures
+[2017.06.17-14.12.42:247][656]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 0 textures
+[2017.06.17-14.12.42:816][657]Cmd: MAP CHECK NOTIFYRESULTS
+[2017.06.17-14.12.42:817][657]MapCheck: New page: PalaceLevel - 17 Jun 2017 15:12:42
+[2017.06.17-14.12.42:818][657]MapCheck:Warning: Warning fence_59 Static mesh actor has NULL StaticMesh property 
+[2017.06.17-14.12.42:818][657]MapCheck:Warning: Warning fence_59 Static mesh actor has NULL StaticMesh property 
+[2017.06.17-14.12.42:818][657]MapCheck:Warning: Warning Pillar_4_246 Pillar_4_246 is in the same location as Pillar_4_410 
+[2017.06.17-14.12.42:818][657]MapCheck:Warning: Warning Pillar_4_251 Pillar_4_251 is in the same location as Pillar_4_393 
+[2017.06.17-14.12.42:818][657]MapCheck:Warning: Warning Pillar_4_252 Pillar_4_252 is in the same location as Pillar_4_263 
+[2017.06.17-14.12.42:818][657]MapCheck:Warning: Warning Pillar_4_263 Pillar_4_263 is in the same location as Pillar_4_252 
+[2017.06.17-14.12.42:818][657]MapCheck:Warning: Warning Pillar_4_264 Pillar_4_264 is in the same location as Pillar_4_275 
+[2017.06.17-14.12.42:819][657]MapCheck:Warning: Warning Pillar_4_269 Pillar_4_269 is in the same location as Pillar_4_417 
+[2017.06.17-14.12.42:819][657]MapCheck:Warning: Warning Pillar_4_270 Pillar_4_270 is in the same location as Pillar_4_440 
+[2017.06.17-14.12.42:819][657]MapCheck:Warning: Warning Pillar_4_275 Pillar_4_275 is in the same location as Pillar_4_264 
+[2017.06.17-14.12.42:819][657]MapCheck:Warning: Warning Pillar_4_276 Pillar_4_276 is in the same location as Pillar_4_287 
+[2017.06.17-14.12.42:819][657]MapCheck:Warning: Warning Pillar_4_287 Pillar_4_287 is in the same location as Pillar_4_276 
+[2017.06.17-14.12.42:819][657]MapCheck:Warning: Warning Pillar_4_288 Pillar_4_288 is in the same location as Pillar_4_299 
+[2017.06.17-14.12.42:819][657]MapCheck:Warning: Warning Pillar_4_293 Pillar_4_293 is in the same location as Pillar_4_447 
+[2017.06.17-14.12.42:819][657]MapCheck:Warning: Warning Pillar_4_294 Pillar_4_294 is in the same location as Pillar_4_305 
+[2017.06.17-14.12.42:819][657]MapCheck:Warning: Warning Pillar_4_299 Pillar_4_299 is in the same location as Pillar_4_288 
+[2017.06.17-14.12.42:819][657]MapCheck:Warning: Warning Pillar_4_300 Pillar_4_300 is in the same location as Pillar_4_311 
+[2017.06.17-14.12.42:819][657]MapCheck:Warning: Warning Pillar_4_305 Pillar_4_305 is in the same location as Pillar_4_294 
+[2017.06.17-14.12.42:819][657]MapCheck:Warning: Warning Pillar_4_311 Pillar_4_311 is in the same location as Pillar_4_300 
+[2017.06.17-14.12.42:820][657]MapCheck:Warning: Warning Pillar_4_393 Pillar_4_393 is in the same location as Pillar_4_251 
+[2017.06.17-14.12.42:820][657]MapCheck:Warning: Warning Pillar_4_410 Pillar_4_410 is in the same location as Pillar_4_246 
+[2017.06.17-14.12.42:820][657]MapCheck:Warning: Warning Pillar_4_417 Pillar_4_417 is in the same location as Pillar_4_269 
+[2017.06.17-14.12.42:821][657]MapCheck:Warning: Warning Pillar_4_440 Pillar_4_440 is in the same location as Pillar_4_270 
+[2017.06.17-14.12.42:821][657]MapCheck:Warning: Warning Pillar_4_447 Pillar_4_447 is in the same location as Pillar_4_293 
+[2017.06.17-14.12.42:822][657]MapCheck:Warning: Warning light_cube2_34 Static mesh actor has NULL StaticMesh property 
+[2017.06.17-14.12.42:822][657]MapCheck:Warning: Warning light_cube2_34 Static mesh actor has NULL StaticMesh property 
+[2017.06.17-14.12.42:822][657]MapCheck:Warning: Warning light_cube_31 Static mesh actor has NULL StaticMesh property 
+[2017.06.17-14.12.42:822][657]MapCheck:Warning: Warning light_cube_31 Static mesh actor has NULL StaticMesh property 
+[2017.06.17-14.12.42:962][657]MapCheck: Info Map check complete: 0 Error(s), 28 Warning(s), took 145.311ms to complete.
+[2017.06.17-14.12.45:305][664]MaterialEditorStats: Info Base pass shader with static lighting: 101 instructions
+[2017.06.17-14.12.45:305][664]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 71 instructions
+[2017.06.17-14.12.45:305][664]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.06.17-14.12.45:305][664]MaterialEditorStats: Info Texture samplers: 5/16
+[2017.06.17-14.13.22:451][897]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Maps/PalaceLevel" FILE="D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.06.17-14.13.23:210][897]LogSavePackage: Save=736.57ms
+[2017.06.17-14.13.23:210][897]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/PalaceLevel34FAA76E4C4157F6572BE286A40EF7EE.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap'
+[2017.06.17-14.13.23:216][897]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap
+[2017.06.17-14.13.23:233][897]LogFileHelpers: Saving map 'PalaceLevel' took 0.876
+[2017.06.17-14.13.23:249][897]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Textures/Green_Room/floor_test" FILE="D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Textures/Green_Room/floor_test.uasset" SILENT=true
+[2017.06.17-14.13.23:265][897]LogSavePackage: Save=12.45ms
+[2017.06.17-14.13.23:265][897]LogSavePackage: Moving 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Saved/floor_test9842CCCA407EAED5CE75E283958AE0BF.tmp' to 'D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Textures/Green_Room/floor_test.uasset'
+[2017.06.17-14.13.23:269][897]LogSavePackage:Display: Finished SavePackage D:/RekaKadar/MasterProject_AVA/MastersProject/Ava/Content/Ava/Textures/Green_Room/floor_test.uasset
