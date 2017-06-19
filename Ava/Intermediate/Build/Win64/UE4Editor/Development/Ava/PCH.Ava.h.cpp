@@ -1,1 +1,1 @@
-#include "D:\RekaKadar\MasterProject_AVA\MastersProject\Ava\Source\Ava\Ava.h"
+#include "D:\Reka\MASTER PROJECT\MastersProject\MastersProject\Ava\Source\Ava\Ava.h"
