@@ -11,6 +11,9 @@
 #ifndef AVA_DataFactory_generated_h
 	#include "DataFactory.h"
 #endif
+#ifndef AVA_PushPullItem_generated_h
+	#include "PushPullItem.h"
+#endif
 #ifndef AVA_MainCharacter_generated_h
 	#include "MainCharacter.h"
 #endif
@@ -19,9 +22,6 @@
 #endif
 #ifndef AVA_pickUpItem_generated_h
 	#include "pickUpItem.h"
-#endif
-#ifndef AVA_PushPullItem_generated_h
-	#include "PushPullItem.h"
 #endif
 #ifndef AVA_StatueObject_generated_h
 	#include "StatueObject.h"

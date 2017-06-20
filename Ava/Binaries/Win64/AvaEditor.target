@@ -2,7 +2,7 @@
 	"TargetName" : "AvaEditor",
 	"Platform" : "Win64",
 	"Configuration" : "Development",
-	"BuildId" : "",
+	"BuildId" : "dc4351c9-059d-4de2-a8de-dc26c1b85673",
 	"Version" : 
 	{
 		"MajorVersion" : 4,
@@ -86,10 +86,6 @@
 			"Type" : "UFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Plugins/Marketplace/Substance/Substance.uplugin",
-			"Type" : "UFS"
-		},
-		{
 			"Path" : "$(EngineDir)/Plugins/Media/MediaPlayerEditor/MediaPlayerEditor.uplugin",
 			"Type" : "UFS"
 		},
@@ -123,6 +119,10 @@
 		},
 		{
 			"Path" : "$(EngineDir)/Plugins/Runtime/ExampleDeviceProfileSelector/ExampleDeviceProfileSelector.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/HoudiniEngine/HoudiniEngine.uplugin",
 			"Type" : "UFS"
 		},
 		{

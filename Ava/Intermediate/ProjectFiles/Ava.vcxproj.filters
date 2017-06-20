@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\Ava.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{C31F24E4-EA39-4F78-8BE8-181173222FC8}</UniqueIdentifier>
+			<UniqueIdentifier>{7F952133-4A61-4507-84C2-4F05D89679B3}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\Ava.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{F6CFED8B-9261-4EF1-867F-620F7751734C}</UniqueIdentifier>
+			<UniqueIdentifier>{24F5A133-894C-49F9-956D-035301C02AC0}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,7 +28,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\Ava">
-			<UniqueIdentifier>{A43216B3-B097-4809-8DF1-91A4890C9E9C}</UniqueIdentifier>
+			<UniqueIdentifier>{AC8E9AA2-4063-450F-B453-53CC0C0DABAC}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\Ava\Ava.Build.cs">
 			<Filter>Source\Ava</Filter>

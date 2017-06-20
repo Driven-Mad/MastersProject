@@ -19,7 +19,9 @@ public:
 	
 	// Called every frame
 	virtual void Tick( float DeltaSeconds ) override;
-
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = pushableItemVariables, meta = (AllowPrivateAccess = "true"))
+		UStaticMeshComponent *designatedMesh;
 	
 	
 };

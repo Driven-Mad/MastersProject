@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define AVA_MainCharacter_generated_h
 
-#define Ava_Source_Ava_MainCharacter_h_20_RPC_WRAPPERS
-#define Ava_Source_Ava_MainCharacter_h_20_RPC_WRAPPERS_NO_PURE_DECLS
-#define Ava_Source_Ava_MainCharacter_h_20_INCLASS_NO_PURE_DECLS \
+#define Ava_Source_Ava_MainCharacter_h_21_RPC_WRAPPERS
+#define Ava_Source_Ava_MainCharacter_h_21_RPC_WRAPPERS_NO_PURE_DECLS
+#define Ava_Source_Ava_MainCharacter_h_21_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesAMainCharacter(); \
 	friend AVA_API class UClass* Z_Construct_UClass_AMainCharacter(); \
@@ -26,7 +26,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Ava_Source_Ava_MainCharacter_h_20_INCLASS \
+#define Ava_Source_Ava_MainCharacter_h_21_INCLASS \
 	private: \
 	static void StaticRegisterNativesAMainCharacter(); \
 	friend AVA_API class UClass* Z_Construct_UClass_AMainCharacter(); \
@@ -37,7 +37,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Ava_Source_Ava_MainCharacter_h_20_STANDARD_CONSTRUCTORS \
+#define Ava_Source_Ava_MainCharacter_h_21_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AMainCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMainCharacter) \
@@ -49,7 +49,7 @@ private: \
 public:
 
 
-#define Ava_Source_Ava_MainCharacter_h_20_ENHANCED_CONSTRUCTORS \
+#define Ava_Source_Ava_MainCharacter_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private copy-constructor, should never be used */ \
 	NO_API AMainCharacter(const AMainCharacter& InCopy); \
@@ -59,23 +59,23 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AMainCharacter); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMainCharacter)
 
 
-#define Ava_Source_Ava_MainCharacter_h_17_PROLOG
-#define Ava_Source_Ava_MainCharacter_h_20_GENERATED_BODY_LEGACY \
+#define Ava_Source_Ava_MainCharacter_h_18_PROLOG
+#define Ava_Source_Ava_MainCharacter_h_21_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Ava_Source_Ava_MainCharacter_h_20_RPC_WRAPPERS \
-	Ava_Source_Ava_MainCharacter_h_20_INCLASS \
-	Ava_Source_Ava_MainCharacter_h_20_STANDARD_CONSTRUCTORS \
+	Ava_Source_Ava_MainCharacter_h_21_RPC_WRAPPERS \
+	Ava_Source_Ava_MainCharacter_h_21_INCLASS \
+	Ava_Source_Ava_MainCharacter_h_21_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Ava_Source_Ava_MainCharacter_h_20_GENERATED_BODY \
+#define Ava_Source_Ava_MainCharacter_h_21_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Ava_Source_Ava_MainCharacter_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
-	Ava_Source_Ava_MainCharacter_h_20_INCLASS_NO_PURE_DECLS \
-	Ava_Source_Ava_MainCharacter_h_20_ENHANCED_CONSTRUCTORS \
+	Ava_Source_Ava_MainCharacter_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+	Ava_Source_Ava_MainCharacter_h_21_INCLASS_NO_PURE_DECLS \
+	Ava_Source_Ava_MainCharacter_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

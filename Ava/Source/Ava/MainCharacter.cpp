@@ -37,11 +37,15 @@ AMainCharacter::AMainCharacter()
 	CameraBoom->TargetArmLength = 400.0f; // The camera follows at this distance behind the character	
 	CameraBoom->bUsePawnControlRotation = true; // Rotate the arm based on the controller
 
+
+
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	//** DEPRECATED NEEDS CHANGING : AttachToComponent**
 	FollowCamera->AttachTo(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
-
+	//FollowCamera->PostProcessSettings.AutoExposureBias = 0.f;
+	//FollowCamera->PostProcessSettings.AutoExposureMinBrightness = 1.f;
+	//FollowCamera->PostProcessSettings.AutoExposureMaxBrightness = 1.f;
 
 	overlappingSphere = CreateDefaultSubobject<USphereComponent>(TEXT("overlappingSphere"));
 	overlappingSphere->SetSphereRadius(100.f);
@@ -94,10 +98,11 @@ void AMainCharacter::Tick(float DeltaTime)
 		FRotator tempRot = GetActorRotation();
 		FRotator tempYaw = FRotator(0, tempRot.Yaw, 0);
 		FVector tempFV = FRotationMatrix(tempYaw).GetUnitAxis(EAxis::X);
-		FVector end = (GetActorLocation() + (tempFV * 500));
+		FVector tempActorLocation = FVector(GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z+ characterArmHeight);
+		FVector end = (tempActorLocation + (tempFV * pushPullTraceCheckDistance));
 		DrawDebugLine(
 			GetWorld(),
-			GetActorLocation(),
+			tempActorLocation,
 			end,
 			FColor(0, 255, 0),
 			false, -1, 0,
@@ -276,11 +281,24 @@ void AMainCharacter::PushPull()
 	bIsPushPulling = true;
 	//in a non-Static class
 	//Draw the Line!
-	FVector end = FVector(GetActorLocation().X, GetActorLocation().Y + pushPullTraceCheckDistance, GetActorLocation().Z);
+	FRotator tempRot = GetActorRotation();
+	FRotator tempYaw = FRotator(0, tempRot.Yaw, 0);
+	FVector tempFV = FRotationMatrix(tempYaw).GetUnitAxis(EAxis::X);
+	FVector tempActorLocation = FVector(GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z + characterArmHeight);
+	FVector end = (tempActorLocation + (tempFV * pushPullTraceCheckDistance));
 	FHitResult results;
 	FCollisionQueryParams query = FCollisionQueryParams(FName(TEXT("trace")), false, this);
-	bool hit = GetWorld()->LineTraceSingleByChannel(results,GetActorLocation(),end, ECC_Visibility, query);
+	bool hit = GetWorld()->LineTraceSingleByChannel(results, tempActorLocation,end, ECC_Visibility, query);
 	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("BlockingHit: %i"), hit));
+	attachedPushPullItem = Cast<APushPullItem>(results.GetActor());
+	if (attachedPushPullItem)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("ITS A PUSHPULL OBJECT")));
+		FAttachmentTransformRules attachRules = FAttachmentTransformRules(EAttachmentRule::KeepWorld,false);
+		attachedPushPullItem->AttachToActor(this, attachRules);
+		attachedPushPullItem->SetActorEnableCollision(false);
+		
+	}
 	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Cyan, "I'M PUSHING/PULLING");
 	//FVector temp = GetActorLocation() + GetActorForwardVector();
 	//FVector end = FVector(GetActorForwardVector().X, GetActorForwardVector().Y + pushPullTraceCheckDistance, GetActorForwardVector().Z);
@@ -290,5 +308,13 @@ void AMainCharacter::PushPull()
 void AMainCharacter::StopPushPull()
 {
 	bIsPushPulling = false;
+	if (attachedPushPullItem)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("ITS A PUSHPULL OBJECT")));
+		FDetachmentTransformRules detachRules = FDetachmentTransformRules(EDetachmentRule::KeepWorld, false);
+		attachedPushPullItem->DetachFromActor(detachRules);
+		attachedPushPullItem->SetActorEnableCollision(false);
+
+	}
 	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Silver, "I'M NOT PUSHING/PULLING");
 }

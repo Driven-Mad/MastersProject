@@ -12,6 +12,7 @@
 #pragma once
 
 #include "GameFramework/Character.h"
+#include "PushPullItem.h"
 #include "MainCharacter.generated.h"
 
 UCLASS()
@@ -217,8 +218,12 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = prayingComponents, meta = (AllowPrivateAccess = "true"))
 		USphereComponent* overlappingSphere;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterSpeeds)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = pushPullAttributes)
 		float pushPullTraceCheckDistance;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = pushPullAttributes)
+		float characterArmHeight;
+
+
 
 	FVector ForwardVector;
 	FVector BackVector;
@@ -230,6 +235,7 @@ private:
 	/// @brief Deltatime to be used anywhere. 
 	//----------------------------------------------------------------------------------------------------------------------
 	float deltaTime;
+	APushPullItem* attachedPushPullItem;
 	
 
 
