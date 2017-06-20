@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Source\Ava\Ava.Build.cs
 C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Source\Ava.Target.cs
 C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Source\AvaEditor.Target.cs
+=======
+D:\Reka\MASTER PROJECT\MastersProject\MastersProject\Ava\Source\Ava\Ava.Build.cs
+D:\Reka\MASTER PROJECT\MastersProject\MastersProject\Ava\Source\Ava.Target.cs
+D:\Reka\MASTER PROJECT\MastersProject\MastersProject\Ava\Source\AvaEditor.Target.cs
+>>>>>>> 18adbce33b5af7194324dfbbd642ac7bf48c768d
