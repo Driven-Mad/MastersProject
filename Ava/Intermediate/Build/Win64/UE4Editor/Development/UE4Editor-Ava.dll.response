@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\Ava\Ava.h.obj"
 "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\Ava\Ava.cpp.obj"
 "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\Ava\AvaGameMode.cpp.obj"
@@ -11,20 +10,6 @@
 "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\Ava\Ava.generated.cpp.obj"
 "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\Ava\PCLaunch.rc.res"
 "C:\Users\i7230020.STUDENT.000\Documents\GitHub\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\Ava\ModuleVersionResource.rc.inl.res"
-=======
-"D:\Reka\MASTER PROJECT\MastersProject\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\Ava\Ava.h.obj"
-"D:\Reka\MASTER PROJECT\MastersProject\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\Ava\Ava.cpp.obj"
-"D:\Reka\MASTER PROJECT\MastersProject\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\Ava\AvaGameMode.cpp.obj"
-"D:\Reka\MASTER PROJECT\MastersProject\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\Ava\DataFactory.cpp.obj"
-"D:\Reka\MASTER PROJECT\MastersProject\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\Ava\MainCharacter.cpp.obj"
-"D:\Reka\MASTER PROJECT\MastersProject\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\Ava\MainMenu.cpp.obj"
-"D:\Reka\MASTER PROJECT\MastersProject\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\Ava\pickUpItem.cpp.obj"
-"D:\Reka\MASTER PROJECT\MastersProject\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\Ava\PushPullItem.cpp.obj"
-"D:\Reka\MASTER PROJECT\MastersProject\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\Ava\StatueObject.cpp.obj"
-"D:\Reka\MASTER PROJECT\MastersProject\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\Ava\Ava.generated.cpp.obj"
-"D:\Reka\MASTER PROJECT\MastersProject\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\Ava\PCLaunch.rc.res"
-"D:\Reka\MASTER PROJECT\MastersProject\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\Ava\ModuleVersionResource.rc.inl.res"
->>>>>>> 18adbce33b5af7194324dfbbd642ac7bf48c768d
 "delayimp.lib"
 "wininet.lib"
 "rpcrt4.lib"
