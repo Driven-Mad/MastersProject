@@ -8,80 +8,80 @@
 #include "ObjectBase.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-#ifdef AVA_pickUpItem_generated_h
-#error "pickUpItem.generated.h already included, missing '#pragma once' in pickUpItem.h"
+#ifdef AVA_PickUpItem_generated_h
+#error "PickUpItem.generated.h already included, missing '#pragma once' in PickUpItem.h"
 #endif
-#define AVA_pickUpItem_generated_h
+#define AVA_PickUpItem_generated_h
 
-#define Ava_Source_Ava_pickUpItem_h_11_RPC_WRAPPERS
-#define Ava_Source_Ava_pickUpItem_h_11_RPC_WRAPPERS_NO_PURE_DECLS
-#define Ava_Source_Ava_pickUpItem_h_11_INCLASS_NO_PURE_DECLS \
+#define Ava_Source_Ava_PickUpItem_h_11_RPC_WRAPPERS
+#define Ava_Source_Ava_PickUpItem_h_11_RPC_WRAPPERS_NO_PURE_DECLS
+#define Ava_Source_Ava_PickUpItem_h_11_INCLASS_NO_PURE_DECLS \
 	private: \
-	static void StaticRegisterNativesApickUpItem(); \
-	friend AVA_API class UClass* Z_Construct_UClass_ApickUpItem(); \
+	static void StaticRegisterNativesAPickUpItem(); \
+	friend AVA_API class UClass* Z_Construct_UClass_APickUpItem(); \
 	public: \
-	DECLARE_CLASS(ApickUpItem, AActor, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Ava"), NO_API) \
-	DECLARE_SERIALIZER(ApickUpItem) \
+	DECLARE_CLASS(APickUpItem, AActor, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Ava"), NO_API) \
+	DECLARE_SERIALIZER(APickUpItem) \
 	/** Indicates whether the class is compiled into the engine */ \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Ava_Source_Ava_pickUpItem_h_11_INCLASS \
+#define Ava_Source_Ava_PickUpItem_h_11_INCLASS \
 	private: \
-	static void StaticRegisterNativesApickUpItem(); \
-	friend AVA_API class UClass* Z_Construct_UClass_ApickUpItem(); \
+	static void StaticRegisterNativesAPickUpItem(); \
+	friend AVA_API class UClass* Z_Construct_UClass_APickUpItem(); \
 	public: \
-	DECLARE_CLASS(ApickUpItem, AActor, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Ava"), NO_API) \
-	DECLARE_SERIALIZER(ApickUpItem) \
+	DECLARE_CLASS(APickUpItem, AActor, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Ava"), NO_API) \
+	DECLARE_SERIALIZER(APickUpItem) \
 	/** Indicates whether the class is compiled into the engine */ \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Ava_Source_Ava_pickUpItem_h_11_STANDARD_CONSTRUCTORS \
+#define Ava_Source_Ava_PickUpItem_h_11_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ApickUpItem(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ApickUpItem) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ApickUpItem); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ApickUpItem); \
+	NO_API APickUpItem(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(APickUpItem) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, APickUpItem); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APickUpItem); \
 private: \
 	/** Private copy-constructor, should never be used */ \
-	NO_API ApickUpItem(const ApickUpItem& InCopy); \
+	NO_API APickUpItem(const APickUpItem& InCopy); \
 public:
 
 
-#define Ava_Source_Ava_pickUpItem_h_11_ENHANCED_CONSTRUCTORS \
+#define Ava_Source_Ava_PickUpItem_h_11_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private copy-constructor, should never be used */ \
-	NO_API ApickUpItem(const ApickUpItem& InCopy); \
+	NO_API APickUpItem(const APickUpItem& InCopy); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ApickUpItem); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ApickUpItem); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ApickUpItem)
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, APickUpItem); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APickUpItem); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(APickUpItem)
 
 
-#define Ava_Source_Ava_pickUpItem_h_8_PROLOG
-#define Ava_Source_Ava_pickUpItem_h_11_GENERATED_BODY_LEGACY \
+#define Ava_Source_Ava_PickUpItem_h_8_PROLOG
+#define Ava_Source_Ava_PickUpItem_h_11_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Ava_Source_Ava_pickUpItem_h_11_RPC_WRAPPERS \
-	Ava_Source_Ava_pickUpItem_h_11_INCLASS \
-	Ava_Source_Ava_pickUpItem_h_11_STANDARD_CONSTRUCTORS \
+	Ava_Source_Ava_PickUpItem_h_11_RPC_WRAPPERS \
+	Ava_Source_Ava_PickUpItem_h_11_INCLASS \
+	Ava_Source_Ava_PickUpItem_h_11_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Ava_Source_Ava_pickUpItem_h_11_GENERATED_BODY \
+#define Ava_Source_Ava_PickUpItem_h_11_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Ava_Source_Ava_pickUpItem_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
-	Ava_Source_Ava_pickUpItem_h_11_INCLASS_NO_PURE_DECLS \
-	Ava_Source_Ava_pickUpItem_h_11_ENHANCED_CONSTRUCTORS \
+	Ava_Source_Ava_PickUpItem_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
+	Ava_Source_Ava_PickUpItem_h_11_INCLASS_NO_PURE_DECLS \
+	Ava_Source_Ava_PickUpItem_h_11_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID Ava_Source_Ava_pickUpItem_h
+#define CURRENT_FILE_ID Ava_Source_Ava_PickUpItem_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -9,6 +9,23 @@
 #include "Ava.generated.dep.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCode1Ava() {}
+	void AAntelope::StaticRegisterNativesAAntelope()
+	{
+	}
+	IMPLEMENT_CLASS(AAntelope, 3211305425);
+	void AEscapePoint::StaticRegisterNativesAEscapePoint()
+	{
+	}
+	IMPLEMENT_CLASS(AEscapePoint, 462117881);
+	void ARoutePoint::StaticRegisterNativesARoutePoint()
+	{
+	}
+	IMPLEMENT_CLASS(ARoutePoint, 1620816288);
+	void AAntelopeAIController::StaticRegisterNativesAAntelopeAIController()
+	{
+		FNativeFunctionRegistrar::RegisterFunction(AAntelopeAIController::StaticClass(), "SearchForPlayer",(Native)&AAntelopeAIController::execSearchForPlayer);
+	}
+	IMPLEMENT_CLASS(AAntelopeAIController, 3206526809);
 	void AAvaGameMode::StaticRegisterNativesAAvaGameMode()
 	{
 	}
@@ -55,25 +72,39 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 		FNativeFunctionRegistrar::RegisterFunction(UMainMenu::StaticClass(), "Play",(Native)&UMainMenu::execPlay);
 	}
 	IMPLEMENT_CLASS(UMainMenu, 1990416401);
-	void ApickUpItem::StaticRegisterNativesApickUpItem()
+	void APickUpItem::StaticRegisterNativesAPickUpItem()
 	{
 	}
-	IMPLEMENT_CLASS(ApickUpItem, 381901046);
+	IMPLEMENT_CLASS(APickUpItem, 2848418529);
 	void AStatueObject::StaticRegisterNativesAStatueObject()
 	{
 	}
 	IMPLEMENT_CLASS(AStatueObject, 3382700909);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
+	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
+	AIMODULE_API class UClass* Z_Construct_UClass_UBehaviorTree_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_ATargetPoint();
+	AIMODULE_API class UClass* Z_Construct_UClass_AAIController();
+	AIMODULE_API class UClass* Z_Construct_UClass_UBehaviorTreeComponent_NoRegister();
+	AIMODULE_API class UClass* Z_Construct_UClass_UBlackboardComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
 	ENGINE_API class UClass* Z_Construct_UClass_AActor();
 	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
-	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
-	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	UMG_API class UClass* Z_Construct_UClass_UUserWidget();
 
+	AVA_API class UClass* Z_Construct_UClass_AAntelope_NoRegister();
+	AVA_API class UClass* Z_Construct_UClass_AAntelope();
+	AVA_API class UClass* Z_Construct_UClass_AEscapePoint_NoRegister();
+	AVA_API class UClass* Z_Construct_UClass_AEscapePoint();
+	AVA_API class UClass* Z_Construct_UClass_ARoutePoint_NoRegister();
+	AVA_API class UClass* Z_Construct_UClass_ARoutePoint();
+	AVA_API class UFunction* Z_Construct_UFunction_AAntelopeAIController_SearchForPlayer();
+	AVA_API class UClass* Z_Construct_UClass_AAntelopeAIController_NoRegister();
+	AVA_API class UClass* Z_Construct_UClass_AAntelopeAIController();
 	AVA_API class UClass* Z_Construct_UClass_AAvaGameMode_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_AAvaGameMode();
 	AVA_API class UEnum* Z_Construct_UEnum_Ava_ItemDataVariables();
@@ -88,11 +119,206 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	AVA_API class UFunction* Z_Construct_UFunction_UMainMenu_Play();
 	AVA_API class UClass* Z_Construct_UClass_UMainMenu_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_UMainMenu();
-	AVA_API class UClass* Z_Construct_UClass_ApickUpItem_NoRegister();
-	AVA_API class UClass* Z_Construct_UClass_ApickUpItem();
+	AVA_API class UClass* Z_Construct_UClass_APickUpItem_NoRegister();
+	AVA_API class UClass* Z_Construct_UClass_APickUpItem();
 	AVA_API class UClass* Z_Construct_UClass_AStatueObject_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_AStatueObject();
 	AVA_API class UPackage* Z_Construct_UPackage__Script_Ava();
+	UClass* Z_Construct_UClass_AAntelope_NoRegister()
+	{
+		return AAntelope::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AAntelope()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_ACharacter();
+			Z_Construct_UPackage__Script_Ava();
+			OuterClass = AAntelope::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_walkingSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("walkingSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(walkingSpeed, AAntelope), 0x0010000000000001);
+				UProperty* NewProp_runningSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("runningSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(runningSpeed, AAntelope), 0x0010000000000001);
+				UProperty* NewProp_m_AntelopeBehaviourTree = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("m_AntelopeBehaviourTree"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(m_AntelopeBehaviourTree, AAntelope), 0x0010000000000001, Z_Construct_UClass_UBehaviorTree_NoRegister());
+				UProperty* NewProp_m_CollisionSphere = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("m_CollisionSphere"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(m_CollisionSphere, AAntelope), 0x00100000000a000d, Z_Construct_UClass_USphereComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Antelope.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Antelope.h"));
+				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_walkingSpeed, TEXT("Category"), TEXT("AIVariables"));
+				MetaData->SetValue(NewProp_walkingSpeed, TEXT("ModuleRelativePath"), TEXT("Antelope.h"));
+				MetaData->SetValue(NewProp_runningSpeed, TEXT("Category"), TEXT("AIVariables"));
+				MetaData->SetValue(NewProp_runningSpeed, TEXT("ModuleRelativePath"), TEXT("Antelope.h"));
+				MetaData->SetValue(NewProp_m_AntelopeBehaviourTree, TEXT("Category"), TEXT("AIVariables"));
+				MetaData->SetValue(NewProp_m_AntelopeBehaviourTree, TEXT("ModuleRelativePath"), TEXT("Antelope.h"));
+				MetaData->SetValue(NewProp_m_CollisionSphere, TEXT("Category"), TEXT("AIVariables"));
+				MetaData->SetValue(NewProp_m_CollisionSphere, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_m_CollisionSphere, TEXT("ModuleRelativePath"), TEXT("Antelope.h"));
+				MetaData->SetValue(NewProp_m_CollisionSphere, TEXT("ToolTip"), TEXT("Collision sphere for the AI"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AAntelope(Z_Construct_UClass_AAntelope, &AAntelope::StaticClass, TEXT("AAntelope"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AAntelope);
+	UClass* Z_Construct_UClass_AEscapePoint_NoRegister()
+	{
+		return AEscapePoint::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AEscapePoint()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_ATargetPoint();
+			Z_Construct_UPackage__Script_Ava();
+			OuterClass = AEscapePoint::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("EscapePoint.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("EscapePoint.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AEscapePoint(Z_Construct_UClass_AEscapePoint, &AEscapePoint::StaticClass, TEXT("AEscapePoint"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AEscapePoint);
+	UClass* Z_Construct_UClass_ARoutePoint_NoRegister()
+	{
+		return ARoutePoint::StaticClass();
+	}
+	UClass* Z_Construct_UClass_ARoutePoint()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_ATargetPoint();
+			Z_Construct_UPackage__Script_Ava();
+			OuterClass = ARoutePoint::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("RoutePoint.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("RoutePoint.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ARoutePoint(Z_Construct_UClass_ARoutePoint, &ARoutePoint::StaticClass, TEXT("ARoutePoint"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(ARoutePoint);
+	UFunction* Z_Construct_UFunction_AAntelopeAIController_SearchForPlayer()
+	{
+		UObject* Outer=Z_Construct_UClass_AAntelopeAIController();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SearchForPlayer"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Behaviour"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("AntelopeAIController.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Search for player"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_AAntelopeAIController_NoRegister()
+	{
+		return AAntelopeAIController::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AAntelopeAIController()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AAIController();
+			Z_Construct_UPackage__Script_Ava();
+			OuterClass = AAntelopeAIController::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900280;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_AAntelopeAIController_SearchForPlayer());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_playerName = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("playerName"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(playerName, AAntelopeAIController), 0x0010000000010001);
+				UProperty* NewProp_playerPositionName = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("playerPositionName"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(playerPositionName, AAntelopeAIController), 0x0010000000010001);
+				UProperty* NewProp_myPositionName = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("myPositionName"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(myPositionName, AAntelopeAIController), 0x0010000000010001);
+				UProperty* NewProp_currentRouteWayPointName = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("currentRouteWayPointName"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(currentRouteWayPointName, AAntelopeAIController), 0x0010000000010001);
+				UProperty* NewProp_currentEscapeWayPointName = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("currentEscapeWayPointName"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(currentEscapeWayPointName, AAntelopeAIController), 0x0010000000010001);
+				UProperty* NewProp_targetLocationName = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("targetLocationName"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(targetLocationName, AAntelopeAIController), 0x0010000000010001);
+				UProperty* NewProp_myBehaviourTreeComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("myBehaviourTreeComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(myBehaviourTreeComponent, AAntelopeAIController), 0x0010000000080009, Z_Construct_UClass_UBehaviorTreeComponent_NoRegister());
+				UProperty* NewProp_myBlackBoardComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("myBlackBoardComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(myBlackBoardComponent, AAntelopeAIController), 0x0010000000080009, Z_Construct_UClass_UBlackboardComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AAntelopeAIController_SearchForPlayer(), "SearchForPlayer"); // 923501262
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Collision Rendering Utilities|Transformation"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("AntelopeAIController.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("AntelopeAIController.h"));
+				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_playerName, TEXT("Category"), TEXT("AI"));
+				MetaData->SetValue(NewProp_playerName, TEXT("ModuleRelativePath"), TEXT("AntelopeAIController.h"));
+				MetaData->SetValue(NewProp_playerPositionName, TEXT("Category"), TEXT("AI"));
+				MetaData->SetValue(NewProp_playerPositionName, TEXT("ModuleRelativePath"), TEXT("AntelopeAIController.h"));
+				MetaData->SetValue(NewProp_myPositionName, TEXT("Category"), TEXT("AI"));
+				MetaData->SetValue(NewProp_myPositionName, TEXT("ModuleRelativePath"), TEXT("AntelopeAIController.h"));
+				MetaData->SetValue(NewProp_currentRouteWayPointName, TEXT("Category"), TEXT("AI"));
+				MetaData->SetValue(NewProp_currentRouteWayPointName, TEXT("ModuleRelativePath"), TEXT("AntelopeAIController.h"));
+				MetaData->SetValue(NewProp_currentEscapeWayPointName, TEXT("Category"), TEXT("AI"));
+				MetaData->SetValue(NewProp_currentEscapeWayPointName, TEXT("ModuleRelativePath"), TEXT("AntelopeAIController.h"));
+				MetaData->SetValue(NewProp_targetLocationName, TEXT("Category"), TEXT("AI"));
+				MetaData->SetValue(NewProp_targetLocationName, TEXT("ModuleRelativePath"), TEXT("AntelopeAIController.h"));
+				MetaData->SetValue(NewProp_targetLocationName, TEXT("ToolTip"), TEXT("Different Names for variables within our blackboard."));
+				MetaData->SetValue(NewProp_myBehaviourTreeComponent, TEXT("Category"), TEXT("AntelopeAIController"));
+				MetaData->SetValue(NewProp_myBehaviourTreeComponent, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_myBehaviourTreeComponent, TEXT("ModuleRelativePath"), TEXT("AntelopeAIController.h"));
+				MetaData->SetValue(NewProp_myBehaviourTreeComponent, TEXT("ToolTip"), TEXT("Behaviour tree component for the AI Controller"));
+				MetaData->SetValue(NewProp_myBlackBoardComponent, TEXT("Category"), TEXT("AntelopeAIController"));
+				MetaData->SetValue(NewProp_myBlackBoardComponent, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_myBlackBoardComponent, TEXT("ModuleRelativePath"), TEXT("AntelopeAIController.h"));
+				MetaData->SetValue(NewProp_myBlackBoardComponent, TEXT("ToolTip"), TEXT("Blackboard component for the AI controller"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AAntelopeAIController(Z_Construct_UClass_AAntelopeAIController, &AAntelopeAIController::StaticClass, TEXT("AAntelopeAIController"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AAntelopeAIController);
 	UClass* Z_Construct_UClass_AAvaGameMode_NoRegister()
 	{
 		return AAvaGameMode::StaticClass();
@@ -472,18 +698,18 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UMainMenu(Z_Construct_UClass_UMainMenu, &UMainMenu::StaticClass, TEXT("UMainMenu"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UMainMenu);
-	UClass* Z_Construct_UClass_ApickUpItem_NoRegister()
+	UClass* Z_Construct_UClass_APickUpItem_NoRegister()
 	{
-		return ApickUpItem::StaticClass();
+		return APickUpItem::StaticClass();
 	}
-	UClass* Z_Construct_UClass_ApickUpItem()
+	UClass* Z_Construct_UClass_APickUpItem()
 	{
 		static UClass* OuterClass = NULL;
 		if (!OuterClass)
 		{
 			Z_Construct_UClass_AActor();
 			Z_Construct_UPackage__Script_Ava();
-			OuterClass = ApickUpItem::StaticClass();
+			OuterClass = APickUpItem::StaticClass();
 			if (!(OuterClass->ClassFlags & CLASS_Constructed))
 			{
 				UObjectForceRegistration(OuterClass);
@@ -493,8 +719,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
-				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("pickUpItem.h"));
-				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("pickUpItem.h"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("PickUpItem.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("PickUpItem.h"));
 				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
 #endif
 			}
@@ -502,8 +728,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		check(OuterClass->GetClass());
 		return OuterClass;
 	}
-	static FCompiledInDefer Z_CompiledInDefer_UClass_ApickUpItem(Z_Construct_UClass_ApickUpItem, &ApickUpItem::StaticClass, TEXT("ApickUpItem"), false, nullptr, nullptr);
-	DEFINE_VTABLE_PTR_HELPER_CTOR(ApickUpItem);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_APickUpItem(Z_Construct_UClass_APickUpItem, &APickUpItem::StaticClass, TEXT("APickUpItem"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(APickUpItem);
 	UClass* Z_Construct_UClass_AStatueObject_NoRegister()
 	{
 		return AStatueObject::StaticClass();
@@ -565,8 +791,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Ava")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x0029F969;
-			Guid.B = 0x1436203D;
+			Guid.A = 0xAD8E0D55;
+			Guid.B = 0x539CE1EE;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

@@ -3,16 +3,16 @@
 #pragma once
 
 #include "GameFramework/Actor.h"
-#include "pickUpItem.generated.h"
+#include "PickUpItem.generated.h"
 
 UCLASS()
-class AVA_API ApickUpItem : public AActor
+class AVA_API APickUpItem : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	ApickUpItem();
+	APickUpItem();
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

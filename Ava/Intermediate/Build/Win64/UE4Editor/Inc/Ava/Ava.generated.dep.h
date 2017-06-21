@@ -5,6 +5,18 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
+#ifndef AVA_Antelope_generated_h
+	#include "Antelope.h"
+#endif
+#ifndef AVA_EscapePoint_generated_h
+	#include "EscapePoint.h"
+#endif
+#ifndef AVA_RoutePoint_generated_h
+	#include "RoutePoint.h"
+#endif
+#ifndef AVA_AntelopeAIController_generated_h
+	#include "AntelopeAIController.h"
+#endif
 #ifndef AVA_AvaGameMode_generated_h
 	#include "AvaGameMode.h"
 #endif
@@ -20,8 +32,8 @@
 #ifndef AVA_MainMenu_generated_h
 	#include "MainMenu.h"
 #endif
-#ifndef AVA_pickUpItem_generated_h
-	#include "pickUpItem.h"
+#ifndef AVA_PickUpItem_generated_h
+	#include "PickUpItem.h"
 #endif
 #ifndef AVA_StatueObject_generated_h
 	#include "StatueObject.h"
