@@ -178,8 +178,13 @@ void AMainCharacter::MoveRight(float value)
 
 	if ((Controller != NULL) && (value != 0.0f))
 	{
+		FRotator tempRot = GetActorRotation();
+		FRotator tempYaw = FRotator(0, tempRot.Yaw, 0);
+		FVector tempFV = FRotationMatrix(tempYaw).GetUnitAxis(EAxis::Y);
 		// add movement in that direction
 		AddMovementInput(RightVector, value);
+		AddControllerYawInput(value*turnRate*deltaTime);
+
 
 	}
 }

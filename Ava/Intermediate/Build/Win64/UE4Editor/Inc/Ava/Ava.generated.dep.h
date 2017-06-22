@@ -20,6 +20,9 @@
 #ifndef AVA_AvaGameMode_generated_h
 	#include "AvaGameMode.h"
 #endif
+#ifndef AVA_BTServiceSearchForPlayer_generated_h
+	#include "BTServiceSearchForPlayer.h"
+#endif
 #ifndef AVA_DataFactory_generated_h
 	#include "DataFactory.h"
 #endif

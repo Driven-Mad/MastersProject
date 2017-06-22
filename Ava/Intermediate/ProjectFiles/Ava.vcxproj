@@ -422,7 +422,9 @@
     <ClInclude Include="..\..\Source\Ava\Ava.h" />
     <ClCompile Include="..\..\Source\Ava\AvaGameMode.cpp" />
     <ClInclude Include="..\..\Source\Ava\AvaGameMode.h" />
+    <ClCompile Include="..\..\Source\Ava\BTServiceSearchForPlayer.cpp" />
     <ClCompile Include="..\..\Source\Ava\DataFactory.cpp" />
+    <ClInclude Include="..\..\Source\Ava\BTServiceSearchForPlayer.h" />
     <ClInclude Include="..\..\Source\Ava\DataFactory.h" />
     <ClCompile Include="..\..\Source\Ava\EscapePoint.cpp" />
     <ClCompile Include="..\..\Source\Ava\MainCharacter.cpp" />

@@ -30,6 +30,10 @@ void EmptyLinkFunctionForGeneratedCode1Ava() {}
 	{
 	}
 	IMPLEMENT_CLASS(AAvaGameMode, 1064099451);
+	void UBTServiceSearchForPlayer::StaticRegisterNativesUBTServiceSearchForPlayer()
+	{
+	}
+	IMPLEMENT_CLASS(UBTServiceSearchForPlayer, 1098623683);
 static class UEnum* ItemDataVariables_StaticEnum()
 {
 	extern AVA_API class UPackage* Z_Construct_UPackage__Script_Ava();
@@ -90,6 +94,7 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	AIMODULE_API class UClass* Z_Construct_UClass_UBehaviorTreeComponent_NoRegister();
 	AIMODULE_API class UClass* Z_Construct_UClass_UBlackboardComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
+	AIMODULE_API class UClass* Z_Construct_UClass_UBTService_BlackboardBase();
 	ENGINE_API class UClass* Z_Construct_UClass_AActor();
 	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
@@ -107,6 +112,8 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	AVA_API class UClass* Z_Construct_UClass_AAntelopeAIController();
 	AVA_API class UClass* Z_Construct_UClass_AAvaGameMode_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_AAvaGameMode();
+	AVA_API class UClass* Z_Construct_UClass_UBTServiceSearchForPlayer_NoRegister();
+	AVA_API class UClass* Z_Construct_UClass_UBTServiceSearchForPlayer();
 	AVA_API class UEnum* Z_Construct_UEnum_Ava_ItemDataVariables();
 	AVA_API class UEnum* Z_Construct_UEnum_Ava_Item();
 	AVA_API class UClass* Z_Construct_UClass_ADataFactory_NoRegister();
@@ -353,6 +360,37 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AAvaGameMode(Z_Construct_UClass_AAvaGameMode, &AAvaGameMode::StaticClass, TEXT("AAvaGameMode"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AAvaGameMode);
+	UClass* Z_Construct_UClass_UBTServiceSearchForPlayer_NoRegister()
+	{
+		return UBTServiceSearchForPlayer::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UBTServiceSearchForPlayer()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UBTService_BlackboardBase();
+			Z_Construct_UPackage__Script_Ava();
+			OuterClass = UBTServiceSearchForPlayer::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20100080;
+
+
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("BTServiceSearchForPlayer.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("BTServiceSearchForPlayer.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UBTServiceSearchForPlayer(Z_Construct_UClass_UBTServiceSearchForPlayer, &UBTServiceSearchForPlayer::StaticClass, TEXT("UBTServiceSearchForPlayer"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UBTServiceSearchForPlayer);
 	UEnum* Z_Construct_UEnum_Ava_ItemDataVariables()
 	{
 		UPackage* Outer=Z_Construct_UPackage__Script_Ava();
@@ -791,8 +829,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Ava")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xAD8E0D55;
-			Guid.B = 0x539CE1EE;
+			Guid.A = 0x81C05DDD;
+			Guid.B = 0x1BF2F043;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

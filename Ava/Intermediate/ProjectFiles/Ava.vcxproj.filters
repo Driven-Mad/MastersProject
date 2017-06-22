@@ -97,6 +97,9 @@
     <ClInclude Include="..\..\Source\Ava\PickUpItem.h">
       <Filter>Source\Ava</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Ava\BTServiceSearchForPlayer.h">
+      <Filter>Source\Ava</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Ava\RoutePoint.cpp">
@@ -106,6 +109,9 @@
       <Filter>Source\Ava</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Ava\PickUpItem.cpp">
+      <Filter>Source\Ava</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Ava\BTServiceSearchForPlayer.cpp">
       <Filter>Source\Ava</Filter>
     </ClCompile>
   </ItemGroup>
