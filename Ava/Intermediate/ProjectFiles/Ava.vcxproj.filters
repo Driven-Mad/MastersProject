@@ -100,6 +100,12 @@
     <ClInclude Include="..\..\Source\Ava\BTServiceSearchForPlayer.h">
       <Filter>Source\Ava</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Ava\BTTaskFindNextRoutePoint.h">
+      <Filter>Source\Ava</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Ava\BTTaskFindClosestEscapePoint.h">
+      <Filter>Source\Ava</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Ava\RoutePoint.cpp">
@@ -112,6 +118,12 @@
       <Filter>Source\Ava</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Ava\BTServiceSearchForPlayer.cpp">
+      <Filter>Source\Ava</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Ava\BTTaskFindNextRoutePoint.cpp">
+      <Filter>Source\Ava</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Ava\BTTaskFindClosestEscapePoint.cpp">
       <Filter>Source\Ava</Filter>
     </ClCompile>
   </ItemGroup>

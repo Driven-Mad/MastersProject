@@ -23,6 +23,12 @@
 #ifndef AVA_BTServiceSearchForPlayer_generated_h
 	#include "BTServiceSearchForPlayer.h"
 #endif
+#ifndef AVA_BTTaskFindClosestEscapePoint_generated_h
+	#include "BTTaskFindClosestEscapePoint.h"
+#endif
+#ifndef AVA_BTTaskFindNextRoutePoint_generated_h
+	#include "BTTaskFindNextRoutePoint.h"
+#endif
 #ifndef AVA_DataFactory_generated_h
 	#include "DataFactory.h"
 #endif

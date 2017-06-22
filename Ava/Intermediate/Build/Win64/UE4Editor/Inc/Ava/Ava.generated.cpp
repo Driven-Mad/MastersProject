@@ -34,6 +34,14 @@ void EmptyLinkFunctionForGeneratedCode1Ava() {}
 	{
 	}
 	IMPLEMENT_CLASS(UBTServiceSearchForPlayer, 1098623683);
+	void UBTTaskFindClosestEscapePoint::StaticRegisterNativesUBTTaskFindClosestEscapePoint()
+	{
+	}
+	IMPLEMENT_CLASS(UBTTaskFindClosestEscapePoint, 3703746931);
+	void UBTTaskFindNextRoutePoint::StaticRegisterNativesUBTTaskFindNextRoutePoint()
+	{
+	}
+	IMPLEMENT_CLASS(UBTTaskFindNextRoutePoint, 3342134226);
 static class UEnum* ItemDataVariables_StaticEnum()
 {
 	extern AVA_API class UPackage* Z_Construct_UPackage__Script_Ava();
@@ -95,6 +103,7 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	AIMODULE_API class UClass* Z_Construct_UClass_UBlackboardComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
 	AIMODULE_API class UClass* Z_Construct_UClass_UBTService_BlackboardBase();
+	AIMODULE_API class UClass* Z_Construct_UClass_UBTTask_BlackboardBase();
 	ENGINE_API class UClass* Z_Construct_UClass_AActor();
 	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
@@ -114,6 +123,10 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	AVA_API class UClass* Z_Construct_UClass_AAvaGameMode();
 	AVA_API class UClass* Z_Construct_UClass_UBTServiceSearchForPlayer_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_UBTServiceSearchForPlayer();
+	AVA_API class UClass* Z_Construct_UClass_UBTTaskFindClosestEscapePoint_NoRegister();
+	AVA_API class UClass* Z_Construct_UClass_UBTTaskFindClosestEscapePoint();
+	AVA_API class UClass* Z_Construct_UClass_UBTTaskFindNextRoutePoint_NoRegister();
+	AVA_API class UClass* Z_Construct_UClass_UBTTaskFindNextRoutePoint();
 	AVA_API class UEnum* Z_Construct_UEnum_Ava_ItemDataVariables();
 	AVA_API class UEnum* Z_Construct_UEnum_Ava_Item();
 	AVA_API class UClass* Z_Construct_UClass_ADataFactory_NoRegister();
@@ -391,6 +404,68 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UBTServiceSearchForPlayer(Z_Construct_UClass_UBTServiceSearchForPlayer, &UBTServiceSearchForPlayer::StaticClass, TEXT("UBTServiceSearchForPlayer"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UBTServiceSearchForPlayer);
+	UClass* Z_Construct_UClass_UBTTaskFindClosestEscapePoint_NoRegister()
+	{
+		return UBTTaskFindClosestEscapePoint::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UBTTaskFindClosestEscapePoint()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UBTTask_BlackboardBase();
+			Z_Construct_UPackage__Script_Ava();
+			OuterClass = UBTTaskFindClosestEscapePoint::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20100080;
+
+
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("BTTaskFindClosestEscapePoint.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("BTTaskFindClosestEscapePoint.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UBTTaskFindClosestEscapePoint(Z_Construct_UClass_UBTTaskFindClosestEscapePoint, &UBTTaskFindClosestEscapePoint::StaticClass, TEXT("UBTTaskFindClosestEscapePoint"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UBTTaskFindClosestEscapePoint);
+	UClass* Z_Construct_UClass_UBTTaskFindNextRoutePoint_NoRegister()
+	{
+		return UBTTaskFindNextRoutePoint::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UBTTaskFindNextRoutePoint()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UBTTask_BlackboardBase();
+			Z_Construct_UPackage__Script_Ava();
+			OuterClass = UBTTaskFindNextRoutePoint::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20100080;
+
+
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("BTTaskFindNextRoutePoint.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("BTTaskFindNextRoutePoint.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UBTTaskFindNextRoutePoint(Z_Construct_UClass_UBTTaskFindNextRoutePoint, &UBTTaskFindNextRoutePoint::StaticClass, TEXT("UBTTaskFindNextRoutePoint"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UBTTaskFindNextRoutePoint);
 	UEnum* Z_Construct_UEnum_Ava_ItemDataVariables()
 	{
 		UPackage* Outer=Z_Construct_UPackage__Script_Ava();
@@ -829,8 +904,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Ava")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x81C05DDD;
-			Guid.B = 0x1BF2F043;
+			Guid.A = 0x24688532;
+			Guid.B = 0x68F0F256;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

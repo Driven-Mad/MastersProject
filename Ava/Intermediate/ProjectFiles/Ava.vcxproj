@@ -423,8 +423,12 @@
     <ClCompile Include="..\..\Source\Ava\AvaGameMode.cpp" />
     <ClInclude Include="..\..\Source\Ava\AvaGameMode.h" />
     <ClCompile Include="..\..\Source\Ava\BTServiceSearchForPlayer.cpp" />
+    <ClCompile Include="..\..\Source\Ava\BTTaskFindClosestEscapePoint.cpp" />
+    <ClCompile Include="..\..\Source\Ava\BTTaskFindNextRoutePoint.cpp" />
     <ClCompile Include="..\..\Source\Ava\DataFactory.cpp" />
     <ClInclude Include="..\..\Source\Ava\BTServiceSearchForPlayer.h" />
+    <ClInclude Include="..\..\Source\Ava\BTTaskFindClosestEscapePoint.h" />
+    <ClInclude Include="..\..\Source\Ava\BTTaskFindNextRoutePoint.h" />
     <ClInclude Include="..\..\Source\Ava\DataFactory.h" />
     <ClCompile Include="..\..\Source\Ava\EscapePoint.cpp" />
     <ClCompile Include="..\..\Source\Ava\MainCharacter.cpp" />
