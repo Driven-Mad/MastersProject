@@ -60,6 +60,15 @@ void AAntelopeAIController::SetRouteWaypoint(ARoutePoint * p_RoutePoint)
 	}
 }
 
+ARoutePoint * AAntelopeAIController::GetRoutePoint()
+{
+	if (myBlackBoardComponent)
+	{
+		return Cast<ARoutePoint>(myBlackBoardComponent->GetValueAsObject(currentRouteWayPointName));
+	}
+	return nullptr;
+}
+
 void AAntelopeAIController::SetEscapeWayPoint(AEscapePoint * p_EscapePoint)
 {
 	if (myBlackBoardComponent)
@@ -69,12 +78,35 @@ void AAntelopeAIController::SetEscapeWayPoint(AEscapePoint * p_EscapePoint)
 	}
 }
 
-void AAntelopeAIController::SetTargetLocation(FVector * p_TargetLocation)
+AEscapePoint * AAntelopeAIController::GetEscapePoint()
+{
+	if (myBlackBoardComponent)
+	{
+		return Cast<AEscapePoint>(myBlackBoardComponent->GetValueAsObject(currentEscapeWayPointName));
+	}
+	return nullptr;
+}
+
+void AAntelopeAIController::SetTargetLocation(FVector  p_TargetLocation)
 {
 }
 
-void AAntelopeAIController::SetMyPosition(FVector * p_MyPosition)
+void AAntelopeAIController::SetMyPosition(FVector p_MyPosition)
 {
+	if (myBlackBoardComponent)
+	{
+		myBlackBoardComponent->SetValueAsVector(myPositionName, p_MyPosition);
+
+	}
+}
+
+FVector  AAntelopeAIController::GetMyPosition()
+{
+	if (myBlackBoardComponent)
+	{
+		return myBlackBoardComponent->GetValueAsVector(myPositionName);
+	}
+	return FVector::ZeroVector;
 }
 
 void AAntelopeAIController::SearchForPlayer()

@@ -20,7 +20,7 @@ void EmptyLinkFunctionForGeneratedCode1Ava() {}
 	void ARoutePoint::StaticRegisterNativesARoutePoint()
 	{
 	}
-	IMPLEMENT_CLASS(ARoutePoint, 1620816288);
+	IMPLEMENT_CLASS(ARoutePoint, 1897031591);
 	void AAntelopeAIController::StaticRegisterNativesAAntelopeAIController()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(AAntelopeAIController::StaticClass(), "SearchForPlayer",(Native)&AAntelopeAIController::execSearchForPlayer);
@@ -242,11 +242,16 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->ClassFlags |= 0x20900080;
 
 
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_RouteNumber = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("RouteNumber"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(RouteNumber, ARoutePoint), 0x0010000000000005);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("RoutePoint.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("RoutePoint.h"));
+				MetaData->SetValue(NewProp_RouteNumber, TEXT("Category"), TEXT("RouteID"));
+				MetaData->SetValue(NewProp_RouteNumber, TEXT("ModuleRelativePath"), TEXT("RoutePoint.h"));
 #endif
 			}
 		}
@@ -904,7 +909,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Ava")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x24688532;
+			Guid.A = 0x08358588;
 			Guid.B = 0x68F0F256;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;

@@ -318,7 +318,7 @@ void AMainCharacter::StopPushPull()
 		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("ITS A PUSHPULL OBJECT")));
 		FDetachmentTransformRules detachRules = FDetachmentTransformRules(EDetachmentRule::KeepWorld, false);
 		attachedPushPullItem->DetachFromActor(detachRules);
-		attachedPushPullItem->SetActorEnableCollision(false);
+		attachedPushPullItem->SetActorEnableCollision(true);
 
 	}
 	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Silver, "I'M NOT PUSHING/PULLING");

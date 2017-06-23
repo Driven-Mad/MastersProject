@@ -49,11 +49,15 @@ public:
 	void SetPlayer(APawn *p_pPawn);
 	//Define which route waypoint
 	void SetRouteWaypoint(ARoutePoint *p_RoutePoint);
+	ARoutePoint* GetRoutePoint();
 	//Define which route waypoint
 	void SetEscapeWayPoint(AEscapePoint * p_EscapePoint);
-	void SetTargetLocation(FVector * p_TargetLocation);
+	AEscapePoint* GetEscapePoint();
 
-	void SetMyPosition(FVector * p_MyPosition);
+	void SetTargetLocation(FVector p_TargetLocation);
+
+	void SetMyPosition(FVector p_MyPosition);
+	FVector GetMyPosition();
 
 
 	//Search for player

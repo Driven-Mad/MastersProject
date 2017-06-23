@@ -37,7 +37,7 @@ AAntelope::AAntelope()
 	GetCharacterMovement()->RotationRate = FRotator(0.0f, 540.0f, 0.0f); // ...at this rotation rate
 	GetCharacterMovement()->JumpZVelocity = 300.f;
 	GetCharacterMovement()->AirControl = 0.2f;
-	GetCharacterMovement()->MaxWalkSpeed = 50.f;
+	GetCharacterMovement()->MaxWalkSpeed = 400.f;
 
 
 	//set up collision sphere
