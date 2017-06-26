@@ -20,7 +20,7 @@ void EmptyLinkFunctionForGeneratedCode1Ava() {}
 	void ARoutePoint::StaticRegisterNativesARoutePoint()
 	{
 	}
-	IMPLEMENT_CLASS(ARoutePoint, 1897031591);
+	IMPLEMENT_CLASS(ARoutePoint, 3929576664);
 	void AAntelopeAIController::StaticRegisterNativesAAntelopeAIController()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(AAntelopeAIController::StaticClass(), "SearchForPlayer",(Native)&AAntelopeAIController::execSearchForPlayer);
@@ -243,7 +243,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-				UProperty* NewProp_RouteNumber = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("RouteNumber"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(RouteNumber, ARoutePoint), 0x0010000000000005);
+				UProperty* NewProp_RouteNumber = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("RouteNumber"), RF_Public|RF_Transient|RF_MarkAsNative) UIntProperty(CPP_PROPERTY_BASE(RouteNumber, ARoutePoint), 0x0010000000000005);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->StaticLink();
 #if WITH_METADATA
@@ -909,7 +909,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Ava")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x08358588;
+			Guid.A = 0x3AFE84E4;
 			Guid.B = 0x68F0F256;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;

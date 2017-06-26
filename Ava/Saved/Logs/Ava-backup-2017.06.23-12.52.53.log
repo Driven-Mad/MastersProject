@@ -1,0 +1,272 @@
+﻿Log file open, 06/23/17 12:49:40
+LogInit:Display: Running engine for game: Ava
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1809887911) SRandInit(-1809887909).
+LogTaskGraph: Started task graph with 4 named threads and 9 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.109955
+LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3039270
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.06.23-11.49.40:341][  0]LogInit: Selected Device Profile: [Windows]
+[2017.06.23-11.49.40:341][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.06.23-11.49.40:370][  0]LogInit: Computer: PC42640
+[2017.06.23-11.49.40:370][  0]LogInit: User: i7230020
+[2017.06.23-11.49.40:370][  0]LogInit: CPU Page size=65536, Cores=6
+[2017.06.23-11.49.40:370][  0]LogInit: High frequency timer resolution =3.410136 MHz
+[2017.06.23-11.49.40:370][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2017.06.23-11.49.40:370][  0]LogMemory: Platform Memory Stats for Windows
+[2017.06.23-11.49.40:370][  0]LogMemory: Process Physical Memory: 196.58 MB used, 196.58 MB peak
+[2017.06.23-11.49.40:370][  0]LogMemory: Process Virtual Memory: 198.85 MB used, 198.85 MB peak
+[2017.06.23-11.49.40:370][  0]LogMemory: Physical Memory: 12667.52 MB used, 32684.15 MB total
+[2017.06.23-11.49.40:370][  0]LogMemory: Virtual Memory: 538.89 MB used, 8388608.00 MB total
+[2017.06.23-11.49.40:501][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
+[2017.06.23-11.49.40:907][  0]LogD3D11RHI: D3D11 adapters:
+[2017.06.23-11.49.40:932][  0]LogD3D11RHI:    0. 'NVIDIA Quadro M4000' (Feature Level 11_0)
+[2017.06.23-11.49.40:932][  0]LogD3D11RHI:       8092/0/16086 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.06.23-11.49.40:932][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.06.23-11.49.40:943][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.06.23-11.49.40:944][  0]LogD3D11RHI:     GPU DeviceId: 0x13f1 (for the marketing name, search the web for "GPU Device Id")
+[2017.06.23-11.49.40:944][  0]LogWindows: EnumDisplayDevices:
+[2017.06.23-11.49.40:945][  0]LogWindows:    0. 'NVIDIA Quadro M4000' (P:1 D:1)
+[2017.06.23-11.49.40:946][  0]LogWindows:    1. 'NVIDIA Quadro M4000' (P:0 D:0)
+[2017.06.23-11.49.40:947][  0]LogWindows:    2. 'NVIDIA Quadro M4000' (P:0 D:0)
+[2017.06.23-11.49.40:948][  0]LogWindows:    3. 'NVIDIA Quadro M4000' (P:0 D:0)
+[2017.06.23-11.49.40:949][  0]LogWindows:    4. 'RDPDD Chained DD' (P:0 D:0)
+[2017.06.23-11.49.40:950][  0]LogWindows:    5. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2017.06.23-11.49.40:951][  0]LogWindows:    6. 'RDP Reflector Display Driver' (P:0 D:0)
+[2017.06.23-11.49.40:951][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2017.06.23-11.49.40:951][  0]LogD3D11RHI:     Adapter Name: NVIDIA Quadro M4000
+[2017.06.23-11.49.40:951][  0]LogD3D11RHI:   Driver Version: 362.13 (internal:10.18.13.6213, unified:362.13)
+[2017.06.23-11.49.40:951][  0]LogD3D11RHI:      Driver Date: 3-18-2016
+[2017.06.23-11.49.40:951][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.06.23-11.49.40:962][  0]LogD3D11RHI: Async texture creation enabled
+[2017.06.23-11.49.40:975][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2017.06.23-11.49.40:976][  0]LogShaderCompilers: Guid format shader working directory is -28 characters bigger than the processId version (../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Intermediate/Shaders/WorkingDirectory/30248/).
+[2017.06.23-11.49.40:976][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/I72300~1.000/AppData/Local/Temp/UnrealShaderWorkingDir/C2E2D78F42A8004FC3343AA729F54167/'.
+[2017.06.23-11.49.40:976][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.06.23-11.49.42:113][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.06.23-11.49.42:134][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.06.23-11.49.42:143][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.06.23-11.49.42:161][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.06.23-11.49.42:175][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.06.23-11.49.42:183][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.06.23-11.49.42:191][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.06.23-11.49.42:198][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.06.23-11.49.42:211][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.06.23-11.49.42:219][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.06.23-11.49.42:227][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.06.23-11.49.42:243][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.06.23-11.49.42:243][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.06.23-11.49.42:244][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.06.23-11.49.42:266][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.06.23-11.49.42:288][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.06.23-11.49.42:300][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.06.23-11.49.42:310][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.06.23-11.49.42:318][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.06.23-11.49.42:318][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.06.23-11.49.42:404][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.06.23-11.49.42:453][  0]LogDerivedDataCache: Loaded boot cache 0.05s 49MB C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2017.06.23-11.49.42:453][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2017.06.23-11.49.42:453][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.06.23-11.49.42:453][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.06.23-11.49.42:454][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.06.23-11.49.42:454][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.06.23-11.49.42:468][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.06.23-11.49.42:480][  0]LogDerivedDataCache: Using Local data cache path C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.06.23-11.49.42:692][  0]LogInit: Selected Device Profile: [Windows]
+[2017.06.23-11.49.42:693][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.06.23-11.49.42:887][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2017.06.23-11.49.42:887][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.06.23-11.49.42:887][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2017.06.23-11.49.43:217][  0]LogAssetRegistry: FAssetRegistry took 0.0201 seconds to start up
+[2017.06.23-11.49.43:315][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.092609 seconds
+[2017.06.23-11.49.43:319][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2017.06.23-11.49.43:319][  0]LogUObjectAllocator: 5855624 out of 0 bytes used by permanent object pool.
+[2017.06.23-11.49.43:319][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.06.23-11.49.43:326][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.06.23-11.49.43:532][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.06.23-11.49.43:532][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.06.23-11.49.44:646][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.06.23-11.49.44:909][  0]SourceControl: Info Source control is disabled
+[2017.06.23-11.49.44:912][  0]SourceControl: Info Source control is disabled
+[2017.06.23-11.49.44:924][  0]SourceControl: Info Source control is disabled
+[2017.06.23-11.49.44:939][  0]SourceControl: Info Source control is disabled
+[2017.06.23-11.49.45:105][  0]LogHoudiniEngine: Starting the Houdini Engine module.
+[2017.06.23-11.49.45:106][  0]LogHoudiniEngine: Loaded libHAPIL.dll from Registry path C:\Program Files\Side Effects Software\Houdini 15.5.632/bin
+[2017.06.23-11.49.45:107][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_logo.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2017.06.23-11.49.45:108][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_default_material.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2017.06.23-11.49.45:113][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_bgeo_import.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2017.06.23-11.49.46:135][  0]LogHoudiniEngine: Successfully initialized the Houdini Engine API module.
+[2017.06.23-11.49.46:294][  0]LogEngine: Initializing Engine...
+[2017.06.23-11.49.46:296][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2017.06.23-11.49.46:297][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2017.06.23-11.49.46:420][  0]LogAIModule: Creating AISystem for world NewWorld
+[2017.06.23-11.49.46:427][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.23-11.49.46:438][  0]LogInit: FAudioDevice initialized.
+[2017.06.23-11.49.46:463][  0]LogDerivedDataCache: Saved boot cache 0.02s 49MB C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2017.06.23-11.49.46:468][  0]LogInit: Texture streaming: Enabled
+[2017.06.23-11.49.46:490][  0]LogInit: Transaction tracking system initialized
+[2017.06.23-11.49.46:510][  0]BlueprintLog: New page: Editor Load
+[2017.06.23-11.49.46:580][  0]LocalizationService: Info Localization service is disabled
+[2017.06.23-11.49.46:649][  0]LogConsoleResponse:Display: 
+[2017.06.23-11.49.46:750][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2017.06.23-11.49.46:750][  0]LogCook:Display: Mobile HDR setting 1
+[2017.06.23-11.49.46:843][  0]LogFileCache: Scanning file cache for directory 'C:/Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/' took 0.02s
+[2017.06.23-11.49.46:843][  0]LogHoudiniEngineEditor: Starting the Houdini Engine Editor module.
+[2017.06.23-11.49.46:888][  0]SourceControl: Info Source control is disabled
+[2017.06.23-11.49.46:888][  0]Cmd: MAP LOAD FILE="../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Maps/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.06.23-11.49.46:889][  0]LightingResults: New page: Lighting Build
+[2017.06.23-11.49.46:893][  0]MapCheck: New page: Map Check
+[2017.06.23-11.49.46:893][  0]LightingResults: New page: Lighting Build
+[2017.06.23-11.49.47:003][  0]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.23-11.49.47:004][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.06.23-11.49.47:005][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.06.23-11.49.47:075][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 70.617ms to complete.
+[2017.06.23-11.49.47:075][  0]LogFileHelpers: Loading map 'MainMenu' took 0.187
+[2017.06.23-11.49.47:175][  0]LogCollectionManager: Loaded 0 collections in 0.001594 seconds
+[2017.06.23-11.49.47:215][  0]LogFileCache: Scanning file cache for directory 'C:/Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/Collections/' took 0.01s
+[2017.06.23-11.49.47:215][  0]LogFileCache: Scanning file cache for directory 'C:/Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Developers/i7230020/Collections/' took 0.01s
+[2017.06.23-11.49.47:215][  0]LogFileCache: Scanning file cache for directory 'C:/Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Collections/' took 0.01s
+[2017.06.23-11.49.47:215][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.06.23-11.49.47:225][  0]LogContentBrowser: Native class hierarchy populated in 0.0093 seconds. Added 2092 classes and 376 folders.
+[2017.06.23-11.49.47:228][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.06.23-11.49.47:228][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.06.23-11.49.47:231][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0027 seconds. Added 12 classes and 0 folders.
+[2017.06.23-11.49.47:238][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0026 seconds. Added 0 classes and 0 folders.
+[2017.06.23-11.49.47:318][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0026 seconds. Added 0 classes and 0 folders.
+[2017.06.23-11.49.47:324][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0026 seconds. Added 1 classes and 2 folders.
+[2017.06.23-11.49.47:336][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.06.23-11.49.47:340][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.06.23-11.49.47:366][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0026 seconds. Added 1 classes and 2 folders.
+[2017.06.23-11.49.47:366][  0]LogLoad: Full Startup: 9.29 seconds (BP compile: 0.02 seconds)
+[2017.06.23-11.49.47:366][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.06.23-11.49.47:366][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.06.23-11.49.47:379][  0]LogOcInput: OculusInput pre-init called
+[2017.06.23-11.49.47:398][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.06.23-11.49.47:529][  2]LogRenderer: Reallocating scene render targets to support 1216x548 (Frame:2).
+[2017.06.23-11.49.47:692][  5]LogAssetRegistry: Asset discovery search completed in 4.5080 seconds
+[2017.06.23-11.49.47:692][  5]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2017.06.23-11.49.47:692][  5]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000026 seconds (updated 0 objects)
+[2017.06.23-11.49.58:203][121]LogBlueprint:Warning: Compiler Warning InputAction Event references unknown Action 'Crouch' for  InputAction Crouch 
+[2017.06.23-11.49.58:206][121]LogBlueprint:Warning: Compiler Warning [0020.16] Compile of Ue4ASP_Character successful, but with 1 Warning(s) [in 7 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.06.23-11.49.58:206][121]LogBlueprint:Warning: Compiler Warning [0020.16] Compile of Ue4ASP_Character successful, but with 2 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.06.23-11.49.58:206][121]LogBlueprint:Warning: Compiler Warning [0020.16] Compile of Ue4ASP_Character successful, but with 3 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.06.23-11.49.58:277][121]LogBlueprint:Warning: Compiler Warning InputAction Event references unknown Action 'Crouch' for  InputAction Crouch 
+[2017.06.23-11.49.58:279][121]LogBlueprint:Warning: Compiler Warning [0020.23] Compile of Ue4ASP_Character successful, but with 1 Warning(s) [in 7 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.06.23-11.49.58:279][121]LogBlueprint:Warning: Compiler Warning [0020.23] Compile of Ue4ASP_Character successful, but with 2 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.06.23-11.49.58:280][121]LogBlueprint:Warning: Compiler Warning [0020.23] Compile of Ue4ASP_Character successful, but with 3 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.06.23-11.49.58:623][121]LogTexture:Display: Building textures: HQ_Lightmap0_7 (AutoDXT)
+[2017.06.23-11.49.58:646][121]LogTexture:Display: Building textures: HQ_Lightmap1_3 (AutoDXT)
+[2017.06.23-11.49.58:907][121]LogTexture:Display: Building textures: HQ_Lightmap1_4 (AutoDXT)
+[2017.06.23-11.49.59:196][121]LogTexture:Display: Building textures: HQ_Lightmap1_5 (AutoDXT)
+[2017.06.23-11.49.59:440][121]LogTexture:Display: Building textures: HQ_Lightmap1_6 (AutoDXT)
+[2017.06.23-11.49.59:529][121]LogTexture:Display: Building textures: LQ_Lightmap_0_6 (DXT1)
+[2017.06.23-11.49.59:571][121]LogTexture:Display: Building textures: LQ_Lightmap_0_7 (DXT1)
+[2017.06.23-11.49.59:599][121]LogTexture:Display: Building textures: LQ_Lightmap_1_3 (DXT1)
+[2017.06.23-11.49.59:717][121]LogTexture:Display: Building textures: LQ_Lightmap_1_4 (DXT1)
+[2017.06.23-11.49.59:898][121]LogTexture:Display: Building textures: LQ_Lightmap_1_5 (DXT1)
+[2017.06.23-11.50.00:027][121]LogTexture:Display: Building textures: ShadowMapTexture2D_29 (BGRA8)
+[2017.06.23-11.50.00:146][121]LogTexture:Display: Building textures: ShadowMapTexture2D_30 (G8)
+[2017.06.23-11.50.00:161][121]LogTexture:Display: Building textures: ShadowMapTexture2D_31 (G8)
+[2017.06.23-11.50.00:201][121]LogStaticMesh: Building static mesh big_circle...
+[2017.06.23-11.50.00:219][121]LogStaticMesh: Built static mesh [0.02s] /Game/Ava/Modelling/GreenRoom/Statue/big_circle.big_circle
+[2017.06.23-11.50.00:246][121]LogStaticMesh: Building static mesh wall_decor...
+[2017.06.23-11.50.00:248][121]LogStaticMesh: Built static mesh [0.00s] /Game/Ava/Modelling/GreenRoom/Objects/wall_decor.wall_decor
+[2017.06.23-11.50.00:367][121]LogTexture:Display: Building textures: decor_test10 (AutoDXT)
+[2017.06.23-11.50.01:754][121]LogTexture:Display: Building textures: Pillar3_NormalMap3 (BC5)
+[2017.06.23-11.50.02:082][121]LogTexture:Display: Building textures: Decor_test_NormalMap (BC5)
+[2017.06.23-11.50.02:244][121]LogMaterial: Missing cached shader map for material lambert3, compiling. 
+[2017.06.23-11.50.02:375][121]LogTexture:Display: Building textures: Wall16 (AutoDXT)
+[2017.06.23-11.50.02:901][121]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.06.23-11.50.02:901][121]LogMaterial:Warning: Failed to compile Material /Game/StarterContent/Materials/M_Basic_Wall.M_Basic_Wall for platform PCD3D_SM5, Default Material will be used in game.
+[2017.06.23-11.50.02:901][121]LogMaterial:Warning: 	(Node TextureSample) TextureSample> Missing input texture
+[2017.06.23-11.50.02:910][121]LogAIModule: Creating AISystem for world PalaceLevel
+[2017.06.23-11.50.02:973][121]Cmd: MAP LOAD FILE="../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.06.23-11.50.02:973][121]LightingResults: New page: Lighting Build
+[2017.06.23-11.50.02:974][121]LoadErrors: New page: Loading map: PalaceLevel.umap
+[2017.06.23-11.50.02:974][121]MapCheck: New page: Map Check
+[2017.06.23-11.50.02:974][121]LightingResults: New page: Lighting Build
+[2017.06.23-11.50.03:006][121]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.06.23-11.50.03:047][121]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.06.23-11.50.03:183][121]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 136.36ms to complete.
+[2017.06.23-11.50.03:184][121]LogFileHelpers: Loading map 'PalaceLevel' took 0.213
+[2017.06.23-11.50.16:251][604]LogAIModule: Creating AISystem for world ExternalEnvironment
+[2017.06.23-11.50.16:267][604]Cmd: MAP LOAD FILE="../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Maps/ExternalEnvironment.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.06.23-11.50.16:267][604]LightingResults: New page: Lighting Build
+[2017.06.23-11.50.16:267][604]LoadErrors: New page: Loading map: ExternalEnvironment.umap
+[2017.06.23-11.50.16:271][604]MapCheck: New page: Map Check
+[2017.06.23-11.50.16:271][604]LightingResults: New page: Lighting Build
+[2017.06.23-11.50.16:348][604]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.06.23-11.50.16:390][604]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.06.23-11.50.16:501][604]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 111.162ms to complete.
+[2017.06.23-11.50.16:502][604]LogFileHelpers: Loading map 'ExternalEnvironment' took 0.237
+[2017.06.23-11.50.16:553][605]Cmd: UpdateLandscapeEditorData -warnings
+[2017.06.23-11.50.16:555][605]Cmd: UpdateLandscapeEditorData
+[2017.06.23-11.51.48:272][190]LogSavePackage: Save=6.06ms
+[2017.06.23-11.51.48:272][190]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/AntelopeBrainBT768987654DC03690F11C3DAF74702B7D.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Antelope/AntelopeBrainBT.uasset'
+[2017.06.23-11.51.48:280][190]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Antelope/AntelopeBrainBT.uasset
+[2017.06.23-11.51.50:373][286]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.23-11.51.50:373][286]PIE: New page: PIE session: ExternalEnvironment (23 Jun 2017 12:51:50)
+[2017.06.23-11.51.50:373][286]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment
+[2017.06.23-11.51.50:386][286]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012920s)
+[2017.06.23-11.51.50:387][286]LogAIModule: Creating AISystem for world ExternalEnvironment
+[2017.06.23-11.51.50:387][286]LogPlayLevel: PIE: World Init took: (0.000613s)
+[2017.06.23-11.51.50:388][286]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/ExternalEnvironment.ExternalEnvironment to /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment (0.014771s)
+[2017.06.23-11.51.50:408][286]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.23-11.51.50:419][286]LogInit: FAudioDevice initialized.
+[2017.06.23-11.51.50:510][286]LogWorld: Game class is 'AvaGameMode'
+[2017.06.23-11.51.50:538][286]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment up for play (max tick rate 0) at 2017.06.23-12.51.50
+[2017.06.23-11.51.50:540][286]LogWorld: Bringing up level for play took: 0.028271
+[2017.06.23-11.51.50:547][286]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0029 seconds. Added 11 classes and 0 folders.
+[2017.06.23-11.51.50:547][286]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment 0.577
+[2017.06.23-11.51.51:206][286]LogCrashTracker: 
+
+
+[2017.06.23-11.51.51:206][286]LogCrashTracker: 
+
+
+[2017.06.23-11.51.51:206][286]LogWindows:Error: === Critical error: ===
+Fatal error!
+
+
+
+[2017.06.23-11.51.51:251][286]LogExit: Executing StaticShutdownAfterError
+[2017.06.23-11.51.51:258][286]LogWindows: FPlatformMisc::RequestExit(1)
+[2017.06.23-11.51.51:258][286]Log file closed, 06/23/17 12:51:51

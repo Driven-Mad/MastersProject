@@ -14,7 +14,7 @@ class AVA_API ARoutePoint : public ATargetPoint
 	GENERATED_BODY()
 public:
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = RouteID)
-		float RouteNumber;
+		int RouteNumber;
 	
 	
 };

@@ -1,0 +1,995 @@
+﻿Log file open, 06/23/17 12:56:41
+LogInit:Display: Running engine for game: Ava
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-371610818) SRandInit(-371610816).
+LogTaskGraph: Started task graph with 4 named threads and 9 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.101699
+LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3039270
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.06.23-11.56.41:889][  0]LogInit: Selected Device Profile: [Windows]
+[2017.06.23-11.56.41:889][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.06.23-11.56.41:900][  0]LogInit: Computer: PC42640
+[2017.06.23-11.56.41:900][  0]LogInit: User: i7230020
+[2017.06.23-11.56.41:900][  0]LogInit: CPU Page size=65536, Cores=6
+[2017.06.23-11.56.41:900][  0]LogInit: High frequency timer resolution =3.410136 MHz
+[2017.06.23-11.56.41:900][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2017.06.23-11.56.41:900][  0]LogMemory: Platform Memory Stats for Windows
+[2017.06.23-11.56.41:900][  0]LogMemory: Process Physical Memory: 196.64 MB used, 196.64 MB peak
+[2017.06.23-11.56.41:900][  0]LogMemory: Process Virtual Memory: 199.05 MB used, 199.05 MB peak
+[2017.06.23-11.56.41:900][  0]LogMemory: Physical Memory: 14127.88 MB used, 32684.15 MB total
+[2017.06.23-11.56.41:900][  0]LogMemory: Virtual Memory: 538.89 MB used, 8388608.00 MB total
+[2017.06.23-11.56.42:028][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
+[2017.06.23-11.56.42:593][  0]LogD3D11RHI: D3D11 adapters:
+[2017.06.23-11.56.42:628][  0]LogD3D11RHI:    0. 'NVIDIA Quadro M4000' (Feature Level 11_0)
+[2017.06.23-11.56.42:628][  0]LogD3D11RHI:       8092/0/16086 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.06.23-11.56.42:628][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.06.23-11.56.42:646][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.06.23-11.56.42:648][  0]LogD3D11RHI:     GPU DeviceId: 0x13f1 (for the marketing name, search the web for "GPU Device Id")
+[2017.06.23-11.56.42:648][  0]LogWindows: EnumDisplayDevices:
+[2017.06.23-11.56.42:649][  0]LogWindows:    0. 'NVIDIA Quadro M4000' (P:1 D:1)
+[2017.06.23-11.56.42:651][  0]LogWindows:    1. 'NVIDIA Quadro M4000' (P:0 D:0)
+[2017.06.23-11.56.42:653][  0]LogWindows:    2. 'NVIDIA Quadro M4000' (P:0 D:0)
+[2017.06.23-11.56.42:655][  0]LogWindows:    3. 'NVIDIA Quadro M4000' (P:0 D:0)
+[2017.06.23-11.56.42:656][  0]LogWindows:    4. 'RDPDD Chained DD' (P:0 D:0)
+[2017.06.23-11.56.42:658][  0]LogWindows:    5. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2017.06.23-11.56.42:660][  0]LogWindows:    6. 'RDP Reflector Display Driver' (P:0 D:0)
+[2017.06.23-11.56.42:661][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2017.06.23-11.56.42:661][  0]LogD3D11RHI:     Adapter Name: NVIDIA Quadro M4000
+[2017.06.23-11.56.42:661][  0]LogD3D11RHI:   Driver Version: 362.13 (internal:10.18.13.6213, unified:362.13)
+[2017.06.23-11.56.42:661][  0]LogD3D11RHI:      Driver Date: 3-18-2016
+[2017.06.23-11.56.42:661][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.06.23-11.56.42:677][  0]LogD3D11RHI: Async texture creation enabled
+[2017.06.23-11.56.42:696][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2017.06.23-11.56.42:696][  0]LogShaderCompilers: Guid format shader working directory is -28 characters bigger than the processId version (../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Intermediate/Shaders/WorkingDirectory/29404/).
+[2017.06.23-11.56.42:696][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/I72300~1.000/AppData/Local/Temp/UnrealShaderWorkingDir/39BFAE7F4C3A1F51F152639227EBCA94/'.
+[2017.06.23-11.56.42:696][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.06.23-11.56.43:884][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.06.23-11.56.43:893][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.06.23-11.56.43:902][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.06.23-11.56.43:911][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.06.23-11.56.43:919][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.06.23-11.56.43:927][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.06.23-11.56.43:940][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.06.23-11.56.43:947][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.06.23-11.56.43:959][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.06.23-11.56.43:966][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.06.23-11.56.43:975][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.06.23-11.56.43:990][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.06.23-11.56.43:990][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.06.23-11.56.43:992][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.06.23-11.56.44:013][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.06.23-11.56.44:034][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.06.23-11.56.44:046][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.06.23-11.56.44:055][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.06.23-11.56.44:064][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.06.23-11.56.44:064][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.06.23-11.56.44:150][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.06.23-11.56.44:198][  0]LogDerivedDataCache: Loaded boot cache 0.05s 49MB C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2017.06.23-11.56.44:199][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2017.06.23-11.56.44:199][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.06.23-11.56.44:199][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.06.23-11.56.44:199][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.06.23-11.56.44:199][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.06.23-11.56.44:231][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.06.23-11.56.44:246][  0]LogDerivedDataCache: Using Local data cache path C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.06.23-11.56.44:489][  0]LogInit: Selected Device Profile: [Windows]
+[2017.06.23-11.56.44:490][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.06.23-11.56.44:703][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2017.06.23-11.56.44:703][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.06.23-11.56.44:703][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2017.06.23-11.56.45:080][  0]LogAssetRegistry: FAssetRegistry took 0.0203 seconds to start up
+[2017.06.23-11.56.45:218][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.129077 seconds
+[2017.06.23-11.56.45:223][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2017.06.23-11.56.45:223][  0]LogUObjectAllocator: 5855624 out of 0 bytes used by permanent object pool.
+[2017.06.23-11.56.45:223][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.06.23-11.56.45:231][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.06.23-11.56.45:508][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.06.23-11.56.45:508][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.06.23-11.56.46:892][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.06.23-11.56.47:231][  0]SourceControl: Info Source control is disabled
+[2017.06.23-11.56.47:238][  0]SourceControl: Info Source control is disabled
+[2017.06.23-11.56.47:257][  0]SourceControl: Info Source control is disabled
+[2017.06.23-11.56.47:272][  0]SourceControl: Info Source control is disabled
+[2017.06.23-11.56.47:456][  0]LogHoudiniEngine: Starting the Houdini Engine module.
+[2017.06.23-11.56.47:457][  0]LogHoudiniEngine: Loaded libHAPIL.dll from Registry path C:\Program Files\Side Effects Software\Houdini 15.5.632/bin
+[2017.06.23-11.56.47:458][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_logo.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2017.06.23-11.56.47:459][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_default_material.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2017.06.23-11.56.47:464][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_bgeo_import.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2017.06.23-11.56.48:682][  0]LogHoudiniEngine: Successfully initialized the Houdini Engine API module.
+[2017.06.23-11.56.48:831][  0]LogEngine: Initializing Engine...
+[2017.06.23-11.56.48:832][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2017.06.23-11.56.48:834][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2017.06.23-11.56.48:959][  0]LogAIModule: Creating AISystem for world NewWorld
+[2017.06.23-11.56.48:965][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.23-11.56.49:001][  0]LogInit: FAudioDevice initialized.
+[2017.06.23-11.56.49:027][  0]LogDerivedDataCache: Saved boot cache 0.03s 49MB C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2017.06.23-11.56.49:032][  0]LogInit: Texture streaming: Enabled
+[2017.06.23-11.56.49:054][  0]LogInit: Transaction tracking system initialized
+[2017.06.23-11.56.49:073][  0]BlueprintLog: New page: Editor Load
+[2017.06.23-11.56.49:142][  0]LocalizationService: Info Localization service is disabled
+[2017.06.23-11.56.49:207][  0]LogConsoleResponse:Display: 
+[2017.06.23-11.56.49:322][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2017.06.23-11.56.49:322][  0]LogCook:Display: Mobile HDR setting 1
+[2017.06.23-11.56.49:413][  0]LogFileCache: Scanning file cache for directory 'C:/Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/' took 0.02s
+[2017.06.23-11.56.49:413][  0]LogHoudiniEngineEditor: Starting the Houdini Engine Editor module.
+[2017.06.23-11.56.49:454][  0]SourceControl: Info Source control is disabled
+[2017.06.23-11.56.49:454][  0]Cmd: MAP LOAD FILE="../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Maps/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.06.23-11.56.49:455][  0]LightingResults: New page: Lighting Build
+[2017.06.23-11.56.49:457][  0]MapCheck: New page: Map Check
+[2017.06.23-11.56.49:457][  0]LightingResults: New page: Lighting Build
+[2017.06.23-11.56.49:574][  0]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.23-11.56.49:575][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.06.23-11.56.49:575][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.06.23-11.56.49:641][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 65.76ms to complete.
+[2017.06.23-11.56.49:641][  0]LogFileHelpers: Loading map 'MainMenu' took 0.186
+[2017.06.23-11.56.49:746][  0]LogCollectionManager: Loaded 0 collections in 0.001616 seconds
+[2017.06.23-11.56.49:797][  0]LogFileCache: Scanning file cache for directory 'C:/Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/Collections/' took 0.01s
+[2017.06.23-11.56.49:797][  0]LogFileCache: Scanning file cache for directory 'C:/Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Developers/i7230020/Collections/' took 0.01s
+[2017.06.23-11.56.49:797][  0]LogFileCache: Scanning file cache for directory 'C:/Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Collections/' took 0.01s
+[2017.06.23-11.56.49:797][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000004 seconds
+[2017.06.23-11.56.49:822][  0]LogContentBrowser: Native class hierarchy populated in 0.0245 seconds. Added 2092 classes and 376 folders.
+[2017.06.23-11.56.49:829][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.06.23-11.56.49:829][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.06.23-11.56.49:835][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0061 seconds. Added 12 classes and 0 folders.
+[2017.06.23-11.56.49:849][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0052 seconds. Added 0 classes and 0 folders.
+[2017.06.23-11.56.49:920][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0026 seconds. Added 0 classes and 0 folders.
+[2017.06.23-11.56.49:926][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0025 seconds. Added 1 classes and 2 folders.
+[2017.06.23-11.56.49:937][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.06.23-11.56.49:941][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.06.23-11.56.49:968][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0025 seconds. Added 1 classes and 2 folders.
+[2017.06.23-11.56.49:968][  0]LogLoad: Full Startup: 10.81 seconds (BP compile: 0.02 seconds)
+[2017.06.23-11.56.49:968][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.06.23-11.56.49:968][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.06.23-11.56.49:978][  0]LogOcInput: OculusInput pre-init called
+[2017.06.23-11.56.50:002][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.06.23-11.56.50:143][  2]LogRenderer: Reallocating scene render targets to support 1216x548 (Frame:2).
+[2017.06.23-11.56.50:292][  2]LogAssetRegistry: Asset discovery search completed in 5.2380 seconds
+[2017.06.23-11.56.50:292][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2017.06.23-11.56.50:292][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000019 seconds (updated 0 objects)
+[2017.06.23-11.56.55:369][522]LogBlueprint:Warning: Compiler Warning InputAction Event references unknown Action 'Crouch' for  InputAction Crouch 
+[2017.06.23-11.56.55:371][522]LogBlueprint:Warning: Compiler Warning [0016.22] Compile of Ue4ASP_Character successful, but with 1 Warning(s) [in 8 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.06.23-11.56.55:371][522]LogBlueprint:Warning: Compiler Warning [0016.22] Compile of Ue4ASP_Character successful, but with 2 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.06.23-11.56.55:371][522]LogBlueprint:Warning: Compiler Warning [0016.22] Compile of Ue4ASP_Character successful, but with 3 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.06.23-11.56.55:475][522]LogBlueprint:Warning: Compiler Warning InputAction Event references unknown Action 'Crouch' for  InputAction Crouch 
+[2017.06.23-11.56.55:477][522]LogBlueprint:Warning: Compiler Warning [0016.33] Compile of Ue4ASP_Character successful, but with 1 Warning(s) [in 8 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.06.23-11.56.55:477][522]LogBlueprint:Warning: Compiler Warning [0016.33] Compile of Ue4ASP_Character successful, but with 2 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.06.23-11.56.55:478][522]LogBlueprint:Warning: Compiler Warning [0016.33] Compile of Ue4ASP_Character successful, but with 3 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.06.23-11.56.55:737][522]LogAIModule: Creating AISystem for world ExternalEnvironment
+[2017.06.23-11.56.55:773][522]Cmd: MAP LOAD FILE="../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Maps/ExternalEnvironment.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.06.23-11.56.55:773][522]LightingResults: New page: Lighting Build
+[2017.06.23-11.56.55:773][522]LoadErrors: New page: Loading map: ExternalEnvironment.umap
+[2017.06.23-11.56.55:774][522]MapCheck: New page: Map Check
+[2017.06.23-11.56.55:774][522]LightingResults: New page: Lighting Build
+[2017.06.23-11.56.55:822][522]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.06.23-11.56.55:863][522]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.06.23-11.56.55:954][522]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 91.235ms to complete.
+[2017.06.23-11.56.55:955][522]LogFileHelpers: Loading map 'ExternalEnvironment' took 0.184
+[2017.06.23-11.56.55:986][523]Cmd: UpdateLandscapeEditorData -warnings
+[2017.06.23-11.56.55:988][523]Cmd: UpdateLandscapeEditorData
+[2017.06.23-11.56.56:963][613]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.23-11.56.56:964][613]PIE: New page: PIE session: ExternalEnvironment (23 Jun 2017 12:56:56)
+[2017.06.23-11.56.56:964][613]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment
+[2017.06.23-11.56.56:978][613]LogPlayLevel: PIE: StaticDuplicateObject took: (0.014727s)
+[2017.06.23-11.56.56:979][613]LogAIModule: Creating AISystem for world ExternalEnvironment
+[2017.06.23-11.56.56:979][613]LogPlayLevel: PIE: World Init took: (0.000777s)
+[2017.06.23-11.56.56:979][613]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/ExternalEnvironment.ExternalEnvironment to /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment (0.015752s)
+[2017.06.23-11.56.56:990][613]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.23-11.56.56:997][613]LogInit: FAudioDevice initialized.
+[2017.06.23-11.56.57:064][613]LogWorld: Game class is 'AvaGameMode'
+[2017.06.23-11.56.57:092][613]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment up for play (max tick rate 0) at 2017.06.23-12.56.57
+[2017.06.23-11.56.57:094][613]LogWorld: Bringing up level for play took: 0.028662
+[2017.06.23-11.56.57:101][613]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0027 seconds. Added 11 classes and 0 folders.
+[2017.06.23-11.56.57:101][613]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment -0.503
+[2017.06.23-11.57.08:815][777]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.23-11.57.08:815][777]PIE: New page: PIE session: ExternalEnvironment (23 Jun 2017 12:57:08)
+[2017.06.23-11.57.08:815][777]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment
+[2017.06.23-11.57.08:835][777]LogPlayLevel: PIE: StaticDuplicateObject took: (0.020050s)
+[2017.06.23-11.57.08:836][777]LogAIModule: Creating AISystem for world ExternalEnvironment
+[2017.06.23-11.57.08:836][777]LogPlayLevel: PIE: World Init took: (0.000696s)
+[2017.06.23-11.57.08:836][777]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/ExternalEnvironment.ExternalEnvironment to /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment (0.021410s)
+[2017.06.23-11.57.08:850][777]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.23-11.57.08:859][777]LogInit: FAudioDevice initialized.
+[2017.06.23-11.57.08:924][777]LogWorld: Game class is 'AvaGameMode'
+[2017.06.23-11.57.08:959][777]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment up for play (max tick rate 0) at 2017.06.23-12.57.08
+[2017.06.23-11.57.08:961][777]LogWorld: Bringing up level for play took: 0.036972
+[2017.06.23-11.57.08:962][777]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment -0.63
+[2017.06.23-11.59.14:418][237]LogHotReload: New module detected: UE4Editor-Ava-1916.dll
+[2017.06.23-11.59.16:783][245]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.23-11.59.16:870][245]LogClass: ItemDataVariables HotReload.
+[2017.06.23-11.59.16:870][245]LogClass: Item HotReload.
+[2017.06.23-11.59.16:871][245]LogHotReload: Re-instancing Antelope after hot-reload.
+[2017.06.23-11.59.16:995][245]LogHotReload: Re-instancing MainCharacter after hot-reload.
+[2017.06.23-11.59.17:076][245]LogHotReload: Re-instancing StatueObject after hot-reload.
+[2017.06.23-11.59.17:124][245]LogContentBrowser: Native class hierarchy updated for 'Ava' in 0.0029 seconds. Added 14 classes and 2 folders.
+[2017.06.23-11.59.17:125][245]Warning: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.23-11.59.17:231][245]LogContentBrowser: Native class hierarchy populated in 0.0103 seconds. Added 2094 classes and 380 folders.
+[2017.06.23-11.59.17:235][245]Warning: HotReload took  0.5s.
+[2017.06.23-11.59.27:812][379]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.23-11.59.27:812][379]PIE: New page: PIE session: ExternalEnvironment (23 Jun 2017 12:59:27)
+[2017.06.23-11.59.27:812][379]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment
+[2017.06.23-11.59.27:825][379]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012896s)
+[2017.06.23-11.59.27:826][379]LogAIModule: Creating AISystem for world ExternalEnvironment
+[2017.06.23-11.59.27:826][379]LogPlayLevel: PIE: World Init took: (0.001144s)
+[2017.06.23-11.59.27:826][379]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/ExternalEnvironment.ExternalEnvironment to /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment (0.014245s)
+[2017.06.23-11.59.27:839][379]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.23-11.59.27:847][379]LogInit: FAudioDevice initialized.
+[2017.06.23-11.59.27:923][379]LogWorld: Game class is 'AvaGameMode'
+[2017.06.23-11.59.27:969][379]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment up for play (max tick rate 0) at 2017.06.23-12.59.27
+[2017.06.23-11.59.27:971][379]LogWorld: Bringing up level for play took: 0.046866
+[2017.06.23-11.59.27:973][379]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment 0.442
+[2017.06.23-12.01.15:028][275]LogSavePackage: Save=9.24ms
+[2017.06.23-12.01.15:028][275]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/AntelopeBrainBTAA14FE8D4ECA22EC3C441297E42FC5DC.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Antelope/AntelopeBrainBT.uasset'
+[2017.06.23-12.01.15:046][275]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Antelope/AntelopeBrainBT.uasset
+[2017.06.23-12.01.58:086][304]LogSavePackage: Save=12.91ms
+[2017.06.23-12.01.58:086][304]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/AntelopeBrainBTF62DD48A49649FAA7FADFFA27D7E9F97.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Antelope/AntelopeBrainBT.uasset'
+[2017.06.23-12.01.58:109][304]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Antelope/AntelopeBrainBT.uasset
+[2017.06.23-12.02.01:925][572]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.23-12.02.01:926][572]PIE: New page: PIE session: ExternalEnvironment (23 Jun 2017 13:02:01)
+[2017.06.23-12.02.01:926][572]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment
+[2017.06.23-12.02.01:940][572]LogPlayLevel: PIE: StaticDuplicateObject took: (0.014234s)
+[2017.06.23-12.02.01:940][572]LogAIModule: Creating AISystem for world ExternalEnvironment
+[2017.06.23-12.02.01:941][572]LogPlayLevel: PIE: World Init took: (0.000711s)
+[2017.06.23-12.02.01:941][572]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/ExternalEnvironment.ExternalEnvironment to /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment (0.015178s)
+[2017.06.23-12.02.01:955][572]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.23-12.02.01:966][572]LogInit: FAudioDevice initialized.
+[2017.06.23-12.02.02:038][572]LogWorld: Game class is 'AvaGameMode'
+[2017.06.23-12.02.02:081][572]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment up for play (max tick rate 0) at 2017.06.23-13.02.02
+[2017.06.23-12.02.02:083][572]LogWorld: Bringing up level for play took: 0.043715
+[2017.06.23-12.02.02:085][572]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment 0.607
+[2017.06.23-12.02.12:304][391]LogSavePackage: Save=14.27ms
+[2017.06.23-12.02.12:304][391]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/AntelopeBrainBT0A81832744726EAC2AF5C6A7C7A4F334.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Antelope/AntelopeBrainBT.uasset'
+[2017.06.23-12.02.12:319][391]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Antelope/AntelopeBrainBT.uasset
+[2017.06.23-12.03.24:244][592]LogSavePackage: Save=6.63ms
+[2017.06.23-12.03.24:245][592]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/AntelopeBrainBTF106C87644555CA4A37C2C9EBFD5D590.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Antelope/AntelopeBrainBT.uasset'
+[2017.06.23-12.03.24:257][592]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Antelope/AntelopeBrainBT.uasset
+[2017.06.23-12.07.11:910][993]LogSavePackage: Save=13.34ms
+[2017.06.23-12.07.11:910][993]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/AntelopeBrainBT8ECDAC4B490175B373829A8E0D75C8BA.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Antelope/AntelopeBrainBT.uasset'
+[2017.06.23-12.07.11:923][993]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Antelope/AntelopeBrainBT.uasset
+[2017.06.23-12.07.16:562][162]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.23-12.07.16:562][162]PIE: New page: PIE session: ExternalEnvironment (23 Jun 2017 13:07:16)
+[2017.06.23-12.07.16:562][162]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment
+[2017.06.23-12.07.16:581][162]LogPlayLevel: PIE: StaticDuplicateObject took: (0.018757s)
+[2017.06.23-12.07.16:581][162]LogAIModule: Creating AISystem for world ExternalEnvironment
+[2017.06.23-12.07.16:582][162]LogPlayLevel: PIE: World Init took: (0.001243s)
+[2017.06.23-12.07.16:582][162]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/ExternalEnvironment.ExternalEnvironment to /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment (0.020236s)
+[2017.06.23-12.07.16:593][162]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.23-12.07.16:602][162]LogInit: FAudioDevice initialized.
+[2017.06.23-12.07.16:660][162]LogWorld: Game class is 'AvaGameMode'
+[2017.06.23-12.07.16:685][162]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment up for play (max tick rate 0) at 2017.06.23-13.07.16
+[2017.06.23-12.07.16:687][162]LogWorld: Bringing up level for play took: 0.026273
+[2017.06.23-12.07.16:689][162]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment -0.74
+[2017.06.23-12.09.57:994][ 53]LogSavePackage: Save=8.71ms
+[2017.06.23-12.09.57:994][ 53]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/AntelopeBrainBTEDB7D49C4984A534EA8F15B980B654E7.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Antelope/AntelopeBrainBT.uasset'
+[2017.06.23-12.09.58:009][ 53]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Antelope/AntelopeBrainBT.uasset
+[2017.06.23-12.09.59:789][162]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.23-12.09.59:789][162]PIE: New page: PIE session: ExternalEnvironment (23 Jun 2017 13:09:59)
+[2017.06.23-12.09.59:789][162]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment
+[2017.06.23-12.09.59:801][162]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012436s)
+[2017.06.23-12.09.59:802][162]LogAIModule: Creating AISystem for world ExternalEnvironment
+[2017.06.23-12.09.59:802][162]LogPlayLevel: PIE: World Init took: (0.000732s)
+[2017.06.23-12.09.59:802][162]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/ExternalEnvironment.ExternalEnvironment to /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment (0.013433s)
+[2017.06.23-12.09.59:814][162]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.23-12.09.59:823][162]LogInit: FAudioDevice initialized.
+[2017.06.23-12.09.59:895][162]LogWorld: Game class is 'AvaGameMode'
+[2017.06.23-12.09.59:933][162]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment up for play (max tick rate 0) at 2017.06.23-13.09.59
+[2017.06.23-12.09.59:935][162]LogWorld: Bringing up level for play took: 0.038983
+[2017.06.23-12.09.59:937][162]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment 0.516
+[2017.06.23-12.12.00:518][564]LogHotReload: New module detected: UE4Editor-Ava-9223.dll
+[2017.06.23-12.12.03:013][734]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.23-12.12.03:086][734]LogClass: Could not find existing class RoutePoint in package /Script/Ava for HotReload, assuming new class
+[2017.06.23-12.12.03:089][734]LogClass: ItemDataVariables HotReload.
+[2017.06.23-12.12.03:089][734]LogClass: Item HotReload.
+[2017.06.23-12.12.03:090][734]LogHotReload: Re-instancing Antelope after hot-reload.
+[2017.06.23-12.12.03:165][734]LogHotReload: Re-instancing RoutePoint after hot-reload.
+[2017.06.23-12.12.03:166][734]LogClass:Warning: Type mismatch in RouteNumber of RoutePoint - Previous (FloatProperty) Current(IntProperty) for package:  FObjectReader
+[2017.06.23-12.12.03:166][734]LogClass:Warning: Type mismatch in RouteNumber of RoutePoint - Previous (FloatProperty) Current(IntProperty) for package:  FObjectReader
+[2017.06.23-12.12.03:166][734]LogClass:Warning: Type mismatch in RouteNumber of RoutePoint - Previous (FloatProperty) Current(IntProperty) for package:  FObjectReader
+[2017.06.23-12.12.03:166][734]LogClass:Warning: Type mismatch in RouteNumber of RoutePoint - Previous (FloatProperty) Current(IntProperty) for package:  FObjectReader
+[2017.06.23-12.12.03:167][734]LogClass:Warning: Type mismatch in RouteNumber of RoutePoint - Previous (FloatProperty) Current(IntProperty) for package:  FObjectReader
+[2017.06.23-12.12.03:167][734]LogClass:Warning: Type mismatch in RouteNumber of RoutePoint - Previous (FloatProperty) Current(IntProperty) for package:  FObjectReader
+[2017.06.23-12.12.03:506][734]LogHotReload: Re-instancing MainCharacter after hot-reload.
+[2017.06.23-12.12.03:593][734]LogHotReload: Re-instancing StatueObject after hot-reload.
+[2017.06.23-12.12.03:634][734]LogContentBrowser: Native class hierarchy updated for 'Ava' in 0.0027 seconds. Added 14 classes and 2 folders.
+[2017.06.23-12.12.03:635][734]Warning: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.23-12.12.03:681][734]LogContentBrowser: Native class hierarchy populated in 0.0101 seconds. Added 2094 classes and 380 folders.
+[2017.06.23-12.12.03:687][734]Warning: HotReload took  0.7s.
+[2017.06.23-12.12.21:826][391]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.23-12.12.21:826][391]PIE: New page: PIE session: ExternalEnvironment (23 Jun 2017 13:12:21)
+[2017.06.23-12.12.21:826][391]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment
+[2017.06.23-12.12.21:839][391]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012780s)
+[2017.06.23-12.12.21:839][391]LogAIModule: Creating AISystem for world ExternalEnvironment
+[2017.06.23-12.12.21:840][391]LogPlayLevel: PIE: World Init took: (0.000663s)
+[2017.06.23-12.12.21:840][391]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/ExternalEnvironment.ExternalEnvironment to /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment (0.013651s)
+[2017.06.23-12.12.21:854][391]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.23-12.12.21:866][391]LogInit: FAudioDevice initialized.
+[2017.06.23-12.12.21:920][391]LogWorld: Game class is 'AvaGameMode'
+[2017.06.23-12.12.21:952][391]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment up for play (max tick rate 0) at 2017.06.23-13.12.21
+[2017.06.23-12.12.21:954][391]LogWorld: Bringing up level for play took: 0.032914
+[2017.06.23-12.12.21:956][391]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment 0.541
+[2017.06.23-12.13.26:789][313]LogSavePackage: Save=302.87ms
+[2017.06.23-12.13.26:789][313]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/ExternalEnvironment_Auto1C35C2A97498C15CB7F2BEAB4A21CE03D.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/Autosaves/Game/Ava/Maps/ExternalEnvironment_Auto1.umap'
+[2017.06.23-12.13.26:796][313]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/Autosaves/Game/Ava/Maps/ExternalEnvironment_Auto1.umap
+[2017.06.23-12.13.26:799][313]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Ava/Maps/ExternalEnvironment' took 0.350
+[2017.06.23-12.13.26:799][313]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.350
+[2017.06.23-12.13.26:802][313]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Ava/Antelope/AntelopeBrainBT] ([1] browsable assets)...
+[2017.06.23-12.13.26:802][313]OBJ SavePackage: Finished generating thumbnails for package [/Game/Ava/Antelope/AntelopeBrainBT]
+[2017.06.23-12.13.26:816][313]LogSavePackage: Save=5.54ms
+[2017.06.23-12.13.26:816][313]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/AntelopeBrainBT_Auto1C6C18E204292DF83EDFC239E68F73F24.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/Autosaves/Game/Ava/Antelope/AntelopeBrainBT_Auto1.uasset'
+[2017.06.23-12.13.26:822][313]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/Autosaves/Game/Ava/Antelope/AntelopeBrainBT_Auto1.uasset
+[2017.06.23-12.13.26:822][313]LogFileHelpers: Auto-saving content packages took 0.022
+[2017.06.23-12.19.24:497][387]LogHotReload: New module detected: UE4Editor-Ava-2347.dll
+[2017.06.23-12.19.27:194][396]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.23-12.19.27:281][396]LogClass: ItemDataVariables HotReload.
+[2017.06.23-12.19.27:281][396]LogClass: Item HotReload.
+[2017.06.23-12.19.27:285][396]LogHotReload: Re-instancing Antelope after hot-reload.
+[2017.06.23-12.19.27:367][396]LogHotReload: Re-instancing MainCharacter after hot-reload.
+[2017.06.23-12.19.27:455][396]LogHotReload: Re-instancing StatueObject after hot-reload.
+[2017.06.23-12.19.27:496][396]LogContentBrowser: Native class hierarchy updated for 'Ava' in 0.0038 seconds. Added 14 classes and 2 folders.
+[2017.06.23-12.19.27:498][396]Warning: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.23-12.19.27:551][396]LogContentBrowser: Native class hierarchy populated in 0.0101 seconds. Added 2094 classes and 380 folders.
+[2017.06.23-12.19.27:554][396]Warning: HotReload took  0.4s.
+[2017.06.23-12.19.32:654][528]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.23-12.19.32:655][528]PIE: New page: PIE session: ExternalEnvironment (23 Jun 2017 13:19:32)
+[2017.06.23-12.19.32:655][528]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment
+[2017.06.23-12.19.32:668][528]LogPlayLevel: PIE: StaticDuplicateObject took: (0.013489s)
+[2017.06.23-12.19.32:669][528]LogAIModule: Creating AISystem for world ExternalEnvironment
+[2017.06.23-12.19.32:669][528]LogPlayLevel: PIE: World Init took: (0.000616s)
+[2017.06.23-12.19.32:669][528]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/ExternalEnvironment.ExternalEnvironment to /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment (0.014305s)
+[2017.06.23-12.19.32:684][528]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.23-12.19.32:698][528]LogInit: FAudioDevice initialized.
+[2017.06.23-12.19.32:746][528]LogWorld: Game class is 'AvaGameMode'
+[2017.06.23-12.19.32:771][528]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment up for play (max tick rate 0) at 2017.06.23-13.19.32
+[2017.06.23-12.19.32:773][528]LogWorld: Bringing up level for play took: 0.025628
+[2017.06.23-12.19.32:775][528]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment -0.624
+[2017.06.23-12.23.00:281][675]LogHotReload: New module detected: UE4Editor-Ava-2211.dll
+[2017.06.23-12.23.02:807][835]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.23-12.23.02:875][835]LogClass: ItemDataVariables HotReload.
+[2017.06.23-12.23.02:875][835]LogClass: Item HotReload.
+[2017.06.23-12.23.02:876][835]LogHotReload: Re-instancing Antelope after hot-reload.
+[2017.06.23-12.23.02:956][835]LogHotReload: Re-instancing MainCharacter after hot-reload.
+[2017.06.23-12.23.03:032][835]LogHotReload: Re-instancing StatueObject after hot-reload.
+[2017.06.23-12.23.03:073][835]LogContentBrowser: Native class hierarchy updated for 'Ava' in 0.0027 seconds. Added 14 classes and 2 folders.
+[2017.06.23-12.23.03:074][835]Warning: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.23-12.23.03:121][835]LogContentBrowser: Native class hierarchy populated in 0.0099 seconds. Added 2094 classes and 380 folders.
+[2017.06.23-12.23.03:124][835]Warning: HotReload took  0.3s.
+[2017.06.23-12.23.06:820][119]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.23-12.23.06:820][119]PIE: New page: PIE session: ExternalEnvironment (23 Jun 2017 13:23:06)
+[2017.06.23-12.23.06:820][119]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment
+[2017.06.23-12.23.06:832][119]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011894s)
+[2017.06.23-12.23.06:833][119]LogAIModule: Creating AISystem for world ExternalEnvironment
+[2017.06.23-12.23.06:833][119]LogPlayLevel: PIE: World Init took: (0.000630s)
+[2017.06.23-12.23.06:833][119]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/ExternalEnvironment.ExternalEnvironment to /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment (0.012736s)
+[2017.06.23-12.23.06:848][119]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.23-12.23.06:856][119]LogInit: FAudioDevice initialized.
+[2017.06.23-12.23.06:904][119]LogWorld: Game class is 'AvaGameMode'
+[2017.06.23-12.23.06:929][119]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment up for play (max tick rate 0) at 2017.06.23-13.23.06
+[2017.06.23-12.23.06:931][119]LogWorld: Bringing up level for play took: 0.026221
+[2017.06.23-12.23.06:932][119]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment -0.461
+[2017.06.23-12.24.59:923][154]LogEditorViewport: Clicking Background
+[2017.06.23-12.25.01:407][233]LogSavePackage: Save=295.15ms
+[2017.06.23-12.25.01:407][233]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/ExternalEnvironment6B802DF2411DA6F2C2BE17BA45FBE454.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Maps/ExternalEnvironment.umap'
+[2017.06.23-12.25.01:416][233]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Maps/ExternalEnvironment.umap
+[2017.06.23-12.25.01:447][233]LogFileHelpers: Saving map 'ExternalEnvironment' took 0.520
+[2017.06.23-12.25.01:464][233]LogSavePackage: Save=5.90ms
+[2017.06.23-12.25.01:464][233]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/AntelopeBrainBT457154674D2E3E3F9FF29FB0088A0EC5.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Antelope/AntelopeBrainBT.uasset'
+[2017.06.23-12.25.01:474][233]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Antelope/AntelopeBrainBT.uasset
+[2017.06.23-12.25.04:721][594]LogSavePackage: Save=4.90ms
+[2017.06.23-12.25.04:721][594]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/AntelopeBrainBT5732B7A541C662D74B2243BFC839A9AD.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Antelope/AntelopeBrainBT.uasset'
+[2017.06.23-12.25.04:731][594]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Antelope/AntelopeBrainBT.uasset
+[2017.06.23-12.25.25:227][736]LogHotReload: New module detected: UE4Editor-Ava-6847.dll
+[2017.06.23-12.25.27:908][745]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.23-12.25.27:984][745]LogClass: ItemDataVariables HotReload.
+[2017.06.23-12.25.27:984][745]LogClass: Item HotReload.
+[2017.06.23-12.25.27:986][745]LogHotReload: Re-instancing Antelope after hot-reload.
+[2017.06.23-12.25.28:078][745]LogHotReload: Re-instancing MainCharacter after hot-reload.
+[2017.06.23-12.25.28:163][745]LogHotReload: Re-instancing StatueObject after hot-reload.
+[2017.06.23-12.25.28:197][745]LogContentBrowser: Native class hierarchy updated for 'Ava' in 0.0026 seconds. Added 14 classes and 2 folders.
+[2017.06.23-12.25.28:198][745]Warning: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.23-12.25.28:243][745]LogContentBrowser: Native class hierarchy populated in 0.0096 seconds. Added 2094 classes and 380 folders.
+[2017.06.23-12.25.28:246][745]Warning: HotReload took  0.3s.
+[2017.06.23-12.25.31:731][764]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.23-12.25.31:731][764]PIE: New page: PIE session: ExternalEnvironment (23 Jun 2017 13:25:31)
+[2017.06.23-12.25.31:731][764]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment
+[2017.06.23-12.25.31:747][764]LogPlayLevel: PIE: StaticDuplicateObject took: (0.015940s)
+[2017.06.23-12.25.31:748][764]LogAIModule: Creating AISystem for world ExternalEnvironment
+[2017.06.23-12.25.31:748][764]LogPlayLevel: PIE: World Init took: (0.000750s)
+[2017.06.23-12.25.31:748][764]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/ExternalEnvironment.ExternalEnvironment to /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment (0.016931s)
+[2017.06.23-12.25.31:760][764]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.23-12.25.31:767][764]LogInit: FAudioDevice initialized.
+[2017.06.23-12.25.31:824][764]LogWorld: Game class is 'AvaGameMode'
+[2017.06.23-12.25.31:849][764]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment up for play (max tick rate 0) at 2017.06.23-13.25.31
+[2017.06.23-12.25.31:851][764]LogWorld: Bringing up level for play took: 0.025927
+[2017.06.23-12.25.31:852][764]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment 0.45
+[2017.06.23-12.26.36:852][438]MapCheck: New page: Map Check
+[2017.06.23-12.26.36:869][438]Cmd: MAP REBUILD ALLVISIBLE
+[2017.06.23-12.26.36:869][438]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2017.06.23-12.26.37:096][438]LightingResults: New page: Lighting Build - 23 Jun 2017 13:26:37
+[2017.06.23-12.26.37:253][438]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2017.06.23-12.26.37:300][438]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2017.06.23-12.26.37:310][438]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2017.06.23-12.26.37:855][438]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2017.06.23-12.26.37:855][438]LogSwarmInterface: [TryOpenConnection] Local Process ID is 29404
+[2017.06.23-12.26.42:336][438]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2017.06.23-12.26.42:336][438]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2017.06.23-12.26.42:336][438]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2017.06.23-12.26.42:336][438]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2017.06.23-12.26.42:336][438]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2017.06.23-12.26.42:532][438]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2017.06.23-12.26.42:532][438]MapCheck: New page: ExternalEnvironment - 23 Jun 2017 13:26:42
+[2017.06.23-12.26.42:628][438]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 95.972ms to complete.
+[2017.06.23-12.26.42:650][438]LogEditorBuildUtils: Build time 0:05
+[2017.06.23-12.26.42:749][439]Cmd: UpdateLandscapeEditorData
+[2017.06.23-12.26.49:325][457]Job is a success!
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: SkyOcclusion1_1 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: LQ_Lightmap_1_1 (DXT1)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: SkyOcclusion1_2 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: HQ_Lightmap1_1 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: SkyOcclusion1_3 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: HQ_Lightmap1_3 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: LQ_Lightmap_1_3 (DXT1)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: SkyOcclusion1_4 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: HQ_Lightmap1_4 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: LQ_Lightmap_1_4 (DXT1)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: SkyOcclusion1_5 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: HQ_Lightmap1_5 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: LQ_Lightmap_1_5 (DXT1)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: SkyOcclusion1_6 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: HQ_Lightmap1_2 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: HQ_Lightmap1_6 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: LQ_Lightmap_1_2 (DXT1)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: LQ_Lightmap_1_6 (DXT1)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: SkyOcclusion1_7 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: HQ_Lightmap1_7 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: LQ_Lightmap_1_7 (DXT1)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: SkyOcclusion1_8 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: HQ_Lightmap1_8 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: LQ_Lightmap_1_8 (DXT1)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: SkyOcclusion1_9 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: HQ_Lightmap1_9 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: LQ_Lightmap_1_9 (DXT1)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: SkyOcclusion1_10 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: HQ_Lightmap1_10 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: LQ_Lightmap_1_10 (DXT1)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: SkyOcclusion1_11 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: HQ_Lightmap1_11 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: LQ_Lightmap_1_11 (DXT1)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: SkyOcclusion1_12 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: HQ_Lightmap1_12 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: LQ_Lightmap_1_12 (DXT1)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: SkyOcclusion1_13 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: HQ_Lightmap1_13 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: LQ_Lightmap_1_13 (DXT1)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: SkyOcclusion1_14 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: HQ_Lightmap1_14 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: LQ_Lightmap_1_14 (DXT1)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: SkyOcclusion1_15 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: HQ_Lightmap1_15 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: LQ_Lightmap_1_15 (DXT1)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: SkyOcclusion1_16 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: HQ_Lightmap1_16 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: LQ_Lightmap_1_16 (DXT1)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: SkyOcclusion1_17 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: HQ_Lightmap1_17 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: LQ_Lightmap_1_17 (DXT1)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: SkyOcclusion1_18 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: HQ_Lightmap1_18 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: LQ_Lightmap_1_18 (DXT1)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: SkyOcclusion1_19 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: HQ_Lightmap1_19 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: LQ_Lightmap_1_19 (DXT1)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: SkyOcclusion1_20 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: HQ_Lightmap1_20 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: LQ_Lightmap_1_20 (DXT1)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: SkyOcclusion1_21 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: HQ_Lightmap1_21 (AutoDXT)
+[2017.06.23-12.26.50:297][458]LogTexture:Display: Building textures: LQ_Lightmap_1_21 (DXT1)
+[2017.06.23-12.26.50:456][458]LogTexture:Display: Building textures: ShadowMapTexture2D_21 (G8)
+[2017.06.23-12.26.50:456][458]LogTexture:Display: Building textures: ShadowMapTexture2D_22 (G8)
+[2017.06.23-12.26.50:456][458]LogTexture:Display: Building textures: ShadowMapTexture2D_23 (G8)
+[2017.06.23-12.26.50:456][458]LogTexture:Display: Building textures: ShadowMapTexture2D_24 (G8)
+[2017.06.23-12.26.50:456][458]LogTexture:Display: Building textures: ShadowMapTexture2D_25 (G8)
+[2017.06.23-12.26.50:456][458]LogTexture:Display: Building textures: ShadowMapTexture2D_26 (G8)
+[2017.06.23-12.26.50:456][458]LogTexture:Display: Building textures: ShadowMapTexture2D_27 (G8)
+[2017.06.23-12.26.50:456][458]LogTexture:Display: Building textures: ShadowMapTexture2D_28 (G8)
+[2017.06.23-12.26.50:456][458]LogTexture:Display: Building textures: ShadowMapTexture2D_29 (G8)
+[2017.06.23-12.26.50:456][458]LogTexture:Display: Building textures: ShadowMapTexture2D_30 (G8)
+[2017.06.23-12.26.50:456][458]LogTexture:Display: Building textures: ShadowMapTexture2D_31 (G8)
+[2017.06.23-12.26.50:456][458]LogTexture:Display: Building textures: ShadowMapTexture2D_32 (G8)
+[2017.06.23-12.26.50:456][458]LogTexture:Display: Building textures: ShadowMapTexture2D_33 (G8)
+[2017.06.23-12.26.50:456][458]LogTexture:Display: Building textures: ShadowMapTexture2D_34 (G8)
+[2017.06.23-12.26.50:456][458]LogTexture:Display: Building textures: ShadowMapTexture2D_35 (G8)
+[2017.06.23-12.26.50:456][458]LogTexture:Display: Building textures: ShadowMapTexture2D_36 (G8)
+[2017.06.23-12.26.50:456][458]LogTexture:Display: Building textures: ShadowMapTexture2D_37 (G8)
+[2017.06.23-12.26.50:456][458]LogTexture:Display: Building textures: ShadowMapTexture2D_38 (G8)
+[2017.06.23-12.26.50:456][458]LogTexture:Display: Building textures: ShadowMapTexture2D_39 (G8)
+[2017.06.23-12.26.50:456][458]LogTexture:Display: Building textures: ShadowMapTexture2D_40 (G8)
+[2017.06.23-12.26.50:456][458]LogTexture:Display: Building textures: ShadowMapTexture2D_41 (G8)
+[2017.06.23-12.26.50:479][458]Lightmass on PC42640: 6.89 sec total, 464 ms importing, 380 ms setup, 759 ms photons, 5.27 sec processing, 0 ms extra exporting [64/64 mappings]. Threads: 57.5 sec total, 34.5 sec processing.
+[2017.06.23-12.26.50:499][458]LogStaticLightingSystem: Illumination: 13.0 sec (383 ms encoding lightmaps, 157 ms encoding shadowmaps)
+[2017.06.23-12.26.50:499][458]LogStaticLightingSystem: Lightmap texture memory:  3.1 MB (3.1 MB streaming, 0.0 MB non-streaming), 42 textures
+[2017.06.23-12.26.50:499][458]LogStaticLightingSystem: Shadowmap texture memory: 0.8 MB (0.8 MB streaming, 0.0 MB non-streaming), 21 textures
+[2017.06.23-12.26.51:366][459]Cmd: MAP CHECK NOTIFYRESULTS
+[2017.06.23-12.26.51:366][459]MapCheck: New page: ExternalEnvironment - 23 Jun 2017 13:26:51
+[2017.06.23-12.26.51:518][459]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 151.743ms to complete.
+[2017.06.23-12.26.55:857][472]LogHotReload: New module detected: UE4Editor-Ava-2107.dll
+[2017.06.23-12.26.58:203][480]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.23-12.26.58:273][480]LogClass: ItemDataVariables HotReload.
+[2017.06.23-12.26.58:273][480]LogClass: Item HotReload.
+[2017.06.23-12.26.58:274][480]LogHotReload: Re-instancing Antelope after hot-reload.
+[2017.06.23-12.26.58:345][480]LogHotReload: Re-instancing MainCharacter after hot-reload.
+[2017.06.23-12.26.58:419][480]LogHotReload: Re-instancing StatueObject after hot-reload.
+[2017.06.23-12.26.58:454][480]LogContentBrowser: Native class hierarchy updated for 'Ava' in 0.0026 seconds. Added 14 classes and 2 folders.
+[2017.06.23-12.26.58:455][480]Warning: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.23-12.26.58:496][480]LogContentBrowser: Native class hierarchy populated in 0.0102 seconds. Added 2094 classes and 380 folders.
+[2017.06.23-12.26.58:499][480]Warning: HotReload took  0.3s.
+[2017.06.23-12.27.01:556][489]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.23-12.27.01:556][489]PIE: New page: PIE session: ExternalEnvironment (23 Jun 2017 13:27:01)
+[2017.06.23-12.27.01:556][489]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment
+[2017.06.23-12.27.01:579][489]LogPlayLevel: PIE: StaticDuplicateObject took: (0.022650s)
+[2017.06.23-12.27.01:580][489]LogAIModule: Creating AISystem for world ExternalEnvironment
+[2017.06.23-12.27.01:580][489]LogPlayLevel: PIE: World Init took: (0.001159s)
+[2017.06.23-12.27.01:580][489]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/ExternalEnvironment.ExternalEnvironment to /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment (0.024183s)
+[2017.06.23-12.27.01:593][489]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.23-12.27.01:603][489]LogInit: FAudioDevice initialized.
+[2017.06.23-12.27.01:663][489]LogWorld: Game class is 'AvaGameMode'
+[2017.06.23-12.27.01:689][489]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment up for play (max tick rate 0) at 2017.06.23-13.27.01
+[2017.06.23-12.27.01:691][489]LogWorld: Bringing up level for play took: 0.026174
+[2017.06.23-12.27.01:692][489]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment 0.284
+[2017.06.23-12.27.55:980][136]LogHotReload: New module detected: UE4Editor-Ava-6172.dll
+[2017.06.23-12.27.58:663][145]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.23-12.27.58:744][145]LogClass: ItemDataVariables HotReload.
+[2017.06.23-12.27.58:744][145]LogClass: Item HotReload.
+[2017.06.23-12.27.58:745][145]LogHotReload: Re-instancing Antelope after hot-reload.
+[2017.06.23-12.27.58:823][145]LogHotReload: Re-instancing MainCharacter after hot-reload.
+[2017.06.23-12.27.58:893][145]LogHotReload: Re-instancing StatueObject after hot-reload.
+[2017.06.23-12.27.58:928][145]LogContentBrowser: Native class hierarchy updated for 'Ava' in 0.0026 seconds. Added 14 classes and 2 folders.
+[2017.06.23-12.27.58:929][145]Warning: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.23-12.27.58:967][145]LogContentBrowser: Native class hierarchy populated in 0.0100 seconds. Added 2094 classes and 380 folders.
+[2017.06.23-12.27.58:970][145]Warning: HotReload took  0.3s.
+[2017.06.23-12.28.00:358][149]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.23-12.28.00:358][149]PIE: New page: PIE session: ExternalEnvironment (23 Jun 2017 13:28:00)
+[2017.06.23-12.28.00:358][149]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment
+[2017.06.23-12.28.00:390][149]LogPlayLevel: PIE: StaticDuplicateObject took: (0.031914s)
+[2017.06.23-12.28.00:391][149]LogAIModule: Creating AISystem for world ExternalEnvironment
+[2017.06.23-12.28.00:391][149]LogPlayLevel: PIE: World Init took: (0.001277s)
+[2017.06.23-12.28.00:392][149]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/ExternalEnvironment.ExternalEnvironment to /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment (0.034162s)
+[2017.06.23-12.28.00:416][149]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.23-12.28.00:427][149]LogInit: FAudioDevice initialized.
+[2017.06.23-12.28.00:506][149]LogWorld: Game class is 'AvaGameMode'
+[2017.06.23-12.28.00:552][149]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment up for play (max tick rate 0) at 2017.06.23-13.28.00
+[2017.06.23-12.28.00:554][149]LogWorld: Bringing up level for play took: 0.047012
+[2017.06.23-12.28.00:556][149]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment 1.144
+[2017.06.23-12.28.38:158][605]LogHotReload: New module detected: UE4Editor-Ava-7774.dll
+[2017.06.23-12.28.40:843][614]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.23-12.28.40:915][614]LogClass: ItemDataVariables HotReload.
+[2017.06.23-12.28.40:915][614]LogClass: Item HotReload.
+[2017.06.23-12.28.40:917][614]LogHotReload: Re-instancing Antelope after hot-reload.
+[2017.06.23-12.28.40:995][614]LogHotReload: Re-instancing MainCharacter after hot-reload.
+[2017.06.23-12.28.41:069][614]LogHotReload: Re-instancing StatueObject after hot-reload.
+[2017.06.23-12.28.41:105][614]LogContentBrowser: Native class hierarchy updated for 'Ava' in 0.0028 seconds. Added 14 classes and 2 folders.
+[2017.06.23-12.28.41:107][614]Warning: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.23-12.28.41:156][614]LogContentBrowser: Native class hierarchy populated in 0.0101 seconds. Added 2094 classes and 380 folders.
+[2017.06.23-12.28.41:159][614]Warning: HotReload took  0.3s.
+[2017.06.23-12.28.42:203][617]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.23-12.28.42:203][617]PIE: New page: PIE session: ExternalEnvironment (23 Jun 2017 13:28:42)
+[2017.06.23-12.28.42:203][617]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment
+[2017.06.23-12.28.42:221][617]LogPlayLevel: PIE: StaticDuplicateObject took: (0.017918s)
+[2017.06.23-12.28.42:222][617]LogAIModule: Creating AISystem for world ExternalEnvironment
+[2017.06.23-12.28.42:222][617]LogPlayLevel: PIE: World Init took: (0.000704s)
+[2017.06.23-12.28.42:222][617]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/ExternalEnvironment.ExternalEnvironment to /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment (0.018886s)
+[2017.06.23-12.28.42:239][617]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.23-12.28.42:252][617]LogInit: FAudioDevice initialized.
+[2017.06.23-12.28.42:332][617]LogWorld: Game class is 'AvaGameMode'
+[2017.06.23-12.28.42:361][617]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment up for play (max tick rate 0) at 2017.06.23-13.28.42
+[2017.06.23-12.28.42:363][617]LogWorld: Bringing up level for play took: 0.030226
+[2017.06.23-12.28.42:365][617]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment 0.95
+[2017.06.23-12.31.14:405][162]LogHotReload: New module detected: UE4Editor-Ava-1347.dll
+[2017.06.23-12.31.17:100][171]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.23-12.31.17:185][171]LogClass: ItemDataVariables HotReload.
+[2017.06.23-12.31.17:185][171]LogClass: Item HotReload.
+[2017.06.23-12.31.17:186][171]LogHotReload: Re-instancing Antelope after hot-reload.
+[2017.06.23-12.31.17:263][171]LogHotReload: Re-instancing MainCharacter after hot-reload.
+[2017.06.23-12.31.17:332][171]LogHotReload: Re-instancing StatueObject after hot-reload.
+[2017.06.23-12.31.17:367][171]LogContentBrowser: Native class hierarchy updated for 'Ava' in 0.0027 seconds. Added 14 classes and 2 folders.
+[2017.06.23-12.31.17:368][171]Warning: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.23-12.31.17:417][171]LogContentBrowser: Native class hierarchy populated in 0.0099 seconds. Added 2094 classes and 380 folders.
+[2017.06.23-12.31.17:421][171]Warning: HotReload took  0.3s.
+[2017.06.23-12.31.22:465][307]LogSavePackage: Save=293.03ms
+[2017.06.23-12.31.22:465][307]LogSavePackage: Moving '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Saved/ExternalEnvironmentB6BBAC9B447832E2BB2E269B63DE8721.tmp' to '../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Maps/ExternalEnvironment.umap'
+[2017.06.23-12.31.22:474][307]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Content/Ava/Maps/ExternalEnvironment.umap
+[2017.06.23-12.31.23:067][349]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.23-12.31.23:067][349]PIE: New page: PIE session: ExternalEnvironment (23 Jun 2017 13:31:23)
+[2017.06.23-12.31.23:067][349]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment
+[2017.06.23-12.31.23:079][349]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011385s)
+[2017.06.23-12.31.23:079][349]LogAIModule: Creating AISystem for world ExternalEnvironment
+[2017.06.23-12.31.23:079][349]LogPlayLevel: PIE: World Init took: (0.000603s)
+[2017.06.23-12.31.23:080][349]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/ExternalEnvironment.ExternalEnvironment to /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment (0.012177s)
+[2017.06.23-12.31.23:089][349]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.23-12.31.23:095][349]LogInit: FAudioDevice initialized.
+[2017.06.23-12.31.23:148][349]LogWorld: Game class is 'AvaGameMode'
+[2017.06.23-12.31.23:182][349]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment up for play (max tick rate 0) at 2017.06.23-13.31.23
+[2017.06.23-12.31.23:184][349]LogWorld: Bringing up level for play took: 0.035486
+[2017.06.23-12.31.23:186][349]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment -0.238
+[2017.06.23-12.34.22:068][658]LogHotReload: New module detected: UE4Editor-Ava-4867.dll
+[2017.06.23-12.34.24:752][667]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.23-12.34.24:839][667]LogClass: ItemDataVariables HotReload.
+[2017.06.23-12.34.24:839][667]LogClass: Item HotReload.
+[2017.06.23-12.34.24:840][667]LogHotReload: Re-instancing Antelope after hot-reload.
+[2017.06.23-12.34.24:913][667]LogHotReload: Re-instancing MainCharacter after hot-reload.
+[2017.06.23-12.34.24:982][667]LogHotReload: Re-instancing StatueObject after hot-reload.
+[2017.06.23-12.34.25:017][667]LogContentBrowser: Native class hierarchy updated for 'Ava' in 0.0026 seconds. Added 14 classes and 2 folders.
+[2017.06.23-12.34.25:018][667]Warning: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.23-12.34.25:061][667]LogContentBrowser: Native class hierarchy populated in 0.0110 seconds. Added 2094 classes and 380 folders.
+[2017.06.23-12.34.25:064][667]Warning: HotReload took  0.3s.
+[2017.06.23-12.34.28:115][676]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.23-12.34.28:116][676]PIE: New page: PIE session: ExternalEnvironment (23 Jun 2017 13:34:28)
+[2017.06.23-12.34.28:116][676]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment
+[2017.06.23-12.34.28:143][676]LogPlayLevel: PIE: StaticDuplicateObject took: (0.026956s)
+[2017.06.23-12.34.28:144][676]LogAIModule: Creating AISystem for world ExternalEnvironment
+[2017.06.23-12.34.28:144][676]LogPlayLevel: PIE: World Init took: (0.001394s)
+[2017.06.23-12.34.28:145][676]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/ExternalEnvironment.ExternalEnvironment to /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment (0.028774s)
+[2017.06.23-12.34.28:162][676]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.23-12.34.28:172][676]LogInit: FAudioDevice initialized.
+[2017.06.23-12.34.28:230][676]LogWorld: Game class is 'AvaGameMode'
+[2017.06.23-12.34.28:255][676]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment up for play (max tick rate 0) at 2017.06.23-13.34.28
+[2017.06.23-12.34.28:257][676]LogWorld: Bringing up level for play took: 0.026154
+[2017.06.23-12.34.28:258][676]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment 0.823
+[2017.06.23-12.36.42:004][154]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.23-12.36.42:004][154]PIE: New page: PIE session: ExternalEnvironment (23 Jun 2017 13:36:42)
+[2017.06.23-12.36.42:005][154]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment
+[2017.06.23-12.36.42:017][154]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012296s)
+[2017.06.23-12.36.42:017][154]LogAIModule: Creating AISystem for world ExternalEnvironment
+[2017.06.23-12.36.42:018][154]LogPlayLevel: PIE: World Init took: (0.000641s)
+[2017.06.23-12.36.42:018][154]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/ExternalEnvironment.ExternalEnvironment to /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment (0.013136s)
+[2017.06.23-12.36.42:029][154]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.23-12.36.42:036][154]LogInit: FAudioDevice initialized.
+[2017.06.23-12.36.42:091][154]LogWorld: Game class is 'AvaGameMode'
+[2017.06.23-12.36.42:117][154]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment up for play (max tick rate 0) at 2017.06.23-13.36.42
+[2017.06.23-12.36.42:119][154]LogWorld: Bringing up level for play took: 0.027386
+[2017.06.23-12.36.42:120][154]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment 0.676
+[2017.06.23-12.42.21:977][520]LogEditorViewport: Clicking Background
+[2017.06.23-12.42.24:698][767]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.23-12.42.24:698][767]PIE: New page: PIE session: ExternalEnvironment (23 Jun 2017 13:42:24)
+[2017.06.23-12.42.24:698][767]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment
+[2017.06.23-12.42.24:711][767]LogPlayLevel: PIE: StaticDuplicateObject took: (0.013123s)
+[2017.06.23-12.42.24:712][767]LogAIModule: Creating AISystem for world ExternalEnvironment
+[2017.06.23-12.42.24:712][767]LogPlayLevel: PIE: World Init took: (0.000745s)
+[2017.06.23-12.42.24:712][767]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/ExternalEnvironment.ExternalEnvironment to /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment (0.014172s)
+[2017.06.23-12.42.24:725][767]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.23-12.42.24:733][767]LogInit: FAudioDevice initialized.
+[2017.06.23-12.42.24:785][767]LogWorld: Game class is 'AvaGameMode'
+[2017.06.23-12.42.24:813][767]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment up for play (max tick rate 0) at 2017.06.23-13.42.24
+[2017.06.23-12.42.24:815][767]LogWorld: Bringing up level for play took: 0.028533
+[2017.06.23-12.42.24:816][767]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment -0.648
+[2017.06.23-12.42.45:210][ 46]LogHotReload: New module detected: UE4Editor-Ava-8420.dll
+[2017.06.23-12.42.47:901][ 55]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.23-12.42.48:021][ 55]LogClass: ItemDataVariables HotReload.
+[2017.06.23-12.42.48:021][ 55]LogClass: Item HotReload.
+[2017.06.23-12.42.48:023][ 55]LogHotReload: Re-instancing Antelope after hot-reload.
+[2017.06.23-12.42.48:099][ 55]LogHotReload: Re-instancing MainCharacter after hot-reload.
+[2017.06.23-12.42.48:174][ 55]LogHotReload: Re-instancing StatueObject after hot-reload.
+[2017.06.23-12.42.48:214][ 55]LogContentBrowser: Native class hierarchy updated for 'Ava' in 0.0026 seconds. Added 14 classes and 2 folders.
+[2017.06.23-12.42.48:215][ 55]Warning: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.23-12.42.48:266][ 55]LogContentBrowser: Native class hierarchy populated in 0.0096 seconds. Added 2094 classes and 380 folders.
+[2017.06.23-12.42.48:269][ 55]Warning: HotReload took  0.4s.
+[2017.06.23-12.42.50:478][ 65]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.23-12.42.50:478][ 65]PIE: New page: PIE session: ExternalEnvironment (23 Jun 2017 13:42:50)
+[2017.06.23-12.42.50:478][ 65]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment
+[2017.06.23-12.42.50:503][ 65]LogPlayLevel: PIE: StaticDuplicateObject took: (0.024550s)
+[2017.06.23-12.42.50:504][ 65]LogAIModule: Creating AISystem for world ExternalEnvironment
+[2017.06.23-12.42.50:504][ 65]LogPlayLevel: PIE: World Init took: (0.000559s)
+[2017.06.23-12.42.50:504][ 65]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/ExternalEnvironment.ExternalEnvironment to /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment (0.025336s)
+[2017.06.23-12.42.50:521][ 65]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.23-12.42.50:528][ 65]LogInit: FAudioDevice initialized.
+[2017.06.23-12.42.50:589][ 65]LogWorld: Game class is 'AvaGameMode'
+[2017.06.23-12.42.50:632][ 65]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment up for play (max tick rate 0) at 2017.06.23-13.42.50
+[2017.06.23-12.42.50:634][ 65]LogWorld: Bringing up level for play took: 0.043885
+[2017.06.23-12.42.50:636][ 65]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment -0.831
+[2017.06.23-12.46.17:494][  7]LogHotReload: New module detected: UE4Editor-Ava-414.dll
+[2017.06.23-12.46.20:176][ 16]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.23-12.46.20:299][ 16]LogClass: ItemDataVariables HotReload.
+[2017.06.23-12.46.20:299][ 16]LogClass: Item HotReload.
+[2017.06.23-12.46.20:302][ 16]LogHotReload: Re-instancing Antelope after hot-reload.
+[2017.06.23-12.46.20:398][ 16]LogHotReload: Re-instancing MainCharacter after hot-reload.
+[2017.06.23-12.46.20:465][ 16]LogHotReload: Re-instancing StatueObject after hot-reload.
+[2017.06.23-12.46.20:499][ 16]LogContentBrowser: Native class hierarchy updated for 'Ava' in 0.0027 seconds. Added 14 classes and 2 folders.
+[2017.06.23-12.46.20:500][ 16]Warning: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.23-12.46.20:555][ 16]LogContentBrowser: Native class hierarchy populated in 0.0105 seconds. Added 2094 classes and 380 folders.
+[2017.06.23-12.46.20:558][ 16]Warning: HotReload took  0.4s.
+[2017.06.23-12.49.16:574][544]LogHotReload: New module detected: UE4Editor-Ava-1164.dll
+[2017.06.23-12.49.19:256][553]LogHotReload: Starting Hot-Reload from IDE
+[2017.06.23-12.49.19:349][553]LogClass: ItemDataVariables HotReload.
+[2017.06.23-12.49.19:349][553]LogClass: Item HotReload.
+[2017.06.23-12.49.19:350][553]LogHotReload: Re-instancing Antelope after hot-reload.
+[2017.06.23-12.49.19:425][553]LogHotReload: Re-instancing MainCharacter after hot-reload.
+[2017.06.23-12.49.19:498][553]LogHotReload: Re-instancing StatueObject after hot-reload.
+[2017.06.23-12.49.19:536][553]LogContentBrowser: Native class hierarchy updated for 'Ava' in 0.0034 seconds. Added 14 classes and 2 folders.
+[2017.06.23-12.49.19:538][553]Warning: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.06.23-12.49.19:586][553]LogContentBrowser: Native class hierarchy populated in 0.0103 seconds. Added 2094 classes and 380 folders.
+[2017.06.23-12.49.19:589][553]Warning: HotReload took  0.3s.
+[2017.06.23-12.49.20:764][560]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.23-12.49.20:764][560]PIE: New page: PIE session: ExternalEnvironment (23 Jun 2017 13:49:20)
+[2017.06.23-12.49.20:764][560]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment
+[2017.06.23-12.49.20:777][560]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012773s)
+[2017.06.23-12.49.20:777][560]LogAIModule: Creating AISystem for world ExternalEnvironment
+[2017.06.23-12.49.20:777][560]LogPlayLevel: PIE: World Init took: (0.000716s)
+[2017.06.23-12.49.20:778][560]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/ExternalEnvironment.ExternalEnvironment to /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment (0.013685s)
+[2017.06.23-12.49.20:794][560]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.23-12.49.20:808][560]LogInit: FAudioDevice initialized.
+[2017.06.23-12.49.20:879][560]LogWorld: Game class is 'AvaGameMode'
+[2017.06.23-12.49.20:918][560]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment.ExternalEnvironment up for play (max tick rate 0) at 2017.06.23-13.49.20
+[2017.06.23-12.49.20:920][560]LogWorld: Bringing up level for play took: 0.039535
+[2017.06.23-12.49.20:922][560]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_ExternalEnvironment -0.569
+[2017.06.23-12.49.33:775][921]Cmd: QUIT_EDITOR
+[2017.06.23-12.49.33:848][921]LogExit: Preparing to exit.
+[2017.06.23-12.49.34:142][921]LogHoudiniEngine: HAPI Synchronous Deletion of  Started. HoudiniAsset = 0x0, 
+[2017.06.23-12.49.34:151][921]LogExit: Editor shut down
+[2017.06.23-12.49.34:152][921]LogExit: Transaction tracking system shut down
+[2017.06.23-12.49.34:258][921]LogObj: Freed 0b from 0 cluster array pools.
+[2017.06.23-12.49.34:258][921]LogExit: Object subsystem successfully closed.
+[2017.06.23-12.49.34:275][921]LogD3D11RHI: Shutdown
+[2017.06.23-12.49.34:275][921]LogD3D11RHI: CleanupD3DDevice
+[2017.06.23-12.49.34:323][921]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.06.23-12.49.34:341][921]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (218)
+[2017.06.23-12.49.34:341][921]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (217)
+[2017.06.23-12.49.34:341][921]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (216)
+[2017.06.23-12.49.34:341][921]LogModuleManager: Shutting down and abandoning module CrashTracker (215)
+[2017.06.23-12.49.34:341][921]LogModuleManager: Shutting down and abandoning module SceneOutliner (214)
+[2017.06.23-12.49.34:341][921]LogModuleManager: Shutting down and abandoning module WidgetCarousel (213)
+[2017.06.23-12.49.34:341][921]LogModuleManager: Shutting down and abandoning module AddContentDialog (212)
+[2017.06.23-12.49.34:342][921]LogModuleManager: Shutting down and abandoning module GameplayTags (211)
+[2017.06.23-12.49.34:342][921]LogModuleManager: Shutting down and abandoning module EditorWidgets (210)
+[2017.06.23-12.49.34:342][921]LogModuleManager: Shutting down and abandoning module CollectionManager (209)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module StatsViewer (208)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module FoliageEdit (207)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module LandscapeEditor (206)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (205)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module ActorPickerMode (204)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module GeometryMode (203)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module TextureAlignMode (202)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module BspMode (201)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module HardwareSurvey (200)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (199)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module SequenceRecorder (198)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module AutomationWorker (197)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module HoudiniEngineEditor (196)
+[2017.06.23-12.49.34:343][921]LogHoudiniEngineEditor: Shutting down the Houdini Engine Editor module.
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (195)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module PlacementMode (194)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (193)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module CharacterAI (192)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module SmartSnapping (191)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module SessionServices (190)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module ViewportSnapping (189)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module LogVisualizer (188)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (187)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module IntroTutorials (186)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (185)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (184)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (183)
+[2017.06.23-12.49.34:343][921]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (182)
+[2017.06.23-12.49.35:227][921]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (181)
+[2017.06.23-12.49.35:227][921]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (180)
+[2017.06.23-12.49.35:227][921]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (179)
+[2017.06.23-12.49.35:227][921]LogModuleManager: Shutting down and abandoning module MergeActors (178)
+[2017.06.23-12.49.35:227][921]LogModuleManager: Shutting down and abandoning module SizeMap (177)
+[2017.06.23-12.49.35:227][921]LogModuleManager: Shutting down and abandoning module TreeMap (176)
+[2017.06.23-12.49.35:227][921]LogModuleManager: Shutting down and abandoning module ReferenceViewer (175)
+[2017.06.23-12.49.35:227][921]LogModuleManager: Shutting down and abandoning module LocalizationService (174)
+[2017.06.23-12.49.35:227][921]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (173)
+[2017.06.23-12.49.35:227][921]LogModuleManager: Shutting down and abandoning module HardwareTargeting (172)
+[2017.06.23-12.49.35:227][921]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (171)
+[2017.06.23-12.49.35:227][921]LogModuleManager: Shutting down and abandoning module UndoHistory (170)
+[2017.06.23-12.49.35:227][921]LogModuleManager: Shutting down and abandoning module UserFeedback (169)
+[2017.06.23-12.49.35:227][921]LogModuleManager: Shutting down and abandoning module XmlParser (168)
+[2017.06.23-12.49.35:227][921]LogModuleManager: Shutting down and abandoning module Blutility (167)
+[2017.06.23-12.49.35:227][921]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (166)
+[2017.06.23-12.49.35:227][921]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (165)
+[2017.06.23-12.49.35:227][921]LogModuleManager: Shutting down and abandoning module InputBindingEditor (164)
+[2017.06.23-12.49.35:228][921]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (163)
+[2017.06.23-12.49.35:228][921]LogModuleManager: Shutting down and abandoning module SettingsEditor (162)
+[2017.06.23-12.49.35:228][921]LogModuleManager: Shutting down and abandoning module ProjectLauncher (161)
+[2017.06.23-12.49.35:228][921]LogModuleManager: Shutting down and abandoning module SessionFrontend (160)
+[2017.06.23-12.49.35:228][921]LogModuleManager: Shutting down and abandoning module ProfilerClient (159)
+[2017.06.23-12.49.35:228][921]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (158)
+[2017.06.23-12.49.35:228][921]LogModuleManager: Shutting down and abandoning module DeviceManager (157)
+[2017.06.23-12.49.35:278][921]LogModuleManager: Shutting down and abandoning module AutomationController (156)
+[2017.06.23-12.49.35:278][921]LogModuleManager: Shutting down and abandoning module AutomationWindow (155)
+[2017.06.23-12.49.35:278][921]LogModuleManager: Shutting down and abandoning module Layers (154)
+[2017.06.23-12.49.35:278][921]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (153)
+[2017.06.23-12.49.35:278][921]LogModuleManager: Shutting down and abandoning module DetailCustomizations (152)
+[2017.06.23-12.49.35:278][921]LogModuleManager: Shutting down and abandoning module PackagesDialog (151)
+[2017.06.23-12.49.35:278][921]LogModuleManager: Shutting down and abandoning module Persona (150)
+[2017.06.23-12.49.35:278][921]LogModuleManager: Shutting down and abandoning module Kismet (149)
+[2017.06.23-12.49.35:278][921]LogModuleManager: Shutting down and abandoning module GraphEditor (148)
+[2017.06.23-12.49.35:278][921]LogModuleManager: Shutting down and abandoning module ClassViewer (147)
+[2017.06.23-12.49.35:278][921]LogModuleManager: Shutting down and abandoning module Toolbox (146)
+[2017.06.23-12.49.35:278][921]LogModuleManager: Shutting down and abandoning module ModuleUI (145)
+[2017.06.23-12.49.35:278][921]LogModuleManager: Shutting down and abandoning module MovieSceneTools (144)
+[2017.06.23-12.49.35:278][921]LogModuleManager: Shutting down and abandoning module OutputLog (143)
+[2017.06.23-12.49.35:279][921]LogModuleManager: Shutting down and abandoning module GammaUI (142)
+[2017.06.23-12.49.35:279][921]LogModuleManager: Shutting down and abandoning module Documentation (141)
+[2017.06.23-12.49.35:279][921]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (140)
+[2017.06.23-12.49.35:279][921]LogModuleManager: Shutting down and abandoning module AnalyticsET (139)
+[2017.06.23-12.49.35:279][921]LogModuleManager: Shutting down and abandoning module Analytics (138)
+[2017.06.23-12.49.35:279][921]LogModuleManager: Shutting down and abandoning module PortalServices (137)
+[2017.06.23-12.49.35:279][921]LogModuleManager: Shutting down and abandoning module PortalRpc (136)
+[2017.06.23-12.49.35:279][921]LogModuleManager: Shutting down and abandoning module MessagingRpc (135)
+[2017.06.23-12.49.35:279][921]LogModuleManager: Shutting down and abandoning module GameplayDebugger (134)
+[2017.06.23-12.49.35:279][921]LogModuleManager: Shutting down and abandoning module AITestSuite (133)
+[2017.06.23-12.49.35:279][921]LogModuleManager: Shutting down and abandoning module AIModule (132)
+[2017.06.23-12.49.35:279][921]LogModuleManager: Shutting down and abandoning module ProfilerService (131)
+[2017.06.23-12.49.35:297][921]LogModuleManager: Shutting down and abandoning module TaskGraph (130)
+[2017.06.23-12.49.35:298][921]LogModuleManager: Shutting down and abandoning module SlateRemote (129)
+[2017.06.23-12.49.35:298][921]LogModuleManager: Shutting down and abandoning module SteamVRController (128)
+[2017.06.23-12.49.35:298][921]LogModuleManager: Shutting down and abandoning module SteamVR (127)
+[2017.06.23-12.49.35:298][921]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (126)
+[2017.06.23-12.49.35:298][921]LogModuleManager: Shutting down and abandoning module OculusLibrary (125)
+[2017.06.23-12.49.35:298][921]LogModuleManager: Shutting down and abandoning module OculusInput (124)
+[2017.06.23-12.49.35:298][921]LogModuleManager: Shutting down and abandoning module HoudiniEngineRuntime (123)
+[2017.06.23-12.49.35:298][921]LogHoudiniEngine: Shutting down the Houdini Engine module.
+[2017.06.23-12.49.35:298][921]LogUObjectArray:Warning: Invalid object index -572662307
+[2017.06.23-12.49.35:298][921]LogUObjectArray:Warning: Invalid object index -572662307
+[2017.06.23-12.49.35:298][921]LogUObjectArray:Warning: Invalid object index -572662307
+[2017.06.23-12.49.35:298][921]LogUObjectArray:Warning: Invalid object index -572662307
+[2017.06.23-12.49.35:302][921]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (122)
+[2017.06.23-12.49.35:302][921]LogModuleManager: Shutting down and abandoning module CableComponent (121)
+[2017.06.23-12.49.35:302][921]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (120)
+[2017.06.23-12.49.35:302][921]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (119)
+[2017.06.23-12.49.35:302][921]LogModuleManager: Shutting down and abandoning module HTML5Networking (118)
+[2017.06.23-12.49.35:302][921]LogModuleManager: Shutting down and abandoning module SuperSearch (117)
+[2017.06.23-12.49.35:302][921]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (116)
+[2017.06.23-12.49.35:302][921]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (115)
+[2017.06.23-12.49.35:302][921]LogModuleManager: Shutting down and abandoning module PluginBrowser (114)
+[2017.06.23-12.49.35:302][921]LogModuleManager: Shutting down and abandoning module EpicSurvey (113)
+[2017.06.23-12.49.35:302][921]LogModuleManager: Shutting down and abandoning module DesktopPlatform (112)
+[2017.06.23-12.49.35:302][921]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (111)
+[2017.06.23-12.49.35:302][921]LogModuleManager: Shutting down and abandoning module UObjectPlugin (110)
+[2017.06.23-12.49.35:302][921]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (109)
+[2017.06.23-12.49.35:302][921]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (108)
+[2017.06.23-12.49.35:302][921]LogModuleManager: Shutting down and abandoning module SourceControl (107)
+[2017.06.23-12.49.35:302][921]LogModuleManager: Shutting down and abandoning module GitSourceControl (106)
+[2017.06.23-12.49.35:302][921]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (105)
+[2017.06.23-12.49.35:303][921]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (104)
+[2017.06.23-12.49.35:303][921]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (103)
+[2017.06.23-12.49.35:303][921]LogModuleManager: Shutting down and abandoning module MeshPaint (102)
+[2017.06.23-12.49.35:303][921]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (101)
+[2017.06.23-12.49.35:303][921]LogModuleManager: Shutting down and abandoning module HotReload (100)
+[2017.06.23-12.49.35:304][921]LogModuleManager: Shutting down and abandoning module MainFrame (99)
+[2017.06.23-12.49.35:304][921]LogModuleManager: Shutting down and abandoning module LevelEditor (98)
+[2017.06.23-12.49.35:306][921]LogModuleManager: Shutting down and abandoning module ContentBrowser (97)
+[2017.06.23-12.49.35:308][921]LogModuleManager: Shutting down and abandoning module Paper2DEditor (96)
+[2017.06.23-12.49.35:308][921]LogModuleManager: Shutting down and abandoning module Ava (95)
+[2017.06.23-12.49.35:308][921]LogModuleManager: Shutting down and abandoning module UdpMessaging (94)
+[2017.06.23-12.49.35:408][921]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
+[2017.06.23-12.49.35:408][921]LogModuleManager: Shutting down and abandoning module Paper2D (92)
+[2017.06.23-12.49.35:408][921]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
+[2017.06.23-12.49.35:408][921]LogModuleManager: Shutting down and abandoning module Media (90)
+[2017.06.23-12.49.35:408][921]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
+[2017.06.23-12.49.35:409][921]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
+[2017.06.23-12.49.35:409][921]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
+[2017.06.23-12.49.35:409][921]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
+[2017.06.23-12.49.35:409][921]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
+[2017.06.23-12.49.35:409][921]LogModuleManager: Shutting down and abandoning module VREditor (84)
+[2017.06.23-12.49.35:409][921]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
+[2017.06.23-12.49.35:409][921]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
+[2017.06.23-12.49.35:409][921]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
+[2017.06.23-12.49.35:409][921]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
+[2017.06.23-12.49.35:409][921]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
+[2017.06.23-12.49.35:409][921]LogModuleManager: Shutting down and abandoning module Sequencer (78)
+[2017.06.23-12.49.35:409][921]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2017.06.23-12.49.35:410][921]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2017.06.23-12.49.35:410][921]LogModuleManager: Shutting down and abandoning module AssetTools (75)
+[2017.06.23-12.49.35:410][921]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
+[2017.06.23-12.49.35:410][921]LogModuleManager: Shutting down and abandoning module UMG (73)
+[2017.06.23-12.49.35:410][921]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
+[2017.06.23-12.49.35:410][921]LogModuleManager: Shutting down and abandoning module Slate (71)
+[2017.06.23-12.49.35:410][921]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
+[2017.06.23-12.49.35:417][921]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
+[2017.06.23-12.49.35:417][921]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
+[2017.06.23-12.49.35:417][921]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
+[2017.06.23-12.49.35:417][921]LogModuleManager: Shutting down and abandoning module Networking (65)
+[2017.06.23-12.49.35:417][921]LogModuleManager: Shutting down and abandoning module Core (64)
+[2017.06.23-12.49.35:417][921]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
+[2017.06.23-12.49.35:419][921]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
+[2017.06.23-12.49.35:586][921]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2017.06.23-12.49.35:586][921]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2017.06.23-12.49.35:586][921]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2017.06.23-12.49.35:586][921]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
+[2017.06.23-12.49.35:618][921]LogDerivedDataCache: Shutdown
+[2017.06.23-12.49.35:618][921]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
+[2017.06.23-12.49.35:618][921]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2017.06.23-12.49.35:618][921]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2017.06.23-12.49.35:618][921]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2017.06.23-12.49.35:618][921]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2017.06.23-12.49.35:618][921]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2017.06.23-12.49.35:618][921]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2017.06.23-12.49.35:618][921]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2017.06.23-12.49.35:618][921]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2017.06.23-12.49.35:618][921]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2017.06.23-12.49.35:618][921]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2017.06.23-12.49.35:618][921]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2017.06.23-12.49.35:618][921]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2017.06.23-12.49.35:618][921]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2017.06.23-12.49.35:618][921]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2017.06.23-12.49.35:618][921]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2017.06.23-12.49.35:618][921]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2017.06.23-12.49.35:618][921]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2017.06.23-12.49.35:618][921]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2017.06.23-12.49.35:618][921]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2017.06.23-12.49.35:618][921]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2017.06.23-12.49.35:619][921]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2017.06.23-12.49.35:619][921]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2017.06.23-12.49.35:619][921]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2017.06.23-12.49.35:619][921]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2017.06.23-12.49.35:619][921]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2017.06.23-12.49.35:619][921]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2017.06.23-12.49.35:619][921]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2017.06.23-12.49.35:619][921]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2017.06.23-12.49.35:619][921]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2017.06.23-12.49.35:619][921]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2017.06.23-12.49.35:619][921]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2017.06.23-12.49.35:619][921]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2017.06.23-12.49.35:619][921]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2017.06.23-12.49.35:619][921]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2017.06.23-12.49.35:619][921]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2017.06.23-12.49.35:619][921]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2017.06.23-12.49.35:619][921]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2017.06.23-12.49.35:619][921]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2017.06.23-12.49.39:637][921]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2017.06.23-12.49.39:637][921]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2017.06.23-12.49.39:637][921]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2017.06.23-12.49.39:637][921]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2017.06.23-12.49.39:637][921]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2017.06.23-12.49.39:637][921]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2017.06.23-12.49.39:637][921]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2017.06.23-12.49.39:639][921]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2017.06.23-12.49.39:639][921]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2017.06.23-12.49.39:639][921]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2017.06.23-12.49.39:639][921]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2017.06.23-12.49.39:639][921]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2017.06.23-12.49.39:639][921]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2017.06.23-12.49.39:639][921]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2017.06.23-12.49.39:639][921]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2017.06.23-12.49.39:639][921]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2017.06.23-12.49.39:639][921]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2017.06.23-12.49.39:643][921]LogExit: Exiting.
+[2017.06.23-12.49.39:645][921]Log file closed, 06/23/17 13:49:39

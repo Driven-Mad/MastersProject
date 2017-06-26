@@ -11,37 +11,42 @@ EBTNodeResult::Type UBTTaskFindNextRoutePoint::ExecuteTask(UBehaviorTreeComponen
 	AAntelopeAIController* MyController = Cast<AAntelopeAIController>(OwnerComp.GetAIOwner());
 	if (MyController)
 	{
-		ARoutePoint* CurrentRoutePoint = MyController->GetRoutePoint();
+		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Emerald, FString::Printf(TEXT("I'm in the if statement controller")));
+		AActor* CurrentRoutePoint = MyController->GetRoutePoint();
 		AActor* NewRoutepoint = nullptr;
 		TArray<AActor*> AllRoutePoints;
 		UGameplayStatics::GetAllActorsOfClass(MyController, ARoutePoint::StaticClass(), AllRoutePoints);
-		float CurrentRouteNumber = CurrentRoutePoint->RouteNumber;
-		CurrentRouteNumber++;
-		int32 RouteZeroIndex;
-		FVector MyLocation = MyController->GetMyPosition();
-		/* Find a new waypoint randomly by index (this can include the current waypoint) */
-		/* For more complex or human AI you could add some weights based on distance and other environmental conditions here */
-		for (int32 iRouteIndex = 0; iRouteIndex < AllRoutePoints.Num(); iRouteIndex++)
+		if (CurrentRoutePoint)
 		{
-			ARoutePoint * tRoutePoint = Cast <ARoutePoint>(AllRoutePoints[iRouteIndex]);
-			if (tRoutePoint)
-			{
-				if (tRoutePoint->RouteNumber == 0)
-				{
-					RouteZeroIndex = iRouteIndex;
-				}
+			GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Emerald, FString::Printf(TEXT("I'm in the if statement nullptr")));
+			ARoutePoint *temp = Cast<ARoutePoint>(CurrentRoutePoint);
+			int CurrentRouteNumber = temp->RouteNumber;
+			CurrentRouteNumber = CurrentRouteNumber + 1;
+			int32 RouteZeroIndex = 0;
 
-				if (tRoutePoint->RouteNumber == CurrentRouteNumber)
+			for (int32 iRouteIndex = 0; iRouteIndex < AllRoutePoints.Num(); iRouteIndex++)
+			{
+				ARoutePoint *tRoutePoint = Cast <ARoutePoint>(AllRoutePoints[iRouteIndex]);
+				if (tRoutePoint)
 				{
-					NewRoutepoint = tRoutePoint;
-					break;
+					GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Emerald, FString::Printf(TEXT("I'm in the if statement ")));
+					if (tRoutePoint->RouteNumber == 0)
+					{
+						RouteZeroIndex = iRouteIndex;
+					}
+
+					if (tRoutePoint->RouteNumber == CurrentRouteNumber)
+					{
+						NewRoutepoint = AllRoutePoints[iRouteIndex];
+					}
+
 				}
-				else
-				{
-					NewRoutepoint = AllRoutePoints[RouteZeroIndex];
-				}
-				
 			}
+
+		}
+		else
+		{
+			NewRoutepoint = AllRoutePoints[0];
 		}
 
 		/* Assign the new waypoint to the Blackboard */

@@ -64,7 +64,9 @@ ARoutePoint * AAntelopeAIController::GetRoutePoint()
 {
 	if (myBlackBoardComponent)
 	{
+		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Emerald, FString::Printf(TEXT("Get ROUTE function")));
 		return Cast<ARoutePoint>(myBlackBoardComponent->GetValueAsObject(currentRouteWayPointName));
+		
 	}
 	return nullptr;
 }
