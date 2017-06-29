@@ -14,8 +14,8 @@ AAntelopeAIController::AAntelopeAIController()
 
 
 	targetLocationName = "targetLocation";
-	currentEscapeWayPointName = "currentEscapeWayPoint";
-	currentRouteWayPointName = "currentRouteWayPoint";
+	currentEscapeWayPointName = "currentEscapePoint";
+	currentRouteWayPointName = "currentRoutePoint";
 	myPositionName = "myPosition";
 	playerPositionName = "playerPosition";
 	playerName = "player";

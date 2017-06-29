@@ -238,7 +238,7 @@ void AMainCharacter::LookUp(float value)
 		AddControllerPitchInput(value*lookRate*deltaTime);
 		FRotator clampedController = FRotator(FMath::ClampAngle(GetControlRotation().Pitch, -15.f, 15.f), GetControlRotation().Yaw, GetControlRotation().Roll);
 		GetController()->SetControlRotation(clampedController);
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("pitch: %f"), GetControlRotation().Pitch));
+		//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("pitch: %f"), GetControlRotation().Pitch));
 	}
 	
 	

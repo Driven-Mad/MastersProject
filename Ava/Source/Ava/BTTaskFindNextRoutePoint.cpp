@@ -11,14 +11,15 @@ EBTNodeResult::Type UBTTaskFindNextRoutePoint::ExecuteTask(UBehaviorTreeComponen
 	AAntelopeAIController* MyController = Cast<AAntelopeAIController>(OwnerComp.GetAIOwner());
 	if (MyController)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Emerald, FString::Printf(TEXT("I'm in the if statement controller")));
-		AActor* CurrentRoutePoint = MyController->GetRoutePoint();
+		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, FString::Printf(TEXT("I'm in the if statement controller")));
+		ARoutePoint* CurrentRoutePoint = MyController->GetRoutePoint();
 		AActor* NewRoutepoint = nullptr;
 		TArray<AActor*> AllRoutePoints;
 		UGameplayStatics::GetAllActorsOfClass(MyController, ARoutePoint::StaticClass(), AllRoutePoints);
-		if (CurrentRoutePoint)
+		
+		if (CurrentRoutePoint != nullptr)
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Emerald, FString::Printf(TEXT("I'm in the if statement nullptr")));
+			GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Blue, FString::Printf(TEXT("I'm in the if statement nullptr")));
 			ARoutePoint *temp = Cast<ARoutePoint>(CurrentRoutePoint);
 			int CurrentRouteNumber = temp->RouteNumber;
 			CurrentRouteNumber = CurrentRouteNumber + 1;
@@ -47,6 +48,7 @@ EBTNodeResult::Type UBTTaskFindNextRoutePoint::ExecuteTask(UBehaviorTreeComponen
 		else
 		{
 			NewRoutepoint = AllRoutePoints[0];
+			GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Black, FString::Printf(TEXT("I'm in the default else statement ")));
 		}
 
 		/* Assign the new waypoint to the Blackboard */
