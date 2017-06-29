@@ -51,7 +51,7 @@ AMainCharacter::AMainCharacter()
 	overlappingSphere = CreateDefaultSubobject<USphereComponent>(TEXT("overlappingSphere"));
 	overlappingSphere->SetSphereRadius(100.f);
 	overlappingSphere->AttachTo(RootComponent);
-
+	
 
 	bIsPraying = false;
 	bIsInInventory = false;
@@ -239,12 +239,7 @@ void AMainCharacter::LookUp(float value)
 		FRotator clampedController = FRotator(FMath::ClampAngle(GetControlRotation().Pitch, -15.f, 15.f), GetControlRotation().Yaw, GetControlRotation().Roll);
 		GetController()->SetControlRotation(clampedController);
 		//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("pitch: %f"), GetControlRotation().Pitch));
-	}
-	
-	
-	
-
-	
+	}	
 }
 
 void AMainCharacter::Interact()
@@ -311,11 +306,12 @@ void AMainCharacter::PushPull()
 	attachedPushPullItem = Cast<APushPullItem>(results.GetActor());
 	if (attachedPushPullItem)
 	{
+		float distance = (GetActorLocation() - attachedPushPullItem->GetActorLocation()).Size();
 		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("ITS A PUSHPULL OBJECT")));
+
 		FAttachmentTransformRules attachRules = FAttachmentTransformRules(EAttachmentRule::KeepWorld,false);
 		attachedPushPullItem->AttachToActor(this, attachRules);
-		attachedPushPullItem->SetActorEnableCollision(false);
-		
+		MoveIgnoreActorAdd(attachedPushPullItem);		
 	}
 	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Cyan, "I'M PUSHING/PULLING");
 	//FVector temp = GetActorLocation() + GetActorForwardVector();
@@ -331,7 +327,7 @@ void AMainCharacter::StopPushPull()
 		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("ITS A PUSHPULL OBJECT")));
 		FDetachmentTransformRules detachRules = FDetachmentTransformRules(EDetachmentRule::KeepWorld, false);
 		attachedPushPullItem->DetachFromActor(detachRules);
-		attachedPushPullItem->SetActorEnableCollision(true);
+		MoveIgnoreActorRemove(attachedPushPullItem);
 
 	}
 	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Silver, "I'M NOT PUSHING/PULLING");

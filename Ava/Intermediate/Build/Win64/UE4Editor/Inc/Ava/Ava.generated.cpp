@@ -73,7 +73,7 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	void APushPullItem::StaticRegisterNativesAPushPullItem()
 	{
 	}
-	IMPLEMENT_CLASS(APushPullItem, 2210308149);
+	IMPLEMENT_CLASS(APushPullItem, 1291096950);
 	void AMainCharacter::StaticRegisterNativesAMainCharacter()
 	{
 	}
@@ -105,6 +105,7 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	AIMODULE_API class UClass* Z_Construct_UClass_UBTService_BlackboardBase();
 	AIMODULE_API class UClass* Z_Construct_UClass_UBTTask_BlackboardBase();
 	ENGINE_API class UClass* Z_Construct_UClass_AActor();
+	ENGINE_API class UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
@@ -594,6 +595,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_boxCollider = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("boxCollider"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(boxCollider, APushPullItem), 0x001000000008001d, Z_Construct_UClass_UBoxComponent_NoRegister());
 				UProperty* NewProp_designatedMesh = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("designatedMesh"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(designatedMesh, APushPullItem), 0x001000000008001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->StaticLink();
@@ -602,6 +604,10 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("PushPullItem.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
 				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_boxCollider, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_boxCollider, TEXT("Category"), TEXT("pushableItemVariables"));
+				MetaData->SetValue(NewProp_boxCollider, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_boxCollider, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
 				MetaData->SetValue(NewProp_designatedMesh, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_designatedMesh, TEXT("Category"), TEXT("pushableItemVariables"));
 				MetaData->SetValue(NewProp_designatedMesh, TEXT("EditInline"), TEXT("true"));
@@ -909,7 +915,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Ava")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x3AFE84E4;
+			Guid.A = 0x02682FB9;
 			Guid.B = 0x68F0F256;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;

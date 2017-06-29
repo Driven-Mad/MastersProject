@@ -224,7 +224,6 @@ public:
 		float characterArmHeight;
 
 
-
 	FVector ForwardVector;
 	FVector BackVector;
 	FVector RightVector;

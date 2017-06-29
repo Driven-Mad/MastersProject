@@ -13,7 +13,17 @@ APushPullItem::APushPullItem()
 
 	designatedMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PickupMesh"));
 	designatedMesh->SetSimulatePhysics(false);
+	designatedMesh->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+
 	RootComponent = designatedMesh;
+
+	boxCollider = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxCollision"));
+	boxCollider->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	FAttachmentTransformRules rules = FAttachmentTransformRules(EAttachmentRule::KeepRelative,true);
+	boxCollider->AttachToComponent(RootComponent, rules);
+	boxCollider->SetCollisionResponseToAllChannels(ECR_Block);
+	
+	
 }
 
 // Called when the game starts or when spawned
