@@ -34,7 +34,7 @@ AMainCharacter::AMainCharacter()
 	//** DEPRECATED NEEDS CHANGING : AttachToComponent**
 	CameraBoom->AttachTo(RootComponent);
 	CameraBoom->SocketOffset = FVector(0, 0, 70);
-	CameraBoom->TargetArmLength = 400.0f; // The camera follows at this distance behind the character	
+	CameraBoom->TargetArmLength = 200.0f; // The camera follows at this distance behind the character	
 	CameraBoom->bUsePawnControlRotation = true; // Rotate the arm based on the controller
 
 
@@ -43,6 +43,7 @@ AMainCharacter::AMainCharacter()
 	//** DEPRECATED NEEDS CHANGING : AttachToComponent**
 	FollowCamera->AttachTo(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
+	
 	//FollowCamera->PostProcessSettings.AutoExposureBias = 0.f;
 	//FollowCamera->PostProcessSettings.AutoExposureMinBrightness = 1.f;
 	//FollowCamera->PostProcessSettings.AutoExposureMaxBrightness = 1.f;
@@ -109,6 +110,8 @@ void AMainCharacter::Tick(float DeltaTime)
 			5.f
 		);
 	}
+
+	
 }
 
 // Called to bind functionality to input
@@ -203,7 +206,6 @@ void AMainCharacter::StopWalking()
 
 void AMainCharacter::Sprint()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Purple, "I'M SPRINTING");
 	bIsSprinting = true;
 	GetCharacterMovement()->MaxWalkSpeed = sprintSpeed;
 }
@@ -231,7 +233,18 @@ void AMainCharacter::TurnCamera(float value)
 
 void AMainCharacter::LookUp(float value)
 {
-	AddControllerPitchInput(value*lookRate*deltaTime);
+	if (GetController())
+	{
+		AddControllerPitchInput(value*lookRate*deltaTime);
+		FRotator clampedController = FRotator(FMath::ClampAngle(GetControlRotation().Pitch, -15.f, 15.f), GetControlRotation().Yaw, GetControlRotation().Roll);
+		GetController()->SetControlRotation(clampedController);
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("pitch: %f"), GetControlRotation().Pitch));
+	}
+	
+	
+	
+
+	
 }
 
 void AMainCharacter::Interact()
