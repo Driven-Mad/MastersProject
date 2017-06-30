@@ -24,5 +24,6 @@ public:
 		UStaticMeshComponent *designatedMesh;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = pushableItemVariables, meta = (AllowPrivateAccess = "true"))
 		UBoxComponent* boxCollider;
+
 	
 };

@@ -23,7 +23,6 @@ APushPullItem::APushPullItem()
 	boxCollider->AttachToComponent(RootComponent, rules);
 	boxCollider->SetCollisionResponseToAllChannels(ECR_Block);
 	
-	
 }
 
 // Called when the game starts or when spawned
@@ -37,6 +36,10 @@ void APushPullItem::BeginPlay()
 void APushPullItem::Tick( float DeltaTime )
 {
 	Super::Tick( DeltaTime );
-
+	
+	
 }
+
+
+
 

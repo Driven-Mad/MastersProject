@@ -32,6 +32,9 @@
 #ifndef AVA_DataFactory_generated_h
 	#include "DataFactory.h"
 #endif
+#ifndef AVA_Door_generated_h
+	#include "Door.h"
+#endif
 #ifndef AVA_PushPullItem_generated_h
 	#include "PushPullItem.h"
 #endif

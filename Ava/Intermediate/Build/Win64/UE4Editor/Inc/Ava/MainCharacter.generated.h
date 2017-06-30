@@ -8,13 +8,58 @@
 #include "ObjectBase.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
 #ifdef AVA_MainCharacter_generated_h
 #error "MainCharacter.generated.h already included, missing '#pragma once' in MainCharacter.h"
 #endif
 #define AVA_MainCharacter_generated_h
 
-#define Ava_Source_Ava_MainCharacter_h_21_RPC_WRAPPERS
-#define Ava_Source_Ava_MainCharacter_h_21_RPC_WRAPPERS_NO_PURE_DECLS
+#define Ava_Source_Ava_MainCharacter_h_21_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execExitOverLap) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_MyOverlappedActor); \
+		P_GET_OBJECT(AActor,Z_Param_OtherActor); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->ExitOverLap(Z_Param_MyOverlappedActor,Z_Param_OtherActor); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBeginOverLap) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_MyOverlappedActor); \
+		P_GET_OBJECT(AActor,Z_Param_OtherActor); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->BeginOverLap(Z_Param_MyOverlappedActor,Z_Param_OtherActor); \
+		P_NATIVE_END; \
+	}
+
+
+#define Ava_Source_Ava_MainCharacter_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execExitOverLap) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_MyOverlappedActor); \
+		P_GET_OBJECT(AActor,Z_Param_OtherActor); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->ExitOverLap(Z_Param_MyOverlappedActor,Z_Param_OtherActor); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBeginOverLap) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_MyOverlappedActor); \
+		P_GET_OBJECT(AActor,Z_Param_OtherActor); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->BeginOverLap(Z_Param_MyOverlappedActor,Z_Param_OtherActor); \
+		P_NATIVE_END; \
+	}
+
+
 #define Ava_Source_Ava_MainCharacter_h_21_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesAMainCharacter(); \

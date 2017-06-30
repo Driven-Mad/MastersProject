@@ -214,7 +214,11 @@ public:
 	//----------------------------------------------------------------------------------------------------------------------
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterSpeeds)
 		float lookRate;
-
+	//----------------------------------------------------------------------------------------------------------------------
+	/// @brief CharacterState - characters push and pull speed
+	//----------------------------------------------------------------------------------------------------------------------
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterSpeeds)
+		float pushPullSpeed;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = prayingComponents, meta = (AllowPrivateAccess = "true"))
 		USphereComponent* overlappingSphere;
@@ -224,18 +228,25 @@ public:
 		float characterArmHeight;
 
 
-	FVector ForwardVector;
-	FVector BackVector;
-	FVector RightVector;
-	FVector LeftVector;
 
+
+	UFUNCTION(BlueprintCallable, Category = Behaviour)
+		void BeginOverLap(AActor* MyOverlappedActor, AActor* OtherActor);
+	UFUNCTION(BlueprintCallable, Category = Behaviour)
+		void ExitOverLap(AActor* MyOverlappedActor, AActor* OtherActor);
 private:
 	//----------------------------------------------------------------------------------------------------------------------
 	/// @brief Deltatime to be used anywhere. 
 	//----------------------------------------------------------------------------------------------------------------------
 	float deltaTime;
+	FVector ForwardVector;
+	FVector BackVector;
+	FVector RightVector;
+	FVector LeftVector;
 	APushPullItem* attachedPushPullItem;
-	
+	float storedLookRate;
+	float storedturnRate;
+	bool bPushPullColliding;
 
 
 };

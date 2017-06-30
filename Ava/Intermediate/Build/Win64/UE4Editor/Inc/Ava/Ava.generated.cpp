@@ -70,14 +70,22 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	{
 	}
 	IMPLEMENT_CLASS(ADataFactory, 2503768525);
+	void ADoor::StaticRegisterNativesADoor()
+	{
+		FNativeFunctionRegistrar::RegisterFunction(ADoor::StaticClass(), "Open",(Native)&ADoor::execOpen);
+		FNativeFunctionRegistrar::RegisterFunction(ADoor::StaticClass(), "TimelineFloatReturn",(Native)&ADoor::execTimelineFloatReturn);
+	}
+	IMPLEMENT_CLASS(ADoor, 2331846547);
 	void APushPullItem::StaticRegisterNativesAPushPullItem()
 	{
 	}
 	IMPLEMENT_CLASS(APushPullItem, 1291096950);
 	void AMainCharacter::StaticRegisterNativesAMainCharacter()
 	{
+		FNativeFunctionRegistrar::RegisterFunction(AMainCharacter::StaticClass(), "BeginOverLap",(Native)&AMainCharacter::execBeginOverLap);
+		FNativeFunctionRegistrar::RegisterFunction(AMainCharacter::StaticClass(), "ExitOverLap",(Native)&AMainCharacter::execExitOverLap);
 	}
-	IMPLEMENT_CLASS(AMainCharacter, 3820613738);
+	IMPLEMENT_CLASS(AMainCharacter, 2735472562);
 	void UMainMenu::StaticRegisterNativesUMainMenu()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(UMainMenu::StaticClass(), "Construct",(Native)&UMainMenu::execConstruct);
@@ -107,6 +115,9 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	ENGINE_API class UClass* Z_Construct_UClass_AActor();
 	ENGINE_API class UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_UCurveFloat_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_UTimelineComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	UMG_API class UClass* Z_Construct_UClass_UUserWidget();
@@ -132,8 +143,14 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	AVA_API class UEnum* Z_Construct_UEnum_Ava_Item();
 	AVA_API class UClass* Z_Construct_UClass_ADataFactory_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_ADataFactory();
+	AVA_API class UFunction* Z_Construct_UFunction_ADoor_Open();
+	AVA_API class UFunction* Z_Construct_UFunction_ADoor_TimelineFloatReturn();
+	AVA_API class UClass* Z_Construct_UClass_ADoor_NoRegister();
+	AVA_API class UClass* Z_Construct_UClass_ADoor();
 	AVA_API class UClass* Z_Construct_UClass_APushPullItem_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_APushPullItem();
+	AVA_API class UFunction* Z_Construct_UFunction_AMainCharacter_BeginOverLap();
+	AVA_API class UFunction* Z_Construct_UFunction_AMainCharacter_ExitOverLap();
 	AVA_API class UClass* Z_Construct_UClass_AMainCharacter_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_AMainCharacter();
 	AVA_API class UFunction* Z_Construct_UFunction_UMainMenu_Construct();
@@ -576,6 +593,96 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ADataFactory(Z_Construct_UClass_ADataFactory, &ADataFactory::StaticClass, TEXT("ADataFactory"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ADataFactory);
+	UFunction* Z_Construct_UFunction_ADoor_Open()
+	{
+		UObject* Outer=Z_Construct_UClass_ADoor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("Open"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Door.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ADoor_TimelineFloatReturn()
+	{
+		struct Door_eventTimelineFloatReturn_Parms
+		{
+			float val;
+		};
+		UObject* Outer=Z_Construct_UClass_ADoor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("TimelineFloatReturn"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535, sizeof(Door_eventTimelineFloatReturn_Parms));
+			UProperty* NewProp_val = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("val"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(val, Door_eventTimelineFloatReturn_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Door.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_ADoor_NoRegister()
+	{
+		return ADoor::StaticClass();
+	}
+	UClass* Z_Construct_UClass_ADoor()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_Ava();
+			OuterClass = ADoor::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_ADoor_Open());
+				OuterClass->LinkChild(Z_Construct_UFunction_ADoor_TimelineFloatReturn());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_boxCollider = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("boxCollider"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(boxCollider, ADoor), 0x001000000008001d, Z_Construct_UClass_UBoxComponent_NoRegister());
+				UProperty* NewProp_designatedMesh = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("designatedMesh"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(designatedMesh, ADoor), 0x001000000008001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+				UProperty* NewProp_fCurve = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("fCurve"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(fCurve, ADoor), 0x0010000000000000, Z_Construct_UClass_UCurveFloat_NoRegister());
+				UProperty* NewProp_ScoreTimeline = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ScoreTimeline"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ScoreTimeline, ADoor), 0x0010000000080008, Z_Construct_UClass_UTimelineComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADoor_Open(), "Open"); // 725450068
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADoor_TimelineFloatReturn(), "TimelineFloatReturn"); // 1638422267
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Door.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Door.h"));
+				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_boxCollider, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_boxCollider, TEXT("Category"), TEXT("DoorVariables"));
+				MetaData->SetValue(NewProp_boxCollider, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_boxCollider, TEXT("ModuleRelativePath"), TEXT("Door.h"));
+				MetaData->SetValue(NewProp_designatedMesh, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_designatedMesh, TEXT("Category"), TEXT("DoorVariables"));
+				MetaData->SetValue(NewProp_designatedMesh, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_designatedMesh, TEXT("ModuleRelativePath"), TEXT("Door.h"));
+				MetaData->SetValue(NewProp_fCurve, TEXT("ModuleRelativePath"), TEXT("Door.h"));
+				MetaData->SetValue(NewProp_ScoreTimeline, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_ScoreTimeline, TEXT("ModuleRelativePath"), TEXT("Door.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ADoor(Z_Construct_UClass_ADoor, &ADoor::StaticClass, TEXT("ADoor"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(ADoor);
 	UClass* Z_Construct_UClass_APushPullItem_NoRegister()
 	{
 		return APushPullItem::StaticClass();
@@ -620,6 +727,54 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_APushPullItem(Z_Construct_UClass_APushPullItem, &APushPullItem::StaticClass, TEXT("APushPullItem"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(APushPullItem);
+	UFunction* Z_Construct_UFunction_AMainCharacter_BeginOverLap()
+	{
+		struct MainCharacter_eventBeginOverLap_Parms
+		{
+			AActor* MyOverlappedActor;
+			AActor* OtherActor;
+		};
+		UObject* Outer=Z_Construct_UClass_AMainCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("BeginOverLap"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(MainCharacter_eventBeginOverLap_Parms));
+			UProperty* NewProp_OtherActor = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OtherActor"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(OtherActor, MainCharacter_eventBeginOverLap_Parms), 0x0010000000000080, Z_Construct_UClass_AActor_NoRegister());
+			UProperty* NewProp_MyOverlappedActor = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("MyOverlappedActor"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(MyOverlappedActor, MainCharacter_eventBeginOverLap_Parms), 0x0010000000000080, Z_Construct_UClass_AActor_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Behaviour"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AMainCharacter_ExitOverLap()
+	{
+		struct MainCharacter_eventExitOverLap_Parms
+		{
+			AActor* MyOverlappedActor;
+			AActor* OtherActor;
+		};
+		UObject* Outer=Z_Construct_UClass_AMainCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ExitOverLap"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(MainCharacter_eventExitOverLap_Parms));
+			UProperty* NewProp_OtherActor = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OtherActor"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(OtherActor, MainCharacter_eventExitOverLap_Parms), 0x0010000000000080, Z_Construct_UClass_AActor_NoRegister());
+			UProperty* NewProp_MyOverlappedActor = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("MyOverlappedActor"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(MyOverlappedActor, MainCharacter_eventExitOverLap_Parms), 0x0010000000000080, Z_Construct_UClass_AActor_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Behaviour"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AMainCharacter_NoRegister()
 	{
 		return AMainCharacter::StaticClass();
@@ -637,11 +792,14 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20900080;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_AMainCharacter_BeginOverLap());
+				OuterClass->LinkChild(Z_Construct_UFunction_AMainCharacter_ExitOverLap());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_characterArmHeight = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("characterArmHeight"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(characterArmHeight, AMainCharacter), 0x0010000000000005);
 				UProperty* NewProp_pushPullTraceCheckDistance = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("pushPullTraceCheckDistance"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(pushPullTraceCheckDistance, AMainCharacter), 0x0010000000000005);
 				UProperty* NewProp_overlappingSphere = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("overlappingSphere"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(overlappingSphere, AMainCharacter), 0x00100000000a001d, Z_Construct_UClass_USphereComponent_NoRegister());
+				UProperty* NewProp_pushPullSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("pushPullSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(pushPullSpeed, AMainCharacter), 0x0010000000000005);
 				UProperty* NewProp_lookRate = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("lookRate"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(lookRate, AMainCharacter), 0x0010000000000005);
 				UProperty* NewProp_turnRate = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("turnRate"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(turnRate, AMainCharacter), 0x0010000000000005);
 				UProperty* NewProp_sprintSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("sprintSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(sprintSpeed, AMainCharacter), 0x0010000000000005);
@@ -672,6 +830,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_FollowCamera = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("FollowCamera"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(FollowCamera, AMainCharacter), 0x00100000000a001d, Z_Construct_UClass_UCameraComponent_NoRegister());
 				UProperty* NewProp_CameraBoom = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraBoom"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(CameraBoom, AMainCharacter), 0x00100000000a001d, Z_Construct_UClass_USpringArmComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AMainCharacter_BeginOverLap(), "BeginOverLap"); // 1935713919
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AMainCharacter_ExitOverLap(), "ExitOverLap"); // 1989922888
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -687,6 +847,9 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(NewProp_overlappingSphere, TEXT("Category"), TEXT("prayingComponents"));
 				MetaData->SetValue(NewProp_overlappingSphere, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_overlappingSphere, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_pushPullSpeed, TEXT("Category"), TEXT("CharacterSpeeds"));
+				MetaData->SetValue(NewProp_pushPullSpeed, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_pushPullSpeed, TEXT("ToolTip"), TEXT("@brief CharacterState - characters push and pull speed"));
 				MetaData->SetValue(NewProp_lookRate, TEXT("Category"), TEXT("CharacterSpeeds"));
 				MetaData->SetValue(NewProp_lookRate, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(NewProp_lookRate, TEXT("ToolTip"), TEXT("@brief CharacterState - characters camera look speed"));
@@ -915,8 +1078,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Ava")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x02682FB9;
-			Guid.B = 0x68F0F256;
+			Guid.A = 0x5D8904D9;
+			Guid.B = 0x75B66A7C;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

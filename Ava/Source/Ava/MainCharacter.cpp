@@ -15,8 +15,12 @@ AMainCharacter::AMainCharacter()
 	sprintSpeed = 350;
 	lookRate = 45;
 	turnRate = 45;
+	pushPullSpeed = 75;
+
 	bIsInInventory = false;
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.f);
+	SetRootComponent(GetCapsuleComponent());
+
 
 	bUseControllerRotationPitch = false;
 	bUseControllerRotationYaw = false;
@@ -52,12 +56,36 @@ AMainCharacter::AMainCharacter()
 	overlappingSphere->SetSphereRadius(100.f);
 	overlappingSphere->AttachTo(RootComponent);
 	
+	OnActorBeginOverlap.AddDynamic(this, &AMainCharacter::BeginOverLap);
+	OnActorEndOverlap.AddDynamic(this, &AMainCharacter::ExitOverLap);
+
 
 	bIsPraying = false;
 	bIsInInventory = false;
 	bIsJumping = false;
+	bPushPullColliding = false;
 	bIsPushPulling = false;
 }
+
+
+void AMainCharacter::BeginOverLap(AActor* MyOverlappedActor, AActor* OtherActor)
+{
+	if (bIsPushPulling)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("StartedOverlapping")));
+		bPushPullColliding = true;
+	}
+}
+
+void AMainCharacter::ExitOverLap(AActor* MyOverlappedActor, AActor* OtherActor)
+{
+	if (bIsPushPulling)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("ExitOverLap")));
+		bPushPullColliding = false;
+	}
+}
+
 
 // Called when the game starts or when spawned
 void AMainCharacter::BeginPlay()
@@ -110,6 +138,29 @@ void AMainCharacter::Tick(float DeltaTime)
 			5.f
 		);
 	}
+
+	//! EVEN with just adjusting the position the collision is STILL ignored.
+	//if (bIsPushPulling)
+	//{
+	//	float distance = (GetActorLocation() - attachedPushPullItem->GetActorLocation()).Size();
+	//	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("Distance is: %f"), distance));
+	//	FVector Direction = (attachedPushPullItem->GetActorLocation() - GetActorLocation());
+	//	Direction.Normalize();
+	//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, FString::Printf(TEXT("X is: %f, Y is: %f, Z is: %f"), Direction.X, Direction.Y, Direction.Z));
+	//	FVector newLocation = GetActorLocation() + Direction;
+	//	newLocation.Z = attachedPushPullItem->GetActorLocation().Z;
+	//	DrawDebugLine(
+	//		GetWorld(),
+	//		GetActorLocation(),
+	//		newLocation,
+	//		FColor(255, 0, 0),
+	//		false, -1, 0,
+	//		3.f
+	//	);
+	//	//FVector newLocation = GetActorLocation() + (Forward * distance);
+	//	//newLocation.Z = attachedPushPullItem->GetActorLocation().Z;
+	//	attachedPushPullItem->SetActorLocation(newLocation);
+	//}
 
 	
 }
@@ -169,17 +220,18 @@ void AMainCharacter::StopJumping()
 
 void AMainCharacter::MoveForward(float value)
 {
-	if ((Controller != NULL) && (value != 0.0f))
+	if ((Controller != NULL) && (value != 0.0f) && !bPushPullColliding)
 	{
 		//GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Purple, "I'M RUNNING");
 		AddMovementInput(ForwardVector, value);
 	}
+
 }
 
 void AMainCharacter::MoveRight(float value)
 {
 
-	if ((Controller != NULL) && (value != 0.0f))
+	if ((Controller != NULL) && (value != 0.0f) && !bIsPushPulling)
 	{
 		FRotator tempRot = GetActorRotation();
 		FRotator tempYaw = FRotator(0, tempRot.Yaw, 0);
@@ -291,7 +343,7 @@ void AMainCharacter::OpenInventory()
 void AMainCharacter::PushPull()
 {
 
-	bIsPushPulling = true;
+	
 	//in a non-Static class
 	//Draw the Line!
 	FRotator tempRot = GetActorRotation();
@@ -306,12 +358,19 @@ void AMainCharacter::PushPull()
 	attachedPushPullItem = Cast<APushPullItem>(results.GetActor());
 	if (attachedPushPullItem)
 	{
+		GetCharacterMovement()->MaxWalkSpeed = pushPullSpeed;
+		storedLookRate = lookRate;
+		storedturnRate = turnRate;
+		lookRate = 0;
+		turnRate = 0;
 		float distance = (GetActorLocation() - attachedPushPullItem->GetActorLocation()).Size();
 		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("ITS A PUSHPULL OBJECT")));
 
 		FAttachmentTransformRules attachRules = FAttachmentTransformRules(EAttachmentRule::KeepWorld,false);
 		attachedPushPullItem->AttachToActor(this, attachRules);
-		MoveIgnoreActorAdd(attachedPushPullItem);		
+		MoveIgnoreActorAdd(attachedPushPullItem);
+		GetCharacterMovement()->bOrientRotationToMovement = false;
+		bIsPushPulling = true;
 	}
 	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Cyan, "I'M PUSHING/PULLING");
 	//FVector temp = GetActorLocation() + GetActorForwardVector();
@@ -321,13 +380,19 @@ void AMainCharacter::PushPull()
 
 void AMainCharacter::StopPushPull()
 {
-	bIsPushPulling = false;
+	
 	if (attachedPushPullItem)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("ITS A PUSHPULL OBJECT")));
 		FDetachmentTransformRules detachRules = FDetachmentTransformRules(EDetachmentRule::KeepWorld, false);
 		attachedPushPullItem->DetachFromActor(detachRules);
 		MoveIgnoreActorRemove(attachedPushPullItem);
+		lookRate= storedLookRate  ;
+		turnRate = storedturnRate ;
+		GetCharacterMovement()->MaxWalkSpeed = runSpeed;
+		GetCharacterMovement()->bOrientRotationToMovement = true;
+		bIsPushPulling = false;
+		bPushPullColliding = false;
 
 	}
 	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Silver, "I'M NOT PUSHING/PULLING");

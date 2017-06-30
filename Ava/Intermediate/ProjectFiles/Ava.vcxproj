@@ -423,26 +423,28 @@
     <ClCompile Include="..\..\Source\Ava\AvaGameMode.cpp" />
     <ClInclude Include="..\..\Source\Ava\AvaGameMode.h" />
     <ClCompile Include="..\..\Source\Ava\BTServiceSearchForPlayer.cpp" />
-    <ClCompile Include="..\..\Source\Ava\BTTaskFindClosestEscapePoint.cpp" />
-    <ClCompile Include="..\..\Source\Ava\BTTaskFindNextRoutePoint.cpp" />
-    <ClCompile Include="..\..\Source\Ava\DataFactory.cpp" />
     <ClInclude Include="..\..\Source\Ava\BTServiceSearchForPlayer.h" />
+    <ClCompile Include="..\..\Source\Ava\BTTaskFindClosestEscapePoint.cpp" />
     <ClInclude Include="..\..\Source\Ava\BTTaskFindClosestEscapePoint.h" />
+    <ClCompile Include="..\..\Source\Ava\BTTaskFindNextRoutePoint.cpp" />
     <ClInclude Include="..\..\Source\Ava\BTTaskFindNextRoutePoint.h" />
+    <ClCompile Include="..\..\Source\Ava\DataFactory.cpp" />
     <ClInclude Include="..\..\Source\Ava\DataFactory.h" />
+    <ClCompile Include="..\..\Source\Ava\Door.cpp" />
     <ClCompile Include="..\..\Source\Ava\EscapePoint.cpp" />
-    <ClCompile Include="..\..\Source\Ava\MainCharacter.cpp" />
+    <ClInclude Include="..\..\Source\Ava\Door.h" />
     <ClInclude Include="..\..\Source\Ava\EscapePoint.h" />
+    <ClCompile Include="..\..\Source\Ava\MainCharacter.cpp" />
     <ClInclude Include="..\..\Source\Ava\MainCharacter.h" />
     <ClCompile Include="..\..\Source\Ava\MainMenu.cpp" />
     <ClInclude Include="..\..\Source\Ava\MainMenu.h" />
     <ClCompile Include="..\..\Source\Ava\PickUpItem.cpp" />
-    <ClCompile Include="..\..\Source\Ava\PushPullItem.cpp" />
     <ClInclude Include="..\..\Source\Ava\PickUpItem.h" />
+    <ClCompile Include="..\..\Source\Ava\PushPullItem.cpp" />
     <ClInclude Include="..\..\Source\Ava\PushPullItem.h" />
     <ClCompile Include="..\..\Source\Ava\RoutePoint.cpp" />
-    <ClCompile Include="..\..\Source\Ava\StatueObject.cpp" />
     <ClInclude Include="..\..\Source\Ava\RoutePoint.h" />
+    <ClCompile Include="..\..\Source\Ava\StatueObject.cpp" />
     <ClInclude Include="..\..\Source\Ava\StatueObject.h" />
   </ItemGroup>
   <PropertyGroup>
