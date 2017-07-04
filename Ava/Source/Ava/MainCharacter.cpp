@@ -58,8 +58,9 @@ AMainCharacter::AMainCharacter()
 	
 	OnActorBeginOverlap.AddDynamic(this, &AMainCharacter::BeginOverLap);
 	OnActorEndOverlap.AddDynamic(this, &AMainCharacter::ExitOverLap);
-
-
+	
+	bIsIdle = true;
+	bIsRunning = false;
 	bIsPraying = false;
 	bIsInInventory = false;
 	bIsJumping = false;
