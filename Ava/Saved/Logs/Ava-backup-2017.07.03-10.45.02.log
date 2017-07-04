@@ -1,0 +1,169 @@
+﻿Log file open, 07/03/17 10:40:56
+LogInit:Display: Running engine for game: Ava
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1876670213) SRandInit(1876670215).
+LogTaskGraph: Started task graph with 4 named threads and 9 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.106243
+LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3039270
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.07.03-09.40.56:775][  0]LogInit: Selected Device Profile: [Windows]
+[2017.07.03-09.40.56:775][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.07.03-09.40.56:786][  0]LogInit: Computer: PC42640
+[2017.07.03-09.40.56:786][  0]LogInit: User: i7230020
+[2017.07.03-09.40.56:786][  0]LogInit: CPU Page size=65536, Cores=6
+[2017.07.03-09.40.56:786][  0]LogInit: High frequency timer resolution =3.410136 MHz
+[2017.07.03-09.40.56:786][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2017.07.03-09.40.56:786][  0]LogMemory: Platform Memory Stats for Windows
+[2017.07.03-09.40.56:786][  0]LogMemory: Process Physical Memory: 196.62 MB used, 196.62 MB peak
+[2017.07.03-09.40.56:786][  0]LogMemory: Process Virtual Memory: 198.91 MB used, 198.91 MB peak
+[2017.07.03-09.40.56:786][  0]LogMemory: Physical Memory: 12959.61 MB used, 32684.15 MB total
+[2017.07.03-09.40.56:786][  0]LogMemory: Virtual Memory: 538.89 MB used, 8388608.00 MB total
+[2017.07.03-09.40.56:871][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
+[2017.07.03-09.40.57:280][  0]LogD3D11RHI: D3D11 adapters:
+[2017.07.03-09.40.57:305][  0]LogD3D11RHI:    0. 'NVIDIA Quadro M4000' (Feature Level 11_0)
+[2017.07.03-09.40.57:305][  0]LogD3D11RHI:       8092/0/16086 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.07.03-09.40.57:305][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.07.03-09.40.57:324][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.07.03-09.40.57:325][  0]LogD3D11RHI:     GPU DeviceId: 0x13f1 (for the marketing name, search the web for "GPU Device Id")
+[2017.07.03-09.40.57:325][  0]LogWindows: EnumDisplayDevices:
+[2017.07.03-09.40.57:326][  0]LogWindows:    0. 'NVIDIA Quadro M4000' (P:1 D:1)
+[2017.07.03-09.40.57:327][  0]LogWindows:    1. 'NVIDIA Quadro M4000' (P:0 D:0)
+[2017.07.03-09.40.57:328][  0]LogWindows:    2. 'NVIDIA Quadro M4000' (P:0 D:0)
+[2017.07.03-09.40.57:329][  0]LogWindows:    3. 'NVIDIA Quadro M4000' (P:0 D:0)
+[2017.07.03-09.40.57:329][  0]LogWindows:    4. 'RDPDD Chained DD' (P:0 D:0)
+[2017.07.03-09.40.57:330][  0]LogWindows:    5. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2017.07.03-09.40.57:331][  0]LogWindows:    6. 'RDP Reflector Display Driver' (P:0 D:0)
+[2017.07.03-09.40.57:331][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2017.07.03-09.40.57:331][  0]LogD3D11RHI:     Adapter Name: NVIDIA Quadro M4000
+[2017.07.03-09.40.57:331][  0]LogD3D11RHI:   Driver Version: 362.13 (internal:10.18.13.6213, unified:362.13)
+[2017.07.03-09.40.57:331][  0]LogD3D11RHI:      Driver Date: 3-18-2016
+[2017.07.03-09.40.57:331][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.07.03-09.40.57:344][  0]LogD3D11RHI: Async texture creation enabled
+[2017.07.03-09.40.57:358][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2017.07.03-09.40.57:358][  0]LogShaderCompilers: Guid format shader working directory is -29 characters bigger than the processId version (../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/Intermediate/Shaders/WorkingDirectory/107336/).
+[2017.07.03-09.40.57:358][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/I72300~1.000/AppData/Local/Temp/UnrealShaderWorkingDir/29B5C7594023BFB52BE2A1AAD751AB1F/'.
+[2017.07.03-09.40.57:358][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.07.03-09.40.58:672][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.07.03-09.40.58:698][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.07.03-09.40.58:719][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.07.03-09.40.58:729][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.07.03-09.40.58:739][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.07.03-09.40.58:748][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.07.03-09.40.58:756][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.07.03-09.40.58:764][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.07.03-09.40.58:778][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.07.03-09.40.58:786][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.07.03-09.40.58:794][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.07.03-09.40.58:809][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.07.03-09.40.58:809][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.07.03-09.40.58:810][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.07.03-09.40.58:832][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.07.03-09.40.58:851][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.07.03-09.40.58:861][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.07.03-09.40.58:869][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.07.03-09.40.58:878][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.07.03-09.40.58:878][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.07.03-09.40.58:975][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.07.03-09.40.59:022][  0]LogDerivedDataCache: Loaded boot cache 0.05s 49MB C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2017.07.03-09.40.59:022][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2017.07.03-09.40.59:023][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.07.03-09.40.59:023][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.07.03-09.40.59:023][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/i7230020.STUDENT.000/Documents/GitHub/MastersProject/Ava/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.07.03-09.40.59:023][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.07.03-09.40.59:037][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.07.03-09.40.59:049][  0]LogDerivedDataCache: Using Local data cache path C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.07.03-09.40.59:263][  0]LogInit: Selected Device Profile: [Windows]
+[2017.07.03-09.40.59:264][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.07.03-09.40.59:487][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2017.07.03-09.40.59:487][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.07.03-09.40.59:487][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2017.07.03-09.40.59:792][  0]LogAssetRegistry: FAssetRegistry took 0.0201 seconds to start up
+[2017.07.03-09.40.59:890][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.091554 seconds
+[2017.07.03-09.40.59:894][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2017.07.03-09.40.59:894][  0]LogUObjectAllocator: 5855624 out of 0 bytes used by permanent object pool.
+[2017.07.03-09.40.59:894][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.07.03-09.40.59:900][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.07.03-09.41.00:081][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.07.03-09.41.00:081][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.07.03-09.41.01:025][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.07.03-09.41.01:132][  0]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.017 s
+[2017.07.03-09.41.01:132][  0]LogOutputDevice:Warning: === Handled error: ===
+
+Ensure condition failed: !AttachmentRules.bWeldSimulatedBodies [File:D:\Build\++UE4+Release-4.12+Compile\Sync\Engine\Source\Runtime\Engine\Private\Components\SceneComponent.cpp] [Line: 1481]
+AttachToComponent when called from a constructor cannot weld simulated bodies. Consider calling SetupAttachment directly instead.
+Stack: 
+UE4Editor-Core.dll
+UE4Editor-Core.dll
+UE4Editor-Core.dll
+UE4Editor-Engine.dll
+UE4Editor-Ava-6497.dll
+UE4Editor-CoreUObject.dll
+UE4Editor-CoreUObject.dll
+UE4Editor-CoreUObject.dll
+UE4Editor-CoreUObject.dll
+UE4Editor-Core.dll
+UE4Editor-Core.dll
+UE4Editor-Projects.dll
+UE4Editor-Projects.dll
+UE4Editor.exe
+UE4Editor.exe
+UE4Editor.exe
+UE4Editor.exe
+UE4Editor.exe
+UE4Editor.exe
+kernel32.dll
+ntdll.dll
+ntdll.dll
+
+[2017.07.03-09.41.01:132][  0]LogStats:                SubmitErrorReport -  0.000 s
+[2017.07.03-09.41.01:571][  0]LogStats:                    SendNewReport -  0.439 s
+[2017.07.03-09.41.01:571][  0]LogStats:             FDebug::EnsureFailed -  0.456 s
+[2017.07.03-09.41.01:572][  0]LogWindows: Windows GetLastError: The operation completed successfully. (0)
+[2017.07.03-09.41.01:954][  0]LogWindows:Error: === Critical error: ===
+Assertion failed: Object [File:D:\Build\++UE4+Release-4.12+Compile\Sync\Engine\Source\Runtime\Engine\Private\UnrealEngine.cpp] [Line: 7968] 
+
+
+
+
+
+[2017.07.03-09.41.01:976][  0]LogExit: Executing StaticShutdownAfterError
+[2017.07.03-09.41.01:978][  0]LogWindows: FPlatformMisc::RequestExit(1)
+[2017.07.03-09.41.01:978][  0]Log file closed, 07/03/17 10:41:01

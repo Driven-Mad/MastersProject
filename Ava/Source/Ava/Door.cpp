@@ -37,10 +37,7 @@ void ADoor::BeginPlay()
 {
 	Super::BeginPlay();
 	//Add the float curve to the timeline and connect it to your timelines's interpolation function
-	ScoreTimeline->AddInterpFloat(fCurve, InterpFunction, FName{ TEXT("Floaty") });
-
-	
-	
+	ScoreTimeline->AddInterpFloat(fCurve, InterpFunction, FName{ TEXT("Floaty") });	
 }
 
 // Called every frame
