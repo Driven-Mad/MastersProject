@@ -15,6 +15,8 @@
 #include "PushPullItem.h"
 #include "MainCharacter.generated.h"
 
+
+
 UCLASS()
 class AVA_API AMainCharacter : public ACharacter
 {
@@ -247,6 +249,5 @@ private:
 	float storedLookRate;
 	float storedturnRate;
 	bool bPushPullColliding;
-
 
 };

@@ -2,7 +2,7 @@
 	"TargetName" : "AvaEditor",
 	"Platform" : "Win64",
 	"Configuration" : "Development",
-	"BuildId" : "ef44151c-9aac-4611-9880-ed654988e737",
+	"BuildId" : "bb0a80b0-e7d0-4770-8c46-cbf66ab2882a",
 	"Version" : 
 	{
 		"MajorVersion" : 4,
@@ -15,15 +15,15 @@
 	"BuildProducts" :
 	[
 		{
-			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-Ava.dll",
+			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-Ava-5235.dll",
 			"Type" : "DynamicLibrary"
 		},
 		{
-			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-Ava.pdb",
+			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-Ava-5235.pdb",
 			"Type" : "SymbolFile"
 		},
 		{
-			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-Ava.lib",
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-Ava-5235.lib",
 			"Type" : "ImportLibrary"
 		}
 	],
