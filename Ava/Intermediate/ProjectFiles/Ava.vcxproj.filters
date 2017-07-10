@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\Ava.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{3F2A7BD4-9B6B-4046-A02A-B55A9CBFD08E}</UniqueIdentifier>
+			<UniqueIdentifier>{72CB7584-ADA1-4B02-9F42-526ECC79F1E0}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\Ava.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{FE0569D4-81CA-414D-8F58-8546BA1B4217}</UniqueIdentifier>
+			<UniqueIdentifier>{4569A41B-61D9-4E8A-8360-B676B0C40562}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,7 +28,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\Ava">
-			<UniqueIdentifier>{B26DC63A-4340-4975-9572-EBDDB828280B}</UniqueIdentifier>
+			<UniqueIdentifier>{767FB5E7-24F0-43E5-9813-2E125BC824A5}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\Ava\Antelope.cpp">
 			<Filter>Source\Ava</Filter>

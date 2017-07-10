@@ -79,7 +79,7 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	void APushPullItem::StaticRegisterNativesAPushPullItem()
 	{
 	}
-	IMPLEMENT_CLASS(APushPullItem, 1291096950);
+	IMPLEMENT_CLASS(APushPullItem, 4233526669);
 	void AMainCharacter::StaticRegisterNativesAMainCharacter()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(AMainCharacter::StaticClass(), "BeginOverLap",(Native)&AMainCharacter::execBeginOverLap);
@@ -714,6 +714,18 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(cappedY, APushPullItem, bool);
+				UProperty* NewProp_cappedY = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("cappedY"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(cappedY, APushPullItem), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(cappedY, APushPullItem), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(cappedX, APushPullItem, bool);
+				UProperty* NewProp_cappedX = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("cappedX"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(cappedX, APushPullItem), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(cappedX, APushPullItem), sizeof(bool), true);
+				UProperty* NewProp_yMax = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("yMax"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(yMax, APushPullItem), 0x0010000000000005);
+				UProperty* NewProp_yMin = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("yMin"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(yMin, APushPullItem), 0x0010000000000005);
+				UProperty* NewProp_xMax = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("xMax"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(xMax, APushPullItem), 0x0010000000000005);
+				UProperty* NewProp_xMin = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("xMin"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(xMin, APushPullItem), 0x0010000000000005);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(constrainY, APushPullItem, bool);
+				UProperty* NewProp_constrainY = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("constrainY"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(constrainY, APushPullItem), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(constrainY, APushPullItem), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(constrainX, APushPullItem, bool);
+				UProperty* NewProp_constrainX = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("constrainX"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(constrainX, APushPullItem), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(constrainX, APushPullItem), sizeof(bool), true);
 				UProperty* NewProp_boxCollider = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("boxCollider"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(boxCollider, APushPullItem), 0x001000000008001d, Z_Construct_UClass_UBoxComponent_NoRegister());
 				UProperty* NewProp_designatedMesh = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("designatedMesh"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(designatedMesh, APushPullItem), 0x001000000008001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
@@ -723,6 +735,30 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("PushPullItem.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
 				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_cappedY, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_cappedY, TEXT("Category"), TEXT("pushableItemVariables"));
+				MetaData->SetValue(NewProp_cappedY, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
+				MetaData->SetValue(NewProp_cappedX, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_cappedX, TEXT("Category"), TEXT("pushableItemVariables"));
+				MetaData->SetValue(NewProp_cappedX, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
+				MetaData->SetValue(NewProp_yMax, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_yMax, TEXT("Category"), TEXT("pushableItemVariables"));
+				MetaData->SetValue(NewProp_yMax, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
+				MetaData->SetValue(NewProp_yMin, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_yMin, TEXT("Category"), TEXT("pushableItemVariables"));
+				MetaData->SetValue(NewProp_yMin, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
+				MetaData->SetValue(NewProp_xMax, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_xMax, TEXT("Category"), TEXT("pushableItemVariables"));
+				MetaData->SetValue(NewProp_xMax, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
+				MetaData->SetValue(NewProp_xMin, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_xMin, TEXT("Category"), TEXT("pushableItemVariables"));
+				MetaData->SetValue(NewProp_xMin, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
+				MetaData->SetValue(NewProp_constrainY, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_constrainY, TEXT("Category"), TEXT("pushableItemVariables"));
+				MetaData->SetValue(NewProp_constrainY, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
+				MetaData->SetValue(NewProp_constrainX, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_constrainX, TEXT("Category"), TEXT("pushableItemVariables"));
+				MetaData->SetValue(NewProp_constrainX, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
 				MetaData->SetValue(NewProp_boxCollider, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_boxCollider, TEXT("Category"), TEXT("pushableItemVariables"));
 				MetaData->SetValue(NewProp_boxCollider, TEXT("EditInline"), TEXT("true"));
@@ -1178,7 +1214,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Ava")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x524C635C;
+			Guid.A = 0xFFB0625E;
 			Guid.B = 0xF027CEC0;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;

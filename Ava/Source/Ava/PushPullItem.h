@@ -24,6 +24,26 @@ public:
 		UStaticMeshComponent *designatedMesh;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = pushableItemVariables, meta = (AllowPrivateAccess = "true"))
 		UBoxComponent* boxCollider;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = pushableItemVariables, meta = (AllowPrivateAccess = "true"))
+		bool constrainX;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = pushableItemVariables, meta = (AllowPrivateAccess = "true"))
+		bool constrainY;
 
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = pushableItemVariables, meta = (AllowPrivateAccess = "true"))
+		float xMin;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = pushableItemVariables, meta = (AllowPrivateAccess = "true"))
+		float xMax;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = pushableItemVariables, meta = (AllowPrivateAccess = "true"))
+		float yMin;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = pushableItemVariables, meta = (AllowPrivateAccess = "true"))
+		float yMax;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = pushableItemVariables, meta = (AllowPrivateAccess = "true"))
+		bool cappedX;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = pushableItemVariables, meta = (AllowPrivateAccess = "true"))
+		bool cappedY;
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = pushableItemVariables, meta = (AllowPrivateAccess = "true"))
+	//	AMainCharacter* playerReference;
 	
 };

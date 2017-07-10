@@ -139,7 +139,23 @@ void AMainCharacter::Tick(float DeltaTime)
 			5.f
 		);
 	}
+	if (bIsPushPulling)
+	{
+		if (attachedPushPullItem)
+		{
+			if (attachedPushPullItem->cappedX == true)
+			{
+				StopPushPull();
+				attachedPushPullItem->cappedX = false;
+			}
+			if (attachedPushPullItem->cappedY == true)
+			{
+				StopPushPull();
+				attachedPushPullItem->cappedY = false;
+			}
+		}
 
+	}
 	//! EVEN with just adjusting the position the collision is STILL ignored.
 	//if (bIsPushPulling)
 	//{
