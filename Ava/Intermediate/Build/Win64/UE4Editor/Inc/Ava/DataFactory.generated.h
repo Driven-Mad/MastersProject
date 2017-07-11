@@ -8,14 +8,120 @@
 #include "ObjectBase.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FTransform;
+class AActor;
+class UTexture2D;
+class UStaticMesh;
 #ifdef AVA_DataFactory_generated_h
 #error "DataFactory.generated.h already included, missing '#pragma once' in DataFactory.h"
 #endif
 #define AVA_DataFactory_generated_h
 
-#define Ava_Source_Ava_DataFactory_h_47_RPC_WRAPPERS
-#define Ava_Source_Ava_DataFactory_h_47_RPC_WRAPPERS_NO_PURE_DECLS
-#define Ava_Source_Ava_DataFactory_h_47_INCLASS_NO_PURE_DECLS \
+#define Ava_Source_Ava_DataFactory_h_55_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execSpawnItem) \
+	{ \
+		P_GET_PROPERTY(UByteProperty,Z_Param_ItemToSpawn); \
+		P_GET_STRUCT(FTransform,Z_Param_Position); \
+		P_GET_OBJECT(UClass,Z_Param_AnotherClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(AActor**)Z_Param__Result=this->SpawnItem(Item(Z_Param_ItemToSpawn),Z_Param_Position,Z_Param_AnotherClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetItemType) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_enumType); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_enumName); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TEnumAsByte<Item>*)Z_Param__Result=this->GetItemType(Z_Param_enumType,Z_Param_enumName); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetIconForItem) \
+	{ \
+		P_GET_PROPERTY(UByteProperty,Z_Param_Item_type); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UTexture2D**)Z_Param__Result=this->GetIconForItem(Item(Z_Param_Item_type)); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGet3DRepresentationForItem) \
+	{ \
+		P_GET_PROPERTY(UByteProperty,Z_Param_Item_type); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UStaticMesh**)Z_Param__Result=this->Get3DRepresentationForItem(Item(Z_Param_Item_type)); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAccessTMapItems) \
+	{ \
+		P_GET_PROPERTY(UByteProperty,Z_Param_Item_type); \
+		P_GET_PROPERTY(UByteProperty,Z_Param_Item_variable); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=this->AccessTMapItems(Item(Z_Param_Item_type),ItemDataVariables(Z_Param_Item_variable)); \
+		P_NATIVE_END; \
+	}
+
+
+#define Ava_Source_Ava_DataFactory_h_55_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSpawnItem) \
+	{ \
+		P_GET_PROPERTY(UByteProperty,Z_Param_ItemToSpawn); \
+		P_GET_STRUCT(FTransform,Z_Param_Position); \
+		P_GET_OBJECT(UClass,Z_Param_AnotherClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(AActor**)Z_Param__Result=this->SpawnItem(Item(Z_Param_ItemToSpawn),Z_Param_Position,Z_Param_AnotherClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetItemType) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_enumType); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_enumName); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TEnumAsByte<Item>*)Z_Param__Result=this->GetItemType(Z_Param_enumType,Z_Param_enumName); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetIconForItem) \
+	{ \
+		P_GET_PROPERTY(UByteProperty,Z_Param_Item_type); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UTexture2D**)Z_Param__Result=this->GetIconForItem(Item(Z_Param_Item_type)); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGet3DRepresentationForItem) \
+	{ \
+		P_GET_PROPERTY(UByteProperty,Z_Param_Item_type); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UStaticMesh**)Z_Param__Result=this->Get3DRepresentationForItem(Item(Z_Param_Item_type)); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAccessTMapItems) \
+	{ \
+		P_GET_PROPERTY(UByteProperty,Z_Param_Item_type); \
+		P_GET_PROPERTY(UByteProperty,Z_Param_Item_variable); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=this->AccessTMapItems(Item(Z_Param_Item_type),ItemDataVariables(Z_Param_Item_variable)); \
+		P_NATIVE_END; \
+	}
+
+
+#define Ava_Source_Ava_DataFactory_h_55_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesADataFactory(); \
 	friend AVA_API class UClass* Z_Construct_UClass_ADataFactory(); \
@@ -26,7 +132,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Ava_Source_Ava_DataFactory_h_47_INCLASS \
+#define Ava_Source_Ava_DataFactory_h_55_INCLASS \
 	private: \
 	static void StaticRegisterNativesADataFactory(); \
 	friend AVA_API class UClass* Z_Construct_UClass_ADataFactory(); \
@@ -37,7 +143,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Ava_Source_Ava_DataFactory_h_47_STANDARD_CONSTRUCTORS \
+#define Ava_Source_Ava_DataFactory_h_55_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ADataFactory(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ADataFactory) \
@@ -49,7 +155,7 @@ private: \
 public:
 
 
-#define Ava_Source_Ava_DataFactory_h_47_ENHANCED_CONSTRUCTORS \
+#define Ava_Source_Ava_DataFactory_h_55_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private copy-constructor, should never be used */ \
 	NO_API ADataFactory(const ADataFactory& InCopy); \
@@ -59,23 +165,23 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADataFactory); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ADataFactory)
 
 
-#define Ava_Source_Ava_DataFactory_h_44_PROLOG
-#define Ava_Source_Ava_DataFactory_h_47_GENERATED_BODY_LEGACY \
+#define Ava_Source_Ava_DataFactory_h_52_PROLOG
+#define Ava_Source_Ava_DataFactory_h_55_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Ava_Source_Ava_DataFactory_h_47_RPC_WRAPPERS \
-	Ava_Source_Ava_DataFactory_h_47_INCLASS \
-	Ava_Source_Ava_DataFactory_h_47_STANDARD_CONSTRUCTORS \
+	Ava_Source_Ava_DataFactory_h_55_RPC_WRAPPERS \
+	Ava_Source_Ava_DataFactory_h_55_INCLASS \
+	Ava_Source_Ava_DataFactory_h_55_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Ava_Source_Ava_DataFactory_h_47_GENERATED_BODY \
+#define Ava_Source_Ava_DataFactory_h_55_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Ava_Source_Ava_DataFactory_h_47_RPC_WRAPPERS_NO_PURE_DECLS \
-	Ava_Source_Ava_DataFactory_h_47_INCLASS_NO_PURE_DECLS \
-	Ava_Source_Ava_DataFactory_h_47_ENHANCED_CONSTRUCTORS \
+	Ava_Source_Ava_DataFactory_h_55_RPC_WRAPPERS_NO_PURE_DECLS \
+	Ava_Source_Ava_DataFactory_h_55_INCLASS_NO_PURE_DECLS \
+	Ava_Source_Ava_DataFactory_h_55_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -99,5 +205,12 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(Item::Scroll06) \
 	op(Item::Scroll07) \
 	op(Item::Scroll08) \
-	op(Item::Bracelet) 
+	op(Item::Bracelet) \
+	op(Item::Item01) \
+	op(Item::Item02) \
+	op(Item::Item03) \
+	op(Item::Trash01) \
+	op(Item::Trash02) \
+	op(Item::Trash03) \
+	op(Item::Trash04) 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

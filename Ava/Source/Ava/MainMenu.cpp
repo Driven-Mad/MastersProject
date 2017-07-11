@@ -10,8 +10,8 @@ void UMainMenu::Play()
 	RemoveFromParent();
 }
 
-void UMainMenu::Construct()
-{
-	playerReference = Cast<AMainCharacter>(UGameplayStatics::GetPlayerController(UUserWidget::GetWorld(), 0));
-	//playerReference = Cast<AMainCharacter>( GetOwningPlayer());
-}
+//void UMainMenu::Construct()
+//{
+//	playerReference = Cast<AMainCharacter>(UGameplayStatics::GetPlayerController(UUserWidget::GetWorld(), 0));
+//	//playerReference = Cast<AMainCharacter>( GetOwningPlayer());
+//}

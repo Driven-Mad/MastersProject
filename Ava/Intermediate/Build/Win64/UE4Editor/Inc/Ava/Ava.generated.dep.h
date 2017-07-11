@@ -29,6 +29,9 @@
 #ifndef AVA_BTTaskFindNextRoutePoint_generated_h
 	#include "BTTaskFindNextRoutePoint.h"
 #endif
+#ifndef AVA_pickUpItem_generated_h
+	#include "pickUpItem.h"
+#endif
 #ifndef AVA_DataFactory_generated_h
 	#include "DataFactory.h"
 #endif
@@ -41,11 +44,11 @@
 #ifndef AVA_MainCharacter_generated_h
 	#include "MainCharacter.h"
 #endif
+#ifndef AVA_MainGameUI_generated_h
+	#include "MainGameUI.h"
+#endif
 #ifndef AVA_MainMenu_generated_h
 	#include "MainMenu.h"
-#endif
-#ifndef AVA_pickUpItem_generated_h
-	#include "pickUpItem.h"
 #endif
 #ifndef AVA_StatueObject_generated_h
 	#include "StatueObject.h"

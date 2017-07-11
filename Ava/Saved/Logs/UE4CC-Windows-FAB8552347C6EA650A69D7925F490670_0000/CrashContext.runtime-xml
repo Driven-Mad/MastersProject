@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FGenericCrashContext>
+<RuntimeProperties>
+<CrashVersion>3</CrashVersion>
+<CrashGUID>UE4CC-Windows-FAB8552347C6EA650A69D7925F490670_0000</CrashGUID>
+<ProcessId>10672</ProcessId>
+<IsInternalBuild>0</IsInternalBuild>
+<IsPerforceBuild>0</IsPerforceBuild>
+<IsSourceDistribution>0</IsSourceDistribution>
+<IsEnsure>1</IsEnsure>
+<SecondsSinceStart>0</SecondsSinceStart>
+<GameName>UE4-Ava</GameName>
+<ExecutableName>UE4Editor</ExecutableName>
+<BuildConfiguration>Development</BuildConfiguration>
+<GameSessionID></GameSessionID>
+<PlatformName>Windows</PlatformName>
+<PlatformNameIni>Windows</PlatformNameIni>
+<EngineMode>Editor</EngineMode>
+<DeploymentName></DeploymentName>
+<EngineVersion>4.12.5-3039270+++UE4+Release-4.12</EngineVersion>
+<CommandLine> </CommandLine>
+<LanguageLCID>2057</LanguageLCID>
+<AppDefaultLocale>en_GB</AppDefaultLocale>
+<IsUE4Release>1</IsUE4Release>
+<UserName></UserName>
+<BaseDir>C:/Program Files/Epic Games/4.12/Engine/Binaries/Win64/</BaseDir>
+<RootDir>C:/Program Files/Epic Games/4.12/</RootDir>
+<MachineId>B73A0029473D57CCD85DEBAF88D88B98</MachineId>
+<EpicAccountId>bc1d75d9b57e407cbfbe4b8cafdff156</EpicAccountId>
+<CallStack></CallStack>
+<SourceContext></SourceContext>
+<UserDescription></UserDescription>
+<UserActivityHint></UserActivityHint>
+<ErrorMessage>Ensure condition failed: !AttachmentRules.bWeldSimulatedBodies [File:D:\Build\++UE4+Release-4.12+Compile\Sync\Engine\Source\Runtime\Engine\Private\Components\SceneComponent.cpp] [Line: 1481] &nl;AttachToComponent when called from a constructor cannot weld simulated bodies. Consider calling SetupAttachment directly instead.&nl;</ErrorMessage>
+<CrashDumpMode>0</CrashDumpMode>
+<CrashReporterMessage></CrashReporterMessage>
+<Misc.NumberOfCores>6</Misc.NumberOfCores>
+<Misc.NumberOfCoresIncludingHyperthreads>12</Misc.NumberOfCoresIncludingHyperthreads>
+<Misc.Is64bitOperatingSystem>1</Misc.Is64bitOperatingSystem>
+<Misc.CPUVendor>GenuineIntel</Misc.CPUVendor>
+<Misc.CPUBrand>Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz</Misc.CPUBrand>
+<Misc.PrimaryGPUBrand>NVIDIA Quadro M4000</Misc.PrimaryGPUBrand>
+<Misc.OSVersionMajor>Windows 7</Misc.OSVersionMajor>
+<Misc.OSVersionMinor>Service Pack 1</Misc.OSVersionMinor>
+<MemoryStats.TotalPhysical>34271817728</MemoryStats.TotalPhysical>
+<MemoryStats.TotalVirtual>8796092891136</MemoryStats.TotalVirtual>
+<MemoryStats.PageSize>65536</MemoryStats.PageSize>
+<MemoryStats.TotalPhysicalGB>32</MemoryStats.TotalPhysicalGB>
+<MemoryStats.AvailablePhysical>26610221056</MemoryStats.AvailablePhysical>
+<MemoryStats.AvailableVirtual>8794778165248</MemoryStats.AvailableVirtual>
+<MemoryStats.UsedPhysical>708182016</MemoryStats.UsedPhysical>
+<MemoryStats.PeakUsedPhysical>723554304</MemoryStats.PeakUsedPhysical>
+<MemoryStats.UsedVirtual>744837120</MemoryStats.UsedVirtual>
+<MemoryStats.PeakUsedVirtual>765460480</MemoryStats.PeakUsedVirtual>
+<MemoryStats.bIsOOM>0</MemoryStats.bIsOOM>
+<MemoryStats.OOMAllocationSize>0</MemoryStats.OOMAllocationSize>
+<MemoryStats.OOMAllocationAlignment>0</MemoryStats.OOMAllocationAlignment>
+</RuntimeProperties>
+<PlatformProperties>
+<PlatformIsRunningWindows>1</PlatformIsRunningWindows>
+<BuildIntegrityStatus>0</BuildIntegrityStatus>
+</PlatformProperties>
+</FGenericCrashContext>

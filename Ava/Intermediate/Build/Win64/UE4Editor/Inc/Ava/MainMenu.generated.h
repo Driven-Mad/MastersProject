@@ -15,14 +15,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define Ava_Source_Ava_MainMenu_h_20_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execConstruct) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		this->Construct(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execPlay) \
 	{ \
 		P_FINISH; \
@@ -33,14 +25,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #define Ava_Source_Ava_MainMenu_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
- \
-	DECLARE_FUNCTION(execConstruct) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		this->Construct(); \
-		P_NATIVE_END; \
-	} \
  \
 	DECLARE_FUNCTION(execPlay) \
 	{ \

@@ -24,8 +24,8 @@ public:
 	UFUNCTION(BlueprintCallable, Category = MyUUserWidgetClass)
 		void Play();
 
-	UFUNCTION(BlueprintCallable, Category = MyUUserWidgetClass)
-		void Construct();
+	//UFUNCTION(BlueprintCallable, Category = MyUUserWidgetClass)
+	//	void Construct();
 private:
 	AMainCharacter* playerReference;
 	
