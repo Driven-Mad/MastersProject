@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define AVA_pickUpItem_generated_h
 
-#define Ava_Source_Ava_pickUpItem_h_11_RPC_WRAPPERS
-#define Ava_Source_Ava_pickUpItem_h_11_RPC_WRAPPERS_NO_PURE_DECLS
-#define Ava_Source_Ava_pickUpItem_h_11_INCLASS_NO_PURE_DECLS \
+#define Ava_Source_Ava_pickUpItem_h_12_RPC_WRAPPERS
+#define Ava_Source_Ava_pickUpItem_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define Ava_Source_Ava_pickUpItem_h_12_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesAPickUpItem(); \
 	friend AVA_API class UClass* Z_Construct_UClass_APickUpItem(); \
@@ -26,7 +26,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Ava_Source_Ava_pickUpItem_h_11_INCLASS \
+#define Ava_Source_Ava_pickUpItem_h_12_INCLASS \
 	private: \
 	static void StaticRegisterNativesAPickUpItem(); \
 	friend AVA_API class UClass* Z_Construct_UClass_APickUpItem(); \
@@ -37,7 +37,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Ava_Source_Ava_pickUpItem_h_11_STANDARD_CONSTRUCTORS \
+#define Ava_Source_Ava_pickUpItem_h_12_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API APickUpItem(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(APickUpItem) \
@@ -49,7 +49,7 @@ private: \
 public:
 
 
-#define Ava_Source_Ava_pickUpItem_h_11_ENHANCED_CONSTRUCTORS \
+#define Ava_Source_Ava_pickUpItem_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private copy-constructor, should never be used */ \
 	NO_API APickUpItem(const APickUpItem& InCopy); \
@@ -59,23 +59,23 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APickUpItem); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(APickUpItem)
 
 
-#define Ava_Source_Ava_pickUpItem_h_8_PROLOG
-#define Ava_Source_Ava_pickUpItem_h_11_GENERATED_BODY_LEGACY \
+#define Ava_Source_Ava_pickUpItem_h_9_PROLOG
+#define Ava_Source_Ava_pickUpItem_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Ava_Source_Ava_pickUpItem_h_11_RPC_WRAPPERS \
-	Ava_Source_Ava_pickUpItem_h_11_INCLASS \
-	Ava_Source_Ava_pickUpItem_h_11_STANDARD_CONSTRUCTORS \
+	Ava_Source_Ava_pickUpItem_h_12_RPC_WRAPPERS \
+	Ava_Source_Ava_pickUpItem_h_12_INCLASS \
+	Ava_Source_Ava_pickUpItem_h_12_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Ava_Source_Ava_pickUpItem_h_11_GENERATED_BODY \
+#define Ava_Source_Ava_pickUpItem_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Ava_Source_Ava_pickUpItem_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
-	Ava_Source_Ava_pickUpItem_h_11_INCLASS_NO_PURE_DECLS \
-	Ava_Source_Ava_pickUpItem_h_11_ENHANCED_CONSTRUCTORS \
+	Ava_Source_Ava_pickUpItem_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	Ava_Source_Ava_pickUpItem_h_12_INCLASS_NO_PURE_DECLS \
+	Ava_Source_Ava_pickUpItem_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

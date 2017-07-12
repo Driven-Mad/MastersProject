@@ -17,7 +17,16 @@ class UStaticMesh;
 #endif
 #define AVA_DataFactory_generated_h
 
-#define Ava_Source_Ava_DataFactory_h_55_RPC_WRAPPERS \
+#define Ava_Source_Ava_DataFactory_h_56_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execgetItemDescription) \
+	{ \
+		P_GET_PROPERTY(UByteProperty,Z_Param_ItemToSpawn); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=this->getItemDescription(Item(Z_Param_ItemToSpawn)); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execSpawnItem) \
 	{ \
@@ -37,6 +46,15 @@ class UStaticMesh;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(TEnumAsByte<Item>*)Z_Param__Result=this->GetItemType(Z_Param_enumType,Z_Param_enumName); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetIconSelectedForItem) \
+	{ \
+		P_GET_PROPERTY(UByteProperty,Z_Param_Item_type); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UTexture2D**)Z_Param__Result=this->GetIconSelectedForItem(Item(Z_Param_Item_type)); \
 		P_NATIVE_END; \
 	} \
  \
@@ -69,7 +87,16 @@ class UStaticMesh;
 	}
 
 
-#define Ava_Source_Ava_DataFactory_h_55_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Ava_Source_Ava_DataFactory_h_56_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execgetItemDescription) \
+	{ \
+		P_GET_PROPERTY(UByteProperty,Z_Param_ItemToSpawn); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=this->getItemDescription(Item(Z_Param_ItemToSpawn)); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execSpawnItem) \
 	{ \
@@ -89,6 +116,15 @@ class UStaticMesh;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(TEnumAsByte<Item>*)Z_Param__Result=this->GetItemType(Z_Param_enumType,Z_Param_enumName); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetIconSelectedForItem) \
+	{ \
+		P_GET_PROPERTY(UByteProperty,Z_Param_Item_type); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UTexture2D**)Z_Param__Result=this->GetIconSelectedForItem(Item(Z_Param_Item_type)); \
 		P_NATIVE_END; \
 	} \
  \
@@ -121,7 +157,7 @@ class UStaticMesh;
 	}
 
 
-#define Ava_Source_Ava_DataFactory_h_55_INCLASS_NO_PURE_DECLS \
+#define Ava_Source_Ava_DataFactory_h_56_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesADataFactory(); \
 	friend AVA_API class UClass* Z_Construct_UClass_ADataFactory(); \
@@ -132,7 +168,7 @@ class UStaticMesh;
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Ava_Source_Ava_DataFactory_h_55_INCLASS \
+#define Ava_Source_Ava_DataFactory_h_56_INCLASS \
 	private: \
 	static void StaticRegisterNativesADataFactory(); \
 	friend AVA_API class UClass* Z_Construct_UClass_ADataFactory(); \
@@ -143,7 +179,7 @@ class UStaticMesh;
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Ava_Source_Ava_DataFactory_h_55_STANDARD_CONSTRUCTORS \
+#define Ava_Source_Ava_DataFactory_h_56_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ADataFactory(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ADataFactory) \
@@ -155,7 +191,7 @@ private: \
 public:
 
 
-#define Ava_Source_Ava_DataFactory_h_55_ENHANCED_CONSTRUCTORS \
+#define Ava_Source_Ava_DataFactory_h_56_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private copy-constructor, should never be used */ \
 	NO_API ADataFactory(const ADataFactory& InCopy); \
@@ -165,23 +201,23 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADataFactory); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ADataFactory)
 
 
-#define Ava_Source_Ava_DataFactory_h_52_PROLOG
-#define Ava_Source_Ava_DataFactory_h_55_GENERATED_BODY_LEGACY \
+#define Ava_Source_Ava_DataFactory_h_53_PROLOG
+#define Ava_Source_Ava_DataFactory_h_56_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Ava_Source_Ava_DataFactory_h_55_RPC_WRAPPERS \
-	Ava_Source_Ava_DataFactory_h_55_INCLASS \
-	Ava_Source_Ava_DataFactory_h_55_STANDARD_CONSTRUCTORS \
+	Ava_Source_Ava_DataFactory_h_56_RPC_WRAPPERS \
+	Ava_Source_Ava_DataFactory_h_56_INCLASS \
+	Ava_Source_Ava_DataFactory_h_56_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Ava_Source_Ava_DataFactory_h_55_GENERATED_BODY \
+#define Ava_Source_Ava_DataFactory_h_56_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Ava_Source_Ava_DataFactory_h_55_RPC_WRAPPERS_NO_PURE_DECLS \
-	Ava_Source_Ava_DataFactory_h_55_INCLASS_NO_PURE_DECLS \
-	Ava_Source_Ava_DataFactory_h_55_ENHANCED_CONSTRUCTORS \
+	Ava_Source_Ava_DataFactory_h_56_RPC_WRAPPERS_NO_PURE_DECLS \
+	Ava_Source_Ava_DataFactory_h_56_INCLASS_NO_PURE_DECLS \
+	Ava_Source_Ava_DataFactory_h_56_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -193,10 +229,12 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #define FOREACH_ENUM_ITEMDATAVARIABLES(op) \
 	op(ItemDataVariables::itemMeshFilepath) \
 	op(ItemDataVariables::itemSpriteFilepath) \
+	op(ItemDataVariables::itemSelectedSpriteFilepath) \
 	op(ItemDataVariables::itemName) \
 	op(ItemDataVariables::itemDescription) \
 	op(ItemDataVariables::itemEnumIdentifier) 
 #define FOREACH_ENUM_ITEM(op) \
+	op(Item::BLANK) \
 	op(Item::Scroll01) \
 	op(Item::Scroll02) \
 	op(Item::Scroll03) \

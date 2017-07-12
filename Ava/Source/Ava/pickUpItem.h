@@ -3,6 +3,7 @@
 #pragma once
 
 #include "GameFramework/Actor.h"
+#include "DataFactory.h"
 #include "PickUpItem.generated.h"
 
 UCLASS()
@@ -21,5 +22,16 @@ public:
 	virtual void Tick( float DeltaSeconds ) override;
 
 	
-	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = pickup, meta = (AllowPrivateAccess = "true"))
+		UStaticMeshComponent *designatedMesh;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = pickup, meta = (AllowPrivateAccess = "true"))
+		UBoxComponent* boxCollider;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = pickup, meta = (AllowPrivateAccess = "true"))
+		Item itemType;
+
+	ADataFactory *myData;
+
+	//Function to enable edits in the editor (to make the grid change size there and then).
+	virtual void PostEditChangeProperty(struct FPropertyChangedEvent& PropertyChangedEvent) override;
+
 };

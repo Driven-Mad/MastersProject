@@ -14,8 +14,6 @@ APuzzle::APuzzle()
 	boxCollider->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	RootComponent = boxCollider;
 
-
-
 	bPuzzleComplete = false;
 }
 

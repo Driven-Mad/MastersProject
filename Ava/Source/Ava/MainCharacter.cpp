@@ -40,6 +40,7 @@ AMainCharacter::AMainCharacter()
 	CameraBoom->SocketOffset = FVector(0, 0, 70);
 	CameraBoom->TargetArmLength = 200.0f; // The camera follows at this distance behind the character	
 	CameraBoom->bUsePawnControlRotation = true; // Rotate the arm based on the controller
+	CameraBoom->bDoCollisionTest = true;
 
 
 
@@ -321,23 +322,32 @@ void AMainCharacter::Interact()
 	overlappingSphere->GetOverlappingActors(overlappingActors);
 	for (int32 overlappingActorIndex = 0; overlappingActorIndex < overlappingActors.Num(); overlappingActorIndex++)
 	{
-		AStatueObject* const overlappingTest = Cast<AStatueObject>(overlappingActors[overlappingActorIndex]);
+		AStatueObject* const overlappingTestSO = Cast<AStatueObject>(overlappingActors[overlappingActorIndex]);
 		//if (overlappingTest) //This works
-		if (overlappingTest && overlappingTest->bCanPlayerPray)
+		if (overlappingTestSO && overlappingTestSO->bCanPlayerPray)
 		{
-			overlappingTest->bCanPlayerPray = false;
+			overlappingTestSO->bCanPlayerPray = false;
 
-			GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, overlappingTest->statueName);
+			GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, overlappingTestSO->statueName);
 			GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("YOU ARE PRAYING AT THE :")));
 		
 			bIsPraying = true;
 
 		}
-		else if (overlappingTest && !overlappingTest->bCanPlayerPray)
+		else if (overlappingTestSO && !overlappingTestSO->bCanPlayerPray)
 		{
 			GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("YOU CAN'T PRAY AT ME ANYMORE")));
 		}
 
+
+		APickUpItem* const overlappingTestPUI = Cast<APickUpItem>(overlappingActors[overlappingActorIndex]);
+		if (overlappingTestPUI && !overlappingTestPUI->IsPendingKill())
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("Inventory Size: %i"), Inventory.Num()));
+			Inventory.Add(overlappingTestPUI->itemType);
+			overlappingTestPUI->Destroy();
+			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("Inventory Size: %i"), Inventory.Num()));
+		}
 		//-------------------------------------------
 		//!PRAYING INTERACTION
 		//-------------------------------------------

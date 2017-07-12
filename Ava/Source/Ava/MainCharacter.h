@@ -13,9 +13,8 @@
 
 #include "GameFramework/Character.h"
 #include "PushPullItem.h"
+#include "PickUpItem.h"
 #include "MainCharacter.generated.h"
-
-
 
 UCLASS()
 class AVA_API AMainCharacter : public ACharacter
@@ -236,6 +235,10 @@ public:
 		void BeginOverLap(AActor* MyOverlappedActor, AActor* OtherActor);
 	UFUNCTION(BlueprintCallable, Category = Behaviour)
 		void ExitOverLap(AActor* MyOverlappedActor, AActor* OtherActor);
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = InventoryAttributes)
+		TArray<Item> Inventory;
 private:
 	//----------------------------------------------------------------------------------------------------------------------
 	/// @brief Deltatime to be used anywhere. 

@@ -23,11 +23,16 @@ class AVA_API UMainMenu : public UUserWidget
 public:
 	UFUNCTION(BlueprintCallable, Category = MyUUserWidgetClass)
 		void Play();
-
+	virtual void NativeConstruct() override;
 	//UFUNCTION(BlueprintCallable, Category = MyUUserWidgetClass)
 	//	void Construct();
+	//UPROPERTY(EditAnywhere, Category = MenuUI)
+		//AMainCharacter* playerReference;
+		//TSubclassOf<class AMainCharacter> playerReference;
+		//TSubclassOf<AMainCharacter*> playerReference;
+	//UPROPERTY(EditDefaultsOnly, Category = MenuUI)
+	//	TSubobjectPtr<class AMainCharacter> playerReference;
 private:
-	AMainCharacter* playerReference;
 	
 	
 };

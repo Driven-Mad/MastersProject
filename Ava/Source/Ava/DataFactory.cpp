@@ -35,19 +35,30 @@ TMap<Item, ItemData> ADataFactory::SetupItems()
 	// setup out item data container
 	TMap<Item, ItemData> tItems;
 	
+	ItemData blank;
+	blank.Add(ItemDataVariables::itemDescription, "");
+	blank.Add(ItemDataVariables::itemEnumIdentifier, "BLANK");
+	blank.Add(ItemDataVariables::itemMeshFilepath, "");
+	blank.Add(ItemDataVariables::itemSpriteFilepath, "");
+	blank.Add(ItemDataVariables::itemSelectedSpriteFilepath, "");
+	blank.Add(ItemDataVariables::itemName, "");
+	tItems.Add(Item::BLANK, blank);
+
 	ItemData a;
 	a.Add(ItemDataVariables::itemDescription,"Endless Knot - The intertwining of lines in the eternal knot is said to symbolize how everything is connected. It can also represent how religion and secular affairs, as well as compassion and wisdom are united and connected to each other.");
 	a.Add(ItemDataVariables::itemEnumIdentifier, "Scroll01");
 	a.Add(ItemDataVariables::itemMeshFilepath, "/Game/StarterContent/Shapes/Shape_Pipe.Shape_Pipe");
 	a.Add(ItemDataVariables::itemSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll1.Scroll1");
+	a.Add(ItemDataVariables::itemSelectedSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll1Hovered.Scroll1Hovered");
 	a.Add(ItemDataVariables::itemName, "Endless Knot Scroll");
 	tItems.Add(Item::Scroll01, a);
 
-	ItemData b;
+	ItemData b; 
 	b.Add(ItemDataVariables::itemDescription, "Lotus - The lotus has been used in many teachings of Buddhism to impart the true nature of all mankind. The roots of the lotus plant are stuck deep in the mud, but it still grows above murky water and blossoms into a beautiful, sweet-smelling flower. ");
 	b.Add(ItemDataVariables::itemEnumIdentifier, "Scroll02");
 	b.Add(ItemDataVariables::itemMeshFilepath, "/Game/StarterContent/Shapes/Shape_Pipe.Shape_Pipe");
 	b.Add(ItemDataVariables::itemSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll2.Scroll2");
+	b.Add(ItemDataVariables::itemSelectedSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll2Hovered.Scroll2Hovered");
 	b.Add(ItemDataVariables::itemName, "Lotus Scroll");
 	tItems.Add(Item::Scroll02, b);
 
@@ -55,7 +66,8 @@ TMap<Item, ItemData> ADataFactory::SetupItems()
 	c.Add(ItemDataVariables::itemDescription, "Banner of Victory - This symbol represents how Buddha won over the demon Mara. This demon, in Buddhism, is synonymous to passion, lust and pride. The Banner of Victory is used to remind people that one must win over their own pride, lust and passions to be able to reach enlightenment.");
 	c.Add(ItemDataVariables::itemEnumIdentifier, "Scroll03");
 	c.Add(ItemDataVariables::itemMeshFilepath, "/Game/StarterContent/Shapes/Shape_Pipe.Shape_Pipe");
-	c.Add(ItemDataVariables::itemSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll3.Scroll3");
+	c.Add(ItemDataVariables::itemSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll3.Scroll3"); 
+	c.Add(ItemDataVariables::itemSelectedSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll3Hovered.Scroll3Hovered");
 	c.Add(ItemDataVariables::itemName, "Banner of Victory Scroll");
 	tItems.Add(Item::Scroll03, c);
 
@@ -156,7 +168,7 @@ TMap<Item, ItemData> ADataFactory::SetupItems()
 	tItems.Add(Item::Trash03, o);
 
 	ItemData p;
-	p.Add(ItemDataVariables::itemDescription, "An item for the white room");
+	p.Add(ItemDataVariables::itemDescription, "An item of no use, but is very pretty");
 	p.Add(ItemDataVariables::itemEnumIdentifier, "Trash04");
 	p.Add(ItemDataVariables::itemMeshFilepath, "/Game/StarterContent/Shapes/Shape_Torus.Shape_Torus");
 	p.Add(ItemDataVariables::itemSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Trash4.Trash4");
@@ -182,6 +194,13 @@ UTexture2D * ADataFactory::GetIconForItem(Item Item_type)
 	UTexture2D* Texture = Cast <UTexture2D>(StaticLoadObject(UTexture2D::StaticClass(), NULL, e[ItemDataVariables::itemSpriteFilepath].GetCharArray().GetData()));
 	return Texture;
 }
+
+UTexture2D * ADataFactory::GetIconSelectedForItem(Item Item_type)
+{
+	ItemData e = Items[Item_type];
+	UTexture2D* Texture = Cast <UTexture2D>(StaticLoadObject(UTexture2D::StaticClass(), NULL, e[ItemDataVariables::itemSelectedSpriteFilepath].GetCharArray().GetData()));
+	return Texture;
+}
 Item ADataFactory::GetItemType(const FString & enumType, const FString & enumName)
 {
 	UEnum *Ingr = FindObject<UEnum>(ANY_PACKAGE, *enumType, true);
@@ -193,14 +212,20 @@ AActor * ADataFactory::SpawnItem(Item ItemToSpawn, FTransform Position, TSubclas
 	UWorld * const world = GetWorld();
 	if (world && AnotherClass)
 	{
-		FActorSpawnParameters t;
-		t.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
-		APickUpItem* reference = world->SpawnActor<APickUpItem>(AnotherClass, Position, t);
-		//reference->InventoryObject3DRepresentation->SetStaticMesh(Get3DRepresentationForItem(ItemToSpawn));
+		//FActorSpawnParameters t;
+		//t.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
+		//APickUpItem* reference = world->SpawnActor<APickUpItem>(AnotherClass, Position, t);
+		////reference->InventoryObject3DRepresentation->SetStaticMesh(Get3DRepresentationForItem(ItemToSpawn));
 		//reference->ItemName = AccessTMapItems(ItemToSpawn, IngredientDataVariables::i_item_name);
 		//reference->InventoryObjectSprite2DRepresentation = GetIconForItem(ItemToSpawn);
-		return reference;
+		//return reference;
 	
 	}
 	return nullptr;
+}
+
+FString ADataFactory::getItemDescription(Item ItemToSpawn)
+{
+	ItemData e = Items[ItemToSpawn];
+	return e[ItemDataVariables::itemDescription];
 }

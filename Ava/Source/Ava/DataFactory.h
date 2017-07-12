@@ -3,7 +3,6 @@
 #pragma once
 
 #include "GameFramework/Actor.h"
-#include "PickUpItem.h"
 #include "DataFactory.generated.h"
 
 
@@ -13,6 +12,7 @@
 UENUM(BlueprintType)
 enum class Item : uint8 
 {
+	BLANK				UMETA(DisplayName = "BLANK"),
 	Scroll01			UMETA(DisplayName = "Scroll01"),
 	Scroll02			UMETA(DisplayName = "Scroll02"),
 	Scroll03			UMETA(DisplayName = "Scroll03"),
@@ -41,6 +41,7 @@ enum class ItemDataVariables : uint8
 {
 	itemMeshFilepath			UMETA(DisplayName = "itemMeshFilepath"),
 	itemSpriteFilepath			UMETA(DisplayName = "itemSrpiteFilepath"),
+	itemSelectedSpriteFilepath	UMETA(DisplayName = "itemSrpiteFilepath"),
 	itemName					UMETA(DisplayName = "itemName"),
 	itemDescription				UMETA(DisplayName = "itemDescription"),
 	itemEnumIdentifier			UMETA(DisplayName = "itemEnumIdentifier")
@@ -78,9 +79,15 @@ public:
 		UTexture2D* GetIconForItem(Item Item_type);
 
 	UFUNCTION(BlueprintCallable, Category = "Items")
+		UTexture2D* GetIconSelectedForItem(Item Item_type);
+
+	UFUNCTION(BlueprintCallable, Category = "Items")
 		Item GetItemType(const FString &enumType, const FString &enumName);
 
 	UFUNCTION(BlueprintCallable, Category = "Items")
 		AActor* SpawnItem(Item ItemToSpawn, FTransform Position, TSubclassOf<AActor> AnotherClass);
+
+	UFUNCTION(BlueprintCallable, Category = "Items")
+		FString getItemDescription(Item ItemToSpawn);
 	
 };

@@ -21,15 +21,17 @@ ADoor::ADoor()
 	FAttachmentTransformRules rules = FAttachmentTransformRules(EAttachmentRule::KeepRelative, true);
 	designatedMesh->AttachToComponent(RootComponent, rules);
 
+
 	static ConstructorHelpers::FObjectFinder<UCurveFloat> Curvy(TEXT("/Game/TemporaryContent/DoorSwing.DoorSwing"));
-	if (Curvy.Object) {
+	if (Curvy.Object)
+	{
 		fCurve = Curvy.Object;
+		ScoreTimeline = CreateDefaultSubobject<UTimelineComponent>(TEXT("TimelineScore"));
+		
+		//Bind the Callbackfuntion for the float return value
+		InterpFunction.BindUFunction(this, FName{ TEXT("TimelineFloatReturn") });
 	}
 
-	ScoreTimeline = CreateDefaultSubobject<UTimelineComponent>(TEXT("TimelineScore"));
-
-	//Bind the Callbackfuntion for the float return value
-	InterpFunction.BindUFunction(this, FName{ TEXT("TimelineFloatReturn") });
 }
 
 // Called when the game starts or when spawned
@@ -37,7 +39,8 @@ void ADoor::BeginPlay()
 {
 	Super::BeginPlay();
 	//Add the float curve to the timeline and connect it to your timelines's interpolation function
-	ScoreTimeline->AddInterpFloat(fCurve, InterpFunction, FName{ TEXT("Floaty") });	
+
+	ScoreTimeline->AddInterpFloat(fCurve, InterpFunction, FName{ TEXT("Floaty") });
 }
 
 // Called every frame

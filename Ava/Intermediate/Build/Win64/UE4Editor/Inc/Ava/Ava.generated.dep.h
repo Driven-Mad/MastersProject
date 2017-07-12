@@ -29,9 +29,6 @@
 #ifndef AVA_BTTaskFindNextRoutePoint_generated_h
 	#include "BTTaskFindNextRoutePoint.h"
 #endif
-#ifndef AVA_pickUpItem_generated_h
-	#include "pickUpItem.h"
-#endif
 #ifndef AVA_DataFactory_generated_h
 	#include "DataFactory.h"
 #endif
@@ -40,6 +37,9 @@
 #endif
 #ifndef AVA_PushPullItem_generated_h
 	#include "PushPullItem.h"
+#endif
+#ifndef AVA_pickUpItem_generated_h
+	#include "pickUpItem.h"
 #endif
 #ifndef AVA_MainCharacter_generated_h
 	#include "MainCharacter.h"

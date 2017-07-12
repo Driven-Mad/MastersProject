@@ -42,10 +42,6 @@ void EmptyLinkFunctionForGeneratedCode1Ava() {}
 	{
 	}
 	IMPLEMENT_CLASS(UBTTaskFindNextRoutePoint, 3342134226);
-	void APickUpItem::StaticRegisterNativesAPickUpItem()
-	{
-	}
-	IMPLEMENT_CLASS(APickUpItem, 4286059436);
 static class UEnum* ItemDataVariables_StaticEnum()
 {
 	extern AVA_API class UPackage* Z_Construct_UPackage__Script_Ava();
@@ -75,10 +71,12 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 		FNativeFunctionRegistrar::RegisterFunction(ADataFactory::StaticClass(), "AccessTMapItems",(Native)&ADataFactory::execAccessTMapItems);
 		FNativeFunctionRegistrar::RegisterFunction(ADataFactory::StaticClass(), "Get3DRepresentationForItem",(Native)&ADataFactory::execGet3DRepresentationForItem);
 		FNativeFunctionRegistrar::RegisterFunction(ADataFactory::StaticClass(), "GetIconForItem",(Native)&ADataFactory::execGetIconForItem);
+		FNativeFunctionRegistrar::RegisterFunction(ADataFactory::StaticClass(), "GetIconSelectedForItem",(Native)&ADataFactory::execGetIconSelectedForItem);
+		FNativeFunctionRegistrar::RegisterFunction(ADataFactory::StaticClass(), "getItemDescription",(Native)&ADataFactory::execgetItemDescription);
 		FNativeFunctionRegistrar::RegisterFunction(ADataFactory::StaticClass(), "GetItemType",(Native)&ADataFactory::execGetItemType);
 		FNativeFunctionRegistrar::RegisterFunction(ADataFactory::StaticClass(), "SpawnItem",(Native)&ADataFactory::execSpawnItem);
 	}
-	IMPLEMENT_CLASS(ADataFactory, 1465978347);
+	IMPLEMENT_CLASS(ADataFactory, 3129398921);
 	void ADoor::StaticRegisterNativesADoor()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(ADoor::StaticClass(), "Open",(Native)&ADoor::execOpen);
@@ -89,17 +87,21 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	{
 	}
 	IMPLEMENT_CLASS(APushPullItem, 4233526669);
+	void APickUpItem::StaticRegisterNativesAPickUpItem()
+	{
+	}
+	IMPLEMENT_CLASS(APickUpItem, 902397539);
 	void AMainCharacter::StaticRegisterNativesAMainCharacter()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(AMainCharacter::StaticClass(), "BeginOverLap",(Native)&AMainCharacter::execBeginOverLap);
 		FNativeFunctionRegistrar::RegisterFunction(AMainCharacter::StaticClass(), "ExitOverLap",(Native)&AMainCharacter::execExitOverLap);
 	}
-	IMPLEMENT_CLASS(AMainCharacter, 2735472562);
+	IMPLEMENT_CLASS(AMainCharacter, 3460924843);
 	void UMainGameUI::StaticRegisterNativesUMainGameUI()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(UMainGameUI::StaticClass(), "Play",(Native)&UMainGameUI::execPlay);
 	}
-	IMPLEMENT_CLASS(UMainGameUI, 3766878967);
+	IMPLEMENT_CLASS(UMainGameUI, 3222596243);
 	void UMainMenu::StaticRegisterNativesUMainMenu()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(UMainMenu::StaticClass(), "Play",(Native)&UMainMenu::execPlay);
@@ -129,11 +131,11 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
 	AIMODULE_API class UClass* Z_Construct_UClass_UBTService_BlackboardBase();
 	AIMODULE_API class UClass* Z_Construct_UClass_UBTTask_BlackboardBase();
-	ENGINE_API class UClass* Z_Construct_UClass_AActor();
 	ENGINE_API class UClass* Z_Construct_UClass_UStaticMesh_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UTexture2D_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AActor_NoRegister();
 	COREUOBJECT_API class UScriptStruct* Z_Construct_UScriptStruct_FTransform();
+	ENGINE_API class UClass* Z_Construct_UClass_AActor();
 	ENGINE_API class UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UCurveFloat_NoRegister();
@@ -159,13 +161,13 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	AVA_API class UClass* Z_Construct_UClass_UBTTaskFindClosestEscapePoint();
 	AVA_API class UClass* Z_Construct_UClass_UBTTaskFindNextRoutePoint_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_UBTTaskFindNextRoutePoint();
-	AVA_API class UClass* Z_Construct_UClass_APickUpItem_NoRegister();
-	AVA_API class UClass* Z_Construct_UClass_APickUpItem();
 	AVA_API class UEnum* Z_Construct_UEnum_Ava_ItemDataVariables();
 	AVA_API class UEnum* Z_Construct_UEnum_Ava_Item();
 	AVA_API class UFunction* Z_Construct_UFunction_ADataFactory_AccessTMapItems();
 	AVA_API class UFunction* Z_Construct_UFunction_ADataFactory_Get3DRepresentationForItem();
 	AVA_API class UFunction* Z_Construct_UFunction_ADataFactory_GetIconForItem();
+	AVA_API class UFunction* Z_Construct_UFunction_ADataFactory_GetIconSelectedForItem();
+	AVA_API class UFunction* Z_Construct_UFunction_ADataFactory_getItemDescription();
 	AVA_API class UFunction* Z_Construct_UFunction_ADataFactory_GetItemType();
 	AVA_API class UFunction* Z_Construct_UFunction_ADataFactory_SpawnItem();
 	AVA_API class UClass* Z_Construct_UClass_ADataFactory_NoRegister();
@@ -176,6 +178,8 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	AVA_API class UClass* Z_Construct_UClass_ADoor();
 	AVA_API class UClass* Z_Construct_UClass_APushPullItem_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_APushPullItem();
+	AVA_API class UClass* Z_Construct_UClass_APickUpItem_NoRegister();
+	AVA_API class UClass* Z_Construct_UClass_APickUpItem();
 	AVA_API class UFunction* Z_Construct_UFunction_AMainCharacter_BeginOverLap();
 	AVA_API class UFunction* Z_Construct_UFunction_AMainCharacter_ExitOverLap();
 	AVA_API class UClass* Z_Construct_UClass_AMainCharacter_NoRegister();
@@ -520,38 +524,6 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UBTTaskFindNextRoutePoint(Z_Construct_UClass_UBTTaskFindNextRoutePoint, &UBTTaskFindNextRoutePoint::StaticClass, TEXT("UBTTaskFindNextRoutePoint"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UBTTaskFindNextRoutePoint);
-	UClass* Z_Construct_UClass_APickUpItem_NoRegister()
-	{
-		return APickUpItem::StaticClass();
-	}
-	UClass* Z_Construct_UClass_APickUpItem()
-	{
-		static UClass* OuterClass = NULL;
-		if (!OuterClass)
-		{
-			Z_Construct_UClass_AActor();
-			Z_Construct_UPackage__Script_Ava();
-			OuterClass = APickUpItem::StaticClass();
-			if (!(OuterClass->ClassFlags & CLASS_Constructed))
-			{
-				UObjectForceRegistration(OuterClass);
-				OuterClass->ClassFlags |= 0x20900080;
-
-
-				OuterClass->StaticLink();
-#if WITH_METADATA
-				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
-				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("pickUpItem.h"));
-				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("pickUpItem.h"));
-				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
-#endif
-			}
-		}
-		check(OuterClass->GetClass());
-		return OuterClass;
-	}
-	static FCompiledInDefer Z_CompiledInDefer_UClass_APickUpItem(Z_Construct_UClass_APickUpItem, &APickUpItem::StaticClass, TEXT("APickUpItem"), false, nullptr, nullptr);
-	DEFINE_VTABLE_PTR_HELPER_CTOR(APickUpItem);
 	UEnum* Z_Construct_UEnum_Ava_ItemDataVariables()
 	{
 		UPackage* Outer=Z_Construct_UPackage__Script_Ava();
@@ -563,10 +535,11 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			TArray<TPair<FName, uint8>> EnumNames;
 			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("ItemDataVariables::itemMeshFilepath")), 0));
 			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("ItemDataVariables::itemSpriteFilepath")), 1));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("ItemDataVariables::itemName")), 2));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("ItemDataVariables::itemDescription")), 3));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("ItemDataVariables::itemEnumIdentifier")), 4));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("ItemDataVariables::ItemDataVariables_MAX")), 5));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("ItemDataVariables::itemSelectedSpriteFilepath")), 2));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("ItemDataVariables::itemName")), 3));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("ItemDataVariables::itemDescription")), 4));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("ItemDataVariables::itemEnumIdentifier")), 5));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("ItemDataVariables::ItemDataVariables_MAX")), 6));
 			ReturnEnum->SetEnums(EnumNames, UEnum::ECppForm::EnumClass);
 			ReturnEnum->CppType = TEXT("ItemDataVariables");
 #if WITH_METADATA
@@ -576,6 +549,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			MetaData->SetValue(ReturnEnum, TEXT("itemEnumIdentifier.DisplayName"), TEXT("itemEnumIdentifier"));
 			MetaData->SetValue(ReturnEnum, TEXT("itemMeshFilepath.DisplayName"), TEXT("itemMeshFilepath"));
 			MetaData->SetValue(ReturnEnum, TEXT("itemName.DisplayName"), TEXT("itemName"));
+			MetaData->SetValue(ReturnEnum, TEXT("itemSelectedSpriteFilepath.DisplayName"), TEXT("itemSrpiteFilepath"));
 			MetaData->SetValue(ReturnEnum, TEXT("itemSpriteFilepath.DisplayName"), TEXT("itemSrpiteFilepath"));
 			MetaData->SetValue(ReturnEnum, TEXT("ModuleRelativePath"), TEXT("DataFactory.h"));
 			MetaData->SetValue(ReturnEnum, TEXT("ToolTip"), TEXT("@brief Data variable enums for our items to be used with TMaps"));
@@ -583,7 +557,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		}
 		return ReturnEnum;
 	}
-	uint32 Get_Z_Construct_UEnum_Ava_ItemDataVariables_CRC() { return 309101387U; }
+	uint32 Get_Z_Construct_UEnum_Ava_ItemDataVariables_CRC() { return 1731521118U; }
 	UEnum* Z_Construct_UEnum_Ava_Item()
 	{
 		UPackage* Outer=Z_Construct_UPackage__Script_Ava();
@@ -593,27 +567,29 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		{
 			ReturnEnum = new(EC_InternalUseOnlyConstructor, Outer, TEXT("Item"), RF_Public|RF_Transient|RF_MarkAsNative) UEnum(FObjectInitializer());
 			TArray<TPair<FName, uint8>> EnumNames;
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll01")), 0));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll02")), 1));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll03")), 2));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll04")), 3));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll05")), 4));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll06")), 5));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll07")), 6));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll08")), 7));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Bracelet")), 8));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Item01")), 9));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Item02")), 10));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Item03")), 11));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Trash01")), 12));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Trash02")), 13));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Trash03")), 14));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Trash04")), 15));
-			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Item_MAX")), 16));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::BLANK")), 0));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll01")), 1));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll02")), 2));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll03")), 3));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll04")), 4));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll05")), 5));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll06")), 6));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll07")), 7));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Scroll08")), 8));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Bracelet")), 9));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Item01")), 10));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Item02")), 11));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Item03")), 12));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Trash01")), 13));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Trash02")), 14));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Trash03")), 15));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Trash04")), 16));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("Item::Item_MAX")), 17));
 			ReturnEnum->SetEnums(EnumNames, UEnum::ECppForm::EnumClass);
 			ReturnEnum->CppType = TEXT("Item");
 #if WITH_METADATA
 			UMetaData* MetaData = ReturnEnum->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnEnum, TEXT("BLANK.DisplayName"), TEXT("BLANK"));
 			MetaData->SetValue(ReturnEnum, TEXT("BlueprintType"), TEXT("true"));
 			MetaData->SetValue(ReturnEnum, TEXT("Bracelet.DisplayName"), TEXT("Bracelet"));
 			MetaData->SetValue(ReturnEnum, TEXT("Item01.DisplayName"), TEXT("Item01"));
@@ -637,7 +613,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		}
 		return ReturnEnum;
 	}
-	uint32 Get_Z_Construct_UEnum_Ava_Item_CRC() { return 3851218752U; }
+	uint32 Get_Z_Construct_UEnum_Ava_Item_CRC() { return 1346486820U; }
 	UFunction* Z_Construct_UFunction_ADataFactory_AccessTMapItems()
 	{
 		struct DataFactory_eventAccessTMapItems_Parms
@@ -702,6 +678,54 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetIconForItem"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(DataFactory_eventGetIconForItem_Parms));
 			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReturnValue, DataFactory_eventGetIconForItem_Parms), 0x0010000000000580, Z_Construct_UClass_UTexture2D_NoRegister());
 			UProperty* NewProp_Item_type = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Item_type"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(Item_type, DataFactory_eventGetIconForItem_Parms), 0x0010000000000080, Z_Construct_UEnum_Ava_Item());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Items"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("DataFactory.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ADataFactory_GetIconSelectedForItem()
+	{
+		struct DataFactory_eventGetIconSelectedForItem_Parms
+		{
+			TEnumAsByte<Item> Item_type;
+			UTexture2D* ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_ADataFactory();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetIconSelectedForItem"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(DataFactory_eventGetIconSelectedForItem_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReturnValue, DataFactory_eventGetIconSelectedForItem_Parms), 0x0010000000000580, Z_Construct_UClass_UTexture2D_NoRegister());
+			UProperty* NewProp_Item_type = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Item_type"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(Item_type, DataFactory_eventGetIconSelectedForItem_Parms), 0x0010000000000080, Z_Construct_UEnum_Ava_Item());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Items"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("DataFactory.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ADataFactory_getItemDescription()
+	{
+		struct DataFactory_eventgetItemDescription_Parms
+		{
+			TEnumAsByte<Item> ItemToSpawn;
+			FString ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_ADataFactory();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("getItemDescription"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(DataFactory_eventgetItemDescription_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStrProperty(CPP_PROPERTY_BASE(ReturnValue, DataFactory_eventgetItemDescription_Parms), 0x0010000000000580);
+			UProperty* NewProp_ItemToSpawn = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ItemToSpawn"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(ItemToSpawn, DataFactory_eventgetItemDescription_Parms), 0x0010000000000080, Z_Construct_UEnum_Ava_Item());
 			ReturnFunction->Bind();
 			ReturnFunction->StaticLink();
 #if WITH_METADATA
@@ -788,12 +812,16 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->LinkChild(Z_Construct_UFunction_ADataFactory_AccessTMapItems());
 				OuterClass->LinkChild(Z_Construct_UFunction_ADataFactory_Get3DRepresentationForItem());
 				OuterClass->LinkChild(Z_Construct_UFunction_ADataFactory_GetIconForItem());
+				OuterClass->LinkChild(Z_Construct_UFunction_ADataFactory_GetIconSelectedForItem());
+				OuterClass->LinkChild(Z_Construct_UFunction_ADataFactory_getItemDescription());
 				OuterClass->LinkChild(Z_Construct_UFunction_ADataFactory_GetItemType());
 				OuterClass->LinkChild(Z_Construct_UFunction_ADataFactory_SpawnItem());
 
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADataFactory_AccessTMapItems(), "AccessTMapItems"); // 3208356478
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADataFactory_Get3DRepresentationForItem(), "Get3DRepresentationForItem"); // 3763989745
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADataFactory_GetIconForItem(), "GetIconForItem"); // 287581182
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADataFactory_GetIconSelectedForItem(), "GetIconSelectedForItem"); // 2770935636
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADataFactory_getItemDescription(), "getItemDescription"); // 2274934631
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADataFactory_GetItemType(), "GetItemType"); // 1941724549
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADataFactory_SpawnItem(), "SpawnItem"); // 1581336656
 				OuterClass->StaticLink();
@@ -980,6 +1008,54 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_APushPullItem(Z_Construct_UClass_APushPullItem, &APushPullItem::StaticClass, TEXT("APushPullItem"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(APushPullItem);
+	UClass* Z_Construct_UClass_APickUpItem_NoRegister()
+	{
+		return APickUpItem::StaticClass();
+	}
+	UClass* Z_Construct_UClass_APickUpItem()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_Ava();
+			OuterClass = APickUpItem::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_itemType = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("itemType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(itemType, APickUpItem), 0x0010000000000015, Z_Construct_UEnum_Ava_Item());
+				UProperty* NewProp_boxCollider = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("boxCollider"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(boxCollider, APickUpItem), 0x001000000008001d, Z_Construct_UClass_UBoxComponent_NoRegister());
+				UProperty* NewProp_designatedMesh = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("designatedMesh"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(designatedMesh, APickUpItem), 0x001000000008001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("pickUpItem.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("pickUpItem.h"));
+				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_itemType, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_itemType, TEXT("Category"), TEXT("pickup"));
+				MetaData->SetValue(NewProp_itemType, TEXT("ModuleRelativePath"), TEXT("pickUpItem.h"));
+				MetaData->SetValue(NewProp_boxCollider, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_boxCollider, TEXT("Category"), TEXT("pickup"));
+				MetaData->SetValue(NewProp_boxCollider, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_boxCollider, TEXT("ModuleRelativePath"), TEXT("pickUpItem.h"));
+				MetaData->SetValue(NewProp_designatedMesh, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_designatedMesh, TEXT("Category"), TEXT("pickup"));
+				MetaData->SetValue(NewProp_designatedMesh, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_designatedMesh, TEXT("ModuleRelativePath"), TEXT("pickUpItem.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_APickUpItem(Z_Construct_UClass_APickUpItem, &APickUpItem::StaticClass, TEXT("APickUpItem"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(APickUpItem);
 	UFunction* Z_Construct_UFunction_AMainCharacter_BeginOverLap()
 	{
 		struct MainCharacter_eventBeginOverLap_Parms
@@ -1049,6 +1125,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->LinkChild(Z_Construct_UFunction_AMainCharacter_ExitOverLap());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_Inventory = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Inventory"), RF_Public|RF_Transient|RF_MarkAsNative) UArrayProperty(CPP_PROPERTY_BASE(Inventory, AMainCharacter), 0x0010000000000005);
+				UProperty* NewProp_Inventory_Inner = new(EC_InternalUseOnlyConstructor, NewProp_Inventory, TEXT("Inventory"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000, Z_Construct_UEnum_Ava_Item());
 				UProperty* NewProp_characterArmHeight = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("characterArmHeight"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(characterArmHeight, AMainCharacter), 0x0010000000000005);
 				UProperty* NewProp_pushPullTraceCheckDistance = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("pushPullTraceCheckDistance"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(pushPullTraceCheckDistance, AMainCharacter), 0x0010000000000005);
 				UProperty* NewProp_overlappingSphere = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("overlappingSphere"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(overlappingSphere, AMainCharacter), 0x00100000000a001d, Z_Construct_UClass_USphereComponent_NoRegister());
@@ -1092,6 +1170,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_Inventory, TEXT("Category"), TEXT("InventoryAttributes"));
+				MetaData->SetValue(NewProp_Inventory, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(NewProp_characterArmHeight, TEXT("Category"), TEXT("pushPullAttributes"));
 				MetaData->SetValue(NewProp_characterArmHeight, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(NewProp_pushPullTraceCheckDistance, TEXT("Category"), TEXT("pushPullAttributes"));
@@ -1180,7 +1260,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnFunction->StaticLink();
 #if WITH_METADATA
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
-			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("MyUUserWidgetClass"));
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("GameUI"));
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("MainGameUI.h"));
 #endif
 		}
@@ -1205,12 +1285,18 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 				OuterClass->LinkChild(Z_Construct_UFunction_UMainGameUI_Play());
 
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UMainGameUI_Play(), "Play"); // 661042241
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_playerReference = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("playerReference"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(playerReference, UMainGameUI), 0x0010000000000001, Z_Construct_UClass_AMainCharacter_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UMainGameUI_Play(), "Play"); // 2260522241
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("MainGameUI.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("MainGameUI.h"));
+				MetaData->SetValue(NewProp_playerReference, TEXT("Category"), TEXT("GameUI"));
+				MetaData->SetValue(NewProp_playerReference, TEXT("ModuleRelativePath"), TEXT("MainGameUI.h"));
+				MetaData->SetValue(NewProp_playerReference, TEXT("ToolTip"), TEXT("UFUNCTION(BlueprintCallable, BlueprintImplementableEvent,  Category = MyUUserWidgetClass)\n       void Construct();"));
 #endif
 			}
 		}
@@ -1418,8 +1504,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Ava")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x8278ACD7;
-			Guid.B = 0xC3317BD5;
+			Guid.A = 0x09E839A2;
+			Guid.B = 0x25184E06;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

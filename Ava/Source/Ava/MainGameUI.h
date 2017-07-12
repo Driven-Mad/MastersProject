@@ -19,13 +19,16 @@ class AVA_API UMainGameUI : public UUserWidget
 {
 	GENERATED_BODY()
 public:
-	UFUNCTION(BlueprintCallable, Category = MyUUserWidgetClass)
+	UFUNCTION(BlueprintCallable, Category = GameUI)
 		void Play();
 
-	//UFUNCTION(BlueprintCallable, Category = MyUUserWidgetClass)
+	virtual void NativeConstruct() override;
+	//UFUNCTION(BlueprintCallable, BlueprintImplementableEvent,  Category = MyUUserWidgetClass)
 	//	void Construct();
+	UPROPERTY(EditAnywhere, Category = GameUI)
+		AMainCharacter* playerReference;
 private:
-	AMainCharacter* playerReference;
+	
 
 	
 	

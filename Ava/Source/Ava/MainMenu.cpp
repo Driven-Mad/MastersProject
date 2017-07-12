@@ -15,3 +15,17 @@ void UMainMenu::Play()
 //	playerReference = Cast<AMainCharacter>(UGameplayStatics::GetPlayerController(UUserWidget::GetWorld(), 0));
 //	//playerReference = Cast<AMainCharacter>( GetOwningPlayer());
 //}
+
+void UMainMenu::NativeConstruct()
+{
+	Super::NativeConstruct();
+	//playerReference = *Cast<TSubclassOf<AMainCharacter>>(UGameplayStatics::GetPlayerController(UUserWidget::GetWorld(), 0));
+	//playerReference = Cast<>(UGameplayStatics::GetPlayerController(UUserWidget::GetWorld(), 0));
+	//playerReference = Cast<AMainCharacter>( GetOwningPlayer());
+	//if (Item->IsChildOf(AShooterWeapon::StaticClass()))
+	//{
+	//	TSubclassOf<AShooterWeapon> WeaponClass = *Item;
+	//	CanPickupAmmo(WeaponClass);
+	//}
+
+}

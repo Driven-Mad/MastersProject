@@ -1,10 +1,44 @@
-﻿  Creating makefile for hot reloading AvaEditor (working set of source files changed)
-  Compiling game modules for hot reload
+﻿  Cleaning AvaEditor Binaries...
+  Creating makefile for AvaEditor (no existing makefile)
+  Performing full C++ include scan (no include cache file)
   Parsing headers for AvaEditor
     Running UnrealHeaderTool "W:\University Work\Masters\MastersProject\MastersProject\Ava\Ava.uproject" "W:\University Work\Masters\MastersProject\MastersProject\Ava\Intermediate\Build\Win64\AvaEditor\Development\AvaEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for AvaEditor in 5.0252151 seconds
-  Performing 2 actions (9 in parallel)
+  Reflection code generated for AvaEditor in 5.2754924 seconds
+  Performing 24 actions (9 in parallel)
+  [3/24] Resource PCLaunch.rc
+  [2/24] Resource ModuleVersionResource.rc.inl
+  PCH.Ava.h.cpp
+  Ava.generated.cpp
+  MainGameUI.cpp
+  StatueObject.cpp
+  PushPullItem.cpp
+  MainMenu.cpp
+  pickUpItem.cpp
+  RoutePoint.cpp
+  Puzzle.cpp
+  MainCharacter.cpp
+W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\StatueObject.cpp(24): warning C4996: 'USceneComponent::AttachTo': This function is deprecated, please use AttachToComponent instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+  C:\Program Files\Epic Games\4.12\Engine\Source\Runtime\Engine\Classes\Components/SceneComponent.h(607): note: see declaration of 'USceneComponent::AttachTo'
+W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\MainCharacter.cpp(39): warning C4996: 'USceneComponent::AttachTo': This function is deprecated, please use AttachToComponent instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+  C:\Program Files\Epic Games\4.12\Engine\Source\Runtime\Engine\Classes\Components/SceneComponent.h(607): note: see declaration of 'USceneComponent::AttachTo'
+W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\MainCharacter.cpp(49): warning C4996: 'USceneComponent::AttachTo': This function is deprecated, please use AttachToComponent instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+  C:\Program Files\Epic Games\4.12\Engine\Source\Runtime\Engine\Classes\Components/SceneComponent.h(607): note: see declaration of 'USceneComponent::AttachTo'
+W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\MainCharacter.cpp(58): warning C4996: 'USceneComponent::AttachTo': This function is deprecated, please use AttachToComponent instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+  C:\Program Files\Epic Games\4.12\Engine\Source\Runtime\Engine\Classes\Components/SceneComponent.h(607): note: see declaration of 'USceneComponent::AttachTo'
+  GreenPuzzle.cpp
   DataFactory.cpp
-  [2/2] Link UE4Editor-Ava-6979.dll
-     Creating library W:\University Work\Masters\MastersProject\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Ava-6979.lib and object W:\University Work\Masters\MastersProject\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Ava-6979.exp
-  Total build time: 19.12 seconds
+  Door.cpp
+  BTTaskFindNextRoutePoint.cpp
+  BTTaskFindClosestEscapePoint.cpp
+  BTServiceSearchForPlayer.cpp
+  AvaGameMode.cpp
+  Ava.cpp
+  AntelopeAIController.cpp
+  Antelope.cpp
+w:\university work\masters\mastersproject\mastersproject\ava\source\ava\bttaskfindclosestescapepoint.cpp(33): warning C4701: potentially uninitialized local variable 'ShortestDistanceEscapePointIndex' used
+  EscapePoint.cpp
+W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\Antelope.cpp(45): warning C4996: 'USceneComponent::AttachTo': This function is deprecated, please use AttachToComponent instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+  C:\Program Files\Epic Games\4.12\Engine\Source\Runtime\Engine\Classes\Components/SceneComponent.h(607): note: see declaration of 'USceneComponent::AttachTo'
+  [24/24] Link UE4Editor-Ava.dll
+     Creating library W:\University Work\Masters\MastersProject\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Ava.lib and object W:\University Work\Masters\MastersProject\MastersProject\Ava\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Ava.exp
+  Total build time: 61.18 seconds

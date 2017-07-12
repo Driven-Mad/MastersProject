@@ -11,9 +11,10 @@ void UMainGameUI::Play()
 	RemoveFromParent();
 }
 
-//void UMainGameUI::Construct()
-//{
-//	playerReference = Cast<AMainCharacter>(UGameplayStatics::GetPlayerController(UUserWidget::GetWorld(), 0));
-//	//playerReference = Cast<AMainCharacter>( GetOwningPlayer());
-//}
+void UMainGameUI::NativeConstruct()
+{
+	Super::NativeConstruct();
+	playerReference = Cast<AMainCharacter>(UGameplayStatics::GetPlayerController(UUserWidget::GetWorld(), 0));
+	//playerReference = Cast<AMainCharacter>( GetOwningPlayer());
+}
 
