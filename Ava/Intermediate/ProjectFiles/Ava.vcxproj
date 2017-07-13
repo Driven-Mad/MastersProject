@@ -406,6 +406,10 @@
     <NMakeOutput>..\..\Binaries\HTML5\Ava-HTML5-Shipping.exe</NMakeOutput>
   </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\Ava\OfferingStatue.cpp" />
+    <ClCompile Include="..\..\Source\Ava\WhitePuzzle.cpp" />
+    <ClInclude Include="..\..\Source\Ava\OfferingStatue.h" />
+    <ClInclude Include="..\..\Source\Ava\WhitePuzzle.h" />
     <None Include="..\..\Ava.uproject" />
     <None Include="..\..\Source\Ava.Target.cs" />
     <None Include="..\..\Source\AvaEditor.Target.cs" />
@@ -422,7 +426,9 @@
     <ClInclude Include="..\..\Source\Ava\Ava.h" />
     <ClCompile Include="..\..\Source\Ava\AvaGameMode.cpp" />
     <ClInclude Include="..\..\Source\Ava\AvaGameMode.h" />
+    <ClCompile Include="..\..\Source\Ava\BluePuzzle.cpp" />
     <ClCompile Include="..\..\Source\Ava\BTServiceSearchForPlayer.cpp" />
+    <ClInclude Include="..\..\Source\Ava\BluePuzzle.h" />
     <ClInclude Include="..\..\Source\Ava\BTServiceSearchForPlayer.h" />
     <ClCompile Include="..\..\Source\Ava\BTTaskFindClosestEscapePoint.cpp" />
     <ClInclude Include="..\..\Source\Ava\BTTaskFindClosestEscapePoint.h" />

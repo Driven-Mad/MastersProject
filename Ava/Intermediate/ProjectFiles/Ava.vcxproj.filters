@@ -145,9 +145,27 @@
     <ClInclude Include="..\..\Source\Ava\MainGameUI.h">
       <Filter>Source\Ava</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Ava\BluePuzzle.h">
+      <Filter>Source\Ava</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Ava\WhitePuzzle.h">
+      <Filter>Source\Ava</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Ava\OfferingStatue.h">
+      <Filter>Source\Ava</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Ava\MainGameUI.cpp">
+      <Filter>Source\Ava</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Ava\BluePuzzle.cpp">
+      <Filter>Source\Ava</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Ava\WhitePuzzle.cpp">
+      <Filter>Source\Ava</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Ava\OfferingStatue.cpp">
       <Filter>Source\Ava</Filter>
     </ClCompile>
   </ItemGroup>

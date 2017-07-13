@@ -364,7 +364,7 @@ void AMainCharacter::StopInteract()
 void AMainCharacter::OpenInventory()
 {
 	bIsInInventory = !bIsInInventory;
-	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("Inventory is: %i"), bIsInInventory));
+	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("Inventory is: %i"), bIsInInventory));
 }
 
 void AMainCharacter::PushPull()

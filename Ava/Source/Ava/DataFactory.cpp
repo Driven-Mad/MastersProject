@@ -76,6 +76,7 @@ TMap<Item, ItemData> ADataFactory::SetupItems()
 	d.Add(ItemDataVariables::itemEnumIdentifier, "Scroll04");
 	d.Add(ItemDataVariables::itemMeshFilepath, "/Game/StarterContent/Shapes/Shape_Pipe.Shape_Pipe");
 	d.Add(ItemDataVariables::itemSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll4.Scroll4");
+	d.Add(ItemDataVariables::itemSelectedSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll1Hovered.Scroll1Hovered");
 	d.Add(ItemDataVariables::itemName, "Dharma Wheel Scroll");
 	tItems.Add(Item::Scroll04, d);
 
@@ -84,6 +85,7 @@ TMap<Item, ItemData> ADataFactory::SetupItems()
 	e.Add(ItemDataVariables::itemEnumIdentifier, "Scroll05");
 	e.Add(ItemDataVariables::itemMeshFilepath, "/Game/StarterContent/Shapes/Shape_Pipe.Shape_Pipe");
 	e.Add(ItemDataVariables::itemSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll5.Scroll5");
+	e.Add(ItemDataVariables::itemSelectedSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll1Hovered.Scroll1Hovered");
 	e.Add(ItemDataVariables::itemName, "Bumpa Scroll");
 	tItems.Add(Item::Scroll05, e);
 
@@ -92,6 +94,7 @@ TMap<Item, ItemData> ADataFactory::SetupItems()
 	f.Add(ItemDataVariables::itemEnumIdentifier, "Scroll06");
 	f.Add(ItemDataVariables::itemMeshFilepath, "/Game/StarterContent/Shapes/Shape_Pipe.Shape_Pipe");
 	f.Add(ItemDataVariables::itemSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll6.Scroll6");
+	f.Add(ItemDataVariables::itemSelectedSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll1Hovered.Scroll1Hovered");
 	f.Add(ItemDataVariables::itemName, "Two Golden Fish Scroll");
 	tItems.Add(Item::Scroll06, f);
 
@@ -100,6 +103,7 @@ TMap<Item, ItemData> ADataFactory::SetupItems()
 	g.Add(ItemDataVariables::itemEnumIdentifier, "Scroll07");
 	g.Add(ItemDataVariables::itemMeshFilepath, "/Game/StarterContent/Shapes/Shape_Pipe.Shape_Pipe");
 	g.Add(ItemDataVariables::itemSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll7.Scroll7");
+	g.Add(ItemDataVariables::itemSelectedSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll1Hovered.Scroll1Hovered");
 	g.Add(ItemDataVariables::itemName, "Parasol Scroll");
 	tItems.Add(Item::Scroll07, g);
 
@@ -108,6 +112,7 @@ TMap<Item, ItemData> ADataFactory::SetupItems()
 	h.Add(ItemDataVariables::itemEnumIdentifier, "Scroll08");
 	h.Add(ItemDataVariables::itemMeshFilepath, "/Game/StarterContent/Shapes/Shape_Pipe.Shape_Pipe");
 	h.Add(ItemDataVariables::itemSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll8.Scroll8");
+	h.Add(ItemDataVariables::itemSelectedSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll1Hovered.Scroll1Hovered");
 	h.Add(ItemDataVariables::itemName, "Conch Shell Scroll");
 	tItems.Add(Item::Scroll08, h);
 
@@ -116,6 +121,7 @@ TMap<Item, ItemData> ADataFactory::SetupItems()
 	i.Add(ItemDataVariables::itemEnumIdentifier, "Bracelet");
 	i.Add(ItemDataVariables::itemMeshFilepath, "/Game/StarterContent/Shapes/Shape_Torus.Shape_Torus");
 	i.Add(ItemDataVariables::itemSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/bracelet.bracelet");
+	i.Add(ItemDataVariables::itemSelectedSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll1Hovered.Scroll1Hovered");
 	i.Add(ItemDataVariables::itemName, "Ava's Bracelet");
 	tItems.Add(Item::Bracelet, i);
 
@@ -124,6 +130,7 @@ TMap<Item, ItemData> ADataFactory::SetupItems()
 	j.Add(ItemDataVariables::itemEnumIdentifier, "Item01");
 	j.Add(ItemDataVariables::itemMeshFilepath, "/Game/StarterContent/Shapes/Shape_Torus.Shape_Torus");
 	j.Add(ItemDataVariables::itemSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Item1.Item1");
+	j.Add(ItemDataVariables::itemSelectedSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll1Hovered.Scroll1Hovered");
 	j.Add(ItemDataVariables::itemName, "Item 1");
 	tItems.Add(Item::Item01, j);
 
@@ -132,6 +139,7 @@ TMap<Item, ItemData> ADataFactory::SetupItems()
 	k.Add(ItemDataVariables::itemEnumIdentifier, "Item02");
 	k.Add(ItemDataVariables::itemMeshFilepath, "/Game/StarterContent/Shapes/Shape_Torus.Shape_Torus");
 	k.Add(ItemDataVariables::itemSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Item2.Item2");
+	k.Add(ItemDataVariables::itemSelectedSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll1Hovered.Scroll1Hovered");
 	k.Add(ItemDataVariables::itemName, "Item 2");
 	tItems.Add(Item::Item02, k);
 
@@ -140,6 +148,7 @@ TMap<Item, ItemData> ADataFactory::SetupItems()
 	l.Add(ItemDataVariables::itemEnumIdentifier, "Item03");
 	l.Add(ItemDataVariables::itemMeshFilepath, "/Game/StarterContent/Shapes/Shape_Torus.Shape_Torus");
 	l.Add(ItemDataVariables::itemSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Item3.Item3");
+	l.Add(ItemDataVariables::itemSelectedSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll1Hovered.Scroll1Hovered");
 	l.Add(ItemDataVariables::itemName, "Item 3");
 	tItems.Add(Item::Item03, l);
 
@@ -148,6 +157,7 @@ TMap<Item, ItemData> ADataFactory::SetupItems()
 	m.Add(ItemDataVariables::itemEnumIdentifier, "Trash01");
 	m.Add(ItemDataVariables::itemMeshFilepath, "/Game/StarterContent/Shapes/Shape_Torus.Shape_Torus");
 	m.Add(ItemDataVariables::itemSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Trash1.Trash1");
+	m.Add(ItemDataVariables::itemSelectedSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll1Hovered.Scroll1Hovered");
 	m.Add(ItemDataVariables::itemName, "Trash 1");
 	tItems.Add(Item::Trash01, m);
 
@@ -156,6 +166,7 @@ TMap<Item, ItemData> ADataFactory::SetupItems()
 	n.Add(ItemDataVariables::itemEnumIdentifier, "Trash02");
 	n.Add(ItemDataVariables::itemMeshFilepath, "/Game/StarterContent/Shapes/Shape_Torus.Shape_Torus");
 	n.Add(ItemDataVariables::itemSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Trash2.Trash2");
+	n.Add(ItemDataVariables::itemSelectedSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll1Hovered.Scroll1Hovered");
 	n.Add(ItemDataVariables::itemName, "Trash 2");
 	tItems.Add(Item::Trash02, n);
 
@@ -164,6 +175,7 @@ TMap<Item, ItemData> ADataFactory::SetupItems()
 	o.Add(ItemDataVariables::itemEnumIdentifier, "Trash03");
 	o.Add(ItemDataVariables::itemMeshFilepath, "/Game/StarterContent/Shapes/Shape_Torus.Shape_Torus");
 	o.Add(ItemDataVariables::itemSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Trash3.Trash3");
+	o.Add(ItemDataVariables::itemSelectedSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll1Hovered.Scroll1Hovered");
 	o.Add(ItemDataVariables::itemName, "Trash 3");
 	tItems.Add(Item::Trash03, o);
 
@@ -172,6 +184,7 @@ TMap<Item, ItemData> ADataFactory::SetupItems()
 	p.Add(ItemDataVariables::itemEnumIdentifier, "Trash04");
 	p.Add(ItemDataVariables::itemMeshFilepath, "/Game/StarterContent/Shapes/Shape_Torus.Shape_Torus");
 	p.Add(ItemDataVariables::itemSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Trash4.Trash4");
+	p.Add(ItemDataVariables::itemSelectedSpriteFilepath, "/Game/TemporaryContent/InventoryTemp/Scroll1Hovered.Scroll1Hovered");
 	p.Add(ItemDataVariables::itemName, "Trash 4");
 	tItems.Add(Item::Trash04, p);
 
@@ -207,22 +220,22 @@ Item ADataFactory::GetItemType(const FString & enumType, const FString & enumNam
 
 	return (Item)Ingr->FindEnumIndex(FName(*enumName));
 }
-AActor * ADataFactory::SpawnItem(Item ItemToSpawn, FTransform Position, TSubclassOf<AActor> AnotherClass)
-{
-	UWorld * const world = GetWorld();
-	if (world && AnotherClass)
-	{
-		//FActorSpawnParameters t;
-		//t.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
-		//APickUpItem* reference = world->SpawnActor<APickUpItem>(AnotherClass, Position, t);
-		////reference->InventoryObject3DRepresentation->SetStaticMesh(Get3DRepresentationForItem(ItemToSpawn));
-		//reference->ItemName = AccessTMapItems(ItemToSpawn, IngredientDataVariables::i_item_name);
-		//reference->InventoryObjectSprite2DRepresentation = GetIconForItem(ItemToSpawn);
-		//return reference;
-	
-	}
-	return nullptr;
-}
+//AActor * ADataFactory::SpawnItem(Item ItemToSpawn, FTransform Position)
+//{
+//	UWorld * const world = GetWorld();
+//	if (world && AnotherClass)
+//	{
+//		FActorSpawnParameters t;
+//		t.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
+//		class APickUpItem* reference = world->SpawnActor<APickUpItem>( APickUpItem,Position, t);
+//		//reference->InventoryObject3DRepresentation->SetStaticMesh(Get3DRepresentationForItem(ItemToSpawn));
+//		reference->ItemName = AccessTMapItems(ItemToSpawn, IngredientDataVariables::i_item_name);
+//		reference->InventoryObjectSprite2DRepresentation = GetIconForItem(ItemToSpawn);
+//		return reference;
+//	
+//	}
+//	return nullptr;
+//}
 
 FString ADataFactory::getItemDescription(Item ItemToSpawn)
 {

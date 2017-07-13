@@ -8,8 +8,6 @@
 #include "ObjectBase.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-struct FTransform;
-class AActor;
 class UTexture2D;
 class UStaticMesh;
 #ifdef AVA_DataFactory_generated_h
@@ -25,17 +23,6 @@ class UStaticMesh;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(FString*)Z_Param__Result=this->getItemDescription(Item(Z_Param_ItemToSpawn)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSpawnItem) \
-	{ \
-		P_GET_PROPERTY(UByteProperty,Z_Param_ItemToSpawn); \
-		P_GET_STRUCT(FTransform,Z_Param_Position); \
-		P_GET_OBJECT(UClass,Z_Param_AnotherClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(AActor**)Z_Param__Result=this->SpawnItem(Item(Z_Param_ItemToSpawn),Z_Param_Position,Z_Param_AnotherClass); \
 		P_NATIVE_END; \
 	} \
  \
@@ -95,17 +82,6 @@ class UStaticMesh;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(FString*)Z_Param__Result=this->getItemDescription(Item(Z_Param_ItemToSpawn)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSpawnItem) \
-	{ \
-		P_GET_PROPERTY(UByteProperty,Z_Param_ItemToSpawn); \
-		P_GET_STRUCT(FTransform,Z_Param_Position); \
-		P_GET_OBJECT(UClass,Z_Param_AnotherClass); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(AActor**)Z_Param__Result=this->SpawnItem(Item(Z_Param_ItemToSpawn),Z_Param_Position,Z_Param_AnotherClass); \
 		P_NATIVE_END; \
 	} \
  \

@@ -16,7 +16,7 @@ APickUpItem::APickUpItem()
 	RootComponent = boxCollider;
 
 	designatedMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("DoorMesh"));
-	designatedMesh->SetSimulatePhysics(false);
+	designatedMesh->SetSimulatePhysics(true);
 	designatedMesh->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	FAttachmentTransformRules rules = FAttachmentTransformRules(EAttachmentRule::KeepRelative, true);
 	designatedMesh->AttachToComponent(RootComponent, rules);

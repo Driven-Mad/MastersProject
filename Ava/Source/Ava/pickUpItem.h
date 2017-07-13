@@ -26,7 +26,7 @@ public:
 		UStaticMeshComponent *designatedMesh;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = pickup, meta = (AllowPrivateAccess = "true"))
 		UBoxComponent* boxCollider;
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = pickup, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = pickup, meta = (AllowPrivateAccess = "true"))
 		Item itemType;
 
 	ADataFactory *myData;

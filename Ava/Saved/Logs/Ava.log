@@ -1,9 +1,9 @@
-﻿Log file open, 07/12/17 19:10:33
+﻿Log file open, 07/14/17 16:34:10
 LogInit:Display: Running engine for game: Ava
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(649318845) SRandInit(649318847).
+LogInit:Display: RandInit(-475103458) SRandInit(-475103456).
 LogTaskGraph: Started task graph with 4 named threads and 9 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 0.100386
+LogStats: Stats thread started at 0.110102
 LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
 LogInit: API Version: 2992821
 LogInit: Net Version: 3039270
@@ -44,88 +44,88 @@ LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
 LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2017.07.12-18.10.33:844][  0]LogInit: Selected Device Profile: [Windows]
-[2017.07.12-18.10.33:844][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2017.07.12-18.10.33:853][  0]LogInit: Computer: PC42640
-[2017.07.12-18.10.33:853][  0]LogInit: User: i7230020
-[2017.07.12-18.10.33:853][  0]LogInit: CPU Page size=65536, Cores=6
-[2017.07.12-18.10.33:853][  0]LogInit: High frequency timer resolution =3.410097 MHz
-[2017.07.12-18.10.33:854][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
-[2017.07.12-18.10.33:854][  0]LogMemory: Platform Memory Stats for Windows
-[2017.07.12-18.10.33:854][  0]LogMemory: Process Physical Memory: 196.29 MB used, 196.29 MB peak
-[2017.07.12-18.10.33:854][  0]LogMemory: Process Virtual Memory: 198.85 MB used, 198.85 MB peak
-[2017.07.12-18.10.33:854][  0]LogMemory: Physical Memory: 11452.98 MB used, 32684.15 MB total
-[2017.07.12-18.10.33:854][  0]LogMemory: Virtual Memory: 539.58 MB used, 8388608.00 MB total
-[2017.07.12-18.10.33:953][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
-[2017.07.12-18.10.34:374][  0]LogD3D11RHI: D3D11 adapters:
-[2017.07.12-18.10.34:406][  0]LogD3D11RHI:    0. 'NVIDIA Quadro M4000' (Feature Level 11_0)
-[2017.07.12-18.10.34:407][  0]LogD3D11RHI:       8092/0/16086 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2017.07.12-18.10.34:407][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2017.07.12-18.10.34:414][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2017.07.12-18.10.34:414][  0]LogD3D11RHI:     GPU DeviceId: 0x13f1 (for the marketing name, search the web for "GPU Device Id")
-[2017.07.12-18.10.34:414][  0]LogWindows: EnumDisplayDevices:
-[2017.07.12-18.10.34:415][  0]LogWindows:    0. 'NVIDIA Quadro M4000' (P:1 D:1)
-[2017.07.12-18.10.34:416][  0]LogWindows:    1. 'NVIDIA Quadro M4000' (P:0 D:0)
-[2017.07.12-18.10.34:416][  0]LogWindows:    2. 'NVIDIA Quadro M4000' (P:0 D:0)
-[2017.07.12-18.10.34:417][  0]LogWindows:    3. 'NVIDIA Quadro M4000' (P:0 D:0)
-[2017.07.12-18.10.34:417][  0]LogWindows:    4. 'RDPDD Chained DD' (P:0 D:0)
-[2017.07.12-18.10.34:417][  0]LogWindows:    5. 'RDP Encoder Mirror Driver' (P:0 D:0)
-[2017.07.12-18.10.34:417][  0]LogWindows:    6. 'RDP Reflector Display Driver' (P:0 D:0)
-[2017.07.12-18.10.34:417][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
-[2017.07.12-18.10.34:417][  0]LogD3D11RHI:     Adapter Name: NVIDIA Quadro M4000
-[2017.07.12-18.10.34:417][  0]LogD3D11RHI:   Driver Version: 362.13 (internal:10.18.13.6213, unified:362.13)
-[2017.07.12-18.10.34:417][  0]LogD3D11RHI:      Driver Date: 3-18-2016
-[2017.07.12-18.10.34:417][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2017.07.12-18.10.34:427][  0]LogD3D11RHI: Async texture creation enabled
-[2017.07.12-18.10.34:441][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2017.07.12-18.10.34:441][  0]LogShaderCompilers: Guid format shader working directory is -8 characters bigger than the processId version (W:/University Work/Masters/MastersProject/MastersProject/Ava/Intermediate/Shaders/WorkingDirectory/21192/).
-[2017.07.12-18.10.34:442][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/I72300~1.000/AppData/Local/Temp/UnrealShaderWorkingDir/04AD4B64405CE337AB60FFBF01C73CE7/'.
-[2017.07.12-18.10.34:442][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2017.07.12-18.10.35:628][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2017.07.12-18.10.35:637][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2017.07.12-18.10.35:645][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2017.07.12-18.10.35:653][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2017.07.12-18.10.35:661][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2017.07.12-18.10.35:669][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2017.07.12-18.10.35:676][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2017.07.12-18.10.35:683][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2017.07.12-18.10.35:690][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2017.07.12-18.10.35:698][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2017.07.12-18.10.35:705][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2017.07.12-18.10.35:720][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2017.07.12-18.10.35:720][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2017.07.12-18.10.35:721][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2017.07.12-18.10.35:741][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2017.07.12-18.10.35:748][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
-[2017.07.12-18.10.35:755][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2017.07.12-18.10.35:762][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2017.07.12-18.10.35:770][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2017.07.12-18.10.35:770][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2017.07.12-18.10.35:851][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2017.07.12-18.10.35:900][  0]LogDerivedDataCache: Loaded boot cache 0.05s 49MB C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
-[2017.07.12-18.10.35:900][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
-[2017.07.12-18.10.35:900][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file W:/University Work/Masters/MastersProject/MastersProject/Ava/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2017.07.12-18.10.35:900][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2017.07.12-18.10.35:900][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file W:/University Work/Masters/MastersProject/MastersProject/Ava/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2017.07.12-18.10.35:900][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2017.07.12-18.10.35:915][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2017.07.12-18.10.35:928][  0]LogDerivedDataCache: Using Local data cache path C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2017.07.12-18.10.36:192][  0]LogInit: Selected Device Profile: [Windows]
-[2017.07.12-18.10.36:193][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2017.07.12-18.10.36:351][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2017.07.12-18.10.36:351][  0]LogMeshUtilities: No automatic mesh merging module available
-[2017.07.12-18.10.36:351][  0]LogMeshUtilities: No distributed automatic mesh merging module available
-[2017.07.12-18.10.36:655][  0]LogAssetRegistry: FAssetRegistry took 0.0205 seconds to start up
-[2017.07.12-18.10.36:742][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.080171 seconds
-[2017.07.12-18.10.36:746][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
-[2017.07.12-18.10.36:746][  0]LogUObjectAllocator: 5855624 out of 0 bytes used by permanent object pool.
-[2017.07.12-18.10.36:746][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2017.07.12-18.10.36:753][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2017.07.12-18.10.37:017][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.07.12-18.10.37:017][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.07.12-18.10.37:957][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2017.07.12-18.10.38:038][  0]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.012 s
-[2017.07.12-18.10.38:038][  0]LogOutputDevice:Warning: === Handled error: ===
+[2017.07.14-15.34.10:727][  0]LogInit: Selected Device Profile: [Windows]
+[2017.07.14-15.34.10:727][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.07.14-15.34.10:736][  0]LogInit: Computer: PC42640
+[2017.07.14-15.34.10:736][  0]LogInit: User: i7230020
+[2017.07.14-15.34.10:736][  0]LogInit: CPU Page size=65536, Cores=6
+[2017.07.14-15.34.10:736][  0]LogInit: High frequency timer resolution =3.410097 MHz
+[2017.07.14-15.34.10:736][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2017.07.14-15.34.10:736][  0]LogMemory: Platform Memory Stats for Windows
+[2017.07.14-15.34.10:736][  0]LogMemory: Process Physical Memory: 196.48 MB used, 196.48 MB peak
+[2017.07.14-15.34.10:736][  0]LogMemory: Process Virtual Memory: 199.09 MB used, 199.09 MB peak
+[2017.07.14-15.34.10:736][  0]LogMemory: Physical Memory: 13727.44 MB used, 32684.15 MB total
+[2017.07.14-15.34.10:736][  0]LogMemory: Virtual Memory: 539.58 MB used, 8388608.00 MB total
+[2017.07.14-15.34.10:825][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
+[2017.07.14-15.34.11:274][  0]LogD3D11RHI: D3D11 adapters:
+[2017.07.14-15.34.11:307][  0]LogD3D11RHI:    0. 'NVIDIA Quadro M4000' (Feature Level 11_0)
+[2017.07.14-15.34.11:307][  0]LogD3D11RHI:       8092/0/16086 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.07.14-15.34.11:307][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.07.14-15.34.11:323][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.07.14-15.34.11:324][  0]LogD3D11RHI:     GPU DeviceId: 0x13f1 (for the marketing name, search the web for "GPU Device Id")
+[2017.07.14-15.34.11:324][  0]LogWindows: EnumDisplayDevices:
+[2017.07.14-15.34.11:325][  0]LogWindows:    0. 'NVIDIA Quadro M4000' (P:1 D:1)
+[2017.07.14-15.34.11:326][  0]LogWindows:    1. 'NVIDIA Quadro M4000' (P:0 D:0)
+[2017.07.14-15.34.11:327][  0]LogWindows:    2. 'NVIDIA Quadro M4000' (P:0 D:0)
+[2017.07.14-15.34.11:329][  0]LogWindows:    3. 'NVIDIA Quadro M4000' (P:0 D:0)
+[2017.07.14-15.34.11:330][  0]LogWindows:    4. 'RDPDD Chained DD' (P:0 D:0)
+[2017.07.14-15.34.11:332][  0]LogWindows:    5. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2017.07.14-15.34.11:333][  0]LogWindows:    6. 'RDP Reflector Display Driver' (P:0 D:0)
+[2017.07.14-15.34.11:335][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2017.07.14-15.34.11:335][  0]LogD3D11RHI:     Adapter Name: NVIDIA Quadro M4000
+[2017.07.14-15.34.11:335][  0]LogD3D11RHI:   Driver Version: 362.13 (internal:10.18.13.6213, unified:362.13)
+[2017.07.14-15.34.11:335][  0]LogD3D11RHI:      Driver Date: 3-18-2016
+[2017.07.14-15.34.11:335][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.07.14-15.34.11:347][  0]LogD3D11RHI: Async texture creation enabled
+[2017.07.14-15.34.11:364][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2017.07.14-15.34.11:364][  0]LogShaderCompilers: Guid format shader working directory is -8 characters bigger than the processId version (W:/University Work/Masters/MastersProject/MastersProject/Ava/Intermediate/Shaders/WorkingDirectory/35024/).
+[2017.07.14-15.34.11:365][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/I72300~1.000/AppData/Local/Temp/UnrealShaderWorkingDir/3873B57848C2EF8349B1C8AAC7F8F058/'.
+[2017.07.14-15.34.11:365][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.07.14-15.34.12:754][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.07.14-15.34.12:763][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.07.14-15.34.12:771][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.07.14-15.34.12:780][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.07.14-15.34.12:788][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.07.14-15.34.12:796][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.07.14-15.34.12:803][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.07.14-15.34.12:810][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.07.14-15.34.12:818][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.07.14-15.34.12:825][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.07.14-15.34.12:832][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.07.14-15.34.12:859][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.07.14-15.34.12:859][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.07.14-15.34.12:861][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.07.14-15.34.12:892][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.07.14-15.34.12:905][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.07.14-15.34.12:918][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.07.14-15.34.12:931][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.07.14-15.34.12:942][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.07.14-15.34.12:942][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.07.14-15.34.13:048][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.07.14-15.34.13:094][  0]LogDerivedDataCache: Loaded boot cache 0.05s 49MB C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2017.07.14-15.34.13:094][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2017.07.14-15.34.13:094][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file W:/University Work/Masters/MastersProject/MastersProject/Ava/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.07.14-15.34.13:094][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.07.14-15.34.13:095][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file W:/University Work/Masters/MastersProject/MastersProject/Ava/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.07.14-15.34.13:095][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.07.14-15.34.13:110][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.07.14-15.34.13:122][  0]LogDerivedDataCache: Using Local data cache path C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.07.14-15.34.13:359][  0]LogInit: Selected Device Profile: [Windows]
+[2017.07.14-15.34.13:359][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.07.14-15.34.13:533][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2017.07.14-15.34.13:533][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.07.14-15.34.13:533][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2017.07.14-15.34.13:802][  0]LogAssetRegistry: FAssetRegistry took 0.0198 seconds to start up
+[2017.07.14-15.34.13:873][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.065637 seconds
+[2017.07.14-15.34.13:877][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2017.07.14-15.34.13:877][  0]LogUObjectAllocator: 5855632 out of 0 bytes used by permanent object pool.
+[2017.07.14-15.34.13:877][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.07.14-15.34.13:883][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.07.14-15.34.14:061][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.07.14-15.34.14:061][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.07.14-15.34.15:272][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.07.14-15.34.15:371][  0]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.016 s
+[2017.07.14-15.34.15:371][  0]LogOutputDevice:Warning: === Handled error: ===
 
 Ensure condition failed: !AttachmentRules.bWeldSimulatedBodies [File:D:\Build\++UE4+Release-4.12+Compile\Sync\Engine\Source\Runtime\Engine\Private\Components\SceneComponent.cpp] [Line: 1481]
 AttachToComponent when called from a constructor cannot weld simulated bodies. Consider calling SetupAttachment directly instead.
@@ -153,545 +153,97 @@ kernel32.dll
 ntdll.dll
 ntdll.dll
 
-[2017.07.12-18.10.38:038][  0]LogStats:                SubmitErrorReport -  0.000 s
-[2017.07.12-18.10.38:417][  0]LogStats:                    SendNewReport -  0.379 s
-[2017.07.12-18.10.38:417][  0]LogStats:             FDebug::EnsureFailed -  0.391 s
-[2017.07.12-18.10.38:598][  0]SourceControl: Info Source control is disabled
-[2017.07.12-18.10.38:603][  0]SourceControl: Info Source control is disabled
-[2017.07.12-18.10.38:619][  0]SourceControl: Info Source control is disabled
-[2017.07.12-18.10.38:634][  0]SourceControl: Info Source control is disabled
-[2017.07.12-18.10.38:818][  0]LogHoudiniEngine: Starting the Houdini Engine module.
-[2017.07.12-18.10.38:819][  0]LogHoudiniEngine: Loaded libHAPIL.dll from Registry path C:\Program Files\Side Effects Software\Houdini 15.5.632/bin
-[2017.07.12-18.10.38:819][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_logo.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2017.07.12-18.10.38:821][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_default_material.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2017.07.12-18.10.38:825][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_bgeo_import.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2017.07.12-18.10.39:806][  0]LogHoudiniEngine: Successfully initialized the Houdini Engine API module.
-[2017.07.12-18.10.39:958][  0]LogEngine: Initializing Engine...
-[2017.07.12-18.10.39:959][  0]LogHMD: SteamVR failed to initialize.  Err: 110
-[2017.07.12-18.10.39:960][  0]LogHMD: SteamVR failed to initialize.  Err: 110
-[2017.07.12-18.10.40:095][  0]LogAIModule: Creating AISystem for world NewWorld
-[2017.07.12-18.10.40:101][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.07.12-18.10.40:132][  0]LogInit: FAudioDevice initialized.
-[2017.07.12-18.10.40:156][  0]LogDerivedDataCache: Saved boot cache 0.02s 49MB C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
-[2017.07.12-18.10.40:161][  0]LogInit: Texture streaming: Enabled
-[2017.07.12-18.10.40:186][  0]LogInit: Transaction tracking system initialized
-[2017.07.12-18.10.40:206][  0]BlueprintLog: New page: Editor Load
-[2017.07.12-18.10.40:272][  0]LocalizationService: Info Localization service is disabled
-[2017.07.12-18.10.40:338][  0]LogConsoleResponse:Display: 
-[2017.07.12-18.10.40:439][  0]LogCook:Display: Max memory allowance for cook 8192mb
-[2017.07.12-18.10.40:439][  0]LogCook:Display: Mobile HDR setting 1
-[2017.07.12-18.10.40:521][  0]LogFileCache: Scanning file cache for directory 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/' took 0.02s
-[2017.07.12-18.10.40:521][  0]LogHoudiniEngineEditor: Starting the Houdini Engine Editor module.
-[2017.07.12-18.10.40:570][  0]SourceControl: Info Source control is disabled
-[2017.07.12-18.10.40:570][  0]Cmd: MAP LOAD FILE="W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.07.12-18.10.40:571][  0]LightingResults: New page: Lighting Build
-[2017.07.12-18.10.40:573][  0]MapCheck: New page: Map Check
-[2017.07.12-18.10.40:573][  0]LightingResults: New page: Lighting Build
-[2017.07.12-18.10.40:652][  0]LogBlueprint:Warning: Compiler Warning InputAction Event references unknown Action 'Crouch' for  InputAction Crouch 
-[2017.07.12-18.10.40:654][  0]LogBlueprint:Warning: Compiler Warning [0011.74] Compile of Ue4ASP_Character successful, but with 1 Warning(s) [in 7 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
-[2017.07.12-18.10.40:655][  0]LogBlueprint:Warning: Compiler Warning [0011.74] Compile of Ue4ASP_Character successful, but with 2 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
-[2017.07.12-18.10.40:655][  0]LogBlueprint:Warning: Compiler Warning [0011.74] Compile of Ue4ASP_Character successful, but with 3 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
-[2017.07.12-18.10.40:727][  0]LogBlueprint:Warning: Compiler Warning InputAction Event references unknown Action 'Crouch' for  InputAction Crouch 
-[2017.07.12-18.10.40:730][  0]LogBlueprint:Warning: Compiler Warning [0011.81] Compile of Ue4ASP_Character successful, but with 1 Warning(s) [in 7 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
-[2017.07.12-18.10.40:730][  0]LogBlueprint:Warning: Compiler Warning [0011.81] Compile of Ue4ASP_Character successful, but with 2 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
-[2017.07.12-18.10.40:730][  0]LogBlueprint:Warning: Compiler Warning [0011.81] Compile of Ue4ASP_Character successful, but with 3 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
-[2017.07.12-18.10.41:492][  0]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
-[2017.07.12-18.10.41:492][  0]LogMaterial:Warning: Failed to compile Material /Game/StarterContent/Materials/M_Basic_Wall.M_Basic_Wall for platform PCD3D_SM5, Default Material will be used in game.
-[2017.07.12-18.10.41:492][  0]LogMaterial:Warning: 	(Node TextureSample) TextureSample> Missing input texture
-[2017.07.12-18.10.41:711][  0]LogAIModule: Creating AISystem for world PalaceLevel
-[2017.07.12-18.10.41:747][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.07.12-18.10.41:747][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.07.12-18.10.41:844][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 96.216ms to complete.
-[2017.07.12-18.10.41:844][  0]LogFileHelpers: Loading map 'PalaceLevel' took 1.274
-[2017.07.12-18.10.42:115][  0]LogCollectionManager: Loaded 0 collections in 0.001340 seconds
-[2017.07.12-18.10.42:163][  0]LogFileCache: Scanning file cache for directory 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Saved/Collections/' took 0.01s
-[2017.07.12-18.10.42:163][  0]LogFileCache: Scanning file cache for directory 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Developers/i7230020/Collections/' took 0.01s
-[2017.07.12-18.10.42:163][  0]LogFileCache: Scanning file cache for directory 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Collections/' took 0.01s
-[2017.07.12-18.10.42:163][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000005 seconds
-[2017.07.12-18.10.42:187][  0]LogContentBrowser: Native class hierarchy populated in 0.0234 seconds. Added 2096 classes and 376 folders.
-[2017.07.12-18.10.42:194][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2017.07.12-18.10.42:195][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2017.07.12-18.10.42:198][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0028 seconds. Added 12 classes and 0 folders.
-[2017.07.12-18.10.42:204][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0026 seconds. Added 0 classes and 0 folders.
-[2017.07.12-18.10.42:277][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0024 seconds. Added 0 classes and 0 folders.
-[2017.07.12-18.10.42:283][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0023 seconds. Added 1 classes and 2 folders.
-[2017.07.12-18.10.42:295][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2017.07.12-18.10.42:299][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2017.07.12-18.10.42:326][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0024 seconds. Added 1 classes and 2 folders.
-[2017.07.12-18.10.42:326][  0]LogLoad: Full Startup: 13.41 seconds (BP compile: 0.27 seconds)
-[2017.07.12-18.10.42:326][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2017.07.12-18.10.42:326][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2017.07.12-18.10.42:336][  0]LogOcInput: OculusInput pre-init called
-[2017.07.12-18.10.42:354][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2017.07.12-18.10.42:476][  0]LogRenderer: Reallocating scene render targets to support 1616x600 (Frame:2).
-[2017.07.12-18.10.42:583][  1]LogAssetRegistry: Asset discovery search completed in 5.9482 seconds
-[2017.07.12-18.10.42:583][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2017.07.12-18.10.42:583][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000017 seconds (updated 0 objects)
-[2017.07.12-18.10.47:405][388]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0028 seconds. Added 111 classes and 0 folders.
-[2017.07.12-18.10.50:221][524]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.10.50:221][524]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.07.12-18.10.50:222][524]PIE: New page: PIE session: PalaceLevel (12 Jul 2017 19:10:50)
-[2017.07.12-18.10.50:223][524]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_PalaceLevel
-[2017.07.12-18.10.50:288][524]LogPlayLevel: PIE: StaticDuplicateObject took: (0.065610s)
-[2017.07.12-18.10.50:289][524]LogAIModule: Creating AISystem for world PalaceLevel
-[2017.07.12-18.10.50:289][524]LogPlayLevel: PIE: World Init took: (0.000931s)
-[2017.07.12-18.10.50:290][524]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/PalaceLevel.PalaceLevel to /Game/Ava/Maps/UEDPIE_0_PalaceLevel.PalaceLevel (0.067012s)
-[2017.07.12-18.10.50:332][524]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.07.12-18.10.50:341][524]LogInit: FAudioDevice initialized.
-[2017.07.12-18.10.50:415][524]LogWorld: Game class is 'AvaGameMode'
-[2017.07.12-18.10.50:448][524]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_PalaceLevel.PalaceLevel up for play (max tick rate 0) at 2017.07.12-19.10.50
-[2017.07.12-18.10.50:451][524]LogWorld: Bringing up level for play took: 0.034997
-[2017.07.12-18.10.50:456][524]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0024 seconds. Added 11 classes and 0 folders.
-[2017.07.12-18.10.50:464][524]LogBlueprintUserMessages: [GameUIBP_C_2] SEt UI
-[2017.07.12-18.10.50:464][524]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_PalaceLevel -0.224
-[2017.07.12-18.10.50:465][524]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.10.58:677][ 45]LogBlueprintUserMessages: [GameUIBP_C_2] Hello
-[2017.07.12-18.11.33:561][381]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.11.33:610][381]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.11.35:462][530]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.11.35:463][530]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.07.12-18.11.35:463][530]PIE: New page: PIE session: PalaceLevel (12 Jul 2017 19:11:35)
-[2017.07.12-18.11.35:463][530]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_PalaceLevel
-[2017.07.12-18.11.35:519][530]LogPlayLevel: PIE: StaticDuplicateObject took: (0.055764s)
-[2017.07.12-18.11.35:519][530]LogAIModule: Creating AISystem for world PalaceLevel
-[2017.07.12-18.11.35:519][530]LogPlayLevel: PIE: World Init took: (0.000713s)
-[2017.07.12-18.11.35:520][530]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/PalaceLevel.PalaceLevel to /Game/Ava/Maps/UEDPIE_0_PalaceLevel.PalaceLevel (0.056817s)
-[2017.07.12-18.11.35:538][530]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.07.12-18.11.35:546][530]LogInit: FAudioDevice initialized.
-[2017.07.12-18.11.35:622][530]LogWorld: Game class is 'AvaGameMode'
-[2017.07.12-18.11.35:652][530]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_PalaceLevel.PalaceLevel up for play (max tick rate 0) at 2017.07.12-19.11.35
-[2017.07.12-18.11.35:655][530]LogWorld: Bringing up level for play took: 0.031283
-[2017.07.12-18.11.35:657][530]LogBlueprintUserMessages: [GameUIBP_C_3] SEt UI
-[2017.07.12-18.11.35:657][530]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_PalaceLevel 0.968
-[2017.07.12-18.11.35:657][530]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.11.43:523][ 33]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.11.43:561][ 33]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.12.01:317][167]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Maps/PalaceLevel" FILE="W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2017.07.12-18.12.02:266][167]LogSavePackage: Save=901.95ms
-[2017.07.12-18.12.02:266][167]LogSavePackage: Moving 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Saved/PalaceLevelCC4D0BAB46955BEEA61162BB4042A9F9.tmp' to 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap'
-[2017.07.12-18.12.02:275][167]LogSavePackage:Display: Finished SavePackage W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap
-[2017.07.12-18.12.02:315][167]LogFileHelpers: Saving map 'PalaceLevel' took 1.110
-[2017.07.12-18.12.02:800][186]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.12.02:800][186]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.07.12-18.12.02:800][186]PIE: New page: PIE session: PalaceLevel (12 Jul 2017 19:12:02)
-[2017.07.12-18.12.02:800][186]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_PalaceLevel
-[2017.07.12-18.12.02:869][186]LogPlayLevel: PIE: StaticDuplicateObject took: (0.068231s)
-[2017.07.12-18.12.02:869][186]LogAIModule: Creating AISystem for world PalaceLevel
-[2017.07.12-18.12.02:869][186]LogPlayLevel: PIE: World Init took: (0.000638s)
-[2017.07.12-18.12.02:869][186]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/PalaceLevel.PalaceLevel to /Game/Ava/Maps/UEDPIE_0_PalaceLevel.PalaceLevel (0.069184s)
-[2017.07.12-18.12.02:937][186]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.07.12-18.12.02:943][186]LogInit: FAudioDevice initialized.
-[2017.07.12-18.12.02:990][186]LogWorld: Game class is 'AvaGameMode'
-[2017.07.12-18.12.03:021][186]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_PalaceLevel.PalaceLevel up for play (max tick rate 0) at 2017.07.12-19.12.03
-[2017.07.12-18.12.03:024][186]LogWorld: Bringing up level for play took: 0.033046
-[2017.07.12-18.12.03:026][186]LogBlueprintUserMessages: [GameUIBP_C_4] SEt UI
-[2017.07.12-18.12.03:027][186]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_PalaceLevel 0.335
-[2017.07.12-18.12.03:027][186]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.12.24:473][489]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.12.24:659][489]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.12.27:953][612]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
-[2017.07.12-18.12.33:692][ 51]Cmd: TRANSACTION UNDO
-[2017.07.12-18.12.33:692][ 51]LogEditorTransaction: Undo Scale Components
-[2017.07.12-18.12.57:359][364]Cmd: TRANSACTION UNDO
-[2017.07.12-18.12.57:359][364]LogEditorTransaction: Undo Edit Capsule Half Height
-[2017.07.12-18.13.09:436][906]Cmd: TRANSACTION UNDO
-[2017.07.12-18.13.09:436][906]LogEditorTransaction: Undo Move Components
-[2017.07.12-18.13.19:893][558]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Maps/PalaceLevel" FILE="W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2017.07.12-18.13.20:646][558]LogSavePackage: Save=720.04ms
-[2017.07.12-18.13.20:646][558]LogSavePackage: Moving 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Saved/PalaceLevel711D7D4E49026F247217B9958AC7938C.tmp' to 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap'
-[2017.07.12-18.13.20:654][558]LogSavePackage:Display: Finished SavePackage W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap
-[2017.07.12-18.13.41:384][823]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.13.41:384][823]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.07.12-18.13.41:384][823]PIE: New page: PIE session: PalaceLevel (12 Jul 2017 19:13:41)
-[2017.07.12-18.13.41:384][823]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_PalaceLevel
-[2017.07.12-18.13.41:441][823]LogPlayLevel: PIE: StaticDuplicateObject took: (0.057196s)
-[2017.07.12-18.13.41:442][823]LogAIModule: Creating AISystem for world PalaceLevel
-[2017.07.12-18.13.41:442][823]LogPlayLevel: PIE: World Init took: (0.000720s)
-[2017.07.12-18.13.41:442][823]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/PalaceLevel.PalaceLevel to /Game/Ava/Maps/UEDPIE_0_PalaceLevel.PalaceLevel (0.058277s)
-[2017.07.12-18.13.41:498][823]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.07.12-18.13.41:510][823]LogInit: FAudioDevice initialized.
-[2017.07.12-18.13.41:578][823]LogWorld: Game class is 'AvaGameMode'
-[2017.07.12-18.13.41:625][823]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_PalaceLevel.PalaceLevel up for play (max tick rate 0) at 2017.07.12-19.13.41
-[2017.07.12-18.13.41:628][823]LogWorld: Bringing up level for play took: 0.049333
-[2017.07.12-18.13.41:632][823]LogBlueprintUserMessages: [GameUIBP_C_5] SEt UI
-[2017.07.12-18.13.41:632][823]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_PalaceLevel 0.936
-[2017.07.12-18.13.41:633][823]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.13.58:008][912]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.13.58:193][912]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.13.59:188][945]LogEditorViewport: Clicking on Actor (LMB): PushPullItem (PushPullItem1)
-[2017.07.12-18.14.23:516][905]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Maps/PalaceLevel" FILE="W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2017.07.12-18.14.24:261][905]LogSavePackage: Save=713.00ms
-[2017.07.12-18.14.24:261][905]LogSavePackage: Moving 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Saved/PalaceLevel048A64C04DB87B4264280687B934701C.tmp' to 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap'
-[2017.07.12-18.14.24:269][905]LogSavePackage:Display: Finished SavePackage W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap
-[2017.07.12-18.14.29:200][360]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.14.29:200][360]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.07.12-18.14.29:200][360]PIE: New page: PIE session: PalaceLevel (12 Jul 2017 19:14:29)
-[2017.07.12-18.14.29:200][360]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_PalaceLevel
-[2017.07.12-18.14.29:254][360]LogPlayLevel: PIE: StaticDuplicateObject took: (0.053647s)
-[2017.07.12-18.14.29:255][360]LogAIModule: Creating AISystem for world PalaceLevel
-[2017.07.12-18.14.29:255][360]LogPlayLevel: PIE: World Init took: (0.000621s)
-[2017.07.12-18.14.29:255][360]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/PalaceLevel.PalaceLevel to /Game/Ava/Maps/UEDPIE_0_PalaceLevel.PalaceLevel (0.054578s)
-[2017.07.12-18.14.29:277][360]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.07.12-18.14.29:286][360]LogInit: FAudioDevice initialized.
-[2017.07.12-18.14.29:341][360]LogWorld: Game class is 'AvaGameMode'
-[2017.07.12-18.14.29:383][360]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_PalaceLevel.PalaceLevel up for play (max tick rate 0) at 2017.07.12-19.14.29
-[2017.07.12-18.14.29:386][360]LogWorld: Bringing up level for play took: 0.043435
-[2017.07.12-18.14.29:388][360]LogBlueprintUserMessages: [GameUIBP_C_6] SEt UI
-[2017.07.12-18.14.29:388][360]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_PalaceLevel 0.69
-[2017.07.12-18.14.29:388][360]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.14.36:650][841]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.14.36:714][841]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.14.45:632][645]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Maps/PalaceLevel" FILE="W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2017.07.12-18.14.46:369][645]LogSavePackage: Save=706.72ms
-[2017.07.12-18.14.46:369][645]LogSavePackage: Moving 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Saved/PalaceLevelA7363E5D4688B952FD824882448C284B.tmp' to 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap'
-[2017.07.12-18.14.46:378][645]LogSavePackage:Display: Finished SavePackage W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap
-[2017.07.12-18.14.46:991][702]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.14.46:991][702]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.07.12-18.14.46:991][702]PIE: New page: PIE session: PalaceLevel (12 Jul 2017 19:14:46)
-[2017.07.12-18.14.46:991][702]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_PalaceLevel
-[2017.07.12-18.14.47:044][702]LogPlayLevel: PIE: StaticDuplicateObject took: (0.052781s)
-[2017.07.12-18.14.47:044][702]LogAIModule: Creating AISystem for world PalaceLevel
-[2017.07.12-18.14.47:044][702]LogPlayLevel: PIE: World Init took: (0.000574s)
-[2017.07.12-18.14.47:045][702]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/PalaceLevel.PalaceLevel to /Game/Ava/Maps/UEDPIE_0_PalaceLevel.PalaceLevel (0.053830s)
-[2017.07.12-18.14.47:072][702]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.07.12-18.14.47:079][702]LogInit: FAudioDevice initialized.
-[2017.07.12-18.14.47:139][702]LogWorld: Game class is 'AvaGameMode'
-[2017.07.12-18.14.47:183][702]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_PalaceLevel.PalaceLevel up for play (max tick rate 0) at 2017.07.12-19.14.47
-[2017.07.12-18.14.47:186][702]LogWorld: Bringing up level for play took: 0.045649
-[2017.07.12-18.14.47:188][702]LogBlueprintUserMessages: [GameUIBP_C_7] SEt UI
-[2017.07.12-18.14.47:188][702]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_PalaceLevel 0.49
-[2017.07.12-18.14.47:189][702]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.14.58:892][496]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.14.58:954][496]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.15.06:898][956]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Maps/PalaceLevel" FILE="W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2017.07.12-18.15.07:747][956]LogSavePackage: Save=814.22ms
-[2017.07.12-18.15.07:747][956]LogSavePackage: Moving 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Saved/PalaceLevel9C64499B4F48807E6838D2989548DAA2.tmp' to 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap'
-[2017.07.12-18.15.07:756][956]LogSavePackage:Display: Finished SavePackage W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap
-[2017.07.12-18.15.07:788][956]LogFileHelpers: Saving map 'PalaceLevel' took 1.017
-[2017.07.12-18.15.10:816][104]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Maps/PalaceLevel" FILE="W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2017.07.12-18.15.11:581][104]LogSavePackage: Save=730.96ms
-[2017.07.12-18.15.11:581][104]LogSavePackage: Moving 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Saved/PalaceLevel4FA6E76D4A0396F4E16A00814385BB80.tmp' to 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap'
-[2017.07.12-18.15.11:590][104]LogSavePackage:Display: Finished SavePackage W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap
-[2017.07.12-18.15.11:626][104]LogFileHelpers: Saving map 'PalaceLevel' took 0.917
-[2017.07.12-18.15.12:012][120]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Maps/PalaceLevel" FILE="W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2017.07.12-18.15.12:865][120]LogSavePackage: Save=822.92ms
-[2017.07.12-18.15.12:865][120]LogSavePackage: Moving 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Saved/PalaceLevelDC36809A4FE63587B5F6F188B0C7EABF.tmp' to 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap'
-[2017.07.12-18.15.12:868][120]LogSavePackage:Display: Finished SavePackage W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap
-[2017.07.12-18.15.13:684][154]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.15.13:684][154]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.07.12-18.15.13:684][154]PIE: New page: PIE session: PalaceLevel (12 Jul 2017 19:15:13)
-[2017.07.12-18.15.13:684][154]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_PalaceLevel
-[2017.07.12-18.15.13:740][154]LogPlayLevel: PIE: StaticDuplicateObject took: (0.055361s)
-[2017.07.12-18.15.13:740][154]LogAIModule: Creating AISystem for world PalaceLevel
-[2017.07.12-18.15.13:740][154]LogPlayLevel: PIE: World Init took: (0.000526s)
-[2017.07.12-18.15.13:740][154]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/PalaceLevel.PalaceLevel to /Game/Ava/Maps/UEDPIE_0_PalaceLevel.PalaceLevel (0.056203s)
-[2017.07.12-18.15.13:810][154]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.07.12-18.15.13:825][154]LogInit: FAudioDevice initialized.
-[2017.07.12-18.15.13:915][154]LogWorld: Game class is 'AvaGameMode'
-[2017.07.12-18.15.13:966][154]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_PalaceLevel.PalaceLevel up for play (max tick rate 0) at 2017.07.12-19.15.13
-[2017.07.12-18.15.13:971][154]LogWorld: Bringing up level for play took: 0.055084
-[2017.07.12-18.15.13:977][154]LogBlueprintUserMessages: [GameUIBP_C_8] SEt UI
-[2017.07.12-18.15.13:977][154]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_PalaceLevel 1.276
-[2017.07.12-18.15.13:978][154]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.15.30:121][194]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.15.30:271][194]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.15.31:457][247]LogEditorViewport: Clicking on Actor (LMB): PushPullItem (PushPullItem1)
-[2017.07.12-18.15.47:511][759]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.15.47:511][759]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.07.12-18.15.47:511][759]PIE: New page: PIE session: PalaceLevel (12 Jul 2017 19:15:47)
-[2017.07.12-18.15.47:512][759]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_PalaceLevel
-[2017.07.12-18.15.47:581][759]LogPlayLevel: PIE: StaticDuplicateObject took: (0.069286s)
-[2017.07.12-18.15.47:582][759]LogAIModule: Creating AISystem for world PalaceLevel
-[2017.07.12-18.15.47:582][759]LogPlayLevel: PIE: World Init took: (0.000684s)
-[2017.07.12-18.15.47:582][759]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/PalaceLevel.PalaceLevel to /Game/Ava/Maps/UEDPIE_0_PalaceLevel.PalaceLevel (0.070347s)
-[2017.07.12-18.15.47:601][759]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.07.12-18.15.47:611][759]LogInit: FAudioDevice initialized.
-[2017.07.12-18.15.47:680][759]LogWorld: Game class is 'AvaGameMode'
-[2017.07.12-18.15.47:712][759]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_PalaceLevel.PalaceLevel up for play (max tick rate 0) at 2017.07.12-19.15.47
-[2017.07.12-18.15.47:715][759]LogWorld: Bringing up level for play took: 0.033285
-[2017.07.12-18.15.47:717][759]LogBlueprintUserMessages: [GameUIBP_C_9] SEt UI
-[2017.07.12-18.15.47:717][759]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_PalaceLevel 1.015
-[2017.07.12-18.15.47:717][759]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.15.49:032][844]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.15.49:104][844]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.15.50:862][995]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.15.50:862][995]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.07.12-18.15.50:863][995]PIE: New page: PIE session: PalaceLevel (12 Jul 2017 19:15:50)
-[2017.07.12-18.15.50:863][995]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_PalaceLevel
-[2017.07.12-18.15.50:920][995]LogPlayLevel: PIE: StaticDuplicateObject took: (0.057305s)
-[2017.07.12-18.15.50:921][995]LogAIModule: Creating AISystem for world PalaceLevel
-[2017.07.12-18.15.50:921][995]LogPlayLevel: PIE: World Init took: (0.000705s)
-[2017.07.12-18.15.50:921][995]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/PalaceLevel.PalaceLevel to /Game/Ava/Maps/UEDPIE_0_PalaceLevel.PalaceLevel (0.058356s)
-[2017.07.12-18.15.50:942][995]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.07.12-18.15.50:952][995]LogInit: FAudioDevice initialized.
-[2017.07.12-18.15.51:005][995]LogWorld: Game class is 'AvaGameMode'
-[2017.07.12-18.15.51:035][995]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_PalaceLevel.PalaceLevel up for play (max tick rate 0) at 2017.07.12-19.15.51
-[2017.07.12-18.15.51:037][995]LogWorld: Bringing up level for play took: 0.031772
-[2017.07.12-18.15.51:040][995]LogBlueprintUserMessages: [GameUIBP_C_10] SEt UI
-[2017.07.12-18.15.51:040][995]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_PalaceLevel 0.337
-[2017.07.12-18.15.51:040][995]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.16.08:300][160]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.16.08:378][160]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.16.13:322][594]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Maps/PalaceLevel" FILE="W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2017.07.12-18.16.14:055][594]LogSavePackage: Save=701.09ms
-[2017.07.12-18.16.14:055][594]LogSavePackage: Moving 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Saved/PalaceLevelB661A91049E5311C0FBB168019DEE4C7.tmp' to 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap'
-[2017.07.12-18.16.14:063][594]LogSavePackage:Display: Finished SavePackage W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap
-[2017.07.12-18.16.34:298][550]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.16.34:298][550]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.07.12-18.16.34:298][550]PIE: New page: PIE session: PalaceLevel (12 Jul 2017 19:16:34)
-[2017.07.12-18.16.34:298][550]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_PalaceLevel
-[2017.07.12-18.16.34:356][550]LogPlayLevel: PIE: StaticDuplicateObject took: (0.057219s)
-[2017.07.12-18.16.34:356][550]LogAIModule: Creating AISystem for world PalaceLevel
-[2017.07.12-18.16.34:356][550]LogPlayLevel: PIE: World Init took: (0.000719s)
-[2017.07.12-18.16.34:357][550]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/PalaceLevel.PalaceLevel to /Game/Ava/Maps/UEDPIE_0_PalaceLevel.PalaceLevel (0.058282s)
-[2017.07.12-18.16.34:378][550]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.07.12-18.16.34:387][550]LogInit: FAudioDevice initialized.
-[2017.07.12-18.16.34:438][550]LogWorld: Game class is 'AvaGameMode'
-[2017.07.12-18.16.34:476][550]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_PalaceLevel.PalaceLevel up for play (max tick rate 0) at 2017.07.12-19.16.34
-[2017.07.12-18.16.34:479][550]LogWorld: Bringing up level for play took: 0.040053
-[2017.07.12-18.16.34:481][550]LogBlueprintUserMessages: [GameUIBP_C_11] SEt UI
-[2017.07.12-18.16.34:482][550]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_PalaceLevel -0.223
-[2017.07.12-18.16.34:482][550]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.18.12:509][213]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.18.12:584][213]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
-[2017.07.12-18.20.14:203][731]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ava/Maps/PalaceLevel" FILE="W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2017.07.12-18.20.15:296][731]LogSavePackage: Save=1046.54ms
-[2017.07.12-18.20.15:296][731]LogSavePackage: Moving 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Saved/PalaceLevelCC18D4CD47FEE143902FA59AEA9D3AD5.tmp' to 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap'
-[2017.07.12-18.20.15:308][731]LogSavePackage:Display: Finished SavePackage W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap
-[2017.07.12-18.20.15:365][731]LogFileHelpers: Saving map 'PalaceLevel' took 1.317
-[2017.07.12-18.20.15:691][732]Cmd: QUIT_EDITOR
-[2017.07.12-18.20.15:756][732]LogExit: Preparing to exit.
-[2017.07.12-18.20.16:255][732]LogHoudiniEngine: HAPI Synchronous Deletion of  Started. HoudiniAsset = 0x0, 
-[2017.07.12-18.20.16:264][732]LogExit: Editor shut down
-[2017.07.12-18.20.16:264][732]LogExit: Transaction tracking system shut down
-[2017.07.12-18.20.16:432][732]LogObj: Freed 0b from 0 cluster array pools.
-[2017.07.12-18.20.16:432][732]LogExit: Object subsystem successfully closed.
-[2017.07.12-18.20.16:453][732]LogD3D11RHI: Shutdown
-[2017.07.12-18.20.16:453][732]LogD3D11RHI: CleanupD3DDevice
-[2017.07.12-18.20.16:508][732]LogD3D11RHI: ~FD3D11DynamicRHI
-[2017.07.12-18.20.16:531][732]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (219)
-[2017.07.12-18.20.16:531][732]LogModuleManager: Shutting down and abandoning module SequencerWidgets (218)
-[2017.07.12-18.20.16:531][732]LogModuleManager: Shutting down and abandoning module BlueprintGraph (217)
-[2017.07.12-18.20.16:531][732]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (216)
-[2017.07.12-18.20.16:531][732]LogModuleManager: Shutting down and abandoning module CrashTracker (215)
-[2017.07.12-18.20.16:531][732]LogModuleManager: Shutting down and abandoning module SceneOutliner (214)
-[2017.07.12-18.20.16:531][732]LogModuleManager: Shutting down and abandoning module WidgetCarousel (213)
-[2017.07.12-18.20.16:531][732]LogModuleManager: Shutting down and abandoning module AddContentDialog (212)
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module GameplayTags (211)
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module EditorWidgets (210)
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module CollectionManager (209)
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module StatsViewer (208)
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module FoliageEdit (207)
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module LandscapeEditor (206)
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (205)
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module ActorPickerMode (204)
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module GeometryMode (203)
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module TextureAlignMode (202)
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module BspMode (201)
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module HardwareSurvey (200)
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (199)
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module SequenceRecorder (198)
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module AutomationWorker (197)
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module HoudiniEngineEditor (196)
-[2017.07.12-18.20.16:533][732]LogHoudiniEngineEditor: Shutting down the Houdini Engine Editor module.
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (195)
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module PlacementMode (194)
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (193)
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module CharacterAI (192)
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module SmartSnapping (191)
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module SessionServices (190)
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module ViewportSnapping (189)
-[2017.07.12-18.20.16:533][732]LogModuleManager: Shutting down and abandoning module LogVisualizer (188)
-[2017.07.12-18.20.16:534][732]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (187)
-[2017.07.12-18.20.16:534][732]LogModuleManager: Shutting down and abandoning module IntroTutorials (186)
-[2017.07.12-18.20.16:534][732]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (185)
-[2017.07.12-18.20.16:534][732]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (184)
-[2017.07.12-18.20.16:534][732]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (183)
-[2017.07.12-18.20.16:534][732]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (182)
-[2017.07.12-18.20.17:393][732]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (181)
-[2017.07.12-18.20.17:393][732]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (180)
-[2017.07.12-18.20.17:393][732]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (179)
-[2017.07.12-18.20.17:393][732]LogModuleManager: Shutting down and abandoning module MergeActors (178)
-[2017.07.12-18.20.17:393][732]LogModuleManager: Shutting down and abandoning module SizeMap (177)
-[2017.07.12-18.20.17:393][732]LogModuleManager: Shutting down and abandoning module TreeMap (176)
-[2017.07.12-18.20.17:393][732]LogModuleManager: Shutting down and abandoning module ReferenceViewer (175)
-[2017.07.12-18.20.17:393][732]LogModuleManager: Shutting down and abandoning module LocalizationService (174)
-[2017.07.12-18.20.17:393][732]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (173)
-[2017.07.12-18.20.17:393][732]LogModuleManager: Shutting down and abandoning module HardwareTargeting (172)
-[2017.07.12-18.20.17:393][732]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (171)
-[2017.07.12-18.20.17:393][732]LogModuleManager: Shutting down and abandoning module UndoHistory (170)
-[2017.07.12-18.20.17:393][732]LogModuleManager: Shutting down and abandoning module UserFeedback (169)
-[2017.07.12-18.20.17:393][732]LogModuleManager: Shutting down and abandoning module XmlParser (168)
-[2017.07.12-18.20.17:394][732]LogModuleManager: Shutting down and abandoning module Blutility (167)
-[2017.07.12-18.20.17:394][732]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (166)
-[2017.07.12-18.20.17:394][732]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (165)
-[2017.07.12-18.20.17:394][732]LogModuleManager: Shutting down and abandoning module InputBindingEditor (164)
-[2017.07.12-18.20.17:394][732]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (163)
-[2017.07.12-18.20.17:394][732]LogModuleManager: Shutting down and abandoning module SettingsEditor (162)
-[2017.07.12-18.20.17:394][732]LogModuleManager: Shutting down and abandoning module ProjectLauncher (161)
-[2017.07.12-18.20.17:394][732]LogModuleManager: Shutting down and abandoning module SessionFrontend (160)
-[2017.07.12-18.20.17:394][732]LogModuleManager: Shutting down and abandoning module ProfilerClient (159)
-[2017.07.12-18.20.17:394][732]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (158)
-[2017.07.12-18.20.17:394][732]LogModuleManager: Shutting down and abandoning module DeviceManager (157)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module AutomationController (156)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module AutomationWindow (155)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module Layers (154)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (153)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module DetailCustomizations (152)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module PackagesDialog (151)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module Persona (150)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module Kismet (149)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module GraphEditor (148)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module ClassViewer (147)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module Toolbox (146)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module ModuleUI (145)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module MovieSceneTools (144)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module OutputLog (143)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module GammaUI (142)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module Documentation (141)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (140)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module AnalyticsET (139)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module Analytics (138)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module PortalServices (137)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module PortalRpc (136)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module MessagingRpc (135)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module GameplayDebugger (134)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module AITestSuite (133)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module AIModule (132)
-[2017.07.12-18.20.17:444][732]LogModuleManager: Shutting down and abandoning module ProfilerService (131)
-[2017.07.12-18.20.17:558][732]LogModuleManager: Shutting down and abandoning module TaskGraph (130)
-[2017.07.12-18.20.17:558][732]LogModuleManager: Shutting down and abandoning module SlateRemote (129)
-[2017.07.12-18.20.17:558][732]LogModuleManager: Shutting down and abandoning module SteamVRController (128)
-[2017.07.12-18.20.17:558][732]LogModuleManager: Shutting down and abandoning module SteamVR (127)
-[2017.07.12-18.20.17:558][732]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (126)
-[2017.07.12-18.20.17:558][732]LogModuleManager: Shutting down and abandoning module OculusLibrary (125)
-[2017.07.12-18.20.17:558][732]LogModuleManager: Shutting down and abandoning module OculusInput (124)
-[2017.07.12-18.20.17:558][732]LogModuleManager: Shutting down and abandoning module HoudiniEngineRuntime (123)
-[2017.07.12-18.20.17:558][732]LogHoudiniEngine: Shutting down the Houdini Engine module.
-[2017.07.12-18.20.17:558][732]LogUObjectArray:Warning: Invalid object index -572662307
-[2017.07.12-18.20.17:558][732]LogUObjectArray:Warning: Invalid object index -572662307
-[2017.07.12-18.20.17:558][732]LogUObjectArray:Warning: Invalid object index -572662307
-[2017.07.12-18.20.17:558][732]LogUObjectArray:Warning: Invalid object index -572662307
-[2017.07.12-18.20.17:561][732]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (122)
-[2017.07.12-18.20.17:561][732]LogModuleManager: Shutting down and abandoning module CableComponent (121)
-[2017.07.12-18.20.17:561][732]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (120)
-[2017.07.12-18.20.17:561][732]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (119)
-[2017.07.12-18.20.17:561][732]LogModuleManager: Shutting down and abandoning module HTML5Networking (118)
-[2017.07.12-18.20.17:561][732]LogModuleManager: Shutting down and abandoning module SuperSearch (117)
-[2017.07.12-18.20.17:561][732]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (116)
-[2017.07.12-18.20.17:561][732]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (115)
-[2017.07.12-18.20.17:561][732]LogModuleManager: Shutting down and abandoning module PluginBrowser (114)
-[2017.07.12-18.20.17:561][732]LogModuleManager: Shutting down and abandoning module EpicSurvey (113)
-[2017.07.12-18.20.17:561][732]LogModuleManager: Shutting down and abandoning module DesktopPlatform (112)
-[2017.07.12-18.20.17:561][732]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (111)
-[2017.07.12-18.20.17:561][732]LogModuleManager: Shutting down and abandoning module UObjectPlugin (110)
-[2017.07.12-18.20.17:561][732]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (109)
-[2017.07.12-18.20.17:561][732]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (108)
-[2017.07.12-18.20.17:561][732]LogModuleManager: Shutting down and abandoning module SourceControl (107)
-[2017.07.12-18.20.17:561][732]LogModuleManager: Shutting down and abandoning module GitSourceControl (106)
-[2017.07.12-18.20.17:561][732]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (105)
-[2017.07.12-18.20.17:561][732]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (104)
-[2017.07.12-18.20.17:561][732]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (103)
-[2017.07.12-18.20.17:561][732]LogModuleManager: Shutting down and abandoning module MeshPaint (102)
-[2017.07.12-18.20.17:561][732]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (101)
-[2017.07.12-18.20.17:561][732]LogModuleManager: Shutting down and abandoning module HotReload (100)
-[2017.07.12-18.20.17:562][732]LogModuleManager: Shutting down and abandoning module MainFrame (99)
-[2017.07.12-18.20.17:562][732]LogModuleManager: Shutting down and abandoning module LevelEditor (98)
-[2017.07.12-18.20.17:562][732]LogModuleManager: Shutting down and abandoning module ContentBrowser (97)
-[2017.07.12-18.20.17:563][732]LogModuleManager: Shutting down and abandoning module Paper2DEditor (96)
-[2017.07.12-18.20.17:563][732]LogModuleManager: Shutting down and abandoning module Ava (95)
-[2017.07.12-18.20.17:563][732]LogModuleManager: Shutting down and abandoning module UdpMessaging (94)
-[2017.07.12-18.20.17:663][732]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
-[2017.07.12-18.20.17:663][732]LogModuleManager: Shutting down and abandoning module Paper2D (92)
-[2017.07.12-18.20.17:663][732]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
-[2017.07.12-18.20.17:663][732]LogModuleManager: Shutting down and abandoning module Media (90)
-[2017.07.12-18.20.17:663][732]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
-[2017.07.12-18.20.17:663][732]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
-[2017.07.12-18.20.17:663][732]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
-[2017.07.12-18.20.17:663][732]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
-[2017.07.12-18.20.17:663][732]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
-[2017.07.12-18.20.17:664][732]LogModuleManager: Shutting down and abandoning module VREditor (84)
-[2017.07.12-18.20.17:664][732]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
-[2017.07.12-18.20.17:664][732]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
-[2017.07.12-18.20.17:664][732]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
-[2017.07.12-18.20.17:664][732]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
-[2017.07.12-18.20.17:664][732]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
-[2017.07.12-18.20.17:664][732]LogModuleManager: Shutting down and abandoning module Sequencer (78)
-[2017.07.12-18.20.17:664][732]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
-[2017.07.12-18.20.17:664][732]LogModuleManager: Shutting down and abandoning module MessageLog (76)
-[2017.07.12-18.20.17:664][732]LogModuleManager: Shutting down and abandoning module AssetTools (75)
-[2017.07.12-18.20.17:664][732]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
-[2017.07.12-18.20.17:664][732]LogModuleManager: Shutting down and abandoning module UMG (73)
-[2017.07.12-18.20.17:664][732]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
-[2017.07.12-18.20.17:664][732]LogModuleManager: Shutting down and abandoning module Slate (71)
-[2017.07.12-18.20.17:664][732]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
-[2017.07.12-18.20.17:666][732]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
-[2017.07.12-18.20.17:666][732]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
-[2017.07.12-18.20.17:666][732]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
-[2017.07.12-18.20.17:666][732]LogModuleManager: Shutting down and abandoning module Networking (65)
-[2017.07.12-18.20.17:666][732]LogModuleManager: Shutting down and abandoning module Core (64)
-[2017.07.12-18.20.17:666][732]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
-[2017.07.12-18.20.17:667][732]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
-[2017.07.12-18.20.17:753][732]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
-[2017.07.12-18.20.17:753][732]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
-[2017.07.12-18.20.17:753][732]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
-[2017.07.12-18.20.17:753][732]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
-[2017.07.12-18.20.17:850][732]LogDerivedDataCache: Shutdown
-[2017.07.12-18.20.17:850][732]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
-[2017.07.12-18.20.17:850][732]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
-[2017.07.12-18.20.17:850][732]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
-[2017.07.12-18.20.17:850][732]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
-[2017.07.12-18.20.17:850][732]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
-[2017.07.12-18.20.17:850][732]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
-[2017.07.12-18.20.17:850][732]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
-[2017.07.12-18.20.17:850][732]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
-[2017.07.12-18.20.17:850][732]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
-[2017.07.12-18.20.17:850][732]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module Messaging (39)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module InputCore (22)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module Settings (21)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
-[2017.07.12-18.20.17:851][732]LogModuleManager: Shutting down and abandoning module HTTP (18)
-[2017.07.12-18.20.21:910][732]LogModuleManager: Shutting down and abandoning module XMPP (17)
-[2017.07.12-18.20.21:910][732]LogModuleManager: Shutting down and abandoning module OculusRift (16)
-[2017.07.12-18.20.21:910][732]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
-[2017.07.12-18.20.21:910][732]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
-[2017.07.12-18.20.21:910][732]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
-[2017.07.12-18.20.21:910][732]LogModuleManager: Shutting down and abandoning module Landscape (12)
-[2017.07.12-18.20.21:910][732]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
-[2017.07.12-18.20.21:912][732]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
-[2017.07.12-18.20.21:912][732]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
-[2017.07.12-18.20.21:912][732]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
-[2017.07.12-18.20.21:912][732]LogModuleManager: Shutting down and abandoning module Renderer (7)
-[2017.07.12-18.20.21:912][732]LogModuleManager: Shutting down and abandoning module Engine (6)
-[2017.07.12-18.20.21:912][732]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
-[2017.07.12-18.20.21:912][732]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
-[2017.07.12-18.20.21:912][732]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
-[2017.07.12-18.20.21:912][732]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2017.07.12-18.20.21:912][732]LogModuleManager: Shutting down and abandoning module PakFile (1)
-[2017.07.12-18.20.21:916][732]LogExit: Exiting.
-[2017.07.12-18.20.21:918][732]Log file closed, 07/12/17 19:20:21
+[2017.07.14-15.34.15:371][  0]LogStats:                SubmitErrorReport -  0.000 s
+[2017.07.14-15.34.15:918][  0]LogStats:                    SendNewReport -  0.547 s
+[2017.07.14-15.34.15:918][  0]LogStats:             FDebug::EnsureFailed -  0.563 s
+[2017.07.14-15.34.16:187][  0]SourceControl: Info Source control is disabled
+[2017.07.14-15.34.16:190][  0]SourceControl: Info Source control is disabled
+[2017.07.14-15.34.16:207][  0]SourceControl: Info Source control is disabled
+[2017.07.14-15.34.16:222][  0]SourceControl: Info Source control is disabled
+[2017.07.14-15.34.16:395][  0]LogHoudiniEngine: Starting the Houdini Engine module.
+[2017.07.14-15.34.16:396][  0]LogHoudiniEngine: Loaded libHAPIL.dll from Registry path C:\Program Files\Side Effects Software\Houdini 15.5.632/bin
+[2017.07.14-15.34.16:397][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_logo.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2017.07.14-15.34.16:398][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_default_material.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2017.07.14-15.34.16:402][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_bgeo_import.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2017.07.14-15.34.17:705][  0]LogHoudiniEngine: Successfully initialized the Houdini Engine API module.
+[2017.07.14-15.34.17:852][  0]LogEngine: Initializing Engine...
+[2017.07.14-15.34.17:853][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2017.07.14-15.34.17:854][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2017.07.14-15.34.17:996][  0]LogAIModule: Creating AISystem for world NewWorld
+[2017.07.14-15.34.18:005][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.07.14-15.34.18:024][  0]LogInit: FAudioDevice initialized.
+[2017.07.14-15.34.18:053][  0]LogDerivedDataCache: Saved boot cache 0.03s 49MB C:/Users/i7230020.STUDENT.000/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2017.07.14-15.34.18:059][  0]LogInit: Texture streaming: Enabled
+[2017.07.14-15.34.18:082][  0]LogInit: Transaction tracking system initialized
+[2017.07.14-15.34.18:109][  0]BlueprintLog: New page: Editor Load
+[2017.07.14-15.34.18:188][  0]LocalizationService: Info Localization service is disabled
+[2017.07.14-15.34.18:275][  0]LogConsoleResponse:Display: 
+[2017.07.14-15.34.18:386][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2017.07.14-15.34.18:386][  0]LogCook:Display: Mobile HDR setting 1
+[2017.07.14-15.34.18:469][  0]LogFileCache: Scanning file cache for directory 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/' took 0.02s
+[2017.07.14-15.34.18:469][  0]LogHoudiniEngineEditor: Starting the Houdini Engine Editor module.
+[2017.07.14-15.34.18:516][  0]SourceControl: Info Source control is disabled
+[2017.07.14-15.34.18:516][  0]Cmd: MAP LOAD FILE="W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Ava/Maps/PalaceLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.07.14-15.34.18:516][  0]LightingResults: New page: Lighting Build
+[2017.07.14-15.34.18:519][  0]MapCheck: New page: Map Check
+[2017.07.14-15.34.18:519][  0]LightingResults: New page: Lighting Build
+[2017.07.14-15.34.18:596][  0]LogBlueprint:Warning: Compiler Warning InputAction Event references unknown Action 'Crouch' for  InputAction Crouch 
+[2017.07.14-15.34.18:598][  0]LogBlueprint:Warning: Compiler Warning [0025.32] Compile of Ue4ASP_Character successful, but with 1 Warning(s) [in 7 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.07.14-15.34.18:598][  0]LogBlueprint:Warning: Compiler Warning [0025.32] Compile of Ue4ASP_Character successful, but with 2 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.07.14-15.34.18:598][  0]LogBlueprint:Warning: Compiler Warning [0025.32] Compile of Ue4ASP_Character successful, but with 3 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.07.14-15.34.18:673][  0]LogBlueprint:Warning: Compiler Warning InputAction Event references unknown Action 'Crouch' for  InputAction Crouch 
+[2017.07.14-15.34.18:675][  0]LogBlueprint:Warning: Compiler Warning [0025.40] Compile of Ue4ASP_Character successful, but with 1 Warning(s) [in 9 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.07.14-15.34.18:675][  0]LogBlueprint:Warning: Compiler Warning [0025.40] Compile of Ue4ASP_Character successful, but with 2 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.07.14-15.34.18:676][  0]LogBlueprint:Warning: Compiler Warning [0025.40] Compile of Ue4ASP_Character successful, but with 3 Warning(s) [in 0 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2017.07.14-15.34.20:767][  0]LogMaterial: Missing cached shader map for material M_Basic_Wall, compiling. 
+[2017.07.14-15.34.20:768][  0]LogMaterial:Warning: Failed to compile Material /Game/StarterContent/Materials/M_Basic_Wall.M_Basic_Wall for platform PCD3D_SM5, Default Material will be used in game.
+[2017.07.14-15.34.20:768][  0]LogMaterial:Warning: 	(Node TextureSample) TextureSample> Missing input texture
+[2017.07.14-15.34.20:789][  0]LogAIModule: Creating AISystem for world PalaceLevel
+[2017.07.14-15.34.20:831][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.07.14-15.34.20:832][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.07.14-15.34.20:954][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 121.951ms to complete.
+[2017.07.14-15.34.20:954][  0]LogFileHelpers: Loading map 'PalaceLevel' took 2.438
+[2017.07.14-15.34.21:295][  0]LogCollectionManager: Loaded 0 collections in 0.001426 seconds
+[2017.07.14-15.34.21:337][  0]LogFileCache: Scanning file cache for directory 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Saved/Collections/' took 0.01s
+[2017.07.14-15.34.21:337][  0]LogFileCache: Scanning file cache for directory 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Developers/i7230020/Collections/' took 0.01s
+[2017.07.14-15.34.21:337][  0]LogFileCache: Scanning file cache for directory 'W:/University Work/Masters/MastersProject/MastersProject/Ava/Content/Collections/' took 0.01s
+[2017.07.14-15.34.21:337][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.07.14-15.34.21:346][  0]LogContentBrowser: Native class hierarchy populated in 0.0093 seconds. Added 2099 classes and 376 folders.
+[2017.07.14-15.34.21:350][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.07.14-15.34.21:350][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.07.14-15.34.21:352][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0026 seconds. Added 12 classes and 0 folders.
+[2017.07.14-15.34.21:359][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0024 seconds. Added 0 classes and 0 folders.
+[2017.07.14-15.34.21:438][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0036 seconds. Added 0 classes and 0 folders.
+[2017.07.14-15.34.21:444][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0024 seconds. Added 1 classes and 2 folders.
+[2017.07.14-15.34.21:456][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.07.14-15.34.21:462][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.07.14-15.34.21:489][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0025 seconds. Added 1 classes and 2 folders.
+[2017.07.14-15.34.21:489][  0]LogLoad: Full Startup: 28.21 seconds (BP compile: 1.16 seconds)
+[2017.07.14-15.34.21:489][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.07.14-15.34.21:489][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.07.14-15.34.21:500][  0]LogOcInput: OculusInput pre-init called
+[2017.07.14-15.34.21:521][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.07.14-15.34.21:694][  0]LogRenderer: Reallocating scene render targets to support 1616x564 (Frame:2).
+[2017.07.14-15.34.21:807][  1]LogAssetRegistry: Asset discovery search completed in 8.0241 seconds
+[2017.07.14-15.34.21:807][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2017.07.14-15.34.21:807][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000020 seconds (updated 0 objects)
+[2017.07.14-15.34.49:838][300]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
+[2017.07.14-15.34.49:838][300]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.07.14-15.34.49:840][300]PIE: New page: PIE session: PalaceLevel (14 Jul 2017 16:34:49)
+[2017.07.14-15.34.49:840][300]LogPlayLevel: Creating play world package: /Game/Ava/Maps/UEDPIE_0_PalaceLevel
+[2017.07.14-15.34.49:896][300]LogPlayLevel: PIE: StaticDuplicateObject took: (0.056718s)
+[2017.07.14-15.34.49:897][300]LogAIModule: Creating AISystem for world PalaceLevel
+[2017.07.14-15.34.49:897][300]LogPlayLevel: PIE: World Init took: (0.000558s)
+[2017.07.14-15.34.49:897][300]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Ava/Maps/PalaceLevel.PalaceLevel to /Game/Ava/Maps/UEDPIE_0_PalaceLevel.PalaceLevel (0.057649s)
+[2017.07.14-15.34.49:961][300]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.07.14-15.34.49:969][300]LogInit: FAudioDevice initialized.
+[2017.07.14-15.34.50:039][300]LogWorld: Game class is 'AvaGameMode'
+[2017.07.14-15.34.50:075][300]LogWorld: Bringing World /Game/Ava/Maps/UEDPIE_0_PalaceLevel.PalaceLevel up for play (max tick rate 0) at 2017.07.14-16.34.50
+[2017.07.14-15.34.50:078][300]LogWorld: Bringing up level for play took: 0.038291
+[2017.07.14-15.34.50:084][300]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0025 seconds. Added 11 classes and 0 folders.
+[2017.07.14-15.34.50:088][300]LogBlueprintUserMessages: [GameUIBP_C_0] SEt UI
+[2017.07.14-15.34.50:089][300]PIE: Info Play in editor start time for /Game/Ava/Maps/UEDPIE_0_PalaceLevel 0.395
+[2017.07.14-15.34.50:089][300]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
+[2017.07.14-15.35.26:619][797]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
+[2017.07.14-15.35.26:663][797]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel' with GeneratedClass '/Game/Ava/Maps/PalaceLevel.PalaceLevel_C' with ClassGeneratedBy '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel.PalaceLevel'
+[2017.07.14-15.35.40:729][789]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Ava/Maps/PalaceLevel.PalaceLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Ava/Maps/Palac

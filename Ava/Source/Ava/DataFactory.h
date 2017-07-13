@@ -84,8 +84,8 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Items")
 		Item GetItemType(const FString &enumType, const FString &enumName);
 
-	UFUNCTION(BlueprintCallable, Category = "Items")
-		AActor* SpawnItem(Item ItemToSpawn, FTransform Position, TSubclassOf<AActor> AnotherClass);
+	//UFUNCTION(BlueprintCallable, Category = "Items")
+	//	AActor* SpawnItem(Item ItemToSpawn, FTransform Position);
 
 	UFUNCTION(BlueprintCallable, Category = "Items")
 		FString getItemDescription(Item ItemToSpawn);

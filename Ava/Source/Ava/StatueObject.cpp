@@ -20,8 +20,8 @@ AStatueObject::AStatueObject()
 	//DesignatedMesh->AttachTo(RootComponent);
 
 	overlappingSphere = CreateDefaultSubobject<USphereComponent>(TEXT("overlappingSphere"));
-	overlappingSphere->SetSphereRadius(100.f);
 	overlappingSphere->AttachTo(RootComponent);
+	overlappingSphere->SetSphereRadius(9.0f);
 
 	
 
