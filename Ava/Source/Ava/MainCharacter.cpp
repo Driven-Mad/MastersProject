@@ -16,6 +16,13 @@ AMainCharacter::AMainCharacter()
 	lookRate = 45;
 	turnRate = 45;
 	pushPullSpeed = 75;
+	bIsNoLocomotionInput = true;
+	bIsPlayerGoingRight = false;
+	bIsPlayerGoingLeft = false;
+	bIsPlayerGoingForward = false;
+	bIsPlayerGoingBack = false;
+
+	cameraDegreeCap = 15.0f;
 
 	bIsInInventory = false;
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.f);
@@ -67,6 +74,29 @@ AMainCharacter::AMainCharacter()
 	bIsJumping = false;
 	bPushPullColliding = false;
 	bIsPushPulling = false;
+	bIsPickingUp = false;
+	jumpDelay = 0;
+	jumpDelayTimer = 0;
+	bStopJumping = false;
+	playOnceRunToIdle = false;
+	playOnceSprintToIdle = false;
+
+	static ConstructorHelpers::FObjectFinder<UCurveFloat> Curvy(TEXT("/Game/TemporaryContent/RunToIdleCurve.RunToIdleCurve"));
+	if (Curvy.Object)
+	{
+		RunToIdleCurve = Curvy.Object;
+		RunToIdleTimeline = CreateDefaultSubobject<UTimelineComponent>(TEXT("TimelineRunToIdle"));
+	
+		//Bind the Callbackfuntion for the float return value
+		InterpFunction.BindUFunction(this, FName{ TEXT("TimelineFloatReturn") });
+	}
+	
+	static ConstructorHelpers::FObjectFinder<UCurveFloat> Curvy2(TEXT("/Game/TemporaryContent/SprintToIdleCurve.SprintToIdleCurve"));
+	if (Curvy2.Object)
+	{
+		SprintToIdleCurve = Curvy2.Object;
+		SprintToIdleTimeline = CreateDefaultSubobject<UTimelineComponent>(TEXT("TimelineSprintToIdle"));
+	}
 }
 
 
@@ -93,7 +123,10 @@ void AMainCharacter::ExitOverLap(AActor* MyOverlappedActor, AActor* OtherActor)
 void AMainCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	jumpDelayTimer = jumpDelay;
+
+	RunToIdleTimeline->AddInterpFloat(RunToIdleCurve, InterpFunction, FName{ TEXT("Floaty") });
+	SprintToIdleTimeline->AddInterpFloat(SprintToIdleCurve, InterpFunction, FName{ TEXT("Floaty2") });
 }
 
 // Called every frame
@@ -101,9 +134,41 @@ void AMainCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	deltaTime = DeltaTime;
-
-	//For Controller:
 	float speed = GetVelocity().Size();
+	if (!bIsPlayerGoingBack && !bIsPlayerGoingForward && !bIsPlayerGoingLeft && !bIsPlayerGoingRight)
+	{
+		bIsNoLocomotionInput = true;
+		if (!RunToIdleTimeline->IsPlaying() && speed !=0 && !playOnceRunToIdle && GetCharacterMovement()->MaxWalkSpeed <= runSpeed && GetCharacterMovement()->MaxWalkSpeed > walkSpeed)
+		{
+			RunToIdleTimeline->PlayFromStart();
+			playOnceRunToIdle = true;
+		}
+		//SprintToIdleTimeline
+	
+		if (GetCharacterMovement()->MaxWalkSpeed > runSpeed && !SprintToIdleTimeline->IsPlaying() && speed != 0 && !playOnceSprintToIdle)
+		{
+			
+			SprintToIdleTimeline->PlayFromStart();
+			playOnceSprintToIdle = true;
+			
+		}
+		
+		
+	}
+	else
+	{
+		//SprintToIdleTimeline->Stop();
+		//RunToIdleTimeline->Stop();
+		//GetCharacterMovement()->MaxWalkSpeed = runSpeed;
+		//LEFT AND RIGHT?
+		playOnceRunToIdle = false;
+		playOnceSprintToIdle = false;
+		bIsNoLocomotionInput = false;
+		
+		
+	}
+	//For Controller:
+	
 	if (speed == 0)
 	{
 		bIsIdle = true;
@@ -114,8 +179,13 @@ void AMainCharacter::Tick(float DeltaTime)
 		bIsWalking = true;
 		//GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Purple, "I'M WALKING");
 	}
-	else
+	else if (speed < sprintSpeed && speed >= runSpeed)
 	{
+		bIsRunning = true;
+		bIsWalking = false;
+	}else
+	{
+		bIsRunning = false;
 		bIsWalking = false;
 	}
 	if (Controller != NULL)
@@ -179,8 +249,52 @@ void AMainCharacter::Tick(float DeltaTime)
 	//	//newLocation.Z = attachedPushPullItem->GetActorLocation().Z;
 	//	attachedPushPullItem->SetActorLocation(newLocation);
 	//}
+	if (jumpDelay != 0.f && startTimer)
+	{
+		jumpDelayTimer -= (deltaTime);
+		//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Black, FString::Printf(TEXT("camera: %f"), jumpDelayTimer));
+	}
 
-	
+	if (!bIsPraying && jumpDelayTimer <= 0.f && startTimer)
+	{
+		Super::Jump();
+		jumpDelayTimer = jumpDelay;
+		startTimer = false;
+	}
+	if (Controller)
+	{
+		//leftOrRightPlayer = FVector::DotProduct(Controller->GetActorForwardVector(), Controller->GetVelocity());
+
+
+		//gives + 16 on both left and right, 148 forward, -148 backwards, 148 with camera + movement.
+		//leftOrRightPlayer = FVector::DotProduct(Controller->GetActorForwardVector(), GetVelocity());
+
+		// -149 left, 149 right, Camera: + left, - right, 0 forward.
+		//leftOrRightPlayer = FVector::DotProduct(Controller->GetActorRightVector(), GetVelocity());
+
+		//gives + 16 on both left and right, 148 forward, -148 backwards, 148 with camera + movement.
+		//leftOrRightPlayer = FVector::DotProduct(Controller->GetActorForwardVector(), GetCapsuleComponent()->GetComponentVelocity());
+
+		//1 everywhere
+		//leftOrRightPlayer = FVector::DotProduct(Controller->GetActorRightVector(), FollowCamera->GetRightVector());
+
+		// -149 left, 149 right, Camera: + left, - right, 0 forward.
+		//leftOrRightPlayer = FVector::DotProduct(FollowCamera->GetRightVector(), GetVelocity());
+
+		//gives + 16 on both left and right, 148 forward, -148 backwards, 148 with camera + movement.
+		//leftOrRightPlayer = FVector::DotProduct(FollowCamera->GetForwardVector(), GetVelocity());
+
+		//Gives 150 on each axis
+		//leftOrRightPlayer = FVector::DotProduct(GetActorForwardVector(), GetVelocity());
+
+		//Gives you up to -12 Left, 12 right, 0 forward and backwards. Depending of speed of camera turn, gives negative left, positive right. !!! THIS ONE SO FAR !!!
+		leftOrRightPlayer = (FVector::DotProduct(GetActorRightVector(), GetVelocity()));
+
+		//gives + 16 on both left and right, 148 forward, -148 backwards, 148 with camera + movement.
+		//leftOrRightPlayer = FVector::DotProduct(GetCapsuleComponent()->GetComponentVelocity(), Controller->GetActorForwardVector()); 
+
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("camera: %f"), leftOrRightPlayer));
+	}
 }
 
 // Called to bind functionality to input
@@ -202,7 +316,6 @@ void AMainCharacter::SetupPlayerInputComponent(class UInputComponent* InputCompo
 
 	//Bind Push/Pull Functionalities to input mapping "PushPull"
 	InputComponent->BindAction("PushPull", IE_Pressed, this, &AMainCharacter::PushPull);
-	InputComponent->BindAction("PushPull", IE_Released, this, &AMainCharacter::StopPushPull);
 
 	//Bind open/Close Inventory Functionalities to input mapping "Inventory"
 	InputComponent->BindAction("Inventory", IE_Pressed, this, &AMainCharacter::OpenInventory);
@@ -213,6 +326,7 @@ void AMainCharacter::SetupPlayerInputComponent(class UInputComponent* InputCompo
 
 	//Bind our axis inputs for movement.
 	InputComponent->BindAxis("MoveForward", this, &AMainCharacter::MoveForward);
+
 	InputComponent->BindAxis("MoveRight", this, &AMainCharacter::MoveRight);
 
 	InputComponent->BindAxis("Turn", this, &AMainCharacter::TurnCamera);
@@ -226,8 +340,15 @@ void AMainCharacter::SetupPlayerInputComponent(class UInputComponent* InputCompo
 
 void AMainCharacter::Jump()
 {
-	Super::Jump();
-	bIsJumping = true;
+	if (!bStopJumping && !bIsPushPulling && !bIsJumping)
+	{
+		bIsJumping = true;
+		startTimer = true;
+
+		jumpDelayTimer = jumpDelay;
+	}
+	
+	
 }
 
 void AMainCharacter::StopJumping()
@@ -238,33 +359,115 @@ void AMainCharacter::StopJumping()
 
 void AMainCharacter::MoveForward(float value)
 {
-	if ((Controller != NULL) && (value != 0.0f) && !bPushPullColliding)
+
+	if ((Controller != NULL) && (value != 0.0f) && !bPushPullColliding && !bIsPraying && !bIsPushPulling)
 	{
+		if (!bIsWalking && !bIsIdle && !bIsSprinting)
+		{
+			SprintToIdleTimeline->Stop();
+			RunToIdleTimeline->Stop();
+			GetCharacterMovement()->MaxWalkSpeed = runSpeed;
+		}
 		//GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Purple, "I'M RUNNING");
 		AddMovementInput(ForwardVector, value);
+		if (value > 0.0)
+		{
+			//Moving forward
+			lastEntry = enumDirectionCheck::forward;
+			lastEntryFB = enumDirectionCheck::forward;
+			bIsPlayerGoingForward = true;
+			bIsPlayerGoingBack = false;
+		}
+		if (value < 0.0)
+		{
+			lastEntry = enumDirectionCheck::back;
+			lastEntryFB = enumDirectionCheck::back;
+			//Moving backward
+			bIsPlayerGoingForward = false;
+			bIsPlayerGoingBack = true;
+		}
+	}
+	if (value == 0.0f)
+	{
+		bIsPlayerGoingForward = false;
+		bIsPlayerGoingBack = false;
 	}
 
+	if (bIsPushPulling)
+	{
+		FRotator tempRot = GetActorRotation();
+		FRotator tempYaw = FRotator(0, tempRot.Yaw, 0);
+		FVector tempFV = FRotationMatrix(tempYaw).GetUnitAxis(EAxis::X);
+		//GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Purple, "I'M RUNNING");
+		AddMovementInput(tempFV, value);
+		if (value > 0.0)
+		{
+			//Moving forward
+			bIsPlayerGoingForward = true;
+			bIsPlayerGoingBack = false;
+		}
+		if (value < 0.0)
+		{
+			//Moving backward
+			bIsPlayerGoingForward = false;
+			bIsPlayerGoingBack = true;
+		}
+	}
 }
 
 void AMainCharacter::MoveRight(float value)
 {
-
-	if ((Controller != NULL) && (value != 0.0f) && !bIsPushPulling)
+	if ((Controller != NULL) && (value != 0.0f) && !bIsPushPulling && !bIsPraying)
 	{
-		FRotator tempRot = GetActorRotation();
-		FRotator tempYaw = FRotator(0, tempRot.Yaw, 0);
-		FVector tempFV = FRotationMatrix(tempYaw).GetUnitAxis(EAxis::Y);
+		
+		if (!bIsWalking && !bIsIdle && !bIsSprinting)
+		{
+			SprintToIdleTimeline->Stop();
+			RunToIdleTimeline->Stop();
+			GetCharacterMovement()->MaxWalkSpeed = runSpeed;
+		}
 		// add movement in that direction
 		AddMovementInput(RightVector, value);
+		//leftOrRightPlayer = value;
 		AddControllerYawInput(value*turnRate*deltaTime);
+		//leftOrRightCamera = value*turnRate*deltaTime;
 
+		if (value > 0.0)
+		{
+			lastEntry = enumDirectionCheck::right;
+			lastEntryLR = enumDirectionCheck::right;
+			//Moving right
+			bIsPlayerGoingRight = true;
+			bIsPlayerGoingLeft = false;
+		}
+		if (value < 0.0)
+		{
+			lastEntry = enumDirectionCheck::left;
+			lastEntryLR = enumDirectionCheck::left;
+			//Moving left
+			bIsPlayerGoingRight = false;
+			bIsPlayerGoingLeft = true;
+		}
+	}
+	else
+	{
+		//leftOrRightCamera = 0.f;
+		//leftOrRightPlayer = 0.f;
+	}
+	if (value == 0.0f)
+	{
+		bIsPlayerGoingRight = false;
+		bIsPlayerGoingLeft = false;
 
 	}
+	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("camera: %f"), leftOrRightCamera));
 }
 
 void AMainCharacter::Walk()
 {
 	bIsWalking = true;
+	SprintToIdleTimeline->Stop();
+	RunToIdleTimeline->Stop();
 	GetCharacterMovement()->MaxWalkSpeed = walkSpeed;
 }
 
@@ -277,13 +480,23 @@ void AMainCharacter::StopWalking()
 void AMainCharacter::Sprint()
 {
 	bIsSprinting = true;
+	SprintToIdleTimeline->Stop();
+	RunToIdleTimeline->Stop();
 	GetCharacterMovement()->MaxWalkSpeed = sprintSpeed;
 }
 
 void AMainCharacter::StopSprinting()
 {
 	bIsSprinting = false;
-	GetCharacterMovement()->MaxWalkSpeed = runSpeed;
+	if (!bIsNoLocomotionInput)
+	{
+		GetCharacterMovement()->MaxWalkSpeed = runSpeed;
+	}
+	//GetCharacterMovement()->MaxWalkSpeed = runSpeed;
+	//if (bIsNoLocomotionInput)
+	//{
+	//	SprintToIdleTimeline->PlayFromStart();
+	//}
 }
 
 void AMainCharacter::TurnAround()
@@ -306,7 +519,7 @@ void AMainCharacter::LookUp(float value)
 	if (GetController())
 	{
 		AddControllerPitchInput(value*lookRate*deltaTime);
-		FRotator clampedController = FRotator(FMath::ClampAngle(GetControlRotation().Pitch, -15.f, 15.f), GetControlRotation().Yaw, GetControlRotation().Roll);
+		FRotator clampedController = FRotator(FMath::ClampAngle(GetControlRotation().Pitch, -cameraDegreeCap, cameraDegreeCap), GetControlRotation().Yaw, GetControlRotation().Roll);
 		GetController()->SetControlRotation(clampedController);
 		//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("pitch: %f"), GetControlRotation().Pitch));
 	}	
@@ -343,10 +556,10 @@ void AMainCharacter::Interact()
 		APickUpItem* const overlappingTestPUI = Cast<APickUpItem>(overlappingActors[overlappingActorIndex]);
 		if (overlappingTestPUI && !overlappingTestPUI->IsPendingKill())
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("Inventory Size: %i"), Inventory.Num()));
+			bIsPickingUp = true;
 			Inventory.Add(overlappingTestPUI->itemType);
 			overlappingTestPUI->Destroy();
-			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("Inventory Size: %i"), Inventory.Num()));
+			bIsPickingUp = false;
 		}
 		//-------------------------------------------
 		//!PRAYING INTERACTION
@@ -369,39 +582,54 @@ void AMainCharacter::OpenInventory()
 
 void AMainCharacter::PushPull()
 {
-
 	
-	//in a non-Static class
-	//Draw the Line!
-	FRotator tempRot = GetActorRotation();
-	FRotator tempYaw = FRotator(0, tempRot.Yaw, 0);
-	FVector tempFV = FRotationMatrix(tempYaw).GetUnitAxis(EAxis::X);
-	FVector tempActorLocation = FVector(GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z + characterArmHeight);
-	FVector end = (tempActorLocation + (tempFV * pushPullTraceCheckDistance));
-	FHitResult results;
-	FCollisionQueryParams query = FCollisionQueryParams(FName(TEXT("trace")), false, this);
-	bool hit = GetWorld()->LineTraceSingleByChannel(results, tempActorLocation,end, ECC_Visibility, query);
-	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("BlockingHit: %i"), hit));
-	attachedPushPullItem = Cast<APushPullItem>(results.GetActor());
-	if (attachedPushPullItem)
-	{
-		GetCharacterMovement()->MaxWalkSpeed = pushPullSpeed;
-		storedLookRate = lookRate;
-		storedturnRate = turnRate;
-		lookRate = 0;
-		turnRate = 0;
-		float distance = (GetActorLocation() - attachedPushPullItem->GetActorLocation()).Size();
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("ITS A PUSHPULL OBJECT")));
+	
+		//in a non-Static class
+		//Draw the Line!
+		FRotator tempRot = GetActorRotation();
+		FRotator tempYaw = FRotator(0, tempRot.Yaw, 0);
+		FVector tempFV = FRotationMatrix(tempYaw).GetUnitAxis(EAxis::X);
+		FVector tempActorLocation = FVector(GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z + characterArmHeight);
+		FVector end = (tempActorLocation + (tempFV * pushPullTraceCheckDistance));
+		FHitResult results;
+		FCollisionQueryParams query = FCollisionQueryParams(FName(TEXT("trace")), false, this);
+		bool hit = GetWorld()->LineTraceSingleByChannel(results, tempActorLocation, end, ECC_Visibility, query);
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("BlockingHit: %i"), hit));
+		attachedPushPullItem = Cast<APushPullItem>(results.GetActor());
+		if (attachedPushPullItem)
+		{
+			GetCharacterMovement()->MaxWalkSpeed = pushPullSpeed;
+		
+			float distance = (GetActorLocation() - attachedPushPullItem->GetActorLocation()).Size();
+			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("ITS A PUSHPULL OBJECT")));
 
-		FAttachmentTransformRules attachRules = FAttachmentTransformRules(EAttachmentRule::KeepWorld,false);
-		attachedPushPullItem->AttachToActor(this, attachRules);
-		MoveIgnoreActorAdd(attachedPushPullItem);
-		GetCharacterMovement()->bOrientRotationToMovement = false;
-		bIsPushPulling = true;
-	}
+			FAttachmentTransformRules attachRules = FAttachmentTransformRules(EAttachmentRule::KeepWorld, false);
+			attachedPushPullItem->AttachToActor(this, attachRules);
+			MoveIgnoreActorAdd(attachedPushPullItem);
+			GetCharacterMovement()->bOrientRotationToMovement = false;
+			bIsPushPulling = !bIsPushPulling;
+			//if (bIsPushPulling)
+			//{
+			//	storedLookRate = lookRate;
+			//	storedturnRate = turnRate;
+			//	lookRate = 0;
+			//	turnRate = 0;
+			//}
+			//else
+			//{
+			//	lookRate = storedLookRate;
+			//	turnRate = storedturnRate;
+			//}
+		}
+	
 	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Cyan, "I'M PUSHING/PULLING");
 	//FVector temp = GetActorLocation() + GetActorForwardVector();
 	//FVector end = FVector(GetActorForwardVector().X, GetActorForwardVector().Y + pushPullTraceCheckDistance, GetActorForwardVector().Z);
+
+	if (!bIsPushPulling)
+	{
+		StopPushPull();
+	}
 
 }
 
@@ -414,8 +642,7 @@ void AMainCharacter::StopPushPull()
 		FDetachmentTransformRules detachRules = FDetachmentTransformRules(EDetachmentRule::KeepWorld, false);
 		attachedPushPullItem->DetachFromActor(detachRules);
 		MoveIgnoreActorRemove(attachedPushPullItem);
-		lookRate= storedLookRate  ;
-		turnRate = storedturnRate ;
+	
 		GetCharacterMovement()->MaxWalkSpeed = runSpeed;
 		GetCharacterMovement()->bOrientRotationToMovement = true;
 		bIsPushPulling = false;
@@ -423,4 +650,77 @@ void AMainCharacter::StopPushPull()
 
 	}
 	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Silver, "I'M NOT PUSHING/PULLING");
+}
+
+void AMainCharacter::TimelineFloatReturn(float val)
+{
+	FRotator tempRot = GetActorRotation();
+	FRotator tempYaw = FRotator(0, tempRot.Yaw, 0);
+	FVector tempFV = FRotationMatrix(tempYaw).GetUnitAxis(EAxis::X);
+	AddMovementInput(tempFV, val);
+	//RunToIdleTimeline->Play(); // need to play somewhere to apply the reduction.
+	//if (lastEntry == enumDirectionCheck::back)
+	//{
+	//	//GetCharacterMovement()->MaxWalkSpeed = val;
+	//	
+	//}
+	//if (lastEntry == enumDirectionCheck::forward)
+	//{
+	//	//GetCharacterMovement()->MaxWalkSpeed = val;
+	//	AddMovementInput(tempFV, val);
+	//}
+	//if (lastEntry == enumDirectionCheck::left)
+	//{
+	//	//GetCharacterMovement()->MaxWalkSpeed = val;
+	//	AddMovementInput(RightVector, -val);
+	//}
+	//if (lastEntry == enumDirectionCheck::right)
+	//{
+	//	//GetCharacterMovement()->MaxWalkSpeed = val;
+	//	AddMovementInput(RightVector, val);
+	//}
+
+	//if (lastEntryFB == enumDirectionCheck::back)
+	//{
+	//	//GetCharacterMovement()->MaxWalkSpeed = val;
+	//	AddMovementInput(ForwardVector,-val);
+	//}
+	//if (lastEntryFB == enumDirectionCheck::forward)
+	//{
+	//	//GetCharacterMovement()->MaxWalkSpeed = val;
+	//	AddMovementInput(ForwardVector, val);
+	//}
+	//if (lastEntryLR == enumDirectionCheck::left)
+	//{
+	//	//GetCharacterMovement()->MaxWalkSpeed = val;
+	//	AddMovementInput(RightVector, -val);
+	//}
+	//if (lastEntryLR == enumDirectionCheck::right)
+	//{
+	//	//GetCharacterMovement()->MaxWalkSpeed = val;
+	//	AddMovementInput(RightVector, val);
+	//}
+
+
+	//if (bIsPlayerGoingBack)
+	//{
+	//	//GetCharacterMovement()->MaxWalkSpeed = val;
+	//	AddMovementInput(ForwardVector,-val);
+	//}
+	//if (bIsPlayerGoingForward)
+	//{
+	//	//GetCharacterMovement()->MaxWalkSpeed = val;
+	//	AddMovementInput(ForwardVector, val);
+	//}
+	//if (bIsPlayerGoingLeft)
+	//{
+	//	//GetCharacterMovement()->MaxWalkSpeed = val;
+	//	AddMovementInput(RightVector, -val);
+	//}
+	//if (bIsPlayerGoingRight)
+	//{
+	//	//GetCharacterMovement()->MaxWalkSpeed = val;
+	//	AddMovementInput(RightVector, val);
+	//}
+	
 }

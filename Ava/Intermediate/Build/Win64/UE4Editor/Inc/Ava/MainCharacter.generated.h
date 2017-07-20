@@ -16,6 +16,15 @@ class AActor;
 
 #define Ava_Source_Ava_MainCharacter_h_22_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execTimelineFloatReturn) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_val); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->TimelineFloatReturn(Z_Param_val); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execExitOverLap) \
 	{ \
 		P_GET_OBJECT(AActor,Z_Param_MyOverlappedActor); \
@@ -38,6 +47,15 @@ class AActor;
 
 
 #define Ava_Source_Ava_MainCharacter_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execTimelineFloatReturn) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_val); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->TimelineFloatReturn(Z_Param_val); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execExitOverLap) \
 	{ \

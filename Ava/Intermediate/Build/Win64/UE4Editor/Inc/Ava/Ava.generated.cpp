@@ -94,8 +94,9 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	{
 		FNativeFunctionRegistrar::RegisterFunction(AMainCharacter::StaticClass(), "BeginOverLap",(Native)&AMainCharacter::execBeginOverLap);
 		FNativeFunctionRegistrar::RegisterFunction(AMainCharacter::StaticClass(), "ExitOverLap",(Native)&AMainCharacter::execExitOverLap);
+		FNativeFunctionRegistrar::RegisterFunction(AMainCharacter::StaticClass(), "TimelineFloatReturn",(Native)&AMainCharacter::execTimelineFloatReturn);
 	}
-	IMPLEMENT_CLASS(AMainCharacter, 3460924843);
+	IMPLEMENT_CLASS(AMainCharacter, 2900174475);
 	void UMainGameUI::StaticRegisterNativesUMainGameUI()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(UMainGameUI::StaticClass(), "Play",(Native)&UMainGameUI::execPlay);
@@ -192,6 +193,7 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	AVA_API class UClass* Z_Construct_UClass_APickUpItem();
 	AVA_API class UFunction* Z_Construct_UFunction_AMainCharacter_BeginOverLap();
 	AVA_API class UFunction* Z_Construct_UFunction_AMainCharacter_ExitOverLap();
+	AVA_API class UFunction* Z_Construct_UFunction_AMainCharacter_TimelineFloatReturn();
 	AVA_API class UClass* Z_Construct_UClass_AMainCharacter_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_AMainCharacter();
 	AVA_API class UFunction* Z_Construct_UFunction_UMainGameUI_Play();
@@ -1063,6 +1065,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Behaviour"));
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("@brief BeginOverlap - Tells us when this actor overlaps with another.\n@param MyOverlappedActor - The actor you want to check who it overlaps with.\n@param OtherActor - the actor it overlaps with."));
 #endif
 		}
 		return ReturnFunction;
@@ -1087,6 +1090,28 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Behaviour"));
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("@brief ExitOverLap - Tells us when this actor exits an overlap with another.\n@param MyOverlappedActor - The actor you want to check who it overlaps with.\n@param OtherActor - the actor it overlaps with."));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AMainCharacter_TimelineFloatReturn()
+	{
+		struct MainCharacter_eventTimelineFloatReturn_Parms
+		{
+			float val;
+		};
+		UObject* Outer=Z_Construct_UClass_AMainCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("TimelineFloatReturn"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535, sizeof(MainCharacter_eventTimelineFloatReturn_Parms));
+			UProperty* NewProp_val = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("val"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(val, MainCharacter_eventTimelineFloatReturn_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 #endif
 		}
 		return ReturnFunction;
@@ -1110,19 +1135,44 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 				OuterClass->LinkChild(Z_Construct_UFunction_AMainCharacter_BeginOverLap());
 				OuterClass->LinkChild(Z_Construct_UFunction_AMainCharacter_ExitOverLap());
+				OuterClass->LinkChild(Z_Construct_UFunction_AMainCharacter_TimelineFloatReturn());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_SprintToIdleCurve = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SprintToIdleCurve"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(SprintToIdleCurve, AMainCharacter), 0x0010000000000000, Z_Construct_UClass_UCurveFloat_NoRegister());
+				UProperty* NewProp_RunToIdleCurve = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("RunToIdleCurve"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(RunToIdleCurve, AMainCharacter), 0x0010000000000000, Z_Construct_UClass_UCurveFloat_NoRegister());
+				UProperty* NewProp_SprintToIdleTimeline = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SprintToIdleTimeline"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(SprintToIdleTimeline, AMainCharacter), 0x001000000008001d, Z_Construct_UClass_UTimelineComponent_NoRegister());
+				UProperty* NewProp_RunToIdleTimeline = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("RunToIdleTimeline"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(RunToIdleTimeline, AMainCharacter), 0x001000000008001d, Z_Construct_UClass_UTimelineComponent_NoRegister());
+				UProperty* NewProp_jumpDelay = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("jumpDelay"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(jumpDelay, AMainCharacter), 0x0010000000000005);
 				UProperty* NewProp_Inventory = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Inventory"), RF_Public|RF_Transient|RF_MarkAsNative) UArrayProperty(CPP_PROPERTY_BASE(Inventory, AMainCharacter), 0x0010000000000005);
 				UProperty* NewProp_Inventory_Inner = new(EC_InternalUseOnlyConstructor, NewProp_Inventory, TEXT("Inventory"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000, Z_Construct_UEnum_Ava_Item());
 				UProperty* NewProp_characterArmHeight = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("characterArmHeight"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(characterArmHeight, AMainCharacter), 0x0010000000000005);
 				UProperty* NewProp_pushPullTraceCheckDistance = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("pushPullTraceCheckDistance"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(pushPullTraceCheckDistance, AMainCharacter), 0x0010000000000005);
 				UProperty* NewProp_overlappingSphere = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("overlappingSphere"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(overlappingSphere, AMainCharacter), 0x00100000000a001d, Z_Construct_UClass_USphereComponent_NoRegister());
-				UProperty* NewProp_pushPullSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("pushPullSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(pushPullSpeed, AMainCharacter), 0x0010000000000005);
+				UProperty* NewProp_cameraDegreeCap = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("cameraDegreeCap"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(cameraDegreeCap, AMainCharacter), 0x0010000000000005);
 				UProperty* NewProp_lookRate = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("lookRate"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(lookRate, AMainCharacter), 0x0010000000000005);
 				UProperty* NewProp_turnRate = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("turnRate"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(turnRate, AMainCharacter), 0x0010000000000005);
+				UProperty* NewProp_FollowCamera = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("FollowCamera"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(FollowCamera, AMainCharacter), 0x00100000000a001d, Z_Construct_UClass_UCameraComponent_NoRegister());
+				UProperty* NewProp_CameraBoom = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraBoom"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(CameraBoom, AMainCharacter), 0x00100000000a001d, Z_Construct_UClass_USpringArmComponent_NoRegister());
+				UProperty* NewProp_pushPullSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("pushPullSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(pushPullSpeed, AMainCharacter), 0x0010000000000005);
 				UProperty* NewProp_sprintSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("sprintSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(sprintSpeed, AMainCharacter), 0x0010000000000005);
 				UProperty* NewProp_runSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("runSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(runSpeed, AMainCharacter), 0x0010000000000005);
 				UProperty* NewProp_walkSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("walkSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(walkSpeed, AMainCharacter), 0x0010000000000005);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bStopJumping, AMainCharacter, bool);
+				UProperty* NewProp_bStopJumping = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bStopJumping"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bStopJumping, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bStopJumping, AMainCharacter), sizeof(bool), true);
+				UProperty* NewProp_leftOrRightPlayer = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("leftOrRightPlayer"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(leftOrRightPlayer, AMainCharacter), 0x0010000000020005);
+				UProperty* NewProp_leftOrRightCamera = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("leftOrRightCamera"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(leftOrRightCamera, AMainCharacter), 0x0010000000020005);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsNoLocomotionInput, AMainCharacter, bool);
+				UProperty* NewProp_bIsNoLocomotionInput = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsNoLocomotionInput"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsNoLocomotionInput, AMainCharacter), 0x0010000000000015, CPP_BOOL_PROPERTY_BITMASK(bIsNoLocomotionInput, AMainCharacter), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsPlayerGoingBack, AMainCharacter, bool);
+				UProperty* NewProp_bIsPlayerGoingBack = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsPlayerGoingBack"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsPlayerGoingBack, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsPlayerGoingBack, AMainCharacter), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsPlayerGoingForward, AMainCharacter, bool);
+				UProperty* NewProp_bIsPlayerGoingForward = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsPlayerGoingForward"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsPlayerGoingForward, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsPlayerGoingForward, AMainCharacter), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsPlayerGoingRight, AMainCharacter, bool);
+				UProperty* NewProp_bIsPlayerGoingRight = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsPlayerGoingRight"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsPlayerGoingRight, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsPlayerGoingRight, AMainCharacter), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsPlayerGoingLeft, AMainCharacter, bool);
+				UProperty* NewProp_bIsPlayerGoingLeft = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsPlayerGoingLeft"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsPlayerGoingLeft, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsPlayerGoingLeft, AMainCharacter), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsPickingUp, AMainCharacter, bool);
+				UProperty* NewProp_bIsPickingUp = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsPickingUp"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsPickingUp, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsPickingUp, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsInteracting, AMainCharacter, bool);
 				UProperty* NewProp_bIsInteracting = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsInteracting"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsInteracting, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsInteracting, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsPushPulling, AMainCharacter, bool);
@@ -1135,8 +1185,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_bIsIdle = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsIdle"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsIdle, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsIdle, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsTurning, AMainCharacter, bool);
 				UProperty* NewProp_bIsTurning = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsTurning"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsTurning, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsTurning, AMainCharacter), sizeof(bool), true);
-				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsAlert, AMainCharacter, bool);
-				UProperty* NewProp_bIsAlert = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsAlert"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsAlert, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsAlert, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsJumping, AMainCharacter, bool);
 				UProperty* NewProp_bIsJumping = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsJumping"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsJumping, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsJumping, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsWalking, AMainCharacter, bool);
@@ -1145,11 +1193,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_bIsRunning = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsRunning"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsRunning, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsRunning, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsSprinting, AMainCharacter, bool);
 				UProperty* NewProp_bIsSprinting = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsSprinting"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsSprinting, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsSprinting, AMainCharacter), sizeof(bool), true);
-				UProperty* NewProp_FollowCamera = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("FollowCamera"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(FollowCamera, AMainCharacter), 0x00100000000a001d, Z_Construct_UClass_UCameraComponent_NoRegister());
-				UProperty* NewProp_CameraBoom = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraBoom"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(CameraBoom, AMainCharacter), 0x00100000000a001d, Z_Construct_UClass_USpringArmComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AMainCharacter_BeginOverLap(), "BeginOverLap"); // 1935713919
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AMainCharacter_ExitOverLap(), "ExitOverLap"); // 1989922888
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AMainCharacter_BeginOverLap(), "BeginOverLap"); // 3823987685
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AMainCharacter_ExitOverLap(), "ExitOverLap"); // 1569009058
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AMainCharacter_TimelineFloatReturn(), "TimelineFloatReturn"); // 4066274967
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -1157,77 +1204,121 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
-				MetaData->SetValue(NewProp_Inventory, TEXT("Category"), TEXT("InventoryAttributes"));
+				MetaData->SetValue(NewProp_SprintToIdleCurve, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_RunToIdleCurve, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_SprintToIdleTimeline, TEXT("Category"), TEXT("Components"));
+				MetaData->SetValue(NewProp_SprintToIdleTimeline, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_SprintToIdleTimeline, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_RunToIdleTimeline, TEXT("Category"), TEXT("Components"));
+				MetaData->SetValue(NewProp_RunToIdleTimeline, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_RunToIdleTimeline, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_jumpDelay, TEXT("Category"), TEXT("CharacterComponents"));
+				MetaData->SetValue(NewProp_jumpDelay, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_jumpDelay, TEXT("ToolTip"), TEXT("@brief CharacterComponents - jump delay before jump is played.\n@param jumpDelay - this will delay the jump"));
+				MetaData->SetValue(NewProp_Inventory, TEXT("Category"), TEXT("CharacterComponents"));
 				MetaData->SetValue(NewProp_Inventory, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_characterArmHeight, TEXT("Category"), TEXT("pushPullAttributes"));
+				MetaData->SetValue(NewProp_Inventory, TEXT("ToolTip"), TEXT("@brief CharacterComponents - an array that stores all the inventory objects.\n@param Inventory - this array stores all the inventory objects for the player."));
+				MetaData->SetValue(NewProp_characterArmHeight, TEXT("Category"), TEXT("CharacterComponents"));
 				MetaData->SetValue(NewProp_characterArmHeight, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_pushPullTraceCheckDistance, TEXT("Category"), TEXT("pushPullAttributes"));
+				MetaData->SetValue(NewProp_characterArmHeight, TEXT("ToolTip"), TEXT("@brief CharacterComponents - characters arm height.\n@param characterArmHeight - this will increase the height that allows for the push and pull to be enabled."));
+				MetaData->SetValue(NewProp_pushPullTraceCheckDistance, TEXT("Category"), TEXT("CharacterComponents"));
 				MetaData->SetValue(NewProp_pushPullTraceCheckDistance, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_pushPullTraceCheckDistance, TEXT("ToolTip"), TEXT("@brief CharacterComponents - Characters push and pull trace distance\n@param pushPullTraceCheckDistance - the distance from the center of the actors mesh forward that the artists wish to\nfor push and pull"));
 				MetaData->SetValue(NewProp_overlappingSphere, TEXT("AllowPrivateAccess"), TEXT("true"));
-				MetaData->SetValue(NewProp_overlappingSphere, TEXT("Category"), TEXT("prayingComponents"));
+				MetaData->SetValue(NewProp_overlappingSphere, TEXT("Category"), TEXT("CharacterComponents"));
 				MetaData->SetValue(NewProp_overlappingSphere, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_overlappingSphere, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_pushPullSpeed, TEXT("Category"), TEXT("CharacterSpeeds"));
-				MetaData->SetValue(NewProp_pushPullSpeed, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_pushPullSpeed, TEXT("ToolTip"), TEXT("@brief CharacterState - characters push and pull speed"));
-				MetaData->SetValue(NewProp_lookRate, TEXT("Category"), TEXT("CharacterSpeeds"));
+				MetaData->SetValue(NewProp_overlappingSphere, TEXT("ToolTip"), TEXT("@brief CharacterComponents - characters push and pull speed"));
+				MetaData->SetValue(NewProp_cameraDegreeCap, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_cameraDegreeCap, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_cameraDegreeCap, TEXT("ToolTip"), TEXT("@brief Camera - camera cap for lookRate in degrees, which would stop the camera from going too far down or up."));
+				MetaData->SetValue(NewProp_lookRate, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_lookRate, TEXT("Category"), TEXT("Camera"));
 				MetaData->SetValue(NewProp_lookRate, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_lookRate, TEXT("ToolTip"), TEXT("@brief CharacterState - characters camera look speed"));
-				MetaData->SetValue(NewProp_turnRate, TEXT("Category"), TEXT("CharacterSpeeds"));
+				MetaData->SetValue(NewProp_lookRate, TEXT("ToolTip"), TEXT("@brief Camera - characters camera look speed\n@param lookRate - the speed the camera looks up and down with."));
+				MetaData->SetValue(NewProp_turnRate, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_turnRate, TEXT("Category"), TEXT("Camera"));
 				MetaData->SetValue(NewProp_turnRate, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_turnRate, TEXT("ToolTip"), TEXT("@brief CharacterState - characters camera turn speed"));
-				MetaData->SetValue(NewProp_sprintSpeed, TEXT("Category"), TEXT("CharacterSpeeds"));
-				MetaData->SetValue(NewProp_sprintSpeed, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_sprintSpeed, TEXT("ToolTip"), TEXT("@brief CharacterState - Characters sprint speed."));
-				MetaData->SetValue(NewProp_runSpeed, TEXT("Category"), TEXT("CharacterSpeeds"));
-				MetaData->SetValue(NewProp_runSpeed, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_runSpeed, TEXT("ToolTip"), TEXT("@brief CharacterSppeds - Characters run speed."));
-				MetaData->SetValue(NewProp_walkSpeed, TEXT("Category"), TEXT("CharacterSpeeds"));
-				MetaData->SetValue(NewProp_walkSpeed, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_walkSpeed, TEXT("ToolTip"), TEXT("CHARACTER SPEEDS\n--------------------------------------------------------------------------------------------------------------------------\n----------------------------------------------------------------------------------------------------------------------\n@brief CharacterSppeds - Characters walk speed."));
-				MetaData->SetValue(NewProp_bIsInteracting, TEXT("Category"), TEXT("CharacterStates"));
-				MetaData->SetValue(NewProp_bIsInteracting, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_bIsInteracting, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is pushing/pulling"));
-				MetaData->SetValue(NewProp_bIsPushPulling, TEXT("Category"), TEXT("CharacterStates"));
-				MetaData->SetValue(NewProp_bIsPushPulling, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_bIsPushPulling, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is pushing/pulling"));
-				MetaData->SetValue(NewProp_bIsPraying, TEXT("Category"), TEXT("CharacterStates"));
-				MetaData->SetValue(NewProp_bIsPraying, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_bIsPraying, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is praying"));
-				MetaData->SetValue(NewProp_bIsInInventory, TEXT("Category"), TEXT("CharacterStates"));
-				MetaData->SetValue(NewProp_bIsInInventory, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_bIsInInventory, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is In Invetory."));
-				MetaData->SetValue(NewProp_bIsIdle, TEXT("Category"), TEXT("CharacterStates"));
-				MetaData->SetValue(NewProp_bIsIdle, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_bIsIdle, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is Idle"));
-				MetaData->SetValue(NewProp_bIsTurning, TEXT("Category"), TEXT("CharacterStates"));
-				MetaData->SetValue(NewProp_bIsTurning, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_bIsTurning, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is Turning"));
-				MetaData->SetValue(NewProp_bIsAlert, TEXT("Category"), TEXT("CharacterStates"));
-				MetaData->SetValue(NewProp_bIsAlert, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_bIsAlert, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is Alert"));
-				MetaData->SetValue(NewProp_bIsJumping, TEXT("Category"), TEXT("CharacterStates"));
-				MetaData->SetValue(NewProp_bIsJumping, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_bIsJumping, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is Jumping"));
-				MetaData->SetValue(NewProp_bIsWalking, TEXT("Category"), TEXT("CharacterStates"));
-				MetaData->SetValue(NewProp_bIsWalking, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_bIsWalking, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is Walking"));
-				MetaData->SetValue(NewProp_bIsRunning, TEXT("Category"), TEXT("CharacterStates"));
-				MetaData->SetValue(NewProp_bIsRunning, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_bIsRunning, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is Running"));
-				MetaData->SetValue(NewProp_bIsSprinting, TEXT("Category"), TEXT("CharacterStates"));
-				MetaData->SetValue(NewProp_bIsSprinting, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_bIsSprinting, TEXT("ToolTip"), TEXT("CHARACTER STATES\n--------------------------------------------------------------------------------------------------------------------------\n----------------------------------------------------------------------------------------------------------------------\n@brief CharacterState - Character is Sprinting"));
+				MetaData->SetValue(NewProp_turnRate, TEXT("ToolTip"), TEXT("@brief Camera - characters camera turn speed\n@param turnRate - the speed the camera turns left and right with."));
 				MetaData->SetValue(NewProp_FollowCamera, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_FollowCamera, TEXT("Category"), TEXT("Camera"));
 				MetaData->SetValue(NewProp_FollowCamera, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_FollowCamera, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_FollowCamera, TEXT("ToolTip"), TEXT("@brief The camera that we'll be using to view our scene from."));
+				MetaData->SetValue(NewProp_FollowCamera, TEXT("ToolTip"), TEXT("@brief Camera -  The camera that we'll be using to view our scene from."));
 				MetaData->SetValue(NewProp_CameraBoom, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_CameraBoom, TEXT("Category"), TEXT("Camera"));
 				MetaData->SetValue(NewProp_CameraBoom, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_CameraBoom, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_CameraBoom, TEXT("ToolTip"), TEXT("@brief The camaera boom which will stick our camera at a length from our character while also being diverse to\nspring back and forth depending on collision."));
+				MetaData->SetValue(NewProp_CameraBoom, TEXT("ToolTip"), TEXT("@brief Camera -  The camaera boom which will stick our camera at a length from our character while also being diverse to\nspring back and forth depending on collision."));
+				MetaData->SetValue(NewProp_pushPullSpeed, TEXT("Category"), TEXT("CharacterSpeeds"));
+				MetaData->SetValue(NewProp_pushPullSpeed, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_pushPullSpeed, TEXT("ToolTip"), TEXT("@brief CharacterState - characters push and pull speed\n@param pushPullSpeed - the speed that is applied when the character enters the bIsPushPulling state"));
+				MetaData->SetValue(NewProp_sprintSpeed, TEXT("Category"), TEXT("CharacterSpeeds"));
+				MetaData->SetValue(NewProp_sprintSpeed, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_sprintSpeed, TEXT("ToolTip"), TEXT("@brief CharacterState - Characters sprint speed.\n@param sprintSpeed - the speed that is applied when the character enters the bIsSprinting state"));
+				MetaData->SetValue(NewProp_runSpeed, TEXT("Category"), TEXT("CharacterSpeeds"));
+				MetaData->SetValue(NewProp_runSpeed, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_runSpeed, TEXT("ToolTip"), TEXT("@brief CharacterSpeeds - Characters run speed\n@param runSpeed - the speed that is applied when the character enters the bIsRunning state"));
+				MetaData->SetValue(NewProp_walkSpeed, TEXT("Category"), TEXT("CharacterSpeeds"));
+				MetaData->SetValue(NewProp_walkSpeed, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_walkSpeed, TEXT("ToolTip"), TEXT("CHARACTER SPEEDS\n--------------------------------------------------------------------------------------------------------------------------\n----------------------------------------------------------------------------------------------------------------------\n@brief CharacterSpeeds - Characters walk speed.\n@param walkSpeed - the speed that is applied when the character enters the bIsWalking state"));
+				MetaData->SetValue(NewProp_bStopJumping, TEXT("Category"), TEXT("PlayerInput"));
+				MetaData->SetValue(NewProp_bStopJumping, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bStopJumping, TEXT("ToolTip"), TEXT("@brief PlayerInput - Player has entered a go backward command\n@param bIsPlayerGoingBack - is the player giving a command that would move the player backward."));
+				MetaData->SetValue(NewProp_leftOrRightPlayer, TEXT("Category"), TEXT("PlayerInput"));
+				MetaData->SetValue(NewProp_leftOrRightPlayer, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_leftOrRightPlayer, TEXT("ToolTip"), TEXT("@brief PlayerInput - a value between -1 and 1 that shows the player going left/right."));
+				MetaData->SetValue(NewProp_leftOrRightCamera, TEXT("Category"), TEXT("PlayerInput"));
+				MetaData->SetValue(NewProp_leftOrRightCamera, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_leftOrRightCamera, TEXT("ToolTip"), TEXT("@brief PlayerInput - a value between -0.38 and 0.38 that shows the camera going left/right."));
+				MetaData->SetValue(NewProp_bIsNoLocomotionInput, TEXT("Category"), TEXT("PlayerInput"));
+				MetaData->SetValue(NewProp_bIsNoLocomotionInput, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsNoLocomotionInput, TEXT("ToolTip"), TEXT("@brief PlayerInput - Player has not entered any locomotion commands.\n@param bIsNoLocomotionInput - are NO commands for locomotion being applied."));
+				MetaData->SetValue(NewProp_bIsPlayerGoingBack, TEXT("Category"), TEXT("PlayerInput"));
+				MetaData->SetValue(NewProp_bIsPlayerGoingBack, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsPlayerGoingBack, TEXT("ToolTip"), TEXT("@brief PlayerInput - Player has entered a go backward command\n@param bIsPlayerGoingBack - is the player giving a command that would move the player backward."));
+				MetaData->SetValue(NewProp_bIsPlayerGoingForward, TEXT("Category"), TEXT("PlayerInput"));
+				MetaData->SetValue(NewProp_bIsPlayerGoingForward, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsPlayerGoingForward, TEXT("ToolTip"), TEXT("@brief PlayerInput - Player has entered a go forward command\n@param bIsPlayerGoingForward - is the player giving a command that would move the player forward."));
+				MetaData->SetValue(NewProp_bIsPlayerGoingRight, TEXT("Category"), TEXT("PlayerInput"));
+				MetaData->SetValue(NewProp_bIsPlayerGoingRight, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsPlayerGoingRight, TEXT("ToolTip"), TEXT("@brief PlayerInput - Player has entered a turn right command\n@param bIsPlayerGoingRight - is the player giving a command that would turn the player right."));
+				MetaData->SetValue(NewProp_bIsPlayerGoingLeft, TEXT("Category"), TEXT("PlayerInput"));
+				MetaData->SetValue(NewProp_bIsPlayerGoingLeft, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsPlayerGoingLeft, TEXT("ToolTip"), TEXT("@brief PlayerInput - Player has entered a turn left command\n@param bIsPlayerGoingLeft - is the player giving a command that would turn the player left."));
+				MetaData->SetValue(NewProp_bIsPickingUp, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_bIsPickingUp, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsPickingUp, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is picking up an item\n@param bIsPickingUp - has player pciked up an item"));
+				MetaData->SetValue(NewProp_bIsInteracting, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_bIsInteracting, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsInteracting, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is intereacting\n@param bIsInteracting - has player pressed the interaction trigger. This will return to false when player releases trigger"));
+				MetaData->SetValue(NewProp_bIsPushPulling, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_bIsPushPulling, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsPushPulling, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is pushing/pulling\n@param bIsPushPulling - has player pressed the push/pull trigger. This will return to false when player releases trigger\nor when other conditions are met."));
+				MetaData->SetValue(NewProp_bIsPraying, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_bIsPraying, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsPraying, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is praying\n@param bIsPraying - has player pressed the praying trigger. Needs to be set back to false in the animation event\n                      via a notifier at the end of the animation."));
+				MetaData->SetValue(NewProp_bIsInInventory, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_bIsInInventory, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsInInventory, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is In Invetory.\n@param bIsInInventory - has player pressed the inventory trigger, if so flip/flop between true and false."));
+				MetaData->SetValue(NewProp_bIsIdle, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_bIsIdle, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsIdle, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is Idle\n@param bIsIdle - is the player not moving, this is set based on speed."));
+				MetaData->SetValue(NewProp_bIsTurning, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_bIsTurning, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsTurning, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is Turning\n@param bIsTurning - currently does nothing, but will be needed for the 180 turn around."));
+				MetaData->SetValue(NewProp_bIsJumping, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_bIsJumping, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsJumping, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is Jumping\n@param bIsJumping - is the player pressing the jump triggering button. This will return to false when player releases trigger"));
+				MetaData->SetValue(NewProp_bIsWalking, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_bIsWalking, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsWalking, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is Walking\n@param bIsWalking - is the player running, this is set based on speed && when trigger is pressed (Trigger for keyboard)"));
+				MetaData->SetValue(NewProp_bIsRunning, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_bIsRunning, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsRunning, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is Running\n@param bIsRunning - is the player running, this is set based on speed."));
+				MetaData->SetValue(NewProp_bIsSprinting, TEXT("Category"), TEXT("CharacterStates"));
+				MetaData->SetValue(NewProp_bIsSprinting, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bIsSprinting, TEXT("ToolTip"), TEXT("CHARACTER STATES\n--------------------------------------------------------------------------------------------------------------------------\n----------------------------------------------------------------------------------------------------------------------\n@brief CharacterState - Character is Sprinting\n@param bIsSprinting - is the player pressing the sprinting triggering button. This will return to false when player releases trigger"));
 #endif
 			}
 		}
@@ -1633,8 +1724,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Ava")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x0DFEBBE6;
-			Guid.B = 0x2F79F47D;
+			Guid.A = 0xC4CB2FAD;
+			Guid.B = 0x2BFAACB7;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
