@@ -107,6 +107,10 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 		FNativeFunctionRegistrar::RegisterFunction(UMainMenu::StaticClass(), "Play",(Native)&UMainMenu::execPlay);
 	}
 	IMPLEMENT_CLASS(UMainMenu, 3986694537);
+	void AOfferingPit::StaticRegisterNativesAOfferingPit()
+	{
+	}
+	IMPLEMENT_CLASS(AOfferingPit, 2469765767);
 	void AOfferingStatue::StaticRegisterNativesAOfferingStatue()
 	{
 	}
@@ -119,6 +123,10 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	{
 	}
 	IMPLEMENT_CLASS(APuzzle, 189578839);
+	void ABlackPuzzle::StaticRegisterNativesABlackPuzzle()
+	{
+	}
+	IMPLEMENT_CLASS(ABlackPuzzle, 3417399905);
 	void ABluePuzzle::StaticRegisterNativesABluePuzzle()
 	{
 	}
@@ -127,6 +135,10 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	{
 	}
 	IMPLEMENT_CLASS(AGreenPuzzle, 2633354150);
+	void ARedPuzzle::StaticRegisterNativesARedPuzzle()
+	{
+	}
+	IMPLEMENT_CLASS(ARedPuzzle, 1919465192);
 	void AWhitePuzzle::StaticRegisterNativesAWhitePuzzle()
 	{
 	}
@@ -202,16 +214,22 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	AVA_API class UFunction* Z_Construct_UFunction_UMainMenu_Play();
 	AVA_API class UClass* Z_Construct_UClass_UMainMenu_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_UMainMenu();
+	AVA_API class UClass* Z_Construct_UClass_AOfferingPit_NoRegister();
+	AVA_API class UClass* Z_Construct_UClass_AOfferingPit();
 	AVA_API class UClass* Z_Construct_UClass_AOfferingStatue_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_AOfferingStatue();
 	AVA_API class UClass* Z_Construct_UClass_AStatueObject_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_AStatueObject();
 	AVA_API class UClass* Z_Construct_UClass_APuzzle_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_APuzzle();
+	AVA_API class UClass* Z_Construct_UClass_ABlackPuzzle_NoRegister();
+	AVA_API class UClass* Z_Construct_UClass_ABlackPuzzle();
 	AVA_API class UClass* Z_Construct_UClass_ABluePuzzle_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_ABluePuzzle();
 	AVA_API class UClass* Z_Construct_UClass_AGreenPuzzle_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_AGreenPuzzle();
+	AVA_API class UClass* Z_Construct_UClass_ARedPuzzle_NoRegister();
+	AVA_API class UClass* Z_Construct_UClass_ARedPuzzle();
 	AVA_API class UClass* Z_Construct_UClass_AWhitePuzzle_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_AWhitePuzzle();
 	AVA_API class UPackage* Z_Construct_UPackage__Script_Ava();
@@ -1433,6 +1451,59 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UMainMenu(Z_Construct_UClass_UMainMenu, &UMainMenu::StaticClass, TEXT("UMainMenu"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UMainMenu);
+	UClass* Z_Construct_UClass_AOfferingPit_NoRegister()
+	{
+		return AOfferingPit::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AOfferingPit()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_Ava();
+			OuterClass = AOfferingPit::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bItemOffered, AOfferingPit, bool);
+				UProperty* NewProp_bItemOffered = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bItemOffered"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bItemOffered, AOfferingPit), 0x0010000000020015, CPP_BOOL_PROPERTY_BITMASK(bItemOffered, AOfferingPit), sizeof(bool), true);
+				UProperty* NewProp_requiredItem = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("requiredItem"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(requiredItem, AOfferingPit), 0x0010000000000015, Z_Construct_UEnum_Ava_Item());
+				UProperty* NewProp_overlappingSphere = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("overlappingSphere"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(overlappingSphere, AOfferingPit), 0x001000000008001d, Z_Construct_UClass_USphereComponent_NoRegister());
+				UProperty* NewProp_offeringPitMesh = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("offeringPitMesh"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(offeringPitMesh, AOfferingPit), 0x001000000008001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("OfferingPit.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("OfferingPit.h"));
+				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_bItemOffered, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_bItemOffered, TEXT("Category"), TEXT("OfferingPitVariables"));
+				MetaData->SetValue(NewProp_bItemOffered, TEXT("ModuleRelativePath"), TEXT("OfferingPit.h"));
+				MetaData->SetValue(NewProp_requiredItem, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_requiredItem, TEXT("Category"), TEXT("OfferingPitVariables"));
+				MetaData->SetValue(NewProp_requiredItem, TEXT("ModuleRelativePath"), TEXT("OfferingPit.h"));
+				MetaData->SetValue(NewProp_overlappingSphere, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_overlappingSphere, TEXT("Category"), TEXT("OfferingPitVariables"));
+				MetaData->SetValue(NewProp_overlappingSphere, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_overlappingSphere, TEXT("ModuleRelativePath"), TEXT("OfferingPit.h"));
+				MetaData->SetValue(NewProp_offeringPitMesh, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_offeringPitMesh, TEXT("Category"), TEXT("OfferingPitVariables"));
+				MetaData->SetValue(NewProp_offeringPitMesh, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_offeringPitMesh, TEXT("ModuleRelativePath"), TEXT("OfferingPit.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AOfferingPit(Z_Construct_UClass_AOfferingPit, &AOfferingPit::StaticClass, TEXT("AOfferingPit"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AOfferingPit);
 	UClass* Z_Construct_UClass_AOfferingStatue_NoRegister()
 	{
 		return AOfferingStatue::StaticClass();
@@ -1600,6 +1671,38 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_APuzzle(Z_Construct_UClass_APuzzle, &APuzzle::StaticClass, TEXT("APuzzle"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(APuzzle);
+	UClass* Z_Construct_UClass_ABlackPuzzle_NoRegister()
+	{
+		return ABlackPuzzle::StaticClass();
+	}
+	UClass* Z_Construct_UClass_ABlackPuzzle()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_APuzzle();
+			Z_Construct_UPackage__Script_Ava();
+			OuterClass = ABlackPuzzle::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("BlackPuzzle.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("BlackPuzzle.h"));
+				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ABlackPuzzle(Z_Construct_UClass_ABlackPuzzle, &ABlackPuzzle::StaticClass, TEXT("ABlackPuzzle"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(ABlackPuzzle);
 	UClass* Z_Construct_UClass_ABluePuzzle_NoRegister()
 	{
 		return ABluePuzzle::StaticClass();
@@ -1677,6 +1780,44 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AGreenPuzzle(Z_Construct_UClass_AGreenPuzzle, &AGreenPuzzle::StaticClass, TEXT("AGreenPuzzle"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AGreenPuzzle);
+	UClass* Z_Construct_UClass_ARedPuzzle_NoRegister()
+	{
+		return ARedPuzzle::StaticClass();
+	}
+	UClass* Z_Construct_UClass_ARedPuzzle()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_APuzzle();
+			Z_Construct_UPackage__Script_Ava();
+			OuterClass = ARedPuzzle::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_offeringPit = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("offeringPit"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(offeringPit, ARedPuzzle), 0x0040000000000015, Z_Construct_UClass_AOfferingPit_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("RedPuzzle.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("RedPuzzle.h"));
+				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_offeringPit, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_offeringPit, TEXT("Category"), TEXT("RedPuzzleVariables"));
+				MetaData->SetValue(NewProp_offeringPit, TEXT("ModuleRelativePath"), TEXT("RedPuzzle.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ARedPuzzle(Z_Construct_UClass_ARedPuzzle, &ARedPuzzle::StaticClass, TEXT("ARedPuzzle"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(ARedPuzzle);
 	UClass* Z_Construct_UClass_AWhitePuzzle_NoRegister()
 	{
 		return AWhitePuzzle::StaticClass();
@@ -1724,8 +1865,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Ava")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xC4CB2FAD;
-			Guid.B = 0x2BFAACB7;
+			Guid.A = 0xB800D11F;
+			Guid.B = 0x4968E9FF;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

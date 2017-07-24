@@ -293,7 +293,7 @@ void AMainCharacter::Tick(float DeltaTime)
 		//gives + 16 on both left and right, 148 forward, -148 backwards, 148 with camera + movement.
 		//leftOrRightPlayer = FVector::DotProduct(GetCapsuleComponent()->GetComponentVelocity(), Controller->GetActorForwardVector()); 
 
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("camera: %f"), leftOrRightPlayer));
+		//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Emerald, FString::Printf(TEXT("camera: %f"), leftOrRightPlayer));
 	}
 }
 
@@ -373,15 +373,11 @@ void AMainCharacter::MoveForward(float value)
 		if (value > 0.0)
 		{
 			//Moving forward
-			lastEntry = enumDirectionCheck::forward;
-			lastEntryFB = enumDirectionCheck::forward;
 			bIsPlayerGoingForward = true;
 			bIsPlayerGoingBack = false;
 		}
 		if (value < 0.0)
 		{
-			lastEntry = enumDirectionCheck::back;
-			lastEntryFB = enumDirectionCheck::back;
 			//Moving backward
 			bIsPlayerGoingForward = false;
 			bIsPlayerGoingBack = true;
@@ -434,16 +430,12 @@ void AMainCharacter::MoveRight(float value)
 
 		if (value > 0.0)
 		{
-			lastEntry = enumDirectionCheck::right;
-			lastEntryLR = enumDirectionCheck::right;
 			//Moving right
 			bIsPlayerGoingRight = true;
 			bIsPlayerGoingLeft = false;
 		}
 		if (value < 0.0)
 		{
-			lastEntry = enumDirectionCheck::left;
-			lastEntryLR = enumDirectionCheck::left;
 			//Moving left
 			bIsPlayerGoingRight = false;
 			bIsPlayerGoingLeft = true;
@@ -654,73 +646,11 @@ void AMainCharacter::StopPushPull()
 
 void AMainCharacter::TimelineFloatReturn(float val)
 {
-	FRotator tempRot = GetActorRotation();
-	FRotator tempYaw = FRotator(0, tempRot.Yaw, 0);
-	FVector tempFV = FRotationMatrix(tempYaw).GetUnitAxis(EAxis::X);
-	AddMovementInput(tempFV, val);
-	//RunToIdleTimeline->Play(); // need to play somewhere to apply the reduction.
-	//if (lastEntry == enumDirectionCheck::back)
-	//{
-	//	//GetCharacterMovement()->MaxWalkSpeed = val;
-	//	
-	//}
-	//if (lastEntry == enumDirectionCheck::forward)
-	//{
-	//	//GetCharacterMovement()->MaxWalkSpeed = val;
-	//	AddMovementInput(tempFV, val);
-	//}
-	//if (lastEntry == enumDirectionCheck::left)
-	//{
-	//	//GetCharacterMovement()->MaxWalkSpeed = val;
-	//	AddMovementInput(RightVector, -val);
-	//}
-	//if (lastEntry == enumDirectionCheck::right)
-	//{
-	//	//GetCharacterMovement()->MaxWalkSpeed = val;
-	//	AddMovementInput(RightVector, val);
-	//}
-
-	//if (lastEntryFB == enumDirectionCheck::back)
-	//{
-	//	//GetCharacterMovement()->MaxWalkSpeed = val;
-	//	AddMovementInput(ForwardVector,-val);
-	//}
-	//if (lastEntryFB == enumDirectionCheck::forward)
-	//{
-	//	//GetCharacterMovement()->MaxWalkSpeed = val;
-	//	AddMovementInput(ForwardVector, val);
-	//}
-	//if (lastEntryLR == enumDirectionCheck::left)
-	//{
-	//	//GetCharacterMovement()->MaxWalkSpeed = val;
-	//	AddMovementInput(RightVector, -val);
-	//}
-	//if (lastEntryLR == enumDirectionCheck::right)
-	//{
-	//	//GetCharacterMovement()->MaxWalkSpeed = val;
-	//	AddMovementInput(RightVector, val);
-	//}
-
-
-	//if (bIsPlayerGoingBack)
-	//{
-	//	//GetCharacterMovement()->MaxWalkSpeed = val;
-	//	AddMovementInput(ForwardVector,-val);
-	//}
-	//if (bIsPlayerGoingForward)
-	//{
-	//	//GetCharacterMovement()->MaxWalkSpeed = val;
-	//	AddMovementInput(ForwardVector, val);
-	//}
-	//if (bIsPlayerGoingLeft)
-	//{
-	//	//GetCharacterMovement()->MaxWalkSpeed = val;
-	//	AddMovementInput(RightVector, -val);
-	//}
-	//if (bIsPlayerGoingRight)
-	//{
-	//	//GetCharacterMovement()->MaxWalkSpeed = val;
-	//	AddMovementInput(RightVector, val);
-	//}
-	
+	if (!bIsPushPulling)
+	{
+		FRotator tempRot = GetActorRotation();
+		FRotator tempYaw = FRotator(0, tempRot.Yaw, 0);
+		FVector tempFV = FRotationMatrix(tempYaw).GetUnitAxis(EAxis::X);
+		AddMovementInput(tempFV, val);
+	}	
 }

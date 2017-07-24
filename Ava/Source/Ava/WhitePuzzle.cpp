@@ -5,6 +5,8 @@
 
 AWhitePuzzle::AWhitePuzzle()
 {
+	//PrimaryActorTick.bCanEverTick = true;
+
 	for (bool b : offeringsDone)
 	{
 		b = false;
@@ -19,6 +21,8 @@ void AWhitePuzzle::BeginPlay()
 void AWhitePuzzle::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
+
+	//GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Purple, "inLoopWhite");
 	if (!bPuzzleComplete)
 	{
 		for (size_t index = 0; index < Offerings.Num(); index++)

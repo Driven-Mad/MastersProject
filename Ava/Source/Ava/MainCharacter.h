@@ -397,15 +397,4 @@ private:
 	float jumpDelayTimer;
 	bool startTimer;
 
-	enum class enumDirectionCheck : uint8
-	{
-		forward	,				
-		back	,
-		left	,
-		right	, 
-	};
-
-	enumDirectionCheck lastEntry;
-	enumDirectionCheck lastEntryFB;
-	enumDirectionCheck lastEntryLR;
 };

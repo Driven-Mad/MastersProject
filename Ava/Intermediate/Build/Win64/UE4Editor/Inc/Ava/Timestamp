@@ -1,6 +1,7 @@
 W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\Antelope.h
 W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\AntelopeAIController.h
 W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\AvaGameMode.h
+W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\BlackPuzzle.h
 W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\BluePuzzle.h
 W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\BTServiceSearchForPlayer.h
 W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\BTTaskFindClosestEscapePoint.h
@@ -12,10 +13,12 @@ W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\GreenPuz
 W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\MainCharacter.h
 W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\MainGameUI.h
 W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\MainMenu.h
+W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\OfferingPit.h
 W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\OfferingStatue.h
 W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\pickUpItem.h
 W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\PushPullItem.h
 W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\Puzzle.h
+W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\RedPuzzle.h
 W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\RoutePoint.h
 W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\StatueObject.h
 W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\WhitePuzzle.h

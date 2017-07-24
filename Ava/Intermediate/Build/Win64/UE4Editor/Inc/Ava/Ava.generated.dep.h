@@ -50,6 +50,9 @@
 #ifndef AVA_MainMenu_generated_h
 	#include "MainMenu.h"
 #endif
+#ifndef AVA_OfferingPit_generated_h
+	#include "OfferingPit.h"
+#endif
 #ifndef AVA_OfferingStatue_generated_h
 	#include "OfferingStatue.h"
 #endif
@@ -59,11 +62,17 @@
 #ifndef AVA_Puzzle_generated_h
 	#include "Puzzle.h"
 #endif
+#ifndef AVA_BlackPuzzle_generated_h
+	#include "BlackPuzzle.h"
+#endif
 #ifndef AVA_BluePuzzle_generated_h
 	#include "BluePuzzle.h"
 #endif
 #ifndef AVA_GreenPuzzle_generated_h
 	#include "GreenPuzzle.h"
+#endif
+#ifndef AVA_RedPuzzle_generated_h
+	#include "RedPuzzle.h"
 #endif
 #ifndef AVA_WhitePuzzle_generated_h
 	#include "WhitePuzzle.h"
