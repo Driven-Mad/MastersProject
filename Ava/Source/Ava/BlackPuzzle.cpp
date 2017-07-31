@@ -1,5 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #include "Ava.h"
 #include "BlackPuzzle.h"
 
@@ -16,4 +14,13 @@ void ABlackPuzzle::BeginPlay()
 void ABlackPuzzle::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
+	if (!bPuzzleComplete)
+	{
+		//GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Black, "Black Puzzle is going through tick function.");
+		if (painting  && painting->bPaintingFilled)
+		{
+			//GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Black, "Black Room Puzzle is complete.");
+			bPuzzleComplete = true;
+		}
+	}
 }

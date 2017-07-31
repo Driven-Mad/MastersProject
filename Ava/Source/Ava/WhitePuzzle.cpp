@@ -1,28 +1,26 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #include "Ava.h"
 #include "WhitePuzzle.h"
 
 AWhitePuzzle::AWhitePuzzle()
 {
-	//PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = true;
 
-	for (bool b : offeringsDone)
-	{
-		b = false;
-	}
 }
 void AWhitePuzzle::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	//Make sure always set too true. 
+	for (bool b : offeringsDone)
+	{
+		b = false;
+	}
 }
 
 void AWhitePuzzle::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
 
-	//GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Purple, "inLoopWhite");
+	//GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::White, "White Puzzle is going through tick function");
 	if (!bPuzzleComplete)
 	{
 		for (size_t index = 0; index < Offerings.Num(); index++)
@@ -34,6 +32,7 @@ void AWhitePuzzle::Tick(float DeltaSeconds)
 		}
 		if (checkOfferings())
 		{
+			secondDoorToOpen->Open();
 			bPuzzleComplete = true;
 		}
 	}

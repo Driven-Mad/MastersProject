@@ -39,7 +39,6 @@ AAntelope::AAntelope()
 	GetCharacterMovement()->AirControl = 0.2f;
 	GetCharacterMovement()->MaxWalkSpeed = 400.f;
 
-
 	//set up collision sphere
 	m_CollisionSphere = CreateDefaultSubobject<USphereComponent>(TEXT("CollectionSphere"));
 	m_CollisionSphere->AttachTo(RootComponent);
@@ -50,20 +49,17 @@ AAntelope::AAntelope()
 void AAntelope::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
 // Called every frame
 void AAntelope::Tick( float DeltaTime )
 {
 	Super::Tick( DeltaTime );
-
 }
 
 // Called to bind functionality to input
 void AAntelope::SetupPlayerInputComponent(class UInputComponent* InputComponent)
 {
 	Super::SetupPlayerInputComponent(InputComponent);
-
 }
 

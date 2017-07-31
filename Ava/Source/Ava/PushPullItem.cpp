@@ -1,5 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #include "Ava.h"
 #include "PushPullItem.h"
 
@@ -10,21 +8,16 @@ APushPullItem::APushPullItem()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	constrainX = false;
-	constrainY = false;
-	cappedX = false;
-	cappedY = false;
 	designatedMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PickupMesh"));
 	designatedMesh->SetSimulatePhysics(false);
 	designatedMesh->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
-
 	RootComponent = designatedMesh;
 
-	boxCollider = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxCollision"));
-	boxCollider->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	sphereCollider = CreateDefaultSubobject<USphereComponent>(TEXT("SphereCollision"));
+	sphereCollider->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	FAttachmentTransformRules rules = FAttachmentTransformRules(EAttachmentRule::KeepRelative,true);
-	boxCollider->AttachToComponent(RootComponent, rules);
-	boxCollider->SetCollisionResponseToAllChannels(ECR_Block);
+	sphereCollider->AttachToComponent(RootComponent, rules);
+	sphereCollider->SetCollisionResponseToAllChannels(ECR_Block);
 	
 }
 
@@ -32,18 +25,47 @@ APushPullItem::APushPullItem()
 void APushPullItem::BeginPlay()
 {
 	Super::BeginPlay();
-	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, FString::Printf(TEXT("X is: %f, Y is: %f, Z is: %f"), GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z));
-	
+
+	startingX = GetActorLocation().X;
+	startingY = GetActorLocation().Y;
+	startingZ = GetActorLocation().Z;
+
+	constrainX = false;
+	constrainY = false;
+
+	cappedX = false;
+	cappedY = false;
+
+	LockX = false;
+	LockY = false;
+	LockZ = false;
 }
 
 // Called every frame
 void APushPullItem::Tick( float DeltaTime )
 {
 	Super::Tick( DeltaTime );
-	
+	//Get actor location and split for various reasons. 
 	FVector location = GetActorLocation();
 	float locationX = location.X;
 	float locationY = location.Y;
+	float locationZ = location.Z;
+	//Do lock checks first. 
+	if (LockX)
+	{
+		SetActorLocation(FVector(startingX, locationY, location.Z));
+	}
+	if (LockY)
+	{
+		SetActorLocation(FVector(location.X, startingY, location.Z));
+	}
+	if (LockZ)
+	{
+		SetActorLocation(FVector(location.X, location.Y, startingZ));
+	}
+
+
+	//Check if the constraints are needed by artist. 
 	if ( constrainX)
 	{
 		if (locationX < xMin)

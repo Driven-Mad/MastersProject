@@ -9,23 +9,12 @@ void UMainMenu::Play()
 	UGameplayStatics::OpenLevel(UUserWidget::GetWorld(), "PalaceLevel");
 	RemoveFromParent();
 }
-
-//void UMainMenu::Construct()
-//{
-//	playerReference = Cast<AMainCharacter>(UGameplayStatics::GetPlayerController(UUserWidget::GetWorld(), 0));
-//	//playerReference = Cast<AMainCharacter>( GetOwningPlayer());
-//}
+void UMainMenu::Quit()
+{
+	FGenericPlatformMisc::RequestExit(true);
+}
 
 void UMainMenu::NativeConstruct()
 {
 	Super::NativeConstruct();
-	//playerReference = *Cast<TSubclassOf<AMainCharacter>>(UGameplayStatics::GetPlayerController(UUserWidget::GetWorld(), 0));
-	//playerReference = Cast<>(UGameplayStatics::GetPlayerController(UUserWidget::GetWorld(), 0));
-	//playerReference = Cast<AMainCharacter>( GetOwningPlayer());
-	//if (Item->IsChildOf(AShooterWeapon::StaticClass()))
-	//{
-	//	TSubclassOf<AShooterWeapon> WeaponClass = *Item;
-	//	CanPickupAmmo(WeaponClass);
-	//}
-
 }

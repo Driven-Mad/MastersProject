@@ -56,6 +56,9 @@
 #ifndef AVA_OfferingStatue_generated_h
 	#include "OfferingStatue.h"
 #endif
+#ifndef AVA_PaintingObject_generated_h
+	#include "PaintingObject.h"
+#endif
 #ifndef AVA_StatueObject_generated_h
 	#include "StatueObject.h"
 #endif
@@ -76,4 +79,7 @@
 #endif
 #ifndef AVA_WhitePuzzle_generated_h
 	#include "WhitePuzzle.h"
+#endif
+#ifndef AVA_YellowPuzzle_generated_h
+	#include "YellowPuzzle.h"
 #endif

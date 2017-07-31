@@ -11,7 +11,7 @@ EBTNodeResult::Type UBTTaskFindNextRoutePoint::ExecuteTask(UBehaviorTreeComponen
 	AAntelopeAIController* MyController = Cast<AAntelopeAIController>(OwnerComp.GetAIOwner());
 	if (MyController)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Red, FString::Printf(TEXT("I'm in the if statement controller")));
+		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Silver, FString::Printf(TEXT("Controller is real in Find Next Route point task. ")));
 		ARoutePoint* CurrentRoutePoint = MyController->GetRoutePoint();
 		AActor* NewRoutepoint = nullptr;
 		TArray<AActor*> AllRoutePoints;
@@ -19,7 +19,7 @@ EBTNodeResult::Type UBTTaskFindNextRoutePoint::ExecuteTask(UBehaviorTreeComponen
 		
 		if (CurrentRoutePoint != nullptr)
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Blue, FString::Printf(TEXT("I'm in the if statement nullptr")));
+			GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Silver, FString::Printf(TEXT("currentRoute point isn't null in Find Next Route point task.")));
 			ARoutePoint *temp = Cast<ARoutePoint>(CurrentRoutePoint);
 			int CurrentRouteNumber = temp->RouteNumber;
 			CurrentRouteNumber = CurrentRouteNumber + 1;
@@ -30,7 +30,7 @@ EBTNodeResult::Type UBTTaskFindNextRoutePoint::ExecuteTask(UBehaviorTreeComponen
 				ARoutePoint *tRoutePoint = Cast <ARoutePoint>(AllRoutePoints[iRouteIndex]);
 				if (tRoutePoint)
 				{
-					GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Emerald, FString::Printf(TEXT("I'm in the if statement ")));
+					GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Silver, FString::Printf(TEXT("Found Route Point in Find Next Route point task. ")));
 					if (tRoutePoint->RouteNumber == 0)
 					{
 						RouteZeroIndex = iRouteIndex;

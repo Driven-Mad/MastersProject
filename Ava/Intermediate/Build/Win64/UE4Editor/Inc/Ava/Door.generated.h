@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define AVA_Door_generated_h
 
-#define Ava_Source_Ava_Door_h_11_RPC_WRAPPERS \
+#define Ava_Source_Ava_Door_h_17_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOpen) \
 	{ \
@@ -33,7 +33,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define Ava_Source_Ava_Door_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Ava_Source_Ava_Door_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOpen) \
 	{ \
@@ -53,7 +53,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define Ava_Source_Ava_Door_h_11_INCLASS_NO_PURE_DECLS \
+#define Ava_Source_Ava_Door_h_17_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesADoor(); \
 	friend AVA_API class UClass* Z_Construct_UClass_ADoor(); \
@@ -64,7 +64,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Ava_Source_Ava_Door_h_11_INCLASS \
+#define Ava_Source_Ava_Door_h_17_INCLASS \
 	private: \
 	static void StaticRegisterNativesADoor(); \
 	friend AVA_API class UClass* Z_Construct_UClass_ADoor(); \
@@ -75,7 +75,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Ava_Source_Ava_Door_h_11_STANDARD_CONSTRUCTORS \
+#define Ava_Source_Ava_Door_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ADoor(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ADoor) \
@@ -87,7 +87,7 @@ private: \
 public:
 
 
-#define Ava_Source_Ava_Door_h_11_ENHANCED_CONSTRUCTORS \
+#define Ava_Source_Ava_Door_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private copy-constructor, should never be used */ \
 	NO_API ADoor(const ADoor& InCopy); \
@@ -97,23 +97,23 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADoor); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ADoor)
 
 
-#define Ava_Source_Ava_Door_h_8_PROLOG
-#define Ava_Source_Ava_Door_h_11_GENERATED_BODY_LEGACY \
+#define Ava_Source_Ava_Door_h_14_PROLOG
+#define Ava_Source_Ava_Door_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Ava_Source_Ava_Door_h_11_RPC_WRAPPERS \
-	Ava_Source_Ava_Door_h_11_INCLASS \
-	Ava_Source_Ava_Door_h_11_STANDARD_CONSTRUCTORS \
+	Ava_Source_Ava_Door_h_17_RPC_WRAPPERS \
+	Ava_Source_Ava_Door_h_17_INCLASS \
+	Ava_Source_Ava_Door_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Ava_Source_Ava_Door_h_11_GENERATED_BODY \
+#define Ava_Source_Ava_Door_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Ava_Source_Ava_Door_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
-	Ava_Source_Ava_Door_h_11_INCLASS_NO_PURE_DECLS \
-	Ava_Source_Ava_Door_h_11_ENHANCED_CONSTRUCTORS \
+	Ava_Source_Ava_Door_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	Ava_Source_Ava_Door_h_17_INCLASS_NO_PURE_DECLS \
+	Ava_Source_Ava_Door_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

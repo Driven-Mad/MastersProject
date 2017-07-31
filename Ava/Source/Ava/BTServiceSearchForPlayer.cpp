@@ -5,12 +5,8 @@
 #include "AntelopeAIController.h"
 #include "BTServiceSearchForPlayer.h"
 
-
-
-
 void UBTServiceSearchForPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds)
 {
-	
 	AAntelopeAIController* MyController = Cast<AAntelopeAIController>(OwnerComp.GetAIOwner());
 	if (MyController)
 	{

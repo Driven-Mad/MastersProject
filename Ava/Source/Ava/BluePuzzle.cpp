@@ -1,15 +1,11 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #include "Ava.h"
 #include "BluePuzzle.h"
-
-
-
 
 ABluePuzzle::ABluePuzzle()
 {
 
 }
+
 void ABluePuzzle::BeginPlay()
 {
 	Super::BeginPlay();
@@ -34,20 +30,15 @@ void ABluePuzzle::Tick(float DeltaSeconds)
 				if (overlappingTest && overlappingTest == pushPullObjects[i])
 				{
 					overlaps[i] = true;
-					GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Blue, FString::Printf(TEXT("overlapping: %i"), i));
+					//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Blue, FString::Printf(TEXT("overlapping: %i"), i));
 				}
 			}
 		}
-
 		if (checkOverlaps())
 		{
 			bPuzzleComplete = true;
 		}
 	}
-	//if (!DesignatedStatue->bCanPlayerPray)
-	//{
-	//	bPuzzleComplete = true;
-	//}
 }
 
 bool ABluePuzzle::checkOverlaps()

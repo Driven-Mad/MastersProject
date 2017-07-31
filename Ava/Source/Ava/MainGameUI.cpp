@@ -4,13 +4,6 @@
 #include "MainGameUI.h"
 
 
-
-void UMainGameUI::Play()
-{
-	UGameplayStatics::OpenLevel(UUserWidget::GetWorld(), "PalaceLevel");
-	RemoveFromParent();
-}
-
 void UMainGameUI::NativeConstruct()
 {
 	Super::NativeConstruct();

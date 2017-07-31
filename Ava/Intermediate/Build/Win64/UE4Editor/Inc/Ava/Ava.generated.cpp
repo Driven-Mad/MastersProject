@@ -12,7 +12,7 @@ void EmptyLinkFunctionForGeneratedCode1Ava() {}
 	void AAntelope::StaticRegisterNativesAAntelope()
 	{
 	}
-	IMPLEMENT_CLASS(AAntelope, 3211305425);
+	IMPLEMENT_CLASS(AAntelope, 1488228363);
 	void AEscapePoint::StaticRegisterNativesAEscapePoint()
 	{
 	}
@@ -20,12 +20,11 @@ void EmptyLinkFunctionForGeneratedCode1Ava() {}
 	void ARoutePoint::StaticRegisterNativesARoutePoint()
 	{
 	}
-	IMPLEMENT_CLASS(ARoutePoint, 3929576664);
+	IMPLEMENT_CLASS(ARoutePoint, 488136421);
 	void AAntelopeAIController::StaticRegisterNativesAAntelopeAIController()
 	{
-		FNativeFunctionRegistrar::RegisterFunction(AAntelopeAIController::StaticClass(), "SearchForPlayer",(Native)&AAntelopeAIController::execSearchForPlayer);
 	}
-	IMPLEMENT_CLASS(AAntelopeAIController, 3206526809);
+	IMPLEMENT_CLASS(AAntelopeAIController, 4101188995);
 	void AAvaGameMode::StaticRegisterNativesAAvaGameMode()
 	{
 	}
@@ -75,74 +74,82 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 		FNativeFunctionRegistrar::RegisterFunction(ADataFactory::StaticClass(), "getItemDescription",(Native)&ADataFactory::execgetItemDescription);
 		FNativeFunctionRegistrar::RegisterFunction(ADataFactory::StaticClass(), "GetItemType",(Native)&ADataFactory::execGetItemType);
 	}
-	IMPLEMENT_CLASS(ADataFactory, 2495403938);
+	IMPLEMENT_CLASS(ADataFactory, 665307648);
 	void ADoor::StaticRegisterNativesADoor()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(ADoor::StaticClass(), "Open",(Native)&ADoor::execOpen);
 		FNativeFunctionRegistrar::RegisterFunction(ADoor::StaticClass(), "TimelineFloatReturn",(Native)&ADoor::execTimelineFloatReturn);
 	}
-	IMPLEMENT_CLASS(ADoor, 2331846547);
+	IMPLEMENT_CLASS(ADoor, 82753366);
 	void APushPullItem::StaticRegisterNativesAPushPullItem()
 	{
 	}
-	IMPLEMENT_CLASS(APushPullItem, 4233526669);
+	IMPLEMENT_CLASS(APushPullItem, 612926316);
 	void APickUpItem::StaticRegisterNativesAPickUpItem()
 	{
 	}
-	IMPLEMENT_CLASS(APickUpItem, 922102823);
+	IMPLEMENT_CLASS(APickUpItem, 2620333142);
 	void AMainCharacter::StaticRegisterNativesAMainCharacter()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(AMainCharacter::StaticClass(), "BeginOverLap",(Native)&AMainCharacter::execBeginOverLap);
 		FNativeFunctionRegistrar::RegisterFunction(AMainCharacter::StaticClass(), "ExitOverLap",(Native)&AMainCharacter::execExitOverLap);
 		FNativeFunctionRegistrar::RegisterFunction(AMainCharacter::StaticClass(), "TimelineFloatReturn",(Native)&AMainCharacter::execTimelineFloatReturn);
 	}
-	IMPLEMENT_CLASS(AMainCharacter, 2900174475);
+	IMPLEMENT_CLASS(AMainCharacter, 543374909);
 	void UMainGameUI::StaticRegisterNativesUMainGameUI()
 	{
-		FNativeFunctionRegistrar::RegisterFunction(UMainGameUI::StaticClass(), "Play",(Native)&UMainGameUI::execPlay);
 	}
-	IMPLEMENT_CLASS(UMainGameUI, 3222596243);
+	IMPLEMENT_CLASS(UMainGameUI, 2666245711);
 	void UMainMenu::StaticRegisterNativesUMainMenu()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(UMainMenu::StaticClass(), "Play",(Native)&UMainMenu::execPlay);
+		FNativeFunctionRegistrar::RegisterFunction(UMainMenu::StaticClass(), "Quit",(Native)&UMainMenu::execQuit);
 	}
-	IMPLEMENT_CLASS(UMainMenu, 3986694537);
+	IMPLEMENT_CLASS(UMainMenu, 1695913138);
 	void AOfferingPit::StaticRegisterNativesAOfferingPit()
 	{
 	}
-	IMPLEMENT_CLASS(AOfferingPit, 2469765767);
+	IMPLEMENT_CLASS(AOfferingPit, 1334031975);
 	void AOfferingStatue::StaticRegisterNativesAOfferingStatue()
 	{
 	}
-	IMPLEMENT_CLASS(AOfferingStatue, 1520753723);
+	IMPLEMENT_CLASS(AOfferingStatue, 3544506977);
+	void APaintingObject::StaticRegisterNativesAPaintingObject()
+	{
+	}
+	IMPLEMENT_CLASS(APaintingObject, 4143494583);
 	void AStatueObject::StaticRegisterNativesAStatueObject()
 	{
 	}
-	IMPLEMENT_CLASS(AStatueObject, 3382700909);
+	IMPLEMENT_CLASS(AStatueObject, 3409006047);
 	void APuzzle::StaticRegisterNativesAPuzzle()
 	{
 	}
-	IMPLEMENT_CLASS(APuzzle, 189578839);
+	IMPLEMENT_CLASS(APuzzle, 921395248);
 	void ABlackPuzzle::StaticRegisterNativesABlackPuzzle()
 	{
 	}
-	IMPLEMENT_CLASS(ABlackPuzzle, 3417399905);
+	IMPLEMENT_CLASS(ABlackPuzzle, 363871007);
 	void ABluePuzzle::StaticRegisterNativesABluePuzzle()
 	{
 	}
-	IMPLEMENT_CLASS(ABluePuzzle, 4022007988);
+	IMPLEMENT_CLASS(ABluePuzzle, 2033035204);
 	void AGreenPuzzle::StaticRegisterNativesAGreenPuzzle()
 	{
 	}
-	IMPLEMENT_CLASS(AGreenPuzzle, 2633354150);
+	IMPLEMENT_CLASS(AGreenPuzzle, 2259903230);
 	void ARedPuzzle::StaticRegisterNativesARedPuzzle()
 	{
 	}
-	IMPLEMENT_CLASS(ARedPuzzle, 1919465192);
+	IMPLEMENT_CLASS(ARedPuzzle, 3024183061);
 	void AWhitePuzzle::StaticRegisterNativesAWhitePuzzle()
 	{
 	}
-	IMPLEMENT_CLASS(AWhitePuzzle, 4021524335);
+	IMPLEMENT_CLASS(AWhitePuzzle, 3516386994);
+	void AYellowPuzzle::StaticRegisterNativesAYellowPuzzle()
+	{
+	}
+	IMPLEMENT_CLASS(AYellowPuzzle, 3862261997);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
@@ -174,7 +181,6 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	AVA_API class UClass* Z_Construct_UClass_AEscapePoint();
 	AVA_API class UClass* Z_Construct_UClass_ARoutePoint_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_ARoutePoint();
-	AVA_API class UFunction* Z_Construct_UFunction_AAntelopeAIController_SearchForPlayer();
 	AVA_API class UClass* Z_Construct_UClass_AAntelopeAIController_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_AAntelopeAIController();
 	AVA_API class UClass* Z_Construct_UClass_AAvaGameMode_NoRegister();
@@ -208,16 +214,18 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	AVA_API class UFunction* Z_Construct_UFunction_AMainCharacter_TimelineFloatReturn();
 	AVA_API class UClass* Z_Construct_UClass_AMainCharacter_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_AMainCharacter();
-	AVA_API class UFunction* Z_Construct_UFunction_UMainGameUI_Play();
 	AVA_API class UClass* Z_Construct_UClass_UMainGameUI_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_UMainGameUI();
 	AVA_API class UFunction* Z_Construct_UFunction_UMainMenu_Play();
+	AVA_API class UFunction* Z_Construct_UFunction_UMainMenu_Quit();
 	AVA_API class UClass* Z_Construct_UClass_UMainMenu_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_UMainMenu();
 	AVA_API class UClass* Z_Construct_UClass_AOfferingPit_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_AOfferingPit();
 	AVA_API class UClass* Z_Construct_UClass_AOfferingStatue_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_AOfferingStatue();
+	AVA_API class UClass* Z_Construct_UClass_APaintingObject_NoRegister();
+	AVA_API class UClass* Z_Construct_UClass_APaintingObject();
 	AVA_API class UClass* Z_Construct_UClass_AStatueObject_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_AStatueObject();
 	AVA_API class UClass* Z_Construct_UClass_APuzzle_NoRegister();
@@ -232,6 +240,8 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_Item(Item_StaticEnum, TE
 	AVA_API class UClass* Z_Construct_UClass_ARedPuzzle();
 	AVA_API class UClass* Z_Construct_UClass_AWhitePuzzle_NoRegister();
 	AVA_API class UClass* Z_Construct_UClass_AWhitePuzzle();
+	AVA_API class UClass* Z_Construct_UClass_AYellowPuzzle_NoRegister();
+	AVA_API class UClass* Z_Construct_UClass_AYellowPuzzle();
 	AVA_API class UPackage* Z_Construct_UPackage__Script_Ava();
 	UClass* Z_Construct_UClass_AAntelope_NoRegister()
 	{
@@ -266,14 +276,17 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
 				MetaData->SetValue(NewProp_walkingSpeed, TEXT("Category"), TEXT("AIVariables"));
 				MetaData->SetValue(NewProp_walkingSpeed, TEXT("ModuleRelativePath"), TEXT("Antelope.h"));
+				MetaData->SetValue(NewProp_walkingSpeed, TEXT("ToolTip"), TEXT("@brief AIVariables - Antelopes walk speed\n@param walkingSpeed - the speed that is applied when the Antelopes enters the walking state"));
 				MetaData->SetValue(NewProp_runningSpeed, TEXT("Category"), TEXT("AIVariables"));
 				MetaData->SetValue(NewProp_runningSpeed, TEXT("ModuleRelativePath"), TEXT("Antelope.h"));
+				MetaData->SetValue(NewProp_runningSpeed, TEXT("ToolTip"), TEXT("@brief AIVariables - Antelopes run speed\n@param runningSpeed - the speed that is applied when the Antelopes enters the running state"));
 				MetaData->SetValue(NewProp_m_AntelopeBehaviourTree, TEXT("Category"), TEXT("AIVariables"));
 				MetaData->SetValue(NewProp_m_AntelopeBehaviourTree, TEXT("ModuleRelativePath"), TEXT("Antelope.h"));
+				MetaData->SetValue(NewProp_m_AntelopeBehaviourTree, TEXT("ToolTip"), TEXT("@brief AIVariables - controls the behaviour of this character.\n@param m_AntelopeBehaviourTree - the behaviour tree assosicated with the character."));
 				MetaData->SetValue(NewProp_m_CollisionSphere, TEXT("Category"), TEXT("AIVariables"));
 				MetaData->SetValue(NewProp_m_CollisionSphere, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_m_CollisionSphere, TEXT("ModuleRelativePath"), TEXT("Antelope.h"));
-				MetaData->SetValue(NewProp_m_CollisionSphere, TEXT("ToolTip"), TEXT("Collision sphere for the AI"));
+				MetaData->SetValue(NewProp_m_CollisionSphere, TEXT("ToolTip"), TEXT("@brief AIVariables - Check if the player is currently praying at the specified statue.\n@param overlappingSphere - USphere Component for overlapping events."));
 #endif
 			}
 		}
@@ -341,6 +354,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("RoutePoint.h"));
 				MetaData->SetValue(NewProp_RouteNumber, TEXT("Category"), TEXT("RouteID"));
 				MetaData->SetValue(NewProp_RouteNumber, TEXT("ModuleRelativePath"), TEXT("RoutePoint.h"));
+				MetaData->SetValue(NewProp_RouteNumber, TEXT("ToolTip"), TEXT("@brief RouteID - Used as an identifier to choose a selected path by the artist rather than random.\n@param RouteNumber -  unique identy number."));
 #endif
 			}
 		}
@@ -349,24 +363,6 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ARoutePoint(Z_Construct_UClass_ARoutePoint, &ARoutePoint::StaticClass, TEXT("ARoutePoint"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ARoutePoint);
-	UFunction* Z_Construct_UFunction_AAntelopeAIController_SearchForPlayer()
-	{
-		UObject* Outer=Z_Construct_UClass_AAntelopeAIController();
-		static UFunction* ReturnFunction = NULL;
-		if (!ReturnFunction)
-		{
-			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SearchForPlayer"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535);
-			ReturnFunction->Bind();
-			ReturnFunction->StaticLink();
-#if WITH_METADATA
-			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
-			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Behaviour"));
-			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("AntelopeAIController.h"));
-			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Search for player"));
-#endif
-		}
-		return ReturnFunction;
-	}
 	UClass* Z_Construct_UClass_AAntelopeAIController_NoRegister()
 	{
 		return AAntelopeAIController::StaticClass();
@@ -384,7 +380,6 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20900280;
 
-				OuterClass->LinkChild(Z_Construct_UFunction_AAntelopeAIController_SearchForPlayer());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_playerName = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("playerName"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(playerName, AAntelopeAIController), 0x0010000000010001);
@@ -396,7 +391,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_myBehaviourTreeComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("myBehaviourTreeComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(myBehaviourTreeComponent, AAntelopeAIController), 0x0010000000080009, Z_Construct_UClass_UBehaviorTreeComponent_NoRegister());
 				UProperty* NewProp_myBlackBoardComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("myBlackBoardComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(myBlackBoardComponent, AAntelopeAIController), 0x0010000000080009, Z_Construct_UClass_UBlackboardComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AAntelopeAIController_SearchForPlayer(), "SearchForPlayer"); // 923501262
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -406,25 +400,30 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
 				MetaData->SetValue(NewProp_playerName, TEXT("Category"), TEXT("AI"));
 				MetaData->SetValue(NewProp_playerName, TEXT("ModuleRelativePath"), TEXT("AntelopeAIController.h"));
+				MetaData->SetValue(NewProp_playerName, TEXT("ToolTip"), TEXT("@brief Accessing name within our blackboard for the player itself."));
 				MetaData->SetValue(NewProp_playerPositionName, TEXT("Category"), TEXT("AI"));
 				MetaData->SetValue(NewProp_playerPositionName, TEXT("ModuleRelativePath"), TEXT("AntelopeAIController.h"));
+				MetaData->SetValue(NewProp_playerPositionName, TEXT("ToolTip"), TEXT("@brief Accessing name within our blackboard for players position"));
 				MetaData->SetValue(NewProp_myPositionName, TEXT("Category"), TEXT("AI"));
 				MetaData->SetValue(NewProp_myPositionName, TEXT("ModuleRelativePath"), TEXT("AntelopeAIController.h"));
+				MetaData->SetValue(NewProp_myPositionName, TEXT("ToolTip"), TEXT("@brief Accessing name within our blackboard for this characters position"));
 				MetaData->SetValue(NewProp_currentRouteWayPointName, TEXT("Category"), TEXT("AI"));
 				MetaData->SetValue(NewProp_currentRouteWayPointName, TEXT("ModuleRelativePath"), TEXT("AntelopeAIController.h"));
+				MetaData->SetValue(NewProp_currentRouteWayPointName, TEXT("ToolTip"), TEXT("@brief Accessing name within our blackboard for current route point"));
 				MetaData->SetValue(NewProp_currentEscapeWayPointName, TEXT("Category"), TEXT("AI"));
 				MetaData->SetValue(NewProp_currentEscapeWayPointName, TEXT("ModuleRelativePath"), TEXT("AntelopeAIController.h"));
+				MetaData->SetValue(NewProp_currentEscapeWayPointName, TEXT("ToolTip"), TEXT("@brief Accessing name within our blackboard for current escape point"));
 				MetaData->SetValue(NewProp_targetLocationName, TEXT("Category"), TEXT("AI"));
 				MetaData->SetValue(NewProp_targetLocationName, TEXT("ModuleRelativePath"), TEXT("AntelopeAIController.h"));
-				MetaData->SetValue(NewProp_targetLocationName, TEXT("ToolTip"), TEXT("Different Names for variables within our blackboard."));
+				MetaData->SetValue(NewProp_targetLocationName, TEXT("ToolTip"), TEXT("Different Names for variables within our blackboard.\n----------------------------------------------------------------------------------------------------------------------\n @brief Accessing name within our blackboard for target location"));
 				MetaData->SetValue(NewProp_myBehaviourTreeComponent, TEXT("Category"), TEXT("AntelopeAIController"));
 				MetaData->SetValue(NewProp_myBehaviourTreeComponent, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_myBehaviourTreeComponent, TEXT("ModuleRelativePath"), TEXT("AntelopeAIController.h"));
-				MetaData->SetValue(NewProp_myBehaviourTreeComponent, TEXT("ToolTip"), TEXT("Behaviour tree component for the AI Controller"));
+				MetaData->SetValue(NewProp_myBehaviourTreeComponent, TEXT("ToolTip"), TEXT("@brief Behaviour tree component for the AI Controller"));
 				MetaData->SetValue(NewProp_myBlackBoardComponent, TEXT("Category"), TEXT("AntelopeAIController"));
 				MetaData->SetValue(NewProp_myBlackBoardComponent, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_myBlackBoardComponent, TEXT("ModuleRelativePath"), TEXT("AntelopeAIController.h"));
-				MetaData->SetValue(NewProp_myBlackBoardComponent, TEXT("ToolTip"), TEXT("Blackboard component for the AI controller"));
+				MetaData->SetValue(NewProp_myBlackBoardComponent, TEXT("ToolTip"), TEXT("@brief Blackboard component for the AI controller"));
 #endif
 			}
 		}
@@ -672,6 +671,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Items"));
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("DataFactory.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("@brief Called when you need to access the maps data variables\n@param Item_type - The item that you want to look up.\n@param Item_variable - The ItemDataVariables that you want to look up.\n@return returns a string containing the information OF Item_Type, and the vraible Item_"));
 #endif
 		}
 		return ReturnFunction;
@@ -696,6 +696,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Items"));
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("DataFactory.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("@brief Called when you need to get the 3D mesh for Item_Type.\n@param Item_type - The item that you want to look up.\n@return returns the static mesh of the item Item_Type"));
 #endif
 		}
 		return ReturnFunction;
@@ -720,6 +721,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Items"));
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("DataFactory.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("@brief Called when you need to get the Item_Type 2D Icon (Normal)\n@param Item_type - The item that you want to look up.\n@return returns the texture for the icon of the item Item_Type"));
 #endif
 		}
 		return ReturnFunction;
@@ -744,6 +746,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Items"));
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("DataFactory.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("@brief Called when you need to get the Item_Type 2D Icon (Hovered)\n@param Item_type - The item that you want to look up.\n@return returns the texture for the icon of the item Item_Type"));
 #endif
 		}
 		return ReturnFunction;
@@ -768,7 +771,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Items"));
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("DataFactory.h"));
-			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("UFUNCTION(BlueprintCallable, Category = \"Items\")\n       AActor* SpawnItem(Item ItemToSpawn, FTransform Position);"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("@brief Called when you need to get the Item_Type description\n@param Item_type - The item that you want to look up.\n@return returns the items discription in a string."));
 #endif
 		}
 		return ReturnFunction;
@@ -795,6 +798,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Items"));
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("DataFactory.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("@brief Called when you need to get the Item based on a string type and name.\n@param enumType - The enum that you want to look up.\n@param enumName - The item that you want to look up.\n@return returns the items discription in a string."));
 			MetaData->SetValue(NewProp_enumName, TEXT("NativeConst"), TEXT(""));
 			MetaData->SetValue(NewProp_enumType, TEXT("NativeConst"), TEXT(""));
 #endif
@@ -825,12 +829,12 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->LinkChild(Z_Construct_UFunction_ADataFactory_getItemDescription());
 				OuterClass->LinkChild(Z_Construct_UFunction_ADataFactory_GetItemType());
 
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADataFactory_AccessTMapItems(), "AccessTMapItems"); // 3208356478
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADataFactory_Get3DRepresentationForItem(), "Get3DRepresentationForItem"); // 3763989745
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADataFactory_GetIconForItem(), "GetIconForItem"); // 287581182
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADataFactory_GetIconSelectedForItem(), "GetIconSelectedForItem"); // 2770935636
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADataFactory_getItemDescription(), "getItemDescription"); // 4232355155
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADataFactory_GetItemType(), "GetItemType"); // 1941724549
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADataFactory_AccessTMapItems(), "AccessTMapItems"); // 466643443
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADataFactory_Get3DRepresentationForItem(), "Get3DRepresentationForItem"); // 3313739281
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADataFactory_GetIconForItem(), "GetIconForItem"); // 167864636
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADataFactory_GetIconSelectedForItem(), "GetIconSelectedForItem"); // 1222786158
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADataFactory_getItemDescription(), "getItemDescription"); // 3389674651
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADataFactory_GetItemType(), "GetItemType"); // 3426595263
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -857,6 +861,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #if WITH_METADATA
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Door.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("@brief - Function that opens to door using timeline above."));
 #endif
 		}
 		return ReturnFunction;
@@ -878,6 +883,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #if WITH_METADATA
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Door.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("@brief - Function to read in the value from the timeline and where to place the door.\n@param - Val = Float at current time in timeline."));
 #endif
 		}
 		return ReturnFunction;
@@ -908,8 +914,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_fCurve = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("fCurve"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(fCurve, ADoor), 0x0010000000000000, Z_Construct_UClass_UCurveFloat_NoRegister());
 				UProperty* NewProp_ScoreTimeline = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ScoreTimeline"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ScoreTimeline, ADoor), 0x0010000000080008, Z_Construct_UClass_UTimelineComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADoor_Open(), "Open"); // 725450068
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADoor_TimelineFloatReturn(), "TimelineFloatReturn"); // 1638422267
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADoor_Open(), "Open"); // 3145075467
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADoor_TimelineFloatReturn(), "TimelineFloatReturn"); // 1395027020
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -920,13 +926,17 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(NewProp_boxCollider, TEXT("Category"), TEXT("DoorVariables"));
 				MetaData->SetValue(NewProp_boxCollider, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_boxCollider, TEXT("ModuleRelativePath"), TEXT("Door.h"));
+				MetaData->SetValue(NewProp_boxCollider, TEXT("ToolTip"), TEXT("@brief DoorVariables - box collider which wil act as our root component for the door.\n@param boxCollider - this is box component which will be our root."));
 				MetaData->SetValue(NewProp_designatedMesh, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_designatedMesh, TEXT("Category"), TEXT("DoorVariables"));
 				MetaData->SetValue(NewProp_designatedMesh, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_designatedMesh, TEXT("ModuleRelativePath"), TEXT("Door.h"));
+				MetaData->SetValue(NewProp_designatedMesh, TEXT("ToolTip"), TEXT("@brief DoorVariables - The visual representation of this actor in 3D form.\n@param designatedMesh - Static mesh component 3D mesh."));
 				MetaData->SetValue(NewProp_fCurve, TEXT("ModuleRelativePath"), TEXT("Door.h"));
+				MetaData->SetValue(NewProp_fCurve, TEXT("ToolTip"), TEXT("@brief DoorVariables -  for the artist to draw to be used with timeline of door opening.\n@param fCurve - curve designated by artist."));
 				MetaData->SetValue(NewProp_ScoreTimeline, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_ScoreTimeline, TEXT("ModuleRelativePath"), TEXT("Door.h"));
+				MetaData->SetValue(NewProp_ScoreTimeline, TEXT("ToolTip"), TEXT("@brief DoorVariables - Will allow us to play our timeline via a curve.\n@param ScoreTimeline - pointer to a timeline component."));
 #endif
 			}
 		}
@@ -955,9 +965,15 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(cappedY, APushPullItem, bool);
-				UProperty* NewProp_cappedY = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("cappedY"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(cappedY, APushPullItem), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(cappedY, APushPullItem), sizeof(bool), true);
+				UProperty* NewProp_cappedY = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("cappedY"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(cappedY, APushPullItem), 0x0010000000020015, CPP_BOOL_PROPERTY_BITMASK(cappedY, APushPullItem), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(cappedX, APushPullItem, bool);
-				UProperty* NewProp_cappedX = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("cappedX"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(cappedX, APushPullItem), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(cappedX, APushPullItem), sizeof(bool), true);
+				UProperty* NewProp_cappedX = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("cappedX"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(cappedX, APushPullItem), 0x0010000000020015, CPP_BOOL_PROPERTY_BITMASK(cappedX, APushPullItem), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(LockZ, APushPullItem, bool);
+				UProperty* NewProp_LockZ = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("LockZ"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(LockZ, APushPullItem), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(LockZ, APushPullItem), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(LockX, APushPullItem, bool);
+				UProperty* NewProp_LockX = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("LockX"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(LockX, APushPullItem), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(LockX, APushPullItem), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(LockY, APushPullItem, bool);
+				UProperty* NewProp_LockY = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("LockY"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(LockY, APushPullItem), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(LockY, APushPullItem), sizeof(bool), true);
 				UProperty* NewProp_yMax = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("yMax"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(yMax, APushPullItem), 0x0010000000000005);
 				UProperty* NewProp_yMin = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("yMin"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(yMin, APushPullItem), 0x0010000000000005);
 				UProperty* NewProp_xMax = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("xMax"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(xMax, APushPullItem), 0x0010000000000005);
@@ -966,7 +982,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_constrainY = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("constrainY"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(constrainY, APushPullItem), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(constrainY, APushPullItem), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(constrainX, APushPullItem, bool);
 				UProperty* NewProp_constrainX = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("constrainX"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(constrainX, APushPullItem), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(constrainX, APushPullItem), sizeof(bool), true);
-				UProperty* NewProp_boxCollider = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("boxCollider"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(boxCollider, APushPullItem), 0x001000000008001d, Z_Construct_UClass_UBoxComponent_NoRegister());
+				UProperty* NewProp_sphereCollider = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("sphereCollider"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(sphereCollider, APushPullItem), 0x001000000008001d, Z_Construct_UClass_USphereComponent_NoRegister());
 				UProperty* NewProp_designatedMesh = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("designatedMesh"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(designatedMesh, APushPullItem), 0x001000000008001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->StaticLink();
@@ -978,35 +994,57 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(NewProp_cappedY, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_cappedY, TEXT("Category"), TEXT("pushableItemVariables"));
 				MetaData->SetValue(NewProp_cappedY, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
+				MetaData->SetValue(NewProp_cappedY, TEXT("ToolTip"), TEXT("@brief pushableItemVariables - informs us when the player has reached the yMin or yMax\nAvailable to be read anywhere to allow the disconnection of the push and pull from the player.\n@param cappedY - boolean check."));
 				MetaData->SetValue(NewProp_cappedX, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_cappedX, TEXT("Category"), TEXT("pushableItemVariables"));
 				MetaData->SetValue(NewProp_cappedX, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
+				MetaData->SetValue(NewProp_cappedX, TEXT("ToolTip"), TEXT("@brief pushableItemVariables - informs us when the player has reached the xMin or xMax\nAvailable to be read anywhere to allow the disconnection of the push and pull from the player.\n@param cappedX - boolean check."));
+				MetaData->SetValue(NewProp_LockZ, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_LockZ, TEXT("Category"), TEXT("pushableItemVariables"));
+				MetaData->SetValue(NewProp_LockZ, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
+				MetaData->SetValue(NewProp_LockZ, TEXT("ToolTip"), TEXT("@brief pushableItemVariables - check if artist wants lock the X position entirely.\n@param LockZ - boolean check."));
+				MetaData->SetValue(NewProp_LockX, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_LockX, TEXT("Category"), TEXT("pushableItemVariables"));
+				MetaData->SetValue(NewProp_LockX, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
+				MetaData->SetValue(NewProp_LockX, TEXT("ToolTip"), TEXT("@brief pushableItemVariables - check if artist wants lock the X position entirely.\n@param LockX - boolean check."));
+				MetaData->SetValue(NewProp_LockY, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_LockY, TEXT("Category"), TEXT("pushableItemVariables"));
+				MetaData->SetValue(NewProp_LockY, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
+				MetaData->SetValue(NewProp_LockY, TEXT("ToolTip"), TEXT("@brief pushableItemVariables - check if artist wants lock the Y position entirely.\n@param LockY - boolean check."));
 				MetaData->SetValue(NewProp_yMax, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_yMax, TEXT("Category"), TEXT("pushableItemVariables"));
 				MetaData->SetValue(NewProp_yMax, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
+				MetaData->SetValue(NewProp_yMax, TEXT("ToolTip"), TEXT("@brief pushableItemVariables - the maximum Y value that the artist wants to constrain the item too.\n@param yMax - float value to constrain the items movement.  - Works if constrainY is selected."));
 				MetaData->SetValue(NewProp_yMin, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_yMin, TEXT("Category"), TEXT("pushableItemVariables"));
 				MetaData->SetValue(NewProp_yMin, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
+				MetaData->SetValue(NewProp_yMin, TEXT("ToolTip"), TEXT("@brief pushableItemVariables - the minimum Y value that the artist wants to constrain the item too.\n@param yMin - float value to constrain the items movement. - Works if constrainY is selected."));
 				MetaData->SetValue(NewProp_xMax, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_xMax, TEXT("Category"), TEXT("pushableItemVariables"));
 				MetaData->SetValue(NewProp_xMax, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
+				MetaData->SetValue(NewProp_xMax, TEXT("ToolTip"), TEXT("@brief pushableItemVariables - the maximum X value that the artist wants to constrain the item too.\n@param xMax - float value to constrain the items movement.  - Works if constrainX is selected."));
 				MetaData->SetValue(NewProp_xMin, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_xMin, TEXT("Category"), TEXT("pushableItemVariables"));
 				MetaData->SetValue(NewProp_xMin, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
+				MetaData->SetValue(NewProp_xMin, TEXT("ToolTip"), TEXT("@brief pushableItemVariables - the minimum X value that the artist wants to constrain the item too.\n@param xMin - float value to constrain the items movement.  - Works if constrainX is selected."));
 				MetaData->SetValue(NewProp_constrainY, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_constrainY, TEXT("Category"), TEXT("pushableItemVariables"));
 				MetaData->SetValue(NewProp_constrainY, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
+				MetaData->SetValue(NewProp_constrainY, TEXT("ToolTip"), TEXT("@brief pushableItemVariables - check if artist wants to constrain the Y position.\n@param constrainY - boolean check."));
 				MetaData->SetValue(NewProp_constrainX, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_constrainX, TEXT("Category"), TEXT("pushableItemVariables"));
 				MetaData->SetValue(NewProp_constrainX, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
-				MetaData->SetValue(NewProp_boxCollider, TEXT("AllowPrivateAccess"), TEXT("true"));
-				MetaData->SetValue(NewProp_boxCollider, TEXT("Category"), TEXT("pushableItemVariables"));
-				MetaData->SetValue(NewProp_boxCollider, TEXT("EditInline"), TEXT("true"));
-				MetaData->SetValue(NewProp_boxCollider, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
+				MetaData->SetValue(NewProp_constrainX, TEXT("ToolTip"), TEXT("@brief pushableItemVariables - check if artist wants to constrain the X position.\n@param constrainX - boolean check."));
+				MetaData->SetValue(NewProp_sphereCollider, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_sphereCollider, TEXT("Category"), TEXT("pushableItemVariables"));
+				MetaData->SetValue(NewProp_sphereCollider, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_sphereCollider, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
+				MetaData->SetValue(NewProp_sphereCollider, TEXT("ToolTip"), TEXT("@brief pushableItemVariables - Check if the player is currently overlapping the push and pull item.\n@param sphereCollider - USphere Component for collision."));
 				MetaData->SetValue(NewProp_designatedMesh, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_designatedMesh, TEXT("Category"), TEXT("pushableItemVariables"));
 				MetaData->SetValue(NewProp_designatedMesh, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_designatedMesh, TEXT("ModuleRelativePath"), TEXT("PushPullItem.h"));
+				MetaData->SetValue(NewProp_designatedMesh, TEXT("ToolTip"), TEXT("@brief pushableItemVariables - The visual representation of this actor in 3D form.\n@param designatedMesh - Static mesh component 3D mesh."));
 #endif
 			}
 		}
@@ -1034,6 +1072,12 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(LockZ, APickUpItem, bool);
+				UProperty* NewProp_LockZ = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("LockZ"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(LockZ, APickUpItem), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(LockZ, APickUpItem), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(LockX, APickUpItem, bool);
+				UProperty* NewProp_LockX = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("LockX"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(LockX, APickUpItem), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(LockX, APickUpItem), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(LockY, APickUpItem, bool);
+				UProperty* NewProp_LockY = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("LockY"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(LockY, APickUpItem), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(LockY, APickUpItem), sizeof(bool), true);
 				UProperty* NewProp_itemType = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("itemType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(itemType, APickUpItem), 0x0010000000000005, Z_Construct_UEnum_Ava_Item());
 				UProperty* NewProp_boxCollider = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("boxCollider"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(boxCollider, APickUpItem), 0x001000000008001d, Z_Construct_UClass_UBoxComponent_NoRegister());
 				UProperty* NewProp_designatedMesh = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("designatedMesh"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(designatedMesh, APickUpItem), 0x001000000008001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
@@ -1044,17 +1088,32 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("pickUpItem.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("pickUpItem.h"));
 				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_LockZ, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_LockZ, TEXT("Category"), TEXT("pickup"));
+				MetaData->SetValue(NewProp_LockZ, TEXT("ModuleRelativePath"), TEXT("pickUpItem.h"));
+				MetaData->SetValue(NewProp_LockZ, TEXT("ToolTip"), TEXT("@brief pickup - check if artist wants lock the X position entirely.\n@param LockZ - boolean check."));
+				MetaData->SetValue(NewProp_LockX, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_LockX, TEXT("Category"), TEXT("pickup"));
+				MetaData->SetValue(NewProp_LockX, TEXT("ModuleRelativePath"), TEXT("pickUpItem.h"));
+				MetaData->SetValue(NewProp_LockX, TEXT("ToolTip"), TEXT("@brief pickup - check if artist wants lock the X position entirely.\n@param LockX - boolean check."));
+				MetaData->SetValue(NewProp_LockY, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_LockY, TEXT("Category"), TEXT("pickup"));
+				MetaData->SetValue(NewProp_LockY, TEXT("ModuleRelativePath"), TEXT("pickUpItem.h"));
+				MetaData->SetValue(NewProp_LockY, TEXT("ToolTip"), TEXT("@brief pickup - check if artist wants lock the Y position entirely.\n@param LockY - boolean check."));
 				MetaData->SetValue(NewProp_itemType, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_itemType, TEXT("Category"), TEXT("pickup"));
 				MetaData->SetValue(NewProp_itemType, TEXT("ModuleRelativePath"), TEXT("pickUpItem.h"));
+				MetaData->SetValue(NewProp_itemType, TEXT("ToolTip"), TEXT("@brief pickup - Used to designate certain types of paths within our game such as 3D representation etc.\n@param itemType - this is box component which will be our root."));
 				MetaData->SetValue(NewProp_boxCollider, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_boxCollider, TEXT("Category"), TEXT("pickup"));
 				MetaData->SetValue(NewProp_boxCollider, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_boxCollider, TEXT("ModuleRelativePath"), TEXT("pickUpItem.h"));
+				MetaData->SetValue(NewProp_boxCollider, TEXT("ToolTip"), TEXT("@brief pickup - box collider which wil act as our root component for the items.\n@param boxCollider - this is box component which will be our root."));
 				MetaData->SetValue(NewProp_designatedMesh, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_designatedMesh, TEXT("Category"), TEXT("pickup"));
 				MetaData->SetValue(NewProp_designatedMesh, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_designatedMesh, TEXT("ModuleRelativePath"), TEXT("pickUpItem.h"));
+				MetaData->SetValue(NewProp_designatedMesh, TEXT("ToolTip"), TEXT("@brief pickup - The visual representation of this actor in 3D form.\n@param designatedMesh - Static mesh component 3D mesh."));
 #endif
 			}
 		}
@@ -1130,6 +1189,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #if WITH_METADATA
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("@brief - Function to read in the value from the timeline and where to place the door.\n@param - Val = Float at current time in timeline."));
 #endif
 		}
 		return ReturnFunction;
@@ -1156,8 +1216,10 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->LinkChild(Z_Construct_UFunction_AMainCharacter_TimelineFloatReturn());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-				UProperty* NewProp_SprintToIdleCurve = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SprintToIdleCurve"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(SprintToIdleCurve, AMainCharacter), 0x0010000000000000, Z_Construct_UClass_UCurveFloat_NoRegister());
-				UProperty* NewProp_RunToIdleCurve = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("RunToIdleCurve"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(RunToIdleCurve, AMainCharacter), 0x0010000000000000, Z_Construct_UClass_UCurveFloat_NoRegister());
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bCanSprint, AMainCharacter, bool);
+				UProperty* NewProp_bCanSprint = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bCanSprint"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bCanSprint, AMainCharacter), 0x0010000000020015, CPP_BOOL_PROPERTY_BITMASK(bCanSprint, AMainCharacter), sizeof(bool), true);
+				UProperty* NewProp_SprintToIdleCurve = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SprintToIdleCurve"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(SprintToIdleCurve, AMainCharacter), 0x0010000000000015, Z_Construct_UClass_UCurveFloat_NoRegister());
+				UProperty* NewProp_RunToIdleCurve = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("RunToIdleCurve"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(RunToIdleCurve, AMainCharacter), 0x0010000000000015, Z_Construct_UClass_UCurveFloat_NoRegister());
 				UProperty* NewProp_SprintToIdleTimeline = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SprintToIdleTimeline"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(SprintToIdleTimeline, AMainCharacter), 0x001000000008001d, Z_Construct_UClass_UTimelineComponent_NoRegister());
 				UProperty* NewProp_RunToIdleTimeline = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("RunToIdleTimeline"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(RunToIdleTimeline, AMainCharacter), 0x001000000008001d, Z_Construct_UClass_UTimelineComponent_NoRegister());
 				UProperty* NewProp_jumpDelay = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("jumpDelay"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(jumpDelay, AMainCharacter), 0x0010000000000005);
@@ -1178,7 +1240,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bStopJumping, AMainCharacter, bool);
 				UProperty* NewProp_bStopJumping = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bStopJumping"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bStopJumping, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bStopJumping, AMainCharacter), sizeof(bool), true);
 				UProperty* NewProp_leftOrRightPlayer = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("leftOrRightPlayer"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(leftOrRightPlayer, AMainCharacter), 0x0010000000020005);
-				UProperty* NewProp_leftOrRightCamera = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("leftOrRightCamera"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(leftOrRightCamera, AMainCharacter), 0x0010000000020005);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsNoLocomotionInput, AMainCharacter, bool);
 				UProperty* NewProp_bIsNoLocomotionInput = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsNoLocomotionInput"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsNoLocomotionInput, AMainCharacter), 0x0010000000000015, CPP_BOOL_PROPERTY_BITMASK(bIsNoLocomotionInput, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsPlayerGoingBack, AMainCharacter, bool);
@@ -1201,8 +1262,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_bIsInInventory = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsInInventory"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsInInventory, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsInInventory, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsIdle, AMainCharacter, bool);
 				UProperty* NewProp_bIsIdle = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsIdle"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsIdle, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsIdle, AMainCharacter), sizeof(bool), true);
-				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsTurning, AMainCharacter, bool);
-				UProperty* NewProp_bIsTurning = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsTurning"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsTurning, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsTurning, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsJumping, AMainCharacter, bool);
 				UProperty* NewProp_bIsJumping = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsJumping"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsJumping, AMainCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsJumping, AMainCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsWalking, AMainCharacter, bool);
@@ -1214,7 +1273,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AMainCharacter_BeginOverLap(), "BeginOverLap"); // 3823987685
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AMainCharacter_ExitOverLap(), "ExitOverLap"); // 1569009058
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AMainCharacter_TimelineFloatReturn(), "TimelineFloatReturn"); // 4066274967
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AMainCharacter_TimelineFloatReturn(), "TimelineFloatReturn"); // 2945827452
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -1222,14 +1281,23 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_bCanSprint, TEXT("Category"), TEXT("CharacterComponents"));
+				MetaData->SetValue(NewProp_bCanSprint, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_bCanSprint, TEXT("ToolTip"), TEXT("@brief can the player sprint currently?"));
+				MetaData->SetValue(NewProp_SprintToIdleCurve, TEXT("Category"), TEXT("CharacterComponents"));
 				MetaData->SetValue(NewProp_SprintToIdleCurve, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_SprintToIdleCurve, TEXT("ToolTip"), TEXT("@brief CharacterComponents -  The curve for the Sprint to Idle timeline. Must go from 0 -> 1\n@param SprintToIdleCurve - curve designated by artist."));
+				MetaData->SetValue(NewProp_RunToIdleCurve, TEXT("Category"), TEXT("CharacterComponents"));
 				MetaData->SetValue(NewProp_RunToIdleCurve, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_SprintToIdleTimeline, TEXT("Category"), TEXT("Components"));
+				MetaData->SetValue(NewProp_RunToIdleCurve, TEXT("ToolTip"), TEXT("@brief CharacterComponents -  The curve for the Run to Idle timeline. Must go from 0 -> 1\n@param RunToIdleCurve - curve designated by artist."));
+				MetaData->SetValue(NewProp_SprintToIdleTimeline, TEXT("Category"), TEXT("CharacterComponents"));
 				MetaData->SetValue(NewProp_SprintToIdleTimeline, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_SprintToIdleTimeline, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_RunToIdleTimeline, TEXT("Category"), TEXT("Components"));
+				MetaData->SetValue(NewProp_SprintToIdleTimeline, TEXT("ToolTip"), TEXT("@brief CharacterComponents - Will allow us to play our timeline via a curve.\n@param SprintToIdleTimeline - pointer to a timeline component."));
+				MetaData->SetValue(NewProp_RunToIdleTimeline, TEXT("Category"), TEXT("CharacterComponents"));
 				MetaData->SetValue(NewProp_RunToIdleTimeline, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_RunToIdleTimeline, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
+				MetaData->SetValue(NewProp_RunToIdleTimeline, TEXT("ToolTip"), TEXT("@brief CharacterComponents - Will allow us to play our timeline via a curve.\n@param RunToIdleTimeline - pointer to a timeline component."));
 				MetaData->SetValue(NewProp_jumpDelay, TEXT("Category"), TEXT("CharacterComponents"));
 				MetaData->SetValue(NewProp_jumpDelay, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(NewProp_jumpDelay, TEXT("ToolTip"), TEXT("@brief CharacterComponents - jump delay before jump is played.\n@param jumpDelay - this will delay the jump"));
@@ -1246,7 +1314,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(NewProp_overlappingSphere, TEXT("Category"), TEXT("CharacterComponents"));
 				MetaData->SetValue(NewProp_overlappingSphere, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_overlappingSphere, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_overlappingSphere, TEXT("ToolTip"), TEXT("@brief CharacterComponents - characters push and pull speed"));
+				MetaData->SetValue(NewProp_overlappingSphere, TEXT("ToolTip"), TEXT("@brief CharacterComponents - Check if the player is currently praying at the specified statue.\n@param overlappingSphere - USphere Component for overlapping events."));
 				MetaData->SetValue(NewProp_cameraDegreeCap, TEXT("Category"), TEXT("Camera"));
 				MetaData->SetValue(NewProp_cameraDegreeCap, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(NewProp_cameraDegreeCap, TEXT("ToolTip"), TEXT("@brief Camera - camera cap for lookRate in degrees, which would stop the camera from going too far down or up."));
@@ -1282,13 +1350,10 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(NewProp_walkSpeed, TEXT("ToolTip"), TEXT("CHARACTER SPEEDS\n--------------------------------------------------------------------------------------------------------------------------\n----------------------------------------------------------------------------------------------------------------------\n@brief CharacterSpeeds - Characters walk speed.\n@param walkSpeed - the speed that is applied when the character enters the bIsWalking state"));
 				MetaData->SetValue(NewProp_bStopJumping, TEXT("Category"), TEXT("PlayerInput"));
 				MetaData->SetValue(NewProp_bStopJumping, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_bStopJumping, TEXT("ToolTip"), TEXT("@brief PlayerInput - Player has entered a go backward command\n@param bIsPlayerGoingBack - is the player giving a command that would move the player backward."));
+				MetaData->SetValue(NewProp_bStopJumping, TEXT("ToolTip"), TEXT("@brief PlayerInput - Player has stopped jumping\n@param bStopJumping - player is no longer jumping."));
 				MetaData->SetValue(NewProp_leftOrRightPlayer, TEXT("Category"), TEXT("PlayerInput"));
 				MetaData->SetValue(NewProp_leftOrRightPlayer, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_leftOrRightPlayer, TEXT("ToolTip"), TEXT("@brief PlayerInput - a value between -1 and 1 that shows the player going left/right."));
-				MetaData->SetValue(NewProp_leftOrRightCamera, TEXT("Category"), TEXT("PlayerInput"));
-				MetaData->SetValue(NewProp_leftOrRightCamera, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_leftOrRightCamera, TEXT("ToolTip"), TEXT("@brief PlayerInput - a value between -0.38 and 0.38 that shows the camera going left/right."));
+				MetaData->SetValue(NewProp_leftOrRightPlayer, TEXT("ToolTip"), TEXT("@brief PlayerInput - a value between -12 and 12 that shows the player going left/right."));
 				MetaData->SetValue(NewProp_bIsNoLocomotionInput, TEXT("Category"), TEXT("PlayerInput"));
 				MetaData->SetValue(NewProp_bIsNoLocomotionInput, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(NewProp_bIsNoLocomotionInput, TEXT("ToolTip"), TEXT("@brief PlayerInput - Player has not entered any locomotion commands.\n@param bIsNoLocomotionInput - are NO commands for locomotion being applied."));
@@ -1322,15 +1387,12 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(NewProp_bIsIdle, TEXT("Category"), TEXT("CharacterStates"));
 				MetaData->SetValue(NewProp_bIsIdle, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(NewProp_bIsIdle, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is Idle\n@param bIsIdle - is the player not moving, this is set based on speed."));
-				MetaData->SetValue(NewProp_bIsTurning, TEXT("Category"), TEXT("CharacterStates"));
-				MetaData->SetValue(NewProp_bIsTurning, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_bIsTurning, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is Turning\n@param bIsTurning - currently does nothing, but will be needed for the 180 turn around."));
 				MetaData->SetValue(NewProp_bIsJumping, TEXT("Category"), TEXT("CharacterStates"));
 				MetaData->SetValue(NewProp_bIsJumping, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(NewProp_bIsJumping, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is Jumping\n@param bIsJumping - is the player pressing the jump triggering button. This will return to false when player releases trigger"));
 				MetaData->SetValue(NewProp_bIsWalking, TEXT("Category"), TEXT("CharacterStates"));
 				MetaData->SetValue(NewProp_bIsWalking, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
-				MetaData->SetValue(NewProp_bIsWalking, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is Walking\n@param bIsWalking - is the player running, this is set based on speed && when trigger is pressed (Trigger for keyboard)"));
+				MetaData->SetValue(NewProp_bIsWalking, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is Walking\n@param bIsWalking - is the player Walking, this is set based on speed && when trigger is pressed (Trigger for keyboard)"));
 				MetaData->SetValue(NewProp_bIsRunning, TEXT("Category"), TEXT("CharacterStates"));
 				MetaData->SetValue(NewProp_bIsRunning, TEXT("ModuleRelativePath"), TEXT("MainCharacter.h"));
 				MetaData->SetValue(NewProp_bIsRunning, TEXT("ToolTip"), TEXT("@brief CharacterState - Character is Running\n@param bIsRunning - is the player running, this is set based on speed."));
@@ -1345,23 +1407,6 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AMainCharacter(Z_Construct_UClass_AMainCharacter, &AMainCharacter::StaticClass, TEXT("AMainCharacter"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AMainCharacter);
-	UFunction* Z_Construct_UFunction_UMainGameUI_Play()
-	{
-		UObject* Outer=Z_Construct_UClass_UMainGameUI();
-		static UFunction* ReturnFunction = NULL;
-		if (!ReturnFunction)
-		{
-			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("Play"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535);
-			ReturnFunction->Bind();
-			ReturnFunction->StaticLink();
-#if WITH_METADATA
-			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
-			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("GameUI"));
-			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("MainGameUI.h"));
-#endif
-		}
-		return ReturnFunction;
-	}
 	UClass* Z_Construct_UClass_UMainGameUI_NoRegister()
 	{
 		return UMainGameUI::StaticClass();
@@ -1379,12 +1424,10 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20901080;
 
-				OuterClass->LinkChild(Z_Construct_UFunction_UMainGameUI_Play());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_playerReference = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("playerReference"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(playerReference, UMainGameUI), 0x0010000000000001, Z_Construct_UClass_AMainCharacter_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UMainGameUI_Play(), "Play"); // 2260522241
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -1392,7 +1435,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("MainGameUI.h"));
 				MetaData->SetValue(NewProp_playerReference, TEXT("Category"), TEXT("GameUI"));
 				MetaData->SetValue(NewProp_playerReference, TEXT("ModuleRelativePath"), TEXT("MainGameUI.h"));
-				MetaData->SetValue(NewProp_playerReference, TEXT("ToolTip"), TEXT("UFUNCTION(BlueprintCallable, BlueprintImplementableEvent,  Category = MyUUserWidgetClass)\n       void Construct();"));
+				MetaData->SetValue(NewProp_playerReference, TEXT("ToolTip"), TEXT("@brief GameUI - Player reference to be used within the functions of this class.\n@param playerReference - Player pointer."));
 #endif
 			}
 		}
@@ -1414,6 +1457,25 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("MyUUserWidgetClass"));
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("MainMenu.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("@brief Called when player clicks \"Play\", will load up the palace level."));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UMainMenu_Quit()
+	{
+		UObject* Outer=Z_Construct_UClass_UMainMenu();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("Quit"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("MyUUserWidgetClass"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("MainMenu.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("@brief Called when player clicks \"Quit\", will quit the game."));
 #endif
 		}
 		return ReturnFunction;
@@ -1436,8 +1498,10 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->ClassFlags |= 0x20901080;
 
 				OuterClass->LinkChild(Z_Construct_UFunction_UMainMenu_Play());
+				OuterClass->LinkChild(Z_Construct_UFunction_UMainMenu_Quit());
 
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UMainMenu_Play(), "Play"); // 1071271182
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UMainMenu_Play(), "Play"); // 3136904398
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UMainMenu_Quit(), "Quit"); // 1249445651
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -1485,17 +1549,21 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(NewProp_bItemOffered, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_bItemOffered, TEXT("Category"), TEXT("OfferingPitVariables"));
 				MetaData->SetValue(NewProp_bItemOffered, TEXT("ModuleRelativePath"), TEXT("OfferingPit.h"));
+				MetaData->SetValue(NewProp_bItemOffered, TEXT("ToolTip"), TEXT("@brief OfferingPitVariables -  check if the item has been offered.\n@param bItemOffered - boolean check."));
 				MetaData->SetValue(NewProp_requiredItem, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_requiredItem, TEXT("Category"), TEXT("OfferingPitVariables"));
 				MetaData->SetValue(NewProp_requiredItem, TEXT("ModuleRelativePath"), TEXT("OfferingPit.h"));
+				MetaData->SetValue(NewProp_requiredItem, TEXT("ToolTip"), TEXT("@brief OfferingPitVariables -  required item to complete this puzzle.\n@param requiredItem - an Item placed in the scene."));
 				MetaData->SetValue(NewProp_overlappingSphere, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_overlappingSphere, TEXT("Category"), TEXT("OfferingPitVariables"));
 				MetaData->SetValue(NewProp_overlappingSphere, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_overlappingSphere, TEXT("ModuleRelativePath"), TEXT("OfferingPit.h"));
+				MetaData->SetValue(NewProp_overlappingSphere, TEXT("ToolTip"), TEXT("@brief OfferingPitVariables - Check if the player is currently overlapping the offering statue\n@param overlappingSphere - USphere Component for collision."));
 				MetaData->SetValue(NewProp_offeringPitMesh, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_offeringPitMesh, TEXT("Category"), TEXT("OfferingPitVariables"));
 				MetaData->SetValue(NewProp_offeringPitMesh, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_offeringPitMesh, TEXT("ModuleRelativePath"), TEXT("OfferingPit.h"));
+				MetaData->SetValue(NewProp_offeringPitMesh, TEXT("ToolTip"), TEXT("@brief StatueVariables - The visual representation of this actor in 3D form.\n@param designatedMesh - Static mesh component 3D mesh."));
 #endif
 			}
 		}
@@ -1527,6 +1595,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_bItemOffered = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bItemOffered"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bItemOffered, AOfferingStatue), 0x0010000000020015, CPP_BOOL_PROPERTY_BITMASK(bItemOffered, AOfferingStatue), sizeof(bool), true);
 				UProperty* NewProp_requiredItem = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("requiredItem"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(requiredItem, AOfferingStatue), 0x0010000000000015, Z_Construct_UEnum_Ava_Item());
 				UProperty* NewProp_overlappingSphere = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("overlappingSphere"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(overlappingSphere, AOfferingStatue), 0x001000000008001d, Z_Construct_UClass_USphereComponent_NoRegister());
+				UProperty* NewProp_OfferingItem = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("OfferingItem"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(OfferingItem, AOfferingStatue), 0x001000000008001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
 				UProperty* NewProp_BuddaStatue = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("BuddaStatue"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(BuddaStatue, AOfferingStatue), 0x001000000008001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
 				UProperty* NewProp_Alter = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Alter"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(Alter, AOfferingStatue), 0x001000000008001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
@@ -1539,21 +1608,31 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(NewProp_bItemOffered, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_bItemOffered, TEXT("Category"), TEXT("StatueVariables"));
 				MetaData->SetValue(NewProp_bItemOffered, TEXT("ModuleRelativePath"), TEXT("OfferingStatue.h"));
+				MetaData->SetValue(NewProp_bItemOffered, TEXT("ToolTip"), TEXT("@brief StatueVariables -  check if the item has been offered.\n@param bItemOffered - boolean check."));
 				MetaData->SetValue(NewProp_requiredItem, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_requiredItem, TEXT("Category"), TEXT("StatueVariables"));
 				MetaData->SetValue(NewProp_requiredItem, TEXT("ModuleRelativePath"), TEXT("OfferingStatue.h"));
+				MetaData->SetValue(NewProp_requiredItem, TEXT("ToolTip"), TEXT("@brief StatueVariables -  required item to complete this puzzle.\n@param requiredItem - an Item placed in the scene."));
 				MetaData->SetValue(NewProp_overlappingSphere, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_overlappingSphere, TEXT("Category"), TEXT("StatueVariables"));
 				MetaData->SetValue(NewProp_overlappingSphere, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_overlappingSphere, TEXT("ModuleRelativePath"), TEXT("OfferingStatue.h"));
+				MetaData->SetValue(NewProp_overlappingSphere, TEXT("ToolTip"), TEXT("@brief StatueVariables - Check if the player is currently overlapping the offering statue\n@param overlappingSphere - USphere Component for collision."));
+				MetaData->SetValue(NewProp_OfferingItem, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_OfferingItem, TEXT("Category"), TEXT("StatueVariables"));
+				MetaData->SetValue(NewProp_OfferingItem, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_OfferingItem, TEXT("ModuleRelativePath"), TEXT("OfferingStatue.h"));
+				MetaData->SetValue(NewProp_OfferingItem, TEXT("ToolTip"), TEXT("@brief StatueVariables - The visual representation of this actors offering item in 3D form.\nto be set when the player has offered item up.\n@param designatedMesh - Static mesh component 3D mesh."));
 				MetaData->SetValue(NewProp_BuddaStatue, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_BuddaStatue, TEXT("Category"), TEXT("StatueVariables"));
 				MetaData->SetValue(NewProp_BuddaStatue, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_BuddaStatue, TEXT("ModuleRelativePath"), TEXT("OfferingStatue.h"));
+				MetaData->SetValue(NewProp_BuddaStatue, TEXT("ToolTip"), TEXT("@brief StatueVariables - The visual representation of this actors Budda statue in 3D form.\n@param designatedMesh - Static mesh component 3D mesh."));
 				MetaData->SetValue(NewProp_Alter, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_Alter, TEXT("Category"), TEXT("StatueVariables"));
 				MetaData->SetValue(NewProp_Alter, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_Alter, TEXT("ModuleRelativePath"), TEXT("OfferingStatue.h"));
+				MetaData->SetValue(NewProp_Alter, TEXT("ToolTip"), TEXT("@brief StatueVariables - The visual representation of this actors alter in 3D form.\n@param designatedMesh - Static mesh component 3D mesh."));
 #endif
 			}
 		}
@@ -1562,6 +1641,64 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AOfferingStatue(Z_Construct_UClass_AOfferingStatue, &AOfferingStatue::StaticClass, TEXT("AOfferingStatue"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AOfferingStatue);
+	UClass* Z_Construct_UClass_APaintingObject_NoRegister()
+	{
+		return APaintingObject::StaticClass();
+	}
+	UClass* Z_Construct_UClass_APaintingObject()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_Ava();
+			OuterClass = APaintingObject::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bPaintingFilled, APaintingObject, bool);
+				UProperty* NewProp_bPaintingFilled = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bPaintingFilled"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bPaintingFilled, APaintingObject), 0x0010000000020015, CPP_BOOL_PROPERTY_BITMASK(bPaintingFilled, APaintingObject), sizeof(bool), true);
+				UProperty* NewProp_ScrollItems = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ScrollItems"), RF_Public|RF_Transient|RF_MarkAsNative) UArrayProperty(CPP_PROPERTY_BASE(ScrollItems, APaintingObject), 0x0010000000000015);
+				UProperty* NewProp_ScrollItems_Inner = new(EC_InternalUseOnlyConstructor, NewProp_ScrollItems, TEXT("ScrollItems"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000, Z_Construct_UClass_APickUpItem_NoRegister());
+				UProperty* NewProp_boxCollider = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("boxCollider"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(boxCollider, APaintingObject), 0x001000000008001d, Z_Construct_UClass_UBoxComponent_NoRegister());
+				UProperty* NewProp_designatedMesh = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("designatedMesh"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(designatedMesh, APaintingObject), 0x001000000008001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("PaintingObject.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("PaintingObject.h"));
+				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_bPaintingFilled, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_bPaintingFilled, TEXT("Category"), TEXT("PaintingObjectVariables"));
+				MetaData->SetValue(NewProp_bPaintingFilled, TEXT("ModuleRelativePath"), TEXT("PaintingObject.h"));
+				MetaData->SetValue(NewProp_bPaintingFilled, TEXT("ToolTip"), TEXT("@brief PaintingObjectVariables - Check if painting has been filled.\n@param bPaintingFilled - boolean check."));
+				MetaData->SetValue(NewProp_ScrollItems, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_ScrollItems, TEXT("Category"), TEXT("PaintingObjectVariables"));
+				MetaData->SetValue(NewProp_ScrollItems, TEXT("ModuleRelativePath"), TEXT("PaintingObject.h"));
+				MetaData->SetValue(NewProp_ScrollItems, TEXT("ToolTip"), TEXT("@brief PaintingObjectVariables - The PickUp Items that are required items for this particular\npuzzle which can be found round the black room. Pointers to the already spawned items.\n@param ScrollItems - An array of pick up items Actors."));
+				MetaData->SetValue(NewProp_boxCollider, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_boxCollider, TEXT("Category"), TEXT("PaintingObjectVariables"));
+				MetaData->SetValue(NewProp_boxCollider, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_boxCollider, TEXT("ModuleRelativePath"), TEXT("PaintingObject.h"));
+				MetaData->SetValue(NewProp_boxCollider, TEXT("ToolTip"), TEXT("@brief PaintingObjectVariables - box collider which wil act as our root component for the object.\n@param boxCollider - this is box component which will be our root."));
+				MetaData->SetValue(NewProp_designatedMesh, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_designatedMesh, TEXT("Category"), TEXT("PaintingObjectVariables"));
+				MetaData->SetValue(NewProp_designatedMesh, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_designatedMesh, TEXT("ModuleRelativePath"), TEXT("PaintingObject.h"));
+				MetaData->SetValue(NewProp_designatedMesh, TEXT("ToolTip"), TEXT("@brief PaintingObjectVariables - The visual representation of this actor in 3D form.\n@param designatedMesh - Static mesh component 3D mesh."));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_APaintingObject(Z_Construct_UClass_APaintingObject, &APaintingObject::StaticClass, TEXT("APaintingObject"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(APaintingObject);
 	UClass* Z_Construct_UClass_AStatueObject_NoRegister()
 	{
 		return AStatueObject::StaticClass();
@@ -1581,11 +1718,13 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bCanPlayerPray, AStatueObject, bool);
+				UProperty* NewProp_bCanPlayerPray = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bCanPlayerPray"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bCanPlayerPray, AStatueObject), 0x0010000000020015, CPP_BOOL_PROPERTY_BITMASK(bCanPlayerPray, AStatueObject), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(isPlayerPraying, AStatueObject, bool);
+				UProperty* NewProp_isPlayerPraying = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("isPlayerPraying"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(isPlayerPraying, AStatueObject), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(isPlayerPraying, AStatueObject), sizeof(bool), true);
 				UProperty* NewProp_overlappingSphere = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("overlappingSphere"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(overlappingSphere, AStatueObject), 0x00100000000a001d, Z_Construct_UClass_USphereComponent_NoRegister());
 				UProperty* NewProp_statueName = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("statueName"), RF_Public|RF_Transient|RF_MarkAsNative) UStrProperty(CPP_PROPERTY_BASE(statueName, AStatueObject), 0x0010000000000005);
 				UProperty* NewProp_designatedMesh = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("designatedMesh"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(designatedMesh, AStatueObject), 0x001000000008001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
-				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bCanPlayerPray, AStatueObject, bool);
-				UProperty* NewProp_bCanPlayerPray = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bCanPlayerPray"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bCanPlayerPray, AStatueObject), 0x0010000000020015, CPP_BOOL_PROPERTY_BITMASK(bCanPlayerPray, AStatueObject), sizeof(bool), true);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->StaticLink();
 #if WITH_METADATA
@@ -1593,20 +1732,28 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("StatueObject.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("StatueObject.h"));
 				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_bCanPlayerPray, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_bCanPlayerPray, TEXT("Category"), TEXT("StatueVariables"));
+				MetaData->SetValue(NewProp_bCanPlayerPray, TEXT("ModuleRelativePath"), TEXT("StatueObject.h"));
+				MetaData->SetValue(NewProp_bCanPlayerPray, TEXT("ToolTip"), TEXT("@brief StatueVariables - Check if the player can play at this current statue.\n@param bCanPlayerPray - boolean check."));
+				MetaData->SetValue(NewProp_isPlayerPraying, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_isPlayerPraying, TEXT("Category"), TEXT("StatueVariables"));
+				MetaData->SetValue(NewProp_isPlayerPraying, TEXT("ModuleRelativePath"), TEXT("StatueObject.h"));
+				MetaData->SetValue(NewProp_isPlayerPraying, TEXT("ToolTip"), TEXT("@brief StatueVariables - Check if the player is currently praying at the specified statue.\n@param isPlayerPraying - boolean check."));
 				MetaData->SetValue(NewProp_overlappingSphere, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_overlappingSphere, TEXT("Category"), TEXT("StatueVariables"));
 				MetaData->SetValue(NewProp_overlappingSphere, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_overlappingSphere, TEXT("ModuleRelativePath"), TEXT("StatueObject.h"));
+				MetaData->SetValue(NewProp_overlappingSphere, TEXT("ToolTip"), TEXT("@brief StatueVariables - Check if the player is currently praying at the specified statue.\n@param overlappingSphere - USphere Component for collision."));
 				MetaData->SetValue(NewProp_statueName, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_statueName, TEXT("Category"), TEXT("StatueVariables"));
 				MetaData->SetValue(NewProp_statueName, TEXT("ModuleRelativePath"), TEXT("StatueObject.h"));
+				MetaData->SetValue(NewProp_statueName, TEXT("ToolTip"), TEXT("@brief StatueVariables - Name of the staue - Which room its in\n@param statueName - Used for debugging."));
 				MetaData->SetValue(NewProp_designatedMesh, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_designatedMesh, TEXT("Category"), TEXT("StatueVariables"));
 				MetaData->SetValue(NewProp_designatedMesh, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_designatedMesh, TEXT("ModuleRelativePath"), TEXT("StatueObject.h"));
-				MetaData->SetValue(NewProp_bCanPlayerPray, TEXT("AllowPrivateAccess"), TEXT("true"));
-				MetaData->SetValue(NewProp_bCanPlayerPray, TEXT("Category"), TEXT("StatueVariables"));
-				MetaData->SetValue(NewProp_bCanPlayerPray, TEXT("ModuleRelativePath"), TEXT("StatueObject.h"));
+				MetaData->SetValue(NewProp_designatedMesh, TEXT("ToolTip"), TEXT("@brief StatueVariables - The visual representation of this actor in 3D form.\n@param designatedMesh - Static mesh component 3D mesh."));
 #endif
 			}
 		}
@@ -1630,16 +1777,15 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			if (!(OuterClass->ClassFlags & CLASS_Constructed))
 			{
 				UObjectForceRegistration(OuterClass);
-				OuterClass->ClassFlags |= 0x20900080;
+				OuterClass->ClassFlags |= 0x20900081;
 
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bPuzzleComplete, APuzzle, bool);
 				UProperty* NewProp_bPuzzleComplete = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bPuzzleComplete"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bPuzzleComplete, APuzzle), 0x0010000000000015, CPP_BOOL_PROPERTY_BITMASK(bPuzzleComplete, APuzzle), sizeof(bool), true);
-				UProperty* NewProp_playerReference = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("playerReference"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(playerReference, APuzzle), 0x0010000000000015, Z_Construct_UClass_AMainCharacter_NoRegister());
 				UProperty* NewProp_DesignatedDoor = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("DesignatedDoor"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(DesignatedDoor, APuzzle), 0x0010000000000015, Z_Construct_UClass_ADoor_NoRegister());
 				UProperty* NewProp_DesignatedStatue = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("DesignatedStatue"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(DesignatedStatue, APuzzle), 0x0010000000000015, Z_Construct_UClass_AStatueObject_NoRegister());
-				UProperty* NewProp_boxCollider = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("boxCollider"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(boxCollider, APuzzle), 0x001000000008001d, Z_Construct_UClass_UBoxComponent_NoRegister());
+				UProperty* NewProp_boxComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("boxComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(boxComponent, APuzzle), 0x001000000008001d, Z_Construct_UClass_UBoxComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->StaticLink();
 #if WITH_METADATA
@@ -1650,19 +1796,20 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(NewProp_bPuzzleComplete, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_bPuzzleComplete, TEXT("Category"), TEXT("PuzzleVariables"));
 				MetaData->SetValue(NewProp_bPuzzleComplete, TEXT("ModuleRelativePath"), TEXT("Puzzle.h"));
-				MetaData->SetValue(NewProp_playerReference, TEXT("AllowPrivateAccess"), TEXT("true"));
-				MetaData->SetValue(NewProp_playerReference, TEXT("Category"), TEXT("PuzzleVariables"));
-				MetaData->SetValue(NewProp_playerReference, TEXT("ModuleRelativePath"), TEXT("Puzzle.h"));
+				MetaData->SetValue(NewProp_bPuzzleComplete, TEXT("ToolTip"), TEXT("@brief PuzzleVariables - check if the puzzle has been completed.\n@param bPuzzleComplete - boolean check."));
 				MetaData->SetValue(NewProp_DesignatedDoor, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_DesignatedDoor, TEXT("Category"), TEXT("PuzzleVariables"));
 				MetaData->SetValue(NewProp_DesignatedDoor, TEXT("ModuleRelativePath"), TEXT("Puzzle.h"));
+				MetaData->SetValue(NewProp_DesignatedDoor, TEXT("ToolTip"), TEXT("@brief PuzzleVariables - Each puzzle will require a door that is required to be opened\nthis is a pointer to an actor within the game.\n@param DesignatedDoor - an Instance of ADoor that is within the scene related to this puzzle."));
 				MetaData->SetValue(NewProp_DesignatedStatue, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_DesignatedStatue, TEXT("Category"), TEXT("PuzzleVariables"));
 				MetaData->SetValue(NewProp_DesignatedStatue, TEXT("ModuleRelativePath"), TEXT("Puzzle.h"));
-				MetaData->SetValue(NewProp_boxCollider, TEXT("AllowPrivateAccess"), TEXT("true"));
-				MetaData->SetValue(NewProp_boxCollider, TEXT("Category"), TEXT("PuzzleVariables"));
-				MetaData->SetValue(NewProp_boxCollider, TEXT("EditInline"), TEXT("true"));
-				MetaData->SetValue(NewProp_boxCollider, TEXT("ModuleRelativePath"), TEXT("Puzzle.h"));
+				MetaData->SetValue(NewProp_DesignatedStatue, TEXT("ToolTip"), TEXT("@brief PuzzleVariables - Each puzzle will require a statue to pray at, this is a pointer to an actor within the game.\n@param DesignatedStatue - an Instance of AStatueObject that is within the scene related to this puzzle."));
+				MetaData->SetValue(NewProp_boxComponent, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_boxComponent, TEXT("Category"), TEXT("PuzzleVariables"));
+				MetaData->SetValue(NewProp_boxComponent, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_boxComponent, TEXT("ModuleRelativePath"), TEXT("Puzzle.h"));
+				MetaData->SetValue(NewProp_boxComponent, TEXT("ToolTip"), TEXT("@brief PuzzleVariables - box collider which wil act as our root component for the puzzles.\n@param boxCollider - this is box component which will be our root."));
 #endif
 			}
 		}
@@ -1689,12 +1836,19 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->ClassFlags |= 0x20900080;
 
 
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_painting = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("painting"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(painting, ABlackPuzzle), 0x0040000000000015, Z_Construct_UClass_APaintingObject_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("BlackPuzzle.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("BlackPuzzle.h"));
 				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_painting, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_painting, TEXT("Category"), TEXT("BlackPuzzleVariables"));
+				MetaData->SetValue(NewProp_painting, TEXT("ModuleRelativePath"), TEXT("BlackPuzzle.h"));
+				MetaData->SetValue(NewProp_painting, TEXT("ToolTip"), TEXT("@brief BlackPuzzleVariables - The intended item to be filled in by the player by offering iutems found in the black room.\n@param painting - APaintingObject item that the player fills by dropping items."));
 #endif
 			}
 		}
@@ -1733,13 +1887,14 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("BluePuzzle.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("BluePuzzle.h"));
 				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
-				MetaData->SetValue(OuterClass, TEXT("ToolTip"), TEXT("//USTRUCT(BlueprintType)\n//struct FPushCombo\n//{\n//     GENERATED_BODY()\n//public:\n//     UPROPERTY(BlueprintReadWrite, Category = \"pushCombo\")\n//     APushPullItem* item;\n//     UPROPERTY(BlueprintReadWrite, Category = \"pushCombo\")\n//     UBoxComponent* boxCollider;\n//};"));
 				MetaData->SetValue(NewProp_pushPullObjectsTargets, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_pushPullObjectsTargets, TEXT("Category"), TEXT("BluePuzzleVariables"));
 				MetaData->SetValue(NewProp_pushPullObjectsTargets, TEXT("ModuleRelativePath"), TEXT("BluePuzzle.h"));
+				MetaData->SetValue(NewProp_pushPullObjectsTargets, TEXT("ToolTip"), TEXT("@brief BluePuzzleVariables - the triggers that will show an event when overlapped with the item.\n@param pushPullObjectsTargets - An array of TriggerBox's."));
 				MetaData->SetValue(NewProp_pushPullObjects, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_pushPullObjects, TEXT("Category"), TEXT("BluePuzzleVariables"));
 				MetaData->SetValue(NewProp_pushPullObjects, TEXT("ModuleRelativePath"), TEXT("BluePuzzle.h"));
+				MetaData->SetValue(NewProp_pushPullObjects, TEXT("ToolTip"), TEXT("@brief BluePuzzleVariables - the push and pull objects that can be found in the blue room, pointers to actors within the scene.\n@param pushPullObjects - An array of PushPullItem Actors."));
 #endif
 			}
 		}
@@ -1810,6 +1965,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(NewProp_offeringPit, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_offeringPit, TEXT("Category"), TEXT("RedPuzzleVariables"));
 				MetaData->SetValue(NewProp_offeringPit, TEXT("ModuleRelativePath"), TEXT("RedPuzzle.h"));
+				MetaData->SetValue(NewProp_offeringPit, TEXT("ToolTip"), TEXT("@brief RedPuzzleVariables - The offering pit that is required for this particular puzzle as it's requirement for completion.\n@param offeringPit - An offering pit actor that contains the completion methods for this puzzle."));
 #endif
 			}
 		}
@@ -1837,6 +1993,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_secondDoorToOpen = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("secondDoorToOpen"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(secondDoorToOpen, AWhitePuzzle), 0x0040000000000015, Z_Construct_UClass_ADoor_NoRegister());
 				UProperty* NewProp_Offerings = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Offerings"), RF_Public|RF_Transient|RF_MarkAsNative) UArrayProperty(CPP_PROPERTY_BASE(Offerings, AWhitePuzzle), 0x0040000000000015);
 				UProperty* NewProp_Offerings_Inner = new(EC_InternalUseOnlyConstructor, NewProp_Offerings, TEXT("Offerings"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000, Z_Construct_UClass_AOfferingStatue_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
@@ -1846,9 +2003,14 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("WhitePuzzle.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("WhitePuzzle.h"));
 				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_secondDoorToOpen, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_secondDoorToOpen, TEXT("Category"), TEXT("WhitePuzzleVariables"));
+				MetaData->SetValue(NewProp_secondDoorToOpen, TEXT("ModuleRelativePath"), TEXT("WhitePuzzle.h"));
+				MetaData->SetValue(NewProp_secondDoorToOpen, TEXT("ToolTip"), TEXT("@brief Unlike the other rooms, the white room requires two doors, one to open to the hallway.\nwhilst the other is to open the next room accross the hallway.\n@param secondDoorToOpen -ADoor actor."));
 				MetaData->SetValue(NewProp_Offerings, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_Offerings, TEXT("Category"), TEXT("WhitePuzzleVariables"));
 				MetaData->SetValue(NewProp_Offerings, TEXT("ModuleRelativePath"), TEXT("WhitePuzzle.h"));
+				MetaData->SetValue(NewProp_Offerings, TEXT("ToolTip"), TEXT("@brief The offering statues that have required items for this particular puzzle which can be found round the white room.\n@param Offerings - An array of Offering Statue Actors."));
 #endif
 			}
 		}
@@ -1857,6 +2019,62 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AWhitePuzzle(Z_Construct_UClass_AWhitePuzzle, &AWhitePuzzle::StaticClass, TEXT("AWhitePuzzle"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AWhitePuzzle);
+	UClass* Z_Construct_UClass_AYellowPuzzle_NoRegister()
+	{
+		return AYellowPuzzle::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AYellowPuzzle()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_APuzzle();
+			Z_Construct_UPackage__Script_Ava();
+			OuterClass = AYellowPuzzle::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_requiredWaitingTime = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("requiredWaitingTime"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(requiredWaitingTime, AYellowPuzzle), 0x0010000000000015);
+				UProperty* NewProp_ThroneItem = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ThroneItem"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ThroneItem, AYellowPuzzle), 0x0010000000000015, Z_Construct_UClass_APickUpItem_NoRegister());
+				UProperty* NewProp_overlappingSphere = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("overlappingSphere"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(overlappingSphere, AYellowPuzzle), 0x001000000008001d, Z_Construct_UClass_USphereComponent_NoRegister());
+				UProperty* NewProp_waitingPlatform = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("waitingPlatform"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(waitingPlatform, AYellowPuzzle), 0x001000000008001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("YellowPuzzle.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("YellowPuzzle.h"));
+				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_requiredWaitingTime, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_requiredWaitingTime, TEXT("Category"), TEXT("YellowPuzzleVariables"));
+				MetaData->SetValue(NewProp_requiredWaitingTime, TEXT("ModuleRelativePath"), TEXT("YellowPuzzle.h"));
+				MetaData->SetValue(NewProp_requiredWaitingTime, TEXT("ToolTip"), TEXT("@brief YellowPuzzleVariables - The intended wait time for the user\n@param requiredWaitingTime - Time required for the player to wait to complete the game."));
+				MetaData->SetValue(NewProp_ThroneItem, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_ThroneItem, TEXT("Category"), TEXT("YellowPuzzleVariables"));
+				MetaData->SetValue(NewProp_ThroneItem, TEXT("ModuleRelativePath"), TEXT("YellowPuzzle.h"));
+				MetaData->SetValue(NewProp_ThroneItem, TEXT("ToolTip"), TEXT("@brief YellowPuzzleVariables - The intended item to be picked up by the user.\nartists to choose where to place.\n@param ThroneItem - APickUpItem item that the play picks up by waiting."));
+				MetaData->SetValue(NewProp_overlappingSphere, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_overlappingSphere, TEXT("Category"), TEXT("YellowPuzzleVariables"));
+				MetaData->SetValue(NewProp_overlappingSphere, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_overlappingSphere, TEXT("ModuleRelativePath"), TEXT("YellowPuzzle.h"));
+				MetaData->SetValue(NewProp_overlappingSphere, TEXT("ToolTip"), TEXT("@brief YellowPuzzleVariables - Colliding sphere to indicate to us when the player will hit the mat\nAlign with the waiting platform static mesh that the artists decide.\n@param overlappingSphere - this is the overlapping sphere."));
+				MetaData->SetValue(NewProp_waitingPlatform, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_waitingPlatform, TEXT("Category"), TEXT("YellowPuzzleVariables"));
+				MetaData->SetValue(NewProp_waitingPlatform, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_waitingPlatform, TEXT("ModuleRelativePath"), TEXT("YellowPuzzle.h"));
+				MetaData->SetValue(NewProp_waitingPlatform, TEXT("ToolTip"), TEXT("@brief YellowPuzzleVariables - this is the static mesh component which the\nplayer needs to stand on, the overlappingsphere to match the size of this.\nMesh inteded to be a circle mat.\n@param waitingPlatform - mesh for platform"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AYellowPuzzle(Z_Construct_UClass_AYellowPuzzle, &AYellowPuzzle::StaticClass, TEXT("AYellowPuzzle"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AYellowPuzzle);
 	UPackage* Z_Construct_UPackage__Script_Ava()
 	{
 		static UPackage* ReturnPackage = NULL;
@@ -1865,8 +2083,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Ava")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xB800D11F;
-			Guid.B = 0x4968E9FF;
+			Guid.A = 0x4210E0BA;
+			Guid.B = 0x6B472762;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

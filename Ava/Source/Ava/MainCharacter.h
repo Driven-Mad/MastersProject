@@ -1,13 +1,12 @@
-// Fill out your copyright notice in the Description page of Project Settings.
 //--------------------------------------------------------------------------------------------------------------------------
 /// @file MainCharacter.h
 /// @brief This is our main character class. It allows us to implement movement and 
 /// states of the character for manipulation in other classes
 /// @author Lloyd Phillips
-/// @version 0.3
+/// @version 1.0
 /// @date 12/05/17
 /// Revision History:
-/// Currently in working progress, Controller is workingish. Need to implement a few other things. 
+/// No current revision history other than creation. 
 //--------------------------------------------------------------------------------------------------------------------------
 #pragma once
 
@@ -23,7 +22,7 @@ class AVA_API AMainCharacter : public ACharacter
 
 public:
 	//----------------------------------------------------------------------------------------------------------------------
-	/// @brief ctor for turtle class, Sets default values for this character's properties
+	/// @brief ctor for mainc character class, Sets default values for this character's properties
 	//----------------------------------------------------------------------------------------------------------------------
 	AMainCharacter();
 	//----------------------------------------------------------------------------------------------------------------------
@@ -91,14 +90,6 @@ protected:
 	//----------------------------------------------------------------------------------------------------------------------
 	void StopSprinting();
 	//----------------------------------------------------------------------------------------------------------------------
-	/// @brief Function to turn around 180 degrees. (WIP)
-	//----------------------------------------------------------------------------------------------------------------------
-	void TurnAround();
-	//----------------------------------------------------------------------------------------------------------------------
-	/// @brief Function to stop turning (WIP)
-	//----------------------------------------------------------------------------------------------------------------------
-	void StopTurning();
-	//----------------------------------------------------------------------------------------------------------------------
 	/// @brief Function to turn the camera. 
 	/// @param value - refers to the axis mapping given through the input window of project settings (either 0,1,-1,)
 	//----------------------------------------------------------------------------------------------------------------------
@@ -146,7 +137,7 @@ public:
 		bool bIsRunning;
 	//----------------------------------------------------------------------------------------------------------------------
 	/// @brief CharacterState - Character is Walking
-	/// @param bIsWalking - is the player running, this is set based on speed && when trigger is pressed (Trigger for keyboard)
+	/// @param bIsWalking - is the player Walking, this is set based on speed && when trigger is pressed (Trigger for keyboard)
 	//----------------------------------------------------------------------------------------------------------------------
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterStates)
 		bool bIsWalking;
@@ -156,12 +147,6 @@ public:
 	//----------------------------------------------------------------------------------------------------------------------
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterStates)
 		bool bIsJumping;
-	//----------------------------------------------------------------------------------------------------------------------
-	/// @brief CharacterState - Character is Turning
-	/// @param bIsTurning - currently does nothing, but will be needed for the 180 turn around. 
-	//----------------------------------------------------------------------------------------------------------------------
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterStates)
-		bool bIsTurning;
 	//----------------------------------------------------------------------------------------------------------------------
 	/// @brief CharacterState - Character is Idle
 	/// @param bIsIdle - is the player not moving, this is set based on speed. 
@@ -231,18 +216,13 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = PlayerInput)
 		bool bIsNoLocomotionInput;
 	//----------------------------------------------------------------------------------------------------------------------
-	/// @brief PlayerInput - a value between -0.38 and 0.38 that shows the camera going left/right.
-	//----------------------------------------------------------------------------------------------------------------------
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = PlayerInput)
-		float leftOrRightCamera;
-	//----------------------------------------------------------------------------------------------------------------------
-	/// @brief PlayerInput - a value between -1 and 1 that shows the player going left/right.
+	/// @brief PlayerInput - a value between -12 and 12 that shows the player going left/right.
 	//----------------------------------------------------------------------------------------------------------------------
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = PlayerInput)
 		float leftOrRightPlayer;
 	//----------------------------------------------------------------------------------------------------------------------
-	/// @brief PlayerInput - Player has entered a go backward command
-	/// @param bIsPlayerGoingBack - is the player giving a command that would move the player backward. 
+	/// @brief PlayerInput - Player has stopped jumping
+	/// @param bStopJumping - player is no longer jumping. 
 	//----------------------------------------------------------------------------------------------------------------------
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = PlayerInput)
 		bool bStopJumping;
@@ -303,7 +283,8 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Camera)
 		float cameraDegreeCap;
 	//----------------------------------------------------------------------------------------------------------------------
-	/// @brief CharacterComponents - characters push and pull speed
+	/// @brief CharacterComponents - Check if the player is currently praying at the specified statue. 
+	/// @param overlappingSphere - USphere Component for overlapping events. 
 	//----------------------------------------------------------------------------------------------------------------------
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = CharacterComponents, meta = (AllowPrivateAccess = "true"))
 		USphereComponent* overlappingSphere;
@@ -332,29 +313,53 @@ public:
 	//----------------------------------------------------------------------------------------------------------------------
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterComponents)
 		float jumpDelay;
-
-
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Components")
+	//----------------------------------------------------------------------------------------------------------------------
+	/// @brief CharacterComponents - Will allow us to play our timeline via a curve.
+	/// @param RunToIdleTimeline - pointer to a timeline component. 
+	//----------------------------------------------------------------------------------------------------------------------
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = CharacterComponents)
 		UTimelineComponent* RunToIdleTimeline;
-	UPROPERTY( EditAnywhere, BlueprintReadOnly, Category = "Components")
+	//----------------------------------------------------------------------------------------------------------------------
+	/// @brief CharacterComponents - Will allow us to play our timeline via a curve.
+	/// @param SprintToIdleTimeline - pointer to a timeline component. 
+	//----------------------------------------------------------------------------------------------------------------------
+	UPROPERTY( EditAnywhere, BlueprintReadOnly, Category = CharacterComponents)
 		UTimelineComponent* SprintToIdleTimeline;
-	
-	
-	UPROPERTY()
+	//----------------------------------------------------------------------------------------------------------------------
+	/// @brief CharacterComponents -  The curve for the Run to Idle timeline. Must go from 0 -> 1
+	/// @param RunToIdleCurve - curve designated by artist. 
+	//----------------------------------------------------------------------------------------------------------------------
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = CharacterComponents)
 		UCurveFloat* RunToIdleCurve;
-	UPROPERTY()
+	//----------------------------------------------------------------------------------------------------------------------
+	/// @brief CharacterComponents -  The curve for the Sprint to Idle timeline. Must go from 0 -> 1
+	/// @param SprintToIdleCurve - curve designated by artist. 
+	//----------------------------------------------------------------------------------------------------------------------
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = CharacterComponents)
 		UCurveFloat* SprintToIdleCurve;
-	
+	//----------------------------------------------------------------------------------------------------------------------
+	/// @brief - Function that binds our function to the timeline. 
+	//----------------------------------------------------------------------------------------------------------------------
 	FOnTimelineFloat InterpFunction{};
-	
+	//----------------------------------------------------------------------------------------------------------------------
+	/// @brief - Function to read in the value from the timeline and where to place the door. 
+	/// @param - Val = Float at current time in timeline. 
+	//----------------------------------------------------------------------------------------------------------------------
 	UFUNCTION()
 		void TimelineFloatReturn(float val);
-
+	//----------------------------------------------------------------------------------------------------------------------
+	/// @brief can the player sprint currently?
+	//----------------------------------------------------------------------------------------------------------------------
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = CharacterComponents)
+	bool bCanSprint;
+	//----------------------------------------------------------------------------------------------------------------------
+	/// @brief bool to make sure that the play is only played once at a time, not over and over. on Run To Idle
+	//----------------------------------------------------------------------------------------------------------------------
 	bool playOnceRunToIdle;
+	//----------------------------------------------------------------------------------------------------------------------
+	/// @brief bool to make sure that the play is only played once at a time, not over and over. 
+	//----------------------------------------------------------------------------------------------------------------------
 	bool playOnceSprintToIdle;
-
-
-
 
 private:
 	//----------------------------------------------------------------------------------------------------------------------
@@ -393,8 +398,20 @@ private:
 	/// @brief Deltatime to be used anywhere. 
 	//----------------------------------------------------------------------------------------------------------------------
 	bool bPushPullColliding;
-
+	//----------------------------------------------------------------------------------------------------------------------
+	/// @brief timer delay for jump. 
+	//----------------------------------------------------------------------------------------------------------------------
 	float jumpDelayTimer;
+	//----------------------------------------------------------------------------------------------------------------------
+	/// @brief if jump timer should be started.  
+	//----------------------------------------------------------------------------------------------------------------------
 	bool startTimer;
-
+	//----------------------------------------------------------------------------------------------------------------------
+	/// @brief timer for sprint.
+	//----------------------------------------------------------------------------------------------------------------------
+	float sprintTimer;
+	//----------------------------------------------------------------------------------------------------------------------
+	/// @brief timer for sprint Set amount.
+	//----------------------------------------------------------------------------------------------------------------------
+	float sprintTimerAmount;
 };

@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define AVA_EscapePoint_generated_h
 
-#define Ava_Source_Ava_EscapePoint_h_14_RPC_WRAPPERS
-#define Ava_Source_Ava_EscapePoint_h_14_RPC_WRAPPERS_NO_PURE_DECLS
-#define Ava_Source_Ava_EscapePoint_h_14_INCLASS_NO_PURE_DECLS \
+#define Ava_Source_Ava_EscapePoint_h_20_RPC_WRAPPERS
+#define Ava_Source_Ava_EscapePoint_h_20_RPC_WRAPPERS_NO_PURE_DECLS
+#define Ava_Source_Ava_EscapePoint_h_20_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesAEscapePoint(); \
 	friend AVA_API class UClass* Z_Construct_UClass_AEscapePoint(); \
@@ -26,7 +26,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Ava_Source_Ava_EscapePoint_h_14_INCLASS \
+#define Ava_Source_Ava_EscapePoint_h_20_INCLASS \
 	private: \
 	static void StaticRegisterNativesAEscapePoint(); \
 	friend AVA_API class UClass* Z_Construct_UClass_AEscapePoint(); \
@@ -37,7 +37,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Ava_Source_Ava_EscapePoint_h_14_STANDARD_CONSTRUCTORS \
+#define Ava_Source_Ava_EscapePoint_h_20_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AEscapePoint(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AEscapePoint) \
@@ -49,7 +49,7 @@ private: \
 public:
 
 
-#define Ava_Source_Ava_EscapePoint_h_14_ENHANCED_CONSTRUCTORS \
+#define Ava_Source_Ava_EscapePoint_h_20_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AEscapePoint(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -61,23 +61,23 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AEscapePoint); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AEscapePoint)
 
 
-#define Ava_Source_Ava_EscapePoint_h_11_PROLOG
-#define Ava_Source_Ava_EscapePoint_h_14_GENERATED_BODY_LEGACY \
+#define Ava_Source_Ava_EscapePoint_h_17_PROLOG
+#define Ava_Source_Ava_EscapePoint_h_20_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Ava_Source_Ava_EscapePoint_h_14_RPC_WRAPPERS \
-	Ava_Source_Ava_EscapePoint_h_14_INCLASS \
-	Ava_Source_Ava_EscapePoint_h_14_STANDARD_CONSTRUCTORS \
+	Ava_Source_Ava_EscapePoint_h_20_RPC_WRAPPERS \
+	Ava_Source_Ava_EscapePoint_h_20_INCLASS \
+	Ava_Source_Ava_EscapePoint_h_20_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Ava_Source_Ava_EscapePoint_h_14_GENERATED_BODY \
+#define Ava_Source_Ava_EscapePoint_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Ava_Source_Ava_EscapePoint_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	Ava_Source_Ava_EscapePoint_h_14_INCLASS_NO_PURE_DECLS \
-	Ava_Source_Ava_EscapePoint_h_14_ENHANCED_CONSTRUCTORS \
+	Ava_Source_Ava_EscapePoint_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+	Ava_Source_Ava_EscapePoint_h_20_INCLASS_NO_PURE_DECLS \
+	Ava_Source_Ava_EscapePoint_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

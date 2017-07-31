@@ -13,31 +13,31 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define AVA_Puzzle_generated_h
 
-#define Ava_Source_Ava_Puzzle_h_14_RPC_WRAPPERS
-#define Ava_Source_Ava_Puzzle_h_14_RPC_WRAPPERS_NO_PURE_DECLS
-#define Ava_Source_Ava_Puzzle_h_14_INCLASS_NO_PURE_DECLS \
+#define Ava_Source_Ava_Puzzle_h_22_RPC_WRAPPERS
+#define Ava_Source_Ava_Puzzle_h_22_RPC_WRAPPERS_NO_PURE_DECLS
+#define Ava_Source_Ava_Puzzle_h_22_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesAPuzzle(); \
 	friend AVA_API class UClass* Z_Construct_UClass_APuzzle(); \
 	public: \
-	DECLARE_CLASS(APuzzle, AActor, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Ava"), NO_API) \
+	DECLARE_CLASS(APuzzle, AActor, COMPILED_IN_FLAGS(CLASS_Abstract), 0, TEXT("/Script/Ava"), NO_API) \
 	DECLARE_SERIALIZER(APuzzle) \
 	/** Indicates whether the class is compiled into the engine */ \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Ava_Source_Ava_Puzzle_h_14_INCLASS \
+#define Ava_Source_Ava_Puzzle_h_22_INCLASS \
 	private: \
 	static void StaticRegisterNativesAPuzzle(); \
 	friend AVA_API class UClass* Z_Construct_UClass_APuzzle(); \
 	public: \
-	DECLARE_CLASS(APuzzle, AActor, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Ava"), NO_API) \
+	DECLARE_CLASS(APuzzle, AActor, COMPILED_IN_FLAGS(CLASS_Abstract), 0, TEXT("/Script/Ava"), NO_API) \
 	DECLARE_SERIALIZER(APuzzle) \
 	/** Indicates whether the class is compiled into the engine */ \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Ava_Source_Ava_Puzzle_h_14_STANDARD_CONSTRUCTORS \
+#define Ava_Source_Ava_Puzzle_h_22_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API APuzzle(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(APuzzle) \
@@ -49,7 +49,7 @@ private: \
 public:
 
 
-#define Ava_Source_Ava_Puzzle_h_14_ENHANCED_CONSTRUCTORS \
+#define Ava_Source_Ava_Puzzle_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private copy-constructor, should never be used */ \
 	NO_API APuzzle(const APuzzle& InCopy); \
@@ -59,23 +59,23 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APuzzle); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(APuzzle)
 
 
-#define Ava_Source_Ava_Puzzle_h_11_PROLOG
-#define Ava_Source_Ava_Puzzle_h_14_GENERATED_BODY_LEGACY \
+#define Ava_Source_Ava_Puzzle_h_19_PROLOG
+#define Ava_Source_Ava_Puzzle_h_22_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Ava_Source_Ava_Puzzle_h_14_RPC_WRAPPERS \
-	Ava_Source_Ava_Puzzle_h_14_INCLASS \
-	Ava_Source_Ava_Puzzle_h_14_STANDARD_CONSTRUCTORS \
+	Ava_Source_Ava_Puzzle_h_22_RPC_WRAPPERS \
+	Ava_Source_Ava_Puzzle_h_22_INCLASS \
+	Ava_Source_Ava_Puzzle_h_22_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Ava_Source_Ava_Puzzle_h_14_GENERATED_BODY \
+#define Ava_Source_Ava_Puzzle_h_22_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Ava_Source_Ava_Puzzle_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	Ava_Source_Ava_Puzzle_h_14_INCLASS_NO_PURE_DECLS \
-	Ava_Source_Ava_Puzzle_h_14_ENHANCED_CONSTRUCTORS \
+	Ava_Source_Ava_Puzzle_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+	Ava_Source_Ava_Puzzle_h_22_INCLASS_NO_PURE_DECLS \
+	Ava_Source_Ava_Puzzle_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

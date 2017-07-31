@@ -43,11 +43,8 @@ void AAntelopeAIController::SetPlayer(APawn * p_pPawn)
 {
 	if (myBlackBoardComponent && p_pPawn)
 	{
-		
-	
 		myBlackBoardComponent->SetValueAsObject(playerName, p_pPawn);
 		myBlackBoardComponent->SetValueAsVector(playerPositionName, p_pPawn->GetActorLocation());
-		
 	}
 }
 
@@ -56,7 +53,6 @@ void AAntelopeAIController::SetRouteWaypoint(ARoutePoint * p_RoutePoint)
 	if (myBlackBoardComponent)
 	{
 		myBlackBoardComponent->SetValueAsObject(currentRouteWayPointName, p_RoutePoint);
-
 	}
 }
 
@@ -66,7 +62,6 @@ ARoutePoint * AAntelopeAIController::GetRoutePoint()
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Emerald, FString::Printf(TEXT("Get ROUTE function")));
 		return Cast<ARoutePoint>(myBlackBoardComponent->GetValueAsObject(currentRouteWayPointName));
-		
 	}
 	return nullptr;
 }
@@ -76,7 +71,6 @@ void AAntelopeAIController::SetEscapeWayPoint(AEscapePoint * p_EscapePoint)
 	if (myBlackBoardComponent)
 	{
 		myBlackBoardComponent->SetValueAsObject(currentEscapeWayPointName, p_EscapePoint);
-
 	}
 }
 
@@ -98,7 +92,6 @@ void AAntelopeAIController::SetMyPosition(FVector p_MyPosition)
 	if (myBlackBoardComponent)
 	{
 		myBlackBoardComponent->SetValueAsVector(myPositionName, p_MyPosition);
-
 	}
 }
 
@@ -111,36 +104,6 @@ FVector  AAntelopeAIController::GetMyPosition()
 	return FVector::ZeroVector;
 }
 
-void AAntelopeAIController::SearchForPlayer()
-{
-	APawn* t_aiAntelope = GetPawn();
-
-	if (t_aiAntelope == NULL)
-	{
-		return;
-	}
-
-	const FVector t_vMyLoc = t_aiAntelope->GetActorLocation();
-	float t_fBestDistSq = MAX_FLT;
-	AMainCharacter* t_chaBestPawn = NULL;
-	for (FConstPawnIterator It = GetWorld()->GetPawnIterator(); It; ++It)
-	{
-		AMainCharacter* t_charTestPawn = Cast<AMainCharacter>(*It);
-		if (t_charTestPawn)
-		{
-			const float t_fDistSq = FVector::Dist(t_charTestPawn->GetActorLocation(), t_vMyLoc);
-			if (t_fDistSq < t_fBestDistSq)
-			{
-				t_fBestDistSq = t_fDistSq;
-				t_chaBestPawn = t_charTestPawn;
-			}
-		}
-	}
-	if (t_chaBestPawn)
-	{
-		SetPlayer(t_chaBestPawn);
-	}
-}
 
 
 

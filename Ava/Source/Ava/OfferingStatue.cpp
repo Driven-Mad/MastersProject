@@ -1,5 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #include "Ava.h"
 #include "PickUpItem.h"
 #include "OfferingStatue.h"
@@ -17,10 +15,16 @@ AOfferingStatue::AOfferingStatue()
 
 	Alter = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("AlterMesh"));
 	Alter->SetSimulatePhysics(false);
+	FAttachmentTransformRules rules = FAttachmentTransformRules(EAttachmentRule::KeepRelative, true);
+	Alter->AttachToComponent(RootComponent, rules);
 	
 	BuddaStatue = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StatueMesh"));
 	BuddaStatue->SetSimulatePhysics(false);
-	//DesignatedMesh->AttachTo(RootComponent);
+	BuddaStatue->AttachToComponent(RootComponent, rules);
+
+	OfferingItem = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("OfferingMesh"));
+	OfferingItem->SetSimulatePhysics(false);
+	OfferingItem->AttachToComponent(RootComponent, rules);
 
 }
 
@@ -36,7 +40,6 @@ void AOfferingStatue::BeginPlay()
 void AOfferingStatue::Tick( float DeltaTime )
 {
 	Super::Tick( DeltaTime );
-
 	if (!bItemOffered)
 	{
 		TArray <AActor*> overlappingActors;
@@ -47,6 +50,9 @@ void AOfferingStatue::Tick( float DeltaTime )
 			if (overlappingTest && overlappingTest->itemType == requiredItem)
 			{
 				bItemOffered = true;
+				ItemData e = ADataFactory::Items[requiredItem];
+				UStaticMesh* mesh = Cast <UStaticMesh>(StaticLoadObject(UStaticMesh::StaticClass(), NULL, e[ItemDataVariables::itemMeshFilepath].GetCharArray().GetData()));
+				OfferingItem->SetStaticMesh(mesh);
 				overlappingTest->Destroy();
 			}
 		}

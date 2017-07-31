@@ -1,5 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #include "Ava.h"
 #include "PickUpItem.h"
 
@@ -13,6 +11,7 @@ APickUpItem::APickUpItem()
 	boxCollider = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxCollision"));
 	boxCollider->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	boxCollider->SetCollisionResponseToAllChannels(ECR_Block);
+	boxCollider->SetSimulatePhysics(true);
 	RootComponent = boxCollider;
 
 	designatedMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("DoorMesh"));
@@ -27,13 +26,34 @@ APickUpItem::APickUpItem()
 void APickUpItem::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	startingX = GetActorLocation().X;
+	startingY = GetActorLocation().Y;
+	startingZ = GetActorLocation().Z;
 }
 
 // Called every frame
 void APickUpItem::Tick( float DeltaTime )
 {
 	Super::Tick( DeltaTime );
+
+	FVector Location = GetActorLocation();
+	float locationX = Location.X;
+	float locationY = Location.Y;
+	float locationZ = Location.Z;
+	if (LockX)
+	{
+		SetActorLocation(FVector(startingX, locationY, locationZ));
+
+	};
+	if (LockY)
+	{
+		SetActorLocation(FVector(locationX, startingY, locationZ));
+
+	};
+	if (LockZ)
+	{
+		SetActorLocation(FVector(locationX, locationY, startingZ));
+	};
 
 }
 
@@ -48,7 +68,16 @@ void APickUpItem::PostEditChangeProperty(struct FPropertyChangedEvent& PropertyC
 	//Create a farm based on size - Checks if the farm size is changed if so creates  farm. 
 	if (PropertyName == GET_MEMBER_NAME_CHECKED(APickUpItem,itemType))
 	{
-		designatedMesh->SetStaticMesh(myData->Get3DRepresentationForItem(itemType));
+		UStaticMesh * mesh = myData->Get3DRepresentationForItem(itemType);
+		if (mesh != nullptr)
+		{
+			designatedMesh->SetVisibility(true);
+			designatedMesh->SetStaticMesh(mesh);
+		}
+		else
+		{
+			designatedMesh->SetVisibility(false);
+		}
 		//RootComponent = designatedMesh;
 	}
 

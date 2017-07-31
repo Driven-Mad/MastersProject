@@ -1,3 +1,3 @@
-W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava\Ava.Build.cs
-W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\Ava.Target.cs
-W:\University Work\Masters\MastersProject\MastersProject\Ava\Source\AvaEditor.Target.cs
+G:\University Work\Masters\MastersProject\JustCode\MastersProject\Ava\Source\Ava\Ava.Build.cs
+G:\University Work\Masters\MastersProject\JustCode\MastersProject\Ava\Source\Ava.Target.cs
+G:\University Work\Masters\MastersProject\JustCode\MastersProject\Ava\Source\AvaEditor.Target.cs

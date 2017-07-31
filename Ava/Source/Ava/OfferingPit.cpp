@@ -1,5 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #include "Ava.h"
 #include "PickUpItem.h"
 #include "OfferingPit.h"
@@ -12,13 +10,14 @@ AOfferingPit::AOfferingPit()
 	PrimaryActorTick.bCanEverTick = true;
 
 	overlappingSphere = CreateDefaultSubobject<USphereComponent>(TEXT("overlappingSphere"));
-	overlappingSphere->AttachTo(RootComponent);
 	RootComponent = overlappingSphere;
 
-	requiredItem = Item::Bracelet;
+	FAttachmentTransformRules rules = FAttachmentTransformRules(EAttachmentRule::KeepRelative, true);
+
 
 	offeringPitMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StatueMesh"));
 	offeringPitMesh->SetSimulatePhysics(false);
+	offeringPitMesh->AttachToComponent(RootComponent, rules);
 }
 
 // Called when the game starts or when spawned
@@ -26,7 +25,7 @@ void AOfferingPit::BeginPlay()
 {
 	Super::BeginPlay();
 	bItemOffered = false;
-	
+	requiredItem = Item::Bracelet;
 }
 
 // Called every frame
@@ -42,7 +41,7 @@ void AOfferingPit::Tick( float DeltaTime )
 			APickUpItem* const overlappingTest = Cast<APickUpItem>(overlappingActors[overlappingActorIndex]);
 			if (overlappingTest && overlappingTest->itemType == requiredItem)
 			{
-				GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Purple, "Item has been offered");
+				GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, "Item has been offered");
 				bItemOffered = true;
 				overlappingTest->Destroy();
 			}
