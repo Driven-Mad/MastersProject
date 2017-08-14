@@ -18,6 +18,7 @@ AOfferingPit::AOfferingPit()
 	offeringPitMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StatueMesh"));
 	offeringPitMesh->SetSimulatePhysics(false);
 	offeringPitMesh->AttachToComponent(RootComponent, rules);
+	requiredItem = Item::Bracelet;
 }
 
 // Called when the game starts or when spawned
@@ -25,7 +26,6 @@ void AOfferingPit::BeginPlay()
 {
 	Super::BeginPlay();
 	bItemOffered = false;
-	requiredItem = Item::Bracelet;
 }
 
 // Called every frame

@@ -18,6 +18,15 @@ APushPullItem::APushPullItem()
 	FAttachmentTransformRules rules = FAttachmentTransformRules(EAttachmentRule::KeepRelative,true);
 	sphereCollider->AttachToComponent(RootComponent, rules);
 	sphereCollider->SetCollisionResponseToAllChannels(ECR_Block);
+	constrainX = false;
+	constrainY = false;
+
+	cappedX = false;
+	cappedY = false;
+
+	LockX = false;
+	LockY = false;
+	LockZ = false;
 	
 }
 
@@ -30,15 +39,7 @@ void APushPullItem::BeginPlay()
 	startingY = GetActorLocation().Y;
 	startingZ = GetActorLocation().Z;
 
-	constrainX = false;
-	constrainY = false;
 
-	cappedX = false;
-	cappedY = false;
-
-	LockX = false;
-	LockY = false;
-	LockZ = false;
 }
 
 // Called every frame

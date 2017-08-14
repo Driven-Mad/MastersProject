@@ -1,9 +1,9 @@
-﻿Log file open, 08/13/17 17:33:14
+﻿Log file open, 08/13/17 17:33:03
 LogInit:Display: Running engine for game: Ava
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(-2051918142) SRandInit(-2051918141).
+LogInit:Display: RandInit(-2118768129) SRandInit(-2118768127).
 LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 0.073704
+LogStats: Stats thread started at 0.702358
 LogInit:Warning: Incompatible or missing module: UE4Editor-Ava.dll
 LogExit: Preparing to exit.
 LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
@@ -21,4 +21,4 @@ LogModuleManager: Shutting down and abandoning module StreamingFile (3)
 LogModuleManager: Shutting down and abandoning module SandboxFile (2)
 LogModuleManager: Shutting down and abandoning module PakFile (1)
 LogExit: Exiting.
-Log file closed, 08/13/17 17:33:15
+Log file closed, 08/13/17 17:33:09

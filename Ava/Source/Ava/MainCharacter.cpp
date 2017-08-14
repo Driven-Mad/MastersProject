@@ -2,6 +2,9 @@
 
 #include "Ava.h"
 #include "StatueObject.h"
+#include "OfferingStatue.h"
+#include "PaintingObject.h"
+#include "OfferingPit.h"
 #include "MainCharacter.h"
 
 
@@ -25,7 +28,7 @@ AMainCharacter::AMainCharacter()
 	GetCharacterMovement()->RotationRate = FRotator(0.0f, 540.0f, 0.0f); // ...at this rotation rate
 	GetCharacterMovement()->JumpZVelocity = 300.f;
 	GetCharacterMovement()->AirControl = 0.2f;
-	GetCharacterMovement()->MaxWalkSpeed = runSpeed;
+	GetCharacterMovement()->MaxWalkSpeed = 100.f;
 
 	// Create a camera boom (pulls in towards the player if there is a collision)
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
@@ -61,6 +64,40 @@ AMainCharacter::AMainCharacter()
 		SprintToIdleCurve = Curvy2.Object;
 		SprintToIdleTimeline = CreateDefaultSubobject<UTimelineComponent>(TEXT("TimelineSprintToIdle"));
 	}
+
+	walkSpeed = 100;
+	runSpeed = 366;
+	sprintSpeed = 500;
+	lookRate = 45;
+	turnRate = 45;
+	pushPullSpeed = 50;
+	GetCharacterMovement()->MaxWalkSpeed = runSpeed;
+	pushPullTraceCheckDistance = 25.f;
+	characterArmHeight = 40.f;
+	bIsNoLocomotionInput = true;
+	bIsPlayerGoingRight = false;
+	bIsPlayerGoingLeft = false;
+	bIsPlayerGoingForward = false;
+	bIsPlayerGoingBack = false;
+	bIsIdle = true;
+	bIsRunning = false;
+	bIsPraying = false;
+	bIsInInventory = false;
+	bIsJumping = false;
+	bPushPullColliding = false;
+	bIsPushPulling = false;
+	bIsPickingUp = false;
+	jumpDelay = 0;
+	jumpDelayTimer = 0;
+	bStopJumping = false;
+	playOnceRunToIdle = false;
+	playOnceSprintToIdle = false;
+	cameraDegreeCap = 15.0f;
+	sprintTimerAmount = 1.f;
+	sprintTimer = 1.f;
+	bCanSprint = true;
+
+	bIsInInventory = false;
 }
 
 
@@ -92,39 +129,7 @@ void AMainCharacter::BeginPlay()
 	RunToIdleTimeline->AddInterpFloat(RunToIdleCurve, InterpFunction, FName{ TEXT("Floaty") });
 	SprintToIdleTimeline->AddInterpFloat(SprintToIdleCurve, InterpFunction, FName{ TEXT("Floaty2") });
 	Inventory.Add(Item::Bracelet);
-	walkSpeed = 100;
-	runSpeed = 366;
-	sprintSpeed = 500;
-	lookRate = 45;
-	turnRate = 45;
-	pushPullSpeed = 50;
-	pushPullTraceCheckDistance = 25.f;
-	characterArmHeight = -10.f;
-	bIsNoLocomotionInput = true;
-	bIsPlayerGoingRight = false;
-	bIsPlayerGoingLeft = false;
-	bIsPlayerGoingForward = false;
-	bIsPlayerGoingBack = false;
-	bIsIdle = true;
-	bIsRunning = false;
-	bIsPraying = false;
-	bIsInInventory = false;
-	bIsJumping = false;
-	bPushPullColliding = false;
-	bIsPushPulling = false;
-	bIsPickingUp = false;
-	jumpDelay = 0;
-	jumpDelayTimer = 0;
-	bStopJumping = false;
-	playOnceRunToIdle = false;
-	playOnceSprintToIdle = false;
-	cameraDegreeCap = 15.0f;
-	sprintTimerAmount = 5.f;
-	sprintTimer = 5.f;
-	bCanSprint = true;
 
-
-	bIsInInventory = false;
 }
 
 // Called every frame
@@ -158,11 +163,11 @@ void AMainCharacter::Tick(float DeltaTime)
 	//For Controller:
 	if (bIsSprinting && bCanSprint)
 	{
-		sprintTimer -= DeltaTime;
+		sprintTimer -= (DeltaTime/5);
 	}
 	if (!bCanSprint)
 	{
-		sprintTimer += DeltaTime;
+		sprintTimer += (DeltaTime / 5);
 		if (sprintTimer >= sprintTimerAmount)
 		{
 			sprintTimer = sprintTimerAmount;
@@ -206,14 +211,14 @@ void AMainCharacter::Tick(float DeltaTime)
 		FVector tempFV = FRotationMatrix(tempYaw).GetUnitAxis(EAxis::X);
 		FVector tempActorLocation = FVector(GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z+ characterArmHeight);
 		FVector end = (tempActorLocation + (tempFV * pushPullTraceCheckDistance));
-		//DrawDebugLine(
-		//	GetWorld(),
-		//	tempActorLocation,
-		//	end,
-		//	FColor(0, 255, 0),
-		//	false, -1, 0,
-		//	5.f
-		//);
+		DrawDebugLine(
+			GetWorld(),
+			tempActorLocation,
+			end,
+			FColor(0, 255, 0),
+			false, -1, 0,
+			5.f
+		);
 	}
 	if (bIsPushPulling)
 	{
@@ -248,6 +253,64 @@ void AMainCharacter::Tick(float DeltaTime)
 	{
 		//Gives you up to -12 Left, 12 right, 0 forward and backwards. Depending of speed of camera turn, gives negative left, positive right.
 		leftOrRightPlayer = (FVector::DotProduct(GetActorRightVector(), GetVelocity()));
+	}
+
+	TArray <AActor*> overlappingActors;
+	overlappingSphere->GetOverlappingActors(overlappingActors);
+	bool bInteractFound = false;
+	bool bPushPullFound = false;
+	bool bInventoryFound = false;
+
+	for (int32 overlappingActorIndex = 0; overlappingActorIndex < overlappingActors.Num(); overlappingActorIndex++)
+	{
+		//UI INTERACTION
+		AStatueObject* const overlappingTestSO = Cast<AStatueObject>(overlappingActors[overlappingActorIndex]);
+		APickUpItem* const overlappingTestPUI = Cast<APickUpItem>(overlappingActors[overlappingActorIndex]);
+		if (((overlappingTestSO && overlappingTestSO->bCanPlayerPray) || 
+			(overlappingTestPUI && !overlappingTestPUI->IsPendingKill())) && !bInteractFound)
+		{
+			bInteractFound = true;
+				
+		}
+		//UI PUSH AND PULL
+		APushPullItem* const overlappingPPI = Cast<APushPullItem>(overlappingActors[overlappingActorIndex]);
+		if (overlappingPPI && !bPushPullFound)
+		{
+			bPushPullFound = true;
+		}
+
+		//UI INVENTORY
+		AOfferingStatue* const overlappingOS = Cast<AOfferingStatue>(overlappingActors[overlappingActorIndex]);
+		AOfferingPit* const overlappingOP = Cast<AOfferingPit>(overlappingActors[overlappingActorIndex]);
+		APaintingObject* const overlappingPO = Cast<APaintingObject>(overlappingActors[overlappingActorIndex]);
+		if( (overlappingOS || overlappingOP || overlappingPO) && !bInventoryFound)
+		{
+			bInventoryFound = true;		
+		}
+	}
+	if (bInventoryFound)
+	{
+		bAccessInventoryUI = true;
+	}
+	else
+	{
+		bAccessInventoryUI = false;
+	}
+	if (bPushPullFound)
+	{
+		bPushAndPullUI = true;
+	}
+	else
+	{
+		bPushAndPullUI = false;
+	}
+	if (bInteractFound)
+	{
+		bInteractUI = true;
+	}
+	else
+	{
+		bInteractUI = false;
 	}
 }
 

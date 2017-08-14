@@ -10,12 +10,14 @@ APickUpItem::APickUpItem()
 
 	boxCollider = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxCollision"));
 	boxCollider->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	boxCollider->SetEnableGravity(true);
 	boxCollider->SetCollisionResponseToAllChannels(ECR_Block);
 	boxCollider->SetSimulatePhysics(true);
 	RootComponent = boxCollider;
 
 	designatedMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("DoorMesh"));
-	designatedMesh->SetSimulatePhysics(true);
+	designatedMesh->SetSimulatePhysics(false);
+	designatedMesh->SetEnableGravity(false);
 	designatedMesh->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	FAttachmentTransformRules rules = FAttachmentTransformRules(EAttachmentRule::KeepRelative, true);
 	designatedMesh->AttachToComponent(RootComponent, rules);
