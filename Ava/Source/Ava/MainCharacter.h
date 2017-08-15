@@ -347,11 +347,7 @@ public:
 	//----------------------------------------------------------------------------------------------------------------------
 	UFUNCTION()
 		void TimelineFloatReturn(float val);
-	//----------------------------------------------------------------------------------------------------------------------
-	/// @brief can the player sprint currently?
-	//----------------------------------------------------------------------------------------------------------------------
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = CharacterComponents)
-	bool bCanSprint;
+
 	//----------------------------------------------------------------------------------------------------------------------
 	/// @brief bool to make sure that the play is only played once at a time, not over and over. on Run To Idle
 	//----------------------------------------------------------------------------------------------------------------------
@@ -360,11 +356,7 @@ public:
 	/// @brief bool to make sure that the play is only played once at a time, not over and over. 
 	//----------------------------------------------------------------------------------------------------------------------
 	bool playOnceSprintToIdle;
-	//----------------------------------------------------------------------------------------------------------------------
-	/// @brief timer for sprint.
-	//----------------------------------------------------------------------------------------------------------------------
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = CharacterComponents)
-	float sprintTimer;
+
 
 	//----------------------------------------------------------------------------------------------------------------------
 	/// @brief boolean so we know when to show the access inventory Icon on the UI
@@ -381,6 +373,11 @@ public:
 	//----------------------------------------------------------------------------------------------------------------------
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = CharacterUIComponents)
 		bool bInteractUI;
+	//----------------------------------------------------------------------------------------------------------------------
+	/// @brief boolean so we know when to show the Interact Icon on the UI
+	//----------------------------------------------------------------------------------------------------------------------
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = CharacterUIComponents)
+		bool bInteractStatueUI;
 
 private:
 	//----------------------------------------------------------------------------------------------------------------------

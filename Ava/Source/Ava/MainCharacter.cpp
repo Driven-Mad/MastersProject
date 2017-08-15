@@ -94,8 +94,6 @@ AMainCharacter::AMainCharacter()
 	playOnceSprintToIdle = false;
 	cameraDegreeCap = 15.0f;
 	sprintTimerAmount = 1.f;
-	sprintTimer = 1.f;
-	bCanSprint = true;
 
 	bIsInInventory = false;
 }
@@ -160,25 +158,7 @@ void AMainCharacter::Tick(float DeltaTime)
 		playOnceSprintToIdle = false;
 		bIsNoLocomotionInput = false;
 	}
-	//For Controller:
-	if (bIsSprinting && bCanSprint)
-	{
-		sprintTimer -= (DeltaTime/5);
-	}
-	if (!bCanSprint)
-	{
-		sprintTimer += (DeltaTime / 5);
-		if (sprintTimer >= sprintTimerAmount)
-		{
-			sprintTimer = sprintTimerAmount;
-			bCanSprint = true;
-		}
-	}
-	if (sprintTimer <= 0)
-	{
-		GetCharacterMovement()->MaxWalkSpeed = runSpeed;
-		bCanSprint = false;
-	}
+
 	if (speed == 0)
 	{
 		bIsIdle = true;
@@ -198,6 +178,9 @@ void AMainCharacter::Tick(float DeltaTime)
 		bIsRunning = false;
 		bIsWalking = false;
 	}
+	//Push and pull tests.
+
+	bool hit = false;
 	if (Controller != NULL)
 	{
 		const FRotator Rotation = Controller->GetControlRotation();
@@ -211,6 +194,9 @@ void AMainCharacter::Tick(float DeltaTime)
 		FVector tempFV = FRotationMatrix(tempYaw).GetUnitAxis(EAxis::X);
 		FVector tempActorLocation = FVector(GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z+ characterArmHeight);
 		FVector end = (tempActorLocation + (tempFV * pushPullTraceCheckDistance));
+		FHitResult results;
+		FCollisionQueryParams query = FCollisionQueryParams(FName(TEXT("trace")), false, this);
+		hit = GetWorld()->LineTraceSingleByChannel(results, tempActorLocation, end, ECC_Visibility, query);
 		DrawDebugLine(
 			GetWorld(),
 			tempActorLocation,
@@ -260,21 +246,26 @@ void AMainCharacter::Tick(float DeltaTime)
 	bool bInteractFound = false;
 	bool bPushPullFound = false;
 	bool bInventoryFound = false;
+	bool bSatueInteractFound = false;
 
 	for (int32 overlappingActorIndex = 0; overlappingActorIndex < overlappingActors.Num(); overlappingActorIndex++)
 	{
 		//UI INTERACTION
 		AStatueObject* const overlappingTestSO = Cast<AStatueObject>(overlappingActors[overlappingActorIndex]);
 		APickUpItem* const overlappingTestPUI = Cast<APickUpItem>(overlappingActors[overlappingActorIndex]);
-		if (((overlappingTestSO && overlappingTestSO->bCanPlayerPray) || 
-			(overlappingTestPUI && !overlappingTestPUI->IsPendingKill())) && !bInteractFound)
+		if ((overlappingTestSO && overlappingTestSO->bCanPlayerPray)&& !bSatueInteractFound)
+		{
+			bSatueInteractFound = true;
+				
+		}
+
+		if ((overlappingTestPUI && !overlappingTestPUI->IsPendingKill()) && !bInteractFound)
 		{
 			bInteractFound = true;
-				
 		}
 		//UI PUSH AND PULL
 		APushPullItem* const overlappingPPI = Cast<APushPullItem>(overlappingActors[overlappingActorIndex]);
-		if (overlappingPPI && !bPushPullFound)
+		if (overlappingPPI && !bPushPullFound && hit)
 		{
 			bPushPullFound = true;
 		}
@@ -311,6 +302,14 @@ void AMainCharacter::Tick(float DeltaTime)
 	else
 	{
 		bInteractUI = false;
+	}
+	if (bSatueInteractFound)
+	{
+		bInteractStatueUI = true;
+	}
+	else
+	{
+		bInteractStatueUI = false;
 	}
 }
 
@@ -473,7 +472,7 @@ void AMainCharacter::StopWalking()
 
 void AMainCharacter::Sprint()
 {
-	if (!bIsPushPulling && bCanSprint)
+	if (!bIsPushPulling )
 	{
 		bIsSprinting = true;
 		SprintToIdleTimeline->Stop();
