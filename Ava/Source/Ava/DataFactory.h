@@ -119,6 +119,13 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Items")
 		FString getItemDescription(Item ItemToSpawn);
 	//----------------------------------------------------------------------------------------------------------------------
+	/// @brief Called when you need to get the Item_Type name
+	/// @param Item_type - The item that you want to look up.
+	/// @return returns the items name in a string. 
+	//----------------------------------------------------------------------------------------------------------------------
+	UFUNCTION(BlueprintCallable, Category = "Items")
+		FString getItemName(Item ItemToSpawn);
+	//----------------------------------------------------------------------------------------------------------------------
 	/// @brief called to set up the items data variables. 
 	/// @return returns a map of maps that we use to set up our items with. 
 	//----------------------------------------------------------------------------------------------------------------------
